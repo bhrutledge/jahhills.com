@@ -1,0 +1,5 @@
+Django==1.7c1
+django-debug-toolbar==1.2.1
+pytz==2014.4
+selenium==2.42.1
+sqlparse==0.1.11

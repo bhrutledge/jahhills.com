@@ -1,0 +1,18 @@
+{% extends "bandcms/base.html" %}
+
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block content %}
+<main class="detail">
+    <article class="post">
+        <header>
+            <h2>{{ object.title }}</h2>
+            <p>{{ object.publish_on|date }}</p>
+        </header>
+        <section>
+            {{ object.body|safe }}
+        </section>
+    </article>
+</main>
+{% endblock %}
+

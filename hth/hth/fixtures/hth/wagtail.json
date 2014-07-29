@@ -1,0 +1,101 @@
+[
+{
+  "fields": {
+    "root_page": 2,
+    "is_default_site": true,
+    "port": 80,
+    "hostname": "localhost"
+  },
+  "pk": 1,
+  "model": "wagtailcore.site"
+},
+{
+  "fields": {
+    "content_type": 10,
+    "live": true,
+    "show_in_menus": false,
+    "expired": false,
+    "numchild": 1,
+    "path": "0001",
+    "search_description": "",
+    "owner": null,
+    "slug": "root",
+    "depth": 1,
+    "seo_title": "",
+    "go_live_at": null,
+    "url_path": "/",
+    "has_unpublished_changes": false,
+    "expire_at": null,
+    "title": "Root"
+  },
+  "pk": 1,
+  "model": "wagtailcore.page"
+},
+{
+  "fields": {
+    "content_type": 10,
+    "live": true,
+    "show_in_menus": false,
+    "expired": false,
+    "numchild": 0,
+    "path": "00010001",
+    "search_description": "",
+    "owner": null,
+    "slug": "home",
+    "depth": 2,
+    "seo_title": "",
+    "go_live_at": null,
+    "url_path": "/home/",
+    "has_unpublished_changes": false,
+    "expire_at": null,
+    "title": "Welcome to your new Wagtail site!"
+  },
+  "pk": 2,
+  "model": "wagtailcore.page"
+},
+{
+  "fields": {
+    "group": 2,
+    "permission_type": "add",
+    "page": 1
+  },
+  "pk": 1,
+  "model": "wagtailcore.grouppagepermission"
+},
+{
+  "fields": {
+    "group": 2,
+    "permission_type": "edit",
+    "page": 1
+  },
+  "pk": 2,
+  "model": "wagtailcore.grouppagepermission"
+},
+{
+  "fields": {
+    "group": 2,
+    "permission_type": "publish",
+    "page": 1
+  },
+  "pk": 3,
+  "model": "wagtailcore.grouppagepermission"
+},
+{
+  "fields": {
+    "group": 1,
+    "permission_type": "add",
+    "page": 1
+  },
+  "pk": 4,
+  "model": "wagtailcore.grouppagepermission"
+},
+{
+  "fields": {
+    "group": 1,
+    "permission_type": "edit",
+    "page": 1
+  },
+  "pk": 5,
+  "model": "wagtailcore.grouppagepermission"
+}
+]

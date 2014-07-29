@@ -1,0 +1,20 @@
+{% extends "bandcms/base.html" %}
+
+{% block title %}Gigs{% endblock %}
+
+{% block content %}
+<main class="list">
+    <h2>Gigs</h2>
+
+{% for object in object_list %}
+    <article class="gig">
+        <header>
+            <h3>{{ object.date|date }}</h3>
+            <p>{{ object.venue }}, {{ object.city }}</p>
+        </header>
+    </article>
+{% endfor %}
+
+</main>
+{% endblock %}
+
