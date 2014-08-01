@@ -30,3 +30,5 @@ class PostTestCase(AdminTestCase):
 
         # TODO: He schedules a post for the future
 
+        # TODO: He reviews a draft post on the site
+
