@@ -55,3 +55,13 @@ class Gig(AbstractCmsModel):
     class Meta:
         ordering = ['-date']
 
+
+class Release(AbstractCmsModel):
+    title = models.CharField(max_length=200)
+    date = models.DateField(blank=True, null=True)
+    description = models.TextField(blank=True)
+    credits = models.TextField(blank=True)
+
+    class Meta:
+        ordering = ['-date']
+
