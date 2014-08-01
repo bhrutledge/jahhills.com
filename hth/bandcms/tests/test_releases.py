@@ -34,3 +34,36 @@ class ModelTestCase(TestCase):
 
         self.assertEqual(list(Release.objects.all()), [new, first, old])
 
+    @override_settings(ROOT_URLCONF='bandcms.urls.releases')
+    def test_url_uses_slug(self):
+        r = Release(title='First', slug='first')
+        r.save()
+
+        self.assertEqual(r.get_absolute_url(), '/first/')
+
+
+@override_settings(ROOT_URLCONF='bandcms.urls.releases')
+class UrlTestCase(TestCase):
+
+    def setUp(self):
+        publish = Release(title='Published', slug='published')
+        publish.save()
+
+        draft = Release(title='Draft', slug='draft', publish=False)
+        draft.save()
+
+    def test_can_view_published_releases(self):
+        response = self.client.get(reverse('release_detail', args=['published']))
+        self.assertTemplateUsed(response, 'bandcms/release_detail.html')
+        self.assertContains(response, 'Published')
+
+    def test_cant_view_draft_releases(self):
+        response = self.client.get(reverse('release_detail', args=['draft']))
+        self.assertEqual(response.status_code, 404)
+
+    def test_list_shows_published_releases(self):
+        response = self.client.get(reverse('release_list'))
+        self.assertTemplateUsed(response, 'bandcms/release_list.html')
+        self.assertContains(response, 'Published')
+        self.assertNotContains(response, 'Draft')
+

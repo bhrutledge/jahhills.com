@@ -1,0 +1,22 @@
+{% extends "bandcms/base.html" %}
+
+{% block title %}Releases{% endblock %}
+
+{% block content %}
+<main class="list">
+    <h2>Releases</h2>
+
+{% for object in object_list %}
+    <article class="release">
+        <header>
+            <h3><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h3>
+        </header>
+        <section>
+            {{ object.description|safe }}
+        </section>
+    </article>
+{% endfor %}
+
+</main>
+{% endblock %}
+

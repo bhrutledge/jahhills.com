@@ -62,6 +62,9 @@ class Release(AbstractCmsModel):
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
 
+    def get_absolute_url(self):
+        return reverse('release_detail', args=[self.slug])
+
     class Meta:
         ordering = ['-date']
 

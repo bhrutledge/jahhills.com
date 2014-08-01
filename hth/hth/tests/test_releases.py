@@ -30,3 +30,5 @@ class ReleaseTestCase(AdminTestCase):
         self.find_link('First release').click()
         self.assertIn('First release', self.browser.title)
 
+        # TODO: He adds album artwork
+        # TODO: He adds songs
