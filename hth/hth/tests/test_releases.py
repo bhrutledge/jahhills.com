@@ -11,6 +11,8 @@ class ReleaseTestCase(AdminTestCase):
 
         self.adminLogin()
 
+        # TODO: He creates an unpublished release
+
         # He adds a published release
 
         self.find_link('Releases').click()

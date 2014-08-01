@@ -11,7 +11,11 @@ class PostTestCase(AdminTestCase):
 
         self.adminLogin()
 
-        # He adds a published News post
+        # TODO: He adds a draft News post
+
+        # TODO: He previews the draft post on the site
+
+        # He publishes a News post
 
         self.find_link('Posts').click()
         self.find_link('Add post').click()
@@ -29,6 +33,4 @@ class PostTestCase(AdminTestCase):
         self.assertIn('First post', self.browser.title)
 
         # TODO: He schedules a post for the future
-
-        # TODO: He reviews a draft post on the site
 

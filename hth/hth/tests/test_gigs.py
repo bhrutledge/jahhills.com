@@ -34,6 +34,8 @@ class GigTestCase(AdminTestCase):
         self.find_name('details').send_keys('$10, 18+, Doors at 8pm')
         self.find_name('_save').click()
 
+        # TODO: He publishes the gigs
+
         # He verifies that they were published
 
         self.get_url('/calendar')
