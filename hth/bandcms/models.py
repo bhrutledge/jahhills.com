@@ -75,6 +75,9 @@ class Song(AbstractCmsModel):
     credits = models.TextField(blank=True)
     lyrics = models.TextField(blank=True)
 
+    def get_absolute_url(self):
+        return reverse('song_detail', args=[self.slug])
+
     class Meta:
         ordering = ['title']
 

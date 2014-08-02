@@ -33,3 +33,36 @@ class ModelTestCase(TestCase):
 
         self.assertEqual(list(Song.objects.all()), [first, second, third])
 
+    @override_settings(ROOT_URLCONF='bandcms.urls.releases')
+    def test_url_uses_slug(self):
+        s = Song(title='First', slug='first')
+        s.save()
+
+        self.assertEqual(s.get_absolute_url(), '/songs/first/')
+
+
+@override_settings(ROOT_URLCONF='bandcms.urls.releases')
+class UrlTestCase(TestCase):
+
+    def setUp(self):
+        publish = Song(title='Published', slug='published', publish=True)
+        publish.save()
+
+        draft = Song(title='Draft', slug='draft')
+        draft.save()
+
+    def test_can_view_published_songs(self):
+        response = self.client.get(reverse('song_detail', args=['published']))
+        self.assertTemplateUsed(response, 'bandcms/song_detail.html')
+        self.assertContains(response, 'Published')
+
+    def test_cant_view_draft_songs(self):
+        response = self.client.get(reverse('song_detail', args=['draft']))
+        self.assertEqual(response.status_code, 404)
+
+    def test_list_shows_published_songs(self):
+        response = self.client.get(reverse('song_list'))
+        self.assertTemplateUsed(response, 'bandcms/song_list.html')
+        self.assertContains(response, 'Published')
+        self.assertNotContains(response, 'Draft')
+

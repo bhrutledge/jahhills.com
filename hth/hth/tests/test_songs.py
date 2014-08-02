@@ -13,8 +13,6 @@ class SongTestCase(AdminTestCase):
                 publish=True).save()
 
     def test_can_create_song(self):
-        from bandcms.models import Release
-
         # Ryan logs into the admin
 
         self.adminLogin()
@@ -32,9 +30,18 @@ class SongTestCase(AdminTestCase):
 
         self.assertIn('First song', self.find_tag('body').text)
 
-        # TODO: He adds an unpublished song
+        # He adds an unpublished song
 
-        # TODO: He verifies that the published song is on the site
+        self.find_link('Add song').click()
+        self.find_name('title').send_keys('Second song')
+        self.find_name('_save').click()
+
+        # He verifies that the published song is on the site
+
+        self.get_url('/music/songs')
+        self.assertNotIn('Second song', self.find_tag('body').text)
+        self.find_link('First song').click()
+        self.assertIn('First song', self.browser.title)
 
         # TODO: He adds the songs to the release
 
