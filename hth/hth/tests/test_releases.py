@@ -46,4 +46,4 @@ class ReleaseTestCase(AdminTestCase):
         self.assertIn('First release', self.browser.title)
 
         # TODO: He adds album artwork
-        # TODO: He adds songs
+

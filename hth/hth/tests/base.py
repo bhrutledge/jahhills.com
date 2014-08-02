@@ -2,7 +2,7 @@ from django.test import TestCase
 from django.contrib.staticfiles.testing import StaticLiveServerCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-
+from selenium.webdriver.support.ui import Select
 
 class SeleniumTestCase(StaticLiveServerCase):
 
@@ -29,6 +29,9 @@ class SeleniumTestCase(StaticLiveServerCase):
 
     def find_css(self, css_selector):
         return self.browser.find_element_by_css_selector(css_selector)
+
+    def find_select(self, name):
+        return Select(self.find_name(name))
 
 
 class AdminTestCase(SeleniumTestCase):

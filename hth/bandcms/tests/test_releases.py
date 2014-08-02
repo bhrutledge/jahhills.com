@@ -18,7 +18,7 @@ class ModelTestCase(TestCase):
 
     def test_release_can_have_details(self):
         r = Release(title='First', slug='first', date='2014-08-01',
-                    description='Description', credits='credits')
+                    description='Description', credits='Credits')
         r.full_clean()
         r.save()
 

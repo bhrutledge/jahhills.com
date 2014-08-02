@@ -68,3 +68,13 @@ class Release(AbstractCmsModel):
     class Meta:
         ordering = ['-date']
 
+
+class Song(AbstractCmsModel):
+    title = models.CharField(max_length=200)
+    description = models.TextField(blank=True)
+    credits = models.TextField(blank=True)
+    lyrics = models.TextField(blank=True)
+
+    class Meta:
+        ordering = ['title']
+
