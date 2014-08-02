@@ -24,9 +24,9 @@ class CmsModelTestCase(TestCase):
         m = CmsModel(slug='test')
         self.assertEqual(str(m), 'test')
 
-    def test_publish_by_default(self):
+    def test_can_publish(self):
         now = timezone.now()
-        m = CmsModel(slug='test')
+        m = CmsModel(slug='test', publish=True)
         m.save()
 
         self.assertTrue(m.publish)
@@ -36,8 +36,8 @@ class CmsModelTestCase(TestCase):
         self.assertTrue(m.publish)
         self.assertEqual(m.publish_on.date(), now.date())
 
-    def test_no_date_for_drafts(self):
-        m = CmsModel(slug='test', publish=False)
+    def test_draft_by_default(self):
+        m = CmsModel(slug='test')
         m.save()
 
         self.assertIsNone(m.publish_on)
@@ -51,10 +51,10 @@ class CmsModelTestCase(TestCase):
         self.assertEqual(m.publish_on, y2k)
 
     def test_published_filter(self):
-        p = CmsModel(slug='published')
+        p = CmsModel(slug='published', publish=True)
         p.save()
 
-        d = CmsModel(slug='draft', publish=False)
+        d = CmsModel(slug='draft')
         d.save()
 
         published = list(CmsModel.published.all())

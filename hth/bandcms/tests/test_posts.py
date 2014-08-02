@@ -25,20 +25,20 @@ class ModelTestCase(TestCase):
         p.save()
 
     def test_posts_ordered_by_date(self):
-        first = Post(title='First', slug='first',
+        draft = Post(title='Draft', slug='draft')
+        draft.save()
+
+        first = Post(title='First', slug='first', publish=True,
                      publish_on=datetime(2014, 7, 22, tzinfo=timezone.utc))
         first.save()
 
-        old = Post(title='Old', slug='old',
+        old = Post(title='Old', slug='old', publish=True,
                    publish_on=datetime(2014, 7, 21, tzinfo=timezone.utc))
         old.save()
 
-        new = Post(title='New', slug='new',
+        new = Post(title='New', slug='new', publish=True,
                    publish_on=datetime(2014, 7, 23, tzinfo=timezone.utc))
         new.save()
-
-        draft = Post(title='Draft', slug='draft')
-        draft.save()
 
         self.assertEqual(list(Post.objects.all()), [draft, new, first, old])
 
@@ -54,10 +54,10 @@ class ModelTestCase(TestCase):
 class UrlTestCase(TestCase):
 
     def setUp(self):
-        publish = Post(title='Foo', slug='foo')
+        publish = Post(title='Foo', slug='foo', publish=True)
         publish.save()
 
-        draft = Post(title='Draft', slug='draft', publish=False)
+        draft = Post(title='Draft', slug='draft')
         draft.save()
 
     def test_can_view_published_posts(self):

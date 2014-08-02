@@ -51,11 +51,13 @@ class UrlTestCase(TestCase):
         tomorrow = today_str(1)
         yesterday = today_str(-1)
 
-        Gig(date=today, slug=today, venue='Today', city='c').save()
-        Gig(date=tomorrow, slug=tomorrow, venue='Tomorrow', city='c').save()
-        Gig(date=yesterday, slug=yesterday, venue='Yesterday', city='c').save()
-        Gig(date=today, slug=today+'-d', venue='Draft', city='c',
-            publish=False).save()
+        Gig(date=today, slug=today, venue='Today', city='c',
+            publish=True).save()
+        Gig(date=tomorrow, slug=tomorrow, venue='Tomorrow', city='c',
+            publish=True).save()
+        Gig(date=yesterday, slug=yesterday, venue='Yesterday', city='c',
+            publish=True).save()
+        Gig(date=today, slug=today+'-d', venue='Draft', city='c').save()
 
     def test_list_shows_published_gigs(self):
         response = self.client.get(reverse('gig_list'))

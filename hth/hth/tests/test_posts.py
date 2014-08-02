@@ -11,11 +11,7 @@ class PostTestCase(AdminTestCase):
 
         self.adminLogin()
 
-        # TODO: He adds a draft News post
-
-        # TODO: He previews the draft post on the site
-
-        # He publishes a News post
+        # He adds a draft News post
 
         self.find_link('Posts').click()
         self.find_link('Add post').click()
@@ -25,6 +21,23 @@ class PostTestCase(AdminTestCase):
         self.find_name('_save').click()
 
         self.assertIn('First post', self.find_tag('body').text)
+
+        # TODO: He previews the draft post on the site
+
+        # He makes sure that it's not published
+
+        self.get_url('/news')
+        self.assertNotIn('First post', self.find_tag('body').text)
+        self.get_url('/news/first-post')
+        self.assertNotIn('First post', self.browser.title)
+
+        # He publishes the post
+
+        self.get_url('/admin')
+        self.find_link('Posts').click()
+        self.find_link('First post').click()
+        self.find_name('publish').click()
+        self.find_name('_save').click()
 
         # He verifies that it was published
 

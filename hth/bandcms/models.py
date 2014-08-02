@@ -12,7 +12,7 @@ class PublishedManager(models.Manager):
 
 class AbstractCmsModel(models.Model):
     slug = models.SlugField(unique=True)
-    publish = models.BooleanField(default=True)
+    publish = models.BooleanField(default=False)
     publish_on = models.DateTimeField(blank=True, null=True)
 
     objects = models.Manager()

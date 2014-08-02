@@ -46,10 +46,10 @@ class ModelTestCase(TestCase):
 class UrlTestCase(TestCase):
 
     def setUp(self):
-        publish = Release(title='Published', slug='published')
+        publish = Release(title='Published', slug='published', publish=True)
         publish.save()
 
-        draft = Release(title='Draft', slug='draft', publish=False)
+        draft = Release(title='Draft', slug='draft')
         draft.save()
 
     def test_can_view_published_releases(self):
