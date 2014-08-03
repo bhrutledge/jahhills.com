@@ -29,7 +29,8 @@ admin.site.register(Release, ReleaseAdmin)
 
 
 class SongAdmin(admin.ModelAdmin):
-    fields = ('title', 'slug', 'description', 'credits', 'lyrics',
+    fields = ('title', 'slug', 'release', 'track',
+              'description', 'credits', 'lyrics',
               'publish', 'publish_on')
     prepopulated_fields = {'slug': ('title',)}
     list_display = ('title', 'publish', 'publish_on')

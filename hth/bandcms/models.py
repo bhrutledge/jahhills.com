@@ -62,6 +62,10 @@ class Release(AbstractCmsModel):
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
 
+    @property
+    def tracks(self):
+        return self.songs.filter(publish=True).order_by('track')
+
     def get_absolute_url(self):
         return reverse('release_detail', args=[self.slug])
 
@@ -74,6 +78,9 @@ class Song(AbstractCmsModel):
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
     lyrics = models.TextField(blank=True)
+    release = models.ForeignKey(Release, related_name='songs',
+                                blank=True, null=True)
+    track = models.PositiveIntegerField(blank=True, null=True)
 
     def get_absolute_url(self):
         return reverse('song_detail', args=[self.slug])

@@ -1,7 +1,7 @@
 from django.test import TestCase, override_settings
 from django.core.urlresolvers import reverse
 
-from ..models import AbstractCmsModel, Song
+from ..models import AbstractCmsModel, Song, Release
 
 
 class ModelTestCase(TestCase):
@@ -32,6 +32,35 @@ class ModelTestCase(TestCase):
         second.save()
 
         self.assertEqual(list(Song.objects.all()), [first, second, third])
+
+    def test_tracks_can_be_added_to_release(self):
+        r = Release(title='Release', slug='release')
+        r.save()
+
+        publish = Song(title='Publish', slug='publish', release=r, track=1,
+                       publish=True)
+        publish.save()
+
+        draft = Song(title='Draft', slug='draft', release=r, track=2)
+        draft.save()
+
+        tracks = list(r.tracks.all())
+        self.assertIn(publish, tracks)
+        self.assertNotIn(draft, tracks)
+
+    def test_tracks_ordered_by_number(self):
+        r = Release(title='Release', slug='release')
+        r.save()
+
+        s1 = Song(title='Z Song', slug='z', release=r, track=1, publish=True)
+        s2 = Song(title='B Song', slug='b', release=r, track=2, publish=True)
+        s3 = Song(title='A Song', slug='a', release=r, track=3, publish=True)
+
+        s3.save()
+        s1.save()
+        s2.save()
+
+        self.assertEqual(list(r.tracks.all()), [s1, s2, s3])
 
     @override_settings(ROOT_URLCONF='bandcms.urls.songs')
     def test_url_uses_slug(self):

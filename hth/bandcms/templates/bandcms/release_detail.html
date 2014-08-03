@@ -15,6 +15,13 @@
         <section>
             {{ object.credits|safe }}
         </section>
+        <section>
+            <ul>
+            {% for song in object.tracks %}
+                <li><a href="{{ song.get_absolute_url }}">{{ song.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </section>
     </article>
 </main>
 {% endblock %}

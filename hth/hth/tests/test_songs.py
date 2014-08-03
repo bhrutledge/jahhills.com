@@ -43,8 +43,26 @@ class SongTestCase(AdminTestCase):
         self.find_link('First song').click()
         self.assertIn('First song', self.browser.title)
 
-        # TODO: He adds the songs to the release
+        # He adds the songs to the release
 
-        #self.find_select('release').select_by_value('first-release')
-        #self.find_name('track').send_keys('1')
+        self.get_url('/admin')
+        self.find_link('Songs').click()
+        self.find_link('First song').click()
+        self.find_select('release').select_by_visible_text('first-release')
+        self.find_name('track').send_keys('1')
+        self.find_name('_save').click()
+
+        self.find_link('Second song').click()
+        self.find_select('release').select_by_visible_text('first-release')
+        self.find_name('track').send_keys('2')
+        self.find_name('_save').click()
+
+        # He verifies that the published song is shown on the release
+
+        self.get_url('/music/first-release')
+        self.assertIn('First song', self.find_tag('body').text)
+        self.assertNotIn('Second song', self.find_tag('body').text)
+
+        self.find_link('First song').click()
+        self.assertIn('First song', self.browser.title)
 
