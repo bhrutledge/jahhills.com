@@ -33,15 +33,15 @@ class ModelTestCase(TestCase):
 
         self.assertEqual(list(Song.objects.all()), [first, second, third])
 
-    @override_settings(ROOT_URLCONF='bandcms.urls.releases')
+    @override_settings(ROOT_URLCONF='bandcms.urls.songs')
     def test_url_uses_slug(self):
         s = Song(title='First', slug='first')
         s.save()
 
-        self.assertEqual(s.get_absolute_url(), '/songs/first/')
+        self.assertEqual(s.get_absolute_url(), '/first/')
 
 
-@override_settings(ROOT_URLCONF='bandcms.urls.releases')
+@override_settings(ROOT_URLCONF='bandcms.urls.songs')
 class UrlTestCase(TestCase):
 
     def setUp(self):
