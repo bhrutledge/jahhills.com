@@ -47,3 +47,5 @@ class ReleaseTestCase(AdminTestCase):
 
         # TODO: He adds album artwork
 
+        # TODO: He adds an audio player?
+

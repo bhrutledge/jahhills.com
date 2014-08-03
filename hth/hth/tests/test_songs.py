@@ -66,3 +66,4 @@ class SongTestCase(AdminTestCase):
         self.find_link('First song').click()
         self.assertIn('First song', self.browser.title)
 
+        # TODO: He adds an audio player?
