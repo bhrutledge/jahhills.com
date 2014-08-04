@@ -1,9 +1,11 @@
+from django.test import override_settings
 from time import sleep
 
 from bandcms.tests.utils import today_str
 from .base import AdminTestCase
 
 
+@override_settings(ROOT_URLCONF='bandcms.tests.live.urls')
 class GigTestCase(AdminTestCase):
 
     def test_can_create_gig(self):
@@ -50,7 +52,7 @@ class GigTestCase(AdminTestCase):
 
         # He verifies that only the published gigs are visible
 
-        self.get_url('/calendar')
+        self.get_url('/gigs')
         self.assertIn('Great Scott', self.find_tag('body').text)
         self.assertIn('Middle East', self.find_tag('body').text)
         self.assertNotIn('Red Star Union', self.find_tag('body').text)

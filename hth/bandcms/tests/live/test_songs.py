@@ -1,3 +1,4 @@
+from django.test import override_settings
 from time import sleep
 
 from bandcms.tests.utils import today_str
@@ -5,6 +6,7 @@ from bandcms.models import Release
 from .base import AdminTestCase
 
 
+@override_settings(ROOT_URLCONF='bandcms.tests.live.urls')
 class SongTestCase(AdminTestCase):
 
     def setUp(self):
@@ -38,7 +40,7 @@ class SongTestCase(AdminTestCase):
 
         # He verifies that the published song is on the site
 
-        self.get_url('/music/songs')
+        self.get_url('/songs')
         self.assertNotIn('Second song', self.find_tag('body').text)
         self.find_link('First song').click()
         self.assertIn('First song', self.browser.title)
@@ -59,7 +61,7 @@ class SongTestCase(AdminTestCase):
 
         # He verifies that the published song is shown on the release
 
-        self.get_url('/music/first-release')
+        self.get_url('/releases/first-release')
         self.assertIn('First song', self.find_tag('body').text)
         self.assertNotIn('Second song', self.find_tag('body').text)
 

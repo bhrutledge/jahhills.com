@@ -4,6 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
+
 class SeleniumTestCase(StaticLiveServerCase):
 
     def setUp(self):
@@ -36,7 +37,7 @@ class SeleniumTestCase(StaticLiveServerCase):
 
 class AdminTestCase(SeleniumTestCase):
 
-    fixtures = ['hth/admin.json']
+    fixtures = ['bandcms/admin.json']
 
     def adminLogin(self):
         self.get_url('/admin')

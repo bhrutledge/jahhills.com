@@ -1,9 +1,11 @@
+from django.test import override_settings
 from time import sleep
 
 from bandcms.tests.utils import today_str
 from .base import AdminTestCase
 
 
+@override_settings(ROOT_URLCONF='bandcms.tests.live.urls')
 class ReleaseTestCase(AdminTestCase):
 
     def test_can_create_release(self):
@@ -26,9 +28,9 @@ class ReleaseTestCase(AdminTestCase):
 
         # He verifies that it's not published
 
-        self.get_url('/music')
+        self.get_url('/releases')
         self.assertNotIn('First release', self.find_tag('body').text)
-        self.get_url('/music/first-release')
+        self.get_url('/releases/first-release')
         self.assertNotIn('First release', self.browser.title)
 
         # He publishes the release
@@ -41,7 +43,7 @@ class ReleaseTestCase(AdminTestCase):
 
         # He verifies that it was published
 
-        self.get_url('/music')
+        self.get_url('/releases')
         self.find_link('First release').click()
         self.assertIn('First release', self.browser.title)
 

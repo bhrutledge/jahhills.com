@@ -1,9 +1,11 @@
+from django.test import override_settings
 from datetime import date, timedelta
 from time import sleep
 
 from .base import AdminTestCase
 
 
+@override_settings(ROOT_URLCONF='bandcms.tests.live.urls')
 class PostTestCase(AdminTestCase):
 
     def test_can_create_post(self):
@@ -11,7 +13,7 @@ class PostTestCase(AdminTestCase):
 
         self.adminLogin()
 
-        # He adds a draft News post
+        # He adds a draft Post
 
         self.find_link('Posts').click()
         self.find_link('Add post').click()
@@ -26,9 +28,9 @@ class PostTestCase(AdminTestCase):
 
         # He makes sure that it's not published
 
-        self.get_url('/news')
+        self.get_url('/posts')
         self.assertNotIn('First post', self.find_tag('body').text)
-        self.get_url('/news/first-post')
+        self.get_url('/posts/first-post')
         self.assertNotIn('First post', self.browser.title)
 
         # He publishes the post
@@ -41,7 +43,7 @@ class PostTestCase(AdminTestCase):
 
         # He verifies that it was published
 
-        self.get_url('/news')
+        self.get_url('/posts')
         self.find_link('First post').click()
         self.assertIn('First post', self.browser.title)
 
