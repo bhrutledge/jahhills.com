@@ -4,6 +4,7 @@ from django.core.urlresolvers import reverse
 from ..models import AbstractCmsModel, Song, Release
 
 
+@override_settings(ROOT_URLCONF='bandcms.urls')
 class ModelTestCase(TestCase):
 
     def test_song_is_cms_model(self):
@@ -62,15 +63,14 @@ class ModelTestCase(TestCase):
 
         self.assertEqual(list(r.tracks.all()), [s1, s2, s3])
 
-    @override_settings(ROOT_URLCONF='bandcms.urls.songs')
     def test_url_uses_slug(self):
         s = Song(title='First', slug='first')
         s.save()
 
-        self.assertEqual(s.get_absolute_url(), '/first/')
+        self.assertEqual(s.get_absolute_url(), '/songs/first/')
 
 
-@override_settings(ROOT_URLCONF='bandcms.urls.songs')
+@override_settings(ROOT_URLCONF='bandcms.urls')
 class UrlTestCase(TestCase):
 
     def setUp(self):

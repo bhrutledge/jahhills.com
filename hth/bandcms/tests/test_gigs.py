@@ -43,7 +43,7 @@ class ModelTestCase(TestCase):
         self.assertEqual(list(Gig.objects.all()), [g1, g2, g3])
 
 
-@override_settings(ROOT_URLCONF='bandcms.urls.gigs')
+@override_settings(ROOT_URLCONF='bandcms.urls')
 class UrlTestCase(TestCase):
 
     def setUp(self):

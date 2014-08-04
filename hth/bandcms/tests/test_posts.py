@@ -7,6 +7,7 @@ from django.core.urlresolvers import reverse
 from ..models import AbstractCmsModel, Post
 
 
+@override_settings(ROOT_URLCONF='bandcms.urls')
 class ModelTestCase(TestCase):
 
     def test_post_is_cms_model(self):
@@ -42,15 +43,14 @@ class ModelTestCase(TestCase):
 
         self.assertEqual(list(Post.objects.all()), [draft, new, first, old])
 
-    @override_settings(ROOT_URLCONF='bandcms.urls.posts')
     def test_url_uses_slug(self):
         p = Post(title='First', slug='first')
         p.save()
 
-        self.assertEqual(p.get_absolute_url(), '/first/')
+        self.assertEqual(p.get_absolute_url(), '/posts/first/')
 
 
-@override_settings(ROOT_URLCONF='bandcms.urls.posts')
+@override_settings(ROOT_URLCONF='bandcms.urls')
 class UrlTestCase(TestCase):
 
     def setUp(self):
