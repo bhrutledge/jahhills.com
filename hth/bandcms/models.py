@@ -64,7 +64,11 @@ class Release(AbstractCmsModel):
 
     @property
     def tracks(self):
-        return self.songs.filter(publish=True).order_by('track')
+        return self.song_set.filter(publish=True).order_by('track')
+
+    @property
+    def videos(self):
+        return self.video_set.filter(publish=True)
 
     def get_absolute_url(self):
         return reverse('release_detail', args=[self.slug])
@@ -78,8 +82,7 @@ class Song(AbstractCmsModel):
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
     lyrics = models.TextField(blank=True)
-    release = models.ForeignKey(Release, related_name='songs',
-                                blank=True, null=True)
+    release = models.ForeignKey(Release, blank=True, null=True)
     track = models.PositiveIntegerField(blank=True, null=True)
 
     def get_absolute_url(self):
@@ -88,3 +91,17 @@ class Song(AbstractCmsModel):
     class Meta:
         ordering = ['title']
 
+
+class Video(AbstractCmsModel):
+    title = models.CharField(max_length=200)
+    source_url = models.CharField(max_length=200, blank=True)
+    embed_code = models.TextField(blank=True)
+    description = models.TextField(blank=True)
+    credits = models.TextField(blank=True)
+    release = models.ForeignKey(Release, blank=True, null=True)
+
+    class Meta:
+        ordering = ['publish', '-publish_on']
+
+    def get_absolute_url(self):
+        return reverse('video_detail', args=[self.slug])

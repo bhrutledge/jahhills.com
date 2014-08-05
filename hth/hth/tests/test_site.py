@@ -26,3 +26,6 @@ class SiteTestCase(SeleniumTestCase):
         self.get_url('/music/songs')
         self.assertIn('Songs', self.browser.title)
 
+        self.get_url('/videos')
+        self.assertIn('Videos', self.browser.title)
+

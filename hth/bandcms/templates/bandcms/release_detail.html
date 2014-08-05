@@ -16,9 +16,18 @@
             {{ object.credits|safe }}
         </section>
         <section>
+            <h3>Tracks</h3>
             <ul>
             {% for song in object.tracks %}
                 <li><a href="{{ song.get_absolute_url }}">{{ song.title }}</a></li>
+            {% endfor %}
+            </ul>
+        </section>
+        <section>
+            <h3>Videos</h3>
+            <ul>
+            {% for video in object.videos %}
+                <li><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></li>
             {% endfor %}
             </ul>
         </section>

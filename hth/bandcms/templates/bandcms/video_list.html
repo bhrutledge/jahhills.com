@@ -1,0 +1,22 @@
+{% extends "bandcms/base.html" %}
+
+{% block title %}Videos{% endblock %}
+
+{% block content %}
+<main class="list">
+    <h2>Videos</h2>
+
+{% for object in object_list %}
+    <article class="video">
+        <header>
+            <h3><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h3>
+        </header>
+        <section>
+            {{ object.description|safe }}
+        </section>
+    </article>
+{% endfor %}
+
+</main>
+{% endblock %}
+

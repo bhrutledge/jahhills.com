@@ -19,7 +19,7 @@ class ModelTestCase(TestCase):
 
     def test_song_can_have_details(self):
         s = Song(title='First', slug='first',
-                 description='Description', credits='credits', lyrics='Lyrics')
+                 description='Description', credits='Credits', lyrics='Lyrics')
         s.full_clean()
         s.save()
 

@@ -2,7 +2,7 @@ from django.conf.urls import patterns, include, url
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 
-from .models import Post, Gig, Release, Song
+from .models import Post, Gig, Release, Song, Video
 
 
 post_patterns = patterns('',
@@ -16,7 +16,6 @@ gig_patterns = patterns('',
     url(r'^$',
         ListView.as_view(queryset=Gig.published.all()), name='gig_list'),
 )
-
 
 release_patterns = patterns('',
     url(r'^$',
@@ -36,10 +35,20 @@ song_patterns = patterns('',
         name='song_detail'),
 )
 
+video_patterns = patterns('',
+    url(r'^$',
+        ListView.as_view(queryset=Video.published.all()),
+        name='video_list'),
+    url(r'^(?P<slug>[-_\w]+)/$',
+        DetailView.as_view(queryset=Video.published.all()),
+        name='video_detail'),
+)
+
 urlpatterns = patterns('',
     url(r'^posts/', include(post_patterns)),
     url(r'^gigs/', include(gig_patterns)),
     url(r'^releases/', include(release_patterns)),
     url(r'^songs/', include(song_patterns)),
+    url(r'^videos/', include(video_patterns)),
 )
 

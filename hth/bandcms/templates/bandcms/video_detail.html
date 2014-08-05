@@ -4,18 +4,18 @@
 
 {% block content %}
 <main class="detail">
-    <article class="song">
+    <article class="video">
         <header>
-            <h2>{{ object.title }}</h2>
+            <h2><a href="{{ object.source_url }}">{{ object.title }}</a></h2>
+            <p>{{ object.publish_on|date }}</p>
         </header>
+        <section>
+            {{ object.embed_code|safe }}
         <section>
             {{ object.description|safe }}
         </section>
         <section>
             {{ object.credits|safe }}
-        </section>
-        <section>
-            {{ object.lyrics|safe }}
         </section>
     </article>
 </main>

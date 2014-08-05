@@ -11,5 +11,6 @@ urlpatterns = patterns('',
     url(r'^calendar/', include(bandcms.urls.gig_patterns)),
     url(r'^music/songs/', include(bandcms.urls.song_patterns)),
     url(r'^music/', include(bandcms.urls.release_patterns)),
+    url(r'^videos/', include(bandcms.urls.video_patterns)),
 )
 

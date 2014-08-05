@@ -1,7 +1,6 @@
 from django.test import override_settings
 from time import sleep
 
-from bandcms.tests.utils import today_str
 from bandcms.models import Release
 from .base import AdminTestCase
 
@@ -19,7 +18,7 @@ class SongTestCase(AdminTestCase):
 
         self.adminLogin()
 
-        # He adds a song to the release
+        # He adds a published song
 
         self.find_link('Songs').click()
         self.find_link('Add song').click()
