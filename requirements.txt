@@ -1,4 +1,4 @@
-Django==1.7c1
+Django==1.7c2
 django-debug-toolbar==1.2.1
 pytz==2014.4
 selenium==2.42.1
