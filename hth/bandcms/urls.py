@@ -4,6 +4,8 @@ from django.views.generic.detail import DetailView
 
 from .models import Post, Gig, Release, Song, Video
 
+# TODO: Set context_object_name
+# TODO: release_patterns = patterns('', list_url(Release), detail_url(Release))
 
 post_patterns = patterns('',
     url(r'^$',
