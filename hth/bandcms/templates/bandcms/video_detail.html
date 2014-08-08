@@ -10,6 +10,7 @@
             <p>{{ object.publish_on|date }}</p>
         </header>
         <section>
+            <!-- TODO: Template tag or model property for source urls -->
             {{ object.embed_code|safe }}
         <section>
             {{ object.description|safe }}

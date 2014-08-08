@@ -6,6 +6,9 @@ from django.utils import timezone
 
 from ..models import CmsModel
 
+
+# TODO: Make this a base class, subclass for each model?
+# TODO: Look at ddt and/or nose generators
 class CmsModelTestCase(TestCase):
 
     def test_model_can_be_saved(self):
@@ -14,6 +17,7 @@ class CmsModelTestCase(TestCase):
         m.save()
 
         CmsModel.objects.get(slug='test')
+        # TODO: assert slug is 'test'
 
     def test_slug_is_unique(self):
         CmsModel(slug='test').save()
@@ -40,6 +44,7 @@ class CmsModelTestCase(TestCase):
         m = CmsModel(slug='test')
         m.save()
 
+        # TODO: assert publish is false
         self.assertIsNone(m.publish_on)
 
     def test_can_set_date(self):

@@ -45,6 +45,7 @@ class Post(AbstractCmsModel):
         ordering = ['publish', '-publish_on']
 
 
+# TODO: Add help text
 class Gig(AbstractCmsModel):
     date = models.DateField()
     venue = models.CharField(max_length=200)

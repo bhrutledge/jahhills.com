@@ -6,6 +6,7 @@ from .models import Post, Gig, Release, Song, Video
 
 # TODO: Set context_object_name
 # TODO: release_patterns = patterns('', list_url(Release), detail_url(Release))
+# TODO: Move logic into views.py
 
 post_patterns = patterns('',
     url(r'^$',
