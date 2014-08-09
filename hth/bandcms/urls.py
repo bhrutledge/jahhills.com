@@ -2,18 +2,20 @@ from django.conf.urls import patterns, include, url
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 
-from .models import Post, Gig, Release, Song, Video
+from .models import Gig, Release, Song, Video
+from . import views
 
-# TODO: Set context_object_name
 # TODO: release_patterns = patterns('', list_url(Release), detail_url(Release))
 # TODO: Move logic into views.py
 # TODO: Use namespaces
 
 post_patterns = patterns('',
     url(r'^$',
-        ListView.as_view(queryset=Post.published.all()), name='post_list'),
+        views.PostListView.as_view(),
+        name='post_list'),
     url(r'^(?P<slug>[-_\w]+)/$',
-        DetailView.as_view(queryset=Post.published.all()), name='post_detail'),
+        views.PostDetailView.as_view(),
+        name='post_detail'),
 )
 
 gig_patterns = patterns('',

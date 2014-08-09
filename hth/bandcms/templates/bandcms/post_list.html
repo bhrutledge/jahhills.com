@@ -6,11 +6,11 @@
 <main class="list">
     <h2>Posts</h2>
 
-{% for object in object_list %}
+{% for post in post_list %}
     <article class="post">
         <header>
-            <h3><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h3>
-            <p>{{ object.publish_on|date }}</p>
+            <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+            <p>{{ post.publish_on|date }}</p>
         </header>
     </article>
 {% endfor %}

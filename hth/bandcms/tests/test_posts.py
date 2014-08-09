@@ -116,17 +116,14 @@ class PostTestCase(TestCase):
 class ViewTestCase(TestCase):
 
     def setUp(self):
-        publish = Post(title='Publish', slug='publish', publish=True)
-        publish.save()
+        self.publish = Post(title='Publish', slug='publish', publish=True)
+        self.publish.save()
 
-        draft = Post(title='Draft', slug='draft')
-        draft.save()
+        self.draft = Post(title='Draft', slug='draft')
+        self.draft.save()
 
     def test_url_uses_slug(self):
-        p = Post(title='First', slug='first')
-        p.save()
-
-        self.assertEqual(p.get_absolute_url(), '/posts/first/')
+        self.assertEqual(self.publish.get_absolute_url(), '/posts/publish/')
 
     def test_list_name(self):
         self.assertEqual(reverse('post_list'), '/posts/')
