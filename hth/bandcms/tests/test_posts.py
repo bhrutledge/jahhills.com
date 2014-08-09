@@ -20,9 +20,6 @@ class PostTestCase(TestCase):
         blank_fields = set(cm.exception.message_dict.keys())
         self.assertEquals(required_fields, blank_fields)
 
-        # Shouldn't raise exception
-        Post(title='First', slug='first').full_clean()
-
     def test_can_be_saved(self):
         p = Post(title='First', slug='first')
         p.full_clean()
@@ -30,7 +27,7 @@ class PostTestCase(TestCase):
 
         p1 = Post.objects.get(slug='first')
         self.assertEqual(p, p1)
-        # TODO: Assert title and slug?
+        # TODO: Assert slug?
 
     def test_slug_must_be_unique(self):
         p = Post(title='Test', slug='test')
@@ -38,7 +35,8 @@ class PostTestCase(TestCase):
         p.save()
 
         with self.assertRaises(IntegrityError):
-            Post(title='Test', slug='test').save()
+            p = Post(title='Test', slug='test')
+            p.save()
 
     def test_str_is_slug(self):
         p = Post(title='Test', slug='test')
