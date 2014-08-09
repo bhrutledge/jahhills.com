@@ -9,21 +9,21 @@ from django.utils import timezone
 from ..models import Post
 
 
-class ModelTestCase(TestCase):
+class PostTestCase(TestCase):
 
-    def test_post_must_have_title_and_slug(self):
-        with self.assertRaises(ValidationError):
+    def test_required_fields(self):
+        required_fields = set(['title', 'slug'])
+
+        with self.assertRaises(ValidationError) as cm:
             Post().full_clean()
 
-        with self.assertRaises(ValidationError):
-            Post(title='First').full_clean()
+        blank_fields = set(cm.exception.message_dict.keys())
+        self.assertEquals(required_fields, blank_fields)
 
-        with self.assertRaises(ValidationError):
-            Post(slug='first').full_clean()
-
+        # Shouldn't raise exception
         Post(title='First', slug='first').full_clean()
 
-    def test_post_can_be_saved(self):
+    def test_can_be_saved(self):
         p = Post(title='First', slug='first')
         p.full_clean()
         p.save()
@@ -32,7 +32,7 @@ class ModelTestCase(TestCase):
         self.assertEqual(p, p1)
         # TODO: Assert title and slug?
 
-    def test_slug_is_unique(self):
+    def test_slug_must_be_unique(self):
         p = Post(title='Test', slug='test')
         p.full_clean()
         p.save()
@@ -62,7 +62,7 @@ class ModelTestCase(TestCase):
         p.full_clean()
         p.save()
 
-        # TODO: assert publish is false
+        self.assertFalse(p.publish)
         self.assertIsNone(p.publish_on)
 
     def test_can_set_date(self):
@@ -87,13 +87,13 @@ class ModelTestCase(TestCase):
         self.assertIn(publish, published)
         self.assertNotIn(draft, published)
 
-    def test_post_can_have_body(self):
+    def test_can_have_body(self):
         p = Post(title='First', slug='first', body='Content')
         p.full_clean()
         p.save()
         # TODO: Assert body?
 
-    def test_posts_ordered_by_date(self):
+    def test_ordered_by_date(self):
         draft = Post(title='Draft', slug='draft')
         draft.save()
 
