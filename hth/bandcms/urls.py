@@ -2,12 +2,10 @@ from django.conf.urls import patterns, include, url
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 
-from .models import Gig, Release, Song, Video
 from . import views
 
-# TODO: release_patterns = patterns('', list_url(Release), detail_url(Release))
-# TODO: Move logic into views.py
-# TODO: Use namespaces
+# TODO: post_patterns = patterns('', list_url(Release), detail_url(Release))
+# TODO: Use namespaces?
 
 post_patterns = patterns('',
     url(r'^$',
@@ -20,33 +18,34 @@ post_patterns = patterns('',
 
 gig_patterns = patterns('',
     url(r'^$',
-        ListView.as_view(queryset=Gig.published.all()), name='gig_list'),
+        views.GigListView.as_view(),
+        name='gig_list')
 )
 
 release_patterns = patterns('',
     url(r'^$',
-        ListView.as_view(queryset=Release.published.all()),
+        views.ReleaseListView.as_view(),
         name='release_list'),
     url(r'^(?P<slug>[-_\w]+)/$',
-        DetailView.as_view(queryset=Release.published.all()),
+        views.ReleaseDetailView.as_view(),
         name='release_detail'),
 )
 
 song_patterns = patterns('',
     url(r'^$',
-        ListView.as_view(queryset=Song.published.all()),
+        views.SongListView.as_view(),
         name='song_list'),
     url(r'^(?P<slug>[-_\w]+)/$',
-        DetailView.as_view(queryset=Song.published.all()),
+        views.SongDetailView.as_view(),
         name='song_detail'),
 )
 
 video_patterns = patterns('',
     url(r'^$',
-        ListView.as_view(queryset=Video.published.all()),
+        views.VideoListView.as_view(),
         name='video_list'),
     url(r'^(?P<slug>[-_\w]+)/$',
-        DetailView.as_view(queryset=Video.published.all()),
+        views.VideoDetailView.as_view(),
         name='video_detail'),
 )
 
