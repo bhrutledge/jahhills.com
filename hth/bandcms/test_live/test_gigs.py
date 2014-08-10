@@ -5,7 +5,7 @@ from bandcms.tests.utils import today_str
 from .base import AdminTestCase
 
 
-@override_settings(ROOT_URLCONF='bandcms.tests.live.urls')
+@override_settings(ROOT_URLCONF='bandcms.test_live.urls')
 class GigTestCase(AdminTestCase):
 
     def test_can_create_gig(self):

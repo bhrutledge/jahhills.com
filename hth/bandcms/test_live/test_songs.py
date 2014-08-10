@@ -5,7 +5,7 @@ from bandcms.models import Release
 from .base import AdminTestCase
 
 
-@override_settings(ROOT_URLCONF='bandcms.tests.live.urls')
+@override_settings(ROOT_URLCONF='bandcms.test_live.urls')
 class SongTestCase(AdminTestCase):
 
     def setUp(self):

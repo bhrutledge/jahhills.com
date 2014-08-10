@@ -5,7 +5,7 @@ from time import sleep
 from .base import AdminTestCase
 
 
-@override_settings(ROOT_URLCONF='bandcms.tests.live.urls')
+@override_settings(ROOT_URLCONF='bandcms.test_live.urls')
 class PostTestCase(AdminTestCase):
 
     def test_can_create_post(self):

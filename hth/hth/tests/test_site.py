@@ -1,6 +1,6 @@
 from time import sleep
 
-from bandcms.tests.live.base import SeleniumTestCase
+from bandcms.test_live.base import SeleniumTestCase
 
 
 class SiteTestCase(SeleniumTestCase):
