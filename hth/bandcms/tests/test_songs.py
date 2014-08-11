@@ -1,14 +1,15 @@
 from django.test import TestCase, override_settings
 from django.core.urlresolvers import reverse
 
-from ..models import AbstractCmsModel, Song, Release
+from ..models import PublishedModel, Song, Release
 
+# TODO: Update to match test_posts
 
 @override_settings(ROOT_URLCONF='bandcms.urls')
 class ModelTestCase(TestCase):
 
     def test_song_is_cms_model(self):
-        self.assertTrue(issubclass(Song, AbstractCmsModel))
+        self.assertTrue(issubclass(Song, PublishedModel))
 
     def test_can_save_song(self):
         s = Song(title='First', slug='first')

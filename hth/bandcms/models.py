@@ -10,7 +10,7 @@ class PublishedManager(models.Manager):
         return super().get_queryset().filter(publish=True)
 
 
-class AbstractCmsModel(models.Model):
+class PublishedModel(models.Model):
     slug = models.SlugField(unique=True)
     publish = models.BooleanField(default=False)
     publish_on = models.DateTimeField(blank=True, null=True)
@@ -30,11 +30,7 @@ class AbstractCmsModel(models.Model):
         super().save(*args, **kwargs)
 
 
-class CmsModel(AbstractCmsModel):
-    pass
-
-
-class Post(AbstractCmsModel):
+class Post(PublishedModel):
     title = models.CharField(max_length=200)
     body = models.TextField(blank=True)
 
@@ -46,7 +42,7 @@ class Post(AbstractCmsModel):
 
 
 # TODO: Add help text
-class Gig(AbstractCmsModel):
+class Gig(PublishedModel):
     date = models.DateField()
     venue = models.CharField(max_length=200)
     city = models.CharField(max_length=200)
@@ -57,7 +53,7 @@ class Gig(AbstractCmsModel):
         ordering = ['-date']
 
 
-class Release(AbstractCmsModel):
+class Release(PublishedModel):
     title = models.CharField(max_length=200)
     date = models.DateField(blank=True, null=True)
     description = models.TextField(blank=True)
@@ -78,7 +74,7 @@ class Release(AbstractCmsModel):
         ordering = ['-date']
 
 
-class Song(AbstractCmsModel):
+class Song(PublishedModel):
     title = models.CharField(max_length=200)
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
@@ -93,7 +89,7 @@ class Song(AbstractCmsModel):
         ordering = ['title']
 
 
-class Video(AbstractCmsModel):
+class Video(PublishedModel):
     title = models.CharField(max_length=200)
     source_url = models.CharField(max_length=200, blank=True)
     embed_code = models.TextField(blank=True)
@@ -106,3 +102,4 @@ class Video(AbstractCmsModel):
 
     def get_absolute_url(self):
         return reverse('video_detail', args=[self.slug])
+

@@ -1,14 +1,15 @@
 from django.test import TestCase, override_settings
 from django.core.urlresolvers import reverse
 
-from ..models import AbstractCmsModel, Release
+from ..models import PublishedModel, Release
 
+# TODO: Update to match test_posts
 
 @override_settings(ROOT_URLCONF='bandcms.urls')
 class ModelTestCase(TestCase):
 
     def test_release_is_cms_model(self):
-        self.assertTrue(issubclass(Release, AbstractCmsModel))
+        self.assertTrue(issubclass(Release, PublishedModel))
 
     def test_can_save_release(self):
         r = Release(title='First', slug='first')

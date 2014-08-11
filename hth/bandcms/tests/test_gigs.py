@@ -7,10 +7,13 @@ from django.core.urlresolvers import reverse
 from django.utils import timezone
 
 from bandcms.tests.utils import today_str
-from ..models import Gig
+from ..models import PublishedModel, Gig
 
 
 class GigTestCase(TestCase):
+
+    def test_can_be_published(self):
+        self.assertTrue(issubclass(Gig, PublishedModel))
 
     def test_required_fields(self):
         required_fields = set(['date', 'slug', 'venue', 'city'])
@@ -29,66 +32,6 @@ class GigTestCase(TestCase):
         g1 = Gig.objects.get(slug='test')
         self.assertEqual(g, g1)
         # TODO: Assert slug?
-
-    def test_slug_must_be_unique(self):
-        g = Gig(date='2014-07-24', slug='test', venue='Venue', city='City')
-        g.full_clean()
-        g.save()
-
-        with self.assertRaises(IntegrityError):
-            g = Gig(date='2014-07-24', slug='test', venue='Venue', city='City')
-            g.save()
-
-    def test_str_is_slug(self):
-        g = Gig(date='2014-07-24', slug='test', venue='Venue', city='City')
-        self.assertEqual(str(g), 'test')
-
-    def test_can_publish(self):
-        now = timezone.now()
-        g = Gig(date='2014-07-24', slug='test', venue='Venue', city='City',
-                publish=True)
-        g.full_clean()
-        g.save()
-
-        self.assertTrue(g.publish)
-        self.assertEqual(g.publish_on.date(), now.date())
-
-        g = Gig.objects.get(slug='test')
-        self.assertTrue(g.publish)
-        self.assertEqual(g.publish_on.date(), now.date())
-
-    def test_draft_by_default(self):
-        g = Gig(date='2014-07-24', slug='test', venue='Venue', city='City')
-        g.full_clean()
-        g.save()
-
-        self.assertFalse(g.publish)
-        self.assertIsNone(g.publish_on)
-
-    def test_can_set_date(self):
-        y2k = datetime(2000, 1, 1, tzinfo=timezone.utc)
-        g = Gig(date='2014-07-24', slug='test', venue='Venue', city='City',
-                publish_on=y2k)
-        g.full_clean()
-        g.save()
-
-        g = Gig.objects.get(slug='test')
-        self.assertEqual(g.publish_on, y2k)
-
-    def test_published_filter(self):
-        publish = Gig(date='2014-07-24', slug='published',
-                      venue='Venue', city='City', publish=True)
-        publish.full_clean()
-        publish.save()
-
-        draft = Gig(date='2014-07-25', slug='draft',
-                    venue='Venue', city='City')
-        draft.full_clean()
-        draft.save()
-
-        published = list(Gig.published.all())
-        self.assertIn(publish, published)
-        self.assertNotIn(draft, published)
 
     def test_can_have_details(self):
         g = Gig(date='2014-07-24', slug='test', venue='Venue', city='City',

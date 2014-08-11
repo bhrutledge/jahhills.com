@@ -4,14 +4,15 @@ from django.test import TestCase, override_settings
 from django.utils import timezone
 from django.core.urlresolvers import reverse
 
-from ..models import AbstractCmsModel, Video, Release
+from ..models import PublishedModel, Video, Release
 
+# TODO: Update to match test_posts
 
 @override_settings(ROOT_URLCONF='bandcms.urls')
 class ModelTestCase(TestCase):
 
     def test_video_is_cms_model(self):
-        self.assertTrue(issubclass(Video, AbstractCmsModel))
+        self.assertTrue(issubclass(Video, PublishedModel))
 
     def test_can_save_video(self):
         s = Video(title='First', slug='first')

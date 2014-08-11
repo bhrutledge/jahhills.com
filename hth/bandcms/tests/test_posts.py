@@ -6,10 +6,13 @@ from django.core.exceptions import ValidationError
 from django.core.urlresolvers import reverse
 from django.utils import timezone
 
-from ..models import Post
+from ..models import PublishedModel, Post
 
 
 class PostTestCase(TestCase):
+
+    def test_can_be_published(self):
+        self.assertTrue(issubclass(Post, PublishedModel))
 
     def test_required_fields(self):
         required_fields = set(['title', 'slug'])
@@ -28,62 +31,6 @@ class PostTestCase(TestCase):
         p1 = Post.objects.get(slug='first')
         self.assertEqual(p, p1)
         # TODO: Assert slug?
-
-    def test_slug_must_be_unique(self):
-        p = Post(title='Test', slug='test')
-        p.full_clean()
-        p.save()
-
-        with self.assertRaises(IntegrityError):
-            p = Post(title='Test', slug='test')
-            p.save()
-
-    def test_str_is_slug(self):
-        p = Post(title='Test', slug='test')
-        self.assertEqual(str(p), 'test')
-
-    def test_can_publish(self):
-        now = timezone.now()
-        p = Post(title='Test', slug='test', publish=True)
-        p.full_clean()
-        p.save()
-
-        self.assertTrue(p.publish)
-        self.assertEqual(p.publish_on.date(), now.date())
-
-        p = Post.objects.get(slug='test')
-        self.assertTrue(p.publish)
-        self.assertEqual(p.publish_on.date(), now.date())
-
-    def test_draft_by_default(self):
-        p = Post(title='Test', slug='test')
-        p.full_clean()
-        p.save()
-
-        self.assertFalse(p.publish)
-        self.assertIsNone(p.publish_on)
-
-    def test_can_set_date(self):
-        y2k = datetime(2000, 1, 1, tzinfo=timezone.utc)
-        p = Post(title='Test', slug='test', publish_on=y2k)
-        p.full_clean()
-        p.save()
-
-        p = Post.objects.get(slug='test')
-        self.assertEqual(p.publish_on, y2k)
-
-    def test_published_filter(self):
-        publish = Post(title='Publish', slug='published', publish=True)
-        publish.full_clean()
-        publish.save()
-
-        draft = Post(title='Draft', slug='draft')
-        draft.full_clean()
-        draft.save()
-
-        published = list(Post.published.all())
-        self.assertIn(publish, published)
-        self.assertNotIn(draft, published)
 
     def test_can_have_body(self):
         p = Post(title='First', slug='first', body='Content')
