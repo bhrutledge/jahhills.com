@@ -57,6 +57,7 @@ class PostTestCase(TestCase):
         self.assertEqual(list(Post.objects.all()), [draft, new, first, old])
 
 
+# TODO: Move to test settings?
 @override_settings(ROOT_URLCONF='bandcms.urls')
 class ViewTestCase(TestCase):
 

@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# TODO: Use Unipath?
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 PROJECT_DIR = os.path.join(BASE_DIR, 'hth')
@@ -47,6 +48,7 @@ WSGI_APPLICATION = 'hth.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
+# TODO: Switch to PostgreSQL
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

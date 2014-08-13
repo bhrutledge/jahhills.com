@@ -4,3 +4,10 @@ jahhills.com
 Reboot of hallelujahthehills.com using Django 1.7.
 
 As with the [first iteration](http://github.com/bhrutledge/hallelujahthehills.com), this is an exercise in using the framework. This time around, the focus is on [Test-Driven Development](http://www.obeythetestinggoat.com/) and [YAGNI](http://en.wikipedia.org/wiki/You_aren't_gonna_need_it).
+
+TODO: Refactor bandcms into core, news, music, shows, and video apps
+
+TODO: Use flake8 and pylint
+
+TODO: Use coverage.py
+
