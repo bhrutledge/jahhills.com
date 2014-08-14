@@ -23,3 +23,18 @@ class Release(PublishedModel):
     class Meta:
         ordering = ['-date']
 
+
+class Song(PublishedModel):
+    title = models.CharField(max_length=200)
+    description = models.TextField(blank=True)
+    credits = models.TextField(blank=True)
+    lyrics = models.TextField(blank=True)
+    release = models.ForeignKey(Release, blank=True, null=True)
+    track = models.PositiveIntegerField(blank=True, null=True)
+
+    def get_absolute_url(self):
+        return reverse('song_detail', args=[self.slug])
+
+    class Meta:
+        ordering = ['title']
+

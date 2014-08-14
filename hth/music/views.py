@@ -1,7 +1,7 @@
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 
-from .models import Release
+from .models import Release, Song
 
 
 class ReleaseListView(ListView):
@@ -10,4 +10,12 @@ class ReleaseListView(ListView):
 
 class ReleaseDetailView(DetailView):
     queryset = Release.published.all()
+
+
+class SongListView(ListView):
+    queryset = Song.published.all()
+
+
+class SongDetailView(DetailView):
+    queryset = Song.published.all()
 
