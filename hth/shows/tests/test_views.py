@@ -5,7 +5,7 @@ from core.tests.utils import today_str
 from ..models import Gig
 
 
-class ViewTestCase(TestCase):
+class GigTestCase(TestCase):
 
     def setUp(self):
         today = today_str()

@@ -20,8 +20,8 @@ class SiteTestCase(SeleniumTestCase):
         self.get_url('/shows')
         self.assertIn('Shows', self.browser.title)
 
-#        self.get_url('/music')
-#        self.assertIn('Releases', self.browser.title)
+        self.get_url('/music')
+        self.assertIn('Music', self.browser.title)
 
 #        self.get_url('/music/songs')
 #        self.assertIn('Songs', self.browser.title)

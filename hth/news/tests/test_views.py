@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 from ..models import Post
 
 
-class ViewTestCase(TestCase):
+class PostTestCase(TestCase):
 
     def setUp(self):
         self.publish = Post(title='Publish', slug='publish', publish=True)
