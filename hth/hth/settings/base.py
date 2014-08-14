@@ -25,7 +25,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'bandcms',
+    'news',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -74,7 +74,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = [os.path.join(PROJECT_DIR, 'templates'),]
-FIXTURE_DIRS = [os.path.join(PROJECT_DIR, 'fixtures'),]
 
 SECRET_KEY = os.environ['SECRET_KEY']
 

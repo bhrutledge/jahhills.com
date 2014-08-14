@@ -37,7 +37,8 @@ class SeleniumTestCase(StaticLiveServerCase):
 
 class AdminTestCase(SeleniumTestCase):
 
-    fixtures = ['bandcms/admin.json']
+    # TODO: Create superuser programatically
+    fixtures = ['core/admin.json']
 
     def adminLogin(self):
         self.get_url('/admin')

@@ -1,12 +1,11 @@
 from datetime import datetime
 
-from django.test import TestCase, override_settings
-from django.db import IntegrityError
+from django.test import TestCase
 from django.core.exceptions import ValidationError
-from django.core.urlresolvers import reverse
 from django.utils import timezone
 
-from ..models import PublishedModel, Post
+from core.models import PublishedModel
+from ..models import Post
 
 
 class PostTestCase(TestCase):
@@ -30,13 +29,13 @@ class PostTestCase(TestCase):
 
         p1 = Post.objects.get(slug='first')
         self.assertEqual(p, p1)
-        # TODO: Assert slug?
 
     def test_can_have_body(self):
         p = Post(title='First', slug='first', body='Content')
+
+        # Shouldn't raise exception
         p.full_clean()
         p.save()
-        # TODO: Assert body?
 
     def test_ordered_by_date(self):
         draft = Post(title='Draft', slug='draft')
@@ -55,40 +54,4 @@ class PostTestCase(TestCase):
         new.save()
 
         self.assertEqual(list(Post.objects.all()), [draft, new, first, old])
-
-
-# TODO: Move to test settings?
-@override_settings(ROOT_URLCONF='bandcms.urls')
-class ViewTestCase(TestCase):
-
-    def setUp(self):
-        self.publish = Post(title='Publish', slug='publish', publish=True)
-        self.publish.save()
-
-        self.draft = Post(title='Draft', slug='draft')
-        self.draft.save()
-
-    def test_url_uses_slug(self):
-        self.assertEqual(self.publish.get_absolute_url(), '/posts/publish/')
-
-    def test_list_name(self):
-        self.assertEqual(reverse('post_list'), '/posts/')
-
-    def test_detail_name(self):
-        self.assertEqual(reverse('post_detail', args=['test']), '/posts/test/')
-
-    def test_can_view_published_posts(self):
-        response = self.client.get('/posts/publish/')
-        self.assertTemplateUsed(response, 'bandcms/post_detail.html')
-        self.assertContains(response, 'Publish')
-
-    def test_cant_view_draft_posts(self):
-        response = self.client.get('/posts/draft/')
-        self.assertEqual(response.status_code, 404)
-
-    def test_list_shows_published_posts(self):
-        response = self.client.get('/posts/')
-        self.assertTemplateUsed(response, 'bandcms/post_list.html')
-        self.assertContains(response, 'Publish')
-        self.assertNotContains(response, 'Draft')
 
