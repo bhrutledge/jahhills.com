@@ -38,3 +38,18 @@ class Song(PublishedModel):
     class Meta:
         ordering = ['title']
 
+
+class Video(PublishedModel):
+    title = models.CharField(max_length=200)
+    source_url = models.CharField(max_length=200, blank=True)
+    embed_code = models.TextField(blank=True)
+    description = models.TextField(blank=True)
+    credits = models.TextField(blank=True)
+    release = models.ForeignKey(Release, blank=True, null=True)
+
+    class Meta:
+        ordering = ['publish', '-publish_on']
+
+    def get_absolute_url(self):
+        return reverse('video_detail', args=[self.slug])
+

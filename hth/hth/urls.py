@@ -7,7 +7,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^news/', include('news.urls')),
     url(r'^shows/', include('shows.urls')),
-    url(r'^music/', include('music.urls')),
-#    url(r'^videos/', include(bandcms.urls.video_patterns)),
+    url(r'^', include('music.urls')),
 )
 

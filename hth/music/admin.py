@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Release, Song
+from .models import Release, Song, Video
 
 
 class ReleaseAdmin(admin.ModelAdmin):
@@ -19,3 +19,13 @@ class SongAdmin(admin.ModelAdmin):
     list_display = ('title', 'release', 'track', 'publish', 'publish_on',)
 
 admin.site.register(Song, SongAdmin)
+
+
+class VideoAdmin(admin.ModelAdmin):
+    fields = ('title', 'slug', 'source_url', 'embed_code', 'release',
+              'description', 'credits', 'publish', 'publish_on',)
+    prepopulated_fields = {'slug': ('title',)}
+    list_display = ('title', 'release', 'publish', 'publish_on',)
+
+admin.site.register(Video, VideoAdmin)
+

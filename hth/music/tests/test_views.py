@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 
-from ..models import Release, Song
+from ..models import Release, Song, Video
 
 
 class ReleaseTestCase(TestCase):
@@ -42,21 +42,48 @@ class SongTestCase(TestCase):
         self.draft.save()
 
     def test_url_uses_slug(self):
-        self.assertEqual(self.publish.get_absolute_url(),
-                         '/music/songs/publish/')
+        self.assertEqual(self.publish.get_absolute_url(), '/songs/publish/')
 
     def test_can_view_published_songs(self):
-        response = self.client.get('/music/songs/publish/')
+        response = self.client.get('/songs/publish/')
         self.assertTemplateUsed(response, 'music/song_detail.html')
         self.assertContains(response, 'Publish')
 
     def test_cant_view_draft_songs(self):
-        response = self.client.get('/music/songs/draft/')
+        response = self.client.get('/songs/draft/')
         self.assertEqual(response.status_code, 404)
 
     def test_list_shows_published_songs(self):
-        response = self.client.get('/music/songs/')
+        response = self.client.get('/songs/')
         self.assertTemplateUsed(response, 'music/song_list.html')
+        self.assertContains(response, 'Publish')
+        self.assertNotContains(response, 'Draft')
+
+
+class VideoTestCase(TestCase):
+
+    def setUp(self):
+        self.publish = Video(title='Publish', slug='publish', publish=True)
+        self.publish.save()
+
+        self.draft = Video(title='Draft', slug='draft')
+        self.draft.save()
+
+    def test_url_uses_slug(self):
+        self.assertEqual(self.publish.get_absolute_url(), '/videos/publish/')
+
+    def test_can_view_published_videos(self):
+        response = self.client.get('/videos/publish/')
+        self.assertTemplateUsed(response, 'music/video_detail.html')
+        self.assertContains(response, 'Publish')
+
+    def test_cant_view_draft_videos(self):
+        response = self.client.get('/videos/draft/')
+        self.assertEqual(response.status_code, 404)
+
+    def test_list_shows_published_videos(self):
+        response = self.client.get('/videos/')
+        self.assertTemplateUsed(response, 'music/video_list.html')
         self.assertContains(response, 'Publish')
         self.assertNotContains(response, 'Draft')
 
