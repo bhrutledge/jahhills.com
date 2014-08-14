@@ -1,7 +1,3 @@
-from django.test import override_settings
-from datetime import date, timedelta
-from time import sleep
-
 from core.tests.selenium import AdminTestCase
 
 
