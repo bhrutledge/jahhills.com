@@ -1,7 +1,7 @@
 from django.test import override_settings
 from time import sleep
 
-from bandcms.tests.utils import today_str
+from core.tests.utils import today_str
 from .base import AdminTestCase
 
 

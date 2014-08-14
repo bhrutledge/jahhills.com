@@ -3,31 +3,7 @@ from django.utils import timezone
 from django.core.urlresolvers import reverse
 
 
-class PublishedManager(models.Manager):
-
-    def get_queryset(self):
-        # TODO: publish_on <= now?
-        return super().get_queryset().filter(publish=True)
-
-
-class PublishedModel(models.Model):
-    slug = models.SlugField(unique=True)
-    publish = models.BooleanField(default=False)
-    publish_on = models.DateTimeField(blank=True, null=True)
-
-    objects = models.Manager()
-    published = PublishedManager()
-
-    class Meta:
-        abstract = True
-
-    def __str__(self):
-        return self.slug
-
-    def save(self, *args, **kwargs):
-        if self.publish and not self.publish_on:
-            self.publish_on = timezone.now()
-        super().save(*args, **kwargs)
+from core.models import PublishedModel
 
 
 class Post(PublishedModel):

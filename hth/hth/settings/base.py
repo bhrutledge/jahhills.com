@@ -26,8 +26,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'bandcms',
-    # TODO: Move to test settings
-    'bandcms.tests',
 )
 
 MIDDLEWARE_CLASSES = (

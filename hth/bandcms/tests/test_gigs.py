@@ -6,8 +6,7 @@ from django.core.exceptions import ValidationError
 from django.core.urlresolvers import reverse
 from django.utils import timezone
 
-# TODO: Use explicit relative imports
-from bandcms.tests.utils import today_str
+from core.tests.utils import today_str
 from ..models import PublishedModel, Gig
 
 
