@@ -1,12 +1,6 @@
-from datetime import datetime
-
-from django.test import TestCase, override_settings
-from django.db import IntegrityError
+from django.test import TestCase
 from django.core.exceptions import ValidationError
-from django.core.urlresolvers import reverse
-from django.utils import timezone
 
-from core.tests.utils import today_str
 from ..models import PublishedModel, Gig
 
 
@@ -50,33 +44,4 @@ class GigTestCase(TestCase):
         g3.save()
 
         self.assertEqual(list(Gig.objects.all()), [g1, g2, g3])
-
-
-@override_settings(ROOT_URLCONF='bandcms.urls')
-class ViewTestCase(TestCase):
-
-    def setUp(self):
-        today = today_str()
-        tomorrow = today_str(1)
-        yesterday = today_str(-1)
-
-        Gig(date=today, slug=today, venue='Today', city='c',
-            publish=True).save()
-        Gig(date=tomorrow, slug=tomorrow, venue='Tomorrow', city='c',
-            publish=True).save()
-        Gig(date=yesterday, slug=yesterday, venue='Yesterday', city='c',
-            publish=True).save()
-        Gig(date=today, slug=today+'-d', venue='Draft', city='c').save()
-
-    def test_list_name(self):
-        self.assertEqual(reverse('gig_list'), '/gigs/')
-
-    def test_list_shows_published_gigs(self):
-        response = self.client.get('/gigs/')
-        self.assertTemplateUsed(response, 'bandcms/gig_list.html')
-
-        self.assertContains(response, 'Today')
-        self.assertContains(response, 'Tomorrow')
-        self.assertContains(response, 'Yesterday')
-        self.assertNotContains(response, 'Draft')
 

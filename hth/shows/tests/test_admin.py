@@ -1,12 +1,8 @@
-from django.test import override_settings
-from time import sleep
-
 from core.tests.utils import today_str
-from .base import AdminTestCase
+from core.tests.selenium import AdminTestCase
 
 
-@override_settings(ROOT_URLCONF='bandcms.test_live.urls')
-class GigTestCase(AdminTestCase):
+class ShowsTestCase(AdminTestCase):
 
     def test_can_create_gig(self):
         # Ryan logs into the admin
@@ -52,7 +48,8 @@ class GigTestCase(AdminTestCase):
 
         # He verifies that only the published gigs are visible
 
-        self.get_url('/gigs')
+        self.get_url('/shows')
+        self.assertIn('Shows', self.browser.title)
         self.assertIn('Great Scott', self.find_tag('body').text)
         self.assertIn('Middle East', self.find_tag('body').text)
         self.assertNotIn('Red Star Union', self.find_tag('body').text)
