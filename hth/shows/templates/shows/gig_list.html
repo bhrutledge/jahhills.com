@@ -1,6 +1,6 @@
-{% extends "shows/base.html" %}
+{% extends "base.html" %}
 
-{% block title %}Shows{% endblock %}
+{% block title %}Shows | {{ block.super }}{% endblock %}
 
 {% block content %}
 <main class="list">

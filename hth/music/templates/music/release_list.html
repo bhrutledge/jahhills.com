@@ -1,6 +1,6 @@
-{% extends "music/base.html" %}
+{% extends "base.html" %}
 
-{% block title %}Music{% endblock %}
+{% block title %}Music | {{ block.super }}{% endblock %}
 
 {% block content %}
 <main class="list">
