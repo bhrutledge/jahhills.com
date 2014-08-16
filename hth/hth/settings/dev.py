@@ -10,6 +10,13 @@ TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS += (
+    'debug_toolbar.apps.DebugToolbarConfig',
     'core.tests',
 )
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+    }
+}
 
