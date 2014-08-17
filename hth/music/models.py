@@ -11,11 +11,11 @@ class Release(PublishedModel):
 
     @property
     def tracks(self):
-        return self.song_set.filter(publish=True).order_by('track')
+        return self.song_set(manager='published').order_by('track')
 
     @property
     def videos(self):
-        return self.video_set.filter(publish=True)
+        return self.video_set(manager='published').all()
 
     def get_absolute_url(self):
         return reverse('release_detail', args=[self.slug])
