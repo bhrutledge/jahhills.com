@@ -16,7 +16,6 @@ class NewsTestCase(AdminTestCase):
         self.find_name('title').send_keys('First post')
         self.find_name('body').send_keys('Test content')
         self.find_name('_save').click()
-
         self.assertIn('First post', self.find_tag('body').text)
 
         # TODO: He previews the draft post on the site
@@ -45,3 +44,4 @@ class NewsTestCase(AdminTestCase):
 
         # TODO: He schedules a post for the future
 
+        # TODO: He checks the order of the posts?

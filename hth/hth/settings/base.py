@@ -17,6 +17,8 @@ PROJECT_DIR = os.path.join(BASE_DIR, 'hth')
 
 # Application definition
 
+# TODO: Add django.contrib.admindocs
+
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',

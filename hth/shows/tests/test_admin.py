@@ -21,6 +21,7 @@ class ShowsTestCase(AdminTestCase):
         self.find_name('details').send_keys('$5, 21+, Doors at 9pm')
         self.find_name('publish').click()
         self.find_name('_save').click()
+        self.assertIn('Great Scott', self.find_tag('body').text)
 
         # He publishes a past gig
 
@@ -33,6 +34,7 @@ class ShowsTestCase(AdminTestCase):
         self.find_name('details').send_keys('$10, 18+, Doors at 8pm')
         self.find_name('publish').click()
         self.find_name('_save').click()
+        self.assertIn('Middle East Upstairs', self.find_tag('body').text)
 
         # He drafts a future gig
 
@@ -45,6 +47,7 @@ class ShowsTestCase(AdminTestCase):
         self.find_name('venue').send_keys('Red Star Union')
         self.find_name('city').send_keys('Cambridge, MA')
         self.find_name('_save').click()
+        self.assertIn('Red Star Union', self.find_tag('body').text)
 
         # He verifies that only the published gigs are visible
 

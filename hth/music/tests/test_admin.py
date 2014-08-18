@@ -21,7 +21,6 @@ class ReleaseTestCase(AdminTestCase):
         self.find_name('description').send_keys('Release description')
         self.find_name('credits').send_keys('Release credits')
         self.find_name('_save').click()
-
         self.assertIn('First release', self.find_tag('body').text)
 
         # He verifies that it's not published
@@ -39,6 +38,7 @@ class ReleaseTestCase(AdminTestCase):
         self.find_link('First release').click()
         self.find_name('publish').click()
         self.find_name('_save').click()
+        self.assertIn('First release', self.find_tag('body').text)
 
         # He verifies that it was published
 
@@ -73,7 +73,6 @@ class SongTestCase(AdminTestCase):
         self.find_name('lyrics').send_keys('Song lyrics')
         self.find_name('publish').click()
         self.find_name('_save').click()
-
         self.assertIn('First song', self.find_tag('body').text)
 
         # He adds an unpublished song
@@ -81,6 +80,7 @@ class SongTestCase(AdminTestCase):
         self.find_link('Add song').click()
         self.find_name('title').send_keys('Second song')
         self.find_name('_save').click()
+        self.assertIn('First song', self.find_tag('body').text)
 
         # He verifies that the published song is on the site
 
@@ -139,7 +139,6 @@ class VideoTestCase(AdminTestCase):
         self.find_name('credits').send_keys('Video credits')
         self.find_name('publish').click()
         self.find_name('_save').click()
-
         self.assertIn('First video', self.find_tag('body').text)
 
         # He adds an unpublished video
@@ -147,6 +146,7 @@ class VideoTestCase(AdminTestCase):
         self.find_link('Add video').click()
         self.find_name('title').send_keys('Second video')
         self.find_name('_save').click()
+        self.assertIn('Second video', self.find_tag('body').text)
 
         # He verifies that the published video is on the site
 

@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+# TODO: Django coding style
 
 class PublishedManager(models.Manager):
 
