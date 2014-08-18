@@ -44,7 +44,7 @@ class PublishedTestCase(TestCase):
         m = Published(slug='test')
         m.save()
 
-        # TODO: assert publish is false
+        self.assertFalse(m.publish)
         self.assertIsNone(m.publish_on)
 
     def test_can_set_date(self):

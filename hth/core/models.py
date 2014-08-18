@@ -4,6 +4,8 @@ from django.utils import timezone
 
 class PublishedManager(models.Manager):
 
+    # TODO: Better to have published() method and make this the default manager?
+
     def get_queryset(self):
         # TODO: publish_on <= timezone.now()?
         return super().get_queryset().filter(publish=True)

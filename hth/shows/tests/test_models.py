@@ -25,7 +25,6 @@ class GigTestCase(TestCase):
 
         g1 = Gig.objects.get(slug='test')
         self.assertEqual(g, g1)
-        # TODO: Assert slug?
 
     def test_can_have_details(self):
         g = Gig(date='2014-07-24', slug='test', venue='Venue', city='City',
