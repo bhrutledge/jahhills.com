@@ -1,0 +1,10 @@
+-r base.txt
+
+coverage==3.7.1
+django-debug-toolbar==1.2.1
+flake8==2.2.2
+mccabe==0.2.1
+pep8==1.5.7
+pyflakes==0.8.1
+selenium==2.42.1
+sqlparse==0.1.11

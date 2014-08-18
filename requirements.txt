@@ -1,6 +1,0 @@
-# TODO: Split into base.txt, dev.txt, etc.
-
-Django==1.7c2
-pytz==2014.4
-selenium==2.42.1
-sqlparse==0.1.11
