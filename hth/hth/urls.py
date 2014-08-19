@@ -4,6 +4,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
     url(r'^$', TemplateView.as_view(template_name='home_page.html')),
+    url(r'^admindocs/', include('django.contrib.admindocs.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^news/', include('news.urls')),
     url(r'^shows/', include('shows.urls')),
