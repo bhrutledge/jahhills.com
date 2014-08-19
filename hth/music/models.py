@@ -9,6 +9,12 @@ class Release(PublishedModel):
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
 
+    class Meta:
+        ordering = ['-date']
+
+    def get_absolute_url(self):
+        return reverse('release_detail', args=[self.slug])
+
     @property
     def tracks(self):
         return self.song_set(manager='published').order_by('track')
@@ -16,12 +22,6 @@ class Release(PublishedModel):
     @property
     def videos(self):
         return self.video_set(manager='published').all()
-
-    def get_absolute_url(self):
-        return reverse('release_detail', args=[self.slug])
-
-    class Meta:
-        ordering = ['-date']
 
 
 class Song(PublishedModel):
@@ -32,11 +32,11 @@ class Song(PublishedModel):
     release = models.ForeignKey(Release, blank=True, null=True)
     track = models.PositiveIntegerField(blank=True, null=True)
 
-    def get_absolute_url(self):
-        return reverse('song_detail', args=[self.slug])
-
     class Meta:
         ordering = ['title']
+
+    def get_absolute_url(self):
+        return reverse('song_detail', args=[self.slug])
 
 
 class Video(PublishedModel):
