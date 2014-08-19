@@ -15,11 +15,13 @@ class PublishedManager(models.Manager):
 
 
 class PublishedModel(models.Model):
-    """Base class for content type models."""
+    """Provides common fields and a manager for content type models."""
 
     slug = models.SlugField(unique=True,
                             help_text="A unique label, used in URLs.")
-    publish = models.BooleanField(default=False)
+    publish = models.BooleanField(
+        default=False,
+        help_text="Sets 'publish on' to now unless already set.")
     publish_on = models.DateTimeField(blank=True, null=True)
 
     objects = models.Manager()
