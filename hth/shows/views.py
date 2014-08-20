@@ -4,5 +4,7 @@ from .models import Gig
 
 
 class GigListView(ListView):
+    """
+    Renders a list of published ``Gig``s.
+    """
     queryset = Gig.published.all()
-

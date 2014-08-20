@@ -28,4 +28,3 @@ class VideoAdmin(admin.ModelAdmin):
     list_display = ('title', 'release', 'publish', 'publish_on',)
 
 admin.site.register(Video, VideoAdmin)
-

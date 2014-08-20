@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from .models import Gig
 
 
@@ -9,4 +10,3 @@ class GigAdmin(admin.ModelAdmin):
     list_display = ('date', 'venue', 'city',)
 
 admin.site.register(Gig, GigAdmin)
-

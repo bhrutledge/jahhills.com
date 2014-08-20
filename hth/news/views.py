@@ -5,9 +5,14 @@ from .models import Post
 
 
 class PostListView(ListView):
+    """
+    Renders a list of published ``Post``s.
+    """
     queryset = Post.published.all()
 
 
 class PostDetailView(DetailView):
+    """
+    Renders a single published ``Post``.
+    """
     queryset = Post.published.all()
-

@@ -7,7 +7,7 @@ class PublishedManager(models.Manager):
     Provides additional lookups for ``PublishedModel``.
     """
 
-    # TODO: Better to have published() method and make this the default manager?
+    # TODO: Make this the default manager with a published() method?
 
     def get_queryset(self):
         """Returns a ``QuerySet`` of published objects."""
