@@ -3,22 +3,26 @@ from django.utils import timezone
 
 
 class PublishedManager(models.Manager):
-    """Alternate manager for `PublishedModel`."""
+    """
+    Provides additional lookups for ``PublishedModel``.
+    """
 
     # TODO: Better to have published() method and make this the default manager?
 
     def get_queryset(self):
-        """Returns a `QuerySet` of published objects."""
+        """Returns a ``QuerySet`` of published objects."""
 
         # TODO: publish_on <= timezone.now()?
         return super().get_queryset().filter(publish=True)
 
 
 class PublishedModel(models.Model):
-    """Provides common fields and a manager for content type models."""
+    """
+    Provides common fields and a manager for content type models.
+    """
 
-    slug = models.SlugField(unique=True,
-                            help_text="A unique label, used in URLs.")
+    slug = models.SlugField(
+        unique=True, help_text="A unique label, used in URLs.")
     publish = models.BooleanField(
         default=False,
         help_text="Sets 'publish on' to now unless already set.")
@@ -31,12 +35,15 @@ class PublishedModel(models.Model):
         abstract = True
 
     def __str__(self):
-        """Returns the `slug`."""
-
+        """
+        Returns the ``slug``.
+        """
         return self.slug
 
     def save(self, *args, **kwargs):
-        """Sets `publish_on` to now for a newly-published object."""
+        """
+        Sets ``publish_on`` to now for a newly-published object.
+        """
 
         # TODO: Make publish a method, setting publish_on?
 
@@ -44,4 +51,3 @@ class PublishedModel(models.Model):
             self.publish_on = timezone.now()
 
         super().save(*args, **kwargs)
-
