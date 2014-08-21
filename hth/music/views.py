@@ -8,39 +8,39 @@ class ReleaseListView(ListView):
     """
     Renders a list of published ``Release``s.
     """
-    queryset = Release.published.all()
+    queryset = Release.objects.published()
 
 
 class ReleaseDetailView(DetailView):
     """
     Renders a single published ``Release``.
     """
-    queryset = Release.published.all()
+    queryset = Release.objects.published()
 
 
 class SongListView(ListView):
     """
     Renders a list of published ``Song``s.
     """
-    queryset = Song.published.all()
+    queryset = Song.objects.published()
 
 
 class SongDetailView(DetailView):
     """
     Renders a single published ``Song``.
     """
-    queryset = Song.published.all()
+    queryset = Song.objects.published()
 
 
 class VideoListView(ListView):
     """
     Renders a list of published ``Video``s.
     """
-    queryset = Video.published.all()
+    queryset = Video.objects.published()
 
 
 class VideoDetailView(DetailView):
     """
     Renders a single published ``Video``.
     """
-    queryset = Video.published.all()
+    queryset = Video.objects.published()

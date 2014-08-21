@@ -62,7 +62,11 @@ class PublishedTestCase(TestCase):
         d = Published(slug='draft')
         d.save()
 
-        published = list(Published.published.all())
+        objects = list(Published.objects.all())
+        self.assertIn(p, objects)
+        self.assertIn(d, objects)
+
+        published = list(Published.objects.published())
         self.assertIn(p, published)
         self.assertNotIn(d, published)
 

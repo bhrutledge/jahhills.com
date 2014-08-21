@@ -8,11 +8,11 @@ class PostListView(ListView):
     """
     Renders a list of published ``Post``s.
     """
-    queryset = Post.published.all()
+    queryset = Post.objects.published()
 
 
 class PostDetailView(DetailView):
     """
     Renders a single published ``Post``.
     """
-    queryset = Post.published.all()
+    queryset = Post.objects.published()

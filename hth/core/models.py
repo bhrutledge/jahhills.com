@@ -7,13 +7,13 @@ class PublishedManager(models.Manager):
     Provides additional lookups for ``PublishedModel``.
     """
 
-    # TODO: Make this the default manager with a published() method?
+    # TODO: Make this a PublishedQuerySet and use as_manager()?
 
-    def get_queryset(self):
+    def published(self):
         """Returns a ``QuerySet`` of published objects."""
 
         # TODO: publish_on <= timezone.now()?
-        return super().get_queryset().filter(publish=True)
+        return self.get_queryset().filter(publish=True)
 
 
 class PublishedModel(models.Model):
@@ -28,8 +28,7 @@ class PublishedModel(models.Model):
         help_text="Sets 'publish on' to now unless already set.")
     publish_on = models.DateTimeField(blank=True, null=True)
 
-    objects = models.Manager()
-    published = PublishedManager()
+    objects = PublishedManager()
 
     class Meta:
         abstract = True

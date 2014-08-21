@@ -28,14 +28,14 @@ class Release(PublishedModel):
         """
         Returns a ``QuerySet`` of published songs, ordered by track.
         """
-        return self.song_set(manager='published').order_by('track')
+        return self.song_set.published().order_by('track')
 
     @property
     def videos(self):
         """
         Returns a ``QuerySet`` of published videos, ordered by publish time.
         """
-        return self.video_set(manager='published').all()
+        return self.video_set.published()
 
 
 class Song(PublishedModel):

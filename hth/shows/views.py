@@ -7,4 +7,4 @@ class GigListView(ListView):
     """
     Renders a list of published ``Gig``s.
     """
-    queryset = Gig.published.all()
+    queryset = Gig.objects.published()
