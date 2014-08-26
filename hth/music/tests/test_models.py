@@ -32,6 +32,7 @@ class ReleaseTestCase(TestCase):
 
     def test_can_have_details(self):
         r = Release(title='First', slug='first', date='2014-08-01',
+                    cover_url='http://placehold.it/640',
                     description='Description', credits='Credits')
         r.full_clean()
         r.save()

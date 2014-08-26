@@ -4,7 +4,7 @@ from .models import Release, Song, Video
 
 
 class ReleaseAdmin(admin.ModelAdmin):
-    fields = ('title', 'slug', 'date', 'description', 'credits',
+    fields = ('title', 'slug', 'date', 'cover_url', 'description', 'credits',
               'publish', 'publish_on',)
     prepopulated_fields = {'slug': ('title',)}
     list_display = ('title', 'date', 'publish', 'publish_on',)

@@ -10,6 +10,9 @@
             <p>{{ object.date|date }}</p>
         </header>
         <section>
+            {% if object.cover_url %}
+            <figure><img src="{{ object.cover_url }}" /></figure>
+            {% endif %}
             {{ object.description|safe }}
         </section>
         <section>

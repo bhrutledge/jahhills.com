@@ -11,6 +11,10 @@ class Release(PublishedModel):
 
     title = models.CharField(max_length=200)
     date = models.DateField(blank=True, null=True)
+    cover_url = models.URLField(
+        blank=True,
+        help_text="A link to the cover art, at the highest desired resolution."
+    )
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
 

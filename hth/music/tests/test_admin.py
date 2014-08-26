@@ -18,6 +18,7 @@ class ReleaseTestCase(AdminTestCase):
 
         self.find_name('title').send_keys('First release')
         self.find_name('date').send_keys(today_str(1))
+        self.find_name('cover_url').send_keys('http://placehold.it/640')
         self.find_name('description').send_keys('Release description')
         self.find_name('credits').send_keys('Release credits')
         self.find_name('_save').click()
@@ -46,8 +47,7 @@ class ReleaseTestCase(AdminTestCase):
         self.find_link('First release').click()
         self.assertIn('First release', self.browser.title)
 
-        # TODO: He adds album artwork
-
+        # TODO: Test absence/presence of details?
         # TODO: He adds an audio player?
 
 
