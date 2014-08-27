@@ -5,13 +5,16 @@
 {% block content %}
 <main class="detail">
     <article class="post">
+
         <header>
             <h2>{{ post.title }}</h2>
-            <p>{{ post.publish_on }}</p>
+            <p>{{ post.publish_on|date }}</p>
         </header>
-        <section>
+
+        <section class="body">
             {{ post.body|safe }}
         </section>
+
     </article>
 </main>
 {% endblock %}

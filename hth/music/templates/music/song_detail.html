@@ -1,22 +1,38 @@
 {% extends "base.html" %}
 
-{% block title %}{{ object.title }} | {{ block.super }}{% endblock %}
+{% block title %}{{ song.title }} | {{ block.super }}{% endblock %}
 
 {% block content %}
 <main class="detail">
     <article class="song">
+
         <header>
-            <h2>{{ object.title }}</h2>
+            <h2>{{ song.title }}</h2>
+            {% if song.release %}
+            <p>from <a href="{{ song.release.get_absolute_url }}">{{ song.release.title }}</a></p>
+            {% endif %}
         </header>
-        <section>
-            {{ object.description|safe }}
+
+        {% if song.description %}
+        <section class="description">
+            {{ song.description|safe }}
         </section>
-        <section>
-            {{ object.credits|safe }}
+        {% endif %}
+
+        {% if song.credits %}
+        <section class="credits">
+            <h3>Credits</h3>
+            {{ song.credits|safe }}
         </section>
-        <section>
-            {{ object.lyrics|safe }}
+        {% endif %}
+
+        {% if song.lyrics %}
+        <section class="lyrics">
+            <h3>Lyrics</h3>
+            {{ song.lyrics|safe }}
         </section>
+        {% endif %}
+
     </article>
 </main>
 {% endblock %}

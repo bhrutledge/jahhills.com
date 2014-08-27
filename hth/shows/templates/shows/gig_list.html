@@ -6,12 +6,15 @@
 <main class="list">
     <h2>Shows</h2>
 
-{% for object in object_list %}
+{% for gig in gig_list %}
     <article class="gig">
         <header>
-            <h3>{{ object.date|date }}</h3>
-            <p>{{ object.venue }}, {{ object.city }}</p>
+            <h3>{{ gig.date|date }}</h3>
+            <p>{{ gig.venue }}, {{ gig.city }}</p>
         </header>
+        <section>
+            {{ gig.description|safe }}
+        </section>
     </article>
 {% endfor %}
 

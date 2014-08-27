@@ -6,14 +6,18 @@
 <main class="list">
     <h2>Videos</h2>
 
-{% for object in object_list %}
+{% for video in video_list %}
     <article class="video">
+
         <header>
-            <h3><a href="{{ object.get_absolute_url }}">{{ object.title }}</a></h3>
+            <h3><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></h3>
+            <p>{{ video.publish_on|date }}</p>
         </header>
+
         <section>
-            {{ object.description|safe }}
+            {{ video.description|safe }}
         </section>
+
     </article>
 {% endfor %}
 

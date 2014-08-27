@@ -1,23 +1,36 @@
 {% extends "base.html" %}
 
-{% block title %}{{ object.title }} | {{ block.super }}{% endblock %}
+{% block title %}{{ video.title }} | {{ block.super }}{% endblock %}
 
 {% block content %}
 <main class="detail">
     <article class="video">
+
         <header>
-            <h2><a href="{{ object.source_url }}">{{ object.title }}</a></h2>
-            <p>{{ object.publish_on|date }}</p>
+            <h2><a href="{{ video.source_url }}">{{ video.title }}</a></h2>
+            <p>{{ video.publish_on|date }}</p>
+            {% if video.release %}
+            <p>from <a href="{{ video.release.get_absolute_url }}">{{ video.release.title }}</a></p>
+            {% endif %}
         </header>
-        <section>
-            <!-- TODO: Template tag or model property for source urls -->
-            {{ object.embed_code|safe }}
-        <section>
-            {{ object.description|safe }}
+
+        <section class="embed">
+            {{ video.embed_code|safe }}
         </section>
-        <section>
-            {{ object.credits|safe }}
+
+        {% if video.description %}
+        <section class="description">
+            {{ video.description|safe }}
         </section>
+        {% endif %}
+
+        {% if video.credits %}
+        <section class="credits">
+            <h3>Credits</h3>
+            {{ video.credits|safe }}
+        </section>
+
+        {% endif %}
     </article>
 </main>
 {% endblock %}

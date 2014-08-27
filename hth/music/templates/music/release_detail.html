@@ -1,39 +1,53 @@
 {% extends "base.html" %}
 
-{% block title %}{{ object.title }} | {{ block.super }}{% endblock %}
+{% block title %}{{ release.title }} | {{ block.super }}{% endblock %}
 
 {% block content %}
 <main class="detail">
     <article class="release">
+
         <header>
-            <h2>{{ object.title }}</h2>
-            <p>{{ object.date|date }}</p>
+            <h2>{{ release.title }}</h2>
+            <p>{{ release.date|date }}</p>
         </header>
-        <section>
-            {% if object.cover_url %}
-            <figure><img src="{{ object.cover_url }}" /></figure>
-            {% endif %}
-            {{ object.description|safe }}
+
+        {% if release.cover_url %}
+        <figure class="cover">
+            <img src="{{ release.cover_url }}" alt="Cover art"/>
+        </figure>
+        {% endif %}
+
+        {% if release.description %}
+        <section class="description">
+            {{ release.description|safe }}
         </section>
-        <section>
-            {{ object.credits|safe }}
+        {% endif %}
+
+        {% if release.credits %}
+        <section class="credits">
+            <h3>Credits</h3>
+            {{ release.credits|safe }}
         </section>
-        <section>
+        {% endif %}
+
+        <section class="tracks">
             <h3>Tracks</h3>
-            <ul>
-            {% for song in object.tracks %}
+            <ol>
+            {% for song in release.tracks %}
                 <li><a href="{{ song.get_absolute_url }}">{{ song.title }}</a></li>
             {% endfor %}
-            </ul>
+            </ol>
         </section>
-        <section>
+
+        <section class="videos">
             <h3>Videos</h3>
             <ul>
-            {% for video in object.videos %}
+            {% for video in release.videos %}
                 <li><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></li>
             {% endfor %}
             </ul>
         </section>
+
     </article>
 </main>
 {% endblock %}
