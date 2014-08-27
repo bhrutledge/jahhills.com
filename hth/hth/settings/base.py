@@ -76,7 +76,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-TEMPLATE_DIRS = [os.path.join(PROJECT_DIR, 'templates'),]
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates'),]
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
