@@ -31,6 +31,10 @@ class ReleaseTestCase(TestCase):
         self.assertContains(response, 'Publish')
         self.assertNotContains(response, 'Draft')
 
+    def test_list_uses_one_query(self):
+        with self.assertNumQueries(1):
+            self.client.get('/music/')
+
 
 class SongTestCase(TestCase):
 
@@ -59,6 +63,9 @@ class SongTestCase(TestCase):
         self.assertContains(response, 'Publish')
         self.assertNotContains(response, 'Draft')
 
+    def test_list_uses_one_query(self):
+        with self.assertNumQueries(1):
+            self.client.get('/songs/')
 
 class VideoTestCase(TestCase):
 
@@ -87,3 +94,6 @@ class VideoTestCase(TestCase):
         self.assertContains(response, 'Publish')
         self.assertNotContains(response, 'Draft')
 
+    def test_list_uses_one_query(self):
+        with self.assertNumQueries(1):
+            self.client.get('/videos/')

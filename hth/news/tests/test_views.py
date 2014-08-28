@@ -37,3 +37,6 @@ class PostTestCase(TestCase):
         self.assertContains(response, 'Publish')
         self.assertNotContains(response, 'Draft')
 
+    def test_list_uses_one_query(self):
+        with self.assertNumQueries(1):
+            self.client.get('/news/')
