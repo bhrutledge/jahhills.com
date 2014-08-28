@@ -13,6 +13,9 @@ class Venue(models.Model):
     city = models.CharField(max_length=200)
     website = models.URLField(blank=True)
 
+    class Meta:
+        ordering = ['name', 'city']
+
     def __str__(self):
         return '{}, {}'.format(self.name, self.city)
 

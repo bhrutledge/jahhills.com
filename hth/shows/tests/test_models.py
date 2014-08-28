@@ -32,6 +32,19 @@ class VenueTestCase(TestCase):
         v = Venue(name='Venue', city='City', website='http://venue.com')
         self.assertEqual(str(v), 'Venue, City')
 
+    def test_ordered_by_name_and_city(self):
+        v1 = Venue(name='A', city='c')
+        v2 = Venue(name='A', city='d')
+        v3 = Venue(name='B', city='c')
+        v4 = Venue(name='C', city='c')
+
+        # Save out of order to test ordering
+        v2.save()
+        v1.save()
+        v4.save()
+        v3.save()
+
+        self.assertEqual(list(Venue.objects.all()), [v1, v2, v3, v4])
 
 class GigTestCase(TestCase):
 
