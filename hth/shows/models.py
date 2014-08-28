@@ -23,8 +23,7 @@ class Gig(PublishedModel):
     """
 
     date = models.DateField()
-    venue = models.CharField(max_length=200)
-    city = models.CharField(max_length=200)
+    venue = models.ForeignKey(Venue)
     description = models.TextField(
         blank=True, help_text="Type of gig, band line-up, video links, etc.")
     details = models.TextField(

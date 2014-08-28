@@ -10,9 +10,10 @@ admin.site.register(Venue, VenueAdmin)
 
 
 class GigAdmin(admin.ModelAdmin):
-    fields = ('date', 'slug', 'venue', 'city','description', 'details',
+    fields = ('date', 'slug', 'venue', 'description', 'details',
               'publish', 'publish_on',)
     prepopulated_fields = {'slug': ('date',)}
-    list_display = ('date', 'venue', 'city',)
+    raw_id_fields = ('venue',)
+    list_display = ('date', 'venue',)
 
 admin.site.register(Gig, GigAdmin)

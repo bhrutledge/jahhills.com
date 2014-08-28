@@ -10,7 +10,7 @@
     <article class="gig">
         <header>
             <h3>{{ gig.date|date }}</h3>
-            <p>{{ gig.venue }}, {{ gig.city }}</p>
+            <p>{{ gig.venue.name }}, {{ gig.venue.city }}</p>
         </header>
         <section>
             {{ gig.description|safe }}
