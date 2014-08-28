@@ -2,7 +2,26 @@ from core.tests.utils import today_str
 from core.tests.selenium import AdminTestCase
 
 
-class ShowsTestCase(AdminTestCase):
+class VenueTestCase(AdminTestCase):
+
+    def test_can_create_venue(self):
+        # Ryan logs into the admin
+
+        self.adminLogin()
+
+        # He adds a venue
+
+        self.find_link('Venues').click()
+        self.find_link('Add venue').click()
+
+        self.find_name('name').send_keys('Great Scott')
+        self.find_name('city').send_keys('Allston, MA')
+        self.find_name('website').send_keys('http://greatscottboston.com')
+        self.find_name('_save').click()
+        self.assertIn('Great Scott', self.find_tag('body').text)
+
+
+class GigTestCase(AdminTestCase):
 
     def test_can_create_gig(self):
         # Ryan logs into the admin

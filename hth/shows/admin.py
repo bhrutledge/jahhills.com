@@ -1,6 +1,12 @@
 from django.contrib import admin
 
-from .models import Gig
+from .models import Venue, Gig
+
+
+class VenueAdmin(admin.ModelAdmin):
+    fields = ('name', 'city', 'website')
+
+admin.site.register(Venue, VenueAdmin)
 
 
 class GigAdmin(admin.ModelAdmin):

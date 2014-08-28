@@ -1,7 +1,36 @@
 from django.test import TestCase
 from django.core.exceptions import ValidationError
 
-from ..models import PublishedModel, Gig
+from ..models import PublishedModel, Venue, Gig
+
+
+class VenueTestCase(TestCase):
+
+    def test_can_be_saved(self):
+        v = Venue(name='Venue', city='city')
+        v.full_clean()
+        v.save()
+
+        v1 = Venue.objects.first()
+        self.assertEqual(v, v1)
+
+    def test_required_fields(self):
+        required_fields = set(['name', 'city'])
+
+        with self.assertRaises(ValidationError) as cm:
+            Venue().full_clean()
+
+        blank_fields = set(cm.exception.message_dict.keys())
+        self.assertEquals(required_fields, blank_fields)
+
+    def test_can_have_details(self):
+        v = Venue(name='Venue', city='city', website='http://venue.com')
+        v.full_clean()
+        v.save()
+
+    def test_str_is_name_and_city(self):
+        v = Venue(name='Venue', city='City', website='http://venue.com')
+        self.assertEqual(str(v), 'Venue, City')
 
 
 class GigTestCase(TestCase):
