@@ -8,25 +8,18 @@
 
         <header>
             <h2>{{ release.title }}</h2>
-            <p>{{ release.date|date }}</p>
+            <p>Released: {{ release.date|date }}</p>
         </header>
 
         {% if release.cover_url %}
-        <figure class="cover">
+        <section class="cover">
             <img src="{{ release.cover_url }}" alt="Cover art"/>
-        </figure>
+        </section>
         {% endif %}
 
         {% if release.description %}
         <section class="description">
             {{ release.description|safe }}
-        </section>
-        {% endif %}
-
-        {% if release.credits %}
-        <section class="credits">
-            <h3>Credits</h3>
-            {{ release.credits|safe }}
         </section>
         {% endif %}
 
@@ -47,6 +40,13 @@
             {% endfor %}
             </ul>
         </section>
+
+        {% if release.credits %}
+        <section class="credits">
+            <h3>Credits</h3>
+            {{ release.credits|safe }}
+        </section>
+        {% endif %}
 
     </article>
 </main>

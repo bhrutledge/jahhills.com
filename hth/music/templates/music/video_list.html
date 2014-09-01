@@ -15,6 +15,11 @@
         </header>
 
         <section>
+            {% if video.preview_url %}
+            <div class="preview thumbnail">
+                <img src="{{ video.preview_url }}" alt="Video preview"/>
+            </div>
+            {% endif %}
             {{ video.description|safe }}
         </section>
 

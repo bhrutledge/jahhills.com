@@ -142,6 +142,7 @@ class VideoTestCase(TestCase):
     def test_can_have_details(self):
         s = Video(title='First', slug='first',
                   source_url='http://youtube.com', embed_code='<iframe />',
+                  preview_url='http://youtube.com/jpg',
                   description='Description', credits='credits')
         s.full_clean()
         s.save()

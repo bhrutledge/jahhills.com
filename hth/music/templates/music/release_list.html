@@ -3,6 +3,7 @@
 {% block title %}Music | {{ block.super }}{% endblock %}
 
 {% block content %}
+{# TODO: Make this object-list #}
 <main class="list">
     <h2>Music</h2>
 
@@ -15,6 +16,11 @@
         </header>
 
         <section>
+            {% if release.cover_url %}
+            <div class="cover thumbnail">
+                <img src="{{ release.cover_url }}" alt="Cover art"/>
+            </div>
+            {% endif %}
             {{ release.description|safe }}
         </section>
 

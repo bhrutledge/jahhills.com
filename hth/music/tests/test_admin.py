@@ -135,6 +135,7 @@ class VideoTestCase(AdminTestCase):
         self.find_name('title').send_keys('First video')
         self.find_name('source_url').send_keys('http://youtube.com')
         self.find_name('embed_code').send_keys('<iframe></iframe>')
+        self.find_name('preview_url').send_keys('http://youtube.com/jpg')
         self.find_name('description').send_keys('Video description')
         self.find_name('credits').send_keys('Video credits')
         self.find_name('publish').click()

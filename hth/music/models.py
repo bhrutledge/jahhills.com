@@ -73,6 +73,10 @@ class Video(PublishedModel):
     title = models.CharField(max_length=200)
     source_url = models.CharField(max_length=200, blank=True)
     embed_code = models.TextField(blank=True)
+    preview_url = models.URLField(
+        blank=True,
+        help_text="A link to the preview image."
+    )
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
     release = models.ForeignKey(Release, blank=True, null=True)
