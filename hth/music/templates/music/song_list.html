@@ -2,11 +2,12 @@
 
 {% block title %}Songs | {{ block.super }}{% endblock %}
 
-{% block content %}
-<main class="list">
+{% block main_class %}object-list {{ block.super }}{% endblock %}
+
+{% block main %}
     <h2>Songs</h2>
 
-{% for song in song_list %}
+    {% for song in song_list %}
     <article class="song">
 
         <header>
@@ -18,8 +19,5 @@
         </section>
 
     </article>
-{% endfor %}
-
-</main>
+    {% endfor %}
 {% endblock %}
-

@@ -2,12 +2,12 @@
 
 {% block title %}Music | {{ block.super }}{% endblock %}
 
-{% block content %}
-{# TODO: Make this object-list #}
-<main class="list">
+{% block main_class %}object-list {{ block.super }}{% endblock %}
+
+{% block main %}
     <h2>Music</h2>
 
-{% for release in release_list %}
+    {% for release in release_list %}
     <article class="release">
 
         <header>
@@ -25,8 +25,5 @@
         </section>
 
     </article>
-{% endfor %}
-
-</main>
+    {% endfor %}
 {% endblock %}
-

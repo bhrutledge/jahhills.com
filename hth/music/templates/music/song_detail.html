@@ -2,8 +2,9 @@
 
 {% block title %}{{ song.title }} | {{ block.super }}{% endblock %}
 
-{% block content %}
-<main class="detail">
+{% block main_class %}object-detail {{ block.super }}{% endblock %}
+
+{% block main %}
     <article class="song">
 
         <header>
@@ -34,6 +35,4 @@
         {% endif %}
 
     </article>
-</main>
 {% endblock %}
-

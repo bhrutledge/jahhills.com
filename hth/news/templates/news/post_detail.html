@@ -2,8 +2,9 @@
 
 {% block title %}{{ post.title }} | {{ block.super }}{% endblock %}
 
-{% block content %}
-<main class="detail">
+{% block main_class %}object-detail {{ block.super }}{% endblock %}
+
+{% block main %}
     <article class="post">
 
         <header>
@@ -16,6 +17,4 @@
         </section>
 
     </article>
-</main>
 {% endblock %}
-

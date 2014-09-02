@@ -2,8 +2,9 @@
 
 {% block title %}{{ release.title }} | {{ block.super }}{% endblock %}
 
-{% block content %}
-<main class="detail">
+{% block main_class %}object-detail {{ block.super }}{% endblock %}
+
+{% block main %}
     <article class="release">
 
         <header>
@@ -49,6 +50,4 @@
         {% endif %}
 
     </article>
-</main>
 {% endblock %}
-

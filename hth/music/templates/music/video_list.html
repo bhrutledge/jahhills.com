@@ -2,11 +2,12 @@
 
 {% block title %}Videos | {{ block.super }}{% endblock %}
 
-{% block content %}
-<main class="list">
+{% block main_class %}object-list {{ block.super }}{% endblock %}
+
+{% block main %}
     <h2>Videos</h2>
 
-{% for video in video_list %}
+    {% for video in video_list %}
     <article class="video">
 
         <header>
@@ -24,8 +25,5 @@
         </section>
 
     </article>
-{% endfor %}
-
-</main>
+    {% endfor %}
 {% endblock %}
-

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>{% block title %}Hallelujah The Hills{% endblock %}</title>
 </head>
 <body>
-    <h1><a href="/">Hallelujah The Hills</a></h1>
-
     <nav>
+        <h1><a href="/">Hallelujah The Hills</a></h1>
         <ul>
             <li><a href="{% url 'release_list' %}">Music</a></li>
             <li><a href="{% url 'video_list' %}">Videos</a></li>
@@ -16,7 +15,8 @@
         </ul>
     </nav>
 
-    {% block content %}{% endblock %}
+    <main class="{% block main_class %}{% endblock %}">
+    {% block main %}{% endblock %}
+    </main>
 </body>
 </html>
-

@@ -2,22 +2,23 @@
 
 {% block title %}Shows | {{ block.super }}{% endblock %}
 
-{% block content %}
-<main class="list">
+{% block main_class %}object-list {{ block.super }}{% endblock %}
+
+{% block main %}
     <h2>Shows</h2>
 
-{% for gig in gig_list %}
+    {% for gig in gig_list %}
     <article class="gig">
+
         <header>
             <h3>{{ gig.date|date }}</h3>
             <p>{{ gig.venue.name }}, {{ gig.venue.city }}</p>
         </header>
+
         <section>
             {{ gig.description|safe }}
         </section>
+
     </article>
-{% endfor %}
-
-</main>
+    {% endfor %}
 {% endblock %}
-
