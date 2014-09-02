@@ -20,3 +20,6 @@ CACHES = {
     }
 }
 
+DEBUG_TOOLBAR_CONFIG = {
+    'JQUERY_URL': '',
+}
