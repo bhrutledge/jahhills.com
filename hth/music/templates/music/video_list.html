@@ -9,20 +9,22 @@
 
     {% for video in video_list %}
     <article class="video">
+        {% if video.preview_url %}
+        <div class="preview thumbnail">
+            <a href="{{ video.get_absolute_url }}"><img src="{{ video.preview_url }}" alt="Video preview"/></a>
+        </div>
+        {% endif %}
 
         <header>
             <h3><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></h3>
             <p>{{ video.publish_on|date }}</p>
         </header>
 
-        <section>
-            {% if video.preview_url %}
-            <div class="preview thumbnail">
-                <img src="{{ video.preview_url }}" alt="Video preview"/>
-            </div>
-            {% endif %}
+        {% if video.description %}
+        <section class="description">
             {{ video.description|safe }}
         </section>
+        {% endif %}
 
     </article>
     {% endfor %}

@@ -7,17 +7,23 @@
 {% block main_content %}
     <article class="video">
 
+        {% if video.embed_code %}
+        <section class="embed">
+            {{ video.embed_code|safe }}
+        </section>
+        {% endif %}
+
         <header>
-            <h2><a href="{{ video.source_url }}">{{ video.title }}</a></h2>
+            <h2>{{ video.title }}</h2>
             <p>{{ video.publish_on|date }}</p>
             {% if video.release %}
             <p>from <a href="{{ video.release.get_absolute_url }}">{{ video.release.title }}</a></p>
             {% endif %}
-        </header>
 
-        <section class="embed">
-            {{ video.embed_code|safe }}
-        </section>
+            {% if video.source_url %}
+            <p><a href="{{ video.source_url }}">Direct link</a></p>
+            {% endif %}
+        </header>
 
         {% if video.description %}
         <section class="description">

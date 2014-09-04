@@ -14,9 +14,11 @@
             <h3><a href="{{ song.get_absolute_url }}">{{ song.title }}</a></h3>
         </header>
 
-        <section>
+        {% if song.description %}
+        <section class="description">
             {{ song.description|safe }}
         </section>
+        {% endif %}
 
     </article>
     {% endfor %}

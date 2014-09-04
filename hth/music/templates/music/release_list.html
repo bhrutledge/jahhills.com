@@ -10,19 +10,22 @@
     {% for release in release_list %}
     <article class="release">
 
+        {% if release.cover_url %}
+        <div class="cover thumbnail">
+            <a href="{{ release.get_absolute_url }}"><img src="{{ release.cover_url }}" alt="Cover art"/></a>
+        </div>
+        {% endif %}
+
         <header>
             <h3><a href="{{ release.get_absolute_url }}">{{ release.title }}</a></h3>
             <p>{{ release.date|date }}</p>
         </header>
 
-        <section>
-            {% if release.cover_url %}
-            <div class="cover thumbnail">
-                <img src="{{ release.cover_url }}" alt="Cover art"/>
-            </div>
-            {% endif %}
+        {% if release.description %}
+        <section class="description">
             {{ release.description|safe }}
         </section>
+        {% endif %}
 
     </article>
     {% endfor %}

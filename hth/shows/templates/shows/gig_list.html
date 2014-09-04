@@ -15,9 +15,11 @@
             <p>{{ gig.venue.name }}, {{ gig.venue.city }}</p>
         </header>
 
-        <section>
+        {% if gig.description %}
+        <section class="description">
             {{ gig.description|safe }}
         </section>
+        {% endif %}
 
     </article>
     {% endfor %}

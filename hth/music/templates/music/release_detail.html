@@ -7,22 +7,24 @@
 {% block main_content %}
     <article class="release">
 
-        <header>
-            <h2>{{ release.title }}</h2>
-            <p>Released: {{ release.date|date }}</p>
-        </header>
-
         {% if release.cover_url %}
         <section class="cover">
             <img src="{{ release.cover_url }}" alt="Cover art"/>
         </section>
         {% endif %}
 
+        <header>
+            <h2>{{ release.title }}</h2>
+            <p>{{ release.date|date }}</p>
+        </header>
+
         {% if release.description %}
         <section class="description">
             {{ release.description|safe }}
         </section>
         {% endif %}
+
+        {# TODO: Conditional for tracks and videos #}
 
         <section class="tracks">
             <h3>Tracks</h3>
