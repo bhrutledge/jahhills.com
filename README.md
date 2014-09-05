@@ -1,7 +1,8 @@
 jahhills.com
 ============
 
-Reboot of [hallelujahthehills.com](http://hallelujahthehills.com) using Django 1.7.
+Reboot of [hallelujahthehills.com](http://hallelujahthehills.com) using Django
+1.7.
 
 As with the
 [first iteration](http://github.com/bhrutledge/hallelujahthehills.com), this is

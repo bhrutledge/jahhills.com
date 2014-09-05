@@ -1,11 +1,11 @@
 from django.test import TestCase
-from django.contrib.staticfiles.testing import StaticLiveServerCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
 
-class SeleniumTestCase(StaticLiveServerCase):
+class SeleniumTestCase(StaticLiveServerTestCase):
 
     def setUp(self):
         self.browser = webdriver.Firefox()
