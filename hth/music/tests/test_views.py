@@ -18,18 +18,26 @@ class ReleaseTestCase(TestCase):
 
     def test_can_view_published_releases(self):
         response = self.client.get('/music/publish/')
+        release = response.context['release']
+        self.assertEquals(self.publish, release)
+
+    def test_detail_uses_template(self):
+        response = self.client.get('/music/publish/')
         self.assertTemplateUsed(response, 'music/release_detail.html')
-        self.assertContains(response, 'Publish')
 
     def test_cant_view_draft_releases(self):
         response = self.client.get('/music/draft/')
         self.assertEqual(response.status_code, 404)
 
-    def test_list_shows_published_releases(self):
+    def test_list_returns_published_releases(self):
+        response = self.client.get('/music/')
+        release_list = response.context['release_list']
+        self.assertIn(self.publish, release_list)
+        self.assertNotIn(self.draft, release_list)
+
+    def test_list_uses_template(self):
         response = self.client.get('/music/')
         self.assertTemplateUsed(response, 'music/release_list.html')
-        self.assertContains(response, 'Publish')
-        self.assertNotContains(response, 'Draft')
 
     def test_list_uses_one_query(self):
         with self.assertNumQueries(1):
@@ -50,22 +58,31 @@ class SongTestCase(TestCase):
 
     def test_can_view_published_songs(self):
         response = self.client.get('/songs/publish/')
+        song = response.context['song']
+        self.assertEquals(self.publish, song)
+
+    def test_detail_uses_template(self):
+        response = self.client.get('/songs/publish/')
         self.assertTemplateUsed(response, 'music/song_detail.html')
-        self.assertContains(response, 'Publish')
 
     def test_cant_view_draft_songs(self):
         response = self.client.get('/songs/draft/')
         self.assertEqual(response.status_code, 404)
 
-    def test_list_shows_published_songs(self):
+    def test_list_returns_published_songs(self):
+        response = self.client.get('/songs/')
+        song_list = response.context['song_list']
+        self.assertIn(self.publish, song_list)
+        self.assertNotIn(self.draft, song_list)
+
+    def test_list_uses_template(self):
         response = self.client.get('/songs/')
         self.assertTemplateUsed(response, 'music/song_list.html')
-        self.assertContains(response, 'Publish')
-        self.assertNotContains(response, 'Draft')
 
     def test_list_uses_one_query(self):
         with self.assertNumQueries(1):
             self.client.get('/songs/')
+
 
 class VideoTestCase(TestCase):
 
@@ -81,18 +98,26 @@ class VideoTestCase(TestCase):
 
     def test_can_view_published_videos(self):
         response = self.client.get('/videos/publish/')
+        video = response.context['video']
+        self.assertEquals(self.publish, video)
+
+    def test_detail_uses_template(self):
+        response = self.client.get('/videos/publish/')
         self.assertTemplateUsed(response, 'music/video_detail.html')
-        self.assertContains(response, 'Publish')
 
     def test_cant_view_draft_videos(self):
         response = self.client.get('/videos/draft/')
         self.assertEqual(response.status_code, 404)
 
-    def test_list_shows_published_videos(self):
+    def test_list_returns_published_videos(self):
+        response = self.client.get('/videos/')
+        video_list = response.context['video_list']
+        self.assertIn(self.publish, video_list)
+        self.assertNotIn(self.draft, video_list)
+
+    def test_list_uses_template(self):
         response = self.client.get('/videos/')
         self.assertTemplateUsed(response, 'music/video_list.html')
-        self.assertContains(response, 'Publish')
-        self.assertNotContains(response, 'Draft')
 
     def test_list_uses_one_query(self):
         with self.assertNumQueries(1):

@@ -17,25 +17,29 @@ class GigTestCase(TestCase):
         yesterday_venue = Venue.objects.create(name='Yesterday', city='c')
         draft_venue = Venue.objects.create(name='Draft', city='c')
 
-        Gig(date=today, slug=today, venue=today_venue,
-            publish=True).save()
-        Gig(date=tomorrow, slug=tomorrow, venue=tomorrow_venue,
-            publish=True).save()
-        Gig(date=yesterday, slug=yesterday, venue=yesterday_venue,
-            publish=True).save()
-        Gig(date=today, slug=today+'-d', venue=draft_venue).save()
+        self.today = Gig.objects.create(date=today, slug=today,
+                                        venue=today_venue, publish=True)
+        self.tomorrow = Gig.objects.create(date=tomorrow, slug=tomorrow,
+                                           venue=tomorrow_venue,
+                                           publish=True)
+        self.yesterday = Gig.objects.create(date=yesterday, slug=yesterday,
+                                            venue=yesterday_venue,
+                                            publish=True)
+        self.draft = Gig.objects.create(date=today, slug=today+'-d',
+                                        venue=draft_venue)
 
     def test_list_name(self):
         self.assertEqual(reverse('gig_list'), '/shows/')
 
-    def test_list_shows_published_gigs(self):
+    def test_list_returns_published_gigs(self):
+        response = self.client.get('/shows/')
+        gig_list = response.context['gig_list']
+        self.assertEqual(list(gig_list),
+                         [self.tomorrow, self.today, self.yesterday])
+
+    def test_list_uses_template(self):
         response = self.client.get('/shows/')
         self.assertTemplateUsed(response, 'shows/gig_list.html')
-
-        self.assertContains(response, 'Today')
-        self.assertContains(response, 'Tomorrow')
-        self.assertContains(response, 'Yesterday')
-        self.assertNotContains(response, 'Draft')
 
     def test_list_uses_one_query(self):
         with self.assertNumQueries(1):

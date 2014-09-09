@@ -24,18 +24,26 @@ class PostTestCase(TestCase):
 
     def test_can_view_published_news(self):
         response = self.client.get('/news/publish/')
+        post = response.context['post']
+        self.assertEqual(self.publish, post)
+
+    def test_detail_uses_template(self):
+        response = self.client.get('/news/publish/')
         self.assertTemplateUsed(response, 'news/post_detail.html')
-        self.assertContains(response, 'Publish')
 
     def test_cant_view_draft_news(self):
         response = self.client.get('/news/draft/')
         self.assertEqual(response.status_code, 404)
 
-    def test_list_shows_published_news(self):
+    def test_list_returns_published_news(self):
+        response = self.client.get('/news/')
+        post_list = response.context['post_list']
+        self.assertIn(self.publish, post_list)
+        self.assertNotIn(self.draft, post_list)
+
+    def test_list_uses_template(self):
         response = self.client.get('/news/')
         self.assertTemplateUsed(response, 'news/post_list.html')
-        self.assertContains(response, 'Publish')
-        self.assertNotContains(response, 'Draft')
 
     def test_list_uses_one_query(self):
         with self.assertNumQueries(1):
