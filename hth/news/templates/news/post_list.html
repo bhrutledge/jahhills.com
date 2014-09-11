@@ -11,8 +11,10 @@
     <article class="post">
 
         <header>
-            <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
-            <p>{{ post.publish_on|date }}</p>
+            <h3 class="title">
+                <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+            </h3>
+            <p class="date">{{ post.publish_on|date }}</p>
         </header>
 
     </article>

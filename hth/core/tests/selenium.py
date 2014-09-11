@@ -6,6 +6,7 @@ from selenium.webdriver.support.ui import Select
 
 
 class SeleniumTestCase(StaticLiveServerTestCase):
+    """ Adds convenience methods for using Selenium WebDriver. """
 
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -28,11 +29,11 @@ class SeleniumTestCase(StaticLiveServerTestCase):
     def find_link(self, link_text):
         return self.browser.find_element_by_link_text(link_text)
 
-    def find_css(self, css_selector):
-        return self.browser.find_element_by_css_selector(css_selector)
-
     def find_select(self, name):
         return Select(self.find_name(name))
+
+    def find_css(self, css_selector):
+        return self.browser.find_elements_by_css_selector(css_selector)
 
 
 class AdminTestCase(SeleniumTestCase):
