@@ -1,7 +1,7 @@
 from time import sleep
 
 from core.tests.selenium import SeleniumTestCase
-from news.tests.factories import PostFactory, PublishedPostFactory
+from news.tests.factories import DraftPostFactory, PublishedPostFactory
 from news.models import Post
 
 
@@ -11,9 +11,9 @@ class NewsTestCase(SeleniumTestCase):
         super().setUp()
 
         PublishedPostFactory.create_batch(10)
-        PostFactory.create_batch(5)
+        DraftPostFactory.create_batch(5)
 
-    def test_news_shows_all_published_posts(self):
+    def test_news_displays_all_published_posts(self):
         self.get_url('/news')
         self.assertIn('News', self.browser.title)
 
@@ -22,7 +22,7 @@ class NewsTestCase(SeleniumTestCase):
 
         self.assertEqual(live_titles, published_titles)
 
-    def test_home_shows_most_recent_post(self):
+    def test_home_displays_most_recent_post(self):
         self.get_url('')
 
         post_list = self.find_css('.post')
