@@ -1,2 +1,17 @@
 {% extends "base.html" %}
 
+{% block main_content %}
+    <article class="post">
+
+        <header>
+            <h3 class="title">
+                <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+            </h3>
+            <p class="date">{{ post.publish_on|date }}</p>
+        </header>
+
+        <section class="body">
+            {{ post.body|safe }}
+        </section>
+    </article>
+{% endblock %}

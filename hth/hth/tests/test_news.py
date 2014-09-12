@@ -22,11 +22,16 @@ class NewsTestCase(SeleniumTestCase):
 
         self.assertEqual(live_titles, published_titles)
 
-    # def test_home_shows_most_recent_post(self):
-    #     self.get_url('')
-    #
-    #     live_titles = [p.text for p in self.find_css('.post .title')]
-    #     published_titles = [p.title for p in Post.objects.published()]
-    #
-    #     self.assertEqual(len(live_titles), 1)
-    #     self.assertEqual(live_title[0], published_titles[0])
+    def test_home_shows_most_recent_post(self):
+        self.get_url('')
+
+        post_list = self.find_css('.post')
+        self.assertEqual(len(post_list), 1)
+
+        last_post = Post.objects.published()[0]
+
+        post_title = self.find_css('.post .title')[0].text
+        self.assertEqual(post_title, last_post.title)
+
+        post_body = self.find_css('.post .body')[0].text
+        self.assertEqual(post_body, last_post.body)
