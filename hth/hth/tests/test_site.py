@@ -13,9 +13,6 @@ class SiteTestCase(SeleniumTestCase):
 
         # TODO: Test against custom templates and fixtures
 
-        self.get_url('/shows')
-        self.assertIn('Shows', self.browser.title)
-
         self.get_url('/music')
         self.assertIn('Music', self.browser.title)
 
