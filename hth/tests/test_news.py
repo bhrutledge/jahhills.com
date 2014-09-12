@@ -1,15 +1,16 @@
 from time import sleep
 
 from core.tests.selenium import SeleniumTestCase
-from news.tests.factories import PostFactory
+from news.tests.factories import PostFactory, PublishedPostFactory
 from news.models import Post
+
 
 class NewsTestCase(SeleniumTestCase):
 
     def setUp(self):
         super().setUp()
 
-        PostFactory.create_batch(10, publish=True)
+        PublishedPostFactory.create_batch(10)
         PostFactory.create_batch(5)
 
     def test_news_shows_all_published_posts(self):
