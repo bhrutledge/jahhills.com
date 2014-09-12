@@ -1,9 +1,7 @@
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 
-
-from news.models import Post
-from news.tests.factories import PostFactory, PublishedPostFactory
+from news.tests.factories import DraftPostFactory, PublishedPostFactory
 
 
 class HomeTestCase(TestCase):
@@ -15,11 +13,15 @@ class HomeTestCase(TestCase):
         response = self.client.get('/')
         self.assertTemplateUsed(response, 'home_page.html')
 
-    def test_returns_last_post(self):
-        PublishedPostFactory.create_batch(5)
-        PostFactory.create_batch(5)
+    def test_returns_latest_post(self):
+        published_posts = PublishedPostFactory.create_batch(5)
+        published_posts = sorted(published_posts,
+                                 key=lambda x: x.publish_on,
+                                 reverse=True)
+
+        DraftPostFactory.create_batch(5)
 
         response = self.client.get('/')
         post = response.context['post']
 
-        self.assertEqual(post, Post.objects.published().first())
+        self.assertEqual(post, published_posts[0])
