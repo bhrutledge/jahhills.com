@@ -2,18 +2,18 @@ from django.db import models
 from django.utils import timezone
 
 
-class PublishedManager(models.Manager):
+class PublishedQuerySet(models.QuerySet):
     """
-    Provides additional lookups for ``PublishedModel``.
+    Provides additional filters for ``PublishedModel``.
     """
-
-    # TODO: Make this a PublishedQuerySet and use as_manager()?
 
     def published(self):
-        """Returns a ``QuerySet`` of published objects."""
+        """
+        Returns a ``QuerySet`` of published objects.
+        """
 
         # TODO: publish_on <= timezone.now()?
-        return self.get_queryset().filter(publish=True)
+        return self.filter(publish=True)
 
 
 class PublishedModel(models.Model):
@@ -28,7 +28,7 @@ class PublishedModel(models.Model):
         help_text="Sets 'publish on' to now unless already set.")
     publish_on = models.DateTimeField(blank=True, null=True)
 
-    objects = PublishedManager()
+    objects = PublishedQuerySet.as_manager()
 
     class Meta:
         abstract = True

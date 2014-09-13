@@ -1,7 +1,9 @@
+from datetime import date
+
 from django.db import models
 from django.core.urlresolvers import reverse
 
-from core.models import PublishedModel
+from core.models import PublishedModel, PublishedQuerySet
 
 
 class Venue(models.Model):
@@ -20,6 +22,26 @@ class Venue(models.Model):
         return '{}, {}'.format(self.name, self.city)
 
 
+class GigQuerySet(PublishedQuerySet):
+    """
+    Provides additional filters for ``Gig``.
+    """
+
+    def upcoming(self):
+        """
+        Returns a ``QuerySet`` of future gigs in ascending order.
+        """
+
+        return self.filter(date__gte=date.today()).reverse()
+
+    def past(self):
+        """
+        Returns a ``QuerySet`` of past gigs in descending order.
+        """
+
+        return self.filter(date__lt=date.today())
+
+
 class Gig(PublishedModel):
     """
     Stores a show, aka concert.
@@ -31,6 +53,8 @@ class Gig(PublishedModel):
         blank=True, help_text="Type of gig, band line-up, video links, etc.")
     details = models.TextField(
         blank=True, help_text="Start time, cost, ticket and venue links, etc.")
+
+    objects = GigQuerySet.as_manager()
 
     class Meta:
         ordering = ['-date']

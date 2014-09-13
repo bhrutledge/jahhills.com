@@ -27,7 +27,3 @@ class GigTestCase(TestCase):
     def test_list_uses_template(self):
         response = self.client.get('/shows/')
         self.assertTemplateUsed(response, 'shows/gig_list.html')
-
-    def test_list_uses_one_query(self):
-        with self.assertNumQueries(1):
-            self.client.get('/shows/')

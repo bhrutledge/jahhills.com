@@ -1,6 +1,7 @@
 from django.test import TestCase
 from django.core.exceptions import ValidationError
 
+from core.tests.utils import today_str
 from ..models import PublishedModel, Venue, Gig
 
 
@@ -46,6 +47,7 @@ class VenueTestCase(TestCase):
 
         self.assertEqual(list(Venue.objects.all()), [v1, v2, v3, v4])
 
+
 class GigTestCase(TestCase):
 
     def setUp(self):
@@ -89,3 +91,36 @@ class GigTestCase(TestCase):
 
         self.assertEqual(list(Gig.objects.all()), [g1, g2, g3])
 
+    def test_upcoming(self):
+        next_year = Gig.objects.create(date=today_str(365), slug='next-year',
+                                        venue=self.venue, publish=True)
+        tomorrow = Gig.objects.create(date=today_str(1), slug='tomorrow',
+                                      venue=self.venue, publish=True)
+        next_month = Gig.objects.create(date=today_str(30), slug='next-month',
+                                        venue=self.venue, publish=True)
+        today = Gig.objects.create(date=today_str(), slug='today',
+                                   venue=self.venue, publish=True)
+        last_month = Gig.objects.create(date=today_str(-30), slug='last-month',
+                                  venue=self.venue, publish=True)
+        draft = Gig.objects.create(date=today_str(30), slug='draft',
+                                   venue=self.venue)
+
+        self.assertEqual(list(Gig.objects.published().upcoming()),
+                         [today, tomorrow, next_month, next_year])
+
+    def test_past(self):
+        last_year = Gig.objects.create(date=today_str(-365), slug='last-year',
+                                        venue=self.venue, publish=True)
+        tomorrow = Gig.objects.create(date=today_str(1), slug='tomorrow',
+                                      venue=self.venue, publish=True)
+        yesterday = Gig.objects.create(date=today_str(-1), slug='yesterday',
+                                      venue=self.venue, publish=True)
+        last_month = Gig.objects.create(date=today_str(-30), slug='last-month',
+                                        venue=self.venue, publish=True)
+        today = Gig.objects.create(date=today_str(), slug='today',
+                                   venue=self.venue, publish=True)
+        draft = Gig.objects.create(date=today_str(30), slug='draft',
+                                   venue=self.venue)
+
+        self.assertEqual(list(Gig.objects.published().past()),
+                         [yesterday, last_month, last_year])
