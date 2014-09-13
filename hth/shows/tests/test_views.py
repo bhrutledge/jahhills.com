@@ -1,41 +1,28 @@
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 
-from core.tests.utils import today_str
-from ..models import Venue, Gig
+from .factories import DraftGigFactory, UpcomingGigFactory, PastGigFactory
 
 
 class GigTestCase(TestCase):
 
     def setUp(self):
-        today = today_str()
-        tomorrow = today_str(1)
-        yesterday = today_str(-1)
-
-        today_venue = Venue.objects.create(name='Today', city='c')
-        tomorrow_venue = Venue.objects.create(name='Tomorrow', city='c')
-        yesterday_venue = Venue.objects.create(name='Yesterday', city='c')
-        draft_venue = Venue.objects.create(name='Draft', city='c')
-
-        self.today = Gig.objects.create(date=today, slug=today,
-                                        venue=today_venue, publish=True)
-        self.tomorrow = Gig.objects.create(date=tomorrow, slug=tomorrow,
-                                           venue=tomorrow_venue,
-                                           publish=True)
-        self.yesterday = Gig.objects.create(date=yesterday, slug=yesterday,
-                                            venue=yesterday_venue,
-                                            publish=True)
-        self.draft = Gig.objects.create(date=today, slug=today+'-d',
-                                        venue=draft_venue)
+        self.draft_gigs = DraftGigFactory.create_batch(5)
+        self.upcoming_gigs = UpcomingGigFactory.create_batch(5)
+        self.past_gigs = PastGigFactory.create_batch(5)
 
     def test_list_name(self):
         self.assertEqual(reverse('gig_list'), '/shows/')
 
     def test_list_returns_published_gigs(self):
+        published_gigs = sorted(self.upcoming_gigs + self.past_gigs,
+                                key=lambda x: x.date,
+                                reverse=True)
+
         response = self.client.get('/shows/')
         gig_list = response.context['gig_list']
-        self.assertEqual(list(gig_list),
-                         [self.tomorrow, self.today, self.yesterday])
+
+        self.assertEqual(list(gig_list), published_gigs)
 
     def test_list_uses_template(self):
         response = self.client.get('/shows/')
