@@ -38,14 +38,10 @@ class ShowsTestCase(SeleniumTestCase):
 
         self.assertEqual(displayed_details, upcoming_details)
 
-    # TODO: Find a better way to test use of select_related
-    def test_shows_efficiently_displays_venue(self):
-        with self.assertNumQueries(2):
-            self.get_url('/shows')
+    def test_home_displays_upcoming_gigs(self):
+        self.get_url('')
 
-            displayed_venues = [g.text for
-                                g in self.find_css('.gig .venue')]
-            expected_venues = [g.venue.name for
-                               g in self.upcoming_gigs + self.past_gigs]
+        displayed_dates = [g.text for g in self.find_css('.gig .date')]
+        upcoming_dates = [datefilter(g.date) for g in self.upcoming_gigs]
 
-            self.assertEqual(displayed_venues, expected_venues)
+        self.assertEqual(displayed_dates, upcoming_dates)

@@ -2,6 +2,8 @@ from django.test import TestCase
 from django.core.urlresolvers import reverse
 
 from news.tests.factories import DraftPostFactory, PublishedPostFactory
+from shows.tests.factories import (
+    DraftGigFactory, PastGigFactory, UpcomingGigFactory)
 
 
 class HomeTestCase(TestCase):
@@ -25,3 +27,15 @@ class HomeTestCase(TestCase):
         post = response.context['post']
 
         self.assertEqual(post, published_posts[0])
+
+    def test_returns_upcoming_gigs(self):
+        upcoming_gigs = UpcomingGigFactory.create_batch(5)
+        upcoming_gigs = sorted(upcoming_gigs, key=lambda x: x.date)
+
+        PastGigFactory.create_batch(5)
+        DraftGigFactory.create_batch(5)
+
+        response = self.client.get('/')
+        gig_list = response.context['gig_list']
+
+        self.assertEqual(list(gig_list), upcoming_gigs)

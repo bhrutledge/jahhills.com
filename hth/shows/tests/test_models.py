@@ -3,6 +3,8 @@ from django.core.exceptions import ValidationError
 
 from core.tests.utils import today_str
 from ..models import PublishedModel, Venue, Gig
+from .factories import (
+    DraftGigFactory, PublishedGigFactory, PastGigFactory, UpcomingGigFactory)
 
 
 class VenueTestCase(TestCase):
@@ -91,36 +93,35 @@ class GigTestCase(TestCase):
 
         self.assertEqual(list(Gig.objects.all()), [g1, g2, g3])
 
-    def test_upcoming(self):
-        next_year = Gig.objects.create(date=today_str(365), slug='next-year',
-                                        venue=self.venue, publish=True)
-        tomorrow = Gig.objects.create(date=today_str(1), slug='tomorrow',
-                                      venue=self.venue, publish=True)
-        next_month = Gig.objects.create(date=today_str(30), slug='next-month',
-                                        venue=self.venue, publish=True)
-        today = Gig.objects.create(date=today_str(), slug='today',
-                                   venue=self.venue, publish=True)
-        last_month = Gig.objects.create(date=today_str(-30), slug='last-month',
-                                  venue=self.venue, publish=True)
-        draft = Gig.objects.create(date=today_str(30), slug='draft',
-                                   venue=self.venue)
+    def test_published_selects_venue(self):
+        published_gigs = PublishedGigFactory.create_batch(5)
+        expected_venues = [g.venue for g in published_gigs]
 
-        self.assertEqual(list(Gig.objects.published().upcoming()),
+        with self.assertNumQueries(1):
+            actual_venues = [g.venue for g in Gig.objects.published()]
+            self.assertEqual(set(actual_venues), set(expected_venues))
+
+
+    def test_upcoming(self):
+        next_year = UpcomingGigFactory.create(days=365)
+        tomorrow = UpcomingGigFactory.create(days=1)
+        next_month = UpcomingGigFactory.create(days=30)
+        today = UpcomingGigFactory.create(days=0)
+
+        PastGigFactory.create_batch(5)
+        DraftGigFactory.create_batch(5)
+
+        self.assertEqual(list(Gig.objects.upcoming().published()),
                          [today, tomorrow, next_month, next_year])
 
     def test_past(self):
-        last_year = Gig.objects.create(date=today_str(-365), slug='last-year',
-                                        venue=self.venue, publish=True)
-        tomorrow = Gig.objects.create(date=today_str(1), slug='tomorrow',
-                                      venue=self.venue, publish=True)
-        yesterday = Gig.objects.create(date=today_str(-1), slug='yesterday',
-                                      venue=self.venue, publish=True)
-        last_month = Gig.objects.create(date=today_str(-30), slug='last-month',
-                                        venue=self.venue, publish=True)
-        today = Gig.objects.create(date=today_str(), slug='today',
-                                   venue=self.venue, publish=True)
-        draft = Gig.objects.create(date=today_str(30), slug='draft',
-                                   venue=self.venue)
+        last_year = PastGigFactory.create(days=365)
+        yesterday = PastGigFactory.create(days=1)
+        last_month = PastGigFactory.create(days=30)
+        today = PastGigFactory.create(days=0)
 
-        self.assertEqual(list(Gig.objects.published().past()),
+        UpcomingGigFactory.create_batch(5)
+        DraftGigFactory.create_batch(5)
+
+        self.assertEqual(list(Gig.objects.past().published()),
                          [yesterday, last_month, last_year])

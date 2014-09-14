@@ -20,18 +20,15 @@ class NewsTestCase(SeleniumTestCase):
         self.get_url('/news')
         self.assertIn('News', self.browser.title)
 
-        live_titles = [p.text for p in self.find_css('.post .title')]
+        displayed_titles = [p.text for p in self.find_css('.post .title')]
         published_titles = [p.title for p in self.published_posts]
 
-        self.assertEqual(live_titles, published_titles)
+        self.assertEqual(displayed_titles, published_titles)
 
     def test_home_displays_latest_post(self):
         self.get_url('')
 
-        post_list = self.find_css('.post')
-        self.assertEqual(len(post_list), 1)
+        displayed_titles = [p.text for p in self.find_css('.post .title')]
 
-        latest_post = self.published_posts[0]
-
-        post_title = self.find_css('.post .title')[0].text
-        self.assertEqual(post_title, latest_post.title)
+        self.assertEqual(len(displayed_titles), 1)
+        self.assertEqual(displayed_titles[0], self.published_posts[0].title)

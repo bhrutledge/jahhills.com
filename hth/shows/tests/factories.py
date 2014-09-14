@@ -1,4 +1,5 @@
 from datetime import date, timedelta
+from random import randrange
 
 import factory
 import factory.fuzzy
@@ -25,15 +26,28 @@ class DraftGigFactory(factory.django.DjangoModelFactory):
     details = factory.fuzzy.FuzzyText(length=100)
 
 
-class UpcomingGigFactory(DraftGigFactory):
+class PublishedGigFactory(DraftGigFactory):
 
     publish = True
-    date = factory.fuzzy.FuzzyDate(date.today() + timedelta(days=1),
-                                   date.today() + timedelta(days=365))
 
 
-class PastGigFactory(DraftGigFactory):
+class UpcomingGigFactory(PublishedGigFactory):
 
-    publish = True
-    date = factory.fuzzy.FuzzyDate(date(2000, 1, 1),
-                                   date.today() - timedelta(days=1))
+    class Meta:
+        exclude = ('days',)
+
+    # Pick a random date from today through next year
+    days = randrange(365)
+    date = factory.LazyAttribute(
+        lambda obj: date.today() + timedelta(days=obj.days))
+
+
+class PastGigFactory(PublishedGigFactory):
+
+    class Meta:
+        exclude = ('days',)
+
+    # Pick a random date from yesterday through 10 years ago
+    days = randrange(1, 3650)
+    date = factory.LazyAttribute(
+        lambda obj: date.today() - timedelta(days=obj.days))

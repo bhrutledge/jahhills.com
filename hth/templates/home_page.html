@@ -1,6 +1,39 @@
 {% extends "base.html" %}
 
 {% block main_content %}
+
+    <h2>Shows</h2>
+
+    {# TODO: Use included templates #}
+
+    {% for gig in gig_list %}
+    <article class="gig">
+
+        <header>
+            <h3 class="date">{{ gig.date|date }}</h3>
+            <p class="location">
+                <span class="venue">{{ gig.venue.name }}</span>,
+                <span class="city">{{ gig.venue.city }}</span>
+            </p>
+        </header>
+
+        {% if gig.description %}
+        <section class="description">
+            {{ gig.description|safe }}
+        </section>
+        {% endif %}
+
+        {% if gig.details %}
+        <section class="details">
+            {{ gig.details|safe }}
+        </section>
+        {% endif %}
+
+    </article>
+    {% endfor %}
+
+    <h2>News</h2>
+
     <article class="post">
 
         <header>
