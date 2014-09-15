@@ -7,60 +7,53 @@ from django.utils import timezone
 from .models import Published
 
 
-# TODO: Use factory_boy
 class PublishedTestCase(TestCase):
 
     def test_can_be_saved(self):
-        m = Published(slug='test')
-        m.full_clean()
-        m.save()
+        p = Published(slug='test')
+        p.full_clean()
+        p.save()
 
-        m1 = Published.objects.get(slug='test')
-        self.assertEqual(m, m1)
+        p1 = Published.objects.get(slug='test')
+        self.assertEqual(p, p1)
         # TODO: Assert slug?
 
     def test_slug_must_be_unique(self):
-        Published(slug='test').save()
+        Published.objects.create(slug='test')
         with self.assertRaises(IntegrityError):
-            Published(slug='test').save()
+            Published.objects.create(slug='test')
 
     def test_str_is_slug(self):
-        m = Published(slug='test')
-        self.assertEqual(str(m), 'test')
+        p = Published(slug='test')
+        self.assertEqual(str(p), 'test')
 
     def test_can_publish(self):
         now = timezone.now()
-        m = Published(slug='test', publish=True)
-        m.save()
+        p = Published.objects.create(slug='test', publish=True)
 
-        self.assertTrue(m.publish)
-        self.assertEqual(m.publish_on.date(), now.date())
+        self.assertTrue(p.publish)
+        self.assertEqual(p.publish_on.date(), now.date())
 
-        m = Published.objects.get(slug='test')
-        self.assertTrue(m.publish)
-        self.assertEqual(m.publish_on.date(), now.date())
+        p = Published.objects.get(slug='test')
+        self.assertTrue(p.publish)
+        self.assertEqual(p.publish_on.date(), now.date())
 
     def test_draft_by_default(self):
-        m = Published(slug='test')
-        m.save()
+        p = Published.objects.create(slug='test')
 
-        self.assertFalse(m.publish)
-        self.assertIsNone(m.publish_on)
+        self.assertFalse(p.publish)
+        self.assertIsNone(p.publish_on)
 
     def test_can_set_date(self):
         y2k = datetime(2000, 1, 1, tzinfo=timezone.utc)
-        m = Published(slug='y2k', publish_on=y2k)
-        m.save()
+        p = Published.objects.create(slug='y2k', publish_on=y2k)
 
-        m = Published.objects.get(slug='y2k')
-        self.assertEqual(m.publish_on, y2k)
+        p = Published.objects.get(slug='y2k')
+        self.assertEqual(p.publish_on, y2k)
 
     def test_published_filter(self):
-        p = Published(slug='published', publish=True)
-        p.save()
-
-        d = Published(slug='draft')
-        d.save()
+        p = Published.objects.create(slug='published', publish=True)
+        d = Published.objects.create(slug='draft')
 
         objects = list(Published.objects.all())
         self.assertIn(p, objects)
@@ -69,4 +62,3 @@ class PublishedTestCase(TestCase):
         published = list(Published.objects.published())
         self.assertIn(p, published)
         self.assertNotIn(d, published)
-

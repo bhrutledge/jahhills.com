@@ -1,7 +1,6 @@
 from django.test import TestCase
 from django.core.exceptions import ValidationError
 
-from core.tests.utils import today_str
 from ..models import PublishedModel, Venue, Gig
 from .factories import (
     DraftGigFactory, PublishedGigFactory, PastGigFactory, UpcomingGigFactory)
@@ -36,16 +35,11 @@ class VenueTestCase(TestCase):
         self.assertEqual(str(v), 'Venue, City')
 
     def test_ordered_by_name_and_city(self):
-        v1 = Venue(name='A', city='c')
-        v2 = Venue(name='A', city='d')
-        v3 = Venue(name='B', city='c')
-        v4 = Venue(name='C', city='c')
-
         # Save out of order to test ordering
-        v2.save()
-        v1.save()
-        v4.save()
-        v3.save()
+        v2 = Venue.objects.create(name='A', city='d')
+        v1 = Venue.objects.create(name='A', city='c')
+        v4 = Venue.objects.create(name='C', city='c')
+        v3 = Venue.objects.create(name='B', city='c')
 
         self.assertEqual(list(Venue.objects.all()), [v1, v2, v3, v4])
 
@@ -82,14 +76,10 @@ class GigTestCase(TestCase):
         g.save()
 
     def test_ordered_by_date(self):
-        g1 = Gig(date='2014-07-26', slug='g1', venue=self.venue)
-        g2 = Gig(date='2014-07-25', slug='g2', venue=self.venue)
-        g3 = Gig(date='2014-07-24', slug='g3', venue=self.venue)
-
         # Save out of order to test ordering
-        g2.save()
-        g1.save()
-        g3.save()
+        g2 = Gig.objects.create(date='2014-07-25', slug='g2', venue=self.venue)
+        g1 = Gig.objects.create(date='2014-07-26', slug='g1', venue=self.venue)
+        g3 = Gig.objects.create(date='2014-07-24', slug='g3', venue=self.venue)
 
         self.assertEqual(list(Gig.objects.all()), [g1, g2, g3])
 

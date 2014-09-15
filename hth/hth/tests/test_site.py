@@ -21,4 +21,3 @@ class SiteTestCase(SeleniumTestCase):
 
         self.get_url('/videos')
         self.assertIn('Videos', self.browser.title)
-

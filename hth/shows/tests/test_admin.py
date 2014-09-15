@@ -28,14 +28,14 @@ class GigTestCase(AdminTestCase):
     def setUp(self):
         super().setUp()
 
-        self.venue1 = Venue(name='Great Scott', city='Allston, MA')
-        self.venue1.save()
+        self.venue1 = Venue.objects.create(
+            name='Great Scott', city='Allston, MA')
 
-        self.venue2 = Venue(name='Middle East Upstairs', city='Cambridge, MA')
-        self.venue2.save()
+        self.venue2 = Venue.objects.create(
+            name='Middle East Upstairs', city='Cambridge, MA')
 
-        self.venue3 = Venue(name='Red Star Union', city='Cambridge, MA')
-        self.venue3.save()
+        self.venue3 = Venue.objects.create(
+            name='Red Star Union', city='Cambridge, MA')
 
     def test_can_create_gig(self):
         # Ryan logs into the admin
@@ -86,4 +86,3 @@ class GigTestCase(AdminTestCase):
         self.assertIn('Great Scott', self.find_tag('body').text)
         self.assertIn('Middle East', self.find_tag('body').text)
         self.assertNotIn('Red Star Union', self.find_tag('body').text)
-

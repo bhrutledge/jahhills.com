@@ -7,11 +7,10 @@ from ..models import Release, Song, Video
 class ReleaseTestCase(TestCase):
 
     def setUp(self):
-        self.publish = Release(title='Publish', slug='publish', publish=True)
-        self.publish.save()
+        self.publish = Release.objects.create(
+            title='Publish', slug='publish', publish=True)
 
-        self.draft = Release(title='Draft', slug='draft')
-        self.draft.save()
+        self.draft = Release.objects.create(title='Draft', slug='draft')
 
     def test_url_uses_slug(self):
         self.assertEqual(self.publish.get_absolute_url(), '/music/publish/')
@@ -39,19 +38,14 @@ class ReleaseTestCase(TestCase):
         response = self.client.get('/music/')
         self.assertTemplateUsed(response, 'music/release_list.html')
 
-    def test_list_uses_one_query(self):
-        with self.assertNumQueries(1):
-            self.client.get('/music/')
-
 
 class SongTestCase(TestCase):
 
     def setUp(self):
-        self.publish = Song(title='Publish', slug='publish', publish=True)
-        self.publish.save()
+        self.publish = Song.objects.create(
+            title='Publish', slug='publish', publish=True)
 
-        self.draft = Song(title='Draft', slug='draft')
-        self.draft.save()
+        self.draft = Song.objects.create(title='Draft', slug='draft')
 
     def test_url_uses_slug(self):
         self.assertEqual(self.publish.get_absolute_url(), '/songs/publish/')
@@ -79,19 +73,14 @@ class SongTestCase(TestCase):
         response = self.client.get('/songs/')
         self.assertTemplateUsed(response, 'music/song_list.html')
 
-    def test_list_uses_one_query(self):
-        with self.assertNumQueries(1):
-            self.client.get('/songs/')
-
 
 class VideoTestCase(TestCase):
 
     def setUp(self):
-        self.publish = Video(title='Publish', slug='publish', publish=True)
-        self.publish.save()
+        self.publish = Video.objects.create(
+            title='Publish', slug='publish', publish=True)
 
-        self.draft = Video(title='Draft', slug='draft')
-        self.draft.save()
+        self.draft = Video.objects.create(title='Draft', slug='draft')
 
     def test_url_uses_slug(self):
         self.assertEqual(self.publish.get_absolute_url(), '/videos/publish/')
@@ -118,7 +107,3 @@ class VideoTestCase(TestCase):
     def test_list_uses_template(self):
         response = self.client.get('/videos/')
         self.assertTemplateUsed(response, 'music/video_list.html')
-
-    def test_list_uses_one_query(self):
-        with self.assertNumQueries(1):
-            self.client.get('/videos/')

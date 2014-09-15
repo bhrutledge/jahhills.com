@@ -7,11 +7,10 @@ from ..models import Post
 class PostTestCase(TestCase):
 
     def setUp(self):
-        self.publish = Post(title='Publish', slug='publish', publish=True)
-        self.publish.save()
+        self.publish = Post.objects.create(
+            title='Publish', slug='publish', publish=True)
 
-        self.draft = Post(title='Draft', slug='draft')
-        self.draft.save()
+        self.draft = Post.objects.create(title='Draft', slug='draft')
 
     def test_url_uses_slug(self):
         self.assertEqual(self.publish.get_absolute_url(), '/news/publish/')
@@ -44,7 +43,3 @@ class PostTestCase(TestCase):
     def test_list_uses_template(self):
         response = self.client.get('/news/')
         self.assertTemplateUsed(response, 'news/post_list.html')
-
-    def test_list_uses_one_query(self):
-        with self.assertNumQueries(1):
-            self.client.get('/news/')

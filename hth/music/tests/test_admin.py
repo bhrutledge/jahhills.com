@@ -18,7 +18,7 @@ class ReleaseTestCase(AdminTestCase):
 
         self.find_name('title').send_keys('First release')
         self.find_name('date').send_keys(today_str(1))
-        self.find_name('cover_url').send_keys('http://placehold.it/640')
+        self.find_name('cover_url').send_keys('http://localhost/cover.jpg')
         self.find_name('description').send_keys('Release description')
         self.find_name('credits').send_keys('Release credits')
         self.find_name('_save').click()
@@ -55,8 +55,8 @@ class SongTestCase(AdminTestCase):
 
     def setUp(self):
         super().setUp()
-        Release(title='First release', slug='first-release',
-                publish=True).save()
+        Release.objects.create(
+            title='First release', slug='first-release', publish=True)
 
     def test_can_create_song(self):
         # Ryan logs into the admin
@@ -120,8 +120,8 @@ class VideoTestCase(AdminTestCase):
 
     def setUp(self):
         super().setUp()
-        Release(title='First release', slug='first-release',
-                publish=True).save()
+        Release.objects.create(
+            title='First release', slug='first-release', publish=True)
 
     def test_can_create_video(self):
         # Ryan logs into the admin
@@ -133,9 +133,9 @@ class VideoTestCase(AdminTestCase):
         self.find_link('Videos').click()
         self.find_link('Add video').click()
         self.find_name('title').send_keys('First video')
-        self.find_name('source_url').send_keys('http://youtube.com')
+        self.find_name('source_url').send_keys('http://localhost')
         self.find_name('embed_code').send_keys('<iframe></iframe>')
-        self.find_name('preview_url').send_keys('http://youtube.com/jpg')
+        self.find_name('preview_url').send_keys('http://localhost/jpg')
         self.find_name('description').send_keys('Video description')
         self.find_name('credits').send_keys('Video credits')
         self.find_name('publish').click()
@@ -176,4 +176,3 @@ class VideoTestCase(AdminTestCase):
 
         self.find_link('First video').click()
         self.assertIn('First video', self.browser.title)
-
