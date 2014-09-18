@@ -7,8 +7,9 @@ Reboot of [hallelujahthehills.com](http://hallelujahthehills.com) using Django
 As with the
 [first iteration](http://github.com/bhrutledge/hallelujahthehills.com), this is
 an exercise in using the framework. This time around, the focus is on
-[Test-Driven Development](http://www.obeythetestinggoat.com/) and
-[YAGNI](http://en.wikipedia.org/wiki/You_aren't_gonna_need_it).
+[test-driven development](http://www.obeythetestinggoat.com/),
+[best practices](http://twoscoopspress.org/collections/everything/products/two-scoops-of-django-1-6),
+and [YAGNI](http://en.wikipedia.org/wiki/You_aren't_gonna_need_it).
 
 TODO: Use flake8 and pylint
 
@@ -17,3 +18,5 @@ TODO: Use coverage.py
 TODO: Use Fabric/Invoke
 
 TODO: Use Travis
+
+TODO: Use Sphinx
