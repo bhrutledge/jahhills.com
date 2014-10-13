@@ -9,11 +9,3 @@ As with the
 an exercise in using the framework. This time around, the focus is on
 [Test-Driven Development](http://www.obeythetestinggoat.com/) and
 [YAGNI](http://en.wikipedia.org/wiki/You_aren't_gonna_need_it).
-
-TODO: Use flake8 and pylint
-
-TODO: Use coverage.py
-
-TODO: Use Fabric/Invoke
-
-TODO: Use Travis

@@ -48,7 +48,6 @@ class ReleaseTestCase(AdminTestCase):
         self.assertIn('First release', self.browser.title)
 
         # TODO: Test absence/presence of details?
-        # TODO: He adds an audio player?
 
 
 class SongTestCase(AdminTestCase):
@@ -112,8 +111,6 @@ class SongTestCase(AdminTestCase):
 
         self.find_link('First song').click()
         self.assertIn('First song', self.browser.title)
-
-        # TODO: He adds an audio player?
 
 
 class VideoTestCase(AdminTestCase):

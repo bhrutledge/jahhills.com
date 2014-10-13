@@ -18,8 +18,6 @@ class NewsTestCase(AdminTestCase):
         self.find_name('_save').click()
         self.assertIn('First post', self.find_tag('body').text)
 
-        # TODO: He previews the draft post on the site
-
         # He makes sure that it's not published
 
         self.get_url('/news')
@@ -41,7 +39,5 @@ class NewsTestCase(AdminTestCase):
         self.get_url('/news')
         self.find_link('First post').click()
         self.assertIn('First post', self.browser.title)
-
-        # TODO: He schedules a post for the future
 
         # TODO: He checks the order of the posts?

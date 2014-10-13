@@ -12,7 +12,6 @@ class PublishedQuerySet(models.QuerySet):
         Returns a ``QuerySet`` of published objects.
         """
 
-        # TODO: publish_on <= timezone.now()?
         return self.filter(publish=True)
 
 
