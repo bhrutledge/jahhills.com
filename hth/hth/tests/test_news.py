@@ -1,5 +1,7 @@
 from time import sleep
 
+from django.template.defaultfilters import date as datefilter
+
 from core.tests.selenium import SeleniumTestCase
 from news.tests.factories import DraftPostFactory, PublishedPostFactory
 
@@ -16,7 +18,16 @@ class NewsTestCase(SeleniumTestCase):
 
         DraftPostFactory.create_batch(5)
 
-    def test_news_displays_all_published_posts(self):
+    def test_news_detail_displays_entire_post(self):
+        post = self.published_posts[0]
+
+        post_text = '\n'.join([
+            post.title, datefilter(post.publish_on), post.body])
+
+        self.get_url(post.get_absolute_url())
+        self.assertEqual(self.find_css('.post')[0].text, post_text)
+
+    def test_news_displays_all_published_post_titles(self):
         self.get_url('/news')
         self.assertIn('News', self.browser.title)
 
