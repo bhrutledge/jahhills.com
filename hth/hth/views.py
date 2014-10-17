@@ -2,6 +2,7 @@ from django.views.generic import TemplateView
 
 from news.models import Post
 from shows.models import Gig
+from music.models import Release
 
 
 class HomePageView(TemplateView):
@@ -16,5 +17,6 @@ class HomePageView(TemplateView):
 
         context['post'] = Post.objects.published().first()
         context['gig_list'] = Gig.objects.published().upcoming()
+        context['release'] = Release.objects.published().first()
 
         return context

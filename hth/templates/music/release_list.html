@@ -17,8 +17,10 @@
         {% endif %}
 
         <header>
-            <h3><a href="{{ release.get_absolute_url }}">{{ release.title }}</a></h3>
-            <p>{{ release.date|date }}</p>
+            <h3 class="title">
+                <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
+            </h3>
+            <p class="date">{{ release.date|date }}</p>
         </header>
 
         {% if release.description %}

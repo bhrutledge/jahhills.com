@@ -4,6 +4,7 @@ from django.core.urlresolvers import reverse
 from news.tests.factories import DraftPostFactory, PublishedPostFactory
 from shows.tests.factories import (
     DraftGigFactory, PastGigFactory, UpcomingGigFactory)
+from music.tests.factories import DraftReleaseFactory, PublishedReleaseFactory
 
 
 class HomeTestCase(TestCase):
@@ -39,3 +40,16 @@ class HomeTestCase(TestCase):
         gig_list = response.context['gig_list']
 
         self.assertEqual(list(gig_list), upcoming_gigs)
+
+    def test_returns_latest_release(self):
+        published_releases = PublishedReleaseFactory.create_batch(5)
+        published_releases = sorted(published_releases,
+                                    key=lambda x: x.date,
+                                    reverse=True)
+
+        DraftReleaseFactory.create_batch(5)
+
+        response = self.client.get('/')
+        release = response.context['release']
+
+        self.assertEqual(release, published_releases[0])

@@ -21,13 +21,11 @@ class NewsTestCase(SeleniumTestCase):
     def test_news_detail_displays_entire_post(self):
         post = self.published_posts[0]
 
-        post_text = '\n'.join([
-            post.title, datefilter(post.publish_on), post.body])
-
         self.get_url(post.get_absolute_url())
-        self.assertEqual(self.find_css('.post')[0].text, post_text)
+        self.assertEqual(self.find_css('.post .title')[0].text, post.title)
+        self.assertEqual(self.find_css('.post .body')[0].text, post.body)
 
-    def test_news_displays_all_published_post_titles(self):
+    def test_news_displays_published_post_titles(self):
         self.get_url('/news')
         self.assertIn('News', self.browser.title)
 

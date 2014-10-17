@@ -2,9 +2,36 @@
 
 {% block main_content %}
 
-    <h2>Shows</h2>
-
     {# TODO: Use included templates #}
+
+    <h2>Music</h2>
+
+    <article class="release">
+
+        {% if release.cover_url %}
+        <div class="cover thumbnail">
+            <a href="{{ release.get_absolute_url }}"><img src="{{ release.cover_url }}" alt="Cover art"/></a>
+        </div>
+        {% endif %}
+
+        <header>
+            <h3 class="title">
+                <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
+            </h3>
+            <p class="date">{{ release.date|date }}</p>
+        </header>
+
+        {% if release.description %}
+        <section class="description">
+            {{ release.description|safe }}
+        </section>
+        {% endif %}
+
+    </article>
+
+    {# TODO: Conditional for shows #}
+
+    <h2>Shows</h2>
 
     {% for gig in gig_list %}
     <article class="gig">
