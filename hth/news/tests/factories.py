@@ -19,3 +19,8 @@ class PublishedPostFactory(DraftPostFactory):
     publish = True
     publish_on = factory.fuzzy.FuzzyDateTime(
         datetime(2000, 1, 1, tzinfo=timezone.utc))
+
+    @classmethod
+    def create_batch(cls, size, **kwargs):
+        batch = super().create_batch(size, **kwargs)
+        return sorted(batch, key=lambda x: x.publish_on, reverse=True)

@@ -18,10 +18,6 @@ class HomeTestCase(TestCase):
 
     def test_returns_latest_post(self):
         published_posts = PublishedPostFactory.create_batch(5)
-        published_posts = sorted(published_posts,
-                                 key=lambda x: x.publish_on,
-                                 reverse=True)
-
         DraftPostFactory.create_batch(5)
 
         response = self.client.get('/')
@@ -31,8 +27,6 @@ class HomeTestCase(TestCase):
 
     def test_returns_upcoming_gigs(self):
         upcoming_gigs = UpcomingGigFactory.create_batch(5)
-        upcoming_gigs = sorted(upcoming_gigs, key=lambda x: x.date)
-
         PastGigFactory.create_batch(5)
         DraftGigFactory.create_batch(5)
 
@@ -43,10 +37,6 @@ class HomeTestCase(TestCase):
 
     def test_returns_latest_release(self):
         published_releases = PublishedReleaseFactory.create_batch(5)
-        published_releases = sorted(published_releases,
-                                    key=lambda x: x.date,
-                                    reverse=True)
-
         DraftReleaseFactory.create_batch(5)
 
         response = self.client.get('/')

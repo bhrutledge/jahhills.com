@@ -41,6 +41,11 @@ class UpcomingGigFactory(PublishedGigFactory):
     date = factory.LazyAttribute(
         lambda obj: date.today() + timedelta(days=obj.days))
 
+    @classmethod
+    def create_batch(cls, size, **kwargs):
+        batch = super().create_batch(size, **kwargs)
+        return sorted(batch, key=lambda x: x.date)
+
 
 class PastGigFactory(PublishedGigFactory):
 
@@ -51,3 +56,8 @@ class PastGigFactory(PublishedGigFactory):
     days = randrange(1, 3650)
     date = factory.LazyAttribute(
         lambda obj: date.today() - timedelta(days=obj.days))
+
+    @classmethod
+    def create_batch(cls, size, **kwargs):
+        batch = super().create_batch(size, **kwargs)
+        return sorted(batch, key=lambda x: x.date, reverse=True)

@@ -11,11 +11,7 @@ class MusicTestCase(SeleniumTestCase):
     def setUp(self):
         super().setUp()
 
-        published_releases = PublishedReleaseFactory.create_batch(10)
-        self.published_releases = sorted(published_releases,
-                                         key=lambda x: x.date,
-                                         reverse=True)
-
+        self.published_releases = PublishedReleaseFactory.create_batch(10)
         DraftReleaseFactory.create_batch(5)
 
     def test_music_detail_displays_entire_release(self):

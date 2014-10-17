@@ -11,11 +11,7 @@ class NewsTestCase(SeleniumTestCase):
     def setUp(self):
         super().setUp()
 
-        published_posts = PublishedPostFactory.create_batch(10)
-        self.published_posts = sorted(published_posts,
-                                      key=lambda x: x.publish_on,
-                                      reverse=True)
-
+        self.published_posts = PublishedPostFactory.create_batch(10)
         DraftPostFactory.create_batch(5)
 
     def test_news_detail_displays_entire_post(self):

@@ -12,12 +12,8 @@ class ShowsTestCase(SeleniumTestCase):
     def setUp(self):
         super().setUp()
 
-        upcoming_gigs = UpcomingGigFactory.create_batch(10)
-        self.upcoming_gigs = sorted(upcoming_gigs, key=lambda x: x.date)
-
-        past_gigs = PastGigFactory.create_batch(10)
-        self.past_gigs = sorted(past_gigs, key=lambda x: x.date, reverse=True)
-
+        self.upcoming_gigs = UpcomingGigFactory.create_batch(10)
+        self.past_gigs = PastGigFactory.create_batch(10)
         DraftGigFactory.create_batch(5)
 
     def test_shows_displays_upcoming_gigs_before_past_gigs(self):

@@ -15,9 +15,7 @@ class GigTestCase(TestCase):
         self.assertEqual(reverse('gig_list'), '/shows/')
 
     def test_list_returns_published_gigs(self):
-        published_gigs = sorted(self.upcoming_gigs + self.past_gigs,
-                                key=lambda x: x.date,
-                                reverse=True)
+        published_gigs = self.upcoming_gigs + self.past_gigs
 
         response = self.client.get('/shows/')
         gig_list = response.context['gig_list']
