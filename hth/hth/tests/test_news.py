@@ -1,7 +1,3 @@
-from time import sleep
-
-from django.template.defaultfilters import date as datefilter
-
 from core.tests.selenium import SeleniumTestCase
 from news.tests.factories import DraftPostFactory, PublishedPostFactory
 

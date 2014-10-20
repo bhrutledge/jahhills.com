@@ -1,6 +1,5 @@
-from time import sleep
-
 from core.tests.selenium import SeleniumTestCase
+
 
 class SiteTestCase(SeleniumTestCase):
 

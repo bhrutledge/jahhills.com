@@ -91,7 +91,6 @@ class GigTestCase(TestCase):
             actual_venues = [g.venue for g in Gig.objects.published()]
             self.assertEqual(set(actual_venues), set(expected_venues))
 
-
     def test_upcoming(self):
         next_year = UpcomingGigFactory.create(days=365)
         tomorrow = UpcomingGigFactory.create(days=1)
@@ -108,7 +107,6 @@ class GigTestCase(TestCase):
         last_year = PastGigFactory.create(days=365)
         yesterday = PastGigFactory.create(days=1)
         last_month = PastGigFactory.create(days=30)
-        today = PastGigFactory.create(days=0)
 
         UpcomingGigFactory.create_batch(5)
         DraftGigFactory.create_batch(5)

@@ -1,4 +1,3 @@
-from django.test import TestCase
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -15,7 +14,7 @@ class SeleniumTestCase(StaticLiveServerTestCase):
     def tearDown(self):
         self.browser.quit()
 
-    ## Convenience functions
+    # Convenience functions
 
     def get_url(self, url):
         return self.browser.get(self.live_server_url + url)
@@ -47,4 +46,3 @@ class AdminTestCase(SeleniumTestCase):
 
         self.find_name('username').send_keys('admin')
         self.find_name('password').send_keys('admin' + Keys.RETURN)
-

@@ -3,7 +3,7 @@ from django.conf.urls import patterns, url
 from . import views
 
 
-urlpatterns = patterns('',
+urlpatterns = patterns('',  # noqa
     url(r'^music/$',
         views.ReleaseListView.as_view(),
         name='release_list'),
@@ -23,4 +23,3 @@ urlpatterns = patterns('',
         views.VideoDetailView.as_view(),
         name='video_detail'),
 )
-

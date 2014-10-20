@@ -5,7 +5,7 @@ from . import views
 # TODO: post_patterns = patterns('', list_url(Post), detail_url(Post))
 # TODO: Use namespaces?
 
-urlpatterns = patterns('',
+urlpatterns = patterns('',  # noqa
     url(r'^$',
         views.PostListView.as_view(),
         name='post_list'),

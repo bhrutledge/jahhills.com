@@ -125,7 +125,7 @@ class VideoTestCase(AdminTestCase):
 
         self.adminLogin()
 
-        # He adds a published video 
+        # He adds a published video
 
         self.find_link('Videos').click()
         self.find_link('Add video').click()

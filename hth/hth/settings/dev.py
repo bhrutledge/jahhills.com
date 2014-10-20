@@ -1,4 +1,4 @@
-from .base import *
+from .base import *  # noqa
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/

@@ -1,7 +1,6 @@
 from datetime import date
 
 from django.db import models
-from django.core.urlresolvers import reverse
 
 from core.models import PublishedModel, PublishedQuerySet
 
