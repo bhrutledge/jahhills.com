@@ -24,8 +24,9 @@
         </section>
         {% endif %}
 
-        {# TODO: Conditional for tracks and videos #}
+        {# TODO: Does these use two queries? #}
 
+        {% if release.tracks %}
         <section class="tracks">
             <h3>Tracks</h3>
             <ol>
@@ -34,7 +35,9 @@
             {% endfor %}
             </ol>
         </section>
+        {% endif %}
 
+        {% if release.videos %}
         <section class="videos">
             <h3>Videos</h3>
             <ul>
@@ -43,6 +46,7 @@
             {% endfor %}
             </ul>
         </section>
+        {% endif %}
 
         {% if release.credits %}
         <section class="credits">

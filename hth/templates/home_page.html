@@ -29,8 +29,6 @@
 
     </article>
 
-    {# TODO: Conditional for shows #}
-
     <h2>Shows</h2>
 
     {% for gig in gig_list %}
@@ -57,6 +55,8 @@
         {% endif %}
 
     </article>
+    {% empty %}
+    <p>No shows scheduled.</p>
     {% endfor %}
 
     <h2>News</h2>
