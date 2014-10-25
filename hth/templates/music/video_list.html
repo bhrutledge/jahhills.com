@@ -16,8 +16,10 @@
         {% endif %}
 
         <header>
-            <h3><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></h3>
-            <p>{{ video.publish_on|date }}</p>
+            <h3 class="title">
+                <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
+            </h3>
+            <p class="date">{{ video.publish_on|date }}</p>
         </header>
 
         {% if video.description %}

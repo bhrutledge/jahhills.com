@@ -9,14 +9,3 @@ class SiteTestCase(SeleniumTestCase):
 
         self.get_url('/admin')
         self.assertIn('Django site admin', self.browser.title)
-
-        # TODO: Test against custom templates and fixtures
-
-        self.get_url('/music')
-        self.assertIn('Music', self.browser.title)
-
-        self.get_url('/songs')
-        self.assertIn('Songs', self.browser.title)
-
-        self.get_url('/videos')
-        self.assertIn('Videos', self.browser.title)
