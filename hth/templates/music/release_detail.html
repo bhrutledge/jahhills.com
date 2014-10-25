@@ -40,11 +40,17 @@
         {% if release.videos %}
         <section class="videos">
             <h3>Videos</h3>
-            <ul>
             {% for video in release.videos %}
-                <li><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></li>
+            <article class="video">
+                {% if video.preview_url %}
+                <div class="preview thumbnail">
+                    <a href="{{ video.get_absolute_url }}"><img src="{{ video.preview_url }}" alt="Video preview"/></a>
+                </div>
+                {% endif %}
+
+                <p><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></p>
+            </article>
             {% endfor %}
-            </ul>
         </section>
         {% endif %}
 

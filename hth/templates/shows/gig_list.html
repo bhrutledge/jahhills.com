@@ -7,51 +7,57 @@
 {% block main_content %}
     <h2>Shows</h2>
 
-    {% for gig in gig_list.upcoming %}
-    <article class="gig">
+    <section id="upcoming">
+        {% for gig in gig_list.upcoming %}
+        <article class="gig">
 
-        <header>
-            <h3 class="date">{{ gig.date|date }}</h3>
-            <p class="location">
-                <span class="venue">{{ gig.venue.name }}</span>,
-                <span class="city">{{ gig.venue.city }}</span>
-            </p>
-        </header>
+            <header>
+                <h3 class="date">{{ gig.date|date }}</h3>
+                <p class="location">
+                    <span class="venue">{{ gig.venue.name }}</span>,
+                    <span class="city">{{ gig.venue.city }}</span>
+                </p>
+            </header>
 
-        {% if gig.description %}
-        <section class="description">
-            {{ gig.description|safe }}
-        </section>
-        {% endif %}
+            {% if gig.description %}
+            <section class="description">
+                {{ gig.description|safe }}
+            </section>
+            {% endif %}
 
-        {% if gig.details %}
-        <section class="details">
-            {{ gig.details|safe }}
-        </section>
-        {% endif %}
+            {% if gig.details %}
+            <section class="details">
+                {{ gig.details|safe }}
+            </section>
+            {% endif %}
 
-    </article>
-    {% endfor %}
+        </article>
+        {% empty %}
+        <p>No shows scheduled.</p>
+        {% endfor %}
+    </section>
 
-    <h3>Past Shows</h3>
+    <section id="past">
+        <h3>Past Shows</h3>
 
-    {% for gig in gig_list.past %}
-    <article class="gig">
+        {% for gig in gig_list.past %}
+        <article class="gig">
 
-        <header>
-            <h4 class="date">{{ gig.date|date }}</h4>
-            <p class="location">
-                <span class="venue">{{ gig.venue.name }}</span>,
-                <span class="city">{{ gig.venue.city }}</span>
-            </p>
-        </header>
+            <header>
+                <h4 class="date">{{ gig.date|date }}</h4>
+                <p class="location">
+                    <span class="venue">{{ gig.venue.name }}</span>,
+                    <span class="city">{{ gig.venue.city }}</span>
+                </p>
+            </header>
 
-        {% if gig.description %}
-        <section class="description">
-            {{ gig.description|safe }}
-        </section>
-        {% endif %}
+            {% if gig.description %}
+            <section class="description">
+                {{ gig.description|safe }}
+            </section>
+            {% endif %}
 
-    </article>
-    {% endfor %}
+        </article>
+        {% endfor %}
+    </section>
 {% endblock %}
