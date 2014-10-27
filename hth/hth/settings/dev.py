@@ -23,3 +23,6 @@ CACHES = {
 DEBUG_TOOLBAR_CONFIG = {
     'JQUERY_URL': '',
 }
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.environ['MEDIA_ROOT']
