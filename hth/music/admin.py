@@ -25,6 +25,6 @@ class VideoAdmin(admin.ModelAdmin):
     fields = ('title', 'slug', 'source_url', 'embed_code', 'preview_url',
               'release', 'description', 'credits', 'publish', 'publish_on',)
     prepopulated_fields = {'slug': ('title',)}
-    list_display = ('title', 'release', 'publish', 'publish_on',)
+    list_display = ('title', 'source_url', 'release', 'publish', 'publish_on',)
 
 admin.site.register(Video, VideoAdmin)
