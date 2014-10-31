@@ -15,6 +15,7 @@ class Release(PublishedModel):
         blank=True,
         help_text="A link to the cover art, at the highest desired resolution."
     )
+    player_code = models.TextField(blank=True)
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
 
@@ -48,6 +49,7 @@ class Song(PublishedModel):
     """
 
     title = models.CharField(max_length=200)
+    player_code = models.TextField(blank=True)
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
     lyrics = models.TextField(blank=True)

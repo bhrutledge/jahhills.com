@@ -14,6 +14,12 @@
             {% endif %}
         </header>
 
+        {% if song.player_code %}
+        <section class="player">
+            {{ song.player_code|safe }}
+        </section>
+        {% endif %}
+
         {% if song.description %}
         <section class="description">
             {{ song.description|safe }}

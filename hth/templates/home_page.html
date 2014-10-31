@@ -28,6 +28,12 @@
             </section>
             {% endif %}
 
+            {% if release.player_code %}
+            <section class="player">
+                {{ release.player_code|safe }}
+            </section>
+            {% endif %}
+
         </article>
     </section>
 

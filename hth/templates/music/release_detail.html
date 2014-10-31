@@ -24,7 +24,13 @@
         </section>
         {% endif %}
 
-        {# TODO: Does these use two queries? #}
+        {% if release.player_code %}
+        <section class="player">
+            {{ release.player_code|safe }}
+        </section>
+        {% endif %}
+
+        {# TODO: Does this use two queries? #}
 
         {% if release.tracks %}
         <section class="tracks">

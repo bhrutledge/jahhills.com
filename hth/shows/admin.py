@@ -4,12 +4,14 @@ from .models import Venue, Gig
 
 
 class VenueAdmin(admin.ModelAdmin):
+    save_on_top = True
     fields = ('name', 'city', 'website')
 
 admin.site.register(Venue, VenueAdmin)
 
 
 class GigAdmin(admin.ModelAdmin):
+    save_on_top = True
     fields = ('date', 'slug', 'venue', 'description', 'details',
               'publish', 'publish_on',)
     prepopulated_fields = {'slug': ('date',)}

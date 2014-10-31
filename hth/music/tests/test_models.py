@@ -33,6 +33,7 @@ class ReleaseTestCase(TestCase):
     def test_can_have_details(self):
         r = Release(title='First', slug='first', date='2014-08-01',
                     cover_url='http://localhost/jpg',
+                    player_code='<iframe></iframe>',
                     description='Description', credits='Credits')
         r.full_clean()
         r.save()
