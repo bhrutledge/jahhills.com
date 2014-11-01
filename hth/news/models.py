@@ -10,7 +10,7 @@ class Post(PublishedModel):
     """
 
     title = models.CharField(max_length=200)
-    body = models.TextField(blank=True)
+    body = models.TextField(blank=True, help_text="HTML or Markdown.")
 
     class Meta:
         ordering = ['publish', '-publish_on']
