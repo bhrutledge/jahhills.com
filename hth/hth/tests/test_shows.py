@@ -22,12 +22,21 @@ class ShowsTestCase(SeleniumTestCase):
         upcoming_dates = [datefilter(x.date) for x in self.upcoming_gigs]
         past_dates = [datefilter(x.date) for x in self.past_gigs]
 
+        # Test Markdown rendering
+        displayed_descriptions = [x.text for x in
+                                  self.find_css('.gig .description p')]
+        upcoming_descriptions = [x.description for x in self.upcoming_gigs]
+        past_descriptions = [x.description for x in self.past_gigs]
+
         self.assertEqual(displayed_dates, upcoming_dates + past_dates)
+        self.assertEqual(displayed_descriptions,
+                         upcoming_descriptions + past_descriptions)
 
     def test_shows_displays_details_for_upcoming_gigs(self):
         self.get_url('/shows')
 
-        displayed_details = [x.text for x in self.find_css('.gig .details')]
+        # Test Markdown rendering
+        displayed_details = [x.text for x in self.find_css('.gig .details p')]
         upcoming_details = [x.details for x in self.upcoming_gigs]
 
         self.assertEqual(displayed_details, upcoming_details)
@@ -38,4 +47,13 @@ class ShowsTestCase(SeleniumTestCase):
         displayed_dates = [x.text for x in self.find_css('.gig .date')]
         upcoming_dates = [datefilter(x.date) for x in self.upcoming_gigs]
 
+        displayed_descriptions = [x.text for x in
+                                  self.find_css('.gig .description p')]
+        upcoming_descriptions = [x.description for x in self.upcoming_gigs]
+
+        displayed_details = [x.text for x in self.find_css('.gig .details p')]
+        upcoming_details = [x.details for x in self.upcoming_gigs]
+
         self.assertEqual(displayed_dates, upcoming_dates)
+        self.assertEqual(displayed_descriptions, upcoming_descriptions)
+        self.assertEqual(displayed_details, upcoming_details)

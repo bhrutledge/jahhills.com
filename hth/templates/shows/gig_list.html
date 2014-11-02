@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load markdown_tags %}
 
 {% block title %}Shows | {{ block.super }}{% endblock %}
 
@@ -21,13 +22,13 @@
 
             {% if gig.description %}
             <section class="description">
-                {{ gig.description|safe }}
+                {{ gig.description|markdownify|safe }}
             </section>
             {% endif %}
 
             {% if gig.details %}
             <section class="details">
-                {{ gig.details|safe }}
+                {{ gig.details|markdownify|safe }}
             </section>
             {% endif %}
 
@@ -53,7 +54,7 @@
 
             {% if gig.description %}
             <section class="description">
-                {{ gig.description|safe }}
+                {{ gig.description|markdownify|safe }}
             </section>
             {% endif %}
 
