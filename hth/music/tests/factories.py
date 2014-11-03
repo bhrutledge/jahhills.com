@@ -12,6 +12,7 @@ class DraftReleaseFactory(factory.django.DjangoModelFactory):
     slug = factory.Sequence(lambda n: 'release-%d' % n)
     title = factory.Sequence(lambda n: 'Release %d' % n)
     description = factory.fuzzy.FuzzyText(length=100)
+    credits = factory.fuzzy.FuzzyText(length=100)
 
 
 class PublishedReleaseFactory(DraftReleaseFactory):

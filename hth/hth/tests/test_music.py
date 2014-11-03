@@ -16,8 +16,10 @@ class MusicTestCase(SeleniumTestCase):
         self.get_url(release.get_absolute_url())
         self.assertEqual(self.find_css('.release .title')[0].text,
                          release.title)
-        self.assertEqual(self.find_css('.release .description')[0].text,
+        self.assertEqual(self.find_css('.release .description p')[0].text,
                          release.description)
+        self.assertEqual(self.find_css('.release .credits p')[0].text,
+                         release.credits)
 
     # TODO: Tracks and videos
 
@@ -28,12 +30,22 @@ class MusicTestCase(SeleniumTestCase):
         displayed_titles = [x.text for x in self.find_css('.release .title')]
         published_titles = [x.title for x in self.published_releases]
 
+        displayed_descriptions = [x.text for x in
+                                  self.find_css('.release .description p')]
+        published_descriptions = [x.description for x in
+                                  self.published_releases]
+
         self.assertEqual(displayed_titles, published_titles)
+        self.assertEqual(displayed_descriptions, published_descriptions)
 
     def test_home_displays_latest_release(self):
         self.get_url('')
 
         displayed_titles = [x.text for x in self.find_css('.release .title')]
+        displayed_descriptions = [x.text for x in
+                                  self.find_css('.release .description p')]
 
         self.assertEqual(len(displayed_titles), 1)
         self.assertEqual(displayed_titles[0], self.published_releases[0].title)
+        self.assertEqual(displayed_descriptions[0],
+                         self.published_releases[0].description)
