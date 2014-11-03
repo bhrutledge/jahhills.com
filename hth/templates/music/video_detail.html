@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load markdown_tags %}
 
 {% block title %}{{ video.title }} | {{ block.super }}{% endblock %}
 
@@ -27,14 +28,14 @@
 
         {% if video.description %}
         <section class="description">
-            {{ video.description|safe }}
+            {{ video.description|markdownify|safe }}
         </section>
         {% endif %}
 
         {% if video.credits %}
         <section class="credits">
             <h3>Credits</h3>
-            {{ video.credits|safe }}
+            {{ video.credits|markdownify|safe }}
         </section>
         {% endif %}
 

@@ -35,6 +35,7 @@ class DraftVideoFactory(factory.django.DjangoModelFactory):
     slug = factory.Sequence(lambda n: 'video-%d' % n)
     title = factory.Sequence(lambda n: 'Video %d' % n)
     description = factory.fuzzy.FuzzyText(length=100)
+    credits = factory.fuzzy.FuzzyText(length=100)
 
 
 class PublishedVideoFactory(DraftVideoFactory):
