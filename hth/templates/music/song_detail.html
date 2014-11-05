@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load markdown_tags %}
 
 {% block title %}{{ song.title }} | {{ block.super }}{% endblock %}
 
@@ -8,7 +9,7 @@
     <article class="song">
 
         <header>
-            <h2>{{ song.title }}</h2>
+            <h2 class="title">{{ song.title }}</h2>
             {% if song.release %}
             <p>from <a href="{{ song.release.get_absolute_url }}">{{ song.release.title }}</a></p>
             {% endif %}
@@ -22,21 +23,21 @@
 
         {% if song.description %}
         <section class="description">
-            {{ song.description|safe }}
+            {{ song.description|markdownify|safe }}
         </section>
         {% endif %}
 
         {% if song.credits %}
         <section class="credits">
             <h3>Credits</h3>
-            {{ song.credits|safe }}
+            {{ song.credits|markdownify|safe }}
         </section>
         {% endif %}
 
         {% if song.lyrics %}
         <section class="lyrics">
             <h3>Lyrics</h3>
-            {{ song.lyrics|safe }}
+            {{ song.lyrics|markdownify|safe }}
         </section>
         {% endif %}
 

@@ -9,4 +9,4 @@ def markdownify(text):
     """
     Returns the text rendered to HTML via Markdown.
     """
-    return markdown(text)
+    return markdown(text, ['nl2br', 'smarty'])
