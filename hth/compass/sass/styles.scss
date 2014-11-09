@@ -1,0 +1,20 @@
+// Screen
+// ======
+
+@import "normalize";
+@import "grids";
+
+body {
+    @include container(80em);
+}
+
+nav {
+    ul {
+        padding: 0;
+
+        li {
+            display: inline;
+            padding-right: 1em;
+        }
+    }
+}
