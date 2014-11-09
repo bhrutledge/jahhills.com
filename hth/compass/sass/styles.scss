@@ -3,6 +3,7 @@
 
 @import "normalize";
 @import "grids";
+@import "compass/utilities";
 
 body {
     @include container(80em);
@@ -16,5 +17,22 @@ nav {
             display: inline;
             padding-right: 1em;
         }
+    }
+}
+
+main {
+    img {
+        max-width: 100%;
+    }
+}
+
+section {
+}
+
+.object-list {
+    @include pie-clearfix;
+
+    .video, .release {
+        @include gallery(4 of 12, of-type);
     }
 }
