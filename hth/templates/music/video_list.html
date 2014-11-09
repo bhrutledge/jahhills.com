@@ -21,13 +21,6 @@
             </h3>
             <p class="date">{{ video.publish_on|date }}</p>
         </header>
-
-        {% if video.description %}
-        <section class="description">
-            {{ video.description|safe }}
-        </section>
-        {% endif %}
-
     </article>
     {% endfor %}
 {% endblock %}

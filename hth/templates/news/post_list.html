@@ -9,14 +9,12 @@
 
     {% for post in post_list %}
     <article class="post">
-
         <header>
             <h3 class="title">
                 <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
             </h3>
             <p class="date">{{ post.publish_on|date }}</p>
         </header>
-
     </article>
     {% endfor %}
 {% endblock %}
