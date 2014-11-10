@@ -596,11 +596,12 @@ th {
   padding: 0;
 }
 
-/* line 8, ../../compass/sass/styles.scss */
+/* line 7, ../../compass/sass/styles.scss */
 body {
   max-width: 80em;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 5.26316%;
 }
 /* line 12, ../../../../../.virtualenvs/jahhills.com/gems/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 body:after {
@@ -624,7 +625,7 @@ main img {
   max-width: 100%;
 }
 
-/* line 32, ../../compass/sass/styles.scss */
+/* line 29, ../../compass/sass/styles.scss */
 .object-list {
   *zoom: 1;
 }
@@ -634,7 +635,7 @@ main img {
   display: table;
   clear: both;
 }
-/* line 35, ../../compass/sass/styles.scss */
+/* line 32, ../../compass/sass/styles.scss */
 .object-list .video, .object-list .release {
   width: 32.20339%;
   float: left;
