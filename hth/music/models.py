@@ -6,7 +6,7 @@ from core.models import PublishedModel
 
 class Release(PublishedModel):
     """
-    Stores an album, EP, or other collection of ``Songs``s and ``Video``s.
+    Stores an album, EP, or other collection of ``Song``'s and ``Video``'s.
     """
 
     title = models.CharField(max_length=200)

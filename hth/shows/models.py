@@ -28,19 +28,19 @@ class GigQuerySet(PublishedQuerySet):
 
     def published(self):
         """
-        Returns a ``QuerySet`` of published objects with related ``Venue``s.
+        Returns a ``QuerySet`` of published objects with related ``Venue``'s.
         """
         return super().published().select_related('venue')
 
     def upcoming(self):
         """
-        Returns a ``QuerySet`` of future ``Gig``s in ascending order.
+        Returns a ``QuerySet`` of future ``Gig``'s in ascending order.
         """
         return self.filter(date__gte=date.today()).reverse()
 
     def past(self):
         """
-        Returns a ``QuerySet`` of past ``Gig``s in descending order.
+        Returns a ``QuerySet`` of past ``Gig``'s in descending order.
         """
         return self.filter(date__lt=date.today())
 

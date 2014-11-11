@@ -6,7 +6,7 @@ from .models import Release, Song, Video
 
 class ReleaseListView(ListView):
     """
-    Renders a list of published ``Release``s.
+    Renders a list of published ``Release``'s.
     """
     queryset = Release.objects.published()
 
@@ -20,7 +20,7 @@ class ReleaseDetailView(DetailView):
 
 class SongListView(ListView):
     """
-    Renders a list of published ``Song``s.
+    Renders a list of published ``Song``'s.
     """
     queryset = Song.objects.published()
 
@@ -34,7 +34,7 @@ class SongDetailView(DetailView):
 
 class VideoListView(ListView):
     """
-    Renders a list of published ``Video``s.
+    Renders a list of published ``Video``'s.
     """
     queryset = Video.objects.published()
 
