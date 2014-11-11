@@ -11,19 +11,24 @@
 #
 # All configuration values have a default; values that are commented out
 # serve to show the default.
+#
+# flake8: noqa
 
 import sys
-import os
+from os.path import abspath, dirname, join
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-PROJECT_DIR = os.path.join(BASE_DIR, 'hth')
+sys.path.append(abspath(join(dirname(__file__), "_ext")))
+
+BASE_DIR = dirname(dirname(__file__))
+PROJECT_DIR = join(BASE_DIR, 'hth')
 sys.path.append(PROJECT_DIR)
 
 import django
 django.setup()
+
 
 # -- General configuration ------------------------------------------------
 
@@ -35,6 +40,7 @@ django.setup()
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
+    'django_models',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -103,9 +109,11 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output ----------------------------------------------
 
+import sphinx_rtd_theme
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'default'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -113,7 +121,7 @@ html_theme = 'default'
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -263,3 +271,4 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+

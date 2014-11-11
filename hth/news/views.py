@@ -6,7 +6,7 @@ from .models import Post
 
 class PostListView(ListView):
     """
-    Renders a list of published ``Post``s.
+    Renders a list of published ``Post``'s.
     """
     queryset = Post.objects.published()
 
