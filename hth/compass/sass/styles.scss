@@ -3,19 +3,34 @@
 @import "susy";
 
 
+$susy: (
+    columns: 12,
+    gutters: 1/2,
+    container: 80em,
+    global-box-sizing: border-box,
+    // debug: (image: show)
+);
 
-body {
-    @include container(12 1/4 80em);
+.container {
+    @include container;
     padding: 0 gutter();
 }
 
 nav {
+    @include pie-clearfix;
+
+    h1 {
+        float: left;
+    }
+
     ul {
+        float: right;
         padding: 0;
+        @include adjust-leading-to(2);
 
         li {
             display: inline;
-            padding-right: 1em;
+            padding-left: 1em;
         }
     }
 }
@@ -30,6 +45,6 @@ main {
     @include pie-clearfix;
 
     .video, .release {
-        @include gallery(4 of 12, of-type);
+        @include gallery(4, of-type);
     }
 }

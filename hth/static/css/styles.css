@@ -596,36 +596,52 @@ th {
   padding: 0;
 }
 
-/* line 7, ../../compass/sass/styles.scss */
-body {
+/* line 14, ../../compass/sass/styles.scss */
+.container {
   max-width: 80em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 5.26316%;
+  padding: 0 2.85714%;
 }
 /* line 12, ../../../../../.virtualenvs/jahhills.com/gems/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
-body:after {
+.container:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 13, ../../compass/sass/styles.scss */
-nav ul {
-  padding: 0;
+/* line 19, ../../compass/sass/styles.scss */
+nav {
+  *zoom: 1;
 }
-/* line 16, ../../compass/sass/styles.scss */
+/* line 38, ../../../../../.virtualenvs/jahhills.com/gems/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 22, ../../compass/sass/styles.scss */
+nav h1 {
+  float: left;
+}
+/* line 26, ../../compass/sass/styles.scss */
+nav ul {
+  float: right;
+  padding: 0;
+  line-height: 3em;
+}
+/* line 31, ../../compass/sass/styles.scss */
 nav ul li {
   display: inline;
-  padding-right: 1em;
+  padding-left: 1em;
 }
 
-/* line 24, ../../compass/sass/styles.scss */
+/* line 39, ../../compass/sass/styles.scss */
 main img {
   max-width: 100%;
 }
 
-/* line 29, ../../compass/sass/styles.scss */
+/* line 44, ../../compass/sass/styles.scss */
 .object-list {
   *zoom: 1;
 }
@@ -635,9 +651,9 @@ main img {
   display: table;
   clear: both;
 }
-/* line 32, ../../compass/sass/styles.scss */
+/* line 47, ../../compass/sass/styles.scss */
 .object-list .video, .object-list .release {
-  width: 32.20339%;
+  width: 31.42857%;
   float: left;
 }
 /* line 66, ../../../../../.virtualenvs/jahhills.com/gems/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
@@ -649,13 +665,13 @@ main img {
 }
 /* line 66, ../../../../../.virtualenvs/jahhills.com/gems/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 .object-list .video:nth-of-type(3n + 2), .object-list .release:nth-of-type(3n + 2) {
-  margin-left: 33.89831%;
+  margin-left: 34.28571%;
   margin-right: -100%;
   clear: none;
 }
 /* line 66, ../../../../../.virtualenvs/jahhills.com/gems/gems/susy-2.1.3/sass/susy/language/susy/_gallery.scss */
 .object-list .video:nth-of-type(3n + 3), .object-list .release:nth-of-type(3n + 3) {
-  margin-left: 67.79661%;
+  margin-left: 68.57143%;
   margin-right: -100%;
   clear: none;
 }
