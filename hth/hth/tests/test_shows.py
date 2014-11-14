@@ -18,6 +18,9 @@ class ShowsTestCase(SeleniumTestCase):
         self.get_url('/shows')
         self.assertIn('Shows', self.browser.title)
 
+        from time import sleep
+        sleep(10)
+
         displayed_dates = [x.text for x in self.find_css('.gig .date')]
         upcoming_dates = [datefilter(x.date) for x in self.upcoming_gigs]
         past_dates = [datefilter(x.date) for x in self.past_gigs]

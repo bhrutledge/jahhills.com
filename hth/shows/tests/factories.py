@@ -33,13 +33,9 @@ class PublishedGigFactory(DraftGigFactory):
 
 class UpcomingGigFactory(PublishedGigFactory):
 
-    class Meta:
-        exclude = ('days',)
-
     # Pick a random date from today through next year
-    days = randrange(365)
     date = factory.LazyAttribute(
-        lambda obj: date.today() + timedelta(days=obj.days))
+        lambda obj: date.today() + timedelta(days=randrange(365)))
 
     @classmethod
     def create_batch(cls, size, **kwargs):
@@ -49,13 +45,9 @@ class UpcomingGigFactory(PublishedGigFactory):
 
 class PastGigFactory(PublishedGigFactory):
 
-    class Meta:
-        exclude = ('days',)
-
     # Pick a random date from yesterday through 10 years ago
-    days = randrange(1, 3650)
     date = factory.LazyAttribute(
-        lambda obj: date.today() - timedelta(days=obj.days))
+        lambda obj: date.today() - timedelta(days=randrange(1,3650)))
 
     @classmethod
     def create_batch(cls, size, **kwargs):
