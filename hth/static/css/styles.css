@@ -614,62 +614,72 @@ body .container:after {
   clear: both;
 }
 
-/* line 21, ../../compass/sass/styles.scss */
-nav h1 {
-  text-transform: uppercase;
-}
-/* line 25, ../../compass/sass/styles.scss */
-nav ul {
-  padding: 0;
-}
-/* line 28, ../../compass/sass/styles.scss */
-nav ul li {
-  display: inline;
-  padding-right: 1em;
-}
-
-/* line 36, ../../compass/sass/styles.scss */
-main h2 {
-  text-transform: uppercase;
-}
-/* line 40, ../../compass/sass/styles.scss */
-main article h2 {
-  text-transform: none;
-}
-/* line 44, ../../compass/sass/styles.scss */
-main img {
-  max-width: 100%;
-}
-/* line 48, ../../compass/sass/styles.scss */
-main > article,
-main > section {
-  margin-bottom: 4.5em;
-}
-
-/* line 54, ../../compass/sass/styles.scss */
+/* line 20, ../../compass/sass/styles.scss */
 a, a:visited {
   text-decoration: none;
   color: #09c;
 }
 
-/* line 59, ../../compass/sass/styles.scss */
+/* line 25, ../../compass/sass/styles.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 63, ../../compass/sass/styles.scss */
+/* line 29, ../../compass/sass/styles.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 67, ../../compass/sass/styles.scss */
+/* line 33, ../../compass/sass/styles.scss */
 a:hover, a:active {
   outline: none;
 }
 
-/* line 71, ../../compass/sass/styles.scss */
-header .title + .date {
+/* line 37, ../../compass/sass/styles.scss */
+nav {
+  margin-bottom: 3em;
+}
+/* line 40, ../../compass/sass/styles.scss */
+nav h1 {
+  text-transform: uppercase;
+}
+/* line 44, ../../compass/sass/styles.scss */
+nav ul {
   margin-top: -1.5em;
+  padding: 0;
+}
+/* line 48, ../../compass/sass/styles.scss */
+nav ul li {
+  display: inline;
+  padding-right: 1em;
+}
+
+/* line 56, ../../compass/sass/styles.scss */
+main img {
+  max-width: 100%;
+}
+/* line 60, ../../compass/sass/styles.scss */
+main h2 {
+  text-transform: uppercase;
+}
+/* line 64, ../../compass/sass/styles.scss */
+main article h2 {
+  text-transform: none;
+}
+/* line 68, ../../compass/sass/styles.scss */
+main > section {
+  margin-bottom: 4.5em;
+}
+
+/* line 74, ../../compass/sass/styles.scss */
+header .title + .date,
+header .title + .location {
+  margin-top: -1.5em;
+}
+
+/* line 80, ../../compass/sass/styles.scss */
+.object-list article {
+  margin-bottom: 3em;
 }
 
 /*

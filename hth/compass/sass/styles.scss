@@ -17,40 +17,6 @@ body {
     }
 }
 
-nav {
-    h1 {
-        text-transform: uppercase;
-    }
-
-    ul {
-        padding: 0;
-
-        li {
-            display: inline;
-            padding-right: 1em;
-        }
-    }
-}
-
-main {
-    h2 {
-        text-transform: uppercase;
-    }
-
-    article h2 {
-        text-transform: none;
-    }
-
-    img {
-        max-width: 100%;
-    }
-
-    > article,
-    > section {
-        @include trailer(3);
-    }
-}
-
 a, a:visited {
     text-decoration: none;
     color: #09c;
@@ -68,8 +34,51 @@ a:hover, a:active {
     outline: none;
 }
 
-header .title + .date {
-    margin-top: rhythm(-1);
+nav {
+    @include trailer(2);
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    ul {
+        margin-top: rhythm(-1);
+        padding: 0;
+
+        li {
+            display: inline;
+            padding-right: 1em;
+        }
+    }
+}
+
+main {
+    img {
+        max-width: 100%;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    article h2 {
+        text-transform: none;
+    }
+
+    > section {
+        @include trailer(3);
+    }
+}
+
+header .title {
+    + .date,
+    + .location {
+        margin-top: rhythm(-1);
+    }
+}
+
+.object-list article {
+    @include trailer(2);
 }
 
 /*
