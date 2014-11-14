@@ -4,18 +4,76 @@
 
 
 $susy: (
-    columns: 12,
-    gutters: 1/2,
-    container: 80em,
     global-box-sizing: border-box,
-    // debug: (image: show)
+    //debug: (image: show)
 );
 
-.container {
-    @include container;
-    padding: 0 gutter();
+body {
+    color: #222;
+
+    .container {
+        @include container(40em);
+        padding: 0 gutter();
+    }
 }
 
+nav {
+    h1 {
+        text-transform: uppercase;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            display: inline;
+            padding-right: 1em;
+        }
+    }
+}
+
+main {
+    h2 {
+        text-transform: uppercase;
+    }
+
+    article h2 {
+        text-transform: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    > article,
+    > section {
+        @include trailer(3);
+    }
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #09c;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: none;
+}
+
+header .title + .date {
+    margin-top: rhythm(-1);
+}
+
+/*
+TODO: Desktop breakpoint
 nav {
     @include pie-clearfix;
 
@@ -25,22 +83,14 @@ nav {
 
     ul {
         float: right;
-        padding: 0;
         @include adjust-leading-to(2);
 
         li {
-            display: inline;
+            padding-right: 0;
             padding-left: 1em;
         }
     }
 }
-
-main {
-    img {
-        max-width: 100%;
-    }
-}
-
 .object-list {
     @include pie-clearfix;
 
@@ -48,3 +98,4 @@ main {
         @include gallery(4, of-type);
     }
 }
+*/
