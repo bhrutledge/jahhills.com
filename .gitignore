@@ -53,6 +53,5 @@ coverage.xml
 # Sphinx documentation
 docs/_build/
 
-
 # Sass
 .sass-cache/

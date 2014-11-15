@@ -1,0 +1,110 @@
+@import "normalize";
+@import "compass";
+@import "susy";
+
+
+$susy: (
+    global-box-sizing: border-box,
+    //debug: (image: show)
+);
+
+body {
+    color: #222;
+
+    .container {
+        @include container(40em);
+        padding: 0 gutter();
+    }
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #09c;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: none;
+}
+
+nav {
+    @include trailer(2);
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    ul {
+        margin-top: rhythm(-1);
+        padding: 0;
+
+        li {
+            display: inline;
+            padding-right: 1em;
+        }
+    }
+}
+
+main {
+    img {
+        max-width: 100%;
+    }
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    article h2 {
+        text-transform: none;
+    }
+
+    > section {
+        @include trailer(3);
+    }
+}
+
+header .title {
+    + .date,
+    + .location {
+        margin-top: rhythm(-1);
+    }
+}
+
+.object-list article {
+    @include trailer(2);
+}
+
+/*
+TODO: Desktop breakpoint
+nav {
+    @include pie-clearfix;
+
+    h1 {
+        float: left;
+    }
+
+    ul {
+        float: right;
+        @include adjust-leading-to(2);
+
+        li {
+            padding-right: 0;
+            padding-left: 1em;
+        }
+    }
+}
+.object-list {
+    @include pie-clearfix;
+
+    .video, .release {
+        @include gallery(4, of-type);
+    }
+}
+*/
