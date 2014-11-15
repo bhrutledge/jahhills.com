@@ -6,11 +6,12 @@
 {% block main_content %}
     <section id="upcoming" class="object-list">
         <h2>Shows</h2>
+
         {% for gig in gig_list.upcoming %}
         <article class="gig">
 
             <header>
-                <h3 class="date">{{ gig.date|date }}</h3>
+                <h3 class="title date">{{ gig.date|date }}</h3>
                 <p class="location">
                     <span class="venue">{{ gig.venue.name }}</span>,
                     <span class="city">{{ gig.venue.city }}</span>
@@ -43,7 +44,7 @@
         <article class="gig">
 
             <header>
-                <h3 class="date">{{ gig.date|date }}</h3>
+                <h3 class="title date">{{ gig.date|date }}</h3>
                 <p class="location">
                     <span class="venue">{{ gig.venue.name }}</span>,
                     <span class="city">{{ gig.venue.city }}</span>
