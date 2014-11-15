@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load markdown_tags %}
 
 {% block title %}News | {{ block.super }}{% endblock %}
 
@@ -15,6 +16,13 @@
             </h3>
             <p class="date">{{ post.publish_on|date }}</p>
         </header>
+
+        {% if forloop.first %}
+        <section class="body">
+            {{ post.body|markdownify|safe }}
+        </section>
+        {% endif %}
+
     </article>
     {% endfor %}
 {% endblock %}
