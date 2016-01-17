@@ -1,12 +1,9 @@
-import unittest
-
 from core.tests.utils import today_str
 from core.tests.selenium import AdminTestCase
 
 from ..models import Release
 
 
-@unittest.skip('Failing in Django 1.9')
 class ReleaseTestCase(AdminTestCase):
 
     def test_can_create_release(self):
@@ -17,7 +14,7 @@ class ReleaseTestCase(AdminTestCase):
         # He creates an unpublished release
 
         self.find_link('Releases').click()
-        self.find_link('Add release').click()
+        self.find_link('ADD RELEASE').click()
 
         self.find_name('title').send_keys('First release')
         self.find_name('date').send_keys(today_str(1))
@@ -54,7 +51,6 @@ class ReleaseTestCase(AdminTestCase):
         # TODO: Test absence/presence of details?
 
 
-@unittest.skip('Failing in Django 1.9')
 class SongTestCase(AdminTestCase):
 
     def setUp(self):
@@ -70,7 +66,7 @@ class SongTestCase(AdminTestCase):
         # He adds a published song
 
         self.find_link('Songs').click()
-        self.find_link('Add song').click()
+        self.find_link('ADD SONG').click()
         self.find_name('title').send_keys('First song')
         self.find_name('description').send_keys('Song description')
         self.find_name('player_code').send_keys('<iframe></iframe>')
@@ -82,7 +78,7 @@ class SongTestCase(AdminTestCase):
 
         # He adds an unpublished song
 
-        self.find_link('Add song').click()
+        self.find_link('ADD SONG').click()
         self.find_name('title').send_keys('Second song')
         self.find_name('_save').click()
         self.assertIn('First song', self.find_tag('body').text)
@@ -119,7 +115,6 @@ class SongTestCase(AdminTestCase):
         self.assertIn('First song', self.browser.title)
 
 
-@unittest.skip('Failing in Django 1.9')
 class VideoTestCase(AdminTestCase):
 
     def setUp(self):
@@ -135,7 +130,7 @@ class VideoTestCase(AdminTestCase):
         # He adds a published video
 
         self.find_link('Videos').click()
-        self.find_link('Add video').click()
+        self.find_link('ADD VIDEO').click()
         self.find_name('title').send_keys('First video')
         self.find_name('source_url').send_keys('http://localhost')
         self.find_name('embed_code').send_keys('<iframe></iframe>')
@@ -148,7 +143,7 @@ class VideoTestCase(AdminTestCase):
 
         # He adds an unpublished video
 
-        self.find_link('Add video').click()
+        self.find_link('ADD VIDEO').click()
         self.find_name('title').send_keys('Second video')
         self.find_name('_save').click()
         self.assertIn('Second video', self.find_tag('body').text)

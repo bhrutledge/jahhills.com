@@ -47,7 +47,7 @@ class PastGigFactory(PublishedGigFactory):
 
     # Pick a random date from yesterday through 10 years ago
     date = factory.LazyAttribute(
-        lambda obj: date.today() - timedelta(days=randrange(1,3650)))
+        lambda obj: date.today() - timedelta(days=randrange(1, 3650)))
 
     @classmethod
     def create_batch(cls, size, **kwargs):

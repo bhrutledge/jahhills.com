@@ -1,12 +1,9 @@
-import unittest
-
 from core.tests.utils import today_str
 from core.tests.selenium import AdminTestCase
 
 from ..models import Venue
 
 
-@unittest.skip('Failing in Django 1.9')
 class VenueTestCase(AdminTestCase):
 
     def test_can_create_venue(self):
@@ -17,7 +14,7 @@ class VenueTestCase(AdminTestCase):
         # He adds a venue
 
         self.find_link('Venues').click()
-        self.find_link('Add venue').click()
+        self.find_link('ADD VENUE').click()
 
         self.find_name('name').send_keys('Great Scott')
         self.find_name('city').send_keys('Allston, MA')
@@ -26,7 +23,6 @@ class VenueTestCase(AdminTestCase):
         self.assertIn('Great Scott', self.find_tag('body').text)
 
 
-@unittest.skip('Failing in Django 1.9')
 class GigTestCase(AdminTestCase):
 
     def setUp(self):
@@ -49,7 +45,7 @@ class GigTestCase(AdminTestCase):
         # He publishes an upcoming gig
 
         self.find_link('Gigs').click()
-        self.find_link('Add gig').click()
+        self.find_link('ADD GIG').click()
 
         self.find_name('date').send_keys(today_str(1))
         self.find_name('venue').send_keys(self.venue1.id)
@@ -61,7 +57,7 @@ class GigTestCase(AdminTestCase):
 
         # He publishes a past gig
 
-        self.find_link('Add gig').click()
+        self.find_link('ADD GIG').click()
 
         self.find_name('date').send_keys(today_str(-30))
         self.find_name('venue').send_keys(self.venue2.id)
@@ -76,7 +72,7 @@ class GigTestCase(AdminTestCase):
         self.get_url('/admin')
 
         self.find_link('Gigs').click()
-        self.find_link('Add gig').click()
+        self.find_link('ADD GIG').click()
 
         self.find_name('date').send_keys(today_str(30))
         self.find_name('venue').send_keys(self.venue3.id)
