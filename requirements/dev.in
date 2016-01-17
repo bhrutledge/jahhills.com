@@ -1,5 +1,9 @@
+-r base.in
 django-debug-toolbar
+django-extensions
 factory-boy
 flake8
+ptpython
+pygments-style-solarized
 selenium
 sphinx
