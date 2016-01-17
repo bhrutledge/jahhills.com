@@ -1,10 +1,10 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
 from . import views
 
 
-urlpatterns = patterns('',  # noqa
+urlpatterns = [
     url(r'^$',
         views.GigListView.as_view(),
         name='gig_list')
-)
+]

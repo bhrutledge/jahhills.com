@@ -1,0 +1,6 @@
+tags
+migrations
+*.css
+.git
+*.pyc
+*.db

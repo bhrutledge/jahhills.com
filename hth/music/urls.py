@@ -1,9 +1,9 @@
-from django.conf.urls import patterns, url
+from django.conf.urls import url
 
 from . import views
 
 
-urlpatterns = patterns('',  # noqa
+urlpatterns = [
     url(r'^music/$',
         views.ReleaseListView.as_view(),
         name='release_list'),
@@ -22,4 +22,4 @@ urlpatterns = patterns('',  # noqa
     url(r'^videos/(?P<slug>[-_\w]+)/$',
         views.VideoDetailView.as_view(),
         name='video_detail'),
-)
+]
