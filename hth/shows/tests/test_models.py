@@ -1,4 +1,4 @@
-import unittest
+from datetime import date, timedelta
 
 from django.test import TestCase
 from django.core.exceptions import ValidationError
@@ -6,6 +6,10 @@ from django.core.exceptions import ValidationError
 from ..models import PublishedModel, Venue, Gig
 from .factories import (
     DraftGigFactory, PublishedGigFactory, PastGigFactory, UpcomingGigFactory)
+
+
+def from_today(days=0):
+    return date.today() + timedelta(days)
 
 
 class VenueTestCase(TestCase):
@@ -93,12 +97,11 @@ class GigTestCase(TestCase):
             actual_venues = [g.venue for g in Gig.objects.published()]
             self.assertEqual(set(actual_venues), set(expected_venues))
 
-    @unittest.skip('Error on days kwarg after upgrading to Django 1.9')
     def test_upcoming(self):
-        next_year = UpcomingGigFactory.create(days=365)
-        tomorrow = UpcomingGigFactory.create(days=1)
-        next_month = UpcomingGigFactory.create(days=30)
-        today = UpcomingGigFactory.create(days=0)
+        next_year = UpcomingGigFactory.create(date=from_today(365))
+        tomorrow = UpcomingGigFactory.create(date=from_today(1))
+        next_month = UpcomingGigFactory.create(date=from_today(30))
+        today = UpcomingGigFactory.create(date=from_today())
 
         PastGigFactory.create_batch(5)
         DraftGigFactory.create_batch(5)
@@ -106,11 +109,10 @@ class GigTestCase(TestCase):
         self.assertEqual(list(Gig.objects.upcoming().published()),
                          [today, tomorrow, next_month, next_year])
 
-    @unittest.skip('Error on days kwarg after upgrading to Django 1.9')
     def test_past(self):
-        last_year = PastGigFactory.create(days=365)
-        yesterday = PastGigFactory.create(days=1)
-        last_month = PastGigFactory.create(days=30)
+        last_year = PastGigFactory.create(date=from_today(-365))
+        yesterday = PastGigFactory.create(date=from_today(-1))
+        last_month = PastGigFactory.create(date=from_today(-30))
 
         UpcomingGigFactory.create_batch(5)
         DraftGigFactory.create_batch(5)

@@ -1,5 +1,3 @@
-import unittest
-
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 
@@ -16,14 +14,13 @@ class GigTestCase(TestCase):
     def test_list_name(self):
         self.assertEqual(reverse('gig_list'), '/shows/')
 
-    @unittest.skip('Gigs not in expected order after upgrade to Django 1.9')
     def test_list_returns_published_gigs(self):
-        published_gigs = self.upcoming_gigs + self.past_gigs
+        published_gigs = set(self.upcoming_gigs + self.past_gigs)
 
         response = self.client.get('/shows/')
         gig_list = response.context['gig_list']
 
-        self.assertEqual(list(gig_list), published_gigs)
+        self.assertEqual(set(gig_list), published_gigs)
 
     def test_list_uses_template(self):
         response = self.client.get('/shows/')
