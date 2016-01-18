@@ -16,10 +16,10 @@ class VideosTestCase(SeleniumTestCase):
         self.get_url(video.get_absolute_url())
 
         self.assertEqual(self.find_css('.video .title')[0].text, video.title)
-        self.assertEqual(self.find_css('.video .description p')[0].text,
-                         video.description)
-        self.assertEqual(self.find_css('.video .credits p')[0].text,
-                         video.credits)
+        self.assertEqual(video.description,
+                         self.find_css('.video .description')[0].text)
+        self.assertIn(video.credits,
+                      self.find_css('.video .credits')[0].text)
 
     def test_videos_displays_published_video_titles(self):
         self.get_url('/videos')

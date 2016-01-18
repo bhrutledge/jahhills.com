@@ -16,12 +16,12 @@ class MusicTestCase(SeleniumTestCase):
         release = self.published_releases[0]
 
         self.get_url(release.get_absolute_url())
-        self.assertEqual(self.find_css('.release .title')[0].text,
-                         release.title)
-        self.assertEqual(self.find_css('.release .description p')[0].text,
-                         release.description)
-        self.assertEqual(self.find_css('.release .credits p')[0].text,
-                         release.credits)
+        self.assertEqual(release.title,
+                         self.find_css('.release .title')[0].text)
+        self.assertIn(release.description,
+                         self.find_css('.release .description')[0].text)
+        self.assertIn(release.credits,
+                      self.find_css('.release .credits')[0].text)
 
     # TODO: Tracks and videos
 
@@ -33,7 +33,7 @@ class MusicTestCase(SeleniumTestCase):
         published_titles = [x.title for x in self.published_releases]
 
         displayed_descriptions = [x.text for x in
-                                  self.find_css('.release .description p')]
+                                  self.find_css('.release .description')]
         published_descriptions = [x.description for x in
                                   self.published_releases]
 
@@ -45,7 +45,7 @@ class MusicTestCase(SeleniumTestCase):
 
         displayed_titles = [x.text for x in self.find_css('.release .title')]
         displayed_descriptions = [x.text for x in
-                                  self.find_css('.release .description p')]
+                                  self.find_css('.release .description')]
 
         self.assertEqual(len(displayed_titles), 1)
         self.assertEqual(displayed_titles[0], self.published_releases[0].title)
@@ -66,12 +66,12 @@ class SongsTestCase(SeleniumTestCase):
 
         self.get_url(song.get_absolute_url())
         self.assertEqual(self.find_css('.song .title')[0].text, song.title)
-        self.assertEqual(self.find_css('.song .description p')[0].text,
-                         song.description)
-        self.assertEqual(self.find_css('.song .credits p')[0].text,
-                         song.credits)
-        self.assertEqual(self.find_css('.song .lyrics p')[0].text,
-                         song.lyrics)
+        self.assertIn(song.description,
+                         self.find_css('.song .description')[0].text)
+        self.assertIn(song.credits,
+                      self.find_css('.song .credits')[0].text)
+        self.assertIn(song.lyrics,
+                      self.find_css('.song .lyrics')[0].text)
 
     def test_song_list_displays_published_songs(self):
         self.get_url('/songs')

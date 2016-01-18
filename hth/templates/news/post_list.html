@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% load markdown_tags %}
 
 {% block title %}News | {{ block.super }}{% endblock %}
 
@@ -19,7 +18,7 @@
 
         {% if forloop.first %}
         <section class="body">
-            {{ post.body|markdownify|safe }}
+            {{ post.body|safe }}
         </section>
         {% endif %}
 

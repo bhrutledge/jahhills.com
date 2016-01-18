@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% load markdown_tags %}
 
 {% block body_id %}hth-home{% endblock %}
 
@@ -27,7 +26,7 @@
 
             {% if release.description %}
             <section class="description">
-                {{ release.description|markdownify|safe }}
+                {{ release.description|safe }}
             </section>
             {% endif %}
 
@@ -77,13 +76,13 @@
 
             {% if gig.description %}
             <section class="description">
-                {{ gig.description|markdownify|safe }}
+                {{ gig.description|safe }}
             </section>
             {% endif %}
 
             {% if gig.details %}
             <section class="details">
-                {{ gig.details|markdownify|safe }}
+                {{ gig.details|safe }}
             </section>
             {% endif %}
 
@@ -107,7 +106,7 @@
             </header>
 
             <section class="body">
-                {{ post.body|markdownify|safe }}
+                {{ post.body|safe }}
             </section>
         </article>
     </section>

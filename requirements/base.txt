@@ -5,5 +5,4 @@
 #    pip-compile base.in
 #
 django==1.9.1
-markdown==2.6.5
 pytz==2015.7

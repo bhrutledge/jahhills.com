@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% load markdown_tags %}
 
 {% block title %}{{ release.title }} | {{ block.super }}{% endblock %}
 
@@ -21,7 +20,7 @@
 
         {% if release.description %}
         <section class="description">
-            {{ release.description|markdownify|safe }}
+            {{ release.description|safe }}
         </section>
         {% endif %}
 
@@ -64,7 +63,7 @@
         {% if release.credits %}
         <section class="credits">
             <h3>Credits</h3>
-            {{ release.credits|markdownify|safe }}
+            {{ release.credits|safe }}
         </section>
         {% endif %}
 

@@ -2,8 +2,6 @@ from core.tests.selenium import SeleniumTestCase
 from news.tests.factories import DraftPostFactory, PublishedPostFactory
 
 
-# TODO: Add Markdown to factory?
-
 class NewsTestCase(SeleniumTestCase):
 
     def setUp(self):
@@ -19,7 +17,7 @@ class NewsTestCase(SeleniumTestCase):
 
         self.assertEqual(self.find_css('.post .title')[0].text,
                          self.latest_post.title)
-        self.assertEqual(self.find_css('.post .body p')[0].text,
+        self.assertEqual(self.find_css('.post .body')[0].text,
                          self.latest_post.body)
 
     def test_news_displays_published_post_titles(self):
@@ -34,7 +32,7 @@ class NewsTestCase(SeleniumTestCase):
     def test_news_displays_latest_post(self):
         self.get_url('/news')
 
-        displayed_bodies = [x.text for x in self.find_css('.post .body p')]
+        displayed_bodies = [x.text for x in self.find_css('.post .body')]
 
         self.assertEqual(len(displayed_bodies), 1)
         self.assertEqual(displayed_bodies[0], self.latest_post.body)
@@ -43,7 +41,7 @@ class NewsTestCase(SeleniumTestCase):
         self.get_url('')
 
         displayed_titles = [x.text for x in self.find_css('.post .title')]
-        displayed_bodies = [x.text for x in self.find_css('.post .body p')]
+        displayed_bodies = [x.text for x in self.find_css('.post .body')]
 
         self.assertEqual(len(displayed_titles), 1)
         self.assertEqual(displayed_titles[0], self.latest_post.title)
