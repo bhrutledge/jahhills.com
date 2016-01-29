@@ -46,17 +46,21 @@
         {% if release.videos %}
         <section class="videos object-list">
             <h3>Videos</h3>
-            {% for video in release.videos %}
-            <article class="video">
-                {% if video.preview_url %}
-                <div class="preview thumbnail">
-                    <a href="{{ video.get_absolute_url }}"><img src="{{ video.preview_url }}" alt="Video preview"/></a>
-                </div>
-                {% endif %}
+            <div class="cards">
+                {% for video in release.videos %}
+                <article class="video card">
+                    {% if video.preview_url %}
+                    <div class="card-image">
+                        <a href="{{ video.get_absolute_url }}"><img src="{{ video.preview_url }}" alt="Video preview"/></a>
+                    </div>
+                    {% endif %}
 
-                <p><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></p>
-            </article>
-            {% endfor %}
+                    <p class="card-copy">
+                        <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
+                    </p>
+                </article>
+                {% endfor %}
+            </div>
         </section>
         {% endif %}
 
