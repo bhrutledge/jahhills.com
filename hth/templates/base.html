@@ -9,11 +9,11 @@
     <link href='//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,600italic,600,700,700italic,900,300italic,300,200italic,200' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
 </head>
 
-<body id="{% block body_id %}{% endblock %}" class="type-system-sans">
-    <header class="navigation-centered" role="banner">
+<body id="{% block body_id %}{% endblock %}">
+    <header class="container navigation-centered" role="banner">
         <h1><a href="/">Hallelujah The Hills</a></h1>
         <div class="navigation-centered-wrapper">
             <a href="javascript:void(0)" id="js-navigation-centered-mobile-menu" class="navigation-centered-mobile-menu">Menu</a>
@@ -28,7 +28,7 @@
         </div>
     </header>
 
-    <main class="{% block main_class %}{% endblock %}">
+    <main class="{% block main_class %}{% endblock %} container">
     {% block main_content %}{% endblock %}
     </main>
 

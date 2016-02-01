@@ -1,10 +1,4 @@
 @import url(normalize.css);
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
 button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: #1565c0;
@@ -178,38 +172,34 @@ picture {
   margin: 0;
   max-width: 100%; }
 
-body > header,
-body > main {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  body > header::after,
-  body > main::after {
-    clear: both;
-    content: "";
-    display: table; }
-body.type-system-sans {
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
   font-family: "PT Sans", sans-serif;
   text-align: left; }
-  body.type-system-sans::after {
+  body::after {
     clear: both;
     content: "";
     display: table; }
-  body.type-system-sans h1, body.type-system-sans h2, body.type-system-sans h3, body.type-system-sans p {
+  body h1, body h2, body h3, body p {
     margin: 0; }
-  body.type-system-sans hr {
+  body hr {
     border-bottom: 1px solid #ddd;
     border-left: none;
     border-right: none;
     border-top: none;
     margin: 1.5em 0; }
-  body.type-system-sans p {
+  body p {
     color: #333;
     line-height: 1.5; }
-  body.type-system-sans a {
+  body a {
     color: #1565c0;
     text-decoration: none; }
-  body.type-system-sans .type {
+  body .type {
     border-bottom: 1px solid;
     display: inline-block;
     font-family: "Titillium Web", sans-serif;
@@ -220,24 +210,24 @@ body.type-system-sans {
     padding: 0.1em 0;
     text-align: left;
     text-transform: uppercase; }
-  body.type-system-sans h1 {
+  body h1 {
     font-family: "Titillium Web", sans-serif;
     font-size: 2em;
     font-weight: 600;
     margin-bottom: 0.6em; }
     @media screen and (min-width: 600px) {
-      body.type-system-sans h1 {
+      body h1 {
         font-size: 2.4em; } }
-  body.type-system-sans h2 {
+  body h2 {
     font-family: "PT Sans", sans-serif;
     font-size: 1.2em;
     font-weight: 400;
     line-height: 1.4em;
     margin-bottom: 1.2em; }
     @media screen and (min-width: 600px) {
-      body.type-system-sans h2 {
+      body h2 {
         font-size: 1.4em; } }
-  body.type-system-sans code {
+  body code {
     background: #F7F7F7;
     border-radius: 4.5px;
     border: 1px solid #E0E0E0;
@@ -246,30 +236,30 @@ body.type-system-sans {
     font-style: normal;
     padding: 0.1em 0.4em;
     white-space: nowrap; }
-  body.type-system-sans h3 {
+  body h3 {
     font-family: "Titillium Web", sans-serif;
     font-size: 1em;
     font-weight: 700;
     line-height: 1.4em;
     margin-bottom: 0.5em; }
-  body.type-system-sans p.date {
+  body p.date {
     color: rgba(51, 51, 51, 0.4);
     font-family: "PT Sans", sans-serif;
     font-size: 0.8em;
     margin-bottom: 0.5em; }
-  body.type-system-sans p {
+  body p {
     font-family: "PT Sans", sans-serif;
     font-weight: 300;
     letter-spacing: 1;
     margin-bottom: 1.5em; }
-    body.type-system-sans p strong {
+    body p strong {
       font-family: "PT Sans", sans-serif;
       font-size: 0.8em;
       font-weight: 600;
       text-transform: uppercase; }
-  body.type-system-sans hr {
+  body hr {
     width: 3em; }
-  body.type-system-sans a.read-more {
+  body a.read-more {
     display: inline-block;
     font-family: "PT Sans", sans-serif;
     font-size: 0.8em;
@@ -277,12 +267,12 @@ body.type-system-sans {
     margin-left: 0.2em;
     position: relative;
     text-transform: uppercase; }
-    body.type-system-sans a.read-more span {
+    body a.read-more span {
       font-size: 1.7em;
       position: absolute;
       right: -10px;
       top: -2px; }
-  body.type-system-sans p.author {
+  body p.author {
     font-family: "PT Sans", sans-serif;
     font-style: italic; }
 
@@ -372,5 +362,14 @@ body.type-system-sans {
     .cards .card-image img {
       display: block;
       width: 100%; }
+
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 /*# sourceMappingURL=styles.css.map */
