@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-# TODO: Use pathlib
+# TODO: Use pathlib or django-environ
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 PROJECT_DIR = os.path.join(BASE_DIR, 'hth')
@@ -25,6 +25,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'cloudinary',
 
     'core',
     'news',
