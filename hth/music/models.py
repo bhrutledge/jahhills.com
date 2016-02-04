@@ -73,7 +73,7 @@ class Video(PublishedModel):
     """
 
     title = models.CharField(max_length=200)
-    source_url = models.CharField(max_length=200, blank=True)
+    source_url = models.URLField(blank=True)
     embed_code = models.TextField(blank=True)
     preview_url = models.URLField(
         blank=True,
