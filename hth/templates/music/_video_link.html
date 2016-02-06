@@ -1,0 +1,2 @@
+{% load cloudinary %}
+<a href="{{ video.get_absolute_url }}"><img src="{% cloudinary_url preview_url width="480" height="270" crop="fill" type="fetch" %}" alt="Video preview" /></a>

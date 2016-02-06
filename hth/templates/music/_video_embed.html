@@ -1,0 +1,11 @@
+{% load embed_video_tags %}
+
+{% if video.embed_code or video.source_url %}
+    <section class="embed">
+    {% if video.embed_code %}
+        {{ video.embed_code|safe }}
+    {% elif video.source_url %}
+        {% video video.source_url "100%x100%" %}
+    {% endif %}
+    </section>
+{% endif %}

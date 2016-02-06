@@ -1,0 +1,15 @@
+{% load embed_video_tags %}
+
+{% if video.preview_url or video.source_url %}
+    {% if video.preview_url %}
+    <div class="preview thumbnail">
+        {% include "music/_video_link.html" with preview_url=video.preview_url %}
+    </div>
+    {% elif video.source_url %}
+    {% video video.source_url as video_embed %}
+    <div class="preview thumbnail">
+        {% include "music/_video_link.html" with preview_url=video_embed.thumbnail %}
+    </div>
+    {% endvideo %}
+    {% endif %}
+{% endif %}

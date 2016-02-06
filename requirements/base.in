@@ -1,3 +1,4 @@
 Django
 pytz
 cloudinary
+django-embed-video

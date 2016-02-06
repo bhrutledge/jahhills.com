@@ -77,7 +77,8 @@ class Video(PublishedModel):
     embed_code = models.TextField(blank=True)
     preview_url = models.URLField(
         blank=True,
-        help_text="A link to the preview image."
+        help_text=("A link to the preview image. "
+                   "Try http://vidthumb.com or http://embed.ly/embed.")
     )
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
