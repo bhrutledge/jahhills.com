@@ -7,6 +7,8 @@ from django.utils import timezone
 from core.models import PublishedModel
 from ..models import Release, Song, Video
 
+import vcr
+
 
 class ReleaseTestCase(TestCase):
 
@@ -171,13 +173,14 @@ class VideoTestCase(TestCase):
         # TODO: test ordered by date?
 
 
-# TODO: Mock out embed_video.backends, or use vcrpy
 class VideoAutofillTestCase(TestCase):
 
+    CASSETTE = 'music/tests/fixtures/cassettes/vimeo.yaml'
     SOURCE_URL = 'https://vimeo.com/126794989'
     PREVIEW_URL = 'http://i.vimeocdn.com/video/517362144_640.jpg'
     EMBED_CODE = '<iframe width="" height="" src="http://player.vimeo.com/video/126794989" frameborder="0" allowfullscreen></iframe>\n'
 
+    @vcr.use_cassette(CASSETTE)
     def test_autofill_preview_url(self):
         embed_code = '<iframe></iframe>'
 
@@ -189,6 +192,7 @@ class VideoAutofillTestCase(TestCase):
         self.assertEqual(v2.preview_url, self.PREVIEW_URL)
         self.assertEqual(v2.embed_code, embed_code)
 
+    @vcr.use_cassette(CASSETTE)
     def test_autofill_embed_code(self):
         preview_url = 'http://localhost/jpg'
         v = Video(title='First', slug='first', source_url=self.SOURCE_URL,
@@ -199,6 +203,7 @@ class VideoAutofillTestCase(TestCase):
         self.assertEqual(v2.preview_url, preview_url)
         self.assertEqual(v2.embed_code, self.EMBED_CODE)
 
+    @vcr.use_cassette(CASSETTE)
     def test_autofill_preview_url_and_embed_code(self):
         v = Video(title='First', slug='first', source_url=self.SOURCE_URL)
         v.save()

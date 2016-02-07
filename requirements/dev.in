@@ -8,3 +8,4 @@ ptpython
 pygments-style-solarized
 selenium
 sphinx
+vcrpy
