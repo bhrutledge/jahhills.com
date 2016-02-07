@@ -1,6 +1,8 @@
 from django.db import models
 from django.core.urlresolvers import reverse
 
+from embed_video import backends
+
 from core.models import PublishedModel
 
 
@@ -92,3 +94,17 @@ class Video(PublishedModel):
         Returns the ``slug``-based URL.
         """
         return reverse('video_detail', args=[self.slug])
+
+    def save(self, *args, **kwargs):
+        if self.source_url and not (self.preview_url and self.embed_code):
+            try:
+                backend = backends.detect_backend(self.source_url)
+            except backends.UnknownBackendException:
+                pass
+            else:
+                if not self.preview_url:
+                    self.preview_url = backend.get_thumbnail_url()
+                if not self.embed_code:
+                    self.embed_code = backend.get_embed_code('', '')
+
+        super().save(*args, **kwargs)
