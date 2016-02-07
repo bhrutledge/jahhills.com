@@ -169,3 +169,10 @@ class VideoTestCase(TestCase):
         self.assertNotIn(draft, videos)
 
         # TODO: test ordered by date?
+
+    def test_autofill_preview_url(self):
+        v = Video(title='First', slug='first', source_url='http://localhost')
+        v.save()
+
+        v = Video.objects.get(title='First')
+        self.assertEqual(v.preview_url, 'http://localhost/jpg')
