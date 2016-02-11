@@ -175,3 +175,30 @@ class VideoTestCase(AdminTestCase):
 
         self.find_link('First video').click()
         self.assertIn('First video', self.browser.title)
+
+    def test_autofill_from_source(self):
+        # Ryan logs into the admin
+
+        self.adminLogin()
+
+        # He adds a published video, without preview_url and embed_code
+
+        self.find_link('Videos').click()
+        self.find_link('ADD VIDEO').click()
+        self.find_name('title').send_keys('First video')
+        self.find_name('source_url').send_keys('https://vimeo.com/126794989')
+        self.find_name('publish').click()
+        self.find_name('_continue').click()
+
+        # He verifies that the preview_url and embed_code have been filled
+
+        self.assertEqual('http://i.vimeocdn.com/video/517362144_640.jpg',
+                         self.find_name('preview_url').get_attribute('value'))
+        self.assertEqual('<iframe width="" height="" src="http://player.vimeo.com/video/126794989" frameborder="0" allowfullscreen></iframe>',
+                         self.find_name('embed_code').text)
+
+        # He verifies that the published video is on the site
+
+        self.get_url('/videos')
+        self.find_link('First video').click()
+        self.assertIn('First video', self.browser.title)

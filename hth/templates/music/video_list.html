@@ -1,5 +1,4 @@
 {% extends "base.html" %}
-{% load cloudinary %}
 
 {% block title %}Videos | {{ block.super }}{% endblock %}
 
@@ -8,11 +7,7 @@
 
     {% for video in video_list %}
     <article class="video">
-        {% if video.preview_url %}
-        <div class="preview">
-            <a href="{{ video.get_absolute_url }}"><img src="{% cloudinary_url video.preview_url width="480" height="270" crop="fill" type="fetch" %}" alt="Video preview" /></a>
-        </div>
-        {% endif %}
+        {% include "music/_video_preview.html" %}
 
         <header>
             <h3 class="title">

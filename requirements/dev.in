@@ -1,4 +1,5 @@
 -r base.in
+pip-tools
 django-debug-toolbar
 django-extensions
 factory-boy
@@ -7,3 +8,4 @@ ptpython
 pygments-style-solarized
 selenium
 sphinx
+vcrpy

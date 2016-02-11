@@ -7,6 +7,8 @@ from django.utils import timezone
 from core.models import PublishedModel
 from ..models import Release, Song, Video
 
+import vcr
+
 
 class ReleaseTestCase(TestCase):
 
@@ -169,3 +171,59 @@ class VideoTestCase(TestCase):
         self.assertNotIn(draft, videos)
 
         # TODO: test ordered by date?
+
+
+class VideoAutofillTestCase(TestCase):
+
+    CASSETTE = 'music/tests/fixtures/cassettes/vimeo.yaml'
+    SOURCE_URL = 'https://vimeo.com/126794989'
+    PREVIEW_URL = 'http://i.vimeocdn.com/video/517362144_640.jpg'
+    EMBED_CODE = '<iframe width="" height="" src="http://player.vimeo.com/video/126794989" frameborder="0" allowfullscreen></iframe>\n'
+
+    @vcr.use_cassette(CASSETTE)
+    def test_autofill_preview_url(self):
+        embed_code = '<iframe></iframe>'
+
+        v = Video(title='First', slug='first', source_url=self.SOURCE_URL,
+                  embed_code=embed_code)
+        v.save()
+
+        v2 = Video.objects.get(title='First')
+        self.assertEqual(v2.preview_url, self.PREVIEW_URL)
+        self.assertEqual(v2.embed_code, embed_code)
+
+    @vcr.use_cassette(CASSETTE)
+    def test_autofill_embed_code(self):
+        preview_url = 'http://localhost/jpg'
+        v = Video(title='First', slug='first', source_url=self.SOURCE_URL,
+                  preview_url=preview_url)
+        v.save()
+
+        v2 = Video.objects.get(title='First')
+        self.assertEqual(v2.preview_url, preview_url)
+        self.assertEqual(v2.embed_code, self.EMBED_CODE)
+
+    @vcr.use_cassette(CASSETTE)
+    def test_autofill_preview_url_and_embed_code(self):
+        v = Video(title='First', slug='first', source_url=self.SOURCE_URL)
+        v.save()
+
+        v2 = Video.objects.get(title='First')
+        self.assertEqual(v2.preview_url, self.PREVIEW_URL)
+        self.assertEqual(v2.embed_code, self.EMBED_CODE)
+
+    def test_no_error_on_missing_source(self):
+        v = Video(title='First', slug='first')
+        v.save()
+
+        v2 = Video.objects.get(title='First')
+        self.assertEqual(v2.preview_url, '')
+        self.assertEqual(v2.embed_code, '')
+
+    def test_no_error_on_unknown_source(self):
+        v = Video(title='First', slug='first', source_url='http://localhost')
+        v.save()
+
+        v2 = Video.objects.get(title='First')
+        self.assertEqual(v2.preview_url, '')
+        self.assertEqual(v2.embed_code, '')

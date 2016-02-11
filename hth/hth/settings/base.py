@@ -27,6 +27,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'cloudinary',
+    'embed_video',
 
     'core',
     'news',

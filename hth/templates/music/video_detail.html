@@ -4,11 +4,7 @@
 
 {% block main_content %}
     <article class="video">
-        {% if video.embed_code %}
-        <section class="embed">
-            {{ video.embed_code|safe }}
-        </section>
-        {% endif %}
+        {% include "music/_video_embed.html" %}
 
         <header>
             <h2 class="title">{{ video.title }}</h2>

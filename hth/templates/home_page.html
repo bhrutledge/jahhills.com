@@ -41,11 +41,7 @@
         <h2>Videos</h2>
 
         <article class="video">
-            {% if video.embed_code %}
-            <section class="embed">
-                {{ video.embed_code|safe }}
-            </section>
-            {% endif %}
+            {% include "music/_video_embed.html" %}
 
             <header>
                 <h3 class="title">
