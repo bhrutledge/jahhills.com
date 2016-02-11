@@ -12,7 +12,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: 0.75em 1.5em;
+  padding: 1.5rem 1.5rem;
   text-decoration: none;
   transition: background-color 150ms ease;
   user-select: none;
@@ -35,13 +35,13 @@ fieldset {
 
 legend {
   font-weight: 600;
-  margin-bottom: 0.375em;
+  margin-bottom: 0.75rem;
   padding: 0; }
 
 label {
   display: block;
   font-weight: 600;
-  margin-bottom: 0.375em; }
+  margin-bottom: 0.75rem; }
 
 input,
 select {
@@ -58,8 +58,8 @@ select[multiple] {
   box-sizing: border-box;
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1em;
-  margin-bottom: 0.75em;
-  padding: 0.5em;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
   transition: border-color 150ms ease;
   width: 100%; }
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
@@ -87,14 +87,14 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: 0.375em; }
+  margin-right: 0.75rem; }
 
 [type="file"] {
-  margin-bottom: 0.75em;
+  margin-bottom: 1.5rem;
   width: 100%; }
 
 select {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   max-width: 100%;
   width: auto; }
 
@@ -105,28 +105,28 @@ ol {
   padding: 0; }
 
 dl {
-  margin-bottom: 0.75em; }
+  margin-bottom: 1.5rem; }
   dl dt {
     font-weight: 600;
-    margin-top: 0.75em; }
+    margin-top: 1.5rem; }
   dl dd {
     margin: 0; }
 
 table {
   border-collapse: collapse;
-  margin: 0.75em 0;
+  margin: 1.5rem 0;
   table-layout: fixed;
   width: 100%; }
 
 th {
   border-bottom: 1px solid #a5a5a5;
   font-weight: 600;
-  padding: 0.75em 0;
+  padding: 1.5rem 0;
   text-align: left; }
 
 td {
   border-bottom: 1px solid #ddd;
-  padding: 0.75em 0; }
+  padding: 1.5rem 0; }
 
 tr,
 td,
@@ -148,7 +148,7 @@ h6 {
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   font-size: 1em;
   line-height: 1;
-  margin: 0 0 0.75em; }
+  margin: 0 0 1.5rem; }
 
 h1 {
   font-size: 3.15733em;
@@ -161,10 +161,11 @@ h2 {
 nav {
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   font-size: 1.333em;
+  margin-bottom: 3rem;
   text-transform: uppercase; }
 
 p {
-  margin: 0 0 0.75em; }
+  margin: 0 0 1.5rem; }
 
 a {
   color: #1565c0;
@@ -178,12 +179,15 @@ hr {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: 1.5em 0; }
+  margin: 1.5rem 0; }
 
 img,
 picture {
   margin: 0;
   max-width: 100%; }
+
+article {
+  margin-bottom: 3rem; }
 
 html {
   box-sizing: border-box; }
@@ -198,11 +202,11 @@ html {
   .navigation-centered .navigation-centered-mobile-menu {
     float: right;
     padding-top: 0.5em; }
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 50em) {
       .navigation-centered .navigation-centered-mobile-menu {
         display: none; } }
   .navigation-centered .navigation-centered-wrapper {
-    max-width: 68em;
+    max-width: 50em;
     margin-left: auto;
     margin-right: auto;
     position: relative; }
@@ -223,7 +227,7 @@ html {
     width: 100%; }
     .navigation-centered ul.navigation-centered-menu.show {
       display: block; }
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 50em) {
       .navigation-centered ul.navigation-centered-menu {
         display: block;
         text-align: center; } }
@@ -235,14 +239,14 @@ html {
       display: inline-block; }
     .navigation-centered ul li.nav-link:last-child a {
       padding-right: 0; }
-    @media screen and (min-width: 900px) {
+    @media screen and (min-width: 50em) {
       .navigation-centered ul li.nav-link {
         display: inline; }
         .navigation-centered ul li.nav-link a {
           padding-right: 1em; } }
 
 .container {
-  max-width: 68em;
+  max-width: 50em;
   margin-left: auto;
   margin-right: auto; }
   .container::after {

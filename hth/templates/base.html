@@ -29,7 +29,7 @@
     <header class="container navigation-centered" role="banner">
         <h1><a href="/">Hallelujah The Hills</a></h1>
         <div class="navigation-centered-wrapper">
-            <a href="javascript:void(0)" id="js-navigation-centered-mobile-menu" class="navigation-centered-mobile-menu">Menu</a>
+            <h3><a href="javascript:void(0)" id="js-navigation-centered-mobile-menu" class="navigation-centered-mobile-menu">Menu</a></h3>
             <nav role="navigation">
                 <ul id="js-navigation-centered-menu" class="navigation-centered-menu show">
                     <li class="nav-link"><a href="{% url 'release_list' %}">Music</a></li>
@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <main class="{% block main_class %}{% endblock %} container">
+    <main class="container {% block main_class %}{% endblock %}">
     {% block main_content %}{% endblock %}
     </main>
 
