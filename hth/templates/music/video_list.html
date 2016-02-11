@@ -3,21 +3,18 @@
 
 {% block title %}Videos | {{ block.super }}{% endblock %}
 
-{% block main_class %}object-list {{ block.super }}{% endblock %}
-
 {% block main_content %}
-<h2>Videos</h2>
+    <h2>Videos</h2>
 
-<div class="cards">
     {% for video in video_list %}
-    <article class="video card">
+    <article class="video">
         {% if video.preview_url %}
-        <div class="card-image">
+        <div class="preview">
             <a href="{{ video.get_absolute_url }}"><img src="{% cloudinary_url video.preview_url width="480" height="270" crop="fill" type="fetch" %}" alt="Video preview" /></a>
         </div>
         {% endif %}
 
-        <header class="card-header">
+        <header>
             <h3 class="title">
                 <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
             </h3>
@@ -25,5 +22,4 @@
         </header>
     </article>
     {% endfor %}
-</div>
 {% endblock %}

@@ -2,21 +2,18 @@
 
 {% block title %}Music | {{ block.super }}{% endblock %}
 
-{% block main_class %}object-list {{ block.super }}{% endblock %}
-
 {% block main_content %}
-<h2>Music</h2>
+    <h2>Music</h2>
 
-<div class="cards">
     {% for release in release_list %}
-    <article class="release card">
+    <article class="release">
         {% if release.cover_url %}
-        <div class="card-image">
+        <div class="cover">
             <a href="{{ release.get_absolute_url }}"><img src="{{ release.cover_url }}" alt="Cover art"/></a>
         </div>
         {% endif %}
 
-        <header class="card-header">
+        <header>
             <h3 class="title">
                 <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
             </h3>
@@ -24,12 +21,10 @@
         </header>
 
         {% if release.description %}
-        <section class="card-copy">
+        <section class="description">
             {{ release.description|safe }}
         </section>
         {% endif %}
-
     </article>
     {% endfor %}
-</div>
 {% endblock %}

@@ -2,11 +2,8 @@
 
 {% block title %}{{ release.title }} | {{ block.super }}{% endblock %}
 
-{% block main_class %}object-detail {{ block.super }}{% endblock %}
-
 {% block main_content %}
     <article class="release">
-
         {% if release.cover_url %}
         <section class="cover">
             <img src="{{ release.cover_url }}" alt="Cover art"/>
@@ -44,23 +41,19 @@
         {% endif %}
 
         {% if release.videos %}
-        <section class="videos object-list">
+        <section class="videos">
             <h3>Videos</h3>
-            <div class="cards">
-                {% for video in release.videos %}
-                <article class="video card">
-                    {% if video.preview_url %}
-                    <div class="card-image">
-                        <a href="{{ video.get_absolute_url }}"><img src="{{ video.preview_url }}" alt="Video preview"/></a>
-                    </div>
-                    {% endif %}
+            {% for video in release.videos %}
+            <article class="video">
+                {% if video.preview_url %}
+                <div class="preview">
+                    <a href="{{ video.get_absolute_url }}"><img src="{{ video.preview_url }}" alt="Video preview"/></a>
+                </div>
+                {% endif %}
 
-                    <p class="card-copy">
-                        <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
-                    </p>
-                </article>
-                {% endfor %}
-            </div>
+                <p><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></p>
+            </article>
+            {% endfor %}
         </section>
         {% endif %}
 
@@ -70,6 +63,5 @@
             {{ release.credits|safe }}
         </section>
         {% endif %}
-
     </article>
 {% endblock %}

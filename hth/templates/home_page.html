@@ -3,16 +3,14 @@
 {% block body_id %}hth-home{% endblock %}
 
 {% block main_content %}
-
     {# TODO: Use included templates #}
 
-    <section id="music" class="object-detail">
+    <section id="music">
         <h2>Music</h2>
 
         <article class="release">
-
             {% if release.cover_url %}
-            <div class="cover thumbnail">
+            <div class="cover">
                 <a href="{{ release.get_absolute_url }}"><img src="{{ release.cover_url }}" alt="Cover art"/></a>
             </div>
             {% endif %}
@@ -35,12 +33,11 @@
                 {{ release.player_code|safe }}
             </section>
             {% endif %}
-
         </article>
     </section>
 
 
-    <section id="videos" class="object-detail">
+    <section id="videos">
         <h2>Videos</h2>
 
         <article class="video">
@@ -60,12 +57,11 @@
     </section>
 
 
-    <section id="shows" class="object-list">
+    <section id="shows">
         <h2>Shows</h2>
 
         {% for gig in gig_list %}
         <article class="gig">
-
             <header>
                 <h3 class="date">{{ gig.date|date }}</h3>
                 <p class="location">
@@ -85,19 +81,18 @@
                 {{ gig.details|safe }}
             </section>
             {% endif %}
-
         </article>
+
         {% empty %}
         <p>No shows scheduled.</p>
         {% endfor %}
     </section>
 
 
-    <section id="news" class="object-detail">
+    <section id="news">
         <h2>News</h2>
 
         <article class="post">
-
             <header>
                 <h3 class="title">
                     <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
@@ -110,5 +105,4 @@
             </section>
         </article>
     </section>
-
 {% endblock %}

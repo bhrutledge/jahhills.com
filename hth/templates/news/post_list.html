@@ -2,8 +2,6 @@
 
 {% block title %}News | {{ block.super }}{% endblock %}
 
-{% block main_class %}object-list {{ block.super }}{% endblock %}
-
 {% block main_content %}
     <h2>News</h2>
 
@@ -21,7 +19,6 @@
             {{ post.body|safe }}
         </section>
         {% endif %}
-
     </article>
     {% endfor %}
 {% endblock %}

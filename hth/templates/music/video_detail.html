@@ -2,11 +2,8 @@
 
 {% block title %}{{ video.title }} | {{ block.super }}{% endblock %}
 
-{% block main_class %}object-detail {{ block.super }}{% endblock %}
-
 {% block main_content %}
     <article class="video">
-
         {% if video.embed_code %}
         <section class="embed">
             {{ video.embed_code|safe }}
@@ -37,6 +34,5 @@
             {{ video.credits|safe }}
         </section>
         {% endif %}
-
     </article>
 {% endblock %}

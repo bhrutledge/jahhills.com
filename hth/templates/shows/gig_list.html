@@ -3,12 +3,11 @@
 {% block title %}Shows | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <section id="upcoming" class="object-list">
+    <section id="upcoming">
         <h2>Shows</h2>
 
         {% for gig in gig_list.upcoming %}
         <article class="gig">
-
             <header>
                 <h3 class="title date">{{ gig.date|date }}</h3>
                 <p class="location">
@@ -28,7 +27,6 @@
                 {{ gig.details|safe }}
             </section>
             {% endif %}
-
         </article>
 
         {% empty %}
@@ -36,12 +34,11 @@
         {% endfor %}
     </section>
 
-    <section id="past" class="object-list">
+    <section id="past">
         <h2>Past Shows</h2>
 
         {% for gig in gig_list.past %}
         <article class="gig">
-
             <header>
                 <h3 class="title date">{{ gig.date|date }}</h3>
                 <p class="location">
@@ -55,7 +52,6 @@
                 {{ gig.description|safe }}
             </section>
             {% endif %}
-
         </article>
         {% endfor %}
     </section>

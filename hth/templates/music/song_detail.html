@@ -2,11 +2,8 @@
 
 {% block title %}{{ song.title }} | {{ block.super }}{% endblock %}
 
-{% block main_class %}object-detail {{ block.super }}{% endblock %}
-
 {% block main_content %}
     <article class="song">
-
         <header>
             <h2 class="title">{{ song.title }}</h2>
             {% if song.release %}
@@ -39,6 +36,5 @@
             {{ song.lyrics|safe }}
         </section>
         {% endif %}
-
     </article>
 {% endblock %}
