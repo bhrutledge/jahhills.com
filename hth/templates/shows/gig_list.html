@@ -7,25 +7,24 @@
         <h2>Shows</h2>
 
         {% for gig in gig_list.upcoming %}
-        <article class="gig">
-            <header>
-                <h3 class="title date">{{ gig.date|date }}</h3>
-                <p class="location">
-                    <span class="venue">{{ gig.venue.name }}</span>,
-                    <span class="city">{{ gig.venue.city }}</span>
+        <article class="content gig">
+            <header class="content-header">
+                <h3 class="content-title">{{ gig.date }}</h3>
+                <p class="content-subtitle">
+                    {{ gig.venue.name }}, {{ gig.venue.city }}
                 </p>
             </header>
 
             {% if gig.description %}
-            <section class="description">
+            <div class="content-body">
                 {{ gig.description|safe }}
-            </section>
+            </div>
             {% endif %}
 
             {% if gig.details %}
-            <section class="details">
+            <div class="content-body">
                 {{ gig.details|safe }}
-            </section>
+            </div>
             {% endif %}
         </article>
 
@@ -38,19 +37,18 @@
         <h2>Past Shows</h2>
 
         {% for gig in gig_list.past %}
-        <article class="gig">
+        <article class="content gig">
             <header>
-                <h3 class="title date">{{ gig.date|date }}</h3>
-                <p class="location">
-                    <span class="venue">{{ gig.venue.name }}</span>,
-                    <span class="city">{{ gig.venue.city }}</span>
+                <h3 class="content-title">{{ gig.date }}</h3>
+                <p class="content-subtitle">
+                    {{ gig.venue.name }}, {{ gig.venue.city }}
                 </p>
             </header>
 
             {% if gig.description %}
-            <section class="description">
+            <div class="content-body">
                 {{ gig.description|safe }}
-            </section>
+            </div>
             {% endif %}
         </article>
         {% endfor %}

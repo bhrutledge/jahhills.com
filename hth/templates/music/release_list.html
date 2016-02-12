@@ -6,24 +6,26 @@
     <h2>Music</h2>
 
     {% for release in release_list %}
-    <article class="release">
+    <article class="content release">
         {% if release.cover_url %}
-        <div class="cover">
+        <div class="content-image">
             <a href="{{ release.get_absolute_url }}"><img src="{{ release.cover_url }}" alt="Cover art"/></a>
         </div>
         {% endif %}
 
-        <header>
-            <h3 class="title">
+        <header class="content-header">
+            <h3 class="content-title">
                 <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
             </h3>
-            <p class="date">{{ release.date|date }}</p>
+            <p class="content-subtitle">
+                <time datetime="{{ release.date|date:"c" }}">{{ release.date }}</time>
+            </p>
         </header>
 
         {% if release.description %}
-        <section class="description">
+        <div class="content-body">
             {{ release.description|safe }}
-        </section>
+        </div>
         {% endif %}
     </article>
     {% endfor %}

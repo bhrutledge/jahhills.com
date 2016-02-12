@@ -6,14 +6,16 @@
     <h2>Videos</h2>
 
     {% for video in video_list %}
-    <article class="video">
+    <article class="content video">
         {% include "music/_video_preview.html" %}
 
-        <header>
-            <h3 class="title">
+        <header class="content-header">
+            <h3 class="content-title">
                 <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
             </h3>
-            <p class="date">{{ video.publish_on|date }}</p>
+            <p class="content-subtitle">
+                <time datetime="{{ video.publish_on|date:"c" }}">{{ video.publish_on }}</time>
+            </p>
         </header>
     </article>
     {% endfor %}

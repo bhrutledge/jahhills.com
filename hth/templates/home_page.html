@@ -8,30 +8,30 @@
     <section id="music">
         <h2>Music</h2>
 
-        <article class="release">
+        <article class="content release">
             {% if release.cover_url %}
-            <div class="cover">
+            <div class="content-image">
                 <a href="{{ release.get_absolute_url }}"><img src="{{ release.cover_url }}" alt="Cover art"/></a>
             </div>
             {% endif %}
 
-            <header>
-                <h3 class="title">
+            <header class="content-header">
+                <h3 class="content-title">
                     <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
                 </h3>
-                <p class="date">{{ release.date|date }}</p>
+                <p class="content-subtitle">{{ release.date }}</p>
             </header>
 
             {% if release.description %}
-            <section class="description">
+            <div class="content-body">
                 {{ release.description|safe }}
-            </section>
+            </div>
             {% endif %}
 
             {% if release.player_code %}
-            <section class="player">
+            <div class="content-embed">
                 {{ release.player_code|safe }}
-            </section>
+            </div>
             {% endif %}
         </article>
     </section>
@@ -40,14 +40,14 @@
     <section id="videos">
         <h2>Videos</h2>
 
-        <article class="video">
+        <article class="content video">
             {% include "music/_video_embed.html" %}
 
-            <header>
-                <h3 class="title">
+            <header class="content-header">
+                <h3 class="content-title">
                     <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
                 </h3>
-                <p class="date">{{ video.publish_on|date }}</p>
+                <p class="content-subtitle">{{ video.publish_on }}</p>
             </header>
         </article>
     </section>
@@ -57,25 +57,26 @@
         <h2>Shows</h2>
 
         {% for gig in gig_list %}
-        <article class="gig">
-            <header>
-                <h3 class="date">{{ gig.date|date }}</h3>
-                <p class="location">
-                    <span class="venue">{{ gig.venue.name }}</span>,
-                    <span class="city">{{ gig.venue.city }}</span>
+        <article class="content gig">
+            <header class="content-header">
+                <h3 class="content-title">
+                    <time datetime="{{ gig.date|date:"c" }}">{{ gig.date }}</time>
+                </h3>
+                <p class="content-subtitle">
+                    {{ gig.venue.name }}, {{ gig.venue.city }}
                 </p>
             </header>
 
             {% if gig.description %}
-            <section class="description">
+            <div class="content-body">
                 {{ gig.description|safe }}
-            </section>
+            </div>
             {% endif %}
 
             {% if gig.details %}
-            <section class="details">
+            <div class="content-body">
                 {{ gig.details|safe }}
-            </section>
+            </div>
             {% endif %}
         </article>
 
@@ -88,17 +89,17 @@
     <section id="news">
         <h2>News</h2>
 
-        <article class="post">
-            <header>
-                <h3 class="title">
+        <article class="content post">
+            <header class="content-header">
+                <h3 class="content-title">
                     <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
                 </h3>
-                <p class="date">{{ post.publish_on|date }}</p>
+                <p class="content-subtitle">{{ post.publish_on }}</p>
             </header>
 
-            <section class="body">
+            <div class="content-body">
                 {{ post.body|safe }}
-            </section>
+            </div>
         </article>
     </section>
 {% endblock %}

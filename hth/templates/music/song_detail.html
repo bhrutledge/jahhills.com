@@ -3,35 +3,38 @@
 {% block title %}{{ song.title }} | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <article class="song">
-        <header>
-            <h2 class="title">{{ song.title }}</h2>
+    <article class="content song">
+        <header class="content-header">
+            <h2 class="content-title">{{ song.title }}</h2>
+
             {% if song.release %}
-            <p>from <a href="{{ song.release.get_absolute_url }}">{{ song.release.title }}</a></p>
+            <p class="content-subtitle">
+                from <a href="{{ song.release.get_absolute_url }}">{{ song.release.title }}</a>
+            </p>
             {% endif %}
         </header>
 
         {% if song.player_code %}
-        <section class="player">
+        <div class="content-embed">
             {{ song.player_code|safe }}
-        </section>
+        </div>
         {% endif %}
 
         {% if song.description %}
-        <section class="description">
+        <div class="content-body">
             {{ song.description|safe }}
-        </section>
+        </div>
         {% endif %}
 
         {% if song.credits %}
-        <section class="credits">
+        <section class="content-section">
             <h3>Credits</h3>
             {{ song.credits|safe }}
         </section>
         {% endif %}
 
         {% if song.lyrics %}
-        <section class="lyrics">
+        <section class="content-section">
             <h3>Lyrics</h3>
             {{ song.lyrics|safe }}
         </section>

@@ -6,18 +6,20 @@
     <h2>News</h2>
 
     {% for post in post_list %}
-    <article class="post">
-        <header>
-            <h3 class="title">
+    <article class="content post">
+        <header class="content-header">
+            <h3 class="content-title">
                 <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
             </h3>
-            <p class="date">{{ post.publish_on|date }}</p>
+            <p class="content-subtitle">
+                <time datetime="{{ post.publish_on|date:"c" }}">{{ post.publish_on }}</time>
+            </p>
         </header>
 
         {% if forloop.first %}
-        <section class="body">
+        <div class="content-body">
             {{ post.body|safe }}
-        </section>
+        </div>
         {% endif %}
     </article>
     {% endfor %}
