@@ -15,17 +15,8 @@
                 </p>
             </header>
 
-            {% if gig.description %}
-            <div class="content-body">
-                {{ gig.description|safe }}
-            </div>
-            {% endif %}
-
-            {% if gig.details %}
-            <div class="content-body">
-                {{ gig.details|safe }}
-            </div>
-            {% endif %}
+            {{ gig.description|safe }}
+            {{ gig.details|safe }}
         </article>
 
         {% empty %}
@@ -47,11 +38,7 @@
                 </p>
             </header>
 
-            {% if gig.description %}
-            <div class="content-body">
-                {{ gig.description|safe }}
-            </div>
-            {% endif %}
+            {{ gig.description|safe }}
         </article>
         {% endfor %}
     </section>

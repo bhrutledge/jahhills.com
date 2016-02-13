@@ -7,11 +7,7 @@
         <h2>Music</h2>
 
         <article class="content release">
-            {% if release.cover_url %}
-            <div class="content-image">
-                <a href="{{ release.get_absolute_url }}"><img src="{{ release.cover_url }}" alt="Cover art"/></a>
-            </div>
-            {% endif %}
+            {% include "music/_release_cover.html" %}
 
             <header class="content-header">
                 <h3 class="content-title">
@@ -20,17 +16,8 @@
                 <p class="content-subtitle">{{ release.date|date }}</p>
             </header>
 
-            {% if release.description %}
-            <div class="content-body">
-                {{ release.description|safe }}
-            </div>
-            {% endif %}
-
-            {% if release.player_code %}
-            <div class="content-embed">
-                {{ release.player_code|safe }}
-            </div>
-            {% endif %}
+            {{ release.description|safe }}
+            {{ release.player_code|safe }}
         </article>
     </section>
 
@@ -63,21 +50,14 @@
                 </p>
             </header>
 
-            {% if gig.description %}
-            <div class="content-body">
-                {{ gig.description|safe }}
-            </div>
-            {% endif %}
-
-            {% if gig.details %}
-            <div class="content-body">
-                {{ gig.details|safe }}
-            </div>
-            {% endif %}
+            {{ gig.description|safe }}
+            {{ gig.details|safe }}
         </article>
 
         {% empty %}
-        <p>No shows scheduled.</p>
+        <article class="content">
+            <p>No shows scheduled.</p>
+        </article>
         {% endfor %}
     </section>
 
@@ -93,9 +73,7 @@
                 <p class="content-subtitle">{{ post.publish_on|date }}</p>
             </header>
 
-            <div class="content-body">
-                {{ post.body|safe }}
-            </div>
+            {{ post.body|safe }}
         </article>
     </section>
 {% endblock %}

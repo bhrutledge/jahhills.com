@@ -7,11 +7,7 @@
 
     {% for release in release_list %}
     <article class="content release">
-        {% if release.cover_url %}
-        <div class="content-image">
-            <a href="{{ release.get_absolute_url }}"><img src="{{ release.cover_url }}" alt="Cover art"/></a>
-        </div>
-        {% endif %}
+        {% include "music/_release_cover.html" %}
 
         <header class="content-header">
             <h3 class="content-title">
@@ -20,11 +16,7 @@
             <p class="content-subtitle">{{ release.date|date }}</p>
         </header>
 
-        {% if release.description %}
-        <div class="content-body">
-            {{ release.description|safe }}
-        </div>
-        {% endif %}
+        {{ release.description|safe }}
     </article>
     {% endfor %}
 {% endblock %}

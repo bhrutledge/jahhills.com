@@ -15,9 +15,7 @@
         </header>
 
         {% if forloop.first %}
-        <div class="content-body">
-            {{ post.body|safe }}
-        </div>
+        {{ post.body|safe }}
         {% endif %}
     </article>
     {% endfor %}

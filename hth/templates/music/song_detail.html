@@ -14,17 +14,8 @@
             {% endif %}
         </header>
 
-        {% if song.player_code %}
-        <div class="content-embed">
-            {{ song.player_code|safe }}
-        </div>
-        {% endif %}
-
-        {% if song.description %}
-        <div class="content-body">
-            {{ song.description|safe }}
-        </div>
-        {% endif %}
+        {{ song.player_code|safe }}
+        {{ song.description|safe }}
 
         {% if song.credits %}
         <section class="content-section">

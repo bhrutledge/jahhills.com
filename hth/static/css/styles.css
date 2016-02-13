@@ -100,7 +100,6 @@ select {
 
 ul,
 ol {
-  list-style-type: none;
   margin: 0;
   padding: 0; }
 
@@ -260,6 +259,15 @@ html {
         display: inline; }
         .navigation-centered ul li.nav-link a {
           padding-right: 1em; } }
+
+.content-feature {
+  margin-bottom: 1.5rem; }
+
+.content-subtitle {
+  margin-top: -1.5rem; }
+
+.content-section {
+  margin: 3rem 0; }
 
 .container {
   max-width: 50em;

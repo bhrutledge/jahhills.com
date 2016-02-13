@@ -9,8 +9,6 @@
             <p class="content-subtitle">{{ post.publish_on|date }}</p>
         </header>
 
-        <div class="content-body">
-            {{ post.body|safe }}
-        </div>
+        {{ post.body|safe }}
     </article>
 {% endblock %}

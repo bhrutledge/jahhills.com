@@ -1,12 +1,13 @@
 {% extends "base.html" %}
+{% load cloudinary %}
 
 {% block title %}{{ release.title }} | {{ block.super }}{% endblock %}
 
 {% block main_content %}
     <article class="content release">
         {% if release.cover_url %}
-        <div class="content-image">
-            <img src="{{ release.cover_url }}" alt="Cover art"/>
+        <div class="content-feature">
+            <img src="{% cloudinary_url release.cover_url width="480" crop="fill" type="fetch" %}" alt="Cover art" />
         </div>
         {% endif %}
 
@@ -15,17 +16,8 @@
             <p class="content-subtitle">{{ release.date|date }}</p>
         </header>
 
-        {% if release.description %}
-        <div class="content-body">
-            {{ release.description|safe }}
-        </div>
-        {% endif %}
-
-        {% if release.player_code %}
-        <div class="content-embed">
-            {{ release.player_code|safe }}
-        </div>
-        {% endif %}
+        {{ release.description|safe }}
+        {{ release.player_code|safe }}
 
         {# TODO: Does this use two queries? #}
 
