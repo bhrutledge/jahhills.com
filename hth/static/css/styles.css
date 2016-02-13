@@ -163,7 +163,7 @@ nav {
   margin-bottom: 3rem;
   text-transform: uppercase; }
 
-p {
+p, ul, ol {
   margin: 0 0 1.5rem; }
 
 a {
@@ -215,9 +215,9 @@ html {
   .navigation-centered h1 {
     text-align: center; }
   .navigation-centered .navigation-centered-mobile-menu {
-    float: right;
-    padding-top: 0.5em; }
-    @media screen and (min-width: 50em) {
+    padding-top: 0.5em;
+    text-align: center; }
+    @media screen and (min-width: 30em) {
       .navigation-centered .navigation-centered-mobile-menu {
         display: none; } }
   .navigation-centered .navigation-centered-wrapper {
@@ -242,19 +242,18 @@ html {
     width: 100%; }
     .navigation-centered ul.navigation-centered-menu.show {
       display: block; }
-    @media screen and (min-width: 50em) {
+    @media screen and (min-width: 30em) {
       .navigation-centered ul.navigation-centered-menu {
         display: block;
         text-align: center; } }
   .navigation-centered ul li.nav-link {
     display: block;
-    text-align: right;
     width: 100%; }
     .navigation-centered ul li.nav-link a {
       display: inline-block; }
     .navigation-centered ul li.nav-link:last-child a {
       padding-right: 0; }
-    @media screen and (min-width: 50em) {
+    @media screen and (min-width: 30em) {
       .navigation-centered ul li.nav-link {
         display: inline; }
         .navigation-centered ul li.nav-link a {

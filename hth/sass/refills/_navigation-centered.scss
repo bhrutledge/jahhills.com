@@ -1,6 +1,5 @@
 .navigation-centered {
-    $large-screen: 50em !default;
-    $centered-navigation-height: 60px;
+    $mobile-breakpoint: 30em !default;
 
     width: 100%;
 
@@ -9,12 +8,11 @@
     }
 
     // Mobile view
-
     .navigation-centered-mobile-menu {
-        float: right;
         padding-top: 0.5em;
+        text-align: center;
 
-        @include media ($large-screen) {
+        @include media($mobile-breakpoint) {
             display: none;
         }
     }
@@ -38,7 +36,7 @@
             display: block;
         }
 
-        @include media ($large-screen) {
+        @include media($mobile-breakpoint) {
             display: block;
             text-align: center;
         }
@@ -47,7 +45,6 @@
     // Nav items
     ul li.nav-link {
         display: block;
-        text-align: right;
         width: 100%;
 
         a {
@@ -58,7 +55,7 @@
             padding-right: 0;
         }
 
-        @include media($large-screen) {
+        @include media($mobile-breakpoint) {
             display: inline;
 
             a {
