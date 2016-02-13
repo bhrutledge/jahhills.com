@@ -7,7 +7,11 @@
 
     {% for video in video_list %}
     <article class="content video">
+        {% if forloop.first %}
+        {% include "music/_video_embed.html" %}
+        {% else %}
         {% include "music/_video_preview.html" %}
+        {% endif %}
 
         <header class="content-header">
             <h3 class="content-title">

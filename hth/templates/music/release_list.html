@@ -17,6 +17,9 @@
         </header>
 
         {{ release.description|safe }}
+        {% if forloop.first %}
+        {{ release.player_code|safe }}
+        {% endif %}
     </article>
     {% endfor %}
 {% endblock %}
