@@ -12,9 +12,7 @@
 
         <header class="content-header">
             <h2 class="content-title">{{ release.title }}</h2>
-            <p class="content-subtitle">
-                <time datetime="{{ release.date|date:"c" }}">{{ release.date }}</time>
-            </p>
+            <p class="content-subtitle">{{ release.date|date }}</p>
         </header>
 
         {% if release.description %}

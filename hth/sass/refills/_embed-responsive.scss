@@ -8,6 +8,7 @@
     embed,
     object,
     iframe {
+        border: none;
         @include position(absolute, 0px null null 0px);
         @include size(100%);
     }

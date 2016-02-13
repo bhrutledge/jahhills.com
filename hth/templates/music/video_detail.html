@@ -8,9 +8,7 @@
 
         <header class="content-header">
             <h2 class="content-title">{{ video.title }}</h2>
-            <p class="content-subtitle">
-                <time datetime="{{ video.publish_on|date:"c" }}">{{ video.publish_on }}</time>
-            </p>
+            <p class="content-subtitle">{{ video.publish_on|date }}</p>
 
             {% if video.release %}
             <p class="content-subtitle">

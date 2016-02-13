@@ -1,7 +1,5 @@
 {% extends "base.html" %}
 
-{% block body_id %}hth-home{% endblock %}
-
 {% block main_content %}
     {# TODO: Use included templates #}
 
@@ -19,7 +17,7 @@
                 <h3 class="content-title">
                     <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
                 </h3>
-                <p class="content-subtitle">{{ release.date }}</p>
+                <p class="content-subtitle">{{ release.date|date }}</p>
             </header>
 
             {% if release.description %}
@@ -47,7 +45,7 @@
                 <h3 class="content-title">
                     <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
                 </h3>
-                <p class="content-subtitle">{{ video.publish_on }}</p>
+                <p class="content-subtitle">{{ video.publish_on|date }}</p>
             </header>
         </article>
     </section>
@@ -59,9 +57,7 @@
         {% for gig in gig_list %}
         <article class="content gig">
             <header class="content-header">
-                <h3 class="content-title">
-                    <time datetime="{{ gig.date|date:"c" }}">{{ gig.date }}</time>
-                </h3>
+                <h3 class="content-title">{{ gig.date|date }}</h3>
                 <p class="content-subtitle">
                     {{ gig.venue.name }}, {{ gig.venue.city }}
                 </p>
@@ -94,7 +90,7 @@
                 <h3 class="content-title">
                     <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
                 </h3>
-                <p class="content-subtitle">{{ post.publish_on }}</p>
+                <p class="content-subtitle">{{ post.publish_on|date }}</p>
             </header>
 
             <div class="content-body">

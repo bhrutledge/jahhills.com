@@ -204,6 +204,7 @@ html {
   .embed-responsive embed,
   .embed-responsive object,
   .embed-responsive iframe {
+    border: none;
     position: absolute;
     top: 0px;
     left: 0px;

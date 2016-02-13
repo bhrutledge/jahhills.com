@@ -6,9 +6,7 @@
     <article class="content post">
         <header class="content-header">
             <h2 class="content-title">{{ post.title }}</h2>
-            <p class="content-subtitle">
-                <time datetime="{{ post.publish_on|date:"c" }}">{{ post.publish_on }}</time>
-            </p>
+            <p class="content-subtitle">{{ post.publish_on|date }}</p>
         </header>
 
         <div class="content-body">
