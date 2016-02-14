@@ -6,8 +6,9 @@
 {% block main_content %}
     <article class="content release">
         {% if release.cover_url %}
-        <div class="content-feature">
+        <div class="content-feature release-cover">
             <img src="{% cloudinary_url release.cover_url width="480" crop="fill" type="fetch" %}" alt="Cover art" />
+            {{ release.player_code|safe }}
         </div>
         {% endif %}
 
@@ -17,12 +18,11 @@
         </header>
 
         {{ release.description|safe }}
-        {{ release.player_code|safe }}
 
         {# TODO: Does this use two queries? #}
 
         {% if release.tracks %}
-        <section class="content-section">
+        <section class="content-section release-tracks">
             <h3>Tracks</h3>
             <ol>
             {% for song in release.tracks %}
@@ -35,22 +35,24 @@
         {% endif %}
 
         {% if release.videos %}
-        <section class="content-section">
+        <section class="content-section release-videos">
             <h3>Videos</h3>
-            {% for video in release.videos %}
-            <article class="content video">
-                {% include "music/_video_preview.html" %}
+            <div class="content-gallery">
+                {% for video in release.videos %}
+                <article class="content video video-preview">
+                    {% include "music/_video_preview.html" %}
 
-                <p class="content-title">
-                    <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
-                </p>
-            </article>
-            {% endfor %}
+                    <p class="content-title">
+                        <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
+                    </p>
+                </article>
+                {% endfor %}
+            </div>
         </section>
         {% endif %}
 
         {% if release.credits %}
-        <section class="content-section">
+        <section class="content-section release-credits">
             <h3>Credits</h3>
             {{ release.credits|safe }}
         </section>

@@ -7,5 +7,10 @@
 }
 
 .content-section {
-    margin: $base-spacing * 2 0;
+    margin: $section-spacing 0;
+}
+
+.content-gallery {
+    @include clearfix;
+    margin-bottom: -$section-spacing;
 }

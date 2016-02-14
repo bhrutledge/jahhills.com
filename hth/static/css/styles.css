@@ -135,7 +135,11 @@ body {
   color: #333;
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1em;
-  line-height: 1.5; }
+  line-height: 1.5;
+  padding: 1.5rem 0; }
+
+.container {
+  margin-bottom: 3rem; }
 
 h1,
 h2,
@@ -159,7 +163,6 @@ h2 {
 nav {
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   font-size: 1.333em;
-  margin-bottom: 3rem;
   text-transform: uppercase; }
 
 p, ul, ol {
@@ -267,6 +270,13 @@ html {
 .content-section {
   margin: 3rem 0; }
 
+.content-gallery {
+  margin-bottom: -3rem; }
+  .content-gallery::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 .container {
   max-width: 50em;
   margin-left: auto;
@@ -275,5 +285,62 @@ html {
     clear: both;
     content: "";
     display: table; }
+
+.video-preview {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-bottom: 1.5rem; }
+  .video-preview:last-child {
+    margin-right: 0; }
+  .video-preview:nth-child(3n) {
+    margin-right: 0; }
+  .video-preview:nth-child(3n+1) {
+    clear: left; }
+
+.release-preview {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-bottom: 1.5rem; }
+  .release-preview:last-child {
+    margin-right: 0; }
+  .release-preview:nth-child(2n) {
+    margin-right: 0; }
+  .release-preview:nth-child(2n+1) {
+    clear: left; }
+
+.release-highlight::after {
+  clear: both;
+  content: "";
+  display: table; }
+.release-highlight .release-cover {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .release-highlight .release-cover:last-child {
+    margin-right: 0; }
+.release-highlight .release-info {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-right: 0; }
+  .release-highlight .release-info:last-child {
+    margin-right: 0; }
+
+.content-feature.release-cover {
+  float: right;
+  display: block;
+  margin-left: 2.35765%;
+  width: 48.82117%; }
+  .content-feature.release-cover:last-child {
+    margin-left: 0; }
+
+.release-videos {
+  clear: both; }
 
 /*# sourceMappingURL=styles.css.map */

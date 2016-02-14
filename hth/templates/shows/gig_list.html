@@ -6,24 +6,7 @@
     <section id="upcoming">
         <h2>Shows</h2>
 
-        {% for gig in gig_list.upcoming %}
-        <article class="content gig">
-            <header class="content-header">
-                <h3 class="content-title">{{ gig.date|date }}</h3>
-                <p class="content-subtitle">
-                    {{ gig.venue.name }}, {{ gig.venue.city }}
-                </p>
-            </header>
-
-            {{ gig.description|safe }}
-            {{ gig.details|safe }}
-        </article>
-
-        {% empty %}
-        <article class="content">
-            <p>No shows scheduled.</p>
-        </article>
-        {% endfor %}
+        {% include "shows/_gig_upcoming.html" with gig_list=gig_list.upcoming %}
     </section>
 
     <section id="past">
@@ -31,12 +14,7 @@
 
         {% for gig in gig_list.past %}
         <article class="content gig">
-            <header>
-                <h3 class="content-title">{{ gig.date|date }}</h3>
-                <p class="content-subtitle">
-                    {{ gig.venue.name }}, {{ gig.venue.city }}
-                </p>
-            </header>
+            {% include "shows/_gig_header.html" %}
 
             {{ gig.description|safe }}
         </article>

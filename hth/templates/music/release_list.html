@@ -5,21 +5,22 @@
 {% block main_content %}
     <h2>Music</h2>
 
-    {% for release in release_list %}
-    <article class="content release">
-        {% include "music/_release_cover.html" %}
+    {% include "music/_release_highlight.html" with release=release_list|first %}
 
-        <header class="content-header">
-            <h3 class="content-title">
-                <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
-            </h3>
-            <p class="content-subtitle">{{ release.date|date }}</p>
-        </header>
+    <div class="content-gallery">
+        {% for release in release_list|slice:"1:" %}
+        <article class="content release release-preview">
+            {% include "music/_release_cover.html" %}
 
-        {{ release.description|safe }}
-        {% if forloop.first %}
-        {{ release.player_code|safe }}
-        {% endif %}
-    </article>
-    {% endfor %}
+            <header class="content-header">
+                <h3 class="content-title">
+                    <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
+                </h3>
+                <p class="content-subtitle">{{ release.date|date }}</p>
+            </header>
+
+            {{ release.description|safe }}
+        </article>
+        {% endfor %}
+    </div>
 {% endblock %}

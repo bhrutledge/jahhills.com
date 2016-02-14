@@ -11,3 +11,38 @@
 .container {
     @include outer-container;
 }
+
+.video-preview {
+    @include span-columns(4);
+    @include omega(3n);
+    margin-bottom: $small-spacing;
+}
+
+.release-preview {
+    @include span-columns(6);
+    @include omega(2n);
+    margin-bottom: $small-spacing;
+}
+
+.release-highlight {
+    @include clearfix;
+
+    .release-cover {
+        @include span-columns(6);
+    }
+
+    .release-info {
+        @include span-columns(6);
+        @include omega;
+    }
+}
+
+@include direction-context(right-to-left) {
+    .content-feature.release-cover {
+        @include span-columns(6);
+    }
+}
+
+.release-videos {
+    clear: both;
+}

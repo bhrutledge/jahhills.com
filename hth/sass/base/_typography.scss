@@ -3,6 +3,11 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
+    padding: $base-spacing 0;
+}
+
+.container {
+    margin-bottom: $section-spacing;
 }
 
 h1,
@@ -30,7 +35,6 @@ h2 {
 nav {
     font-family: $heading-font-family;
     font-size: modular-scale(1);
-    margin-bottom: $base-spacing * 2;
     text-transform: uppercase;
 }
 
@@ -65,5 +69,5 @@ picture {
 }
 
 article {
-    margin-bottom: $base-spacing * 2;
+    margin-bottom: $section-spacing;
 }

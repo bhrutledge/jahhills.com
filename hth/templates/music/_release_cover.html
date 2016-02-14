@@ -1,6 +1,6 @@
 {% load cloudinary %}
 {% if release.cover_url %}
-<div>
+<div class="release-cover">
     <a href="{{ release.get_absolute_url }}"><img src="{% cloudinary_url release.cover_url width="480" crop="fill" type="fetch" %}" alt="Cover art" /></a>
 </div>
 {% endif %}

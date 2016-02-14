@@ -1,79 +1,27 @@
 {% extends "base.html" %}
 
 {% block main_content %}
-    {# TODO: Use included templates #}
-
     <section id="music">
         <h2>Music</h2>
 
-        <article class="content release">
-            {% include "music/_release_cover.html" %}
-
-            <header class="content-header">
-                <h3 class="content-title">
-                    <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
-                </h3>
-                <p class="content-subtitle">{{ release.date|date }}</p>
-            </header>
-
-            {{ release.description|safe }}
-            {{ release.player_code|safe }}
-        </article>
+        {% include "music/_release_highlight.html" %}
     </section>
-
 
     <section id="videos">
         <h2>Videos</h2>
 
-        <article class="content video">
-            {% include "music/_video_embed.html" %}
-
-            <header class="content-header">
-                <h3 class="content-title">
-                    <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
-                </h3>
-                <p class="content-subtitle">{{ video.publish_on|date }}</p>
-            </header>
-        </article>
+        {% include "music/_video_highlight.html" %}
     </section>
-
 
     <section id="shows">
         <h2>Shows</h2>
 
-        {% for gig in gig_list %}
-        <article class="content gig">
-            <header class="content-header">
-                <h3 class="content-title">{{ gig.date|date }}</h3>
-                <p class="content-subtitle">
-                    {{ gig.venue.name }}, {{ gig.venue.city }}
-                </p>
-            </header>
-
-            {{ gig.description|safe }}
-            {{ gig.details|safe }}
-        </article>
-
-        {% empty %}
-        <article class="content">
-            <p>No shows scheduled.</p>
-        </article>
-        {% endfor %}
+        {% include "shows/_gig_upcoming.html" %}
     </section>
-
 
     <section id="news">
         <h2>News</h2>
 
-        <article class="content post">
-            <header class="content-header">
-                <h3 class="content-title">
-                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-                </h3>
-                <p class="content-subtitle">{{ post.publish_on|date }}</p>
-            </header>
-
-            {{ post.body|safe }}
-        </article>
+        {% include "news/_post_highlight.html" %}
     </section>
 {% endblock %}

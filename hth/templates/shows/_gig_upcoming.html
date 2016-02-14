@@ -1,0 +1,13 @@
+{% for gig in gig_list %}
+<article class="content gig">
+    {% include "shows/_gig_header.html" %}
+
+    {{ gig.description|safe }}
+    {{ gig.details|safe }}
+</article>
+
+{% empty %}
+<article class="content">
+    <p>No shows scheduled.</p>
+</article>
+{% endfor %}

@@ -5,20 +5,14 @@
 {% block main_content %}
     <h2>Videos</h2>
 
-    {% for video in video_list %}
-    <article class="content video">
-        {% if forloop.first %}
-        {% include "music/_video_embed.html" %}
-        {% else %}
-        {% include "music/_video_preview.html" %}
-        {% endif %}
+    {% include "music/_video_highlight.html" with video=video_list|first %}
 
-        <header class="content-header">
-            <h3 class="content-title">
-                <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
-            </h3>
-            <p class="content-subtitle">{{ video.publish_on|date }}</p>
-        </header>
-    </article>
-    {% endfor %}
+    <div class="content-gallery">
+        {% for video in video_list|slice:"1:" %}
+        <article class="content video video-preview">
+            {% include "music/_video_preview.html" %}
+            {% include "music/_video_header.html" %}
+        </article>
+        {% endfor %}
+    </div>
 {% endblock %}
