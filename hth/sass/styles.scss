@@ -4,45 +4,64 @@
 @import "base/base";
 @import "neat/neat";
 
-@import "refills/embed-responsive";
 @import "refills/navigation-centered";
+@import "refills/embed-responsive";
 @import "refills/content";
+
+body {
+    margin-top: $base-spacing;
+}
 
 .container {
     @include outer-container;
 }
 
-.video-preview {
-    @include span-columns(4);
-    @include omega(3n);
-    margin-bottom: $small-spacing;
-}
-
-.release-preview {
-    @include span-columns(6);
-    @include omega(2n);
-    margin-bottom: $small-spacing;
-}
-
-.release-highlight {
-    @include clearfix;
-
-    .release-cover {
-        @include span-columns(6);
+@include media($medium-screen-up) {
+    .video-preview {
+        @include span-columns(2);
+        @include omega(3n);
+        margin-bottom: $small-spacing;
     }
 
-    .release-info {
-        @include span-columns(6);
-        @include omega;
+    .release-preview {
+        @include span-columns(3);
+        @include omega(2n);
+        margin-bottom: $small-spacing;
+    }
+
+    .release-highlight {
+        @include clearfix;
+
+        .release-cover {
+            @include span-columns(3);
+        }
+
+        .release-info {
+            @include span-columns(3);
+            @include omega;
+        }
+    }
+
+    @include direction-context(right-to-left) {
+        .content-feature.release-cover {
+            @include span-columns(3);
+        }
+    }
+
+    .release-videos {
+        clear: both;
     }
 }
 
-@include direction-context(right-to-left) {
-    .content-feature.release-cover {
-        @include span-columns(6);
-    }
-}
+@include media($large-screen-up) {
+    $local-max-width: $large-screen * $max-width / 100%;
 
-.release-videos {
-    clear: both;
+    // Hide visual-grid, because it won't scale with the local-max-width
+    body:before {
+        display: none;
+    }
+
+    .container {
+        @include outer-container($local-max-width);
+    }
 }

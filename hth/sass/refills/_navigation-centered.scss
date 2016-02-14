@@ -20,7 +20,6 @@
     // Nav menu
     .navigation-centered-wrapper {
         @include clearfix;
-        @include outer-container;
         position: relative;
     }
 
