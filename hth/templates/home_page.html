@@ -1,110 +1,27 @@
 {% extends "base.html" %}
 
-{% block body_id %}hth-home{% endblock %}
-
 {% block main_content %}
-
-    {# TODO: Use included templates #}
-
-    <section id="music" class="object-detail">
+    <section id="music" class="container-section">
         <h2>Music</h2>
 
-        <article class="release">
-
-            {% if release.cover_url %}
-            <div class="cover thumbnail">
-                <a href="{{ release.get_absolute_url }}"><img src="{{ release.cover_url }}" alt="Cover art"/></a>
-            </div>
-            {% endif %}
-
-            <header>
-                <h3 class="title">
-                    <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
-                </h3>
-                <p class="date">{{ release.date|date }}</p>
-            </header>
-
-            {% if release.description %}
-            <section class="description">
-                {{ release.description|safe }}
-            </section>
-            {% endif %}
-
-            {% if release.player_code %}
-            <section class="player">
-                {{ release.player_code|safe }}
-            </section>
-            {% endif %}
-
-        </article>
+        {% include "music/_release_highlight.html" %}
     </section>
 
-
-    <section id="videos" class="object-detail">
+    <section id="videos" class="container-section">
         <h2>Videos</h2>
 
-        <article class="video">
-            {% include "music/_video_embed.html" %}
-
-            <header>
-                <h3 class="title">
-                    <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
-                </h3>
-                <p class="date">{{ video.publish_on|date }}</p>
-            </header>
-        </article>
+        {% include "music/_video_highlight.html" %}
     </section>
 
-
-    <section id="shows" class="object-list">
+    <section id="shows" class="container-section">
         <h2>Shows</h2>
 
-        {% for gig in gig_list %}
-        <article class="gig">
-
-            <header>
-                <h3 class="date">{{ gig.date|date }}</h3>
-                <p class="location">
-                    <span class="venue">{{ gig.venue.name }}</span>,
-                    <span class="city">{{ gig.venue.city }}</span>
-                </p>
-            </header>
-
-            {% if gig.description %}
-            <section class="description">
-                {{ gig.description|safe }}
-            </section>
-            {% endif %}
-
-            {% if gig.details %}
-            <section class="details">
-                {{ gig.details|safe }}
-            </section>
-            {% endif %}
-
-        </article>
-        {% empty %}
-        <p>No shows scheduled.</p>
-        {% endfor %}
+        {% include "shows/_gig_upcoming.html" %}
     </section>
 
-
-    <section id="news" class="object-detail">
+    <section id="news" class="container-section">
         <h2>News</h2>
 
-        <article class="post">
-
-            <header>
-                <h3 class="title">
-                    <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-                </h3>
-                <p class="date">{{ post.publish_on|date }}</p>
-            </header>
-
-            <section class="body">
-                {{ post.body|safe }}
-            </section>
-        </article>
+        {% include "news/_post_highlight.html" %}
     </section>
-
 {% endblock %}

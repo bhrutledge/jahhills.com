@@ -1,67 +1,61 @@
 {% extends "base.html" %}
+{% load cloudinary %}
 
 {% block title %}{{ release.title }} | {{ block.super }}{% endblock %}
 
-{% block main_class %}object-detail {{ block.super }}{% endblock %}
-
 {% block main_content %}
-    <article class="release">
-
+    <article class="content release">
         {% if release.cover_url %}
-        <section class="cover">
-            <img src="{{ release.cover_url }}" alt="Cover art"/>
-        </section>
+        <div class="content-feature release-cover">
+            <img src="{% cloudinary_url release.cover_url width="480" crop="fill" type="fetch" %}" alt="Cover art" />
+            {{ release.player_code|safe }}
+        </div>
         {% endif %}
 
-        <header>
-            <h2 class="title">{{ release.title }}</h2>
-            <p class="date">{{ release.date|date }}</p>
+        <header class="content-header">
+            <h2 class="content-title">{{ release.title }}</h2>
+            <p class="content-subtitle">{{ release.date|date }}</p>
         </header>
 
-        {% if release.description %}
-        <section class="description">
-            {{ release.description|safe }}
-        </section>
-        {% endif %}
-
-        {% if release.player_code %}
-        <section class="player">
-            {{ release.player_code|safe }}
-        </section>
-        {% endif %}
+        {{ release.description|safe }}
 
         {# TODO: Does this use two queries? #}
 
         {% if release.tracks %}
-        <section class="tracks">
+        <section class="content-section release-tracks">
             <h3>Tracks</h3>
             <ol>
             {% for song in release.tracks %}
-                <li><a href="{{ song.get_absolute_url }}">{{ song.title }}</a></li>
+                <li>
+                    <a href="{{ song.get_absolute_url }}">{{ song.title }}</a>
+                </li>
             {% endfor %}
             </ol>
         </section>
         {% endif %}
 
         {% if release.videos %}
-        <section class="videos object-list">
+        <section class="content-section release-videos">
             <h3>Videos</h3>
-            {% for video in release.videos %}
-            <article class="video">
-                {% include "music/_video_preview.html" %}
+            <div class="content-gallery">
+                {% for video in release.videos %}
+                <article class="content video video-preview">
+                    {% include "music/_video_preview.html" %}
 
-                <p><a href="{{ video.get_absolute_url }}">{{ video.title }}</a></p>
-            </article>
-            {% endfor %}
+                    <p class="content-title">
+                        <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
+                    </p>
+                </article>
+                {% endfor %}
+            </div>
         </section>
         {% endif %}
 
         {% if release.credits %}
-        <section class="credits">
+        <section class="content-section release-credits">
             <h3>Credits</h3>
             {{ release.credits|safe }}
         </section>
         {% endif %}
-
     </article>
 {% endblock %}

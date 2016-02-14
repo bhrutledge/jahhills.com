@@ -1,0 +1,15 @@
+.embed-responsive {
+    height: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+    position: relative;
+
+    embed,
+    object,
+    iframe {
+        border: none;
+        @include position(absolute, 0px null null 0px);
+        @include size(100%);
+    }
+}

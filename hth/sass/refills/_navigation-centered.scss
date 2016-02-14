@@ -1,0 +1,65 @@
+.navigation-centered {
+    $mobile-breakpoint: 30em !default;
+
+    width: 100%;
+
+    h1 {
+        text-align: center;
+    }
+
+    // Mobile view
+    .navigation-centered-mobile-menu {
+        padding-top: 0.5em;
+        text-align: center;
+
+        @include media($mobile-breakpoint) {
+            display: none;
+        }
+    }
+
+    // Nav menu
+    .navigation-centered-wrapper {
+        @include clearfix;
+        position: relative;
+    }
+
+    ul.navigation-centered-menu {
+        clear: both;
+        display: none;
+        margin: 0 auto;
+        overflow: visible;
+        padding: 0;
+        width: 100%;
+
+        &.show {
+            display: block;
+        }
+
+        @include media($mobile-breakpoint) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    // Nav items
+    ul li.nav-link {
+        display: block;
+        width: 100%;
+
+        a {
+            display: inline-block;
+        }
+
+        &:last-child a {
+            padding-right: 0;
+        }
+
+        @include media($mobile-breakpoint) {
+            display: inline;
+
+            a {
+                padding-right: 1em;
+            }
+        }
+    }
+}

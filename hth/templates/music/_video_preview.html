@@ -1,6 +1,6 @@
 {% load cloudinary %}
 {% if video.preview_url %}
-<div class="preview thumbnail">
+<div>
     <a href="{{ video.get_absolute_url }}"><img src="{% cloudinary_url video.preview_url width="480" height="270" crop="fill" type="fetch" %}" alt="Video preview" /></a>
 </div>
 {% endif %}

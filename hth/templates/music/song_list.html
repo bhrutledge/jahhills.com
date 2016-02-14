@@ -2,15 +2,15 @@
 
 {% block title %}Songs | {{ block.super }}{% endblock %}
 
-{% block main_class %}object-list {{ block.super }}{% endblock %}
-
 {% block main_content %}
     <h2>Songs</h2>
 
     {% for song in song_list %}
-    <article class="song">
-        <header>
-            <h3 class="title"><a href="{{ song.get_absolute_url }}">{{ song.title }}</a></h3>
+    <article class="content song">
+        <header class="content-header">
+            <h3 class="content-title">
+                <a href="{{ song.get_absolute_url }}">{{ song.title }}</a>
+            </h3>
         </header>
     </article>
     {% endfor %}

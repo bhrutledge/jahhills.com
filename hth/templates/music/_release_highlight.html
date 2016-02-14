@@ -1,0 +1,15 @@
+<article class="content release release-highlight">
+    {% include "music/_release_cover.html" %}
+
+    <div class="release-info">
+        <header class="content-header">
+            <h3 class="content-title">
+                <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
+            </h3>
+            <p class="content-subtitle">{{ release.date|date }}</p>
+        </header>
+
+        {{ release.description|safe }}
+        {{ release.player_code|safe }}
+    </div>
+</article>

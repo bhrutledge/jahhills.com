@@ -2,26 +2,14 @@
 
 {% block title %}News | {{ block.super }}{% endblock %}
 
-{% block main_class %}object-list {{ block.super }}{% endblock %}
-
 {% block main_content %}
     <h2>News</h2>
 
-    {% for post in post_list %}
-    <article class="post">
-        <header>
-            <h3 class="title">
-                <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
-            </h3>
-            <p class="date">{{ post.publish_on|date }}</p>
-        </header>
+    {% include "news/_post_highlight.html" with post=post_list|first %}
 
-        {% if forloop.first %}
-        <section class="body">
-            {{ post.body|safe }}
-        </section>
-        {% endif %}
-
+    {% for post in post_list|slice:"1:" %}
+    <article class="content post">
+        {% include "news/_post_header.html" %}
     </article>
     {% endfor %}
 {% endblock %}

@@ -1,0 +1,16 @@
+.content-feature {
+    margin-bottom: $small-spacing;
+}
+
+.content-subtitle {
+    margin-top: -$small-spacing;
+}
+
+.content-section {
+    margin: $base-spacing 0;
+}
+
+.content-gallery {
+    @include clearfix;
+    margin-bottom: -$base-spacing;
+}

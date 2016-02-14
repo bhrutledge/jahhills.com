@@ -2,37 +2,32 @@
 
 {% block title %}{{ video.title }} | {{ block.super }}{% endblock %}
 
-{% block main_class %}object-detail {{ block.super }}{% endblock %}
-
 {% block main_content %}
-    <article class="video">
-
+    <article class="content video">
         {% include "music/_video_embed.html" %}
 
-        <header>
-            <h2 class="title">{{ video.title }}</h2>
-            <p class="date">{{ video.publish_on|date }}</p>
-            {% if video.release %}
-            <p>from <a href="{{ video.release.get_absolute_url }}">{{ video.release.title }}</a></p>
-            {% endif %}
+        <header class="content-header">
+            <h2 class="content-title">{{ video.title }}</h2>
+            <p class="content-subtitle">{{ video.publish_on|date }}</p>
 
-            {% if video.source_url %}
-            <p><a href="{{ video.source_url }}">Direct link</a></p>
+            {% if video.release %}
+            <p class="content-subtitle">
+                from <a href="{{ video.release.get_absolute_url }}">{{ video.release.title }}</a>
+            </p>
             {% endif %}
         </header>
 
-        {% if video.description %}
-        <section class="description">
-            {{ video.description|safe }}
-        </section>
+        {{ video.description|safe }}
+
+        {% if video.source_url %}
+        <p><a href="{{ video.source_url }}">Direct link</a></p>
         {% endif %}
 
         {% if video.credits %}
-        <section class="credits">
+        <section class="content-section">
             <h3>Credits</h3>
             {{ video.credits|safe }}
         </section>
         {% endif %}
-
     </article>
 {% endblock %}

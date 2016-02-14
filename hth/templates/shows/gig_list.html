@@ -3,59 +3,20 @@
 {% block title %}Shows | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <section id="upcoming" class="object-list">
+    <section id="upcoming" class="container-section">
         <h2>Shows</h2>
 
-        {% for gig in gig_list.upcoming %}
-        <article class="gig">
-
-            <header>
-                <h3 class="title date">{{ gig.date|date }}</h3>
-                <p class="location">
-                    <span class="venue">{{ gig.venue.name }}</span>,
-                    <span class="city">{{ gig.venue.city }}</span>
-                </p>
-            </header>
-
-            {% if gig.description %}
-            <section class="description">
-                {{ gig.description|safe }}
-            </section>
-            {% endif %}
-
-            {% if gig.details %}
-            <section class="details">
-                {{ gig.details|safe }}
-            </section>
-            {% endif %}
-
-        </article>
-
-        {% empty %}
-        <p>No shows scheduled.</p>
-        {% endfor %}
+        {% include "shows/_gig_upcoming.html" with gig_list=gig_list.upcoming %}
     </section>
 
-    <section id="past" class="object-list">
+    <section id="past" class="container-section">
         <h2>Past Shows</h2>
 
         {% for gig in gig_list.past %}
-        <article class="gig">
+        <article class="content gig">
+            {% include "shows/_gig_header.html" %}
 
-            <header>
-                <h3 class="title date">{{ gig.date|date }}</h3>
-                <p class="location">
-                    <span class="venue">{{ gig.venue.name }}</span>,
-                    <span class="city">{{ gig.venue.city }}</span>
-                </p>
-            </header>
-
-            {% if gig.description %}
-            <section class="description">
-                {{ gig.description|safe }}
-            </section>
-            {% endif %}
-
+            {{ gig.description|safe }}
         </article>
         {% endfor %}
     </section>
