@@ -3,13 +3,13 @@
 {% block title %}Shows | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <section id="upcoming">
+    <section id="upcoming" class="container-section">
         <h2>Shows</h2>
 
         {% include "shows/_gig_upcoming.html" with gig_list=gig_list.upcoming %}
     </section>
 
-    <section id="past">
+    <section id="past" class="container-section">
         <h2>Past Shows</h2>
 
         {% for gig in gig_list.past %}

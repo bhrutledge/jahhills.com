@@ -8,10 +8,6 @@
 @import "refills/embed-responsive";
 @import "refills/content";
 
-body {
-    margin-top: $base-spacing;
-}
-
 .container {
     @include outer-container;
 }

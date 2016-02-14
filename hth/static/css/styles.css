@@ -11,7 +11,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
   line-height: 1;
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 3rem;
   text-decoration: none;
   transition: background-color 150ms ease;
   user-select: none;
@@ -58,7 +58,7 @@ select[multiple] {
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1em;
   margin-bottom: 1.5rem;
-  padding: 0.5rem;
+  padding: 1rem;
   transition: border-color 150ms ease;
   width: 100%; }
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
@@ -93,7 +93,7 @@ textarea {
   width: 100%; }
 
 select {
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   max-width: 100%;
   width: auto; }
 
@@ -135,10 +135,14 @@ body {
   color: #333;
   font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
   font-size: 1em;
-  line-height: 1.5; }
+  line-height: 1.5;
+  margin-top: 1.5rem; }
 
 .container {
   margin-bottom: 3rem; }
+
+.container-section {
+  margin-bottom: 6rem; }
 
 h1,
 h2,
@@ -157,7 +161,8 @@ h1 {
 
 h2 {
   font-size: 1.333em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 3rem; }
 
 nav {
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
@@ -179,7 +184,7 @@ hr {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: 1.5rem 0; }
+  margin: 3rem 0; }
 
 img,
 picture {
@@ -268,9 +273,6 @@ html {
     clear: both;
     content: "";
     display: table; }
-
-body {
-  margin-top: 1.5rem; }
 
 .container {
   max-width: 90%;

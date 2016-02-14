@@ -1,25 +1,25 @@
 {% extends "base.html" %}
 
 {% block main_content %}
-    <section id="music">
+    <section id="music" class="container-section">
         <h2>Music</h2>
 
         {% include "music/_release_highlight.html" %}
     </section>
 
-    <section id="videos">
+    <section id="videos" class="container-section">
         <h2>Videos</h2>
 
         {% include "music/_video_highlight.html" %}
     </section>
 
-    <section id="shows">
+    <section id="shows" class="container-section">
         <h2>Shows</h2>
 
         {% include "shows/_gig_upcoming.html" %}
     </section>
 
-    <section id="news">
+    <section id="news" class="container-section">
         <h2>News</h2>
 
         {% include "news/_post_highlight.html" %}
