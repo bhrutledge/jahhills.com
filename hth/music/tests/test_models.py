@@ -178,7 +178,7 @@ class VideoAutofillTestCase(TestCase):
     CASSETTE = 'music/tests/fixtures/cassettes/vimeo.yaml'
     SOURCE_URL = 'https://vimeo.com/126794989'
     PREVIEW_URL = 'http://i.vimeocdn.com/video/517362144_640.jpg'
-    EMBED_CODE = '<iframe width="" height="" src="http://player.vimeo.com/video/126794989" frameborder="0" allowfullscreen></iframe>\n'
+    EMBED_CODE = '<iframe src="http://player.vimeo.com/video/126794989" seamless allowfullscreen></iframe>\n'
 
     @vcr.use_cassette(CASSETTE)
     def test_autofill_preview_url(self):

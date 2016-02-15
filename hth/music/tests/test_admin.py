@@ -194,7 +194,7 @@ class VideoTestCase(AdminTestCase):
 
         self.assertEqual('http://i.vimeocdn.com/video/517362144_640.jpg',
                          self.find_name('preview_url').get_attribute('value'))
-        self.assertEqual('<iframe width="" height="" src="http://player.vimeo.com/video/126794989" frameborder="0" allowfullscreen></iframe>',
+        self.assertEqual('<iframe src="http://player.vimeo.com/video/126794989" seamless allowfullscreen></iframe>',
                          self.find_name('embed_code').text)
 
         # He verifies that the published video is on the site
