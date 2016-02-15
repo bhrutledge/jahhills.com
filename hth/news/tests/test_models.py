@@ -1,7 +1,6 @@
 from datetime import datetime
 
 from django.test import TestCase
-from django.core.exceptions import ValidationError
 from django.utils import timezone
 
 from core.tests.models import (

@@ -2,7 +2,7 @@ from datetime import date
 
 from django.db import models
 
-from core.models import PublishedModel, PublishedQuerySet
+from core.models import PublishedModel, PublishedQuerySet, SlugModel
 
 
 class Venue(models.Model):
@@ -45,7 +45,7 @@ class GigQuerySet(PublishedQuerySet):
         return self.filter(date__lt=date.today())
 
 
-class Gig(PublishedModel):
+class Gig(PublishedModel, SlugModel):
     """
     Stores a show, aka concert.
     """

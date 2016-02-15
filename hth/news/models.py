@@ -1,10 +1,9 @@
 from django.db import models
-from django.core.urlresolvers import reverse
 
-from core.models import PublishedModel
+from core.models import PublishedModel, SlugModel
 
 
-class Post(PublishedModel):
+class Post(PublishedModel, SlugModel):
     """
     Stores a news post.
     """
@@ -14,9 +13,3 @@ class Post(PublishedModel):
 
     class Meta:
         ordering = ['publish', '-publish_on']
-
-    def get_absolute_url(self):
-        """
-        Returns the ``slug``-based URL.
-        """
-        return reverse('post_detail', args=[self.slug])

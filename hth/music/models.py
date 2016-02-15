@@ -1,12 +1,11 @@
 from django.db import models
-from django.core.urlresolvers import reverse
 
 from embed_video import backends
 
-from core.models import PublishedModel
+from core.models import PublishedModel, SlugModel
 
 
-class Release(PublishedModel):
+class Release(PublishedModel, SlugModel):
     """
     Stores an album, EP, or other collection of ``Song``'s and ``Video``'s.
     """
@@ -24,12 +23,6 @@ class Release(PublishedModel):
     class Meta:
         ordering = ['-date']
 
-    def get_absolute_url(self):
-        """
-        Returns the ``slug``-based URL.
-        """
-        return reverse('release_detail', args=[self.slug])
-
     @property
     def tracks(self):
         """
@@ -45,7 +38,7 @@ class Release(PublishedModel):
         return self.video_set.published()
 
 
-class Song(PublishedModel):
+class Song(PublishedModel, SlugModel):
     """
     Stores a song, optionally as a track on a ``Release``.
     """
@@ -62,14 +55,8 @@ class Song(PublishedModel):
     class Meta:
         ordering = ['title']
 
-    def get_absolute_url(self):
-        """
-        Returns the ``slug``-based URL.
-        """
-        return reverse('song_detail', args=[self.slug])
 
-
-class Video(PublishedModel):
+class Video(PublishedModel, SlugModel):
     """
     Stores an embeddable video, e.g. YouTube, optionally on a ``Release``.
     """
@@ -88,12 +75,6 @@ class Video(PublishedModel):
 
     class Meta:
         ordering = ['publish', '-publish_on']
-
-    def get_absolute_url(self):
-        """
-        Returns the ``slug``-based URL.
-        """
-        return reverse('video_detail', args=[self.slug])
 
     def save(self, *args, **kwargs):
         if self.source_url and not (self.preview_url and self.embed_code):
