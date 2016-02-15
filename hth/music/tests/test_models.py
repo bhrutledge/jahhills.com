@@ -121,6 +121,7 @@ class VideoTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin,
 
 class VideoAutofillTestCase(TestCase):
 
+    # TODO: Duplicated .test_admin.VideoTestCase
     CASSETTE = 'music/tests/fixtures/cassettes/vimeo.yaml'
     SOURCE_URL = 'https://vimeo.com/126794989'
     PREVIEW_URL = 'http://i.vimeocdn.com/video/517362144_640.jpg'
