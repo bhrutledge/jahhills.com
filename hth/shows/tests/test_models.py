@@ -1,9 +1,11 @@
 from datetime import date, timedelta
 
 from django.test import TestCase
-from django.core.exceptions import ValidationError
 
-from ..models import PublishedModel, Venue, Gig
+from core.tests.models import (
+    FieldsTestMixin, PublishTestMixin, SlugTestMixin)
+
+from ..models import Venue, Gig
 from .factories import (
     DraftGigFactory, PublishedGigFactory, PastGigFactory, UpcomingGigFactory)
 
@@ -12,29 +14,11 @@ def from_today(days=0):
     return date.today() + timedelta(days)
 
 
-class VenueTestCase(TestCase):
+class VenueTestCase(FieldsTestMixin, TestCase):
 
-    def test_can_be_saved(self):
-        v = Venue(name='Venue', city='City')
-        v.full_clean()
-        v.save()
-
-        v1 = Venue.objects.first()
-        self.assertEqual(v, v1)
-
-    def test_required_fields(self):
-        required_fields = set(['name', 'city'])
-
-        with self.assertRaises(ValidationError) as cm:
-            Venue().full_clean()
-
-        blank_fields = set(cm.exception.message_dict.keys())
-        self.assertEquals(required_fields, blank_fields)
-
-    def test_can_have_details(self):
-        v = Venue(name='Venue', city='City', website='http://venue.com')
-        v.full_clean()
-        v.save()
+    model = Venue
+    required_fields = {'name': 'Venue', 'city': 'City'}
+    optional_fields = {'website': 'http://venue.com'}
 
     def test_str_is_name_and_city(self):
         v = Venue(name='Venue', city='City', website='http://venue.com')
@@ -50,36 +34,18 @@ class VenueTestCase(TestCase):
         self.assertEqual(list(Venue.objects.all()), [v1, v2, v3, v4])
 
 
-class GigTestCase(TestCase):
+class GigTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin, TestCase):
+
+    model = Gig
+
+    @property
+    def required_fields(self):
+        return {'date': '2014-07-24', 'slug': 'test', 'venue': self.venue}
+
+    optional_fields = {'description': 'Description', 'details': 'Details'}
 
     def setUp(self):
         self.venue = Venue.objects.create(name='Venue', city='City')
-
-    def test_can_be_published(self):
-        self.assertTrue(issubclass(Gig, PublishedModel))
-
-    def test_required_fields(self):
-        required_fields = set(['date', 'slug', 'venue'])
-
-        with self.assertRaises(ValidationError) as cm:
-            Gig().full_clean()
-
-        blank_fields = set(cm.exception.message_dict.keys())
-        self.assertEquals(required_fields, blank_fields)
-
-    def test_can_be_saved(self):
-        g = Gig(date='2014-07-24', slug='test', venue=self.venue)
-        g.full_clean()
-        g.save()
-
-        g1 = Gig.objects.get(slug='test')
-        self.assertEqual(g, g1)
-
-    def test_can_have_details(self):
-        g = Gig(date='2014-07-24', slug='test', venue=self.venue,
-                description='Description', details='Details')
-        g.full_clean()
-        g.save()
 
     def test_ordered_by_date(self):
         # Save out of order to test ordering

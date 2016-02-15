@@ -1,44 +1,25 @@
 from datetime import datetime
 
 from django.test import TestCase
-from django.core.exceptions import ValidationError
 from django.utils import timezone
-
-from core.models import PublishedModel
-from ..models import Release, Song, Video
-
 import vcr
 
+from core.tests.models import (
+    FieldsTestMixin, PublishTestMixin, SlugTestMixin)
 
-class ReleaseTestCase(TestCase):
+from ..models import Release, Song, Video
 
-    def test_can_be_published(self):
-        self.assertTrue(issubclass(Release, PublishedModel))
 
-    def test_required_fields(self):
-        required_fields = set(['title', 'slug'])
+class ReleaseTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin,
+                      TestCase):
 
-        with self.assertRaises(ValidationError) as cm:
-            Release().full_clean()
-
-        blank_fields = set(cm.exception.message_dict.keys())
-        self.assertEquals(required_fields, blank_fields)
-
-    def test_can_be_saved(self):
-        r = Release(title='First', slug='first')
-        r.full_clean()
-        r.save()
-
-        r1 = Release.objects.get(slug='first')
-        self.assertEqual(r, r1)
-
-    def test_can_have_details(self):
-        r = Release(title='First', slug='first', date='2014-08-01',
-                    cover_url='http://localhost/jpg',
-                    player_code='<iframe></iframe>',
-                    description='Description', credits='Credits')
-        r.full_clean()
-        r.save()
+    model = Release
+    required_fields = {'title': 'Title', 'slug': 'title'}
+    optional_fields = {
+        'description': 'Description', 'credits': 'Credits',
+        'date': '2014-08-01', 'cover_url': 'http://localhost/jpg',
+        'player_code': '<iframe></iframe>'
+    }
 
     def test_ordered_by_date(self):
         first = Release.objects.create(
@@ -53,31 +34,13 @@ class ReleaseTestCase(TestCase):
         self.assertEqual(list(Release.objects.all()), [new, first, old])
 
 
-class SongTestCase(TestCase):
+class SongTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin, TestCase):
 
-    def test_can_be_published(self):
-        self.assertTrue(issubclass(Song, PublishedModel))
-
-    def test_required_fields(self):
-        required_fields = set(['title', 'slug'])
-
-        with self.assertRaises(ValidationError) as cm:
-            Song().full_clean()
-
-        blank_fields = set(cm.exception.message_dict.keys())
-        self.assertEquals(required_fields, blank_fields)
-
-    def test_can_be_saved(self):
-        s = Song.objects.create(title='First', slug='first')
-
-        s1 = Song.objects.get(slug='first')
-        self.assertEqual(s, s1)
-
-    def test_song_can_have_details(self):
-        s = Song(title='First', slug='first',
-                 description='Description', credits='Credits', lyrics='Lyrics')
-        s.full_clean()
-        s.save()
+    model = Song
+    required_fields = {'title': 'Title', 'slug': 'title'}
+    optional_fields = {
+        'description': 'Description', 'credits': 'Credits', 'lyrics': 'Lyrics'
+    }
 
     def test_ordered_by_title(self):
         first = Song.objects.create(title='First', slug='first')
@@ -113,33 +76,16 @@ class SongTestCase(TestCase):
         self.assertEqual(list(r.tracks.all()), [s1, s2, s3])
 
 
-class VideoTestCase(TestCase):
+class VideoTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin,
+                    TestCase):
 
-    def test_can_be_published(self):
-        self.assertTrue(issubclass(Video, PublishedModel))
-
-    def test_required_fields(self):
-        required_fields = set(['title', 'slug'])
-
-        with self.assertRaises(ValidationError) as cm:
-            Video().full_clean()
-
-        blank_fields = set(cm.exception.message_dict.keys())
-        self.assertEquals(required_fields, blank_fields)
-
-    def test_can_be_saved(self):
-        v = Video.objects.create(title='First', slug='first')
-
-        v1 = Video.objects.get(slug='first')
-        self.assertEqual(v, v1)
-
-    def test_can_have_details(self):
-        v = Video(title='First', slug='first',
-                  source_url='http://localhost', embed_code='<iframe />',
-                  preview_url='http://localhost/jpg',
-                  description='Description', credits='credits')
-        v.full_clean()
-        v.save()
+    model = Video
+    required_fields = {'title': 'Title', 'slug': 'title'}
+    optional_fields = {
+        'description': 'Description', 'credits': 'Credits',
+        'source_url': 'http://localhost', 'embed_code': '<iframe></iframe>',
+        'preview_url': 'http://localhost/jpg'
+    }
 
     def test_ordered_by_date(self):
         draft = Video.objects.create(title='Draft', slug='draft')

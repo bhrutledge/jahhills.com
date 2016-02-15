@@ -4,38 +4,17 @@ from django.test import TestCase
 from django.core.exceptions import ValidationError
 from django.utils import timezone
 
-from core.models import PublishedModel
+from core.tests.models import (
+    FieldsTestMixin, PublishTestMixin, SlugTestMixin)
+
 from ..models import Post
 
 
-class PostTestCase(TestCase):
+class PostTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin, TestCase):
 
-    def test_can_be_published(self):
-        self.assertTrue(issubclass(Post, PublishedModel))
-
-    def test_required_fields(self):
-        required_fields = set(['title', 'slug'])
-
-        with self.assertRaises(ValidationError) as cm:
-            Post().full_clean()
-
-        blank_fields = set(cm.exception.message_dict.keys())
-        self.assertEquals(required_fields, blank_fields)
-
-    def test_can_be_saved(self):
-        p = Post(title='First', slug='first')
-        p.full_clean()
-        p.save()
-
-        p1 = Post.objects.get(slug='first')
-        self.assertEqual(p, p1)
-
-    def test_can_have_body(self):
-        p = Post(title='First', slug='first', body='Content')
-
-        # Shouldn't raise exception
-        p.full_clean()
-        p.save()
+    model = Post
+    required_fields = {'title': 'Title', 'slug': 'title'}
+    optional_fields = {'body': 'content'}
 
     def test_ordered_by_date(self):
         draft = Post.objects.create(title='Draft', slug='draft')
