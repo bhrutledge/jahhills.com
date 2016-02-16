@@ -40,6 +40,7 @@ django.setup()
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
     'django_models',
 ]
 
