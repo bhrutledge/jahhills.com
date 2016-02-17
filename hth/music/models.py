@@ -2,15 +2,14 @@ from django.db import models
 
 from embed_video import backends
 
-from core.models import PublishedModel, SlugModel
+from core.models import PublishedModel, TitledModel
 
 
-class Release(PublishedModel, SlugModel):
+class Release(PublishedModel, TitledModel):
     """
     Stores an album, EP, or other collection of ``Song``'s and ``Video``'s.
     """
 
-    title = models.CharField(max_length=200)
     date = models.DateField(blank=True, null=True)
     cover_url = models.URLField(
         blank=True,
@@ -38,12 +37,11 @@ class Release(PublishedModel, SlugModel):
         return self.video_set.published()
 
 
-class Song(PublishedModel, SlugModel):
+class Song(PublishedModel, TitledModel):
     """
     Stores a song, optionally as a track on a ``Release``.
     """
 
-    title = models.CharField(max_length=200)
     player_code = models.TextField(blank=True)
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
@@ -56,12 +54,11 @@ class Song(PublishedModel, SlugModel):
         ordering = ['title']
 
 
-class Video(PublishedModel, SlugModel):
+class Video(PublishedModel, TitledModel):
     """
     Stores an embeddable video, e.g. YouTube, optionally on a ``Release``.
     """
 
-    title = models.CharField(max_length=200)
     source_url = models.URLField(blank=True)
     embed_code = models.TextField(blank=True)
     preview_url = models.URLField(

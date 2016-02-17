@@ -77,9 +77,9 @@ class PublishTestMixin():
         self.assertNotIn(d, published)
 
 
-class SlugTestMixin():
+class TitleTestMixin():
     """
-    Provides tests for subclasses of ``SlugModel``.
+    Provides tests for subclasses of ``TitledModel``.
 
     Subclasses must also inherit ``FieldsTestMixin``.
     """
@@ -89,6 +89,6 @@ class SlugTestMixin():
         with self.assertRaises(IntegrityError):
             self.factory.create(slug='test')
 
-    def test_str_is_slug(self):
-        p = self.factory.build(slug='test')
-        self.assertEqual(str(p), 'test')
+    def test_str_is_title(self):
+        p = self.factory.build(title='Test Title')
+        self.assertEqual(str(p), 'Test Title')

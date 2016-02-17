@@ -5,13 +5,13 @@ from django.utils import timezone
 import vcr
 
 from core.tests.models import (
-    FieldsTestMixin, PublishTestMixin, SlugTestMixin)
+    FieldsTestMixin, PublishTestMixin, TitleTestMixin)
 
 from ..models import Release, Song, Video
 from .factories import DraftReleaseFactory, DraftSongFactory, DraftVideoFactory
 
 
-class ReleaseTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin,
+class ReleaseTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
                       TestCase):
 
     model = Release
@@ -31,7 +31,8 @@ class ReleaseTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin,
         self.assertEqual(list(Release.objects.all()), [new, first, old])
 
 
-class SongTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin, TestCase):
+class SongTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
+                   TestCase):
 
     model = Song
     factory = DraftSongFactory
@@ -71,7 +72,7 @@ class SongTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin, TestCase):
         self.assertEqual(list(r.tracks.all()), [s1, s2, s3])
 
 
-class VideoTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin,
+class VideoTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
                     TestCase):
 
     model = Video

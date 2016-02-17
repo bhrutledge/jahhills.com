@@ -1,14 +1,13 @@
 from django.db import models
 
-from core.models import PublishedModel, SlugModel
+from core.models import PublishedModel, TitledModel
 
 
-class Post(PublishedModel, SlugModel):
+class Post(PublishedModel, TitledModel):
     """
     Stores a news post.
     """
 
-    title = models.CharField(max_length=200)
     body = models.TextField(blank=True, help_text="HTML")
 
     class Meta:

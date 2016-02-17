@@ -44,11 +44,12 @@ class PublishedModel(models.Model):
         super().save(*args, **kwargs)
 
 
-class SlugModel(models.Model):
+class TitledModel(models.Model):
     """
-    Provides a unique URL for publishable content.
+    Provides a title and unique URL for publishable content.
     """
 
+    title = models.CharField(max_length=200)
     slug = models.SlugField(
         unique=True, help_text="A unique label, used in URLs.")
 
@@ -57,9 +58,9 @@ class SlugModel(models.Model):
 
     def __str__(self):
         """
-        Returns the ``slug``.
+        Returns the ``title``.
         """
-        return self.slug
+        return self.title
 
     def get_absolute_url(self):
         """

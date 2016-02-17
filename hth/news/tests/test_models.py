@@ -4,13 +4,14 @@ from django.test import TestCase
 from django.utils import timezone
 
 from core.tests.models import (
-    FieldsTestMixin, PublishTestMixin, SlugTestMixin)
+    FieldsTestMixin, PublishTestMixin, TitleTestMixin)
 
 from ..models import Post
 from .factories import DraftPostFactory
 
 
-class PostTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin, TestCase):
+class PostTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
+                   TestCase):
 
     model = Post
     factory = DraftPostFactory

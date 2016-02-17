@@ -98,12 +98,12 @@ class SongTestCase(AdminTestCase):
         self.get_url('/admin')
         self.find_link('Songs').click()
         self.find_link('First song').click()
-        self.find_select('release').select_by_visible_text('first-release')
+        self.find_select('release').select_by_visible_text('First release')
         self.find_name('track').send_keys('1')
         self.find_name('_save').click()
 
         self.find_link('Second song').click()
-        self.find_select('release').select_by_visible_text('first-release')
+        self.find_select('release').select_by_visible_text('First release')
         self.find_name('track').send_keys('2')
         self.find_name('_save').click()
 
@@ -168,11 +168,11 @@ class VideoTestCase(AdminTestCase):
         self.get_url('/admin')
         self.find_link('Videos').click()
         self.find_link('First video').click()
-        self.find_select('release').select_by_visible_text('first-release')
+        self.find_select('release').select_by_visible_text('First release')
         self.find_name('_save').click()
 
         self.find_link('Second video').click()
-        self.find_select('release').select_by_visible_text('first-release')
+        self.find_select('release').select_by_visible_text('First release')
         self.find_name('_save').click()
 
         # He verifies that the published video is shown on the release
