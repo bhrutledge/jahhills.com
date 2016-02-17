@@ -2,12 +2,11 @@ from datetime import date, timedelta
 
 from django.test import TestCase
 
-from core.tests.models import (
-    FieldsTestMixin, PublishTestMixin, SlugTestMixin)
+from core.tests.models import FieldsTestMixin, PublishTestMixin
 
 from ..models import Venue, Gig
-from .factories import (
-    DraftGigFactory, PublishedGigFactory, PastGigFactory, UpcomingGigFactory)
+from .factories import (VenueFactory, DraftGigFactory, PublishedGigFactory,
+                        PastGigFactory, UpcomingGigFactory)
 
 
 def from_today(days=0):
@@ -17,8 +16,8 @@ def from_today(days=0):
 class VenueTestCase(FieldsTestMixin, TestCase):
 
     model = Venue
-    required_fields = {'name': 'Venue', 'city': 'City'}
-    optional_fields = {'website': 'http://venue.com'}
+    factory = VenueFactory
+    required_fields = ['name', 'city']
 
     def test_str_is_name_and_city(self):
         v = Venue(name='Venue', city='City', website='http://venue.com')
@@ -34,24 +33,24 @@ class VenueTestCase(FieldsTestMixin, TestCase):
         self.assertEqual(list(Venue.objects.all()), [v1, v2, v3, v4])
 
 
-class GigTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin, TestCase):
+class GigTestCase(FieldsTestMixin, PublishTestMixin, TestCase):
 
     model = Gig
-
-    @property
-    def required_fields(self):
-        return {'date': '2014-07-24', 'slug': 'test', 'venue': self.venue}
-
-    optional_fields = {'description': 'Description', 'details': 'Details'}
+    factory = DraftGigFactory
+    required_fields = ['date', 'venue']
 
     def setUp(self):
         self.venue = Venue.objects.create(name='Venue', city='City')
 
+    def test_str_is_date_and_venue(self):
+        g = Gig.objects.create(date='2014-07-25', venue=self.venue)
+        self.assertEqual(str(g), '2014-07-25, Venue, City')
+
     def test_ordered_by_date(self):
         # Save out of order to test ordering
-        g2 = Gig.objects.create(date='2014-07-25', slug='g2', venue=self.venue)
-        g1 = Gig.objects.create(date='2014-07-26', slug='g1', venue=self.venue)
-        g3 = Gig.objects.create(date='2014-07-24', slug='g3', venue=self.venue)
+        g2 = Gig.objects.create(date='2014-07-25', venue=self.venue)
+        g1 = Gig.objects.create(date='2014-07-26', venue=self.venue)
+        g3 = Gig.objects.create(date='2014-07-24', venue=self.venue)
 
         self.assertEqual(list(Gig.objects.all()), [g1, g2, g3])
 

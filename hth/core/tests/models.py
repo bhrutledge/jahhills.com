@@ -13,57 +13,22 @@ class FieldsTestMixin():
 
     Attributes:
         model: The subclass of ``django.db.models.Model`` being tested.
-        required_fields: Required field names and default values::
-
-            {'title': 'Content Title', 'slug': 'content-title'}
-
-        optional_fields: Optional field names and default values::
-
-            {'description': 'A long description'}
+        factory: A subclass of ``factory.django.DjangoModelFactory`` for
+            ``model``, with defaults for required and optional fields.
+        required_fields: A list of required field names.
     """
-
-    def build_model(self, **kwargs):
-        """
-        Build a new instance of ``model``, initialized with
-        ``required_fields``.
-        """
-        fields = dict(self.required_fields)
-        fields.update(kwargs)
-        return self.model(**fields)
-
-    def create_model(self, **kwargs):
-        """
-        Build and save a new instance of ``model``, initialized with
-        ``required_fields``.
-        """
-        m = self.build_model(**kwargs)
-        m.save()
-        return m
 
     def test_errors_on_required_fields(self):
         with self.assertRaises(ValidationError) as cm:
             self.model().full_clean()
 
-        required_fields = set(self.required_fields.keys())
-        blank_fields = set(cm.exception.message_dict.keys())
-        self.assertEquals(required_fields, blank_fields)
-
-    def test_save_with_required_fields(self):
-        try:
-            m = self.build_model()
-            m.full_clean()
-            m.save()
-        except (TypeError, ValidationError):
-            raise AssertionError
-
-        m1 = self.model.objects.first()
-        self.assertEqual(m, m1)
+        blank_fields = cm.exception.message_dict.keys()
+        self.assertEquals(set(self.required_fields), set(blank_fields))
 
     def test_save_with_all_fields(self):
         try:
-            m = self.build_model(**self.optional_fields)
+            m = self.factory.create()
             m.full_clean()
-            m.save()
         except (TypeError, ValidationError):
             raise AssertionError
 
@@ -77,7 +42,7 @@ class PublishTestMixin():
 
     def test_can_publish(self):
         now = timezone.now()
-        p = self.create_model(publish=True)
+        p = self.factory.create(publish=True)
 
         self.assertTrue(p.publish)
         self.assertEqual(p.publish_on.date(), now.date())
@@ -87,21 +52,21 @@ class PublishTestMixin():
         self.assertEqual(p.publish_on.date(), now.date())
 
     def test_draft_by_default(self):
-        p = self.create_model()
+        p = self.factory.create()
 
         self.assertFalse(p.publish)
         self.assertIsNone(p.publish_on)
 
     def test_can_set_date(self):
         y2k = datetime(2000, 1, 1, tzinfo=timezone.utc)
-        p = self.create_model(publish_on=y2k)
+        p = self.factory.create(publish_on=y2k)
 
         p = self.model.objects.first()
         self.assertEqual(p.publish_on, y2k)
 
     def test_published_filter(self):
-        p = self.create_model(publish=True, slug='published')
-        d = self.create_model()
+        p = self.factory.create(publish=True)
+        d = self.factory.create()
 
         objects = list(self.model.objects.all())
         self.assertIn(p, objects)
@@ -120,10 +85,10 @@ class SlugTestMixin():
     """
 
     def test_slug_must_be_unique(self):
-        self.create_model(slug='test')
+        self.factory.create(slug='test')
         with self.assertRaises(IntegrityError):
-            self.create_model(slug='test')
+            self.factory.create(slug='test')
 
     def test_str_is_slug(self):
-        p = self.build_model(slug='test')
+        p = self.factory.build(slug='test')
         self.assertEqual(str(p), 'test')

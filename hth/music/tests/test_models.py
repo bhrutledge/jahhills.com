@@ -8,18 +8,15 @@ from core.tests.models import (
     FieldsTestMixin, PublishTestMixin, SlugTestMixin)
 
 from ..models import Release, Song, Video
+from .factories import DraftReleaseFactory, DraftSongFactory, DraftVideoFactory
 
 
 class ReleaseTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin,
                       TestCase):
 
     model = Release
-    required_fields = {'title': 'Title', 'slug': 'title'}
-    optional_fields = {
-        'description': 'Description', 'credits': 'Credits',
-        'date': '2014-08-01', 'cover_url': 'http://localhost/jpg',
-        'player_code': '<iframe></iframe>'
-    }
+    factory = DraftReleaseFactory
+    required_fields = ['title', 'slug']
 
     def test_ordered_by_date(self):
         first = Release.objects.create(
@@ -37,10 +34,8 @@ class ReleaseTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin,
 class SongTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin, TestCase):
 
     model = Song
-    required_fields = {'title': 'Title', 'slug': 'title'}
-    optional_fields = {
-        'description': 'Description', 'credits': 'Credits', 'lyrics': 'Lyrics'
-    }
+    factory = DraftSongFactory
+    required_fields = ['title', 'slug']
 
     def test_ordered_by_title(self):
         first = Song.objects.create(title='First', slug='first')
@@ -80,12 +75,8 @@ class VideoTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin,
                     TestCase):
 
     model = Video
-    required_fields = {'title': 'Title', 'slug': 'title'}
-    optional_fields = {
-        'description': 'Description', 'credits': 'Credits',
-        'source_url': 'http://localhost', 'embed_code': '<iframe></iframe>',
-        'preview_url': 'http://localhost/jpg'
-    }
+    factory = DraftVideoFactory
+    required_fields = ['title', 'slug']
 
     def test_ordered_by_date(self):
         draft = Video.objects.create(title='Draft', slug='draft')

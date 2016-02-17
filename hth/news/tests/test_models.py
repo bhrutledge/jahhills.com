@@ -7,13 +7,14 @@ from core.tests.models import (
     FieldsTestMixin, PublishTestMixin, SlugTestMixin)
 
 from ..models import Post
+from .factories import DraftPostFactory
 
 
 class PostTestCase(FieldsTestMixin, PublishTestMixin, SlugTestMixin, TestCase):
 
     model = Post
-    required_fields = {'title': 'Title', 'slug': 'title'}
-    optional_fields = {'body': 'content'}
+    factory = DraftPostFactory
+    required_fields = ['title', 'slug']
 
     def test_ordered_by_date(self):
         draft = Post.objects.create(title='Draft', slug='draft')
