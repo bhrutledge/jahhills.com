@@ -61,3 +61,6 @@ class Gig(PublishedModel):
 
     class Meta:
         ordering = ['-date']
+
+    def __str__(self):
+        return '{}, {}'.format(self.date, self.venue)

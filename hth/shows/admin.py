@@ -12,9 +12,8 @@ admin.site.register(Venue, VenueAdmin)
 
 class GigAdmin(admin.ModelAdmin):
     save_on_top = True
-    fields = ('date', 'slug', 'venue', 'description', 'details',
+    fields = ('date', 'venue', 'description', 'details',
               'publish', 'publish_on',)
-    prepopulated_fields = {'slug': ('date',)}
     raw_id_fields = ('venue',)
     list_display = ('date', 'venue',)
 

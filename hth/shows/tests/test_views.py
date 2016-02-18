@@ -1,13 +1,13 @@
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 
-from .factories import DraftGigFactory, UpcomingGigFactory, PastGigFactory
+from .factories import GigFactory, UpcomingGigFactory, PastGigFactory
 
 
 class GigTestCase(TestCase):
 
     def setUp(self):
-        self.draft_gigs = DraftGigFactory.create_batch(5)
+        self.draft_gigs = GigFactory.create_batch(5)
         self.upcoming_gigs = UpcomingGigFactory.create_batch(5)
         self.past_gigs = PastGigFactory.create_batch(5)
 

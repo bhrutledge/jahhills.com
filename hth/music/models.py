@@ -1,17 +1,15 @@
 from django.db import models
-from django.core.urlresolvers import reverse
 
 from embed_video import backends
 
-from core.models import PublishedModel
+from core.models import PublishedModel, TitledModel
 
 
-class Release(PublishedModel):
+class Release(PublishedModel, TitledModel):
     """
     Stores an album, EP, or other collection of ``Song``'s and ``Video``'s.
     """
 
-    title = models.CharField(max_length=200)
     date = models.DateField(blank=True, null=True)
     cover_url = models.URLField(
         blank=True,
@@ -23,12 +21,6 @@ class Release(PublishedModel):
 
     class Meta:
         ordering = ['-date']
-
-    def get_absolute_url(self):
-        """
-        Returns the ``slug``-based URL.
-        """
-        return reverse('release_detail', args=[self.slug])
 
     @property
     def tracks(self):
@@ -45,12 +37,11 @@ class Release(PublishedModel):
         return self.video_set.published()
 
 
-class Song(PublishedModel):
+class Song(PublishedModel, TitledModel):
     """
     Stores a song, optionally as a track on a ``Release``.
     """
 
-    title = models.CharField(max_length=200)
     player_code = models.TextField(blank=True)
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
@@ -62,19 +53,12 @@ class Song(PublishedModel):
     class Meta:
         ordering = ['title']
 
-    def get_absolute_url(self):
-        """
-        Returns the ``slug``-based URL.
-        """
-        return reverse('song_detail', args=[self.slug])
 
-
-class Video(PublishedModel):
+class Video(PublishedModel, TitledModel):
     """
     Stores an embeddable video, e.g. YouTube, optionally on a ``Release``.
     """
 
-    title = models.CharField(max_length=200)
     source_url = models.URLField(blank=True)
     embed_code = models.TextField(blank=True)
     preview_url = models.URLField(
@@ -88,12 +72,6 @@ class Video(PublishedModel):
 
     class Meta:
         ordering = ['publish', '-publish_on']
-
-    def get_absolute_url(self):
-        """
-        Returns the ``slug``-based URL.
-        """
-        return reverse('video_detail', args=[self.slug])
 
     def save(self, *args, **kwargs):
         if self.source_url and not (self.preview_url and self.embed_code):

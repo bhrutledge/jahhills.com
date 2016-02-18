@@ -1,10 +1,10 @@
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 
-from news.tests.factories import DraftPostFactory, PublishedPostFactory
+from news.tests.factories import PostFactory, PublishedPostFactory
 from shows.tests.factories import (
-    DraftGigFactory, PastGigFactory, UpcomingGigFactory)
-from music.tests.factories import DraftReleaseFactory, PublishedReleaseFactory
+    GigFactory, PastGigFactory, UpcomingGigFactory)
+from music.tests.factories import ReleaseFactory, PublishedReleaseFactory
 
 
 class HomeTestCase(TestCase):
@@ -18,7 +18,7 @@ class HomeTestCase(TestCase):
 
     def test_returns_latest_post(self):
         published_posts = PublishedPostFactory.create_batch(5)
-        DraftPostFactory.create_batch(5)
+        PostFactory.create_batch(5)
 
         response = self.client.get('/')
         post = response.context['post']
@@ -28,7 +28,7 @@ class HomeTestCase(TestCase):
     def test_returns_upcoming_gigs(self):
         upcoming_gigs = UpcomingGigFactory.create_batch(5)
         PastGigFactory.create_batch(5)
-        DraftGigFactory.create_batch(5)
+        GigFactory.create_batch(5)
 
         response = self.client.get('/')
         gig_list = response.context['gig_list']
@@ -37,7 +37,7 @@ class HomeTestCase(TestCase):
 
     def test_returns_latest_release(self):
         published_releases = PublishedReleaseFactory.create_batch(5)
-        DraftReleaseFactory.create_batch(5)
+        ReleaseFactory.create_batch(5)
 
         response = self.client.get('/')
         release = response.context['release']

@@ -4,7 +4,7 @@ import factory
 import factory.fuzzy
 
 
-class DraftPostFactory(factory.django.DjangoModelFactory):
+class PostFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = 'news.Post'
@@ -14,7 +14,7 @@ class DraftPostFactory(factory.django.DjangoModelFactory):
     body = factory.fuzzy.FuzzyText(length=100)
 
 
-class PublishedPostFactory(DraftPostFactory):
+class PublishedPostFactory(PostFactory):
 
     publish = True
     publish_on = factory.fuzzy.FuzzyDateTime(

@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.urlresolvers import reverse
 from django.utils import timezone
 
 
@@ -17,11 +18,9 @@ class PublishedQuerySet(models.QuerySet):
 
 class PublishedModel(models.Model):
     """
-    Provides common fields and a manager for content type models.
+    Provides common fields and a manager for publishable content.
     """
 
-    slug = models.SlugField(
-        unique=True, help_text="A unique label, used in URLs.")
     publish = models.BooleanField(
         default=False,
         help_text="Sets 'publish on' to now unless already set.")
@@ -31,12 +30,6 @@ class PublishedModel(models.Model):
 
     class Meta:
         abstract = True
-
-    def __str__(self):
-        """
-        Returns the ``slug``.
-        """
-        return self.slug
 
     def save(self, *args, **kwargs):
         """
@@ -49,3 +42,28 @@ class PublishedModel(models.Model):
             self.publish_on = timezone.now()
 
         super().save(*args, **kwargs)
+
+
+class TitledModel(models.Model):
+    """
+    Provides a title and unique URL for publishable content.
+    """
+
+    title = models.CharField(max_length=200)
+    slug = models.SlugField(
+        unique=True, help_text="A unique label, used in URLs.")
+
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        """
+        Returns the ``title``.
+        """
+        return self.title
+
+    def get_absolute_url(self):
+        """
+        Returns the ``slug``-based URL.
+        """
+        return reverse(self._meta.model_name + '_detail', args=[self.slug])

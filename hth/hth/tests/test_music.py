@@ -1,8 +1,8 @@
 from unittest import skip
 from core.tests.selenium import SeleniumTestCase
 from music.tests.factories import (
-    DraftReleaseFactory, PublishedReleaseFactory,
-    DraftSongFactory, PublishedSongFactory)
+    ReleaseFactory, PublishedReleaseFactory,
+    SongFactory, PublishedSongFactory)
 
 
 @skip('Out of sync with markup')
@@ -12,7 +12,7 @@ class MusicTestCase(SeleniumTestCase):
         super().setUp()
 
         self.published_releases = PublishedReleaseFactory.create_batch(10)
-        DraftReleaseFactory.create_batch(5)
+        ReleaseFactory.create_batch(5)
 
     def test_music_detail_displays_entire_release(self):
         release = self.published_releases[0]
@@ -62,7 +62,7 @@ class SongsTestCase(SeleniumTestCase):
         super().setUp()
 
         self.published_songs = PublishedSongFactory.create_batch(10)
-        DraftSongFactory.create_batch(5)
+        SongFactory.create_batch(5)
 
     def test_song_detail_displays_entire_song(self):
         song = self.published_songs[0]

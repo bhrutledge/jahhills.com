@@ -1,3 +1,5 @@
+import vcr
+
 from core.tests.utils import today_str
 from core.tests.selenium import AdminTestCase
 
@@ -96,12 +98,12 @@ class SongTestCase(AdminTestCase):
         self.get_url('/admin')
         self.find_link('Songs').click()
         self.find_link('First song').click()
-        self.find_select('release').select_by_visible_text('first-release')
+        self.find_select('release').select_by_visible_text('First release')
         self.find_name('track').send_keys('1')
         self.find_name('_save').click()
 
         self.find_link('Second song').click()
-        self.find_select('release').select_by_visible_text('first-release')
+        self.find_select('release').select_by_visible_text('First release')
         self.find_name('track').send_keys('2')
         self.find_name('_save').click()
 
@@ -116,6 +118,12 @@ class SongTestCase(AdminTestCase):
 
 
 class VideoTestCase(AdminTestCase):
+
+    # TODO: Duplicated in .test_models.VideoAutofillTestCase
+    CASSETTE = 'music/tests/fixtures/cassettes/vimeo.yaml'
+    SOURCE_URL = 'https://vimeo.com/126794989'
+    PREVIEW_URL = 'http://i.vimeocdn.com/video/517362144_640.jpg'
+    EMBED_CODE = '<iframe src="http://player.vimeo.com/video/126794989" seamless allowfullscreen></iframe>\n'
 
     def setUp(self):
         super().setUp()
@@ -160,11 +168,11 @@ class VideoTestCase(AdminTestCase):
         self.get_url('/admin')
         self.find_link('Videos').click()
         self.find_link('First video').click()
-        self.find_select('release').select_by_visible_text('first-release')
+        self.find_select('release').select_by_visible_text('First release')
         self.find_name('_save').click()
 
         self.find_link('Second video').click()
-        self.find_select('release').select_by_visible_text('first-release')
+        self.find_select('release').select_by_visible_text('First release')
         self.find_name('_save').click()
 
         # He verifies that the published video is shown on the release
@@ -176,6 +184,7 @@ class VideoTestCase(AdminTestCase):
         self.find_link('First video').click()
         self.assertIn('First video', self.browser.title)
 
+    @vcr.use_cassette(CASSETTE)
     def test_autofill_from_source(self):
         # Ryan logs into the admin
 
@@ -186,15 +195,15 @@ class VideoTestCase(AdminTestCase):
         self.find_link('Videos').click()
         self.find_link('ADD VIDEO').click()
         self.find_name('title').send_keys('First video')
-        self.find_name('source_url').send_keys('https://vimeo.com/126794989')
+        self.find_name('source_url').send_keys(self.SOURCE_URL)
         self.find_name('publish').click()
         self.find_name('_continue').click()
 
         # He verifies that the preview_url and embed_code have been filled
 
-        self.assertEqual('http://i.vimeocdn.com/video/517362144_640.jpg',
+        self.assertEqual(self.PREVIEW_URL,
                          self.find_name('preview_url').get_attribute('value'))
-        self.assertEqual('<iframe src="http://player.vimeo.com/video/126794989" seamless allowfullscreen></iframe>',
+        self.assertEqual(self.EMBED_CODE.strip(),
                          self.find_name('embed_code').text)
 
         # He verifies that the published video is on the site

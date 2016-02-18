@@ -1,6 +1,6 @@
 from unittest import skip
 from core.tests.selenium import SeleniumTestCase
-from news.tests.factories import DraftPostFactory, PublishedPostFactory
+from news.tests.factories import PostFactory, PublishedPostFactory
 
 
 @skip('Out of sync with markup')
@@ -10,7 +10,7 @@ class NewsTestCase(SeleniumTestCase):
         super().setUp()
 
         self.published_posts = PublishedPostFactory.create_batch(10)
-        DraftPostFactory.create_batch(5)
+        PostFactory.create_batch(5)
 
         self.latest_post = self.published_posts[0]
 

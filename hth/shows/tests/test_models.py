@@ -1,40 +1,23 @@
 from datetime import date, timedelta
 
 from django.test import TestCase
-from django.core.exceptions import ValidationError
 
-from ..models import PublishedModel, Venue, Gig
-from .factories import (
-    DraftGigFactory, PublishedGigFactory, PastGigFactory, UpcomingGigFactory)
+from core.tests.models import FieldsTestMixin, PublishTestMixin
+
+from ..models import Venue, Gig
+from .factories import (VenueFactory, GigFactory, PublishedGigFactory,
+                        PastGigFactory, UpcomingGigFactory)
 
 
 def from_today(days=0):
     return date.today() + timedelta(days)
 
 
-class VenueTestCase(TestCase):
+class VenueTestCase(FieldsTestMixin, TestCase):
 
-    def test_can_be_saved(self):
-        v = Venue(name='Venue', city='City')
-        v.full_clean()
-        v.save()
-
-        v1 = Venue.objects.first()
-        self.assertEqual(v, v1)
-
-    def test_required_fields(self):
-        required_fields = set(['name', 'city'])
-
-        with self.assertRaises(ValidationError) as cm:
-            Venue().full_clean()
-
-        blank_fields = set(cm.exception.message_dict.keys())
-        self.assertEquals(required_fields, blank_fields)
-
-    def test_can_have_details(self):
-        v = Venue(name='Venue', city='City', website='http://venue.com')
-        v.full_clean()
-        v.save()
+    model = Venue
+    factory = VenueFactory
+    required_fields = ['name', 'city']
 
     def test_str_is_name_and_city(self):
         v = Venue(name='Venue', city='City', website='http://venue.com')
@@ -42,50 +25,30 @@ class VenueTestCase(TestCase):
 
     def test_ordered_by_name_and_city(self):
         # Save out of order to test ordering
-        v2 = Venue.objects.create(name='A', city='d')
-        v1 = Venue.objects.create(name='A', city='c')
-        v4 = Venue.objects.create(name='C', city='c')
-        v3 = Venue.objects.create(name='B', city='c')
+        v2 = VenueFactory.create(name='A', city='d')
+        v1 = VenueFactory.create(name='A', city='c')
+        v4 = VenueFactory.create(name='C', city='c')
+        v3 = VenueFactory.create(name='B', city='c')
 
         self.assertEqual(list(Venue.objects.all()), [v1, v2, v3, v4])
 
 
-class GigTestCase(TestCase):
+class GigTestCase(FieldsTestMixin, PublishTestMixin, TestCase):
 
-    def setUp(self):
-        self.venue = Venue.objects.create(name='Venue', city='City')
+    model = Gig
+    factory = GigFactory
+    required_fields = ['date', 'venue']
 
-    def test_can_be_published(self):
-        self.assertTrue(issubclass(Gig, PublishedModel))
-
-    def test_required_fields(self):
-        required_fields = set(['date', 'slug', 'venue'])
-
-        with self.assertRaises(ValidationError) as cm:
-            Gig().full_clean()
-
-        blank_fields = set(cm.exception.message_dict.keys())
-        self.assertEquals(required_fields, blank_fields)
-
-    def test_can_be_saved(self):
-        g = Gig(date='2014-07-24', slug='test', venue=self.venue)
-        g.full_clean()
-        g.save()
-
-        g1 = Gig.objects.get(slug='test')
-        self.assertEqual(g, g1)
-
-    def test_can_have_details(self):
-        g = Gig(date='2014-07-24', slug='test', venue=self.venue,
-                description='Description', details='Details')
-        g.full_clean()
-        g.save()
+    def test_str_is_date_and_venue(self):
+        v = Venue.objects.create(name='Venue', city='City')
+        g = Gig.objects.create(date='2014-07-25', venue=v)
+        self.assertEqual(str(g), '2014-07-25, Venue, City')
 
     def test_ordered_by_date(self):
         # Save out of order to test ordering
-        g2 = Gig.objects.create(date='2014-07-25', slug='g2', venue=self.venue)
-        g1 = Gig.objects.create(date='2014-07-26', slug='g1', venue=self.venue)
-        g3 = Gig.objects.create(date='2014-07-24', slug='g3', venue=self.venue)
+        g2 = PublishedGigFactory.create(date='2014-07-25')
+        g1 = PublishedGigFactory.create(date='2014-07-26')
+        g3 = PublishedGigFactory.create(date='2014-07-24')
 
         self.assertEqual(list(Gig.objects.all()), [g1, g2, g3])
 
@@ -104,7 +67,7 @@ class GigTestCase(TestCase):
         today = UpcomingGigFactory.create(date=from_today())
 
         PastGigFactory.create_batch(5)
-        DraftGigFactory.create_batch(5)
+        GigFactory.create_batch(5)
 
         self.assertEqual(list(Gig.objects.upcoming().published()),
                          [today, tomorrow, next_month, next_year])
@@ -115,7 +78,7 @@ class GigTestCase(TestCase):
         last_month = PastGigFactory.create(date=from_today(-30))
 
         UpcomingGigFactory.create_batch(5)
-        DraftGigFactory.create_batch(5)
+        GigFactory.create_batch(5)
 
         self.assertEqual(list(Gig.objects.past().published()),
                          [yesterday, last_month, last_year])
