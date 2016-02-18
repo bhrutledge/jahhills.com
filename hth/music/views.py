@@ -1,7 +1,7 @@
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 
-from .models import Release, Song, Video
+from .models import Release, Song, Video, Press
 
 
 class ReleaseListView(ListView):
@@ -44,3 +44,10 @@ class VideoDetailView(DetailView):
     Renders a single published ``Video``.
     """
     queryset = Video.objects.published()
+
+
+class PressListView(ListView):
+    """
+    Renders a list of published ``Press``.
+    """
+    queryset = Press.objects.published()

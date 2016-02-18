@@ -17,13 +17,17 @@ class FieldsTestMixin():
             ``model``, with defaults for required and optional fields.
         required_fields: A list of required field names.
     """
+    model = None
+    factory = None
+    required_fields = None
 
     def test_errors_on_required_fields(self):
-        with self.assertRaises(ValidationError) as cm:
-            self.model().full_clean()
+        if self.required_fields:
+            with self.assertRaises(ValidationError) as cm:
+                self.model().full_clean()
 
-        blank_fields = cm.exception.message_dict.keys()
-        self.assertEquals(set(self.required_fields), set(blank_fields))
+            blank_fields = cm.exception.message_dict.keys()
+            self.assertEquals(set(self.required_fields), set(blank_fields))
 
     def test_save_with_all_fields(self):
         try:

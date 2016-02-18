@@ -1,6 +1,8 @@
 from django.test import TestCase
+from django.core.urlresolvers import reverse
 
 from ..models import Release, Song, Video
+from .factories import PressFactory, PublishedPressFactory
 
 
 class ReleaseTestCase(TestCase):
@@ -106,3 +108,20 @@ class VideoTestCase(TestCase):
     def test_list_uses_template(self):
         response = self.client.get('/videos/')
         self.assertTemplateUsed(response, 'music/video_list.html')
+
+
+class PressTestCase(TestCase):
+
+    def setUp(self):
+        self.publish = PublishedPressFactory.create()
+        self.draft = PressFactory.create()
+
+    def test_list_returns_published_press(self):
+        response = self.client.get(reverse('press_list'))
+        press_list = response.context['press_list']
+        self.assertIn(self.publish, press_list)
+        self.assertNotIn(self.draft, press_list)
+
+    def test_list_uses_template(self):
+        response = self.client.get(reverse('press_list'))
+        self.assertTemplateUsed(response, 'music/press_list.html')

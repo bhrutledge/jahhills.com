@@ -1,0 +1,7 @@
+<article class="content press">
+{% if press.quote %}
+    <blockquote>{% include "music/_press_body.html" %}</blockquote>
+{% else %}
+    {% include "music/_press_body.html" %}
+{% endif %}
+</article>

@@ -1,0 +1,14 @@
+{{ press.body|safe }}
+<footer>
+    {% spaceless %}
+    {% if press.source_url %}
+    <cite><a href="{{ press.source_url }}">{{ press.title }}</a></cite>
+    {% else %}
+    {{ press.title }}
+    {% endif %}
+    {% endspaceless %}, {{ press.date|date }}
+
+    {% if press.release %}
+    <br />for <cite><a href="{{ press.release.get_absolute_url }}">{{ press.release.title }}</a></cite>
+    {% endif %}
+</footer>
