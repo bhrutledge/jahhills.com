@@ -8,7 +8,9 @@ from core.tests.models import (
     FieldsTestMixin, PublishTestMixin, TitleTestMixin)
 
 from ..models import Release, Song, Video
-from .factories import DraftReleaseFactory, DraftSongFactory, DraftVideoFactory
+from .factories import (DraftReleaseFactory, PublishedReleaseFactory,
+                        DraftSongFactory, PublishedSongFactory,
+                        DraftVideoFactory, PublishedVideoFactory)
 
 
 class ReleaseTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
@@ -19,14 +21,9 @@ class ReleaseTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
     required_fields = ['title', 'slug']
 
     def test_ordered_by_date(self):
-        first = Release.objects.create(
-            title='First', slug='first', date='2014-08-01')
-
-        old = Release.objects.create(
-            title='Older', slug='older', date='2014-07-31')
-
-        new = Release.objects.create(
-            title='Newer', slug='newer', date='2014-08-31')
+        first = DraftReleaseFactory.create(date='2014-08-01')
+        old = DraftReleaseFactory.create(date='2014-07-31')
+        new = DraftReleaseFactory.create(date='2014-08-31')
 
         self.assertEqual(list(Release.objects.all()), [new, first, old])
 
@@ -39,35 +36,29 @@ class SongTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
     required_fields = ['title', 'slug']
 
     def test_ordered_by_title(self):
-        first = Song.objects.create(title='First', slug='first')
-        second = Song.objects.create(title='Second', slug='second')
-        third = Song.objects.create(title='Third', slug='third')
+        second = DraftSongFactory.create(title='Second')
+        first = DraftSongFactory.create(title='First')
+        third = DraftSongFactory.create(title='Third')
 
         self.assertEqual(list(Song.objects.all()), [first, second, third])
 
     def test_tracks_can_be_added_to_release(self):
-        r = Release.objects.create(title='Release', slug='release')
+        r = DraftReleaseFactory.create()
 
-        publish = Song.objects.create(
-            title='Publish', slug='publish', release=r, track=1, publish=True)
-
-        draft = Song.objects.create(
-            title='Draft', slug='draft', release=r, track=2)
+        publish = PublishedSongFactory.create(release=r, track=1)
+        draft = DraftSongFactory.create(release=r, track=2)
 
         tracks = list(r.tracks.all())
         self.assertIn(publish, tracks)
         self.assertNotIn(draft, tracks)
 
     def test_tracks_ordered_by_number(self):
-        r = Release.objects.create(title='Release', slug='release')
+        r = DraftReleaseFactory.create(title='Release', slug='release')
 
         # Save out of order to test ordering
-        s3 = Song.objects.create(
-            title='A Song', slug='a', release=r, track=3, publish=True)
-        s1 = Song.objects.create(
-            title='Z Song', slug='z', release=r, track=1, publish=True)
-        s2 = Song.objects.create(
-            title='B Song', slug='b', release=r, track=2, publish=True)
+        s3 = PublishedSongFactory.create(release=r, track=3)
+        s1 = PublishedSongFactory.create(release=r, track=1)
+        s2 = PublishedSongFactory.create(release=r, track=2)
 
         self.assertEqual(list(r.tracks.all()), [s1, s2, s3])
 
@@ -80,29 +71,24 @@ class VideoTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
     required_fields = ['title', 'slug']
 
     def test_ordered_by_date(self):
-        draft = Video.objects.create(title='Draft', slug='draft')
+        draft = DraftVideoFactory.create()
 
-        first = Video.objects.create(
-            title='First', slug='first', publish=True,
+        first = PublishedVideoFactory.create(
             publish_on=datetime(2014, 7, 22, tzinfo=timezone.utc))
 
-        old = Video.objects.create(
-            title='Old', slug='old', publish=True,
+        old = PublishedVideoFactory.create(
             publish_on=datetime(2014, 7, 21, tzinfo=timezone.utc))
 
-        new = Video.objects.create(
-            title='New', slug='new', publish=True,
+        new = PublishedVideoFactory.create(
             publish_on=datetime(2014, 7, 23, tzinfo=timezone.utc))
 
         self.assertEqual(list(Video.objects.all()), [draft, new, first, old])
 
     def test_can_be_added_to_release(self):
-        r = Release.objects.create(title='Release', slug='release')
+        r = PublishedReleaseFactory.create(title='Release', slug='release')
 
-        publish = Video.objects.create(
-            title='Publish', slug='publish', release=r, publish=True)
-
-        draft = Video.objects.create(title='Draft', slug='draft', release=r)
+        publish = PublishedVideoFactory.create(release=r)
+        draft = DraftVideoFactory.create(release=r)
 
         videos = list(r.videos.all())
         self.assertIn(publish, videos)
@@ -123,46 +109,41 @@ class VideoAutofillTestCase(TestCase):
     def test_autofill_preview_url(self):
         embed_code = '<iframe></iframe>'
 
-        v = Video(title='First', slug='first', source_url=self.SOURCE_URL,
-                  embed_code=embed_code)
-        v.save()
+        DraftVideoFactory.create(source_url=self.SOURCE_URL,
+                                 embed_code=embed_code)
 
-        v2 = Video.objects.get(title='First')
-        self.assertEqual(v2.preview_url, self.PREVIEW_URL)
-        self.assertEqual(v2.embed_code, embed_code)
+        v = Video.objects.first()
+        self.assertEqual(v.preview_url, self.PREVIEW_URL)
+        self.assertEqual(v.embed_code, embed_code)
 
     @vcr.use_cassette(CASSETTE)
     def test_autofill_embed_code(self):
         preview_url = 'http://localhost/jpg'
-        v = Video(title='First', slug='first', source_url=self.SOURCE_URL,
-                  preview_url=preview_url)
-        v.save()
+        DraftVideoFactory.create(source_url=self.SOURCE_URL,
+                                 preview_url=preview_url)
 
-        v2 = Video.objects.get(title='First')
-        self.assertEqual(v2.preview_url, preview_url)
-        self.assertEqual(v2.embed_code, self.EMBED_CODE)
+        v = Video.objects.first()
+        self.assertEqual(v.preview_url, preview_url)
+        self.assertEqual(v.embed_code, self.EMBED_CODE)
 
     @vcr.use_cassette(CASSETTE)
     def test_autofill_preview_url_and_embed_code(self):
-        v = Video(title='First', slug='first', source_url=self.SOURCE_URL)
-        v.save()
+        DraftVideoFactory.create(source_url=self.SOURCE_URL)
 
-        v2 = Video.objects.get(title='First')
-        self.assertEqual(v2.preview_url, self.PREVIEW_URL)
-        self.assertEqual(v2.embed_code, self.EMBED_CODE)
+        v = Video.objects.first()
+        self.assertEqual(v.preview_url, self.PREVIEW_URL)
+        self.assertEqual(v.embed_code, self.EMBED_CODE)
 
     def test_no_error_on_missing_source(self):
-        v = Video(title='First', slug='first')
-        v.save()
+        DraftVideoFactory.create()
 
-        v2 = Video.objects.get(title='First')
-        self.assertEqual(v2.preview_url, '')
-        self.assertEqual(v2.embed_code, '')
+        v = Video.objects.first()
+        self.assertEqual(v.preview_url, '')
+        self.assertEqual(v.embed_code, '')
 
     def test_no_error_on_unknown_source(self):
-        v = Video(title='First', slug='first', source_url='http://localhost')
-        v.save()
+        DraftVideoFactory.create(source_url='http://localhost')
 
-        v2 = Video.objects.get(title='First')
-        self.assertEqual(v2.preview_url, '')
-        self.assertEqual(v2.embed_code, '')
+        v = Video.objects.first()
+        self.assertEqual(v.preview_url, '')
+        self.assertEqual(v.embed_code, '')

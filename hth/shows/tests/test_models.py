@@ -25,10 +25,10 @@ class VenueTestCase(FieldsTestMixin, TestCase):
 
     def test_ordered_by_name_and_city(self):
         # Save out of order to test ordering
-        v2 = Venue.objects.create(name='A', city='d')
-        v1 = Venue.objects.create(name='A', city='c')
-        v4 = Venue.objects.create(name='C', city='c')
-        v3 = Venue.objects.create(name='B', city='c')
+        v2 = VenueFactory.create(name='A', city='d')
+        v1 = VenueFactory.create(name='A', city='c')
+        v4 = VenueFactory.create(name='C', city='c')
+        v3 = VenueFactory.create(name='B', city='c')
 
         self.assertEqual(list(Venue.objects.all()), [v1, v2, v3, v4])
 
@@ -39,18 +39,16 @@ class GigTestCase(FieldsTestMixin, PublishTestMixin, TestCase):
     factory = DraftGigFactory
     required_fields = ['date', 'venue']
 
-    def setUp(self):
-        self.venue = Venue.objects.create(name='Venue', city='City')
-
     def test_str_is_date_and_venue(self):
-        g = Gig.objects.create(date='2014-07-25', venue=self.venue)
+        v = Venue.objects.create(name='Venue', city='City')
+        g = Gig.objects.create(date='2014-07-25', venue=v)
         self.assertEqual(str(g), '2014-07-25, Venue, City')
 
     def test_ordered_by_date(self):
         # Save out of order to test ordering
-        g2 = Gig.objects.create(date='2014-07-25', venue=self.venue)
-        g1 = Gig.objects.create(date='2014-07-26', venue=self.venue)
-        g3 = Gig.objects.create(date='2014-07-24', venue=self.venue)
+        g2 = PublishedGigFactory.create(date='2014-07-25')
+        g1 = PublishedGigFactory.create(date='2014-07-26')
+        g3 = PublishedGigFactory.create(date='2014-07-24')
 
         self.assertEqual(list(Gig.objects.all()), [g1, g2, g3])
 
