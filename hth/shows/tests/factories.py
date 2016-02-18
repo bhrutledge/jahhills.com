@@ -15,7 +15,7 @@ class VenueFactory(factory.django.DjangoModelFactory):
     website = factory.Sequence(lambda n: 'http://venue-%d.dev' % n)
 
 
-class DraftGigFactory(factory.django.DjangoModelFactory):
+class GigFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = 'shows.Gig'
@@ -26,7 +26,7 @@ class DraftGigFactory(factory.django.DjangoModelFactory):
     details = factory.fuzzy.FuzzyText(length=100)
 
 
-class PublishedGigFactory(DraftGigFactory):
+class PublishedGigFactory(GigFactory):
 
     publish = True
 

@@ -5,7 +5,7 @@ from django.test import TestCase
 from core.tests.models import FieldsTestMixin, PublishTestMixin
 
 from ..models import Venue, Gig
-from .factories import (VenueFactory, DraftGigFactory, PublishedGigFactory,
+from .factories import (VenueFactory, GigFactory, PublishedGigFactory,
                         PastGigFactory, UpcomingGigFactory)
 
 
@@ -36,7 +36,7 @@ class VenueTestCase(FieldsTestMixin, TestCase):
 class GigTestCase(FieldsTestMixin, PublishTestMixin, TestCase):
 
     model = Gig
-    factory = DraftGigFactory
+    factory = GigFactory
     required_fields = ['date', 'venue']
 
     def test_str_is_date_and_venue(self):
@@ -67,7 +67,7 @@ class GigTestCase(FieldsTestMixin, PublishTestMixin, TestCase):
         today = UpcomingGigFactory.create(date=from_today())
 
         PastGigFactory.create_batch(5)
-        DraftGigFactory.create_batch(5)
+        GigFactory.create_batch(5)
 
         self.assertEqual(list(Gig.objects.upcoming().published()),
                          [today, tomorrow, next_month, next_year])
@@ -78,7 +78,7 @@ class GigTestCase(FieldsTestMixin, PublishTestMixin, TestCase):
         last_month = PastGigFactory.create(date=from_today(-30))
 
         UpcomingGigFactory.create_batch(5)
-        DraftGigFactory.create_batch(5)
+        GigFactory.create_batch(5)
 
         self.assertEqual(list(Gig.objects.past().published()),
                          [yesterday, last_month, last_year])

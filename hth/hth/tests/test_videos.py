@@ -1,6 +1,6 @@
 from unittest import skip
 from core.tests.selenium import SeleniumTestCase
-from music.tests.factories import DraftVideoFactory, PublishedVideoFactory
+from music.tests.factories import VideoFactory, PublishedVideoFactory
 
 
 @skip('Out of sync with markup')
@@ -10,7 +10,7 @@ class VideosTestCase(SeleniumTestCase):
         super().setUp()
 
         self.published_videos = PublishedVideoFactory.create_batch(10)
-        DraftVideoFactory.create_batch(5)
+        VideoFactory.create_batch(5)
 
     def test_videos_detail_displays_entire_video(self):
         video = self.published_videos[0]

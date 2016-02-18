@@ -7,18 +7,18 @@ from core.tests.models import (
     FieldsTestMixin, PublishTestMixin, TitleTestMixin)
 
 from ..models import Post
-from .factories import DraftPostFactory, PublishedPostFactory
+from .factories import PostFactory, PublishedPostFactory
 
 
 class PostTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
                    TestCase):
 
     model = Post
-    factory = DraftPostFactory
+    factory = PostFactory
     required_fields = ['title', 'slug']
 
     def test_ordered_by_date(self):
-        draft = DraftPostFactory.create()
+        draft = PostFactory.create()
 
         first = PublishedPostFactory.create(
             publish_on=datetime(2014, 7, 22, tzinfo=timezone.utc))

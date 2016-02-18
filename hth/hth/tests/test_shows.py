@@ -4,7 +4,7 @@ from django.template.defaultfilters import date as datefilter
 
 from core.tests.selenium import SeleniumTestCase
 from shows.tests.factories import (
-    DraftGigFactory, PastGigFactory, UpcomingGigFactory)
+    GigFactory, PastGigFactory, UpcomingGigFactory)
 
 
 @skip('Out of sync with markup')
@@ -15,7 +15,7 @@ class ShowsTestCase(SeleniumTestCase):
 
         self.upcoming_gigs = UpcomingGigFactory.create_batch(10)
         self.past_gigs = PastGigFactory.create_batch(10)
-        DraftGigFactory.create_batch(5)
+        GigFactory.create_batch(5)
 
     def test_shows_displays_upcoming_gigs_before_past_gigs(self):
         self.get_url('/shows')

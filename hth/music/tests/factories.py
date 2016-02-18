@@ -4,7 +4,7 @@ import factory
 import factory.fuzzy
 
 
-class DraftReleaseFactory(factory.django.DjangoModelFactory):
+class ReleaseFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = 'music.Release'
@@ -13,11 +13,11 @@ class DraftReleaseFactory(factory.django.DjangoModelFactory):
     title = factory.fuzzy.FuzzyText(prefix='Release ')
     description = factory.fuzzy.FuzzyText(length=100)
     credits = factory.fuzzy.FuzzyText(length=100)
-
-
-class PublishedReleaseFactory(DraftReleaseFactory):
-
     date = factory.fuzzy.FuzzyDate(date(2000, 1, 1))
+
+
+class PublishedReleaseFactory(ReleaseFactory):
+
     publish = True
     publish_on = factory.fuzzy.FuzzyDateTime(
         datetime(2000, 1, 1, tzinfo=timezone.utc))
@@ -28,7 +28,7 @@ class PublishedReleaseFactory(DraftReleaseFactory):
         return sorted(batch, key=lambda x: x.date, reverse=True)
 
 
-class DraftSongFactory(factory.django.DjangoModelFactory):
+class SongFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = 'music.Song'
@@ -40,7 +40,7 @@ class DraftSongFactory(factory.django.DjangoModelFactory):
     lyrics = factory.fuzzy.FuzzyText(length=100)
 
 
-class PublishedSongFactory(DraftSongFactory):
+class PublishedSongFactory(SongFactory):
 
     publish = True
     publish_on = factory.fuzzy.FuzzyDateTime(
@@ -52,7 +52,7 @@ class PublishedSongFactory(DraftSongFactory):
         return sorted(batch, key=lambda x: x.title)
 
 
-class DraftVideoFactory(factory.django.DjangoModelFactory):
+class VideoFactory(factory.django.DjangoModelFactory):
 
     class Meta:
         model = 'music.Video'
@@ -63,7 +63,7 @@ class DraftVideoFactory(factory.django.DjangoModelFactory):
     credits = factory.fuzzy.FuzzyText(length=100)
 
 
-class PublishedVideoFactory(DraftVideoFactory):
+class PublishedVideoFactory(VideoFactory):
 
     publish = True
     publish_on = factory.fuzzy.FuzzyDateTime(
