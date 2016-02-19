@@ -194,6 +194,14 @@ picture {
 article {
   margin-bottom: 3rem; }
 
+blockquote {
+  border-left: 1px solid #ddd;
+  margin: 0 0 1.5rem;
+  padding: 0 0.75rem; }
+
+cite {
+  font-style: normal; }
+
 html {
   box-sizing: border-box; }
 

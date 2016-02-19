@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Press | {{ block.super }}{% endblock %}
+
+{% block main_content %}
+    <h2>Press</h2>
+
+    {% for press in press_list %}
+    {% include "music/_press.html" %}
+    {% endfor %}
+{% endblock %}

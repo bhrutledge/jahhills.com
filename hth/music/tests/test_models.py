@@ -7,10 +7,11 @@ import vcr
 from core.tests.models import (
     FieldsTestMixin, PublishTestMixin, TitleTestMixin)
 
-from ..models import Release, Song, Video
+from ..models import Release, Song, Video, Press
 from .factories import (ReleaseFactory, PublishedReleaseFactory,
                         SongFactory, PublishedSongFactory,
-                        VideoFactory, PublishedVideoFactory)
+                        VideoFactory, PublishedVideoFactory,
+                        PressFactory, PublishedPressFactory)
 
 
 class ReleaseTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
@@ -94,7 +95,16 @@ class VideoTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
         self.assertIn(publish, videos)
         self.assertNotIn(draft, videos)
 
-        # TODO: test ordered by date?
+    def test_release_videos_ordered_by_date(self):
+        r = PublishedReleaseFactory.create()
+
+        # Save out of order to test ordering
+        first = PublishedVideoFactory.create(publish_on='2014-08-01',
+                                             release=r)
+        old = PublishedVideoFactory.create(publish_on='2014-07-31', release=r)
+        new = PublishedVideoFactory.create(publish_on='2014-08-31', release=r)
+
+        self.assertEqual(list(r.videos.all()), [new, first, old])
 
 
 class VideoAutofillTestCase(TestCase):
@@ -103,7 +113,8 @@ class VideoAutofillTestCase(TestCase):
     CASSETTE = 'music/tests/fixtures/cassettes/vimeo.yaml'
     SOURCE_URL = 'https://vimeo.com/126794989'
     PREVIEW_URL = 'http://i.vimeocdn.com/video/517362144_640.jpg'
-    EMBED_CODE = '<iframe src="http://player.vimeo.com/video/126794989" seamless allowfullscreen></iframe>\n'
+    EMBED_CODE = ('<iframe src="http://player.vimeo.com/video/126794989"'
+                  ' seamless allowfullscreen></iframe>\n')
 
     @vcr.use_cassette(CASSETTE)
     def test_autofill_preview_url(self):
@@ -147,3 +158,46 @@ class VideoAutofillTestCase(TestCase):
         v = Video.objects.first()
         self.assertEqual(v.preview_url, '')
         self.assertEqual(v.embed_code, '')
+
+
+class PressTestCase(FieldsTestMixin, PublishTestMixin, TestCase):
+
+    model = Press
+    factory = PressFactory
+    required_fields = ['title', 'date']
+
+    def test_quote_by_default(self):
+        p = self.factory.create()
+        self.assertTrue(p.quote)
+
+    def test_str_is_title_and_date(self):
+        p = PressFactory.build(title='Source', date='2014-07-25')
+        self.assertEqual(str(p), 'Source, 2014-07-25')
+
+    def test_ordered_by_date(self):
+        # Save out of order to test ordering
+        first = PressFactory.create(date='2014-08-01')
+        old = PressFactory.create(date='2014-07-31')
+        new = PressFactory.create(date='2014-08-31')
+
+        self.assertEqual(list(Press.objects.all()), [new, first, old])
+
+    def test_can_be_added_to_release(self):
+        r = PublishedReleaseFactory.create()
+
+        publish = PublishedPressFactory.create(release=r)
+        draft = PressFactory.create(release=r)
+
+        press = list(r.press.all())
+        self.assertIn(publish, press)
+        self.assertNotIn(draft, press)
+
+    def test_release_press_ordered_by_date(self):
+        r = PublishedReleaseFactory.create()
+
+        # Save out of order to test ordering
+        first = PublishedPressFactory.create(date='2014-08-01', release=r)
+        old = PublishedPressFactory.create(date='2014-07-31', release=r)
+        new = PublishedPressFactory.create(date='2014-08-31', release=r)
+
+        self.assertEqual(list(r.press.all()), [new, first, old])

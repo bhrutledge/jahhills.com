@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Release, Song, Video
+from .models import Release, Song, Video, Press
 
 
 class ReleaseAdmin(admin.ModelAdmin):
@@ -31,3 +31,12 @@ class VideoAdmin(admin.ModelAdmin):
     list_display = ('title', 'source_url', 'release', 'publish', 'publish_on',)
 
 admin.site.register(Video, VideoAdmin)
+
+
+class PressAdmin(admin.ModelAdmin):
+    save_on_top = True
+    fields = ('title', 'date', 'source_url', 'body', 'quote', 'release',
+              'publish', 'publish_on',)
+    list_display = ('title', 'date', 'release', 'publish', 'publish_on',)
+
+admin.site.register(Press, PressAdmin)

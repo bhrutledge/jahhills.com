@@ -73,3 +73,21 @@ class PublishedVideoFactory(VideoFactory):
     def create_batch(cls, size, **kwargs):
         batch = super().create_batch(size, **kwargs)
         return sorted(batch, key=lambda x: x.publish_on, reverse=True)
+
+
+class PressFactory(factory.django.DjangoModelFactory):
+
+    title = factory.fuzzy.FuzzyText(prefix='Press ')
+    date = factory.fuzzy.FuzzyDate(date(2000, 1, 1))
+    source_url = 'http://example.com'
+    body = factory.fuzzy.FuzzyText(length=100)
+
+    class Meta:
+        model = 'music.Press'
+
+
+class PublishedPressFactory(PressFactory):
+
+    publish = True
+    publish_on = factory.fuzzy.FuzzyDateTime(
+        datetime(2000, 1, 1, tzinfo=timezone.utc))

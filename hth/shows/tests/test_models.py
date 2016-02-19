@@ -20,7 +20,7 @@ class VenueTestCase(FieldsTestMixin, TestCase):
     required_fields = ['name', 'city']
 
     def test_str_is_name_and_city(self):
-        v = Venue(name='Venue', city='City', website='http://venue.com')
+        v = VenueFactory.build(name='Venue', city='City')
         self.assertEqual(str(v), 'Venue, City')
 
     def test_ordered_by_name_and_city(self):
@@ -40,8 +40,8 @@ class GigTestCase(FieldsTestMixin, PublishTestMixin, TestCase):
     required_fields = ['date', 'venue']
 
     def test_str_is_date_and_venue(self):
-        v = Venue.objects.create(name='Venue', city='City')
-        g = Gig.objects.create(date='2014-07-25', venue=v)
+        v = VenueFactory.build(name='Venue', city='City')
+        g = GigFactory.build(date='2014-07-25', venue=v)
         self.assertEqual(str(g), '2014-07-25, Venue, City')
 
     def test_ordered_by_date(self):

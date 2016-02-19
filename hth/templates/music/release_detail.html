@@ -57,5 +57,14 @@
             {{ release.credits|safe }}
         </section>
         {% endif %}
+
+        {% if release.press %}
+        <section class="content-section release-press">
+            <h3>Press</h3>
+            {% for press in release.press %}
+            {% include "music/_press.html" %}
+            {% endfor %}
+        </section>
+        {% endif %}
     </article>
 {% endblock %}

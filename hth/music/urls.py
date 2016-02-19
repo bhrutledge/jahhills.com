@@ -22,4 +22,7 @@ urlpatterns = [
     url(r'^videos/(?P<slug>[-_\w]+)/$',
         views.VideoDetailView.as_view(),
         name='video_detail'),
+    url(r'^press/$',
+        views.PressListView.as_view(),
+        name='press_list'),
 ]

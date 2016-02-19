@@ -21,7 +21,7 @@ class MusicTestCase(SeleniumTestCase):
         self.assertEqual(release.title,
                          self.find_css('.release .title')[0].text)
         self.assertIn(release.description,
-                         self.find_css('.release .description')[0].text)
+                      self.find_css('.release .description')[0].text)
         self.assertIn(release.credits,
                       self.find_css('.release .credits')[0].text)
 
@@ -70,7 +70,7 @@ class SongsTestCase(SeleniumTestCase):
         self.get_url(song.get_absolute_url())
         self.assertEqual(self.find_css('.song .title')[0].text, song.title)
         self.assertIn(song.description,
-                         self.find_css('.song .description')[0].text)
+                      self.find_css('.song .description')[0].text)
         self.assertIn(song.credits,
                       self.find_css('.song .credits')[0].text)
         self.assertIn(song.lyrics,

@@ -76,3 +76,13 @@ picture {
 article {
     margin-bottom: $base-spacing;
 }
+
+blockquote {
+    border-left: 1px solid $base-border-color;
+    margin: 0 0 $small-spacing;
+    padding: 0 $small-spacing / 2;
+}
+
+cite {
+    font-style: normal;
+}

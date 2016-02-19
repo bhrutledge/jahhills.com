@@ -3,7 +3,7 @@ import vcr
 from core.tests.utils import today_str
 from core.tests.selenium import AdminTestCase
 
-from ..models import Release
+from .factories import PublishedReleaseFactory
 
 
 class ReleaseTestCase(AdminTestCase):
@@ -57,8 +57,8 @@ class SongTestCase(AdminTestCase):
 
     def setUp(self):
         super().setUp()
-        Release.objects.create(
-            title='First release', slug='first-release', publish=True)
+        PublishedReleaseFactory.create(title='First release',
+                                       slug='first-release')
 
     def test_can_create_song(self):
         # Ryan logs into the admin
@@ -83,9 +83,9 @@ class SongTestCase(AdminTestCase):
         self.find_link('ADD SONG').click()
         self.find_name('title').send_keys('Second song')
         self.find_name('_save').click()
-        self.assertIn('First song', self.find_tag('body').text)
+        self.assertIn('Second song', self.find_tag('body').text)
 
-        # He verifies that the published song is on the site
+        # He verifies that only the published song is on the site
 
         self.get_url('/songs')
         self.assertIn('Songs', self.browser.title)
@@ -107,7 +107,7 @@ class SongTestCase(AdminTestCase):
         self.find_name('track').send_keys('2')
         self.find_name('_save').click()
 
-        # He verifies that the published song is shown on the release
+        # He verifies that only the published song is shown on the release
 
         self.get_url('/music/first-release')
         self.assertIn('First song', self.find_tag('body').text)
@@ -123,12 +123,13 @@ class VideoTestCase(AdminTestCase):
     CASSETTE = 'music/tests/fixtures/cassettes/vimeo.yaml'
     SOURCE_URL = 'https://vimeo.com/126794989'
     PREVIEW_URL = 'http://i.vimeocdn.com/video/517362144_640.jpg'
-    EMBED_CODE = '<iframe src="http://player.vimeo.com/video/126794989" seamless allowfullscreen></iframe>\n'
+    EMBED_CODE = ('<iframe src="http://player.vimeo.com/video/126794989"'
+                  ' seamless allowfullscreen></iframe>\n')
 
     def setUp(self):
         super().setUp()
-        Release.objects.create(
-            title='First release', slug='first-release', publish=True)
+        PublishedReleaseFactory.create(title='First release',
+                                       slug='first-release')
 
     def test_can_create_video(self):
         # Ryan logs into the admin
@@ -156,7 +157,7 @@ class VideoTestCase(AdminTestCase):
         self.find_name('_save').click()
         self.assertIn('Second video', self.find_tag('body').text)
 
-        # He verifies that the published video is on the site
+        # He verifies that only the published video is on the site
 
         self.get_url('/videos')
         self.assertNotIn('Second video', self.find_tag('body').text)
@@ -175,7 +176,7 @@ class VideoTestCase(AdminTestCase):
         self.find_select('release').select_by_visible_text('First release')
         self.find_name('_save').click()
 
-        # He verifies that the published video is shown on the release
+        # He verifies that only the published video is shown on the release
 
         self.get_url('/music/first-release')
         self.assertIn('First video', self.find_tag('body').text)
@@ -211,3 +212,101 @@ class VideoTestCase(AdminTestCase):
         self.get_url('/videos')
         self.find_link('First video').click()
         self.assertIn('First video', self.browser.title)
+
+
+class PressTestCase(AdminTestCase):
+
+    def setUp(self):
+        super().setUp()
+        PublishedReleaseFactory.create(title='First release',
+                                       slug='first-release')
+
+    def test_can_create_quote(self):
+        # Ryan logs into the admin
+
+        self.adminLogin()
+
+        # He adds a published quote
+
+        self.find_link('Press').click()
+        self.find_link('ADD PRESS').click()
+        self.find_name('title').send_keys('First source')
+        self.find_name('source_url').send_keys('http://example.com')
+        self.find_name('date').send_keys(today_str(-30))
+        self.find_name('body').send_keys('First quote')
+        self.find_name('publish').click()
+        self.find_name('_save').click()
+        self.assertIn('First source', self.find_tag('body').text)
+
+        # He adds an unpublished quote
+
+        self.find_link('ADD PRESS').click()
+        self.find_name('title').send_keys('Second source')
+        self.find_name('source_url').send_keys('http://foo.com')
+        self.find_name('date').send_keys(today_str(-30))
+        self.find_name('_save').click()
+        self.assertIn('Second source', self.find_tag('body').text)
+
+        # He verifies that only the published quote is on the site
+
+        self.get_url('/press')
+        self.assertIn('Press', self.browser.title)
+        self.assertIn('First source', self.find_tag('body').text)
+        self.assertIn('First quote', self.find_tag('body').text)
+        self.assertNotIn('Second source', self.find_tag('body').text)
+        self.assertNotIn('Second quote', self.find_tag('body').text)
+
+        # He adds the quotes to the release
+
+        self.get_url('/admin')
+        self.find_link('Press').click()
+        self.find_link('First source').click()
+        self.find_select('release').select_by_visible_text('First release')
+        self.find_name('_save').click()
+
+        self.find_link('Second source').click()
+        self.find_select('release').select_by_visible_text('First release')
+        self.find_name('_save').click()
+
+        # He verifies that only the published quote is shown on the release
+
+        self.get_url('/music/first-release')
+        self.assertIn('First source', self.find_tag('body').text)
+        self.assertNotIn('Second source', self.find_tag('body').text)
+
+    def test_can_create_post(self):
+        # Ryan logs into the admin
+
+        self.adminLogin()
+
+        # He adds a published press post
+
+        self.find_link('Press').click()
+        self.find_link('ADD PRESS').click()
+        self.find_name('title').send_keys('Post title')
+        self.find_name('body').send_keys('Post body')
+        self.find_name('date').send_keys(today_str(-30))
+        self.find_name('quote').click()
+        self.find_name('publish').click()
+        self.find_name('_save').click()
+        self.assertIn('Post title', self.find_tag('body').text)
+
+        # He verifies that the post is on the site
+
+        self.get_url('/press')
+        self.assertIn('Press', self.browser.title)
+        self.assertIn('Post title', self.find_tag('body').text)
+        self.assertIn('Post body', self.find_tag('body').text)
+
+        # He adds the post to the release
+
+        self.get_url('/admin')
+        self.find_link('Press').click()
+        self.find_link('Post title').click()
+        self.find_select('release').select_by_visible_text('First release')
+        self.find_name('_save').click()
+
+        # He verifies that post is shown on the release
+
+        self.get_url('/music/first-release')
+        self.assertIn('Post title', self.find_tag('body').text)

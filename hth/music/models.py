@@ -36,6 +36,13 @@ class Release(PublishedModel, TitledModel):
         """
         return self.video_set.published()
 
+    @property
+    def press(self):
+        """
+        Returns a ``QuerySet`` of published press, ordered by date.
+        """
+        return self.press_set.published()
+
 
 class Song(PublishedModel, TitledModel):
     """
@@ -86,3 +93,23 @@ class Video(PublishedModel, TitledModel):
                     self.embed_code = backend.get_embed_code('', '')
 
         super().save(*args, **kwargs)
+
+
+class Press(PublishedModel):
+    """
+    Stores a press quote, optionally on a ``Release``.
+    """
+
+    title = models.CharField(max_length=200)
+    date = models.DateField()
+    source_url = models.URLField(blank=True)
+    body = models.TextField(blank=True, help_text='HTML')
+    quote = models.BooleanField(default=True)
+    release = models.ForeignKey(Release, blank=True, null=True)
+
+    class Meta:
+        ordering = ['-date']
+        verbose_name_plural = 'press'
+
+    def __str__(self):
+        return '{}, {}'.format(self.title, self.date)
