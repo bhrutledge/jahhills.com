@@ -1,7 +1,25 @@
 <article class="content press">
-{% if press.quote %}
-    <blockquote>{% include "music/_press_body.html" %}</blockquote>
-{% else %}
-    {% include "music/_press_body.html" %}
-{% endif %}
+    {% if press.quote %}
+    <blockquote>{{ press.body|safe }}</blockquote>
+    {% else %}
+    {{ press.body|safe }}
+    {% endif %}
+
+    <footer>
+        <p class="content-title">
+            {% spaceless %}
+            {% if press.source_url %}
+            <cite><a href="{{ press.source_url }}">{{ press.title }}</a></cite>
+            {% else %}
+            {{ press.title }}
+            {% endif %}
+            {% endspaceless %}, {{ press.date|date }}
+        </p>
+
+        {% if press.release %}
+        <p class="content-subtitle">
+            for <cite><a href="{{ press.release.get_absolute_url }}">{{ press.release.title }}</a></cite>
+        </p>
+        {% endif %}
+    </footer>
 </article>
