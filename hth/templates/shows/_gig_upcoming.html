@@ -1,11 +1,19 @@
 {% for gig in gig_list %}
 <article class="content gig">
-    {% include "shows/_gig_header.html" %}
-
-    {{ gig.description|safe }}
-    {{ gig.details|safe }}
+    <div class="gig-date">
+        <h3 class="content-title">{{ gig.date|date:"M j" }}</h3>
+        <p class="content-subtitle">{{ gig.date|date:"l" }}</p>
+    </div>
+    <div class="gig-venue">
+        <p><strong>{{ gig.venue.name }}</strong>
+            <br>{{ gig.venue.city }}
+        </p>
+    </div>
+    <div class="gig-info">
+        {{ gig.description|safe }}
+        {{ gig.details|safe }}
+    </div>
 </article>
-
 {% empty %}
 <article class="content">
     <p>No shows scheduled.</p>

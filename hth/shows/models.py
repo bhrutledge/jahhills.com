@@ -64,3 +64,10 @@ class Gig(PublishedModel):
 
     def __str__(self):
         return '{}, {}'.format(self.date, self.venue)
+
+    @property
+    def is_upcoming(self):
+        """
+        True iff the gig happens on or after today.
+        """
+        return self.date >= date.today()

@@ -82,3 +82,16 @@ class GigTestCase(FieldsTestMixin, PublishTestMixin, TestCase):
 
         self.assertEqual(list(Gig.objects.past().published()),
                          [yesterday, last_month, last_year])
+
+    def test_is_upcoming(self):
+        next_year = UpcomingGigFactory.create(date=from_today(365))
+        today = UpcomingGigFactory.create(date=from_today())
+
+        self.assertTrue(next_year.is_upcoming)
+        self.assertTrue(today.is_upcoming)
+
+        last_year = PastGigFactory.create(date=from_today(-365))
+        yesterday = PastGigFactory.create(date=from_today(-1))
+
+        self.assertFalse(last_year.is_upcoming)
+        self.assertFalse(yesterday.is_upcoming)
