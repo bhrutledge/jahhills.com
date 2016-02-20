@@ -152,7 +152,7 @@ h5,
 h6 {
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
   font-size: 1em;
-  line-height: 1;
+  line-height: 1.5;
   margin: 0 0 1.5rem; }
 
 h1 {
@@ -291,7 +291,58 @@ html {
     content: "";
     display: table; }
 
+.gig {
+  margin-bottom: 1.5rem; }
+  .gig::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .gig:last-child {
+    margin-bottom: -1.5rem; }
+
+@media screen and (max-width: 599px) {
+  .gig-date {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 30.11389%; }
+    .gig-date:last-child {
+      margin-right: 0; }
+
+  .gig-venue {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 65.05695%;
+    margin-right: 0; }
+    .gig-venue:last-child {
+      margin-right: 0; } }
 @media screen and (min-width: 600px) {
+  .gig-date {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 12.64237%; }
+    .gig-date:last-child {
+      margin-right: 0; }
+
+  .gig-venue {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 30.11389%; }
+    .gig-venue:last-child {
+      margin-right: 0; }
+
+  .gig-info {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%;
+    margin-right: 0; }
+    .gig-info:last-child {
+      margin-right: 0; }
+
   .video-preview {
     float: left;
     display: block;

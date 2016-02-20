@@ -12,7 +12,41 @@
     @include outer-container;
 }
 
+.gig {
+    @include clearfix;
+    margin-bottom: $small-spacing;
+
+    &:last-child {
+        margin-bottom: -$small-spacing;
+    }
+}
+
+@include media($small-screen-only) {
+    .gig-date {
+        @include span-columns(2);
+    }
+
+    .gig-venue {
+        @include span-columns(4);
+        @include omega;
+    }
+}
+
 @include media($medium-screen-up) {
+
+    .gig-date {
+        @include span-columns(1);
+    }
+
+    .gig-venue {
+        @include span-columns(2);
+    }
+
+    .gig-info {
+        @include span-columns(3);
+        @include omega;
+    }
+
     .video-preview {
         @include span-columns(2);
         @include omega(3n);

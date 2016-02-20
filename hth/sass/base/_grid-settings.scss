@@ -10,5 +10,6 @@ $max-width: 90%;
 $medium-screen: 600px;
 $large-screen: 1080px;
 
+$small-screen-only: new-breakpoint(max-width $medium-screen - 1);
 $medium-screen-up: new-breakpoint(min-width $medium-screen);
 $large-screen-up: new-breakpoint(min-width $large-screen);
