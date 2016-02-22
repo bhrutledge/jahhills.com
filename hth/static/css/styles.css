@@ -203,7 +203,7 @@ html {
 header.navigation {
   background-color: transparent;
   margin-bottom: 1.5rem;
-  min-height: 3.55378em;
+  min-height: 56.86045px;
   padding: 0.75rem 0;
   width: 100%;
   z-index: 999; }
@@ -229,7 +229,7 @@ header.navigation {
     color: black;
     display: block;
     float: right;
-    line-height: 3.55378em;
+    line-height: 56.86045px;
     margin: 0;
     text-decoration: none;
     text-transform: uppercase; }
@@ -240,7 +240,7 @@ header.navigation {
       color: #1565c0; }
   header.navigation nav {
     float: none;
-    min-height: 3.55378em;
+    min-height: 56.86045px;
     z-index: 9999999; }
     @media screen and (min-width: 800px) {
       header.navigation nav {
@@ -263,7 +263,7 @@ header.navigation {
   header.navigation ul li.nav-link {
     background: transparent;
     display: block;
-    line-height: 3.55378em;
+    line-height: 56.86045px;
     overflow: hidden;
     text-align: right;
     width: 100%;
@@ -272,7 +272,7 @@ header.navigation {
       header.navigation ul li.nav-link {
         background: transparent;
         display: inline;
-        line-height: 3.55378em;
+        line-height: 56.86045px;
         padding-left: 1em;
         text-decoration: none;
         width: auto; } }
@@ -285,6 +285,43 @@ header.navigation {
   header.navigation .active-nav-item a {
     border-bottom: 1px solid #0f4b90; }
 
+.footer {
+  border-top: 1px solid #ddd;
+  padding: 1.5rem 0 3rem;
+  position: relative; }
+  .footer li {
+    list-style: none; }
+
+.footer-top-link {
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+@media screen and (max-width: 799px) {
+  .footer-links {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%; }
+    .footer-links:last-child {
+      margin-right: 0; }
+    .footer-links:nth-child(2n) {
+      margin-right: 0; }
+    .footer-links:nth-child(2n+1) {
+      clear: left; } }
+@media screen and (min-width: 800px) {
+  .footer-links {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 30.11389%; }
+    .footer-links:last-child {
+      margin-right: 0; }
+    .footer-links:nth-child(3n) {
+      margin-right: 0; }
+    .footer-links:nth-child(3n+1) {
+      clear: left; } }
 .embed-responsive {
   height: 0;
   max-width: 100%;

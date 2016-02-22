@@ -5,6 +5,7 @@
 @import "neat/neat";
 
 @import "refills/navigation";
+@import "refills/footer";
 @import "refills/embed-responsive";
 @import "refills/content";
 
@@ -33,7 +34,6 @@
 }
 
 @include media($medium-screen-up) {
-
     .gig-date {
         @include span-columns(1);
     }
