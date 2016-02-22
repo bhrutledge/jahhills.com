@@ -1,0 +1,127 @@
+header.navigation {
+    $navigation-background: transparent;
+    $navigation-color: black;
+    $navigation-color-hover: $action-color;
+    $navigation-height: 2 * modular-scale(2);
+    $navigation-active-link-color: $action-color-hover;
+    $horizontal-bar-mode: $large-screen;
+
+    background-color: $navigation-background;
+    margin-bottom: $small-spacing;
+    min-height: $navigation-height;
+    padding: $small-spacing / 2 0;
+    width: 100%;
+    z-index: 999;
+
+    .navigation-wrapper {
+        @include clearfix;
+        // @include outer-container;
+        font-family: $heading-font-family;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 9999;
+    }
+
+    a.logo {
+        color: $navigation-color;
+        float: left;
+        font-size: modular-scale(2);
+        line-height: 1;
+        max-width: 8em;
+
+        &:focus,
+        &:hover {
+            color: $navigation-color-hover;
+        }
+    }
+
+    // Mobile view
+
+    a.navigation-menu-button {
+        color: $navigation-color;
+        display: block;
+        float: right;
+        line-height: $navigation-height;
+        margin: 0;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @include media($horizontal-bar-mode) {
+            display: none;
+        }
+
+        &:focus,
+        &:hover {
+            color: $navigation-color-hover;
+        }
+    }
+
+    // Nav menu
+
+    nav {
+        float: none;
+        min-height: $navigation-height;
+        z-index: 9999999;
+
+        @include media($horizontal-bar-mode) {
+            float: right;
+        }
+    }
+
+    ul.navigation-menu {
+        clear: both;
+        display: none;
+        margin: 0 auto;
+        overflow: visible;
+        padding: 0;
+        width: 100%;
+        z-index: 9999;
+
+        &.show {
+            display: block;
+        }
+
+        @include media($horizontal-bar-mode) {
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    // The nav items
+
+    ul li.nav-link {
+        background: $navigation-background;
+        display: block;
+        line-height: $navigation-height;
+        overflow: hidden;
+        text-align: right;
+        width: 100%;
+        z-index: 9999;
+
+        @include media($horizontal-bar-mode) {
+            background: transparent;
+            display: inline;
+            line-height: $navigation-height;
+            padding-left: 1em;
+            text-decoration: none;
+            width: auto;
+        }
+
+        a {
+            color: $navigation-color;
+            display: inline-block;
+            text-decoration: none;
+
+            &:focus,
+            &:hover {
+                color: $navigation-color-hover;
+            }
+        }
+    }
+
+    .active-nav-item a {
+        border-bottom: 1px solid $navigation-active-link-color;
+    }
+}

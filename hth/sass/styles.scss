@@ -4,7 +4,7 @@
 @import "base/base";
 @import "neat/neat";
 
-@import "refills/navigation-centered";
+@import "refills/navigation";
 @import "refills/embed-responsive";
 @import "refills/content";
 
@@ -83,8 +83,8 @@
     }
 }
 
-@include media($large-screen-up) {
-    $local-max-width: $large-screen * $max-width / 100%;
+@include media($xlarge-screen-up) {
+    $local-max-width: $xlarge-screen * $max-width / 100%;
 
     // Hide visual-grid, because it won't scale with the local-max-width
     body:before {

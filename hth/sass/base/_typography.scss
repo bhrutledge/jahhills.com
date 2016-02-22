@@ -3,11 +3,6 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    margin-top: $small-spacing;
-}
-
-.container {
-    margin-bottom: $base-spacing;
 }
 
 .container-section {
@@ -20,6 +15,7 @@ h3,
 h4,
 h5,
 h6 {
+    color: $heading-color;
     font-family: $heading-font-family;
     font-size: $base-font-size;
     line-height: $heading-line-height;
@@ -27,18 +23,12 @@ h6 {
 }
 
 h1 {
-    font-size: modular-scale(4);
+    font-size: modular-scale(2);
+    line-height: 1;
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: modular-scale(1);
-    text-transform: uppercase;
-    margin-bottom: $base-spacing;
-}
-
-nav {
-    font-family: $heading-font-family;
     font-size: modular-scale(1);
     text-transform: uppercase;
 }
@@ -55,7 +45,7 @@ a {
     &:active,
     &:focus,
     &:hover {
-        color: shade($action-color, 25%);
+        color: $action-color-hover;
     }
 }
 
