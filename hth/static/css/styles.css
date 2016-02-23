@@ -291,6 +291,10 @@ header.navigation {
   position: relative; }
   .footer li {
     list-style: none; }
+  .footer nav {
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; }
+    .footer nav li {
+      margin-bottom: 0.75rem; }
 
 .footer-top-link {
   font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;

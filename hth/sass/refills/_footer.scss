@@ -1,11 +1,17 @@
 .footer {
     border-top: $base-border;
     padding: $small-spacing 0 $base-spacing;
-
     position: relative;
 
     li {
         list-style: none;
+    }
+
+    nav {
+        font-family: $heading-font-family;
+        li {
+            margin-bottom: $small-spacing / 2;
+        }
     }
 }
 
