@@ -1,0 +1,37 @@
+.footer {
+    border-top: $base-border;
+    padding: $small-spacing 0 $base-spacing;
+    position: relative;
+
+    li {
+        list-style: none;
+    }
+
+    nav {
+        font-family: $heading-font-family;
+        li {
+            margin-bottom: $small-spacing / 2;
+        }
+    }
+}
+
+.footer-top-link {
+    font-family: $heading-font-family;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@include media($medium-screen-down) {
+    .footer-links {
+        @include span-columns(3);
+        @include omega(2n);
+    }
+}
+
+@include media($large-screen-up) {
+    .footer-links {
+        @include span-columns(2);
+        @include omega(3n);
+    }
+}

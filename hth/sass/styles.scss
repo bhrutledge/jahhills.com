@@ -4,7 +4,8 @@
 @import "base/base";
 @import "neat/neat";
 
-@import "refills/navigation-centered";
+@import "refills/navigation";
+@import "refills/footer";
 @import "refills/embed-responsive";
 @import "refills/content";
 
@@ -33,7 +34,6 @@
 }
 
 @include media($medium-screen-up) {
-
     .gig-date {
         @include span-columns(1);
     }
@@ -50,12 +50,6 @@
     .video-preview {
         @include span-columns(2);
         @include omega(3n);
-        margin-bottom: $small-spacing;
-    }
-
-    .release-preview {
-        @include span-columns(3);
-        @include omega(2n);
         margin-bottom: $small-spacing;
     }
 
@@ -83,8 +77,16 @@
     }
 }
 
-@include media($large-screen-up) {
-    $local-max-width: $large-screen * $max-width / 100%;
+@include media($medium-large-screen) {
+    .release-preview {
+        @include span-columns(3);
+        @include omega(2n);
+        margin-bottom: $small-spacing;
+    }
+}
+
+@include media($xlarge-screen-up) {
+    $local-max-width: $xlarge-screen * $max-width / 100%;
 
     // Hide visual-grid, because it won't scale with the local-max-width
     body:before {
@@ -93,5 +95,11 @@
 
     .container {
         @include outer-container($local-max-width);
+    }
+
+    .release-preview {
+        @include span-columns(2);
+        @include omega(3n);
+        margin-bottom: $small-spacing;
     }
 }
