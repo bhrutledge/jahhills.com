@@ -53,12 +53,6 @@
         margin-bottom: $small-spacing;
     }
 
-    .release-preview {
-        @include span-columns(3);
-        @include omega(2n);
-        margin-bottom: $small-spacing;
-    }
-
     .release-highlight {
         @include clearfix;
 
@@ -83,6 +77,14 @@
     }
 }
 
+@include media($medium-large-screen) {
+    .release-preview {
+        @include span-columns(3);
+        @include omega(2n);
+        margin-bottom: $small-spacing;
+    }
+}
+
 @include media($xlarge-screen-up) {
     $local-max-width: $xlarge-screen * $max-width / 100%;
 
@@ -93,5 +95,11 @@
 
     .container {
         @include outer-container($local-max-width);
+    }
+
+    .release-preview {
+        @include span-columns(2);
+        @include omega(3n);
+        margin-bottom: $small-spacing;
     }
 }
