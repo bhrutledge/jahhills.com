@@ -26,6 +26,9 @@ $base-font-color: $dark-gray;
 $heading-color: black;
 $action-color: $blue;
 $action-color-hover: shade($action-color, 25%);
+$navigation-color: $action-color;
+$navigation-color-hover: $action-color-hover;
+$navigation-background-color: transparent;
 
 // Border
 $base-border-color: $light-gray;

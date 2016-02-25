@@ -1,12 +1,9 @@
 header.navigation {
-    $navigation-background: transparent;
-    $navigation-color: black;
-    $navigation-color-hover: $action-color;
     $navigation-height: 2 * modular-scale(2, $em-base);
     $navigation-active-link-color: $action-color-hover;
     $horizontal-bar-mode: $large-screen;
 
-    background-color: $navigation-background;
+    background-color: $navigation-background-color;
     margin-bottom: $small-spacing;
     min-height: $navigation-height;
     padding: $small-spacing / 2 0;
@@ -15,7 +12,6 @@ header.navigation {
 
     .navigation-wrapper {
         @include clearfix;
-        // @include outer-container;
         font-family: $heading-font-family;
         font-weight: bold;
         text-transform: uppercase;
@@ -24,7 +20,7 @@ header.navigation {
     }
 
     a.logo {
-        color: $navigation-color;
+        color: $heading-color;
         float: left;
         font-size: modular-scale(2);
         line-height: 1;
@@ -92,7 +88,7 @@ header.navigation {
     // The nav items
 
     ul li.nav-link {
-        background: $navigation-background;
+        background: $navigation-background-color;
         display: block;
         line-height: $navigation-height;
         overflow: hidden;

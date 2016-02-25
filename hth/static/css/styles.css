@@ -224,9 +224,9 @@ header.navigation {
     line-height: 1;
     max-width: 8em; }
     header.navigation a.logo:focus, header.navigation a.logo:hover {
-      color: #1565c0; }
+      color: #0f4b90; }
   header.navigation a.navigation-menu-button {
-    color: black;
+    color: #1565c0;
     display: block;
     float: right;
     line-height: 56.86045px;
@@ -237,7 +237,7 @@ header.navigation {
       header.navigation a.navigation-menu-button {
         display: none; } }
     header.navigation a.navigation-menu-button:focus, header.navigation a.navigation-menu-button:hover {
-      color: #1565c0; }
+      color: #0f4b90; }
   header.navigation nav {
     float: none;
     min-height: 56.86045px;
@@ -277,11 +277,11 @@ header.navigation {
         text-decoration: none;
         width: auto; } }
     header.navigation ul li.nav-link a {
-      color: black;
+      color: #1565c0;
       display: inline-block;
       text-decoration: none; }
       header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
-        color: #1565c0; }
+        color: #0f4b90; }
   header.navigation .active-nav-item a {
     border-bottom: 1px solid #0f4b90; }
 
