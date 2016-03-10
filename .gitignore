@@ -57,5 +57,9 @@ docs/_build/
 .sass-cache/
 
 
+# Ruby
 .bundle
 vendor/bundle
+
+hth/media
+.env
