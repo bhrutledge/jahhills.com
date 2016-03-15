@@ -3,7 +3,8 @@
 {% block title %}News | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <h2>News</h2>
+<article>
+    <h1>News</h1>
 
     {% include "news/_post_highlight.html" with post=post_list|first %}
 
@@ -12,4 +13,5 @@
         {% include "news/_post_header.html" %}
     </article>
     {% endfor %}
+</article>
 {% endblock %}

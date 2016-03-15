@@ -18,7 +18,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #0f4b90;
+    background-color: #104c90;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
@@ -63,7 +63,7 @@ select[multiple] {
   width: 100%; }
   input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
   select[multiple]:hover {
-    border-color: #b0b0b0; }
+    border-color: #b1b1b1; }
   input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
   select[multiple]:focus {
     border-color: #1565c0;
@@ -117,7 +117,7 @@ table {
   width: 100%; }
 
 th {
-  border-bottom: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a6a6a6;
   font-weight: 600;
   padding: 1.5rem 0;
   text-align: left; }
@@ -153,12 +153,11 @@ h6 {
   margin: 0 0 1.5rem; }
 
 h1 {
-  font-size: 1.77689em;
+  font-size: 1.333em;
   line-height: 1;
   text-transform: uppercase; }
 
 h2 {
-  font-size: 1.333em;
   text-transform: uppercase; }
 
 p, ul, ol {
@@ -169,7 +168,7 @@ a {
   text-decoration: none;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
-    color: #0f4b90; }
+    color: #104c90; }
 
 hr {
   border-bottom: 1px solid #ddd;
@@ -217,27 +216,28 @@ header.navigation {
       clear: both;
       content: "";
       display: table; }
-  header.navigation a.logo {
-    color: black;
+  header.navigation .logo {
     float: left;
-    font-size: 1.77689em;
+    font-size: 28.43022px;
     line-height: 1;
     max-width: 8em; }
-    header.navigation a.logo:focus, header.navigation a.logo:hover {
-      color: #0f4b90; }
-  header.navigation a.navigation-menu-button {
-    color: #1565c0;
+    header.navigation .logo a {
+      color: black; }
+      header.navigation .logo a:focus, header.navigation .logo a:hover {
+        color: #104c90; }
+  header.navigation .navigation-menu-button {
     display: block;
     float: right;
     line-height: 56.86045px;
-    margin: 0;
-    text-decoration: none;
-    text-transform: uppercase; }
+    margin: 0; }
     @media screen and (min-width: 800px) {
-      header.navigation a.navigation-menu-button {
+      header.navigation .navigation-menu-button {
         display: none; } }
-    header.navigation a.navigation-menu-button:focus, header.navigation a.navigation-menu-button:hover {
-      color: #0f4b90; }
+    header.navigation .navigation-menu-button a {
+      color: #1565c0;
+      text-decoration: none; }
+      header.navigation .navigation-menu-button a:focus, header.navigation .navigation-menu-button a:hover {
+        color: #104c90; }
   header.navigation nav {
     float: none;
     min-height: 56.86045px;
@@ -281,9 +281,9 @@ header.navigation {
       display: inline-block;
       text-decoration: none; }
       header.navigation ul li.nav-link a:focus, header.navigation ul li.nav-link a:hover {
-        color: #0f4b90; }
+        color: #104c90; }
   header.navigation .active-nav-item a {
-    border-bottom: 1px solid #0f4b90; }
+    border-bottom: 1px solid #104c90; }
 
 .footer {
   border-top: 1px solid #ddd;

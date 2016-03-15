@@ -3,9 +3,11 @@
 {% block title %}Press | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <h2>Press</h2>
+<article>
+    <h1>Press</h1>
 
     {% for press in press_list %}
     {% include "music/_press.html" %}
     {% endfor %}
+</article>
 {% endblock %}

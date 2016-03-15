@@ -3,30 +3,30 @@
 {% block title %}Shows | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <section id="upcoming" class="container-section">
-        <h2>Upcoming Shows</h2>
+<article id="upcoming" class="container-section">
+    <h1>Shows</h1>
 
-        {% include "shows/_gig_upcoming.html" with gig_list=gig_list.upcoming %}
-    </section>
+    {% include "shows/_gig_upcoming.html" with gig_list=gig_list.upcoming %}
+</article>
 
-    <section id="past" class="container-section">
-        <h2>Past Shows</h2>
+<article id="past" class="container-section">
+    <h2>Past Shows</h2>
 
-        {% for gig in gig_list.past %}
-        <article class="content gig">
-            <div class="gig-date">
-                <h3 class="content-title">{{ gig.date|date:"M j" }}</h3>
-                <p class="content-subtitle">{{ gig.date|date:"Y" }}</p>
-            </div>
-            <div class="gig-venue">
-                <p><strong>{{ gig.venue.name }}</strong>
-                    <br>{{ gig.venue.city }}
-                </p>
-            </div>
-            <div class="gig-info">
-                {{ gig.description|safe }}
-            </div>
-        </article>
-        {% endfor %}
-    </section>
+    {% for gig in gig_list.past %}
+    <article class="content gig">
+        <div class="gig-date">
+            <h3 class="content-title">{{ gig.date|date:"M j" }}</h3>
+            <p class="content-subtitle">{{ gig.date|date:"Y" }}</p>
+        </div>
+        <div class="gig-venue">
+            <p><strong>{{ gig.venue.name }}</strong>
+                <br>{{ gig.venue.city }}
+            </p>
+        </div>
+        <div class="gig-info">
+            {{ gig.description|safe }}
+        </div>
+    </article>
+    {% endfor %}
+</article>
 {% endblock %}

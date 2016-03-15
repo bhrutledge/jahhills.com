@@ -3,7 +3,8 @@
 {% block title %}Music | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <h2>Music</h2>
+<article>
+    <h1>Music</h1>
 
     {% include "music/_release_highlight.html" with release=release_list|first %}
 
@@ -23,4 +24,5 @@
         </article>
         {% endfor %}
     </div>
+</article>
 {% endblock %}

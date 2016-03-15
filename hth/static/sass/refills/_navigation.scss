@@ -19,37 +19,42 @@ header.navigation {
         z-index: 9999;
     }
 
-    a.logo {
-        color: $heading-color;
+    .logo {
         float: left;
-        font-size: modular-scale(2);
+        font-size: modular-scale(2, $em-base);
         line-height: 1;
         max-width: 8em;
 
-        &:focus,
-        &:hover {
-            color: $navigation-color-hover;
+        a {
+            color: $heading-color;
+
+            &:focus,
+            &:hover {
+                color: $navigation-color-hover;
+            }
         }
     }
 
     // Mobile view
 
-    a.navigation-menu-button {
-        color: $navigation-color;
+    .navigation-menu-button {
         display: block;
         float: right;
         line-height: $navigation-height;
         margin: 0;
-        text-decoration: none;
-        text-transform: uppercase;
 
         @include media($horizontal-bar-mode) {
             display: none;
         }
 
-        &:focus,
-        &:hover {
-            color: $navigation-color-hover;
+        a {
+            color: $navigation-color;
+            text-decoration: none;
+
+            &:focus,
+            &:hover {
+                color: $navigation-color-hover;
+            }
         }
     }
 

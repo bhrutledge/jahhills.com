@@ -13,9 +13,9 @@
 <body id="{% block body_id %}hth{% endblock %}">
     <header id="top" class="container navigation" role="banner">
         <div class="navigation-wrapper">
-            <a href="/" class="logo">Hallelujah The Hills</a>
-            <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">Menu</a>
+            <h1 class="logo"><a href="/">Hallelujah The Hills</a></h1>
             <nav role="navigation">
+                <h2 class="navigation-menu-button" id="js-mobile-menu"><a href="javascript:void(0)">Nav</a></h2>
                 <ul id="js-navigation-menu" class="navigation-menu show">
                     <li class="nav-link"><a href="{% url 'release_list' %}">Music</a></li>
                     <li class="nav-link"><a href="{% url 'video_list' %}">Videos</a></li>
@@ -33,31 +33,34 @@
     </div>
 
     <footer id="more" class="container footer" role="contentinfo">
-        <nav class="footer-links">
-            <ul>
-                <li><a href="javascript:void(0)">About</a></li>
-                <li><a href="{% url 'press_list' %}">Press</a></li>
-                <li><a href="{% url 'song_list' %}">Songs</a></li>
-            </ul>
-        </nav>
+        <section>
+            <div class="footer-links">
+                <h2 class="footer-header">More</h2>
+                <ul>
+                    <li><a href="javascript:void(0)">About</a></li>
+                    <li><a href="{% url 'press_list' %}">Press</a></li>
+                    <li><a href="{% url 'song_list' %}">Songs</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-links">
-            <h3>Elsewhere</h3>
-            <ul>
-                <li><a href="javascript:void(0)">Bandcamp</a></li>
-                <li><a href="javascript:void(0)">Facebook</a></li>
-                <li><a href="javascript:void(0)">Twitter</a></li>
-            </ul>
-        </div>
+            <div class="footer-links">
+                <h3>Elsewhere</h3>
+                <ul>
+                    <li><a href="javascript:void(0)">Bandcamp</a></li>
+                    <li><a href="javascript:void(0)">Facebook</a></li>
+                    <li><a href="javascript:void(0)">Twitter</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-links">
-            <h3>Contact</h3>
-            <p>Ryan H. Walsh
-                <br><a href="">ryan@hallelujahthehills.com</a>
-            </p>
-        </div>
+            <div class="footer-links">
+                <h3>Contact</h3>
+                <p>Ryan H. Walsh
+                    <br><a href="">ryan@hallelujahthehills.com</a>
+                </p>
+            </div>
 
-        <p class="footer-top-link"><a href="#top">Back to top</a></p>
+            <p class="footer-top-link"><a href="#top">Back to top</a></p>
+        </section>
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>

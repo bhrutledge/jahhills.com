@@ -3,7 +3,8 @@
 {% block title %}Videos | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <h2>Videos</h2>
+<article>
+    <h1>Videos</h1>
 
     {% include "music/_video_highlight.html" with video=video_list|first %}
 
@@ -15,4 +16,5 @@
         </article>
         {% endfor %}
     </div>
+</article>
 {% endblock %}

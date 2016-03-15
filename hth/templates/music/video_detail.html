@@ -3,31 +3,31 @@
 {% block title %}{{ video.title }} | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <article class="content video">
-        {% include "music/_video_embed.html" %}
+<article class="content video">
+    {% include "music/_video_embed.html" %}
 
-        <header class="content-header">
-            <h2 class="content-title">{{ video.title }}</h2>
-            <p class="content-subtitle">{{ video.publish_on|date }}</p>
+    <header class="content-header">
+        <h1 class="content-title">{{ video.title }}</h1>
+        <p class="content-subtitle">{{ video.publish_on|date }}</p>
 
-            {% if video.release %}
-            <p class="content-subtitle">
-                from <a href="{{ video.release.get_absolute_url }}">{{ video.release.title }}</a>
-            </p>
-            {% endif %}
-        </header>
-
-        {{ video.description|safe }}
-
-        {% if video.source_url %}
-        <p><a href="{{ video.source_url }}">Direct link</a></p>
+        {% if video.release %}
+        <p class="content-subtitle">
+            from <a href="{{ video.release.get_absolute_url }}">{{ video.release.title }}</a>
+        </p>
         {% endif %}
+    </header>
 
-        {% if video.credits %}
-        <section class="content-section">
-            <h3>Credits</h3>
-            {{ video.credits|safe }}
-        </section>
-        {% endif %}
-    </article>
+    {{ video.description|safe }}
+
+    {% if video.source_url %}
+    <p><a href="{{ video.source_url }}">Direct link</a></p>
+    {% endif %}
+
+    {% if video.credits %}
+    <section class="content-section">
+        <h2>Credits</h2>
+        {{ video.credits|safe }}
+    </section>
+    {% endif %}
+</article>
 {% endblock %}

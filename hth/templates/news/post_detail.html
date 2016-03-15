@@ -3,12 +3,12 @@
 {% block title %}{{ post.title }} | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <article class="content post">
-        <header class="content-header">
-            <h2 class="content-title">{{ post.title }}</h2>
-            <p class="content-subtitle">{{ post.publish_on|date }}</p>
-        </header>
+<article class="content post">
+    <header class="content-header">
+        <h1 class="content-title">{{ post.title }}</h1>
+        <p class="content-subtitle">{{ post.publish_on|date }}</p>
+    </header>
 
-        {{ post.body|safe }}
-    </article>
+    {{ post.body|safe }}
+</article>
 {% endblock %}
