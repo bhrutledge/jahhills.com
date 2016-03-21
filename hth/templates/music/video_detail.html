@@ -19,10 +19,6 @@
 
     {{ video.description|safe }}
 
-    {% if video.source_url %}
-    <p><a href="{{ video.source_url }}">Direct link</a></p>
-    {% endif %}
-
     {% if video.credits %}
     <section class="content-section">
         <h2>Credits</h2>
