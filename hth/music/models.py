@@ -25,21 +25,21 @@ class Release(PublishedModel, TitledModel):
     @property
     def tracks(self):
         """
-        Returns a ``QuerySet`` of published songs, ordered by track.
+        A ``QuerySet`` of published songs, ordered by track.
         """
         return self.song_set.published().order_by('track')
 
     @property
     def videos(self):
         """
-        Returns a ``QuerySet`` of published videos, ordered by publish time.
+        A ``QuerySet`` of published videos, ordered by publish time.
         """
         return self.video_set.published()
 
     @property
     def press(self):
         """
-        Returns a ``QuerySet`` of published press, ordered by date.
+        A ``QuerySet`` of published press, ordered by date.
         """
         return self.press_set.published()
 
@@ -59,6 +59,14 @@ class Song(PublishedModel, TitledModel):
 
     class Meta:
         ordering = ['title']
+
+    @property
+    def has_details(self):
+        """
+        True iff any TextField is non-empty
+        """
+        return bool(self.player_code or self.description or
+                    self.credits or self.lyrics)
 
 
 class Video(PublishedModel, TitledModel):

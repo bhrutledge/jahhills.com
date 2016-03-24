@@ -63,6 +63,14 @@ class SongTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
 
         self.assertEqual(list(r.tracks.all()), [s1, s2, s3])
 
+    def test_has_details(self):
+        self.assertFalse(Song().has_details)
+        self.assertTrue(Song(player_code='p').has_details)
+        self.assertTrue(Song(description='d').has_details)
+        self.assertTrue(Song(credits='c').has_details)
+        self.assertTrue(Song(lyrics='l').has_details)
+        self.assertTrue(SongFactory.create().has_details)
+
 
 class VideoTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
                     TestCase):
@@ -99,10 +107,15 @@ class VideoTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
         r = PublishedReleaseFactory.create()
 
         # Save out of order to test ordering
-        first = PublishedVideoFactory.create(publish_on='2014-08-01',
-                                             release=r)
-        old = PublishedVideoFactory.create(publish_on='2014-07-31', release=r)
-        new = PublishedVideoFactory.create(publish_on='2014-08-31', release=r)
+        first = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 8, 1, tzinfo=timezone.utc),
+            release=r)
+        old = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 7, 31, tzinfo=timezone.utc),
+            release=r)
+        new = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 8, 31, tzinfo=timezone.utc),
+            release=r)
 
         self.assertEqual(list(r.videos.all()), [new, first, old])
 
