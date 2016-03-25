@@ -2,7 +2,10 @@ from django.test import TestCase
 from django.core.urlresolvers import reverse
 
 from ..models import Release, Song, Video
-from .factories import PressFactory, PublishedPressFactory
+from .factories import (
+    PublishedReleaseFactory, SongFactory, PublishedSongFactory,
+    PressFactory, PublishedPressFactory,
+)
 
 
 class ReleaseTestCase(TestCase):
@@ -108,6 +111,49 @@ class VideoTestCase(TestCase):
     def test_list_uses_template(self):
         response = self.client.get('/videos/')
         self.assertTemplateUsed(response, 'music/video_list.html')
+
+
+class LyricsTestCase(TestCase):
+
+    # TODO: TrackFactory?
+    def setUp(self):
+        # Test a release with published and draft tracks
+
+        self.release = PublishedReleaseFactory.create(
+            title='Release', slug='release'
+        )
+
+        self.tracks = [
+            PublishedSongFactory.create(release=self.release, track=t)
+            for t in range(1, 5)
+        ]
+
+        for t in range(5, 10):
+            SongFactory.create(release=self.release, track=t)
+
+        # Add another release to make sure its tracks are isolated
+
+        second_release = PublishedReleaseFactory.create(
+            title='Second Release', slug='second-release'
+        )
+
+        for t in range(1, 5):
+            PublishedSongFactory.create(release=second_release, track=t)
+
+    def test_url_uses_slug(self):
+        self.assertEqual(self.release.get_lyrics_url(),
+                         '/music/release/lyrics')
+
+    def test_returns_published_tracks(self):
+        response = self.client.get(self.release.get_lyrics_url())
+
+        release = response.context['release']
+        self.assertEqual(release, self.release)
+        self.assertEqual(list(release.tracks), list(self.tracks))
+
+    def test_uses_template(self):
+        response = self.client.get(self.release.get_lyrics_url())
+        self.assertTemplateUsed(response, 'music/release_lyrics.html')
 
 
 class PressTestCase(TestCase):

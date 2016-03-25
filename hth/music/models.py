@@ -1,3 +1,4 @@
+from django.core.urlresolvers import reverse
 from django.db import models
 
 from embed_video import backends
@@ -30,6 +31,13 @@ class Release(PublishedModel, TitledModel):
         return self.song_set.published().order_by('track')
 
     @property
+    def has_lyrics(self):
+        """
+        True iff any of the tracks have lyrics.
+        """
+        return any(t.lyrics for t in self.tracks)
+
+    @property
     def videos(self):
         """
         A ``QuerySet`` of published videos, ordered by publish time.
@@ -42,6 +50,12 @@ class Release(PublishedModel, TitledModel):
         A ``QuerySet`` of published press, ordered by date.
         """
         return self.press_set.published()
+
+    def get_lyrics_url(self):
+        """
+        Returns the ``slug``-based URL for the track lyrics.
+        """
+        return reverse('release_lyrics', args=[self.slug])
 
 
 class Song(PublishedModel, TitledModel):
@@ -65,8 +79,9 @@ class Song(PublishedModel, TitledModel):
         """
         True iff any TextField is non-empty
         """
-        return bool(self.player_code or self.description or
-                    self.credits or self.lyrics)
+        return any([
+            self.player_code, self.description, self.credits, self.lyrics
+        ])
 
 
 class Video(PublishedModel, TitledModel):

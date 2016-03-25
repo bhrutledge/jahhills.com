@@ -63,6 +63,16 @@ class SongTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
 
         self.assertEqual(list(r.tracks.all()), [s1, s2, s3])
 
+    def test_release_has_lyrics(self):
+        r = PublishedReleaseFactory.create()
+        self.assertFalse(r.has_lyrics)
+
+        PublishedSongFactory.create(release=r, track=1, lyrics='')
+        self.assertFalse(r.has_lyrics)
+
+        PublishedSongFactory.create(release=r, track=2, lyrics='lyrics')
+        self.assertTrue(r.has_lyrics)
+
     def test_has_details(self):
         self.assertFalse(Song().has_details)
         self.assertTrue(Song(player_code='p').has_details)

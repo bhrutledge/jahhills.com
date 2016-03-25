@@ -18,6 +18,13 @@ class ReleaseDetailView(DetailView):
     queryset = Release.objects.published()
 
 
+class ReleaseLyricsView(ReleaseDetailView):
+    """
+    Renders lyrics of published ``Songs``'s for a ``Release``.
+    """
+    template_name = 'music/release_lyrics.html'
+
+
 class SongListView(ListView):
     """
     Renders a list of published ``Song``'s.

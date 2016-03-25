@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Lyrics | {{ release.title }} | {{ block.super }}{% endblock %}
+
+{% block main_content %}
+<article class+"content release">
+    <header class="content-header">
+        <h1 class="content-title">{{ release.title }}</h1>
+        <p class="content-subtitle">{{ release.date|date }}</p>
+    </header>
+
+    <section class="content-section">
+        {% for song in release.tracks %}
+        <article class="content song">
+            <header class="content-header">
+                <h2 class="content-title">{{ song.title }}</h2>
+            </header>
+
+            {{ song.lyrics|safe }}
+        </article>
+        {% endfor %}
+    </section>
+</article>
+{% endblock %}

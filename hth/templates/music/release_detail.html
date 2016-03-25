@@ -35,6 +35,10 @@
             </li>
             {% endfor %}
         </ol>
+
+        {% if release.has_lyrics %}
+        <p><a href="{{ release.get_lyrics_url }}">Lyrics</a></p>
+        {% endif %}
     </section>
     {% endif %}
 
