@@ -36,7 +36,7 @@ h2 {
     text-transform: uppercase;
 }
 
-p, ul, ol {
+p, ul, ol, figure {
     margin: 0 0 $small-spacing;
 }
 
@@ -84,4 +84,8 @@ blockquote {
     cite {
         font-style: normal;
     }
+}
+
+figcaption {
+    text-align: center;
 }

@@ -9,7 +9,6 @@ class HomePageView(TemplateView):
     """
     Renders the home page.
     """
-
     template_name = 'home_page.html'
 
     def get_context_data(self, **kwargs):
@@ -21,3 +20,10 @@ class HomePageView(TemplateView):
         context['video'] = Video.objects.published().first()
 
         return context
+
+
+class AboutPageView(TemplateView):
+    """
+    Renders the about page.
+    """
+    template_name = 'about_page.html'

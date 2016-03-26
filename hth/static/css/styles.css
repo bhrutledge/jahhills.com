@@ -163,7 +163,7 @@ h1 {
 h2 {
   text-transform: uppercase; }
 
-p, ul, ol {
+p, ul, ol, figure {
   margin: 0 0 1.5rem; }
 
 a {
@@ -199,6 +199,9 @@ blockquote {
   text-align: right; }
   .citation cite {
     font-style: normal; }
+
+figcaption {
+  text-align: center; }
 
 html {
   box-sizing: border-box; }
@@ -382,6 +385,11 @@ header.navigation {
     display: table; }
   .gig:last-child {
     margin-bottom: -1.5rem; }
+
+#about {
+  text-align: center; }
+  #about .container-header {
+    display: none; }
 
 @media screen and (max-width: 599px) {
   .gig-date {

@@ -22,6 +22,14 @@
     }
 }
 
+#about {
+    .container-header {
+        display: none;
+    }
+
+    text-align: center;
+}
+
 @include media($small-screen-only) {
     .gig-date {
         @include span-columns(2);
