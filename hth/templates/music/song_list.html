@@ -4,11 +4,11 @@
 
 {% block main_content %}
 <article>
-    <h1>Songs</h1>
+    <h1 class="container-header">Songs</h1>
 
     {% for song in song_list %}
     <article class="content song">
-        <header class="content-header">
+        <header>
             <h3 class="content-title">
                 {% if song.has_details %}
                 <a href="{{ song.get_absolute_url }}">{{ song.title }}</a>

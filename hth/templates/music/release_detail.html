@@ -5,17 +5,17 @@
 
 {% block main_content %}
 <article class="content release">
+    <header class="container-header">
+        <h1 class="content-title">{{ release.title }}</h1>
+        <p class="content-subtitle">{{ release.date|date }}</p>
+    </header>
+
     {% if release.cover_url %}
     <div class="content-feature release-cover">
         <img src="{% cloudinary_url release.cover_url width="480" crop="fill" type="fetch" %}" alt="Cover art" />
         {{ release.player_code|safe }}
     </div>
     {% endif %}
-
-    <header class="content-header">
-        <h1 class="content-title">{{ release.title }}</h1>
-        <p class="content-subtitle">{{ release.date|date }}</p>
-    </header>
 
     {{ release.description|safe }}
 
@@ -24,6 +24,7 @@
     {% if release.tracks %}
     <section class="content-section release-tracks">
         <h2>Tracks</h2>
+
         <ol>
             {% for song in release.tracks %}
             <li>
@@ -45,6 +46,7 @@
     {% if release.videos %}
     <section class="content-section release-videos">
         <h2>Videos</h2>
+
         <div class="content-gallery">
             {% for video in release.videos %}
             <article class="content video video-preview">

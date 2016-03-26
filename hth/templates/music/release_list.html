@@ -4,7 +4,7 @@
 
 {% block main_content %}
 <article>
-    <h1>Music</h1>
+    <h1 class="container-header">Music</h1>
 
     {% include "music/_release_highlight.html" with release=release_list|first %}
 
@@ -13,11 +13,11 @@
         <article class="content release release-preview">
             {% include "music/_release_cover.html" %}
 
-            <header class="content-header">
+            <header>
                 <h3 class="content-title">
                     <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
                 </h3>
-                <p class="content-subtitle">{{ release.date|date }}</p>
+                <p class="content-subtitle">{{ release.date|date:"M Y" }}</p>
             </header>
 
             {{ release.description|safe }}
