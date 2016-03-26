@@ -72,6 +72,12 @@ blockquote {
     padding: 0 $small-spacing / 2;
 }
 
-cite {
-    font-style: normal;
+.citation {
+    margin: -$small-spacing $small-spacing 0 0;
+    padding: ($small-spacing / 2) 0;
+    text-align: right;
+
+    cite {
+        font-style: normal;
+    }
 }

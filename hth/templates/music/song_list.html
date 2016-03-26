@@ -10,7 +10,11 @@
     <article class="content song">
         <header class="content-header">
             <h3 class="content-title">
+                {% if song.has_details %}
                 <a href="{{ song.get_absolute_url }}">{{ song.title }}</a>
+                {% else %}
+                {{ song.title }}
+                {% endif %}
             </h3>
         </header>
     </article>

@@ -190,8 +190,12 @@ blockquote {
   margin: 0 0 1.5rem;
   padding: 0 0.75rem; }
 
-cite {
-  font-style: normal; }
+.citation {
+  margin: -1.5rem 1.5rem 0 0;
+  padding: 0.75rem 0;
+  text-align: right; }
+  .citation cite {
+    font-style: normal; }
 
 html {
   box-sizing: border-box; }
@@ -462,6 +466,18 @@ header.navigation {
 
   .release-videos {
     clear: both; } }
+@media screen and (min-width: 800px) {
+  .content-gallery .lyrics, .content-gallery .press, .content-gallery .post {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%; }
+    .content-gallery .lyrics:last-child, .content-gallery .press:last-child, .content-gallery .post:last-child {
+      margin-right: 0; }
+    .content-gallery .lyrics:nth-child(2n), .content-gallery .press:nth-child(2n), .content-gallery .post:nth-child(2n) {
+      margin-right: 0; }
+    .content-gallery .lyrics:nth-child(2n+1), .content-gallery .press:nth-child(2n+1), .content-gallery .post:nth-child(2n+1) {
+      clear: left; } }
 @media screen and (min-width: 600px) and (max-width: 1079px) {
   .release-preview {
     float: left;

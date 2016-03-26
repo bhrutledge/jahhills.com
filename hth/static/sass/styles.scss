@@ -77,6 +77,15 @@
     }
 }
 
+@include media($large-screen-up) {
+    .content-gallery {
+        .lyrics, .press, .post {
+            @include span-columns(3);
+            @include omega(2n);
+        }
+    }
+}
+
 @include media($medium-large-screen) {
     .release-preview {
         @include span-columns(3);

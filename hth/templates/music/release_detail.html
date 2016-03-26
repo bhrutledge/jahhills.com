@@ -69,9 +69,11 @@
     {% if release.press %}
     <section class="content-section release-press">
         <h2>Press</h2>
-        {% for press in release.press %}
-        {% include "music/_press.html" %}
-        {% endfor %}
+        <div class="content-gallery">
+            {% for press in release.press %}
+            {% include "music/_press.html" %}
+            {% endfor %}
+        </div>
     </section>
     {% endif %}
 </article>

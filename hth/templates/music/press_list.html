@@ -6,8 +6,10 @@
 <article>
     <h1>Press</h1>
 
-    {% for press in press_list %}
-    {% include "music/_press.html" %}
-    {% endfor %}
+    <div class="content-gallery">
+        {% for press in press_list %}
+        {% include "music/_press.html" %}
+        {% endfor %}
+    </div>
 </article>
 {% endblock %}

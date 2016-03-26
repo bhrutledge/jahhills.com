@@ -3,22 +3,21 @@
 {% block title %}Lyrics | {{ release.title }} | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-<article class+"content release">
+<article class="content release">
     <header class="content-header">
         <h1 class="content-title">{{ release.title }}</h1>
-        <p class="content-subtitle">{{ release.date|date }}</p>
     </header>
 
-    <section class="content-section">
+    <div class="content-gallery">
         {% for song in release.tracks %}
-        <article class="content song">
+        <article class="content lyrics">
             <header class="content-header">
-                <h2 class="content-title">{{ song.title }}</h2>
+                <h3 class="content-title">{{ song.title }}</h3>
             </header>
 
             {{ song.lyrics|safe }}
         </article>
         {% endfor %}
-    </section>
+    </div>
 </article>
 {% endblock %}
