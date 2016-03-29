@@ -1,5 +1,6 @@
 header.navigation {
-    $navigation-height: 2 * modular-scale(2, $em-base);
+    $navigation-line-height: modular-scale(2, $em-base);
+    $navigation-height: 2 * $navigation-line-height;
     $navigation-active-link-color: $action-color-hover;
     $horizontal-bar-mode: $large-screen;
 
@@ -32,6 +33,19 @@ header.navigation {
             &:hover {
                 color: $navigation-color-hover;
             }
+        }
+    }
+
+    .tagline {
+        display: none;
+        float: right;
+        font-family: $base-font-family;
+        font-weight: normal;
+        text-transform: none;
+        line-height: $navigation-line-height;
+
+        @include media($horizontal-bar-mode) {
+            display: block;
         }
     }
 
@@ -95,7 +109,7 @@ header.navigation {
     ul li.nav-link {
         background: $navigation-background-color;
         display: block;
-        line-height: $navigation-height;
+        line-height: $navigation-line-height;
         overflow: hidden;
         text-align: right;
         width: 100%;
@@ -104,7 +118,6 @@ header.navigation {
         @include media($horizontal-bar-mode) {
             background: transparent;
             display: inline;
-            line-height: $navigation-height;
             padding-left: 1em;
             text-decoration: none;
             width: auto;

@@ -238,12 +238,22 @@ header.navigation {
       color: black; }
       header.navigation .logo a:focus, header.navigation .logo a:hover {
         color: #104c90; }
+  header.navigation .tagline {
+    display: none;
+    float: right;
+    font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 28.43022px; }
+    @media screen and (min-width: 880px) {
+      header.navigation .tagline {
+        display: block; } }
   header.navigation .navigation-menu-button {
     display: block;
     float: right;
     line-height: 56.86045px;
     margin: 0; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 880px) {
       header.navigation .navigation-menu-button {
         display: none; } }
     header.navigation .navigation-menu-button a {
@@ -255,7 +265,7 @@ header.navigation {
     float: none;
     min-height: 56.86045px;
     z-index: 9999999; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 880px) {
       header.navigation nav {
         float: right; } }
   header.navigation ul.navigation-menu {
@@ -268,7 +278,7 @@ header.navigation {
     z-index: 9999; }
     header.navigation ul.navigation-menu.show {
       display: block; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 880px) {
       header.navigation ul.navigation-menu {
         display: inline;
         margin: 0;
@@ -276,16 +286,15 @@ header.navigation {
   header.navigation ul li.nav-link {
     background: transparent;
     display: block;
-    line-height: 56.86045px;
+    line-height: 28.43022px;
     overflow: hidden;
     text-align: right;
     width: 100%;
     z-index: 9999; }
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 880px) {
       header.navigation ul li.nav-link {
         background: transparent;
         display: inline;
-        line-height: 56.86045px;
         padding-left: 1em;
         text-decoration: none;
         width: auto; } }
@@ -315,7 +324,7 @@ header.navigation {
   bottom: 0;
   left: 0; }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 879px) {
   .footer-links {
     float: left;
     display: block;
@@ -327,7 +336,7 @@ header.navigation {
       margin-right: 0; }
     .footer-links:nth-child(2n+1) {
       clear: left; } }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 880px) {
   .footer-links {
     float: left;
     display: block;
@@ -487,7 +496,7 @@ header.navigation {
 
   .release-videos {
     clear: both; } }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 880px) {
   .content-gallery .lyrics, .content-gallery .press, .content-gallery .post {
     float: left;
     display: block;
