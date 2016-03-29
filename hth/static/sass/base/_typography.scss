@@ -86,6 +86,12 @@ blockquote {
     }
 }
 
+figure {
+    img {
+        display: block;
+    }
+}
+
 figcaption {
     text-align: center;
 }

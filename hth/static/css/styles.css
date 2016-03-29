@@ -200,6 +200,9 @@ blockquote {
   .citation cite {
     font-style: normal; }
 
+figure img {
+  display: block; }
+
 figcaption {
   text-align: center; }
 
@@ -368,6 +371,10 @@ header.navigation {
     content: "";
     display: table; }
 
+.content + .content-gallery {
+  border-top: 1px solid #ddd;
+  padding-top: 3rem; }
+
 .container {
   max-width: 90%;
   margin-left: auto;
@@ -385,6 +392,9 @@ header.navigation {
     display: table; }
   .gig:last-child {
     margin-bottom: -1.5rem; }
+
+#banner {
+  margin-top: -6rem; }
 
 #about {
   text-align: center; }

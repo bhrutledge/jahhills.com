@@ -14,3 +14,8 @@
     @include clearfix;
     margin-bottom: -$base-spacing;
 }
+
+.content + .content-gallery {
+    border-top: $base-border;
+    padding-top: $base-spacing;
+}
