@@ -9,8 +9,6 @@ from . import views
 urlpatterns = [
     url(r'^$', views.HomePageView.as_view(), name='home_page'),
     url(r'^about/$', views.AboutPageView.as_view(), name='about_page'),
-    url(r'^admindocs/', include('django.contrib.admindocs.urls')),
-    url(r'^admin/', include(admin.site.urls)),
     url(r'^news/', include('news.urls')),
     url(r'^shows/', include('shows.urls')),
     url(r'^', include('music.urls')),
@@ -19,3 +17,10 @@ urlpatterns = [
 if settings.MEDIA_URL and settings.MEDIA_ROOT:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
+
+# TODO: Debug-only until HTTPS is configured
+if settings.DEBUG:
+    urlpatterns += [
+        url(r'^admindocs/', include('django.contrib.admindocs.urls')),
+        url(r'^admin/', include(admin.site.urls)),
+    ]
