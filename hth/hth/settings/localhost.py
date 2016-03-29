@@ -1,10 +1,10 @@
 from .base import *  # noqa
 
-# Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
 
 ALLOWED_HOSTS = [
-    'localhost'
+    'localhost',
+    '.debugged.org',
 ]
 
 CACHES = {
