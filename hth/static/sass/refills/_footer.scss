@@ -17,9 +17,6 @@
 
 .footer-top-link {
     font-family: $heading-font-family;
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 @include media($medium-screen-down) {
@@ -33,5 +30,9 @@
     .footer-links {
         @include span-columns(2);
         @include omega(3n);
+    }
+
+    .footer-top-link {
+        text-align: right;
     }
 }

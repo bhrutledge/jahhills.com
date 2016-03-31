@@ -13,6 +13,12 @@
     @include outer-container;
 }
 
+.navigation-page {
+    .container-header {
+        display: none;
+    }
+}
+
 .gig {
     @include clearfix;
     margin-bottom: $small-spacing;
@@ -23,10 +29,6 @@
 }
 
 #about {
-    .container-header {
-        display: none;
-    }
-
     text-align: center;
 }
 

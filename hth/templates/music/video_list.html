@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 
-{% block title %}Videos | {{ block.super }}{% endblock %}
+{% block title %}Video | {{ block.super }}{% endblock %}
+{% block main_class %}navigation-page{% endblock %}
 
 {% block main_content %}
 <article>
-    <h1 class="container-header">Videos</h1>
+    <h1 class="container-header">Video</h1>
 
     {% include "music/_video_highlight.html" with video=video_list|first %}
 

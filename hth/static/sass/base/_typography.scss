@@ -42,7 +42,7 @@ p, ul, ol, figure {
 
 a {
     color: $action-color;
-    text-decoration: none;
+    text-decoration: $base-link-decoration;
     transition: color $base-duration $base-timing;
 
     &:active,

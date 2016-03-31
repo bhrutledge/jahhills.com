@@ -1,0 +1,4 @@
+{% url nav_view as nav_url %}
+<li class="navigation-link{% if nav_url in request.path %} is-active{% endif %}">
+    <a href="{{ nav_url }}">{{ nav_title }}</a>
+</li>

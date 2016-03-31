@@ -1,11 +1,16 @@
 header.navigation {
+    $navigation-color: $action-color;
+    $navigation-color-hover: $action-color-hover;
+    $navigation-color-active: $heading-color;
+    $navigation-active-decoration: none;
+    $navigation-background-color: transparent;
+
     $navigation-line-height: modular-scale(2, $em-base);
     $navigation-height: 2 * $navigation-line-height;
-    $navigation-active-link-color: $action-color-hover;
     $horizontal-bar-mode: $large-screen;
 
     background-color: $navigation-background-color;
-    margin-bottom: $small-spacing;
+    margin-bottom: $base-spacing;
     min-height: $navigation-height;
     padding: $small-spacing / 2 0;
     width: 100%;
@@ -29,10 +34,12 @@ header.navigation {
 
         a {
             color: $heading-color;
+            text-decoration: $navigation-active-decoration;
 
             &:focus,
             &:hover {
                 color: $navigation-color-hover;
+                text-decoration: $base-link-decoration;
             }
         }
     }
@@ -41,8 +48,9 @@ header.navigation {
         display: none;
         float: right;
         font-family: $base-font-family;
-        font-weight: normal;
+        font-size: modular-scale(-1);
         text-transform: none;
+        font-weight: normal;
         line-height: $navigation-line-height;
 
         @include media($horizontal-bar-mode) {
@@ -64,7 +72,6 @@ header.navigation {
 
         a {
             color: $navigation-color;
-            text-decoration: none;
 
             &:focus,
             &:hover {
@@ -77,7 +84,6 @@ header.navigation {
 
     nav {
         float: none;
-        min-height: $navigation-height;
         z-index: 9999999;
 
         @include media($horizontal-bar-mode) {
@@ -107,7 +113,7 @@ header.navigation {
 
     // The nav items
 
-    ul li.nav-link {
+    ul li.navigation-link {
         background: $navigation-background-color;
         display: block;
         line-height: $navigation-line-height;
@@ -119,24 +125,27 @@ header.navigation {
         @include media($horizontal-bar-mode) {
             background: transparent;
             display: inline;
-            padding-left: 1em;
-            text-decoration: none;
+            padding-left: $small-spacing;
             width: auto;
         }
 
         a {
             color: $navigation-color;
             display: inline-block;
-            text-decoration: none;
 
             &:focus,
             &:hover {
                 color: $navigation-color-hover;
             }
         }
-    }
 
-    .active-nav-item a {
-        border-bottom: 1px solid $navigation-active-link-color;
+        &.is-active a {
+            color: $navigation-color-active;
+            text-decoration: $navigation-active-decoration;
+
+            &:hover {
+                text-decoration: $base-link-decoration;
+            }
+        }
     }
 }

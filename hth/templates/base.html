@@ -18,11 +18,12 @@
             <nav role="navigation">
                 <h2 class="navigation-menu-button" id="js-mobile-menu"><a href="javascript:void(0)">Nav</a></h2>
                 <ul id="js-navigation-menu" class="navigation-menu show">
-                    <li class="nav-link"><a href="{% url "release_list" %}">Music</a></li>
-                    <li class="nav-link"><a href="{% url "video_list" %}">Videos</a></li>
-                    <li class="nav-link"><a href="{% url "gig_list" %}">Shows</a></li>
-                    <li class="nav-link"><a href="{% url "post_list" %}">News</a></li>
-                    <li class="nav-link"><a href="#more">More</a></li>
+                    {% include "_nav_link.html" with nav_view="release_list" nav_title="Music" %}
+                    {% include "_nav_link.html" with nav_view="video_list" nav_title="Video" %}
+                    {% include "_nav_link.html" with nav_view="gig_list" nav_title="Shows" %}
+                    {% include "_nav_link.html" with nav_view="post_list" nav_title="News" %}
+                    {% include "_nav_link.html" with nav_view="press_list" nav_title="Press" %}
+                    {% include "_nav_link.html" with nav_view="about_page" nav_title="About" %}
                 </ul>
             </nav>
         </div>
@@ -35,15 +36,6 @@
 
     <footer id="more" class="container footer" role="contentinfo">
         <section>
-            <div class="footer-links">
-                <h2 class="footer-header">More</h2>
-                <ul>
-                    <li><a href="{% url "about_page" %}">About</a></li>
-                    <li><a href="{% url "press_list" %}">Press</a></li>
-                    <li><a href="{% url "song_list" %}">Songs</a></li>
-                </ul>
-            </div>
-
             <div class="footer-links">
                 <h3>Elsewhere</h3>
                 <ul>
@@ -60,7 +52,9 @@
                 </p>
             </div>
 
-            <p class="footer-top-link"><a href="#top">Back to top</a></p>
+            <div class="footer-links">
+                <p class="footer-top-link"><a href="#top">Back to top</a></p>
+            </div>
         </section>
     </footer>
 
