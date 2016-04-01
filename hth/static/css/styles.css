@@ -183,8 +183,7 @@ p, ul, ol, figure {
 
 a {
   color: black;
-  text-decoration: underline;
-  transition: all 150ms ease; }
+  text-decoration: underline; }
   a:active, a:focus, a:hover {
     color: black; }
 
@@ -220,6 +219,24 @@ figure img {
 
 figcaption {
   text-align: center; }
+
+article ol,
+article ul {
+  counter-reset: li;
+  display: table; }
+  article ol li,
+  article ul li {
+    counter-increment: li;
+    display: table-row; }
+    article ol li::before,
+    article ul li::before {
+      content: counter(li) ".";
+      display: table-cell;
+      padding-right: 0.375rem;
+      text-align: right; }
+
+article ul li::before {
+  content: "\2022"; }
 
 html {
   box-sizing: border-box; }
@@ -333,7 +350,7 @@ header.navigation {
     .footer nav li {
       margin-bottom: 0.75rem; }
 
-@media screen and (max-width: 849px) {
+@media screen and (min-width: 600px) and (max-width: 849px) {
   .footer-links {
     float: left;
     display: block;

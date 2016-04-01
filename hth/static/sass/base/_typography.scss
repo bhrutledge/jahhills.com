@@ -56,7 +56,6 @@ p, ul, ol, figure {
 a {
     color: $action-color;
     text-decoration: underline;
-    transition: all $base-duration $base-timing;
 
     &:active,
     &:focus,
@@ -107,4 +106,26 @@ figure {
 
 figcaption {
     text-align: center;
+}
+
+article ol,
+article ul {
+    counter-reset: li;
+    display: table;
+
+    li {
+        counter-increment: li;
+        display: table-row;
+
+        &::before {
+            content: counter(li) ".";
+            display: table-cell;
+            padding-right: $small-spacing / 4;
+            text-align: right;
+        }
+    }
+}
+
+article ul li::before {
+    content: "\2022";
 }

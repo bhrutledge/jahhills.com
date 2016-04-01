@@ -16,8 +16,8 @@
             <h1 class="logo"><a href="{% url "home_page" %}">Hallelujah The Hills</a></h1>
             <div class="tagline">Indie rock from Boston, MA. Super-charged American favorites since 2005.</div>
             <nav role="navigation">
-                <h2 class="navigation-menu-button" id="js-mobile-menu"><a href="javascript:void(0)">Nav</a></h2>
-                <ul id="js-navigation-menu" class="navigation-menu show">
+                <h2 id="js-mobile-menu" class="navigation-menu-button"><a href="javascript:void(0)">Nav</a></h2>
+                <ul id="js-navigation-menu" class="navigation-menu">
                     {% include "_nav_link.html" with nav_view="release_list" nav_title="Music" %}
                     {% include "_nav_link.html" with nav_view="video_list" nav_title="Video" %}
                     {% include "_nav_link.html" with nav_view="gig_list" nav_title="Shows" %}

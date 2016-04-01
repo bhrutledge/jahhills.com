@@ -15,7 +15,7 @@
     }
 }
 
-@include media($medium-screen-down) {
+@include media($medium-screen-only) {
     .footer-links {
         @include span-columns(3);
         @include omega(2n);
