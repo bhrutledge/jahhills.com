@@ -7,7 +7,7 @@
 @import "refills/navigation";
 @import "refills/footer";
 @import "refills/embed-responsive";
-@import "refills/content";
+
 
 .container {
     @include outer-container;
@@ -17,6 +17,28 @@
     .container-header {
         display: none;
     }
+}
+
+.content-feature {
+    margin-bottom: $small-spacing;
+}
+
+.content-subtitle {
+    margin-top: -$small-spacing;
+}
+
+.content-section {
+    margin: $base-spacing 0;
+}
+
+.content-gallery {
+    @include clearfix;
+    margin-bottom: -$base-spacing;
+}
+
+.content + .content-gallery {
+    border-top: $base-border;
+    padding-top: $base-spacing;
 }
 
 .gig {
@@ -63,7 +85,7 @@
         margin-bottom: $small-spacing;
     }
 
-    .release-highlight {
+    .release.content-highlight {
         @include clearfix;
 
         .release-cover {

@@ -20,9 +20,8 @@
             <p class="content-subtitle">{{ gig.date|date:"Y" }}</p>
         </div>
         <div class="gig-venue">
-            <p><strong>{{ gig.venue.name }}</strong>
-                <br>{{ gig.venue.city }}
-            </p>
+            <p class="content-title">{{ gig.venue.name }}</p>
+            <p class="content-subtitle">{{ gig.venue.city }}</p>
         </div>
         <div class="gig-info">
             {{ gig.description|safe }}

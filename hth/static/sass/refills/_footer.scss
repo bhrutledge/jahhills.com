@@ -15,10 +15,6 @@
     }
 }
 
-.footer-top-link {
-    font-family: $heading-font-family;
-}
-
 @include media($medium-screen-down) {
     .footer-links {
         @include span-columns(3);

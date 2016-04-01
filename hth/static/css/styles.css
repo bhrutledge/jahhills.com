@@ -6,7 +6,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   font-size: 1em;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -45,7 +45,7 @@ label {
 input,
 select {
   display: block;
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   font-size: 1em; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
@@ -55,7 +55,7 @@ select[multiple] {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   font-size: 1em;
   margin-bottom: 1.5rem;
   padding: 1rem;
@@ -133,7 +133,7 @@ th {
 
 body {
   color: #333;
-  font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -150,18 +150,33 @@ h4,
 h5,
 h6 {
   color: black;
-  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-family: "Arial Black", "Arial Bold", Gadget, "Arial", sans-serif;
   font-size: 1em;
   line-height: 1.5;
   margin: 0 0 1.5rem; }
+  h1.content-title a,
+  h2.content-title a,
+  h3.content-title a,
+  h4.content-title a,
+  h5.content-title a,
+  h6.content-title a {
+    text-decoration: none; }
+    h1.content-title a:hover,
+    h2.content-title a:hover,
+    h3.content-title a:hover,
+    h4.content-title a:hover,
+    h5.content-title a:hover,
+    h6.content-title a:hover {
+      text-decoration: underline; }
 
 h1 {
-  font-size: 1.333em;
-  line-height: 1;
-  text-transform: uppercase; }
+  font-size: 1.333em; }
 
 h2 {
   text-transform: uppercase; }
+
+.content-highlight .content-title {
+  font-size: 1.333em; }
 
 p, ul, ol, figure {
   margin: 0 0 1.5rem; }
@@ -169,7 +184,7 @@ p, ul, ol, figure {
 a {
   color: black;
   text-decoration: underline;
-  transition: color 150ms ease; }
+  transition: all 150ms ease; }
   a:active, a:focus, a:hover {
     color: black; }
 
@@ -215,12 +230,11 @@ html {
 header.navigation {
   background-color: transparent;
   margin-bottom: 3rem;
-  min-height: 56.86045px;
   padding: 0.75rem 0;
   width: 100%;
   z-index: 999; }
   header.navigation .navigation-wrapper {
-    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-family: "Arial Black", "Arial Bold", Gadget, "Arial", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
@@ -231,7 +245,7 @@ header.navigation {
       display: table; }
   header.navigation .logo {
     float: left;
-    font-size: 28.43022px;
+    font-size: 1.77689em;
     line-height: 1;
     margin-bottom: 0;
     max-width: 8em; }
@@ -244,19 +258,18 @@ header.navigation {
   header.navigation .tagline {
     display: none;
     float: right;
-    font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    font-family: "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
     font-size: 0.75019em;
     text-transform: none;
     font-weight: normal;
-    line-height: 28.43022px; }
+    line-height: 2.36859; }
     @media screen and (min-width: 850px) {
       header.navigation .tagline {
         display: block; } }
   header.navigation .navigation-menu-button {
     display: block;
     float: right;
-    line-height: 56.86045px;
-    margin: 0; }
+    margin: 1.77689em 0 0; }
     @media screen and (min-width: 850px) {
       header.navigation .navigation-menu-button {
         display: none; } }
@@ -288,7 +301,7 @@ header.navigation {
   header.navigation ul li.navigation-link {
     background: transparent;
     display: block;
-    line-height: 28.43022px;
+    line-height: 1.77689;
     overflow: hidden;
     text-align: right;
     width: 100%;
@@ -305,7 +318,6 @@ header.navigation {
       header.navigation ul li.navigation-link a:focus, header.navigation ul li.navigation-link a:hover {
         color: black; }
     header.navigation ul li.navigation-link.is-active a {
-      color: black;
       text-decoration: none; }
       header.navigation ul li.navigation-link.is-active a:hover {
         text-decoration: underline; }
@@ -317,12 +329,9 @@ header.navigation {
   .footer li {
     list-style: none; }
   .footer nav {
-    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; }
+    font-family: "Arial Black", "Arial Bold", Gadget, "Arial", sans-serif; }
     .footer nav li {
       margin-bottom: 0.75rem; }
-
-.footer-top-link {
-  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; }
 
 @media screen and (max-width: 849px) {
   .footer-links {
@@ -367,6 +376,18 @@ header.navigation {
     height: 100%;
     width: 100%; }
 
+.container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.navigation-page .container-header {
+  display: none; }
+
 .content-feature {
   margin-bottom: 1.5rem; }
 
@@ -386,18 +407,6 @@ header.navigation {
 .content + .content-gallery {
   border-top: 1px solid #ddd;
   padding-top: 3rem; }
-
-.container {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto; }
-  .container::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-.navigation-page .container-header {
-  display: none; }
 
 .gig {
   margin-bottom: 1.5rem; }
@@ -467,24 +476,24 @@ header.navigation {
     .video-preview:nth-child(3n+1) {
       clear: left; }
 
-  .release-highlight::after {
+  .release.content-highlight::after {
     clear: both;
     content: "";
     display: table; }
-  .release-highlight .release-cover {
+  .release.content-highlight .release-cover {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 47.58542%; }
-    .release-highlight .release-cover:last-child {
+    .release.content-highlight .release-cover:last-child {
       margin-right: 0; }
-  .release-highlight .release-info {
+  .release.content-highlight .release-info {
     float: left;
     display: block;
     margin-right: 4.82916%;
     width: 47.58542%;
     margin-right: 0; }
-    .release-highlight .release-info:last-child {
+    .release.content-highlight .release-info:last-child {
       margin-right: 0; }
 
   .content-feature.release-cover {

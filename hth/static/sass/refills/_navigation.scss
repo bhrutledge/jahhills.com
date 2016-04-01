@@ -1,17 +1,15 @@
 header.navigation {
     $navigation-color: $action-color;
     $navigation-color-hover: $action-color-hover;
-    $navigation-color-active: $heading-color;
-    $navigation-active-decoration: none;
+    $navigation-color-active: $action-color;
     $navigation-background-color: transparent;
 
-    $navigation-line-height: modular-scale(2, $em-base);
-    $navigation-height: 2 * $navigation-line-height;
+    $logo-font-size: modular-scale(2);
+    $tagline-font-size: modular-scale(-1);
     $horizontal-bar-mode: $large-screen;
 
     background-color: $navigation-background-color;
     margin-bottom: $base-spacing;
-    min-height: $navigation-height;
     padding: $small-spacing / 2 0;
     width: 100%;
     z-index: 999;
@@ -27,19 +25,19 @@ header.navigation {
 
     .logo {
         float: left;
-        font-size: modular-scale(2, $em-base);
+        font-size: $logo-font-size;
         line-height: 1;
         margin-bottom: 0;
         max-width: 8em;
 
         a {
             color: $heading-color;
-            text-decoration: $navigation-active-decoration;
+            text-decoration: none;
 
             &:focus,
             &:hover {
                 color: $navigation-color-hover;
-                text-decoration: $base-link-decoration;
+                text-decoration: underline;
             }
         }
     }
@@ -48,10 +46,10 @@ header.navigation {
         display: none;
         float: right;
         font-family: $base-font-family;
-        font-size: modular-scale(-1);
+        font-size: $tagline-font-size;
         text-transform: none;
         font-weight: normal;
-        line-height: $navigation-line-height;
+        line-height: strip-units($logo-font-size / $tagline-font-size);
 
         @include media($horizontal-bar-mode) {
             display: block;
@@ -63,8 +61,7 @@ header.navigation {
     .navigation-menu-button {
         display: block;
         float: right;
-        line-height: $navigation-height;
-        margin: 0;
+        margin: $logo-font-size 0 0;
 
         @include media($horizontal-bar-mode) {
             display: none;
@@ -116,7 +113,7 @@ header.navigation {
     ul li.navigation-link {
         background: $navigation-background-color;
         display: block;
-        line-height: $navigation-line-height;
+        line-height: strip-units($logo-font-size);
         overflow: hidden;
         text-align: right;
         width: 100%;
@@ -140,11 +137,10 @@ header.navigation {
         }
 
         &.is-active a {
-            color: $navigation-color-active;
-            text-decoration: $navigation-active-decoration;
+            text-decoration: none;
 
             &:hover {
-                text-decoration: $base-link-decoration;
+                text-decoration: underline;
             }
         }
     }

@@ -22,19 +22,32 @@ h6 {
     color: $heading-color;
     font-family: $heading-font-family;
     font-size: $base-font-size;
-    line-height: $heading-line-height;
+    line-height: $base-line-height;
     margin: 0 0 $small-spacing;
+
+    &.content-title a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 h1 {
     font-size: modular-scale(1);
-    line-height: 1;
-    text-transform: uppercase;
 }
 
 h2 {
     text-transform: uppercase;
 }
+
+.content-highlight {
+    .content-title {
+        font-size: modular-scale(1);
+    }
+}
+
 
 p, ul, ol, figure {
     margin: 0 0 $small-spacing;
@@ -42,8 +55,8 @@ p, ul, ol, figure {
 
 a {
     color: $action-color;
-    text-decoration: $base-link-decoration;
-    transition: color $base-duration $base-timing;
+    text-decoration: underline;
+    transition: all $base-duration $base-timing;
 
     &:active,
     &:focus,
