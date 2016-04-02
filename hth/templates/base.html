@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="{% static "css/normalize.css" %}">
     <link rel="stylesheet" href="{% static "css/styles.css" %}">
+    <link rel="stylesheet" href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css">
+
 </head>
 
 <body id="{% block body_id %}hth{% endblock %}">
@@ -38,11 +40,15 @@
         <section>
             <div class="footer-links">
                 <h3>Elsewhere</h3>
-                <ul>
-                    <li><a href="http://hallelujahthehills.bandcamp.com/">Bandcamp</a></li>
-                    <li><a href="http://www.facebook.com/hallelujahthehills">Facebook</a></li>
-                    <li><a href="http://www.twitter.com/JahHills">Twitter</a></li>
-                </ul>
+                <p>
+                    <a href="http://www.facebook.com/hallelujahthehills" class="socicon-facebook" title="Facebook"></a>
+                    <a href="http://www.twitter.com/JahHills" class="socicon-twitter" title="Twitter"></a>
+                    <a href="https://www.instagram.com/hallelujahthehills/" class="socicon-instagram" title="Instagram"></a>
+                    <a href="http://hallelujahthehills.bandcamp.com/" class="socicon-bandcamp" title="Bandcamp"></a>
+                    <a href="https://soundcloud.com/hallelujahthehills" class="socicon-soundcloud" title="SoundCloud"></a>
+                    <a href="https://play.spotify.com/artist/1Hz1wld4kWf47t3kIGKoDi" class="socicon-spotify" title="Spotify"></a>
+                    <a href="https://itunes.apple.com/us/artist/hallelujah-the-hills/id255451180" class="socicon-apple" title="iTunes"></a>
+                </p>
             </div>
 
             <div class="footer-links">
@@ -53,7 +59,17 @@
             </div>
 
             <div class="footer-links">
-                <p class="footer-top-link"><a href="#top">Back to top</a></p>
+                <h3>Mailing List</h3>
+                <form action="http://hallelujahthehills.us7.list-manage.com/subscribe/post?u=dfc947e32e98066f30df4013f&amp;id=a5f8de7ae0" method="post" id="header-list-form">
+                    <div style="display: none;">
+                        <label>leave this field blank to prove your humanity
+                            <input type="text" name="email" value="">
+                        </label>
+                    </div>
+                    <input type="text" value="" name="EMAIL" id="mce-EMAIL" placeholder="Your email">
+                    <input type="submit" value="Subscribe" name="subscribe" class="button">
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_dfc947e32e98066f30df4013f_a5f8de7ae0" value=""></div>
+                </form>
             </div>
         </section>
     </footer>
