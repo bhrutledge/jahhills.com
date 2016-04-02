@@ -9,8 +9,8 @@ header.navigation {
     $horizontal-bar-mode: $large-screen;
 
     background-color: $navigation-background-color;
-    margin-bottom: $base-spacing;
-    padding: $small-spacing / 2 0;
+    margin-bottom: $large-spacing;
+    padding: $small-spacing 0;
     width: 100%;
     z-index: 999;
 
@@ -121,7 +121,7 @@ header.navigation {
         @include media($horizontal-bar-mode) {
             background: transparent;
             display: inline;
-            padding-left: $small-spacing;
+            padding-left: $base-spacing;
             width: auto;
         }
 

@@ -1,6 +1,6 @@
 .footer {
     border-top: $base-border;
-    padding: $small-spacing 0 $base-spacing;
+    padding: $base-spacing 0 $large-spacing;
     position: relative;
 
     li {
@@ -10,7 +10,7 @@
     nav {
         font-family: $heading-font-family;
         li {
-            margin-bottom: $small-spacing / 2;
+            margin-bottom: $small-spacing;
         }
     }
 }

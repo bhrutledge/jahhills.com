@@ -10,7 +10,8 @@ $base-line-height: 1.5;
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * 2rem;
+$base-spacing: $base-line-height * 1rem;
+$large-spacing: $base-spacing * 2;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 

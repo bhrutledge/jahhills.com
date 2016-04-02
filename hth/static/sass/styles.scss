@@ -20,33 +20,33 @@
 }
 
 .content-feature {
-    margin-bottom: $small-spacing;
+    margin-bottom: $base-spacing;
 }
 
 .content-subtitle {
-    margin-top: -$small-spacing;
+    margin-top: -$base-spacing;
 }
 
 .content-section {
-    margin: $base-spacing 0;
+    margin: $large-spacing 0;
 }
 
 .content-gallery {
     @include clearfix;
-    margin-bottom: -$base-spacing;
+    margin-bottom: -$large-spacing;
 }
 
 .content + .content-gallery {
     border-top: $base-border;
-    padding-top: $base-spacing;
+    padding-top: $large-spacing;
 }
 
 .gig {
     @include clearfix;
-    margin-bottom: $small-spacing;
+    margin-bottom: $base-spacing;
 
     &:last-child {
-        margin-bottom: -$small-spacing;
+        margin-bottom: -$base-spacing;
     }
 }
 
@@ -82,7 +82,7 @@
     .video-preview {
         @include span-columns(2);
         @include omega(3n);
-        margin-bottom: $small-spacing;
+        margin-bottom: $base-spacing;
     }
 
     .release.content-highlight {
@@ -122,7 +122,7 @@
     .release-preview {
         @include span-columns(3);
         @include omega(2n);
-        margin-bottom: $small-spacing;
+        margin-bottom: $base-spacing;
     }
 }
 
@@ -141,6 +141,6 @@
     .release-preview {
         @include span-columns(2);
         @include omega(3n);
-        margin-bottom: $small-spacing;
+        margin-bottom: $base-spacing;
     }
 }

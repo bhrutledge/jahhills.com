@@ -6,11 +6,11 @@ body {
 }
 
 .container-section {
-    margin-bottom: $base-spacing * 2;
+    margin-bottom: $large-spacing * 2;
 }
 
 .container-header {
-    margin-bottom: $small-spacing;
+    margin-bottom: $base-spacing;
 }
 
 h1,
@@ -23,7 +23,7 @@ h6 {
     font-family: $heading-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    margin: 0 0 $small-spacing;
+    margin: 0 0 $base-spacing;
 
     &.content-title a {
         text-decoration: none;
@@ -46,7 +46,7 @@ h2 {
 
 
 p, ul, ol, figure {
-    margin: 0 0 $small-spacing;
+    margin: 0 0 $base-spacing;
 }
 
 a {
@@ -59,6 +59,11 @@ a {
     &:hover {
         color: $action-color-hover;
     }
+
+    &[class^="socicon"] {
+        padding-right: $small-spacing;
+        text-decoration: none;
+    }
 }
 
 hr {
@@ -66,7 +71,7 @@ hr {
     border-left: 0;
     border-right: 0;
     border-top: 0;
-    margin: $base-spacing 0;
+    margin: $large-spacing 0;
 }
 
 img,
@@ -76,18 +81,18 @@ picture {
 }
 
 article {
-    margin-bottom: $base-spacing;
+    margin-bottom: $large-spacing;
 }
 
 blockquote {
     border-left: 1px solid $base-border-color;
-    margin: 0 0 $small-spacing;
-    padding: 0 $small-spacing / 2;
+    margin: 0 0 $base-spacing;
+    padding: 0 $small-spacing;
 }
 
 .citation {
-    margin: -$small-spacing $small-spacing 0 0;
-    padding: ($small-spacing / 2) 0;
+    margin: -$base-spacing $base-spacing 0 0;
+    padding: $small-spacing 0;
     text-align: right;
 
     cite {
@@ -117,7 +122,7 @@ article ul {
         &::before {
             content: counter(li) ".";
             display: table-cell;
-            padding-right: $small-spacing / 4;
+            padding-right: $small-spacing / 2;
             text-align: right;
         }
     }
