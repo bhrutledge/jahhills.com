@@ -137,12 +137,6 @@ body {
   font-size: 1em;
   line-height: 1.5; }
 
-.container-section {
-  margin-bottom: 6rem; }
-
-.container-header {
-  margin-bottom: 1.5rem; }
-
 h1,
 h2,
 h3,
@@ -243,7 +237,6 @@ html {
 
 header.navigation {
   background-color: transparent;
-  margin-bottom: 3rem;
   padding: 0.75rem 0;
   width: 100%;
   z-index: 999; }
@@ -387,6 +380,36 @@ header.navigation {
     height: 100%;
     width: 100%; }
 
+.hero {
+  align-items: center;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: none;
+  display: block;
+  display: flex;
+  justify-content: center;
+  min-height: 18rem;
+  padding: 1.5rem 0;
+  text-decoration: none; }
+  @media screen and (min-width: 850px) {
+    .hero {
+      background-size: cover;
+      background-position: center; } }
+  .hero-content {
+    font-family: "Arial Black", "Arial Bold", Gadget, "Arial", sans-serif;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center; }
+    @media screen and (max-width: 599px) {
+      .hero-content {
+        font-size: 0.75019em; } }
+    @media screen and (min-width: 850px) {
+      .hero-content {
+        text-align: right; } }
+    @media screen and (min-width: 1080px) {
+      .hero-content {
+        width: 972px; } }
+
 .container {
   max-width: 90%;
   margin-left: auto;
@@ -395,6 +418,13 @@ header.navigation {
     clear: both;
     content: "";
     display: table; }
+
+main .container {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+
+.container-header {
+  margin-bottom: 1.5rem; }
 
 .navigation-page .container-header {
   display: none; }

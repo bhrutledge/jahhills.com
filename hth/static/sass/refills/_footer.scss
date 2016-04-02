@@ -22,7 +22,7 @@
     }
 }
 
-@include media($large-screen-up) {
+@include media($large-screen) {
     .footer-links {
         @include span-columns(2);
         @include omega(3n);

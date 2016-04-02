@@ -4,13 +4,13 @@
 {% block main_class %}navigation-page{% endblock %}
 
 {% block main_content %}
-<article id="upcoming" class="container-section">
+<article id="upcoming" class="container">
     <h1 class="container-header">Shows</h1>
 
     {% include "shows/_gig_upcoming.html" with gig_list=gig_list.upcoming %}
 </article>
 
-<article id="past" class="container-section">
+<article id="past" class="container">
     <h2>Past Shows</h2>
 
     {% for gig in gig_list.past %}

@@ -31,10 +31,9 @@
         </div>
     </header>
 
-    <!-- Not using <main> because Validator SAC throws an error -->
-    <div class="container {% block main_class %}{% endblock %}" role="main">
+    <main class="{% block main_class %}{% endblock %}">
     {% block main_content %}{% endblock %}
-    </div>
+    </main>
 
     <footer id="more" class="container footer" role="contentinfo">
         <section>

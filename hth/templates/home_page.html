@@ -2,35 +2,46 @@
 
 {% block main_content %}
 
-<section id="banner" class="container-section">
+<a href="https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out" class="hero" style="background-image: url('/static/img/abistfo_hero.jpg')">
+    <div class="hero-content">
+        <span style="color: white; font-size: 200%; line-height: 1">OUT APRIL 12, 2016</span>
+        <span style="color: black; font-size: 150%; line-height: 1"><br>A BAND IS SOMETHING TO FIGURE OUT</span>
+        <span style="color: black"><br>CLICK HERE TO HEAR TWO SONGS<br>AND PRE-ORDER</span>
+        <span style="color: white"><br>CD / DIGITAL / 180 GRAM VINYL</span>
+    </div>
+</a>
+
+{% comment %}
+<section id="banner" class="container">
     <figure>
         <a href="https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out">
             <img src="http://hallelujahthehills.com/files/images/abistfo_banner.jpg" alt="" style="width: 100%"/>
         </a>
     </figure>
 </section>
+{% endcomment %}
 
-<section id="shows" class="container-section">
+<section id="shows" class="container">
     <h2><a href="{% url "gig_list" %}">Shows</a></h2>
 
     {% include "shows/_gig_upcoming.html" %}
 </section>
 
-<section id="news" class="container-section">
+<section id="news" class="container">
     <h2><a href="{% url "post_list" %}">News</a></h2>
 
     {% include "news/_post_highlight.html" %}
 </section>
 
 {% comment %}
-<section id="music" class="container-section">
+<section id="music" class="container">
     <h2><a href="{% url "release_list" %}">Music</a></h2>
 
     {% include "music/_release_highlight.html" %}
 </section>
 {% endcomment %}
 
-<section id="videos" class="container-section">
+<section id="videos" class="container">
     <h2><a href="{% url "video_list" %}">Video</a></h2>
 
     {% include "music/_video_highlight.html" %}

@@ -7,16 +7,24 @@
 @import "refills/navigation";
 @import "refills/footer";
 @import "refills/embed-responsive";
+@import "refills/hero";
 
 
 .container {
     @include outer-container;
 }
 
-.navigation-page {
-    .container-header {
-        display: none;
-    }
+main .container {
+    margin-top: $large-spacing;
+    margin-bottom: $large-spacing;
+}
+
+.container-header {
+    margin-bottom: $base-spacing;
+}
+
+.navigation-page .container-header {
+    display: none;
 }
 
 .content-feature {
@@ -65,7 +73,7 @@
     }
 }
 
-@include media($medium-screen-up) {
+@include media($medium-screen) {
     .gig-date {
         @include span-columns(1);
     }
@@ -109,7 +117,7 @@
     }
 }
 
-@include media($large-screen-up) {
+@include media($large-screen) {
     .content-gallery {
         .lyrics, .press, .post {
             @include span-columns(3);
@@ -126,16 +134,14 @@
     }
 }
 
-@include media($xlarge-screen-up) {
-    $local-max-width: $xlarge-screen * $max-width / 100%;
-
-    // Hide visual-grid, because it won't scale with the local-max-width
+@include media($xlarge-screen) {
+    // Hide visual-grid, because it won't scale with the xlarge-max-width
     body:before {
         display: none;
     }
 
     .container {
-        @include outer-container($local-max-width);
+        @include outer-container($xlarge-max-width);
     }
 
     .release-preview {

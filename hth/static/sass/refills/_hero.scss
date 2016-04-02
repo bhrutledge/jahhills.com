@@ -1,0 +1,36 @@
+.hero {
+    align-items: center;
+    background-position: right;
+    background-repeat: no-repeat;;
+    background-size: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+    min-height: $base-spacing * 12;
+    padding: $base-spacing 0;
+    text-decoration: none;
+
+    @include media($large-screen) {
+        background-size: cover;
+        background-position: center;;
+    }
+
+    &-content {
+        font-family: $heading-font-family;
+        margin: 0 auto;
+        width: $max-width;
+        text-align: center;
+
+        @include media($small-screen-only) {
+            font-size: modular-scale(-1);
+        }
+
+        @include media($large-screen) {
+            text-align: right;
+        }
+
+        @include media($xlarge-screen) {
+            width: $xlarge-max-width;
+        }
+    }
+}
