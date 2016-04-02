@@ -37,7 +37,6 @@ header.navigation {
             &:focus,
             &:hover {
                 color: $navigation-color-hover;
-                text-decoration: underline;
             }
         }
     }
@@ -138,10 +137,6 @@ header.navigation {
 
         &.is-active a {
             text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
     }
 }

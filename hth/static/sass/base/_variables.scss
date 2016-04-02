@@ -17,14 +17,14 @@ $base-z-index: 0;
 // Colors
 $blue: #06c;
 $dark-gray: #333;
-$medium-gray: #888;
+$medium-gray: #999;
 $light-gray: #ddd;
 
 // Font Colors
 $base-font-color: $dark-gray;
 $heading-color: black;
 $action-color: black;
-$action-color-hover: black;
+$action-color-hover: lighten($action-color, 40%);
 
 // Border
 $base-border-color: $light-gray;
