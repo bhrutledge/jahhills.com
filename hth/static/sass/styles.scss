@@ -68,14 +68,14 @@
 }
 
 .gig {
-    @include clearfix;
-    margin-bottom: $base-spacing;
-
-    &:last-child {
-        margin-bottom: -$base-spacing;
-    }
-
     @include media($small-screen-only) {
+        @include clearfix;
+        margin-bottom: $base-spacing;
+
+        &:last-child {
+            margin-bottom: -$base-spacing;
+        }
+
         &-date {
             @include span-columns(2);
         }
@@ -87,17 +87,42 @@
     }
 
     @include media($medium-screen) {
+        @at-root &-list {
+            display: table;
+            width: 100%;
+
+            .content-section {
+                display: table-row-group;
+
+            }
+
+            h2 {
+                white-space: nowrap;
+            }
+        }
+
+        display: table-row;
+
+        > [class^="gig"] {
+            display: table-cell;
+            padding: 0 $small-spacing $base-spacing 0;
+        }
+
         &-date {
-            @include span-columns(1);
+            width: 15%;
         }
 
         &-venue {
-            @include span-columns(2);
+            width: 25%;
         }
 
-        &-info {
-            @include span-columns(3);
-            @include omega;
+        &-description {
+            width: 50%;
+        }
+
+        &-details {
+            width: 10%;
+            padding-right: 0;
         }
     }
 }

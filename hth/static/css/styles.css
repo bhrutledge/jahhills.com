@@ -465,15 +465,15 @@ header.navigation {
       .content-gallery .lyrics:nth-child(2n+1), .content-gallery .press:nth-child(2n+1), .content-gallery .post:nth-child(2n+1) {
         clear: left; } }
 
-.gig {
-  margin-bottom: 1.5rem; }
-  .gig::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .gig:last-child {
-    margin-bottom: -1.5rem; }
-  @media screen and (max-width: 599px) {
+@media screen and (max-width: 599px) {
+  .gig {
+    margin-bottom: 1.5rem; }
+    .gig::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .gig:last-child {
+      margin-bottom: -1.5rem; }
     .gig-date {
       float: left;
       display: block;
@@ -489,29 +489,28 @@ header.navigation {
       margin-right: 0; }
       .gig-venue:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
+  .gig {
+    display: table-row; }
+    .gig-list {
+      display: table;
+      width: 100%; }
+      .gig-list .content-section {
+        display: table-row-group; }
+      .gig-list h2 {
+        white-space: nowrap; }
+    .gig > [class^="gig"] {
+      display: table-cell;
+      padding: 0 0.75rem 1.5rem 0; }
     .gig-date {
-      float: left;
-      display: block;
-      margin-right: 4.82916%;
-      width: 12.64237%; }
-      .gig-date:last-child {
-        margin-right: 0; }
+      width: 15%; }
     .gig-venue {
-      float: left;
-      display: block;
-      margin-right: 4.82916%;
-      width: 30.11389%; }
-      .gig-venue:last-child {
-        margin-right: 0; }
-    .gig-info {
-      float: left;
-      display: block;
-      margin-right: 4.82916%;
-      width: 47.58542%;
-      margin-right: 0; }
-      .gig-info:last-child {
-        margin-right: 0; } }
+      width: 25%; }
+    .gig-description {
+      width: 50%; }
+    .gig-details {
+      width: 10%;
+      padding-right: 0; } }
 
 @media screen and (min-width: 600px) and (max-width: 1079px) {
   .release-preview {
