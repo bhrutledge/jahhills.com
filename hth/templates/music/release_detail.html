@@ -4,14 +4,14 @@
 {% block title %}{{ release.title }} | {{ block.super }}{% endblock %}
 
 {% block main_content %}
-<article class="container content release">
+<article class="container content release release-detail">
     <header class="container-header">
         <h1 class="content-title">{{ release.title }}</h1>
         <p class="content-subtitle">{{ release.date|date }}</p>
     </header>
 
     {% if release.cover_url %}
-    <div class="content-feature release-cover">
+    <div class="release-cover">
         <img src="{% cloudinary_url release.cover_url width="480" crop="fill" type="fetch" %}" alt="Cover art" />
         {{ release.player_code|safe }}
     </div>

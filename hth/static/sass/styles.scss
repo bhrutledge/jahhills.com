@@ -12,41 +12,59 @@
 
 .container {
     @include outer-container;
+
+    main & {
+        margin-top: $large-spacing;
+        margin-bottom: $large-spacing;
+    }
+
+    &-header {
+        margin-bottom: $base-spacing;
+
+        .navigation-page & {
+            display: none;
+        }
+    }
+
+    @include media($xlarge-screen) {
+        @include outer-container($xlarge-max-width);
+
+        // Hide visual-grid, because it won't scale with the xlarge-max-width
+        @at-root body:before {
+            display: none;
+        }
+    }
 }
 
-main .container {
-    margin-top: $large-spacing;
-    margin-bottom: $large-spacing;
-}
+.content {
+    &-feature {
+        margin-bottom: $base-spacing;
+    }
 
-.container-header {
-    margin-bottom: $base-spacing;
-}
+    &-subtitle {
+        margin-top: -$base-spacing;
+    }
 
-.navigation-page .container-header {
-    display: none;
-}
+    &-section {
+        margin: $large-spacing 0;
+    }
 
-.content-feature {
-    margin-bottom: $base-spacing;
-}
+    &-gallery {
+        @include clearfix;
+        margin-bottom: -$large-spacing;
 
-.content-subtitle {
-    margin-top: -$base-spacing;
-}
+        .content + & {
+            border-top: $base-border;
+            padding-top: $large-spacing;
+        }
 
-.content-section {
-    margin: $large-spacing 0;
-}
-
-.content-gallery {
-    @include clearfix;
-    margin-bottom: -$large-spacing;
-}
-
-.content + .content-gallery {
-    border-top: $base-border;
-    padding-top: $large-spacing;
+        @include media($large-screen) {
+            .lyrics, .press, .post {
+                @include span-columns(3);
+                @include omega(2n);
+            }
+        }
+    }
 }
 
 .gig {
@@ -56,44 +74,50 @@ main .container {
     &:last-child {
         margin-bottom: -$base-spacing;
     }
+
+    @include media($small-screen-only) {
+        &-date {
+            @include span-columns(2);
+        }
+
+        &-venue {
+            @include span-columns(4);
+            @include omega;
+        }
+    }
+
+    @include media($medium-screen) {
+        &-date {
+            @include span-columns(1);
+        }
+
+        &-venue {
+            @include span-columns(2);
+        }
+
+        &-info {
+            @include span-columns(3);
+            @include omega;
+        }
+    }
 }
 
-#about {
-    text-align: center;
-}
-
-@include media($small-screen-only) {
-    .gig-date {
-        @include span-columns(2);
-    }
-
-    .gig-venue {
-        @include span-columns(4);
-        @include omega;
-    }
-}
-
-@include media($medium-screen) {
-    .gig-date {
-        @include span-columns(1);
-    }
-
-    .gig-venue {
-        @include span-columns(2);
-    }
-
-    .gig-info {
+.release-preview {
+    @include media($medium-large-screen) {
         @include span-columns(3);
-        @include omega;
+        @include omega(2n);
+        margin-bottom: $base-spacing;
     }
 
-    .video-preview {
+    @include media($xlarge-screen) {
         @include span-columns(2);
         @include omega(3n);
         margin-bottom: $base-spacing;
     }
+}
 
-    .release.content-highlight {
+.release.content-highlight {
+    @include media($medium-screen) {
         @include clearfix;
 
         .release-cover {
@@ -105,48 +129,30 @@ main .container {
             @include omega;
         }
     }
-
-    @include direction-context(right-to-left) {
-        .content-feature.release-cover {
-            @include span-columns(3);
-        }
-    }
-
-    .release-videos {
-        clear: both;
-    }
 }
 
-@include media($large-screen) {
-    .content-gallery {
-        .lyrics, .press, .post {
-            @include span-columns(3);
-            @include omega(2n);
+.release-detail {
+    @include media($medium-screen) {
+        .release-cover {
+            @include direction-context(right-to-left) {
+                @include span-columns(3);
+            }
+        }
+
+        .release-videos {
+            clear: both;
         }
     }
 }
 
-@include media($medium-large-screen) {
-    .release-preview {
-        @include span-columns(3);
-        @include omega(2n);
-        margin-bottom: $base-spacing;
-    }
-}
-
-@include media($xlarge-screen) {
-    // Hide visual-grid, because it won't scale with the xlarge-max-width
-    body:before {
-        display: none;
-    }
-
-    .container {
-        @include outer-container($xlarge-max-width);
-    }
-
-    .release-preview {
+.video-preview {
+    @include media($medium-screen) {
         @include span-columns(2);
         @include omega(3n);
         margin-bottom: $base-spacing;
     }
+}
+
+#about {
+    text-align: center;
 }
