@@ -1,4 +1,7 @@
 <article class="content content-highlight post">
     {% include "news/_post_header.html" %}
-    {{ post.body|safe }}
+
+    <div class="content-text">
+        {{ post.body|safe }}
+    </div>
 </article>

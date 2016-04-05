@@ -1,4 +1,8 @@
 <article class="content content-highlight video">
     {% include "music/_video_embed.html" %}
-    {% include "music/_video_header.html" %}
+    {% include "music/_video_header.html" with show_release=True %}
+
+    <div class="content-text">
+        {{ video.description|safe }}
+    </div>
 </article>

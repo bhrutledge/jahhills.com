@@ -4,18 +4,18 @@
 
 {% block main_content %}
 <article class="container content release">
-    <header class="container-header">
-        <h1 class="content-title">{{ release.title }}</h1>
-    </header>
+    <h1 class="container-header content-header content-title">
+        {{ release.title }}
+    </h1>
 
     <div class="content-gallery">
         {% for song in release.tracks %}
         <article class="content lyrics">
-            <header>
-                <h3 class="content-title">{{ song.title }}</h3>
-            </header>
+            <h3 class="content-header content-title">{{ song.title }}</h3>
 
-            {{ song.lyrics|safe }}
+            <div class="content-text">
+                {{ song.lyrics|safe }}
+            </div>
         </article>
         {% endfor %}
     </div>

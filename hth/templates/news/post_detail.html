@@ -4,11 +4,13 @@
 
 {% block main_content %}
 <article class="container content post">
-    <header class="container-header">
+    <header class="container-header content-header">
         <h1 class="content-title">{{ post.title }}</h1>
         <p class="content-subtitle">{{ post.publish_on|date }}</p>
     </header>
 
-    {{ post.body|safe }}
+    <div class="content-text">
+        {{ post.body|safe }}
+    </div>
 </article>
 {% endblock %}

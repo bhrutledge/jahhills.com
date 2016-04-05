@@ -49,6 +49,11 @@
         margin: $large-spacing 0;
     }
 
+    &-header,
+    &-text {
+        max-width: $base-line-length;
+    }
+
     &-gallery {
         @include clearfix;
         margin-bottom: -$large-spacing;
@@ -117,11 +122,11 @@
         }
 
         &-description {
-            width: 50%;
+            width: 40%;
         }
 
         &-details {
-            width: 10%;
+            width: 20%;
             padding-right: 0;
         }
     }

@@ -1,6 +1,12 @@
-<header>
+<header class="content-header">
     <h3 class="content-title">
         <a href="{{ video.get_absolute_url }}">{{ video.title }}</a>
     </h3>
     <p class="content-subtitle">{{ video.publish_on|date }}</p>
+
+    {% if show_release and video.release %}
+    <p class="content-subtitle">
+        from <a href="{{ video.release.get_absolute_url }}">{{ video.release.title }}</a>
+    </p>
+    {% endif %}
 </header>

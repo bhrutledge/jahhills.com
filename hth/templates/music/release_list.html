@@ -14,14 +14,16 @@
         <article class="content release release-preview">
             {% include "music/_release_cover.html" %}
 
-            <header>
+            <header class="content-header">
                 <h3 class="content-title">
                     <a href="{{ release.get_absolute_url }}">{{ release.title }}</a>
                 </h3>
                 <p class="content-subtitle">{{ release.date|date:"M Y" }}</p>
             </header>
 
-            {{ release.description|safe }}
+            <div class="content-text">
+                {{ release.description|safe }}
+            </div>
         </article>
         {% endfor %}
     </div>

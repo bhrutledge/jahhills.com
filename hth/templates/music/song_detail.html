@@ -4,7 +4,7 @@
 
 {% block main_content %}
 <article class="container content song">
-    <header class="container-header">
+    <header class="container-header content-header">
         <h1 class="content-title">{{ song.title }}</h1>
 
         {% if song.release %}
@@ -15,19 +15,26 @@
     </header>
 
     {{ song.player_code|safe }}
-    {{ song.description|safe }}
+
+    <div class="content-text">
+        {{ song.description|safe }}
+    </div>
 
     {% if song.credits %}
-    <section class="content-section">
+    <section class="content-section content-text">
         <h2>Credits</h2>
-        {{ song.credits|safe }}
+        <div class="content-text">
+            {{ song.credits|safe }}
+        </div>
     </section>
     {% endif %}
 
     {% if song.lyrics %}
-    <section class="content-section">
+    <section class="content-section content-text">
         <h2>Lyrics</h2>
-        {{ song.lyrics|safe }}
+        <div class="content-text">
+            {{ song.lyrics|safe }}
+        </div>
     </section>
     {% endif %}
 </article>

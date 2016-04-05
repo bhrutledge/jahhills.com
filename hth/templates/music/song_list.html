@@ -8,15 +8,13 @@
 
     {% for song in song_list %}
     <article class="content song">
-        <header>
-            <h3 class="content-title">
-                {% if song.has_details %}
-                <a href="{{ song.get_absolute_url }}">{{ song.title }}</a>
-                {% else %}
-                {{ song.title }}
-                {% endif %}
-            </h3>
-        </header>
+        <h3 class="content-header content-title">
+            {% if song.has_details %}
+            <a href="{{ song.get_absolute_url }}">{{ song.title }}</a>
+            {% else %}
+            {{ song.title }}
+            {% endif %}
+        </h3>
     </article>
     {% endfor %}
 </article>

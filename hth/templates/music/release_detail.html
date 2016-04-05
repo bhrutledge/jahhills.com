@@ -5,7 +5,7 @@
 
 {% block main_content %}
 <article class="container content release release-detail">
-    <header class="container-header">
+    <header class="container-header content-header">
         <h1 class="content-title">{{ release.title }}</h1>
         <p class="content-subtitle">{{ release.date|date }}</p>
     </header>
@@ -17,7 +17,9 @@
     </div>
     {% endif %}
 
-    {{ release.description|safe }}
+    <div class="content-text">
+        {{ release.description|safe }}
+    </div>
 
     {# TODO: Does this use two queries? #}
 
@@ -25,7 +27,7 @@
     <section class="content-section release-tracks">
         <h2>Tracks</h2>
 
-        <ol>
+        <ol class="content-text">
             {% for song in release.tracks %}
             <li>
                 {% if song.has_details %}
@@ -64,7 +66,10 @@
     {% if release.credits %}
     <section class="content-section release-credits">
         <h2>Credits</h2>
-        {{ release.credits|safe }}
+
+        <div class="content-text">
+            {{ release.credits|safe }}
+        </div>
     </section>
     {% endif %}
 

@@ -6,7 +6,7 @@
 <article class="container content video">
     {% include "music/_video_embed.html" %}
 
-    <header class="container-header">
+    <header class="container-header content-header">
         <h1 class="content-title">{{ video.title }}</h1>
         <p class="content-subtitle">{{ video.publish_on|date }}</p>
 
@@ -17,12 +17,16 @@
         {% endif %}
     </header>
 
-    {{ video.description|safe }}
+    <div class="content-text">
+        {{ video.description|safe }}
+    </div>
 
     {% if video.credits %}
     <section class="content-section">
         <h2>Credits</h2>
-        {{ video.credits|safe }}
+        <div class="content-text">
+            {{ video.credits|safe }}
+        </div>
     </section>
     {% endif %}
 </article>
