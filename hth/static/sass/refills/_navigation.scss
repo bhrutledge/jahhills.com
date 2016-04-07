@@ -16,7 +16,7 @@ header.navigation {
     .navigation-wrapper {
         @include clearfix;
         font-family: $heading-font-family;
-        font-weight: bold;
+        font-weight: $heading-font-weight;
         text-transform: uppercase;
         position: relative;
         z-index: 9999;
@@ -27,7 +27,7 @@ header.navigation {
         font-size: $logo-font-size;
         line-height: 1;
         margin-bottom: 0;
-        max-width: 8em;
+        max-width: 7em;
 
         a {
             color: $heading-color;

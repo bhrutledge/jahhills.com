@@ -1,6 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
 // Typography
-$base-font-family: $lucida-grande;
-$heading-font-family: "Arial Black", "Arial Bold", Gadget, "Arial", sans-serif;
+$base-font-family: $helvetica;
+$heading-font-family: "Arial Black", $helvetica;
+$heading-font-weight: 900;
 $base-font-size: 1em;
 $base-line-height: 1.6;
 $base-line-length: 50rem;

@@ -3,18 +3,9 @@
     padding: $base-spacing 0 $large-spacing;
     position: relative;
 
-    li {
+    &-links li {
+        display: inline;
         list-style: none;
-    }
-
-    nav {
-        font-family: $heading-font-family;
-        li {
-            margin-bottom: $small-spacing;
-        }
-    }
-
-    [class^="socicon"] {
         padding-right: $small-spacing;
 
         &:last-child {
