@@ -13,7 +13,9 @@
     {% if release.cover_url %}
     <div class="release-cover">
         <img src="{% cloudinary_url release.cover_url width="480" crop="fill" type="fetch" %}" alt="Cover art" />
-        {{ release.player_code|safe }}
+        <div class="embed">
+            {{ release.player_code|safe }}
+        </div>
     </div>
     {% endif %}
 

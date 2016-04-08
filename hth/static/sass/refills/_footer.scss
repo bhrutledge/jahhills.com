@@ -1,7 +1,11 @@
 .footer {
     border-top: $base-border;
-    padding: $base-spacing 0 $large-spacing;
+    padding: $base-spacing 0 0;
     position: relative;
+
+    &-links {
+        margin-bottom: $large-spacing;
+    }
 
     &-links li {
         display: inline;

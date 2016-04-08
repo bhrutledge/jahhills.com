@@ -1,21 +1,35 @@
-body {
-    color: $base-font-color;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+.size {
+    &-xlarge {
+        font-size: modular-scale(2);
+        line-height: modular-scale(-2, $base-line-height);
+    }
+
+    &-large {
+        font-size: modular-scale(1);
+        line-height: modular-scale(-1, $base-line-height);
+    }
+
+    &-medium {
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+    }
+
+    &-small {
+        font-size: modular-scale(-1);
+        line-height: modular-scale(1, $base-line-height);
+    }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+body {
+    @extend .size-medium;
+    color: $base-font-color;
+    font-family: $base-font-family;
+}
+
+.heading {
     color: $heading-color;
     font-family: $heading-font-family;
     font-weight: $heading-font-weight;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
     margin: 0 0 $base-spacing;
 
     &.content-title a {
@@ -24,21 +38,28 @@ h6 {
 }
 
 h1 {
-    font-size: modular-scale(1);
+    @extend .heading;
+    @extend .size-large;
 }
 
 h2 {
+    @extend .heading;
+    @extend .size-medium;
     text-transform: uppercase;
+}
+
+h3, h4, h5, h6 {
+    @extend .heading;
+    @extend .size-medium;
 }
 
 .content-highlight {
     .content-title {
-        font-size: modular-scale(1);
+        @extend .size-large;
     }
 }
 
-
-p, ul, ol, figure {
+p, ul, ol, figure, blockquote, .embed {
     margin: 0 0 $base-spacing;
 }
 
@@ -78,7 +99,6 @@ article {
 
 blockquote {
     border-left: 1px solid $base-border-color;
-    margin: 0 0 $base-spacing;
     padding: 0 $small-spacing;
 }
 

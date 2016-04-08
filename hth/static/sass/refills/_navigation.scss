@@ -47,7 +47,7 @@ header.navigation {
         font-size: $tagline-font-size;
         text-transform: none;
         font-weight: normal;
-        line-height: strip-units($logo-font-size / $tagline-font-size);
+        line-height: modular-scale(1, $base-line-height);
 
         @include media($horizontal-bar-mode) {
             display: block;

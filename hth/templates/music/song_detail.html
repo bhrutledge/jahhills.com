@@ -14,7 +14,9 @@
         {% endif %}
     </header>
 
-    {{ song.player_code|safe }}
+    <div class="embed">
+        {{ song.player_code|safe }}
+    </div>
 
     <div class="content-text">
         {{ song.description|safe }}
