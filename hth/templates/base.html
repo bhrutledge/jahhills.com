@@ -44,17 +44,16 @@
             <div class="footer-links">
                 <h2>Elsewhere</h2>
                 <ul>
-                    {# TODO: Include and padding #}
-                    <li><a class="icon" href="http://hallelujahthehills.bandcamp.com/" title="Bandcamp"><i class="socicon-bandcamp"></i></a></li>
-                    <li><a class="icon" href="https://soundcloud.com/hallelujahthehills" title="SoundCloud"><i class="socicon-soundcloud"></i></a></li>
-                    <li><a class="icon" href="https://play.spotify.com/artist/1Hz1wld4kWf47t3kIGKoDi" title="Spotify"><i class="socicon-spotify"></i></a></li>
-                    <li><a class="icon" href="https://itunes.apple.com/us/artist/hallelujah-the-hills/id255451180" title="iTunes"><i class="socicon-apple"></i></a></li>
+                    {% include "_social_link.html" with icon_url="http://hallelujahthehills.bandcamp.com/" icon_title="Bandcamp" icon_name="bandcamp" %}
+                    {% include "_social_link.html" with icon_url="https://soundcloud.com/hallelujahthehills" icon_title="SoundCloud" icon_name="soundcloud" %}
+                    {% include "_social_link.html" with icon_url="https://play.spotify.com/artist/1Hz1wld4kWf47t3kIGKoDi" icon_title="Spotify" icon_name="spotify" %}
+                    {% include "_social_link.html" with icon_url="https://itunes.apple.com/us/artist/hallelujah-the-hills/id255451180" icon_title="iTunes" icon_name="apple" %}
                 </ul>
                 <ul>
-                    <li><a class="icon" href="http://www.facebook.com/hallelujahthehills" title="Facebook"><i class="socicon-facebook"></i></a></li>
-                    <li><a class="icon" href="http://www.twitter.com/JahHills" title="Twitter"><i class="socicon-twitter"></i></a></li>
-                    <li><a class="icon" href="https://www.instagram.com/hallelujahthehills/" title="Instagram"><i class="socicon-instagram"></i></a></li>
-                    <li><a class="icon" href="https://github.com/bhrutledge/jahhills.com" title="GitHub"><i class="socicon-github"></i></a></li>
+                    {% include "_social_link.html" with icon_url="http://www.facebook.com/hallelujahthehills" icon_title="Facebook" icon_name="facebook" %}
+                    {% include "_social_link.html" with icon_url="http://www.twitter.com/JahHills" icon_title="Twitter" icon_name="twitter" %}
+                    {% include "_social_link.html" with icon_url="https://www.instagram.com/hallelujahthehills/" icon_title="Instagram" icon_name="instagram" %}
+                    {% include "_social_link.html" with icon_url="https://github.com/bhrutledge/jahhills.com" icon_title="GitHub" icon_name="github" %}
                 </ul>
             </div>
 

@@ -169,7 +169,7 @@ a {
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
     color: #666666; }
-  a.icon {
+  .icon a {
     text-decoration: none; }
 
 hr {
