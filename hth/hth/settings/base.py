@@ -59,7 +59,7 @@ WSGI_APPLICATION = 'hth.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': site_root('db.sqlite3'),
+        'NAME': site_root('jahhills.sqlite3'),
     }
 }
 
