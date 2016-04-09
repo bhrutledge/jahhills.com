@@ -9,13 +9,18 @@
     <link rel="stylesheet" href="{% static "css/normalize.css" %}">
     <link rel="stylesheet" href="{% static "css/styles.css" %}">
     <link rel="stylesheet" href="{% static "css/socicon.css" %}">
+
+    {% block head_css %}{% endblock %}
 </head>
 
 <body id="{% block body_id %}hth{% endblock %}">
     <header id="top" class="container navigation" role="banner">
         <div class="navigation-wrapper">
             <h1 class="logo"><a href="{% url "home_page" %}">Hallelujah The Hills</a></h1>
-            <div class="tagline">Indie rock from Boston, MA. Super-charged American favorites since 2005.</div>
+            <div class="tagline">
+                American rock band from Boston, MA. We're just like you.
+                {# Indie rock from Boston, MA. Super-charged American favorites since 2005. #}
+            </div>
             <nav role="navigation">
                 <h2 id="js-mobile-menu" class="navigation-menu-button"><a href="javascript:void(0)">Nav</a></h2>
                 <ul id="js-navigation-menu" class="navigation-menu">
@@ -39,6 +44,7 @@
             <div class="footer-links">
                 <h2>Elsewhere</h2>
                 <ul>
+                    {# TODO: Include and padding #}
                     <li><a class="icon" href="http://hallelujahthehills.bandcamp.com/" title="Bandcamp"><i class="socicon-bandcamp"></i></a></li>
                     <li><a class="icon" href="https://soundcloud.com/hallelujahthehills" title="SoundCloud"><i class="socicon-soundcloud"></i></a></li>
                     <li><a class="icon" href="https://play.spotify.com/artist/1Hz1wld4kWf47t3kIGKoDi" title="Spotify"><i class="socicon-spotify"></i></a></li>

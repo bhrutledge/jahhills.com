@@ -1,8 +1,19 @@
 {% extends "base.html" %}
+{% load cloudinary %}
+
+{% block head_css %}
+{{ block.super }}
+
+<style type="text/css">
+    .hero {
+        background-image: url({% cloudinary_url "abistfo_background.jpg" width="1280" height="320" crop="fill" gravity="custom" %});
+        height: 320px;
+    }
+</style>
+{% endblock %}
 
 {% block main_content %}
-
-<a href="https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out" class="hero" style="background-image: url('/static/img/abistfo_hero.jpg')">
+<a href="https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out" class="hero">
     <div class="hero-content">
         <span style="color: white;" class="size-xlarge">OUT APRIL 12, 2016</span>
         <span style="color: black;" class="size-large"><br>A BAND IS SOMETHING TO FIGURE OUT</span>
@@ -10,16 +21,6 @@
         <span style="color: white"><br>CD / DIGITAL / VINYL</span>
     </div>
 </a>
-
-{% comment %}
-<section id="banner" class="container">
-    <figure>
-        <a href="https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out">
-            <img src="http://hallelujahthehills.com/files/images/abistfo_banner.jpg" alt="" style="width: 100%"/>
-        </a>
-    </figure>
-</section>
-{% endcomment %}
 
 <section id="shows" class="container gig-list">
     <h2><a href="{% url "gig_list" %}">Shows</a></h2>
