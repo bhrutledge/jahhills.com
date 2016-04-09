@@ -3,9 +3,6 @@ header.navigation {
     $navigation-color-hover: $action-color-hover;
     $navigation-color-active: $action-color;
     $navigation-background-color: transparent;
-
-    $logo-font-size: modular-scale(2);
-    $tagline-font-size: modular-scale(-1);
     $horizontal-bar-mode: $large-screen;
 
     background-color: $navigation-background-color;
@@ -23,9 +20,8 @@ header.navigation {
     }
 
     .logo {
+        @extend .size-xlarge;
         float: left;
-        font-size: $logo-font-size;
-        line-height: 1;
         margin-bottom: 0;
         max-width: 7em;
 
@@ -41,13 +37,12 @@ header.navigation {
     }
 
     .tagline {
+        @extend .size-small;
         display: none;
         float: right;
         font-family: $base-font-family;
-        font-size: $tagline-font-size;
         text-transform: none;
         font-weight: normal;
-        line-height: modular-scale(1, $base-line-height);
 
         @include media($horizontal-bar-mode) {
             display: block;
@@ -59,7 +54,7 @@ header.navigation {
     .navigation-menu-button {
         display: block;
         float: right;
-        margin: $logo-font-size 0 0;
+        margin: $base-spacing 0 0;
 
         @include media($horizontal-bar-mode) {
             display: none;
@@ -111,7 +106,6 @@ header.navigation {
     ul li.navigation-link {
         background: $navigation-background-color;
         display: block;
-        line-height: strip-units($logo-font-size);
         overflow: hidden;
         text-align: right;
         width: 100%;

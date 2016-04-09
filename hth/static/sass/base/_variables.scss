@@ -4,8 +4,9 @@
 $base-font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $heading-font-family: "Arial Black", $base-font-family;
 $heading-font-weight: 900;
+
 $base-font-size: 1em;
-$base-line-height: strip-units(modular-scale(2));
+$base-line-height: 1.6;
 $base-line-length: 50rem;
 
 // Other Sizes

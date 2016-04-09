@@ -16,6 +16,11 @@
             padding-right: 0;
         }
     }
+
+    .icon {
+        @extend .size-large;
+        padding-right: $base-spacing;
+    }
 }
 
 @include media($medium-screen-only) {
