@@ -3,3 +3,5 @@ pytz
 cloudinary
 django-embed-video
 django-environ
+gunicorn
+whitenoise

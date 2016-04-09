@@ -61,5 +61,6 @@ docs/_build/
 .bundle
 vendor/bundle
 
+hth/staticfiles
 hth/media
 .env
