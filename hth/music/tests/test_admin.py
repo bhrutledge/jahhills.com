@@ -113,9 +113,6 @@ class SongTestCase(AdminTestCase):
         self.assertIn('First song', self.find_tag('body').text)
         self.assertNotIn('Second song', self.find_tag('body').text)
 
-        self.find_link('First song').click()
-        self.assertIn('First song', self.browser.title)
-
 
 class VideoTestCase(AdminTestCase):
 

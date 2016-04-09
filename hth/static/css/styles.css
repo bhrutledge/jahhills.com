@@ -165,10 +165,11 @@ p, ul, ol, figure, blockquote, .embed {
 
 a {
   color: black;
-  text-decoration: underline;
-  transition: color 150ms ease; }
+  text-decoration: underline; }
   a:active, a:focus, a:hover {
     color: #666666; }
+    a:active img, a:focus img, a:hover img {
+      opacity: .75; }
   .icon a {
     text-decoration: none; }
 
@@ -179,8 +180,9 @@ hr {
   border-top: 0;
   margin: 3.2rem 0; }
 
-img,
-picture {
+iframe, img, picture {
+  background-color: #ddd;
+  display: block;
   margin: 0;
   max-width: 100%; }
 
@@ -573,7 +575,7 @@ header.navigation {
     width: 47.58542%; }
     .release-detail .release-cover:last-child {
       margin-left: 0; }
-  .release-detail .release-videos {
+  .release-detail .release-videos, .release-detail .release-press {
     clear: both; } }
 
 @media screen and (min-width: 600px) {

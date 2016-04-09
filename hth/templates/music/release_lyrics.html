@@ -10,6 +10,7 @@
 
     <div class="content-gallery">
         {% for song in release.tracks %}
+        {% if song.lyrics %}
         <article class="content lyrics">
             <h3 class="content-header content-title">{{ song.title }}</h3>
 
@@ -17,6 +18,7 @@
                 {{ song.lyrics|safe }}
             </div>
         </article>
+        {% endif %}
         {% endfor %}
     </div>
 </article>

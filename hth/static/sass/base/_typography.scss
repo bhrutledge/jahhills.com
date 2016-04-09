@@ -66,12 +66,15 @@ p, ul, ol, figure, blockquote, .embed {
 a {
     color: $action-color;
     text-decoration: underline;
-    transition: color $base-duration $base-timing;
 
     &:active,
     &:focus,
     &:hover {
         color: $action-color-hover;
+
+        img {
+            opacity: .75;
+        }
     }
 
     .icon & {
@@ -87,8 +90,9 @@ hr {
     margin: $large-spacing 0;
 }
 
-img,
-picture {
+iframe, img, picture {
+    background-color: $light-gray;
+    display: block;
     margin: 0;
     max-width: 100%;
 }
