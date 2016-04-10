@@ -1,9 +1,14 @@
 {% extends "base.html" %}
+{% load cloudinary %}
 
 {% block title %}Press | {{ block.super }}{% endblock %}
 {% block main_class %}navigation-page{% endblock %}
 
 {% block main_content %}
+<figure class="hero-img">
+    <img src="{% cloudinary_url "press_banner.jpg" width="1280" height="480" crop="fill" %}" alt="HTH Press">
+</figure>
+
 <article class="container">
     <h1 class="container-header">Press</h1>
 
