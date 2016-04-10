@@ -24,7 +24,7 @@ class VideosTestCase(SeleniumTestCase):
                       self.find_css('.video .credits')[0].text)
 
     def test_videos_displays_published_video_titles(self):
-        self.get_url('/videos')
+        self.get_url('/video')
         self.assertIn('Videos', self.browser.title)
 
         displayed_titles = [x.text for x in self.find_css('.video .title')]

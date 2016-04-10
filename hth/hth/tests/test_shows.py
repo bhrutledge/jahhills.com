@@ -18,8 +18,8 @@ class ShowsTestCase(SeleniumTestCase):
         GigFactory.create_batch(5)
 
     def test_shows_displays_upcoming_gigs_before_past_gigs(self):
-        self.get_url('/shows')
-        self.assertIn('Shows', self.browser.title)
+        self.get_url('/live')
+        self.assertIn('Live', self.browser.title)
 
         from time import sleep
         sleep(10)
@@ -38,7 +38,7 @@ class ShowsTestCase(SeleniumTestCase):
                          upcoming_descriptions + past_descriptions)
 
     def test_shows_displays_details_for_upcoming_gigs(self):
-        self.get_url('/shows')
+        self.get_url('/live')
 
         displayed_details = [x.text for x in self.find_css('.gig .details')]
         upcoming_details = [x.details for x in self.upcoming_gigs]

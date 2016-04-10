@@ -87,29 +87,29 @@ class VideoTestCase(TestCase):
         self.draft = Video.objects.create(title='Draft', slug='draft')
 
     def test_url_uses_slug(self):
-        self.assertEqual(self.publish.get_absolute_url(), '/videos/publish/')
+        self.assertEqual(self.publish.get_absolute_url(), '/video/publish/')
 
     def test_can_view_published_videos(self):
-        response = self.client.get('/videos/publish/')
+        response = self.client.get('/video/publish/')
         video = response.context['video']
         self.assertEquals(self.publish, video)
 
     def test_detail_uses_template(self):
-        response = self.client.get('/videos/publish/')
+        response = self.client.get('/video/publish/')
         self.assertTemplateUsed(response, 'music/video_detail.html')
 
     def test_cant_view_draft_videos(self):
-        response = self.client.get('/videos/draft/')
+        response = self.client.get('/video/draft/')
         self.assertEqual(response.status_code, 404)
 
     def test_list_returns_published_videos(self):
-        response = self.client.get('/videos/')
+        response = self.client.get('/video/')
         video_list = response.context['video_list']
         self.assertIn(self.publish, video_list)
         self.assertNotIn(self.draft, video_list)
 
     def test_list_uses_template(self):
-        response = self.client.get('/videos/')
+        response = self.client.get('/video/')
         self.assertTemplateUsed(response, 'music/video_list.html')
 
 
@@ -142,7 +142,7 @@ class LyricsTestCase(TestCase):
 
     def test_url_uses_slug(self):
         self.assertEqual(self.release.get_lyrics_url(),
-                         '/music/release/lyrics')
+                         '/music/release/lyrics/')
 
     def test_returns_published_tracks(self):
         response = self.client.get(self.release.get_lyrics_url())

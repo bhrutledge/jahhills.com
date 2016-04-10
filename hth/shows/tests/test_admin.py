@@ -81,8 +81,8 @@ class GigTestCase(AdminTestCase):
 
         # He verifies that only the published gigs are visible
 
-        self.get_url('/shows')
-        self.assertIn('Shows', self.browser.title)
+        self.get_url('/live')
+        self.assertIn('Live', self.browser.title)
         self.assertIn('Great Scott', self.find_tag('body').text)
         self.assertIn('Middle East', self.find_tag('body').text)
         self.assertNotIn('Red Star Union', self.find_tag('body').text)

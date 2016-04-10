@@ -156,7 +156,7 @@ class VideoTestCase(AdminTestCase):
 
         # He verifies that only the published video is on the site
 
-        self.get_url('/videos')
+        self.get_url('/video')
         self.assertNotIn('Second video', self.find_tag('body').text)
         self.find_link('First video').click()
         self.assertIn('First video', self.browser.title)
@@ -206,7 +206,7 @@ class VideoTestCase(AdminTestCase):
 
         # He verifies that the published video is on the site
 
-        self.get_url('/videos')
+        self.get_url('/video')
         self.find_link('First video').click()
         self.assertIn('First video', self.browser.title)
 

@@ -23,7 +23,7 @@
 </a>
 
 <section id="shows" class="container gig-list">
-    <h2><a href="{% url "gig_list" %}">Shows</a></h2>
+    <h2><a href="{% url "gig_list" %}">Live</a></h2>
 
     {% include "shows/_gig_upcoming.html" %}
 </section>
@@ -42,7 +42,7 @@
 </section>
 {% endcomment %}
 
-<section id="videos" class="container">
+<section id="video" class="container">
     <h2><a href="{% url "video_list" %}">Video</a></h2>
 
     {% include "music/_video_highlight.html" %}

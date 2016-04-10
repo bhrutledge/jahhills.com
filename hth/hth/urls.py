@@ -2,6 +2,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic.base import RedirectView
 
 from . import views
 
@@ -10,8 +11,15 @@ urlpatterns = [
     url(r'^$', views.HomePageView.as_view(), name='home_page'),
     url(r'^about/$', views.AboutPageView.as_view(), name='about_page'),
     url(r'^news/', include('news.urls')),
-    url(r'^shows/', include('shows.urls')),
+    url(r'^live/', include('shows.urls')),
     url(r'^', include('music.urls')),
+
+    url(r'^calendar',
+        RedirectView.as_view(pattern_name='gig_list', permanent=True)),
+    url(r'^music/releases/(?P<path>.*)',
+        RedirectView.as_view(url='/music/%(path)s', permanent=True)),
+    url(r'^music/songs/(?P<path>.*)',
+        RedirectView.as_view(url='/songs/%(path)s', permanent=True)),
 ]
 
 if settings.MEDIA_URL and settings.MEDIA_ROOT:
