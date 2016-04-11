@@ -26,10 +26,6 @@ $hero-max-width: 1280px;
         width: $max-width;
         text-align: center;
 
-        @include media($small-screen-only) {
-            font-size: modular-scale(-1);
-        }
-
         @include media($large-screen) {
             text-align: right;
         }

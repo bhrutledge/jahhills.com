@@ -110,6 +110,7 @@ header.navigation {
     ul li.navigation-link {
         background: $navigation-background-color;
         display: block;
+        padding-top: $base-spacing;
         overflow: hidden;
         text-align: right;
         width: 100%;
@@ -118,6 +119,7 @@ header.navigation {
         @include media($horizontal-bar-mode) {
             background: transparent;
             display: inline;
+            margin: 0;
             padding-left: $base-spacing;
             width: auto;
         }

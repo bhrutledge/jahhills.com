@@ -91,7 +91,7 @@ hr {
 }
 
 iframe, img, picture {
-    background-color: $light-gray;
+    background-color: lighten($base-border-color, 10%);
     display: block;
     margin: 0;
     max-width: 100%;
