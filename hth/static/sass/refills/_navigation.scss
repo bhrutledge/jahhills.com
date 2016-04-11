@@ -38,14 +38,17 @@ header.navigation {
 
     .tagline {
         @extend .size-small;
-        display: none;
+        height: $base-spacing;
         float: right;
         font-family: $base-font-family;
         text-transform: none;
         font-weight: normal;
 
-        @include media($horizontal-bar-mode) {
-            display: block;
+        &-text {
+            display: none;
+            @include media($medium-screen) {
+                display: block;
+            }
         }
     }
 
@@ -54,7 +57,7 @@ header.navigation {
     .navigation-menu-button {
         display: block;
         float: right;
-        margin: $base-spacing 0 0;
+        margin: 0;
 
         @include media($horizontal-bar-mode) {
             display: none;
@@ -73,6 +76,7 @@ header.navigation {
     // Nav menu
 
     nav {
+        clear: right;
         float: none;
         z-index: 9999999;
 

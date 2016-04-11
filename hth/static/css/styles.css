@@ -256,18 +256,20 @@ header.navigation {
       header.navigation .logo a:focus, header.navigation .logo a:hover {
         color: #666666; }
   header.navigation .tagline {
-    display: none;
+    height: 1.6rem;
     float: right;
     font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     text-transform: none;
     font-weight: normal; }
-    @media screen and (min-width: 850px) {
-      header.navigation .tagline {
-        display: block; } }
+    header.navigation .tagline-text {
+      display: none; }
+      @media screen and (min-width: 600px) {
+        header.navigation .tagline-text {
+          display: block; } }
   header.navigation .navigation-menu-button {
     display: block;
     float: right;
-    margin: 1.6rem 0 0; }
+    margin: 0; }
     @media screen and (min-width: 850px) {
       header.navigation .navigation-menu-button {
         display: none; } }
@@ -276,6 +278,7 @@ header.navigation {
       header.navigation .navigation-menu-button a:focus, header.navigation .navigation-menu-button a:hover {
         color: #666666; }
   header.navigation nav {
+    clear: right;
     float: none;
     z-index: 9999999; }
     @media screen and (min-width: 850px) {

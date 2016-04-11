@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="American indie rock band from Boston, Massachusetts.">
     <title>{% block title %}Hallelujah The Hills{% endblock %}</title>
 
     <link rel="stylesheet" href="{% static "css/normalize.css" %}">
@@ -14,12 +15,11 @@
 </head>
 
 <body id="{% block body_id %}hth{% endblock %}">
-    <header id="top" class="container navigation" role="banner">
+    <header class="container navigation" role="banner">
         <div class="navigation-wrapper">
             <h1 class="logo"><a href="{% url "home_page" %}">Hallelujah The Hills</a></h1>
             <div class="tagline">
-                American rock band from Boston, MA. We're just like you.
-                {# Indie rock from Boston, MA. Super-charged American favorites since 2005. #}
+                <span class="tagline-text"></span>
             </div>
             <nav role="navigation">
                 <h2 id="js-mobile-menu" class="navigation-menu-button"><a href="javascript:void(0)">Nav</a></h2>
@@ -39,7 +39,7 @@
     {% block main_content %}{% endblock %}
     </main>
 
-    <footer id="more" class="container footer" role="contentinfo">
+    <footer class="container footer" role="contentinfo">
         <section>
             <div class="footer-links">
                 <h2>Elsewhere</h2>
@@ -67,7 +67,7 @@
 
             <div class="footer-links">
                 <h2>Mailing List</h2>
-                <form action="http://hallelujahthehills.us7.list-manage.com/subscribe/post?u=dfc947e32e98066f30df4013f&amp;id=a5f8de7ae0" method="post" id="header-list-form">
+                <form action="http://hallelujahthehills.us7.list-manage.com/subscribe/post?u=dfc947e32e98066f30df4013f&amp;id=a5f8de7ae0" method="post">
                     <div style="display: none;">
                         <label>leave this field blank to prove your humanity
                             <input type="text" name="email" value="">
@@ -96,19 +96,25 @@
                 });
             });
 
-            // https://css-tricks.com/snippets/jquery/smooth-scrolling/
-            $('a[href^="#"]:not([href="#"])').click(function(e) {
-                var $target = $(this.hash);
-                if ($target.length) {
-                    e.preventDefault();
+            var taglines = [
+                // "Indie rock from Boston, MA.",
+                // "American rock band from Boston, MA.",
+                "We have the perimeter surrounded.",
+                "I had some post-punk instincts but they weren't specific.",
+                "I wrote some prog rock lyrics that looked like hieroglyphics.",
+                "No more desperate grasping for feelings difficult to put into words.",
+                "Three minute songs at reasonable rates.",
+                "Blowing up ideas with magic markers and drum hits.",
+                "Milking sounds out of our instruments since late 2005.",
+                "As seen On TV's 'America is Hallucinating'.",
+                "Super-charged American favorites since 2005.",
+                "How good? Real good.",
+                "We're just like you."
+            ];
 
-                    $('html, body').animate({
-                        scrollTop: $target.offset().top
-                    });
-
-                    return false;
-                }
-            });
+            $('.tagline-text').text(
+                taglines[Math.floor(Math.random() * taglines.length)]
+            );
         });
     </script>
 </body>
