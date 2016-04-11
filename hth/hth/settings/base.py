@@ -115,4 +115,19 @@ TEMPLATES = [
     },
 ]
 
+
+# Email
+
+vars().update(env.email_url())
+
+ADMINS = [
+    ('Brian', 'bhrutledge@gmail.com'),
+]
+
+DEFAULT_FROM_EMAIL = 'band@hallelujahthehills.com'
+SERVER_EMAIL = env('SERVER_EMAIL')
+
+
+# Secrets
+
 SECRET_KEY = env('SECRET_KEY')
