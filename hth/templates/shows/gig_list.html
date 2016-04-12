@@ -6,8 +6,11 @@
 
 {% block main_content %}
 <figure class="hero-img">
-    <img src="{% cloudinary_url "hth_lilypad_1.jpg" width="1280" height="480" crop="fill" gravity="custom" %}" alt="HTH live" title="Photographer: Sam Quinn">
-    {# <img src="{% cloudinary_url "hth_lilypad_2.jpg" width="1280" height="320" crop="fill" gravity="custom" effect="grayscale" %}" alt="HTH live" title="Photographer: Sam Quinn"> #}
+    <img src="{% cloudinary_url "hth_lilypad_1.jpg" width="1280" height="480" crop="fill" gravity="custom" %}" alt="HTH live">
+    {# <img src="{% cloudinary_url "hth_lilypad_2.jpg" width="1280" height="320" crop="fill" gravity="custom" effect="grayscale" %}" alt="HTH live"> #}
+    <figcaption>
+        <div class="img-credit">Photo courtesy of <a href="http://www.samuelquinn.com/">Samuel Quinn</a></div>
+    </figcaption>
 </figure>
 
 <article class="container content gig-list">

@@ -141,7 +141,7 @@ th {
 .size-medium, body, h2, h3, h4, h5, h6 {
   font-size: 1em;
   line-height: 1.6; }
-.size-small, header.navigation .tagline {
+.size-small, .img-credit, header.navigation .tagline {
   font-size: 0.75019em;
   line-height: 2.1328; }
 
@@ -204,8 +204,11 @@ figure img {
   display: block; }
 
 figcaption {
-  margin: 0.8rem 0;
   text-align: center; }
+
+.img-credit {
+  padding-right: 1.6rem;
+  text-align: right; }
 
 article ol,
 article ul {

@@ -123,8 +123,13 @@ figure {
 }
 
 figcaption {
-    margin: $small-spacing 0;
     text-align: center;
+}
+
+.img-credit {
+    @extend .size-small;
+    padding-right: $base-spacing;
+    text-align: right;
 }
 
 article ol,

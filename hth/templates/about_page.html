@@ -7,8 +7,11 @@
 {% block main_content %}
 <article id="about">
     <figure class="hero-img">
-        <img src="{% cloudinary_url "hth_toast.jpg" width="1280" height="640" crop="fill" gravity="custom" effect="sharpen" %}" alt="HTH press photo" title="Photographer: Courtney Brooke Hall">
-        <figcaption>Brian Rutledge, Nicholas Ward, Ryan Walsh, Joseph Marrett, Ryan Connelly</figcaption>
+        <img src="{% cloudinary_url "hth_toast.jpg" width="1280" height="640" crop="fill" gravity="custom" effect="sharpen" %}" alt="HTH press photo">
+        <figcaption>
+            <div class="img-credit">Photo courtesy of Courtney Brooke Hall</div>
+            Brian Rutledge, Nicholas Ward, Ryan Walsh, Joseph Marrett, Ryan Connelly
+        </figcaption>
     </figure>
 
     <div class="container">
