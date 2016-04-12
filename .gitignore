@@ -64,3 +64,4 @@ vendor/bundle
 hth/staticfiles
 hth/media
 .env
+.gunicorn
