@@ -6,6 +6,10 @@ env.project_pkg = 'hth'
 env.project_apps = ['music', 'news', 'shows']
 
 
+# TODO: Add dev environment
+# TODO: Add staging environment
+
+
 @task
 def prod():
     env.hosts = ['debugged.org']
@@ -16,20 +20,25 @@ def prod():
     env.env_name = 'jahhills'
     env.settings = '%(project_pkg)s.settings.prod' % env
     env.requirements = 'requirements/dev.txt'
+    env.workers = 4
 
     init_env()
 
 
 def init_env():
-    env.workon = 'DJANGO_SETTINGS_MODULE=%(settings)s workon %(env_name)s' % env
+    # TODO: Merge these into one context manager
+    env.django_env = dict(DJANGO_SETTINGS_MODULE=env.settings)
+    env.workon = 'workon %(env_name)s' % env
+
     env.manage = 'cd %(project_pkg)s && ./manage.py' % env
-    env.wsgi_app = '%(project_pkg)s.wsgi:application' % env
+
+    # TODO: Use a config file for gunicorn
     env.gunicorn = 'cd %(project_pkg)s && gunicorn' % env
     env.gunicorn_dir = '%(project_dir)s/.gunicorn' % env
     env.pid_path = '%(gunicorn_dir)s/pid' % env
     env.access_log_path = '%(gunicorn_dir)s/access_log' % env
     env.error_log_path = '%(gunicorn_dir)s/error_log' % env
-    env.workers = 2
+    env.wsgi_app = '%(project_pkg)s.wsgi:application' % env
 
 
 @task
@@ -54,33 +63,32 @@ def pull():
 
 @task
 def requirements():
-    with prefix(env.workon):
+    with prefix(env.workon), shell_env(**env.django_env):
         run('pip-sync %(requirements)s' % env)
 
 
 @task
 def migrate():
-    with prefix(env.workon):
+    with prefix(env.workon), shell_env(**env.django_env):
         run('%(manage)s migrate --noinput' % env)
 
 
 @task
 def loaddata():
-    with prefix(env.workon):
+    with prefix(env.workon), shell_env(**env.django_env):
         run('%(manage)s loaddata hth/jahhills.json' % env)
 
 
 @task
 def collectstatic():
-    with prefix(env.workon):
+    with prefix(env.workon), shell_env(**env.django_env):
         run('%(manage)s collectstatic --noinput' % env)
 
 
 @task
 def start():
     run('mkdir -p %(gunicorn_dir)s' % env)
-    # TODO: Use a config file for gunicorn
-    with prefix(env.workon):
+    with prefix(env.workon), shell_env(**env.django_env):
         run('%(gunicorn)s --daemon '
             '--workers %(workers)s '
             '--bind 127.0.0.1:%(app_port)s '
@@ -93,6 +101,7 @@ def start():
 
 @task
 def stop():
+    # TODO: Better orchestration with start()
     with warn_only():
         run('kill $(cat %(pid_path)s)' % env)
 
