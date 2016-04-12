@@ -141,7 +141,7 @@ th {
 .size-medium, body, h2, h3, h4, h5, h6 {
   font-size: 1em;
   line-height: 1.6; }
-.size-small, .img-credit, header.navigation .tagline {
+.size-small, .img-credit, header.navigation .tagline, .footer .copyright {
   font-size: 0.75019em;
   line-height: 2.1328; }
 
@@ -339,6 +339,8 @@ header.navigation {
       padding-right: 0; }
   .footer .icon {
     padding-right: 1.6rem; }
+  .footer .copyright {
+    clear: both; }
 
 @media screen and (min-width: 600px) and (max-width: 849px) {
   .footer-links {
@@ -357,7 +359,8 @@ header.navigation {
     float: left;
     display: block;
     margin-right: 4.82916%;
-    width: 30.11389%; }
+    width: 30.11389%;
+    margin-bottom: 1.6rem; }
     .footer-links:last-child {
       margin-right: 0; }
     .footer-links:nth-child(3n) {

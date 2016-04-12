@@ -21,6 +21,11 @@
         @extend .size-large;
         padding-right: $base-spacing;
     }
+
+    .copyright {
+        @extend .size-small;
+        clear: both;
+    }
 }
 
 @include media($medium-screen-only) {
@@ -34,6 +39,7 @@
     .footer-links {
         @include span-columns(2);
         @include omega(3n);
+        margin-bottom: $base-spacing;
     }
 
     .footer-top-link {
