@@ -1928,6 +1928,22 @@
     }
 },
 {
+    "model": "music.video",
+    "pk": 31,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-04-19T11:09:26Z",
+        "title": "The Mountain That Wanted More",
+        "slug": "the-mountain-that-wanted-more",
+        "source_url": "https://www.youtube.com/watch?v=2I0FQFGqcCc",
+        "embed_code": "<iframe src=\"http://www.youtube.com/embed/2I0FQFGqcCc?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "preview_url": "http://img.youtube.com/vi/2I0FQFGqcCc/maxresdefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": 12
+    }
+},
+{
     "model": "music.press",
     "pk": 4,
     "fields": {
