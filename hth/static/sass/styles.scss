@@ -70,6 +70,16 @@
             }
         }
     }
+
+    &-columns {
+        @include columns(2);
+
+        .content {
+            -webkit-column-break-inside: avoid;
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+    }
 }
 
 .gig {
@@ -94,6 +104,7 @@
     @include media($medium-screen) {
         @at-root &-list {
             display: table;
+            table-layout: fixed;
             width: 100%;
 
             .content-section {
@@ -110,24 +121,30 @@
 
         > [class^="gig"] {
             display: table-cell;
-            padding: 0 $small-spacing $base-spacing 0;
+            padding-bottom: $base-spacing;
+            padding-top: 0;
         }
 
         &-date {
-            width: 15%;
+            padding-right: $small-spacing;
+            width: 18%;
         }
 
         &-venue {
-            width: 25%;
+            padding-right: $base-spacing;
+            width: 27%;
         }
 
         &-description {
+            padding-left: 0;
+            padding-right: 0;
             width: 40%;
         }
 
         &-details {
-            width: 20%;
+            padding-left: $small-spacing;
             padding-right: 0;
+            width: 15%;
         }
     }
 }

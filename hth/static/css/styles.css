@@ -479,6 +479,14 @@ header.navigation {
         margin-right: 0; }
       .content-gallery .lyrics:nth-child(2n+1), .content-gallery .press:nth-child(2n+1), .content-gallery .post:nth-child(2n+1) {
         clear: left; } }
+.content-columns {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2; }
+  .content-columns .content {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid; }
 
 @media screen and (max-width: 599px) {
   .gig {
@@ -509,6 +517,7 @@ header.navigation {
     display: table-row; }
     .gig-list {
       display: table;
+      table-layout: fixed;
       width: 100%; }
       .gig-list .content-section {
         display: table-row-group; }
@@ -516,16 +525,22 @@ header.navigation {
         white-space: nowrap; }
     .gig > [class^="gig"] {
       display: table-cell;
-      padding: 0 0.8rem 1.6rem 0; }
+      padding-bottom: 1.6rem;
+      padding-top: 0; }
     .gig-date {
-      width: 15%; }
+      padding-right: 0.8rem;
+      width: 18%; }
     .gig-venue {
-      width: 25%; }
+      padding-right: 1.6rem;
+      width: 27%; }
     .gig-description {
+      padding-left: 0;
+      padding-right: 0;
       width: 40%; }
     .gig-details {
-      width: 20%;
-      padding-right: 0; } }
+      padding-left: 0.8rem;
+      padding-right: 0;
+      width: 15%; } }
 
 @media screen and (min-width: 600px) and (max-width: 1079px) {
   .release-preview {
