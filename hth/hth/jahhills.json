@@ -115,7 +115,7 @@
         "date": "2016-04-12",
         "cover_url": "http://hallelujahthehills.com/files/artwork/abistfo_cover.jpg",
         "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=2380355703/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"http://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">A Band Is Something To Figure Out by Hallelujah The Hills</a></iframe>",
-        "description": "<p>Available on: <a href=\"https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">Bandcamp</a>, <a href=\"https://itunes.apple.com/us/album/band-is-something-to-figure/id1085805313\">iTunes</a>, <a href=\"https://www.amazon.com/gp/product/B01BXHIXP2\">Amazon</a>, <a href=\"https://play.spotify.com/album/6oZg2xH1Apnbm11ato8W2N \">Spotify</a>, <a href=\"https://play.google.com/store/music/album/Hallelujah_The_Hills_A_Band_Is_Something_to_Figure?id=Bfvtt4ln3a2ds5zxdweehdoowfe\">Google Play</a>\r\n<br>Released by  Discrete Pageantry Records</p>",
+        "description": "<p>Available on: <a href=\"https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">Bandcamp</a>, <a href=\"https://itunes.apple.com/us/album/band-is-something-to-figure/id1085805313\">iTunes</a>, <a href=\"https://www.amazon.com/gp/product/B01BXHIXP2\">Amazon</a>, <a href=\"https://play.spotify.com/album/6oZg2xH1Apnbm11ato8W2N \">Spotify</a>, <a href=\"https://play.google.com/store/music/album/Hallelujah_The_Hills_A_Band_Is_Something_to_Figure?id=Bfvtt4ln3a2ds5zxdweehdoowfe\">Google Play</a>\r\n<br><a href=\"http://www.re-vinylrecords.com/\">Pre-order vinyl</a> from Re-Vinyl Records\r\n<br>Released by  Discrete Pageantry Records</p>",
         "credits": "<p>Recorded November 2015 at 1809 Studios, Macedon, NY<br /> <a href=\"http://1809studios.com\">1809studios.com</a></p>\r\n<p>Produced by HTH and Dave Drago<br /> Engineered and mixed by Dave Drago<br /> Studio Assistant: Jacob Walsh</p>\r\n<p>Mastered by Jake Rodenhouse<br /> <a href=\"http://www.perfectsoundstudios.com/\">perfectsoundstudios.com</a></p>\r\n<p>Ryan Connelly &ndash; Drums<br /> Joseph Marrett &ndash; Guitar<br /> Brian Rutledge &ndash; Synthesizer<br /> Ryan H. Walsh &ndash; Guitar, Vocals<br /> Nicholas Giadone Ward &ndash; Bass, Piano</p>\r\n<p>Oh, YOU KNOW everyone sang, including Dave Drago + Jacob Walsh</p>\r\n<p>&copy; 2016 Reverse The Tape Decks ASCAP</p>"
     }
 },
@@ -2893,6 +2893,76 @@
         "body": "<p>Massachusetts indie rock institution Hallelujah The Hills' [fifth record] is called <cite>A Band Is Something To Figure Out</cite>, but it could just as easily be called <cite>This Is What It Sounds Like When A Rock Band Has It All Figured Out</cite>&hellip;Rock frameworks that reliably stretch to accommodate subversive, irreverent impulses&hellip;The band's best outing to date.</p>",
         "quote": true,
         "release": 12
+    }
+},
+{
+    "model": "music.press",
+    "pk": 95,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-06T09:40:45Z",
+        "title": "Wake The Deaf",
+        "date": "2016-04-26",
+        "source_url": "http://www.wakethedeaf.co.uk/2016/04/26/hallelujah-hills-band-something-figure-2/",
+        "body": "<p>There\u2019s a lot of postmodern confusion on <cite>A Band is Something to Figure Out</cite>, but Hallelujah the Hills are post-postmodern, reconstructing the human experience through sheer enthusiasm, using their joyous hooks and choruses as earnest expressions of emotion rather than ironic juxtapositions.</p>",
+        "quote": true,
+        "release": 12
+    }
+},
+{
+    "model": "music.press",
+    "pk": 96,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-06T09:50:42Z",
+        "title": "The Boston Globe",
+        "date": "2016-05-04",
+        "source_url": "https://www.bostonglobe.com/arts/music/2016/05/04/hallelujah-hills-maintain-winning-streak/EF7rgmyd3P6pW0RJ98rSjJ/story.html",
+        "body": "<p>Hallelujah the Hills has racked up its share of war stories through more than 10 years of making music on the Boston scene, accruing a body of work that reflects Walsh\u2019s interest in energetic, sometimes-shambolic rock music with a sly sense of humor embedded within.</p>",
+        "quote": true,
+        "release": 12
+    }
+},
+{
+    "model": "music.press",
+    "pk": 97,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-08T17:10:33.987Z",
+        "title": "PunkNews",
+        "date": "2016-04-26",
+        "source_url": "https://www.punknews.org/review/14337/hallelujah-the-hills-a-band-is-something-to-figure-out",
+        "body": "<p>An extensive look inside the human psyche, all set to a gorgeous soundtrack.</p>",
+        "quote": true,
+        "release": 12
+    }
+},
+{
+    "model": "music.press",
+    "pk": 98,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-08T17:14:09Z",
+        "title": "DigBoston",
+        "date": "2016-04-20",
+        "source_url": "https://digboston.com/video-premiere-hallelujah-the-hills-the-mountain-that-wanted-more/",
+        "body": "<p>Hallelujah The Hills\u2019 fifth full-length album&hellip;brings their flavor of indie rock back to our ears so we can do air guitar in our bedrooms and learn new lyrics to scream live. There\u2019s chipper synth, succinct drums, and Walsh\u2019s rounded tone of voice that never ruffles your feathers the wrong way.</p>",
+        "quote": true,
+        "release": 12
+    }
+},
+{
+    "model": "music.press",
+    "pk": 99,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-08T17:22:01Z",
+        "title": "The Ash Gray Proclamation",
+        "date": "2016-04-13",
+        "source_url": "http://theashgrayproclamation.tumblr.com/post/142763310841/hallelujah-the-hills-a-band-is-something-to?soc_src=mail&soc_trk=ma",
+        "body": "<p>[Hallelujah The Hills] continue to push their limit as a recording unit&hellip;turning in their best LP and what is sure to be one of the finest rock records you\u2019ll hear all year.<p>",
+        "quote": true,
+        "release": null
     }
 },
 {

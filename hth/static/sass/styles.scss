@@ -72,12 +72,17 @@
     }
 
     &-columns {
-        @include columns(2);
+        @include media($large-screen) {
+            @include columns(2);
+            @include column-gap($base-spacing);
 
-        .content {
-            -webkit-column-break-inside: avoid;
-            page-break-inside: avoid;
-            break-inside: avoid;
+            .content {
+                -webkit-column-break-inside: avoid;
+                page-break-inside: avoid;
+                break-inside: avoid;
+                margin-bottom: 0;
+                padding-bottom: $base-spacing;
+            }
         }
     }
 }

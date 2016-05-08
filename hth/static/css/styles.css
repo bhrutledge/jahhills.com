@@ -479,14 +479,20 @@ header.navigation {
         margin-right: 0; }
       .content-gallery .lyrics:nth-child(2n+1), .content-gallery .press:nth-child(2n+1), .content-gallery .post:nth-child(2n+1) {
         clear: left; } }
-.content-columns {
-  -webkit-columns: 2;
-  -moz-columns: 2;
-  columns: 2; }
-  .content-columns .content {
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid; }
+@media screen and (min-width: 850px) {
+  .content-columns {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 1.6rem;
+    -moz-column-gap: 1.6rem;
+    column-gap: 1.6rem; }
+    .content-columns .content {
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      margin-bottom: 0;
+      padding-bottom: 1.6rem; } }
 
 @media screen and (max-width: 599px) {
   .gig {
