@@ -115,7 +115,7 @@
         "date": "2016-04-12",
         "cover_url": "http://hallelujahthehills.com/files/artwork/abistfo_cover.jpg",
         "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=2380355703/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"http://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">A Band Is Something To Figure Out by Hallelujah The Hills</a></iframe>",
-        "description": "<p>Available on: <a href=\"https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">Bandcamp</a>, <a href=\"https://itunes.apple.com/us/album/band-is-something-to-figure/id1085805313\">iTunes</a>, <a href=\"https://www.amazon.com/gp/product/B01BXHIXP2\">Amazon</a>, <a href=\"https://play.spotify.com/album/6oZg2xH1Apnbm11ato8W2N \">Spotify</a>, <a href=\"https://play.google.com/store/music/album/Hallelujah_The_Hills_A_Band_Is_Something_to_Figure?id=Bfvtt4ln3a2ds5zxdweehdoowfe\">Google Play</a>\r\n<br><a href=\"http://www.re-vinylrecords.com/\">Pre-order vinyl</a> from Re-Vinyl Records\r\n<br>Released by  Discrete Pageantry Records</p>",
+        "description": "<p>Available on: <a href=\"https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">Bandcamp</a>, <a href=\"https://itunes.apple.com/us/album/band-is-something-to-figure/id1085805313\">iTunes</a>, <a href=\"https://www.amazon.com/gp/product/B01BXHIXP2\">Amazon</a>, <a href=\"https://play.spotify.com/album/6oZg2xH1Apnbm11ato8W2N \">Spotify</a>, <a href=\"https://play.google.com/store/music/album/Hallelujah_The_Hills_A_Band_Is_Something_to_Figure?id=Bfvtt4ln3a2ds5zxdweehdoowfe\">Google Play</a>\r\n<br>Released by  Discrete Pageantry Records</p>\r\n<p><a href=\"http://www.re-vinylrecords.com/\">Pre-order limited-edition vinyl</a> from Re-Vinyl Records. Ships in late June. Comes with an immediate full album download and an exclusive digital bonus track sent out when the packages start shipping.</p>",
         "credits": "<p>Recorded November 2015 at 1809 Studios, Macedon, NY<br /> <a href=\"http://1809studios.com\">1809studios.com</a></p>\r\n<p>Produced by HTH and Dave Drago<br /> Engineered and mixed by Dave Drago<br /> Studio Assistant: Jacob Walsh</p>\r\n<p>Mastered by Jake Rodenhouse<br /> <a href=\"http://www.perfectsoundstudios.com/\">perfectsoundstudios.com</a></p>\r\n<p>Ryan Connelly &ndash; Drums<br /> Joseph Marrett &ndash; Guitar<br /> Brian Rutledge &ndash; Synthesizer<br /> Ryan H. Walsh &ndash; Guitar, Vocals<br /> Nicholas Giadone Ward &ndash; Bass, Piano</p>\r\n<p>Oh, YOU KNOW everyone sang, including Dave Drago + Jacob Walsh</p>\r\n<p>&copy; 2016 Reverse The Tape Decks ASCAP</p>"
     }
 },
@@ -2966,6 +2966,34 @@
     }
 },
 {
+    "model": "music.press",
+    "pk": 100,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-23T22:36:54Z",
+        "title": "DigBoston",
+        "date": "2016-05-12",
+        "source_url": "https://digboston.com/the-gospel-of-rock-hallelujah-the-hills-still-slay-over-ten-years-later/",
+        "body": "<p>In Boston, a city ripe with remarkable rock acts&hellip;local treasure Hallelujah The Hills sits at the top of that throne.</p>",
+        "quote": true,
+        "release": 12
+    }
+},
+{
+    "model": "music.press",
+    "pk": 101,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-23T22:41:42.138Z",
+        "title": "Metro Boston",
+        "date": "2016-05-13",
+        "source_url": "http://www.metro.us/boston/visit-the-belladonna-of-sadness/zsJpem---lffblSBCYXkVI/",
+        "body": "<p>A must-listen for fans of classic, cathartic American indie rock. These 11 songs, loaded with gritty determination, dramatic dynamic swells and gang vocal shouts, might just make you believe again in whatever it was you stopped believing in.</p>",
+        "quote": true,
+        "release": 12
+    }
+},
+{
     "model": "news.post",
     "pk": 1,
     "fields": {
@@ -3348,6 +3376,17 @@
         "title": "A Band Is Something To Figure Out",
         "slug": "a-band-is-something-to-figure-out",
         "body": "<p><a href=\"/music/a-band-is-something-to-figure-out/\"><img src=\"http://hallelujahthehills.com/files/images/abistfo_pg_banner.jpg\" alt=\"Album promo image\"/></a></p>\r\n\r\n<div class=\"embed\">\r\n<iframe style=\"border: 0; max-width: 100%; width: 30em; height: 120px; margin: 0 auto;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=2380355703/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"http://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">A Band Is Something To Figure Out by Hallelujah The Hills</a></iframe>\r\n</div>\r\n\r\n<p><a href=\"/music/a-band-is-something-to-figure-out/\">Our fifth album</a> is available, starting today, on <a href=\"https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">Bandcamp</a>, <a href=\"https://itunes.apple.com/us/album/band-is-something-to-figure/id1085805313\">iTunes</a>, <a href=\"https://www.amazon.com/gp/product/B01BXHIXP2\">Amazon</a>, <a href=\"https://play.spotify.com/album/6oZg2xH1Apnbm11ato8W2N \">Spotify</a>, and a bunch of other strange platforms I'm not sure anyone listens to. <a href=\"https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">CD copies</a> of the album ship immediately and can be ordered on Bandcamp. The limited edition Re-Vinyl Records <a href=\"http://www.re-vinylrecords.com/\">vinyl pressing</a> is in the works, and will ship as soon as its available. If you want to support the band further, leave us a review on iTunes and Amazon, ask a free-form radio station to play us, or tell one of the arms of the music-coverage-industrial-complex to cast their unwavering gaze over HTH's way sometime this year.</p>\r\n\r\n<p>Tonight, that is if you're reading this on April 12, 2016, you can listen to us perform the entire album album LIVE on the radio at 9PM EST. Tune into 88.1 FM WMBR in Boston or worldwide on <a href=\"http://wmbr.org/\">wmbr.org</a>. We'll play album release shows next month in Boston (<a href=\"http://www.ticketmaster.com/event/01005058C29F551E\">5/12</a>) and New York (<a href=\"https://www.facebook.com/events/231108990583257/\">5/14</a>), then look for some tour dates this summer. And if you like a nice band t-shirt, we have two <a href=\"https://teespring.com/exed-out-tee-shirt\">new</a> <a href=\"https://teespring.com/hallelujah-the-hills-hassle\">shirts</a> that tie-in to the new album, but they're only on sale for the next 24 hours.</p>\r\n\r\n<p>Here's an excerpt from one early review that we like: &ldquo;Massachusetts indie rock institution Hallelujah The Hills' [fifth record] is called <cite>A Band Is Something To Figure Out</cite>, but it could just as easily be called <cite>This Is What It Sounds Like When A Rock Band Has It All Figured Out</cite>&hellip;Rock frameworks that reliably stretch to accommodate subversive, irreverent impulses&hellip;The band's best outing to date.&rdquo; &mdash;<a href=\"http://jbreitling.blogspot.com/2016/04/review-hallelujah-hills-band-is.html\">Clicky Clicky Music</a></p>\r\n\r\n<p>We hope you feel similarly!</p>\r\n\r\n<p>XO, HTH</p>"
+    }
+},
+{
+    "model": "news.post",
+    "pk": 36,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-24T00:03:58Z",
+        "title": "Movement Scorekeepers",
+        "slug": "movement-scorekeepers",
+        "body": "<p>Are you enjoying our new album, <cite><a href=\"/music/a-band-is-something-to-figure-out/\">A Band Is Something To Figure Out</a></cite>? That&rsquo;s good, because we&rsquo;ve built a side patio for it. <cite><a href=\"http://www.jealousbutcher.com/products/movement-scorekeepers-ep\">Movement Scorekeepers</a></cite>, out July 8, 2016, is a lo-fi companion to the album The Metro described like so: &ldquo;These 11 songs, loaded with gritty determination, dramatic dynamic swells and gang vocal shouts, might just make you believe again in whatever it was you stopped believing in.&rdquo; Why did you stop believing? WHY. I know why.</p>\r\n\r\n<p>The band employed a new method of songwriting to arrive at this short, psychedelic, lyrically-bananas new gem of an entry in our ever-growing discography. Last month we hit record and forced ourselves to improv new instrumental music together, changing it completely every minute or two without discussion. Then the vocal melodies were overdubbed on top of the tracks, arriving at this bizarre, delightful result.</p>\r\n\r\n<p><a href=\"https://soundcloud.com/hallelujahthehills/are-we-failing?in=hallelujahthehills/sets/movement-scorekeepers/s-KFgAw\">&ldquo;Are We Failing?&rdquo;</a>, the first song on the EP, is available for any online sharing starting today. The EP will be out digitally and on a <a href=\"http://www.jealousbutcher.com/products/movement-scorekeepers-ep\">limited-edition blue 7\"</a> but not on CD.</p>\r\n\r\n<p><img src=\"http://res.cloudinary.com/dgojqlr7m/image/upload/c_scale,w_480/v1464048487/movement_scorekeepers.jpg\" alt=\"Movement Scorekeepers cover\"></p>\r\n\r\n<p>Meanwhile, the full-length <cite>A Band Is Something To Figure Out</cite> vinyl is gorgeous, shipping SOON, and we&rsquo;ll have plenty of these at live shows. But why wait? Get it from <a href=\"http://bit.ly/1lbE9mU\">Re-Vinyl Records</a>.</p>"
     }
 },
 {
@@ -4896,6 +4935,33 @@
         "name": "C'Mon Everybody",
         "city": "Brooklyn, NY",
         "website": "http://www.cmoneverybody.com/"
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 174,
+    "fields": {
+        "name": "Grumpy's",
+        "city": "Falmouth, MA",
+        "website": ""
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 175,
+    "fields": {
+        "name": "Club 603",
+        "city": "Baltimore, MD",
+        "website": ""
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 176,
+    "fields": {
+        "name": "Dusk",
+        "city": "Providence, RI",
+        "website": ""
     }
 },
 {
@@ -7966,7 +8032,7 @@
         "publish_on": "2016-02-25T10:47:40Z",
         "date": "2016-05-12",
         "venue": 9,
-        "description": "<p><strong>ABISTFO Album Release</strong>\r\n<br>with Swale and Old Hat.</p>",
+        "description": "<p><strong>ABISTFO Album Release</strong>\r\n<br>with Swale and Old Hat</p>",
         "details": "<p><a href=\"http://www.ticketmaster.com/event/01005058C29F551E\">Tickets</a>, <a href=\"https://www.facebook.com/events/1696273980589356/\">Facebook</a><p>"
     }
 },
@@ -7975,11 +8041,59 @@
     "pk": 270,
     "fields": {
         "publish": true,
-        "publish_on": "2016-04-09T17:47:49.853Z",
+        "publish_on": "2016-04-09T17:47:49Z",
         "date": "2016-05-14",
         "venue": 173,
-        "description": "<p><strong>ABISTFO Album Release</strong>\r\n<br>with Wilder Maker and #1 Kid.</p>",
+        "description": "<p><strong>ABISTFO Album Release</strong>\r\n<br>with Wilder Maker and #1 Kid</p>",
         "details": "<p><a href=\"https://www.facebook.com/events/231108990583257/\">Facebook</a><p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 271,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-23T22:43:46Z",
+        "date": "2016-07-08",
+        "venue": 142,
+        "description": "<p><strong>Vinyl LP &amp; EP 7\" Release Show</strong>\r\n<br>with Thalia Zedek Band & Barbazons</p>",
+        "details": ""
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 272,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-23T22:46:03.948Z",
+        "date": "2016-07-09",
+        "venue": 174,
+        "description": "<p>with Crooked Coast</p>",
+        "details": ""
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 273,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-23T22:47:28.411Z",
+        "date": "2016-07-29",
+        "venue": 175,
+        "description": "",
+        "details": ""
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 274,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-05-23T22:47:33.958Z",
+        "date": "2016-07-30",
+        "venue": 176,
+        "description": "",
+        "details": ""
     }
 }
 ]
