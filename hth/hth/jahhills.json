@@ -4959,9 +4959,9 @@
     "model": "shows.venue",
     "pk": 176,
     "fields": {
-        "name": "Dusk",
+        "name": "F\u00eate Music Hall",
         "city": "Providence, RI",
-        "website": ""
+        "website": "http://fetemusic.com/events/"
     }
 },
 {
@@ -8056,7 +8056,7 @@
         "publish_on": "2016-05-23T22:43:46Z",
         "date": "2016-07-08",
         "venue": 142,
-        "description": "<p><strong>Vinyl LP &amp; EP 7\" Release Show</strong>\r\n<br>with Thalia Zedek Band & Barbazons</p>",
+        "description": "<p><strong>Vinyl LP &amp; EP 7\" Release Show</strong>\r\n<br>with The Barbazons, Thalia Zedek Band, and Black Beach</p>",
         "details": ""
     }
 },
