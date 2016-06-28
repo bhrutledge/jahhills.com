@@ -147,6 +147,12 @@ article ul {
             padding-right: $small-spacing / 2;
             text-align: right;
         }
+
+        // TODO: Find a less fragile way to work around margin on <p>, etc.
+        // not collapsing due to display: table.
+        &:last-child > :last-child {
+            margin-bottom: 0;
+        }
     }
 }
 

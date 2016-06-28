@@ -224,6 +224,9 @@ article ul {
       display: table-cell;
       padding-right: 0.4rem;
       text-align: right; }
+    article ol li:last-child > :last-child,
+    article ul li:last-child > :last-child {
+      margin-bottom: 0; }
 
 article ul li::before {
   content: "\2022"; }
