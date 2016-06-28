@@ -13,6 +13,10 @@
 {% endblock %}
 
 {% block main_content %}
+<figure class="hero-img">
+    <a href="/news/two-record-summer/"><img src="{% cloudinary_url "vinyl_2016_banner.jpg" %}" alt="HTH Summer 2016 Vinyl"></a>
+</figure>
+{% comment %}
 <a href="https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out" class="hero">
     <div class="hero-content">
         <span style="color: white;" class="size-xlarge">OUT APRIL 12, 2016</span>
@@ -21,6 +25,7 @@
         <span style="color: white"><br>CD / DIGITAL / VINYL</span>
     </div>
 </a>
+{% endcomment %}
 
 <section id="shows" class="container gig-list">
     <h2><a href="{% url "gig_list" %}">Live</a></h2>

@@ -623,5 +623,8 @@ header.navigation {
 
 #about {
   text-align: center; }
+  #about .content-text {
+    margin-left: auto;
+    margin-right: auto; }
 
 /*# sourceMappingURL=styles.css.map */

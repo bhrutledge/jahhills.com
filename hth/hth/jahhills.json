@@ -3411,7 +3411,7 @@
         "publish_on": "2016-06-19T21:41:39Z",
         "title": "It's a Two Record Summer!",
         "slug": "two-record-summer",
-        "body": "<p>On July 8th, we&rsquo;re releasing two new pieces of vinyl.</p>\r\n\r\n<p><img src=\"http://hallelujahthehills.com/files/images/vinyls_summer_2016.jpg\" alt=\"Summer 2016 Vinyl\"/></p>\r\n\r\n<ol>\r\n<li><p>Our new LP <cite>A Band Is Something To Figure Out</cite> from Re-Vinyl Records, limited to 500 copies. You can <a href=\"https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">order it now</a>, and it&rsquo;ll ship right away. All LP vinyl purchasers will ALSO receive a digital bonus song sometime this summer! We&rsquo;ll also have this at the merch table at <a href=\"/live\">all summer tour dates</a>, PLUS it&rsquo;s on the normal digital channels as well.</p></li>\r\n<li><p>A brand new EP titled <cite>Movement Scorekeepers</cite>! This is a limited-edition (250 copies), blue vinyl 7\" from Jealous Butcher Records. You can <a href=\"http://www.jealousbutcher.com/products/movement-scorekeepers-ep\">pre-order it now</a>, and we&rsquo;ll have copies at the summer shows. It&rsquo;ll also be available on the digital channels, too. This strange collection of six 1-minute songs are like popsicles on a hot day, aka essential pre-Labor-Day weirdo-hymns for humans everywhere.</p></li>\r\n</ol>\r\n\r\n<p>Also, <a href=\"https://hallelujahthehills.bandcamp.com/album/hth-10th-birthday-commemorative-7\">for the completists</a>, we have a few copies left of the Misra Records HTH 10th Birthday 7\". Clear vinyl, lathe cut, two classic songs from the Hills-a-verse that have never been on vinyl before. Sweet!</p>"
+        "body": "<p>On July 8th, we&rsquo;re releasing two new pieces of vinyl.</p>\r\n\r\n<p><img src=\"http://hallelujahthehills.com/files/images/vinyls_summer_2016.jpg\" alt=\"Summer 2016 Vinyl\"/></p>\r\n\r\n<ol>\r\n<li><p>Our new LP <cite>A Band Is Something To Figure Out</cite> from Re-Vinyl Records, limited to 500 copies. You can <a href=\"https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">order it now</a>, and it&rsquo;ll ship right away. All LP vinyl purchasers will ALSO receive a digital bonus song sometime this summer! We&rsquo;ll also have this at the merch table at <a href=\"/live\">all summer tour dates</a>, PLUS it&rsquo;s on the normal digital channels as well.</p></li>\r\n<li><p>A brand new EP titled <cite>Movement Scorekeepers</cite>! This is a limited-edition (250 copies), blue vinyl 7\" from Jealous Butcher Records. You can <a href=\"http://www.jealousbutcher.com/products/movement-scorekeepers-ep\">pre-order it now</a>, and we&rsquo;ll have copies at the summer shows. It&rsquo;ll be available on the digital channels, too. This strange collection of six 1-minute songs are like popsicles on a hot day, aka essential pre-Labor-Day weirdo-hymns for humans everywhere.</p></li>\r\n</ol>\r\n\r\n<p>Also, <a href=\"https://hallelujahthehills.bandcamp.com/album/hth-10th-birthday-commemorative-7\">for the completists</a>, we have a few copies left of the Misra Records HTH 10th Birthday 7\". Clear vinyl, lathe cut, two classic songs from the Hills-a-verse that have never been on vinyl before. Sweet!</p>"
     }
 },
 {
@@ -5004,6 +5004,15 @@
     "fields": {
         "name": "Chesterfest",
         "city": "Stockbridge, MA",
+        "website": ""
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 179,
+    "fields": {
+        "name": "Fuzz Hut",
+        "city": "Manchester, NH",
         "website": ""
     }
 },
@@ -8100,7 +8109,7 @@
         "date": "2016-07-08",
         "venue": 142,
         "description": "<p><strong>Vinyl LP &amp; EP 7\" Release Show</strong>\r\n<br>with The Barbazons, Thalia Zedek Band, and Black Beach</p>",
-        "details": ""
+        "details": "<p><a href=\"http://www.ticketmaster.com/event/010050B7ACCF3447\">Tickets</a>, <a href=\"https://www.facebook.com/events/174858962915903/\">Facebook</a><p>"
     }
 },
 {
@@ -8123,7 +8132,7 @@
         "publish_on": "2016-05-23T22:47:28Z",
         "date": "2016-07-28",
         "venue": 175,
-        "description": "",
+        "description": "with The Furniture",
         "details": ""
     }
 },
@@ -8132,10 +8141,10 @@
     "pk": 274,
     "fields": {
         "publish": true,
-        "publish_on": "2016-05-23T22:47:33.958Z",
+        "publish_on": "2016-05-23T22:47:33Z",
         "date": "2016-07-30",
         "venue": 176,
-        "description": "",
+        "description": "with Cannibal Ramblers, P. Everett, 10 Foot Polecat",
         "details": ""
     }
 },
@@ -8156,9 +8165,33 @@
     "pk": 276,
     "fields": {
         "publish": true,
-        "publish_on": "2016-06-20T09:44:54.563Z",
+        "publish_on": "2016-06-20T09:44:54Z",
         "date": "2016-08-05",
         "venue": 178,
+        "description": "with Creaturos",
+        "details": ""
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 277,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-06-27T23:24:41.509Z",
+        "date": "2016-07-29",
+        "venue": 11,
+        "description": "with P. Everett, Woodsy Pride, Dott",
+        "details": ""
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 278,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-06-27T23:26:23.213Z",
+        "date": "2016-08-06",
+        "venue": 179,
         "description": "",
         "details": ""
     }
