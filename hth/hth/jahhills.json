@@ -1944,6 +1944,22 @@
     }
 },
 {
+    "model": "music.video",
+    "pk": 32,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-06-30T10:34:10.761Z",
+        "title": "Realistic Birthday Music",
+        "slug": "realistic-birthday-music",
+        "source_url": "https://www.youtube.com/watch?v=C7uDxqn7dtY",
+        "embed_code": "<iframe src=\"http://www.youtube.com/embed/C7uDxqn7dtY?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "preview_url": "http://img.youtube.com/vi/C7uDxqn7dtY/maxresdefault.jpg",
+        "description": "",
+        "credits": "<p>Candle Eradicators: Mark Walsh, Mona Walsh, Julia Papps, Billy Kanellopoulos, Maura Johnston, Brad Nelson, Hatcher Bentley, Jessica Grimsby, Erik Szyska, Kevin Hoskins, Boog Dumphy, Katie Connors, Danielle Blasczak, Clara & Connor, Jenna Sicuranza, Evan Sicuranza, Linda Sicuranza, Kevin Becerra, Ramona Rose, Mouhcine Karrouim, Marisa Young, Jeff Prohaska, Anthony Puopolo, Jim Kavanaugh, Francine Mroczek, Allyson Laredo, Katelyn Guerin, Michael Ruggerio, Trina Ruggerio, Matthew Scott, Ed Park, Leeore Schnairsohn, Alexandria Ellison, Jim Mahoney, Ryan Walsh, Joseph Marrett, Brian Rutledge, Ryan Connelly</p>",
+        "release": 12
+    }
+},
+{
     "model": "music.press",
     "pk": 4,
     "fields": {
@@ -3005,6 +3021,20 @@
         "body": "<p><a href=\"https://daily.bandcamp.com/2016/06/14/fan-interviews-hallelujah-the-hills/\">Fan Interviews: Hallelujah the Hills</a>\r\n<br>Jon Doyle (of Wake The Deaf) interviews Ryan Walsh.\r\n</p>",
         "quote": false,
         "release": 12
+    }
+},
+{
+    "model": "music.press",
+    "pk": 103,
+    "fields": {
+        "publish": false,
+        "publish_on": "2016-06-30T10:38:39Z",
+        "title": "Boston Herald",
+        "date": "2016-06-27",
+        "source_url": "http://www.bostonherald.com/entertainment/music/guestlisted/2016/06/guestlisted_premiere_hallelujah_the_hills_new_video",
+        "body": "<p>The band got right back to cooking up the weird, wonderful indie rock we\u2019ve come to love from them for ten years.</p>",
+        "quote": true,
+        "release": null
     }
 },
 {
@@ -8133,7 +8163,7 @@
         "date": "2016-07-28",
         "venue": 175,
         "description": "with The Furniture",
-        "details": ""
+        "details": "<p><a href=\"http://www.brownpapertickets.com/event/2564125\">Tickets</a>, <a href=\"https://www.facebook.com/events/500318656832771/\">Facebook</a><p>"
     }
 },
 {
@@ -8145,7 +8175,7 @@
         "date": "2016-07-30",
         "venue": 176,
         "description": "with Cannibal Ramblers, P. Everett, 10 Foot Polecat",
-        "details": ""
+        "details": "<p><a href=\"https://www.facebook.com/events/1654587081533716/\">Facebook</a></p>"
     }
 },
 {
@@ -8153,11 +8183,11 @@
     "pk": 275,
     "fields": {
         "publish": true,
-        "publish_on": "2016-06-20T09:43:02.434Z",
+        "publish_on": "2016-06-20T09:43:02Z",
         "date": "2016-07-27",
         "venue": 177,
-        "description": "",
-        "details": ""
+        "description": "with Hartford Pussies",
+        "details": "<p><a href=\"https://www.facebook.com/events/1565625993730956/\">Facebook</a></p>"
     }
 },
 {
@@ -8169,7 +8199,7 @@
         "date": "2016-08-05",
         "venue": 178,
         "description": "with Creaturos",
-        "details": ""
+        "details": "<p><a href=\"http://chesterwood.org/chesterfest/\">Details</a></p>"
     }
 },
 {
@@ -8177,11 +8207,11 @@
     "pk": 277,
     "fields": {
         "publish": true,
-        "publish_on": "2016-06-27T23:24:41.509Z",
+        "publish_on": "2016-06-27T23:24:41Z",
         "date": "2016-07-29",
         "venue": 11,
         "description": "with P. Everett, Woodsy Pride, Dott",
-        "details": ""
+        "details": "<p><a href=\"http://www.ticketfly.com/event/1235765-hallelujah-hills-woodsy-new-york/\">Tickets</a>, <a href=\"https://www.facebook.com/events/1041883205866299/\">Facebook</a></p>"
     }
 },
 {
@@ -8189,11 +8219,11 @@
     "pk": 278,
     "fields": {
         "publish": true,
-        "publish_on": "2016-06-27T23:26:23.213Z",
+        "publish_on": "2016-06-27T23:26:23Z",
         "date": "2016-08-06",
         "venue": 179,
         "description": "",
-        "details": ""
+        "details": "<p><a href=\"https://www.facebook.com/events/139656693124323/\">Facebook</a></p>"
     }
 }
 ]

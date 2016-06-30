@@ -35,19 +35,19 @@
     </div>
 </section>
 
+{% comment %}
 <section id="news" class="container">
     <h2><a href="{% url "post_list" %}">News</a></h2>
 
     {% include "news/_post_highlight.html" %}
 </section>
+{% endcomment %}
 
-{% comment %}
 <section id="music" class="container">
     <h2><a href="{% url "release_list" %}">Music</a></h2>
 
     {% include "music/_release_highlight.html" %}
 </section>
-{% endcomment %}
 
 <section id="video" class="container">
     <h2><a href="{% url "video_list" %}">Video</a></h2>
