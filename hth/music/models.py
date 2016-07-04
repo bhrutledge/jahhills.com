@@ -19,9 +19,12 @@ class Release(PublishedModel, TitledModel):
     player_code = models.TextField(blank=True)
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
+    priority = models.PositiveIntegerField(
+        help_text='Site-wide sort order (higher numbers first)',
+        blank=True, null=True)
 
     class Meta:
-        ordering = ['-date']
+        ordering = ['-priority', '-date']
 
     @property
     def tracks(self):

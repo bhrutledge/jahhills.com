@@ -6,9 +6,9 @@ from .models import Release, Song, Video, Press
 class ReleaseAdmin(admin.ModelAdmin):
     save_on_top = True
     fields = ('title', 'slug', 'date', 'cover_url', 'player_code',
-              'description', 'credits', 'publish', 'publish_on',)
+              'description', 'credits', 'publish', 'publish_on', 'priority',)
     prepopulated_fields = {'slug': ('title',)}
-    list_display = ('title', 'date', 'publish', 'publish_on',)
+    list_display = ('title', 'date', 'publish', 'publish_on', 'priority',)
 
 admin.site.register(Release, ReleaseAdmin)
 

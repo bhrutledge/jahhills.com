@@ -22,11 +22,20 @@ class ReleaseTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
     required_fields = ['title', 'slug']
 
     def test_ordered_by_date(self):
-        first = ReleaseFactory.create(date='2014-08-01')
-        old = ReleaseFactory.create(date='2014-07-31')
-        new = ReleaseFactory.create(date='2014-08-31')
+        second = ReleaseFactory.create(date='2014-08-01')
+        third = ReleaseFactory.create(date='2014-07-31')
+        first = ReleaseFactory.create(date='2014-08-31')
 
-        self.assertEqual(list(Release.objects.all()), [new, first, old])
+        self.assertEqual(list(Release.objects.all()), [first, second, third])
+
+    def test_ordered_by_priority(self):
+        third = ReleaseFactory.create(date='2014-08-01', priority=1)
+        first = ReleaseFactory.create(date='2014-07-31', priority=10)
+        fourth = ReleaseFactory.create(date='2014-07-01')
+        second = ReleaseFactory.create(date='2014-08-31', priority=1)
+
+        self.assertEqual(list(Release.objects.all()),
+                         [first, second, third, fourth])
 
 
 class SongTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,

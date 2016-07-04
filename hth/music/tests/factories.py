@@ -10,7 +10,7 @@ class ReleaseFactory(factory.django.DjangoModelFactory):
         model = 'music.Release'
 
     slug = factory.Sequence(lambda n: 'release-%d' % n)
-    title = factory.fuzzy.FuzzyText(prefix='Release ')
+    title = factory.LazyAttribute(lambda obj: 'Release {}'.format(obj.date))
     description = factory.fuzzy.FuzzyText(length=100)
     credits = factory.fuzzy.FuzzyText(length=100)
     date = factory.fuzzy.FuzzyDate(date(2000, 1, 1))
