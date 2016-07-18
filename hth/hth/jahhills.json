@@ -5150,9 +5150,9 @@
     "model": "shows.venue",
     "pk": 176,
     "fields": {
-        "name": "F\u00eate Music Hall",
+        "name": "Dusk",
         "city": "Providence, RI",
-        "website": "http://fetemusic.com/events/"
+        "website": "http://duskprovidence.com/"
     }
 },
 {
@@ -8360,6 +8360,30 @@
         "venue": 179,
         "description": "",
         "details": "<p><a href=\"https://www.facebook.com/events/139656693124323/\">Facebook</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 279,
+    "fields": {
+        "publish": false,
+        "publish_on": null,
+        "date": "2016-08-07",
+        "venue": 160,
+        "description": "",
+        "details": ""
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 280,
+    "fields": {
+        "publish": false,
+        "publish_on": null,
+        "date": "2016-09-25",
+        "venue": 165,
+        "description": "",
+        "details": ""
     }
 }
 ]
