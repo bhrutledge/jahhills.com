@@ -1,5 +1,6 @@
 from datetime import date, timedelta
 
+from django.core.exceptions import ValidationError
 from django.test import TestCase
 
 from core.tests.models import FieldsTestMixin, PublishTestMixin
@@ -31,6 +32,23 @@ class VenueTestCase(FieldsTestMixin, TestCase):
         v3 = VenueFactory.create(name='B', city='c')
 
         self.assertEqual(list(Venue.objects.all()), [v1, v2, v3, v4])
+
+    def test_add_place_details(self):
+        kwargs = {
+            'name': 'Great Scott',
+            'city': 'Allston, MA',
+            'website': 'http://www.greatscottboston.com/',
+            'address': '1222 Commonwealth Avenue, Allston, MA 02134, USA',
+            'latitude': 42.3500779,
+            'longitude': -71.13060159999999,
+        }
+
+        try:
+            v = VenueFactory.build(**kwargs)
+            v.full_clean()
+            v.save()
+        except (TypeError, ValidationError):
+            raise AssertionError
 
 
 class GigTestCase(FieldsTestMixin, PublishTestMixin, TestCase):

@@ -3586,7 +3586,10 @@
     "fields": {
         "name": "The Vixen",
         "city": "Provincetown, MA",
-        "website": "http://ptownvixen.com/"
+        "website": "http://ptownvixen.com/",
+        "address": "336 Commercial St # 7, Provincetown, MA 02657, USA",
+        "latitude": 42.05271159999999,
+        "longitude": -70.1847786
     }
 },
 {
@@ -3595,7 +3598,10 @@
     "fields": {
         "name": "The Middle East Downstairs",
         "city": "Cambridge, MA",
-        "website": "http://www.mideastclub.com/"
+        "website": "http://www.mideastclub.com/",
+        "address": "472-480 Massachusetts Ave, Cambridge, MA 02139, USA",
+        "latitude": 42.3637874,
+        "longitude": -71.10140109999999
     }
 },
 {
@@ -3604,7 +3610,10 @@
     "fields": {
         "name": "Southpaw",
         "city": "Brooklyn, NY",
-        "website": "http://www.spsounds.com/"
+        "website": "http://www.spsounds.com/",
+        "address": "125 5th Ave, Brooklyn, NY 11217, USA",
+        "latitude": 40.6787013,
+        "longitude": -73.9785821
     }
 },
 {
@@ -3613,7 +3622,10 @@
     "fields": {
         "name": "Ralph's Diner",
         "city": "Worcester, MA",
-        "website": "http://www.ralphsrockdiner.com/"
+        "website": "http://www.ralphsrockdiner.com/",
+        "address": "148 Grove St, Worcester, MA 01605, USA",
+        "latitude": 42.27763520000001,
+        "longitude": -71.80088959999999
     }
 },
 {
@@ -3622,7 +3634,10 @@
     "fields": {
         "name": "The Mercury Lounge",
         "city": "New York, NY",
-        "website": "http://www.mercuryloungenyc.com"
+        "website": "http://www.mercuryloungenyc.com",
+        "address": "217 E Houston St, New York, NY 10002, USA",
+        "latitude": 40.7221,
+        "longitude": -73.98679369999999
     }
 },
 {
@@ -3631,7 +3646,10 @@
     "fields": {
         "name": "TT The Bear's Place",
         "city": "Cambridge, MA",
-        "website": "http://www.ttthebears.com/"
+        "website": "http://www.ttthebears.com/",
+        "address": "10 Brookline St, Cambridge, MA 02139, USA",
+        "latitude": 42.3634557,
+        "longitude": -71.1016531
     }
 },
 {
@@ -3640,7 +3658,10 @@
     "fields": {
         "name": "The Auld Sod",
         "city": "Dedham, MA",
-        "website": "http://www.theauldsodpub.com/"
+        "website": "http://www.theauldsodpub.com/",
+        "address": "274 Washington St, Dedham, MA 02026, USA",
+        "latitude": 42.250437,
+        "longitude": -71.1703211
     }
 },
 {
@@ -3649,7 +3670,10 @@
     "fields": {
         "name": "The Paradise Rock Club",
         "city": "Boston, MA",
-        "website": "http://www.thedise.com/"
+        "website": "http://www.thedise.com/",
+        "address": "967 Commonwealth Avenue, Boston, MA 02215, USA",
+        "latitude": 42.3520542,
+        "longitude": -71.1194668
     }
 },
 {
@@ -3658,7 +3682,10 @@
     "fields": {
         "name": "Great Scott",
         "city": "Allston, MA",
-        "website": "http://www.greatscottboston.com"
+        "website": "http://www.greatscottboston.com",
+        "address": "1222 Commonwealth Avenue, Allston, MA 02134, USA",
+        "latitude": 42.3500779,
+        "longitude": -71.13060159999999
     }
 },
 {
@@ -3667,7 +3694,10 @@
     "fields": {
         "name": "Highline Ballroom",
         "city": "New York, NY",
-        "website": "http://www.highlineballroom.com/"
+        "website": "http://www.highlineballroom.com/",
+        "address": "431 W 16th St, New York, NY 10011, USA",
+        "latitude": 40.7430346,
+        "longitude": -74.0058784
     }
 },
 {
@@ -3676,7 +3706,10 @@
     "fields": {
         "name": "Cake Shop",
         "city": "New York, NY",
-        "website": "http://cake-shop.com/"
+        "website": "http://cake-shop.com/",
+        "address": "152 Ludlow St, New York, NY 10002, USA",
+        "latitude": 40.720832,
+        "longitude": -73.9878004
     }
 },
 {
@@ -3685,7 +3718,10 @@
     "fields": {
         "name": "La Sala Rossa",
         "city": "Montreal, QC",
-        "website": "http://casadelpopolo.com/salaconcert/home.shtml"
+        "website": "http://casadelpopolo.com/salaconcert/home.shtml",
+        "address": "4848 Boul St-Laurent, Montr\u00e9al, QC H2T 1R5, Canada",
+        "latitude": 45.5217929,
+        "longitude": -73.5904473
     }
 },
 {
@@ -3694,7 +3730,10 @@
     "fields": {
         "name": "Lee's Palace",
         "city": "Toronto, ON",
-        "website": "http://www.leespalace.com/"
+        "website": "http://www.leespalace.com/",
+        "address": "529 BLOOR STREET W, Toronto, ON M5S 1Y5, Canada",
+        "latitude": 43.6653396,
+        "longitude": -79.4094732
     }
 },
 {
@@ -3703,7 +3742,10 @@
     "fields": {
         "name": "The Basement",
         "city": "Northampton, MA",
-        "website": "http://www.iheg.com/basement_main.asp"
+        "website": "http://www.iheg.com/basement_main.asp",
+        "address": "21 Center St, Northampton, MA 01060, USA",
+        "latitude": 42.3193577,
+        "longitude": -72.631837
     }
 },
 {
@@ -3712,7 +3754,10 @@
     "fields": {
         "name": "Mayfair",
         "city": "Cambridge, MA",
-        "website": ""
+        "website": "",
+        "address": "Massachusetts Avenue & Brattle Street Cambridge, Cambridge, MA 02138, USA",
+        "latitude": 42.3735695,
+        "longitude": -71.1189662
     }
 },
 {
@@ -3721,7 +3766,10 @@
     "fields": {
         "name": "Loftasaurus Rex",
         "city": "Brooklyn, NY",
-        "website": ""
+        "website": "",
+        "address": "Bushwick, Brooklyn, NY, USA",
+        "latitude": 40.69442819999999,
+        "longitude": -73.92128579999999
     }
 },
 {
@@ -3730,7 +3778,10 @@
     "fields": {
         "name": "Cafe Bourbon Street",
         "city": "Columbus, OH",
-        "website": "http://www.myspace.com/cafebourbonstreet"
+        "website": "http://www.myspace.com/cafebourbonstreet",
+        "address": "2216 Summit St, Columbus, OH 43201, USA",
+        "latitude": 40.008639,
+        "longitude": -83.0002007
     }
 },
 {
@@ -3739,7 +3790,10 @@
     "fields": {
         "name": "The Venue",
         "city": "Lafayette, IN",
-        "website": "http://www.myspace.com/venuedowntown"
+        "website": "http://www.myspace.com/venuedowntown",
+        "address": "210 N 6th St, Lafayette, IN 47901, USA",
+        "latitude": 40.419559,
+        "longitude": -86.8907905
     }
 },
 {
@@ -3748,7 +3802,10 @@
     "fields": {
         "name": "The Rudyard Kipling",
         "city": "Louisville, KY",
-        "website": "http://www.therudyardkipling.com"
+        "website": "http://www.therudyardkipling.com",
+        "address": "422 W Oak St, Louisville, KY 40203, USA",
+        "latitude": 38.23484250000001,
+        "longitude": -85.7615223
     }
 },
 {
@@ -3757,7 +3814,10 @@
     "fields": {
         "name": "The Dame",
         "city": "Lexington, KY",
-        "website": "http://www.dameky.com/"
+        "website": "http://www.dameky.com/",
+        "address": "168 W Main St, Lexington, KY 40507, USA",
+        "latitude": 38.0470894,
+        "longitude": -84.4978441
     }
 },
 {
@@ -3766,7 +3826,10 @@
     "fields": {
         "name": "Springwater Supper Club",
         "city": "Nashville, TN",
-        "website": "http://www.springwatersupperclub.com"
+        "website": "http://www.springwatersupperclub.com",
+        "address": "115 27th Ave N, Nashville, TN 37203, USA",
+        "latitude": 36.14640379999999,
+        "longitude": -86.81228660000001
     }
 },
 {
@@ -3775,7 +3838,10 @@
     "fields": {
         "name": "Grimey's",
         "city": "Nashville, TN",
-        "website": "http://www.grimeys.com/"
+        "website": "http://www.grimeys.com/",
+        "address": "1702 8th Ave S, Nashville, TN 37203, USA",
+        "latitude": 36.136849,
+        "longitude": -86.7784212
     }
 },
 {
@@ -3784,7 +3850,10 @@
     "fields": {
         "name": "Low Key Arts Building",
         "city": "Hot Springs, AR",
-        "website": "http://www.valleyofthevapors.com/home.html"
+        "website": "http://www.valleyofthevapors.com/home.html",
+        "address": "118 Arbor St, Hot Springs, AR 71901, USA",
+        "latitude": 34.5205089,
+        "longitude": -93.0544432
     }
 },
 {
@@ -3793,7 +3862,10 @@
     "fields": {
         "name": "Jackrabbit Lounge",
         "city": "Shreveport, LA",
-        "website": "http://www.myspace.com/liljoes"
+        "website": "http://www.myspace.com/liljoes",
+        "address": "Shreveport, LA, USA",
+        "latitude": 32.5251516,
+        "longitude": -93.7501789
     }
 },
 {
@@ -3802,7 +3874,10 @@
     "fields": {
         "name": "The Alamo Drafthouse",
         "city": "Austin, TX",
-        "website": "http://www.drafthouse.com/"
+        "website": "http://www.drafthouse.com/",
+        "address": "1120 S Lamar Blvd, Austin, TX 78704, USA",
+        "latitude": 30.2560786,
+        "longitude": -97.7635091
     }
 },
 {
@@ -3811,7 +3886,10 @@
     "fields": {
         "name": "Friends Bar",
         "city": "Austin, TX",
-        "website": "http://www.friendsbar.com/"
+        "website": "http://www.friendsbar.com/",
+        "address": "208 E 6th St, Austin, TX 78701, USA",
+        "latitude": 30.2677069,
+        "longitude": -97.7409983
     }
 },
 {
@@ -3820,7 +3898,10 @@
     "fields": {
         "name": "The New Deli",
         "city": "Fayetteville, AR",
-        "website": ""
+        "website": "",
+        "address": "Fayetteville, AR, USA",
+        "latitude": 36.0625795,
+        "longitude": -94.1574263
     }
 },
 {
@@ -3829,7 +3910,10 @@
     "fields": {
         "name": "Crosstown Station",
         "city": "Kansas City, MO",
-        "website": "http://www.crosstownstation.com"
+        "website": "http://www.crosstownstation.com",
+        "address": "1522 McGee St, Kansas City, MO 64108, USA",
+        "latitude": 39.0949704,
+        "longitude": -94.5801418
     }
 },
 {
@@ -3838,7 +3922,10 @@
     "fields": {
         "name": "Vaudeville Mews",
         "city": "Des Moines, IA",
-        "website": "http://www.vaudevillemews.com"
+        "website": "http://www.vaudevillemews.com",
+        "address": "212 4th St, Des Moines, IA 50309, USA",
+        "latitude": 41.5855506,
+        "longitude": -93.6219768
     }
 },
 {
@@ -3847,7 +3934,10 @@
     "fields": {
         "name": "The Maintenance Shop",
         "city": "Ames, IA",
-        "website": "http://www.m-shop.com"
+        "website": "http://www.m-shop.com",
+        "address": "Memorial Union, 2229 Lincoln Way, Ames, IA 50011, USA",
+        "latitude": 42.0235863,
+        "longitude": -93.6455794
     }
 },
 {
@@ -3856,7 +3946,10 @@
     "fields": {
         "name": "Nomad World Pub",
         "city": "Minneapolis, MN",
-        "website": "http://nomadpub.com"
+        "website": "http://nomadpub.com",
+        "address": "501 Cedar Ave, Minneapolis, MN 55454, USA",
+        "latitude": 44.9687293,
+        "longitude": -93.2470043
     }
 },
 {
@@ -3865,7 +3958,10 @@
     "fields": {
         "name": "The Annex",
         "city": "Madison, WI",
-        "website": "http://www.intheannex.com"
+        "website": "http://www.intheannex.com",
+        "address": "1212 Regent St, Madison, WI 53715, USA",
+        "latitude": 43.0680606,
+        "longitude": -89.40621
     }
 },
 {
@@ -3874,7 +3970,10 @@
     "fields": {
         "name": "The Abbey Pub",
         "city": "Chicago, IL",
-        "website": "http://www.abbeypub.com/"
+        "website": "http://www.abbeypub.com/",
+        "address": "3420 W Grace St, Chicago, IL 60615, USA",
+        "latitude": 41.95038100000001,
+        "longitude": -87.7136918
     }
 },
 {
@@ -3883,7 +3982,10 @@
     "fields": {
         "name": "The Elbow Room",
         "city": "Yspsilanti, MI",
-        "website": "http://www.ypsielbow.com"
+        "website": "http://www.ypsielbow.com",
+        "address": "1276 N Huron River Dr, Ypsilanti, MI 48197, USA",
+        "latitude": 42.2573099,
+        "longitude": -83.63311
     }
 },
 {
@@ -3892,7 +3994,10 @@
     "fields": {
         "name": "The Beachland Tavern",
         "city": "Cleveland, OH",
-        "website": "http://www.beachlandballroom.com/"
+        "website": "http://www.beachlandballroom.com/",
+        "address": "15711 Waterloo Rd, Cleveland, OH 44110, USA",
+        "latitude": 41.5714111,
+        "longitude": -81.5704402
     }
 },
 {
@@ -3901,7 +4006,10 @@
     "fields": {
         "name": "Garfield Art Works",
         "city": "Pittsburgh, PA",
-        "website": "http://www.garfieldartworks.com/"
+        "website": "http://www.garfieldartworks.com/",
+        "address": "4931 Penn Ave, Pittsburgh, PA 15224, USA",
+        "latitude": 40.4653277,
+        "longitude": -79.9440182
     }
 },
 {
@@ -3910,7 +4018,10 @@
     "fields": {
         "name": "Sound Fix",
         "city": "Brooklyn, NY",
-        "website": "http://www.soundfixrecords.com/"
+        "website": "http://www.soundfixrecords.com/",
+        "address": "44 Berry St, Brooklyn, NY 11211, USA",
+        "latitude": 40.721095,
+        "longitude": -73.9565155
     }
 },
 {
@@ -3919,7 +4030,10 @@
     "fields": {
         "name": "Union Hall",
         "city": "Brooklyn, NY",
-        "website": "http://unionhallny.com/"
+        "website": "http://unionhallny.com/",
+        "address": "702 Union St, Brooklyn, NY 11215, USA",
+        "latitude": 40.6760325,
+        "longitude": -73.9801012
     }
 },
 {
@@ -3928,7 +4042,10 @@
     "fields": {
         "name": "The Milky Way",
         "city": "Jamaica Plain, MA",
-        "website": "http://www.milkywayjp.com"
+        "website": "http://www.milkywayjp.com",
+        "address": "284 Amory St, Jamaica Plain, MA 02130, USA",
+        "latitude": 42.3144835,
+        "longitude": -71.10380789999999
     }
 },
 {
@@ -3937,7 +4054,10 @@
     "fields": {
         "name": "The Middle East Upstairs",
         "city": "Cambridge, MA",
-        "website": "http://www.mideastclub.com"
+        "website": "http://www.mideastclub.com",
+        "address": "472-480 Massachusetts Ave, Cambridge, MA 02139, USA",
+        "latitude": 42.3637874,
+        "longitude": -71.10140109999999
     }
 },
 {
@@ -3946,7 +4066,10 @@
     "fields": {
         "name": "Pearl Street Nightclub",
         "city": "Northampton, MA",
-        "website": "http://www.iheg.com/pearl_street_main.asp"
+        "website": "http://www.iheg.com/pearl_street_main.asp",
+        "address": "10 Pearl St, Northampton, MA 01060, USA",
+        "latitude": 42.31889,
+        "longitude": -72.62746
     }
 },
 {
@@ -3955,7 +4078,10 @@
     "fields": {
         "name": "Arlene's Grocery",
         "city": "New York, NY",
-        "website": "http://www.arlenesgrocery.net/main.html"
+        "website": "http://www.arlenesgrocery.net/main.html",
+        "address": "95 Stanton St, New York, NY 10002, USA",
+        "latitude": 40.721282,
+        "longitude": -73.988371
     }
 },
 {
@@ -3964,7 +4090,10 @@
     "fields": {
         "name": "Cafe Nine",
         "city": "New Haven, CT",
-        "website": "http://www.cafenine.com/"
+        "website": "http://www.cafenine.com/",
+        "address": "250 State St, New Haven, CT 06510, USA",
+        "latitude": 41.3036408,
+        "longitude": -72.92383459999999
     }
 },
 {
@@ -3973,7 +4102,10 @@
     "fields": {
         "name": "Galaxy Hut",
         "city": "Arlington, VA",
-        "website": "http://www.galaxyhut.com/"
+        "website": "http://www.galaxyhut.com/",
+        "address": "2711 Wilson Blvd, Arlington, VA 22201, USA",
+        "latitude": 38.8896372,
+        "longitude": -77.09103929999999
     }
 },
 {
@@ -3982,16 +4114,10 @@
     "fields": {
         "name": "3rd Floor Studio",
         "city": "Fredericksburg, VA",
-        "website": "http://www.mapquest.com/maps/map.adp?name=Eyeclopes%20Studios&address=810%20Caroline%20St.,%203rd%20Floor&city=Fredericksburg&state=VA&zipcode=22401"
-    }
-},
-{
-    "model": "shows.venue",
-    "pk": 46,
-    "fields": {
-        "name": "The Red & Black",
-        "city": "Washington, DC",
-        "website": "http://www.redandblackbar.com/"
+        "website": "",
+        "address": "3rd St, Fredericksburg, VA 22408, USA",
+        "latitude": 38.27807059999999,
+        "longitude": -77.4408215
     }
 },
 {
@@ -4000,7 +4126,10 @@
     "fields": {
         "name": "The Reservoir",
         "city": "Carrboro, NC",
-        "website": "http://reservoirbar.net/"
+        "website": "http://reservoirbar.net/",
+        "address": "100 Brewer Ln, Carrboro, NC 27510, USA",
+        "latitude": 35.90954110000001,
+        "longitude": -79.06589129999999
     }
 },
 {
@@ -4009,7 +4138,10 @@
     "fields": {
         "name": "The Caledonia Lounge",
         "city": "Athens, GA",
-        "website": "http://www.caledonialounge.com/"
+        "website": "http://www.caledonialounge.com/",
+        "address": "256 W Clayton St, Athens, GA 30601, USA",
+        "latitude": 33.9578326,
+        "longitude": -83.3796503
     }
 },
 {
@@ -4018,7 +4150,10 @@
     "fields": {
         "name": "The World Grotto",
         "city": "Knoxville, TN",
-        "website": "http://www.worldgrotto.com/"
+        "website": "http://www.worldgrotto.com/",
+        "address": "16 Market Square, Knoxville, TN 37902, USA",
+        "latitude": 35.9651723,
+        "longitude": -83.9196948
     }
 },
 {
@@ -4027,7 +4162,10 @@
     "fields": {
         "name": "P.A.'s Lounge",
         "city": "Somerville, MA",
-        "website": "http://www.paslounge.com/"
+        "website": "http://www.paslounge.com/",
+        "address": "345 Somerville Ave, Somerville, MA 02143, USA",
+        "latitude": 42.3808351,
+        "longitude": -71.09820739999999
     }
 },
 {
@@ -4036,7 +4174,10 @@
     "fields": {
         "name": "O'Brien's Pub",
         "city": "Allston, MA",
-        "website": "http://www.obrienspubboston.com/"
+        "website": "http://www.obrienspubboston.com/",
+        "address": "3 Harvard Ave, Allston, MA 02134, USA",
+        "latitude": 42.3552596,
+        "longitude": -71.1328683
     }
 },
 {
@@ -4045,7 +4186,10 @@
     "fields": {
         "name": "Piano's",
         "city": "New York, NY",
-        "website": "http://www.pianosnyc.com/"
+        "website": "http://www.pianosnyc.com/",
+        "address": "158 Ludlow St, New York, NY 10002, USA",
+        "latitude": 40.721025,
+        "longitude": -73.987692
     }
 },
 {
@@ -4054,7 +4198,10 @@
     "fields": {
         "name": "ArtBeat",
         "city": "Somerville, MA",
-        "website": "http://www.somervilleartscouncil.org/programs/artbeat/"
+        "website": "http://www.somervilleartscouncil.org/programs/artbeat/",
+        "address": "Davis Square, Somerville, MA, USA",
+        "latitude": 42.3967172,
+        "longitude": -71.1223151
     }
 },
 {
@@ -4063,7 +4210,10 @@
     "fields": {
         "name": "Eagles Nest",
         "city": "Northampton, MA",
-        "website": "http://www.myspace.com/eaglesnestling"
+        "website": "http://www.myspace.com/eaglesnestling",
+        "address": "270 Pleasant St, Northampton, MA 01060, USA",
+        "latitude": 42.316896,
+        "longitude": -72.625846
     }
 },
 {
@@ -4072,7 +4222,10 @@
     "fields": {
         "name": "Valentine's",
         "city": "Albany, NY",
-        "website": "http://www.valentinesalbany.com/"
+        "website": "http://www.valentinesalbany.com/",
+        "address": "17 New Scotland Ave, Albany, NY 12208, USA",
+        "latitude": 42.6542206,
+        "longitude": -73.7729964
     }
 },
 {
@@ -4081,7 +4234,10 @@
     "fields": {
         "name": "Bloomfield Bridge Tavern",
         "city": "Pittsburgh, PA",
-        "website": "http://www.myspace.com/polishpartyhouse"
+        "website": "http://www.myspace.com/polishpartyhouse",
+        "address": "4412 Liberty Ave, Pittsburgh, PA 15224, USA",
+        "latitude": 40.4632647,
+        "longitude": -79.952581
     }
 },
 {
@@ -4090,7 +4246,10 @@
     "fields": {
         "name": "Parish Hall",
         "city": "Cleveland, OH",
-        "website": "http://parishhall.wordpress.com/"
+        "website": "http://parishhall.wordpress.com/",
+        "address": "6205 Detroit Ave, Cleveland, OH 44102, USA",
+        "latitude": 41.48415,
+        "longitude": -81.72858599999999
     }
 },
 {
@@ -4099,7 +4258,10 @@
     "fields": {
         "name": "South Union Arts",
         "city": "Chicago, IL",
-        "website": "http://www.southunionarts.com/"
+        "website": "http://www.southunionarts.com/",
+        "address": "1352 S Union Ave, Chicago, IL 60607, USA",
+        "latitude": 41.863892,
+        "longitude": -87.64529890000001
     }
 },
 {
@@ -4108,7 +4270,10 @@
     "fields": {
         "name": "The Triple Rock Social Club",
         "city": "Minneapolis, MN",
-        "website": "http://www.triplerocksocialclub.com/"
+        "website": "http://www.triplerocksocialclub.com/",
+        "address": "629 Cedar Ave, Minneapolis, MN 55454, USA",
+        "latitude": 44.96676699999999,
+        "longitude": -93.2469655
     }
 },
 {
@@ -4117,7 +4282,10 @@
     "fields": {
         "name": "Points East Pub",
         "city": "Milwaukee, WI",
-        "website": "http://www.pointseastpub.com/"
+        "website": "http://www.pointseastpub.com/",
+        "address": "1501 N Jackson St, Milwaukee, WI 53202, USA",
+        "latitude": 43.04951700000001,
+        "longitude": -87.9048972
     }
 },
 {
@@ -4126,7 +4294,10 @@
     "fields": {
         "name": "The Note",
         "city": "Chicago, IL",
-        "website": "http://www.thenotechicago.com/"
+        "website": "http://www.thenotechicago.com/",
+        "address": "1565 N Milwaukee Ave, Chicago, IL 60622, USA",
+        "latitude": 41.9099569,
+        "longitude": -87.6766961
     }
 },
 {
@@ -4135,7 +4306,10 @@
     "fields": {
         "name": "Otto's",
         "city": "Dekalb, IL",
-        "website": "http://www.ottosdekalb.com/"
+        "website": "http://www.ottosdekalb.com/",
+        "address": "118 E Lincoln Hwy, DeKalb, IL 60115, USA",
+        "latitude": 41.930384,
+        "longitude": -88.7537712
     }
 },
 {
@@ -4144,7 +4318,10 @@
     "fields": {
         "name": "Canal Street Tavern",
         "city": "Dayton, OH",
-        "website": "http://www.canalstreettavern.com/"
+        "website": "http://www.canalstreettavern.com/",
+        "address": "308 E 1st St, Dayton, OH 45402, USA",
+        "latitude": 39.76302039999999,
+        "longitude": -84.1866634
     }
 },
 {
@@ -4153,7 +4330,10 @@
     "fields": {
         "name": "Castle Gayskull",
         "city": "Chapel Hill, NC",
-        "website": ""
+        "website": "",
+        "address": "Chapel Hill, NC, USA",
+        "latitude": 35.91319960000001,
+        "longitude": -79.0558445
     }
 },
 {
@@ -4162,7 +4342,10 @@
     "fields": {
         "name": "Current Gallery",
         "city": "Baltimore, MD",
-        "website": "http://www.currentspace.com/"
+        "website": "http://www.currentspace.com/",
+        "address": "421 N Howard St, Baltimore, MD 21201, USA",
+        "latitude": 39.29475219999999,
+        "longitude": -76.61952
     }
 },
 {
@@ -4171,7 +4354,10 @@
     "fields": {
         "name": "The Khyber",
         "city": "Philadelphia, PA",
-        "website": "http://www.thekhyber.com/"
+        "website": "http://www.thekhyber.com/",
+        "address": "56 S 2nd St, Philadelphia, PA 19106, USA",
+        "latitude": 39.9486287,
+        "longitude": -75.1441153
     }
 },
 {
@@ -4180,7 +4366,10 @@
     "fields": {
         "name": "The Annex",
         "city": "New York, NY",
-        "website": "http://www.theannexnyc.com/"
+        "website": "http://www.theannexnyc.com/",
+        "address": "248 Roebling St, Brooklyn, NY 11211, USA",
+        "latitude": 40.711226,
+        "longitude": -73.959969
     }
 },
 {
@@ -4189,7 +4378,10 @@
     "fields": {
         "name": "The Coolidge Corner Theater",
         "city": "Brookline, MA",
-        "website": "http://www.coolidge.org/"
+        "website": "http://www.coolidge.org/",
+        "address": "290 Harvard St, Brookline, MA 02446, USA",
+        "latitude": 42.342582,
+        "longitude": -71.12242549999999
     }
 },
 {
@@ -4198,7 +4390,10 @@
     "fields": {
         "name": "Brandeis University",
         "city": "Waltham, MA",
-        "website": "http://www.brandeis.edu/"
+        "website": "http://www.brandeis.edu/",
+        "address": "415 South St, Waltham, MA 02453, USA",
+        "latitude": 42.3662392,
+        "longitude": -71.25854799999999
     }
 },
 {
@@ -4207,7 +4402,10 @@
     "fields": {
         "name": "WMBR 88.1 FM Pipeline",
         "city": "Cambridge, MA",
-        "website": "http://www.oscillations.org/pipeline/"
+        "website": "http://www.oscillations.org/pipeline/",
+        "address": "3 Ames St, Cambridge, MA 02142, USA",
+        "latitude": 42.3603308,
+        "longitude": -71.0880604
     }
 },
 {
@@ -4216,7 +4414,10 @@
     "fields": {
         "name": "Charlie's Kitchen",
         "city": "Cambridge, MA",
-        "website": "http://maps.google.com/maps?f=q&hl=en&q=charlie%27s+kitchen&sll=42.372481,-71.12173&sspn=0.032339,0.072956&ie=UTF8&cid=42372481,-71121730,2428795541753216672&li=lmd&z=14&ll=42.377822,-71.121712&spn=0.032336,0.072956&om=1&iwloc=A"
+        "website": "",
+        "address": "10 Eliot St, Cambridge, MA 02138, USA",
+        "latitude": 42.3724215,
+        "longitude": -71.1215319
     }
 },
 {
@@ -4225,7 +4426,10 @@
     "fields": {
         "name": "Midway Cafe",
         "city": "Jamaica Plain, MA",
-        "website": "http://www.midwaycafe.com"
+        "website": "http://www.midwaycafe.com",
+        "address": "3496 Washington St, Boston, MA 02130, USA",
+        "latitude": 42.30622639999999,
+        "longitude": -71.10748629999999
     }
 },
 {
@@ -4234,7 +4438,10 @@
     "fields": {
         "name": "The Abbey Lounge",
         "city": "Somerville, MA",
-        "website": "http://www.abbeylounge.com"
+        "website": "http://www.abbeylounge.com",
+        "address": "3 Beacon St, Somerville, MA 02143, USA",
+        "latitude": 42.374514,
+        "longitude": -71.10145399999999
     }
 },
 {
@@ -4243,7 +4450,10 @@
     "fields": {
         "name": "Bill's Bar",
         "city": "Boston, MA",
-        "website": "http://www.billsbar.com"
+        "website": "http://www.billsbar.com",
+        "address": "5 Lansdowne St, Boston, MA 02215, USA",
+        "latitude": 42.3474133,
+        "longitude": -71.0949684
     }
 },
 {
@@ -4252,7 +4462,10 @@
     "fields": {
         "name": "Lizard Lounge",
         "city": "Cambridge, MA",
-        "website": "http://www.lizardloungeclub.com"
+        "website": "http://www.lizardloungeclub.com",
+        "address": "1667 Massachusetts Ave, Cambridge, MA 02138, USA",
+        "latitude": 42.38211250000001,
+        "longitude": -71.11942479999999
     }
 },
 {
@@ -4261,7 +4474,10 @@
     "fields": {
         "name": "Sin-E",
         "city": "New York, NY",
-        "website": "http://www.sin-e.com"
+        "website": "http://www.sin-e.com",
+        "address": "148 Attorney St, New York, NY 10002, USA",
+        "latitude": 40.7202259,
+        "longitude": -73.9834096
     }
 },
 {
@@ -4270,7 +4486,10 @@
     "fields": {
         "name": "Brattle Theater",
         "city": "Cambridge, MA",
-        "website": ""
+        "website": "",
+        "address": "40 Brattle St, Cambridge, MA 02138, USA",
+        "latitude": 42.3735927,
+        "longitude": -71.1213969
     }
 },
 {
@@ -4279,7 +4498,10 @@
     "fields": {
         "name": "Plough & Stars",
         "city": "Cambridge, MA",
-        "website": "http://www.ploughandstars.com/"
+        "website": "http://www.ploughandstars.com/",
+        "address": "912 Massachusetts Ave, Cambridge, MA 02139, USA",
+        "latitude": 42.3682265,
+        "longitude": -71.1088287
     }
 },
 {
@@ -4288,7 +4510,10 @@
     "fields": {
         "name": "The Space",
         "city": "Hamden, CT",
-        "website": "http://www.thespace.tk/"
+        "website": "http://www.thespace.tk/",
+        "address": "295 Treadwell St, Hamden, CT 06514, USA",
+        "latitude": 41.3539092,
+        "longitude": -72.92535219999999
     }
 },
 {
@@ -4297,7 +4522,10 @@
     "fields": {
         "name": "Cousin Larry's",
         "city": "Danbury, CT",
-        "website": "http://www.myspace.com/larrysdanbury"
+        "website": "http://www.myspace.com/larrysdanbury",
+        "address": "1 Elm St, Danbury, CT 06810, USA",
+        "latitude": 41.3962315,
+        "longitude": -73.4544349
     }
 },
 {
@@ -4306,7 +4534,10 @@
     "fields": {
         "name": "Bruar Falls",
         "city": "Brooklyn, NY",
-        "website": "http://www.bruarfalls.com/"
+        "website": "http://www.bruarfalls.com/",
+        "address": "245 Grand St, Brooklyn, NY 11211, USA",
+        "latitude": 40.713682,
+        "longitude": -73.95871199999999
     }
 },
 {
@@ -4315,16 +4546,10 @@
     "fields": {
         "name": "River Gods",
         "city": "Cambridge, MA",
-        "website": "http://www.rivergodsonline.com/"
-    }
-},
-{
-    "model": "shows.venue",
-    "pk": 83,
-    "fields": {
-        "name": "The Cake Shop",
-        "city": "New York, NY",
-        "website": "http://www.cake-shop.com"
+        "website": "http://www.rivergodsonline.com/",
+        "address": "125 River St, Cambridge, MA 02139, USA",
+        "latitude": 42.36404789999999,
+        "longitude": -71.10870229999999
     }
 },
 {
@@ -4333,7 +4558,10 @@
     "fields": {
         "name": "Ursinus College",
         "city": "Collegeville, PA",
-        "website": "http://www.ursinus.edu"
+        "website": "http://www.ursinus.edu",
+        "address": "601 E Main St, Collegeville, PA 19426, USA",
+        "latitude": 40.194207,
+        "longitude": -75.458023
     }
 },
 {
@@ -4342,7 +4570,10 @@
     "fields": {
         "name": "The Red And The Black",
         "city": "Washington, DC",
-        "website": "http://www.redandblackbar.com"
+        "website": "http://www.redandblackbar.com",
+        "address": "1212 H St NE, Washington, DC 20002, USA",
+        "latitude": 38.9003936,
+        "longitude": -76.9897307
     }
 },
 {
@@ -4351,7 +4582,10 @@
     "fields": {
         "name": "Tea Bazaar",
         "city": "Charlottesville, VA",
-        "website": "http://www.teabazaar.com"
+        "website": "http://www.teabazaar.com",
+        "address": "414 E Main St, Charlottesville, VA 22902, USA",
+        "latitude": 38.02983439999999,
+        "longitude": -78.4789021
     }
 },
 {
@@ -4360,7 +4594,10 @@
     "fields": {
         "name": "Local 506",
         "city": "Chapel Hill, NC",
-        "website": "http://www.local506.com"
+        "website": "http://www.local506.com",
+        "address": "506 W Franklin St, Chapel Hill, NC 27516, USA",
+        "latitude": 35.9102512,
+        "longitude": -79.0638479
     }
 },
 {
@@ -4369,7 +4606,10 @@
     "fields": {
         "name": "The Milestone",
         "city": "Charlotte, NC",
-        "website": "http://themilestoneclub.com"
+        "website": "http://themilestoneclub.com",
+        "address": "3400 Tuckaseegee Rd, Charlotte, NC 28208, USA",
+        "latitude": 35.24465499999999,
+        "longitude": -80.8834512
     }
 },
 {
@@ -4378,7 +4618,10 @@
     "fields": {
         "name": "Caledonia Lounge",
         "city": "Athens, GA",
-        "website": "http://www.caledonialounge.com"
+        "website": "http://www.caledonialounge.com",
+        "address": "256 W Clayton St, Athens, GA 30601, USA",
+        "latitude": 33.9578326,
+        "longitude": -83.3796503
     }
 },
 {
@@ -4387,7 +4630,10 @@
     "fields": {
         "name": "The Mink",
         "city": "Houston, TX",
-        "website": "http://www.minkonmain.com/backroom/"
+        "website": "http://www.minkonmain.com/backroom/",
+        "address": "3718 Main St, Houston, TX 77002, USA",
+        "latitude": 29.7381982,
+        "longitude": -95.37990769999999
     }
 },
 {
@@ -4396,7 +4642,10 @@
     "fields": {
         "name": "The Mohawk",
         "city": "Austin, TX",
-        "website": "http://www.mohawkaustin.com"
+        "website": "http://www.mohawkaustin.com",
+        "address": "912 Red River St, Austin, TX 78701, USA",
+        "latitude": 30.270148,
+        "longitude": -97.7360346
     }
 },
 {
@@ -4405,7 +4654,10 @@
     "fields": {
         "name": "Trees",
         "city": "Dallas, TX",
-        "website": "http://treesdallas.com"
+        "website": "http://treesdallas.com",
+        "address": "2709 Elm St, Dallas, TX 75226, USA",
+        "latitude": 32.7846208,
+        "longitude": -96.7843848
     }
 },
 {
@@ -4414,7 +4666,10 @@
     "fields": {
         "name": "The Bootleg",
         "city": "Los Angeles, CA",
-        "website": "http://www.foldsilverlake.com/"
+        "website": "http://www.foldsilverlake.com/",
+        "address": "2220 Beverly Blvd, Los Angeles, CA 90057, USA",
+        "latitude": 34.0672117,
+        "longitude": -118.2723023
     }
 },
 {
@@ -4423,7 +4678,10 @@
     "fields": {
         "name": "The Blank Club",
         "city": "San Jose, CA",
-        "website": "http://www.theblankclub.com/"
+        "website": "http://www.theblankclub.com/",
+        "address": "44 S Almaden Ave, San Jose, CA 95113, USA",
+        "latitude": 37.3339314,
+        "longitude": -121.8932037
     }
 },
 {
@@ -4432,7 +4690,10 @@
     "fields": {
         "name": "Hemlock Tavern",
         "city": "San Francisco, CA",
-        "website": "http://www.hemlocktavern.com"
+        "website": "http://www.hemlocktavern.com",
+        "address": "1131 Polk St, San Francisco, CA 94109, USA",
+        "latitude": 37.7873773,
+        "longitude": -122.4203093
     }
 },
 {
@@ -4441,7 +4702,10 @@
     "fields": {
         "name": "Luigi's Slice",
         "city": "Sacramento, CA",
-        "website": "http://www.myspace.com/luigisslice"
+        "website": "http://www.myspace.com/luigisslice",
+        "address": "1050 20th St #150, Sacramento, CA 95814, USA",
+        "latitude": 38.5761714,
+        "longitude": -121.4804028
     }
 },
 {
@@ -4450,7 +4714,10 @@
     "fields": {
         "name": "Stillwater",
         "city": "Ashland, OR",
-        "website": "http://www.stillwaterashland.com/"
+        "website": "http://www.stillwaterashland.com/",
+        "address": "1951 Ashland St, Ashland, OR 97520, USA",
+        "latitude": 42.1856233,
+        "longitude": -122.6799031
     }
 },
 {
@@ -4459,7 +4726,10 @@
     "fields": {
         "name": "Berbati's Pan",
         "city": "Portland, OR",
-        "website": "http://www.berbati.com/"
+        "website": "http://www.berbati.com/",
+        "address": "10 SW 3rd Ave, Portland, OR 97204, USA",
+        "latitude": 45.5226507,
+        "longitude": -122.6730555
     }
 },
 {
@@ -4468,7 +4738,10 @@
     "fields": {
         "name": "Sunset Tavern",
         "city": "Seattle, WA",
-        "website": "http://www.sunsettavern.com"
+        "website": "http://www.sunsettavern.com",
+        "address": "5433 Ballard Ave NW, Seattle, WA 98107, USA",
+        "latitude": 47.6681134,
+        "longitude": -122.3859886
     }
 },
 {
@@ -4476,8 +4749,11 @@
     "pk": 100,
     "fields": {
         "name": "Muse Music",
-        "city": "Salt Lake City, UT",
-        "website": "http://www.musemusiconline.com"
+        "city": "Provo, UT",
+        "website": "http://www.musemusiconline.com",
+        "address": "247 Center St, Provo, UT 84601, USA",
+        "latitude": 40.233291,
+        "longitude": -111.663053
     }
 },
 {
@@ -4486,7 +4762,10 @@
     "fields": {
         "name": "Hi-Dive",
         "city": "Denver, CO",
-        "website": "http://www.hi-dive.com"
+        "website": "http://www.hi-dive.com",
+        "address": "7 S Broadway, Denver, CO 80223, USA",
+        "latitude": 39.71633800000001,
+        "longitude": -104.9878562
     }
 },
 {
@@ -4495,7 +4774,10 @@
     "fields": {
         "name": "Replay Lounge",
         "city": "Lawrence, KS",
-        "website": "http://www.myspace.com/replaylounge"
+        "website": "http://www.myspace.com/replaylounge",
+        "address": "946 Massachusetts St, Lawrence, KS 66044, USA",
+        "latitude": 38.965828,
+        "longitude": -95.23552699999999
     }
 },
 {
@@ -4504,7 +4786,10 @@
     "fields": {
         "name": "The Mill",
         "city": "Iowa City, IA",
-        "website": "http://www.icmill.com"
+        "website": "http://www.icmill.com",
+        "address": "120 E Burlington St, Iowa City, IA 52240, USA",
+        "latitude": 41.6582275,
+        "longitude": -91.53380589999999
     }
 },
 {
@@ -4513,7 +4798,10 @@
     "fields": {
         "name": "501 Club",
         "city": "Minneapolis, MN",
-        "website": "http://www.501.mn/"
+        "website": "http://www.501.mn/",
+        "address": "501 S Washington Ave, Minneapolis, MN 55415, USA",
+        "latitude": 44.9785589,
+        "longitude": -93.26100249999999
     }
 },
 {
@@ -4522,7 +4810,10 @@
     "fields": {
         "name": "Mad Planet",
         "city": "Milwaukee, WI",
-        "website": "http://www.mad-planet.net/"
+        "website": "http://www.mad-planet.net/",
+        "address": "533 E Center St, Milwaukee, WI 53212, USA",
+        "latitude": 43.06735679999999,
+        "longitude": -87.9045546
     }
 },
 {
@@ -4531,7 +4822,10 @@
     "fields": {
         "name": "Cowboy Monkey",
         "city": "Champaign, IL",
-        "website": "http://www.cowboy-monkey.com"
+        "website": "http://www.cowboy-monkey.com",
+        "address": "6 Taylor St, Champaign, IL 61820, USA",
+        "latitude": 40.1174946,
+        "longitude": -88.2431678
     }
 },
 {
@@ -4540,7 +4834,10 @@
     "fields": {
         "name": "The Empty Bottle",
         "city": "Chicago, IL",
-        "website": "http://www.emptybottle.com"
+        "website": "http://www.emptybottle.com",
+        "address": "2301 W Chicago Ave, Chicago, IL 60622, USA",
+        "latitude": 41.8955035,
+        "longitude": -87.68455010000001
     }
 },
 {
@@ -4549,16 +4846,22 @@
     "fields": {
         "name": "Southgate House",
         "city": "Newport, KY",
-        "website": "http://www.southgatehouse.com/"
+        "website": "http://www.southgatehouse.com/",
+        "address": "24 E 3rd St, Newport, KY 41071, USA",
+        "latitude": 39.0936256,
+        "longitude": -84.4962233
     }
 },
 {
     "model": "shows.venue",
     "pk": 109,
     "fields": {
-        "name": "The Treehouse",
+        "name": "The Tree Bar",
         "city": "Columbus, OH",
-        "website": "http://www.treehousecolumbus.com"
+        "website": "http://www.treehousecolumbus.com",
+        "address": "887 Chambers Rd, Columbus, OH 43212, USA",
+        "latitude": 39.9917135,
+        "longitude": -83.0305425
     }
 },
 {
@@ -4567,7 +4870,10 @@
     "fields": {
         "name": "Thunderbird Cafe",
         "city": "Pittsburgh, PA",
-        "website": "http://www.thunderbirdcafe.net/"
+        "website": "http://www.thunderbirdcafe.net/",
+        "address": "4023 Butler St, Pittsburgh, PA 15201, USA",
+        "latitude": 40.46941,
+        "longitude": -79.961676
     }
 },
 {
@@ -4576,7 +4882,10 @@
     "fields": {
         "name": "Mohawk Place",
         "city": "Buffalo, NY",
-        "website": "http://www.myspace.com/mohawkplace"
+        "website": "http://www.myspace.com/mohawkplace",
+        "address": "47 E Mohawk St, Buffalo, NY 14203, USA",
+        "latitude": 42.88673219999999,
+        "longitude": -78.8721169
     }
 },
 {
@@ -4585,7 +4894,10 @@
     "fields": {
         "name": "Newbury Comics",
         "city": "Norwood, MA",
-        "website": "http://maps.google.com/maps?q=&hl=en&sll=42.183123,-71.187603&sspn=0.006295,0.016016&ie=UTF8&view=map&cid=14418200083420400059&hq=newbury+comics,+norwood,+ma&hnear=&ll=42.184379,-71.187608&spn=0.008475,0.018153&z=16&iwloc=A"
+        "website": "",
+        "address": "859 Boston Providence Hwy, Norwood, MA 02062, USA",
+        "latitude": 42.183277,
+        "longitude": -71.1879812
     }
 },
 {
@@ -4594,7 +4906,10 @@
     "fields": {
         "name": "Lilly's Pad",
         "city": "New Haven, CT",
-        "website": "http://www.toadsplace.com/wp/lillys-pad"
+        "website": "http://www.toadsplace.com/wp/lillys-pad",
+        "address": "300 York St, New Haven, CT 06511, USA",
+        "latitude": 41.3115092,
+        "longitude": -72.9296468
     }
 },
 {
@@ -4603,16 +4918,10 @@
     "fields": {
         "name": "Pearl Street",
         "city": "Northampton, MA",
-        "website": "http://www.iheg.com/pearl_street_main.asp"
-    }
-},
-{
-    "model": "shows.venue",
-    "pk": 115,
-    "fields": {
-        "name": "TBA",
-        "city": "New York, NY",
-        "website": ""
+        "website": "http://www.iheg.com/pearl_street_main.asp",
+        "address": "10 Pearl St, Northampton, MA 01060, USA",
+        "latitude": 42.31889,
+        "longitude": -72.62746
     }
 },
 {
@@ -4621,7 +4930,10 @@
     "fields": {
         "name": "Ninth Ward at Babeville",
         "city": "Buffalo, NY",
-        "website": "http://www.babevillebuffalo.com/index.php"
+        "website": "http://www.babevillebuffalo.com/index.php",
+        "address": "341 Delaware Ave, Buffalo, NY 14202, USA",
+        "latitude": 42.89372789999999,
+        "longitude": -78.87535299999999
     }
 },
 {
@@ -4630,7 +4942,10 @@
     "fields": {
         "name": "Horseshoe Tavern",
         "city": "Toronto, ON",
-        "website": "http://www.horseshoetavern.com/"
+        "website": "http://www.horseshoetavern.com/",
+        "address": "370 Queen St W, Toronto, ON M5V 2A2, Canada",
+        "latitude": 43.6490629,
+        "longitude": -79.39594
     }
 },
 {
@@ -4639,16 +4954,10 @@
     "fields": {
         "name": "Intersection Lounge",
         "city": "Grand Rapids, MI",
-        "website": "http://www.sectionlive.com/"
-    }
-},
-{
-    "model": "shows.venue",
-    "pk": 119,
-    "fields": {
-        "name": "TBA",
-        "city": "Chicago, IL",
-        "website": ""
+        "website": "http://www.sectionlive.com/",
+        "address": "133 Grandville Ave SW, Grand Rapids, MI 49503, USA",
+        "latitude": 42.9598977,
+        "longitude": -85.6740044
     }
 },
 {
@@ -4657,7 +4966,10 @@
     "fields": {
         "name": "Lemon Grove Cafe",
         "city": "Youngstown, OH",
-        "website": "http://www.lemongrovecafe.com/"
+        "website": "http://www.lemongrovecafe.com/",
+        "address": "110 W Federal St, Youngstown, OH 44503, USA",
+        "latitude": 41.10097289999999,
+        "longitude": -80.650741
     }
 },
 {
@@ -4666,7 +4978,10 @@
     "fields": {
         "name": "Subterranean",
         "city": "Chicago, IL",
-        "website": "http://www.subt.net/"
+        "website": "http://www.subt.net/",
+        "address": "2011 W North Ave, Chicago, IL 60647, USA",
+        "latitude": 41.91036029999999,
+        "longitude": -87.67797019999999
     }
 },
 {
@@ -4675,7 +4990,10 @@
     "fields": {
         "name": "The M Room",
         "city": "Philadelphia, PA",
-        "website": "http://mroomphilly.com/"
+        "website": "http://mroomphilly.com/",
+        "address": "15 W Girard Ave, Philadelphia, PA 19125, USA",
+        "latitude": 39.9689363,
+        "longitude": -75.13498349999999
     }
 },
 {
@@ -4684,7 +5002,10 @@
     "fields": {
         "name": "The Bug Jar",
         "city": "Rochester, NY",
-        "website": "http://bugjar.com/"
+        "website": "http://bugjar.com/",
+        "address": "219 Monroe Ave, Rochester, NY 14607, USA",
+        "latitude": 43.1500746,
+        "longitude": -77.600128
     }
 },
 {
@@ -4693,7 +5014,10 @@
     "fields": {
         "name": "Allston Village Street Fair",
         "city": "Allston, MA",
-        "website": "http://www.avsf.info/"
+        "website": "http://www.avsf.info/",
+        "address": "161 Harvard Ave, Allston, MA 02134, USA",
+        "latitude": 42.3515978,
+        "longitude": -71.1318581
     }
 },
 {
@@ -4702,7 +5026,10 @@
     "fields": {
         "name": "Church",
         "city": "Boston, MA",
-        "website": "http://www.churchofboston.com/club.php"
+        "website": "http://www.churchofboston.com/club.php",
+        "address": "69 Kilmarnock St, Boston, MA 02215, USA",
+        "latitude": 42.3424695,
+        "longitude": -71.09947749999999
     }
 },
 {
@@ -4711,16 +5038,10 @@
     "fields": {
         "name": "The Rock Shop",
         "city": "Brooklyn, NY",
-        "website": "http://www.therockshopny.com/"
-    }
-},
-{
-    "model": "shows.venue",
-    "pk": 127,
-    "fields": {
-        "name": "The Milky Way",
-        "city": "Jamaica Plain, MA",
-        "website": "http://www.milkywayjp.com/"
+        "website": "http://www.therockshopny.com/",
+        "address": "249 4th Ave, Brooklyn, NY 11215, USA",
+        "latitude": 40.6762588,
+        "longitude": -73.9835286
     }
 },
 {
@@ -4729,7 +5050,10 @@
     "fields": {
         "name": "Union Pool",
         "city": "Brooklyn, NY",
-        "website": "http://union-pool.com/"
+        "website": "http://union-pool.com/",
+        "address": "484 Union Ave, Brooklyn, NY 11211, USA",
+        "latitude": 40.7149639,
+        "longitude": -73.9515554
     }
 },
 {
@@ -4738,7 +5062,10 @@
     "fields": {
         "name": "Musica",
         "city": "Akron, OH",
-        "website": "http://www.akronmusica.com/"
+        "website": "http://www.akronmusica.com/",
+        "address": "51 E Market St, Akron, OH 44308, USA",
+        "latitude": 41.0855761,
+        "longitude": -81.5157229
     }
 },
 {
@@ -4747,7 +5074,10 @@
     "fields": {
         "name": "Founders Brewery",
         "city": "Grand Rapids, MI",
-        "website": "http://foundersbrewing.com/events/live-music"
+        "website": "http://foundersbrewing.com/events/live-music",
+        "address": "235 Grandville Ave SW, Grand Rapids, MI 49503, USA",
+        "latitude": 42.95835179999999,
+        "longitude": -85.67419149999999
     }
 },
 {
@@ -4756,7 +5086,10 @@
     "fields": {
         "name": "Beat Kitchen",
         "city": "Chicago, IL",
-        "website": "http://www.beatkitchen.com/"
+        "website": "http://www.beatkitchen.com/",
+        "address": "2100 W Belmont Ave, Chicago, IL 60618, USA",
+        "latitude": 41.9396771,
+        "longitude": -87.68092949999999
     }
 },
 {
@@ -4765,7 +5098,10 @@
     "fields": {
         "name": "The Bishop",
         "city": "Bloomington, IN",
-        "website": "http://thebishopbar.com/"
+        "website": "http://thebishopbar.com/",
+        "address": "123 S Walnut St, Bloomington, IN 47404, USA",
+        "latitude": 39.1657649,
+        "longitude": -86.5333145
     }
 },
 {
@@ -4774,7 +5110,10 @@
     "fields": {
         "name": "MOTR Pub",
         "city": "Cincinnati, OH",
-        "website": "http://motrpub.com/"
+        "website": "http://motrpub.com/",
+        "address": "1345 Main St, Cincinnati, OH 45202, USA",
+        "latitude": 39.111083,
+        "longitude": -84.51241329999999
     }
 },
 {
@@ -4783,7 +5122,10 @@
     "fields": {
         "name": "Cafe 939",
         "city": "Boston, MA",
-        "website": "http://www.cafe939.com/"
+        "website": "http://www.cafe939.com/",
+        "address": "939 Boylston St, Boston, MA 02115, USA",
+        "latitude": 42.3482308,
+        "longitude": -71.0849295
     }
 },
 {
@@ -4792,7 +5134,10 @@
     "fields": {
         "name": "North Star Bar",
         "city": "Philadelphia, PA",
-        "website": "http://northstarbar.com/"
+        "website": "http://northstarbar.com/",
+        "address": "2639 Poplar St, Philadelphia, PA 19130, USA",
+        "latitude": 39.9729802,
+        "longitude": -75.180601
     }
 },
 {
@@ -4801,7 +5146,10 @@
     "fields": {
         "name": "IOTA",
         "city": "Arlington, VA",
-        "website": "http://www.iotaclubandcafe.com/"
+        "website": "http://www.iotaclubandcafe.com/",
+        "address": "2832 Wilson Blvd, Arlington, VA 22201, USA",
+        "latitude": 38.88878820000001,
+        "longitude": -77.0924524
     }
 },
 {
@@ -4810,7 +5158,10 @@
     "fields": {
         "name": "Allandale Farm",
         "city": "Jamaica Plain, MA",
-        "website": "http://www.allandalefarm.com/"
+        "website": "http://www.allandalefarm.com/",
+        "address": "259 Allandale Rd, Chestnut Hill, MA 02467, USA",
+        "latitude": 42.30226200000001,
+        "longitude": -71.1392333
     }
 },
 {
@@ -4819,7 +5170,10 @@
     "fields": {
         "name": "The Calhoun School",
         "city": "New York, NY",
-        "website": "http://www.calhoun.org/home"
+        "website": "http://www.calhoun.org/home",
+        "address": "433 West End Ave, New York, NY 10024, USA",
+        "latitude": 40.78562099999999,
+        "longitude": -73.98055
     }
 },
 {
@@ -4828,7 +5182,10 @@
     "fields": {
         "name": "Zirzamin",
         "city": "New York, NY",
-        "website": "http://zirzaminnyc.com/"
+        "website": "http://zirzaminnyc.com/",
+        "address": "90 W Houston St, New York, NY 10012, USA",
+        "latitude": 40.7272808,
+        "longitude": -73.9999199
     }
 },
 {
@@ -4837,7 +5194,10 @@
     "fields": {
         "name": "Oberon",
         "city": "Cambridge, MA",
-        "website": "http://www.americanrepertorytheater.org/oberon"
+        "website": "http://www.americanrepertorytheater.org/oberon",
+        "address": "Oberon, 12 Arrow St, Cambridge, MA 02138, USA",
+        "latitude": 42.37097179999999,
+        "longitude": -71.11487029999999
     }
 },
 {
@@ -4846,7 +5206,10 @@
     "fields": {
         "name": "Kennett Flash",
         "city": "Kennett Square, PA",
-        "website": "http://www.kennettflash.org/"
+        "website": "http://www.kennettflash.org/",
+        "address": "102 Sycamore Alley, Kennett Square, PA 19348, USA",
+        "latitude": 39.8463572,
+        "longitude": -75.7110972
     }
 },
 {
@@ -4855,7 +5218,10 @@
     "fields": {
         "name": "The Sinclair",
         "city": "Cambridge, MA",
-        "website": "http://www.sinclaircambridge.com/"
+        "website": "http://www.sinclaircambridge.com/",
+        "address": "52 Church St, Cambridge, MA 02138, USA",
+        "latitude": 42.3739885,
+        "longitude": -71.120649
     }
 },
 {
@@ -4864,7 +5230,10 @@
     "fields": {
         "name": "The Red Door",
         "city": "Portsmouth, NH",
-        "website": "http://www.reddoorportsmouth.com/"
+        "website": "http://www.reddoorportsmouth.com/",
+        "address": "107 State Street, Portsmouth, NH 03801, USA",
+        "latitude": 43.0770991,
+        "longitude": -70.7547984
     }
 },
 {
@@ -4873,7 +5242,10 @@
     "fields": {
         "name": "Red Star Union",
         "city": "Cambridge, MA",
-        "website": "http://www.redstarunion.com/"
+        "website": "http://www.redstarunion.com/",
+        "address": "1 Kendall Square #400, Cambridge, MA 02139, USA",
+        "latitude": 42.36698519999999,
+        "longitude": -71.0906033
     }
 },
 {
@@ -4882,7 +5254,10 @@
     "fields": {
         "name": "Bayside Bowl",
         "city": "Portland, ME",
-        "website": "http://www.baysidebowl.com/"
+        "website": "http://www.baysidebowl.com/",
+        "address": "58 Alder St, Portland, ME 04101, USA",
+        "latitude": 43.659841,
+        "longitude": -70.26377400000001
     }
 },
 {
@@ -4891,7 +5266,10 @@
     "fields": {
         "name": "The Beachcomber",
         "city": "Wellfleet, MA",
-        "website": "http://www.thebeachcomber.com/"
+        "website": "http://www.thebeachcomber.com/",
+        "address": "2182 US-6, Wellfleet, MA 02667, USA",
+        "latitude": 41.9251247,
+        "longitude": -70.0116085
     }
 },
 {
@@ -4900,7 +5278,10 @@
     "fields": {
         "name": "ZuZu",
         "city": "Cambridge, MA",
-        "website": "http://zuzubar.com/"
+        "website": "http://zuzubar.com/",
+        "address": "474 Massachusetts Ave, Cambridge, MA 02139, USA",
+        "latitude": 42.3638051,
+        "longitude": -71.1014112
     }
 },
 {
@@ -4909,7 +5290,10 @@
     "fields": {
         "name": "The Cavern at the Tavern",
         "city": "Plymouth, MA",
-        "website": "http://www.cavernatthetavern.com/"
+        "website": "http://www.cavernatthetavern.com/",
+        "address": "56 Main St, Plymouth, MA 02360, USA",
+        "latitude": 41.9568443,
+        "longitude": -70.6651127
     }
 },
 {
@@ -4918,7 +5302,10 @@
     "fields": {
         "name": "Radio",
         "city": "Somerville, MA",
-        "website": "http://radiobarunion.com/"
+        "website": "http://radiobarunion.com/",
+        "address": "381 Somerville Ave, Somerville, MA 02143, USA",
+        "latitude": 42.38158680000001,
+        "longitude": -71.1000431
     }
 },
 {
@@ -4927,7 +5314,10 @@
     "fields": {
         "name": "The Lily Pad",
         "city": "Cambridge, MA",
-        "website": "http://lilypadinman.com/"
+        "website": "http://lilypadinman.com/",
+        "address": "1353 Cambridge St, Cambridge, MA 02139, USA",
+        "latitude": 42.37376189999999,
+        "longitude": -71.1000787
     }
 },
 {
@@ -4936,7 +5326,10 @@
     "fields": {
         "name": "The Womb",
         "city": "Allston, MA",
-        "website": ""
+        "website": "",
+        "address": "Allston, Boston, MA 02134, USA",
+        "latitude": 42.3539038,
+        "longitude": -71.1337112
     }
 },
 {
@@ -4945,7 +5338,10 @@
     "fields": {
         "name": "The Mint",
         "city": "Los Angeles, CA",
-        "website": "http://themintla.com/index.cfm"
+        "website": "http://themintla.com/index.cfm",
+        "address": "6010 W Pico Blvd, Los Angeles, CA 90035, USA",
+        "latitude": 34.0522505,
+        "longitude": -118.3715567
     }
 },
 {
@@ -4954,7 +5350,10 @@
     "fields": {
         "name": "UCB Theatre",
         "city": "Los Angeles, CA",
-        "website": "http://losangeles.ucbtheatre.com/"
+        "website": "http://losangeles.ucbtheatre.com/",
+        "address": "5919 Franklin Ave, Los Angeles, CA 90028, USA",
+        "latitude": 34.1054177,
+        "longitude": -118.3187754
     }
 },
 {
@@ -4963,7 +5362,10 @@
     "fields": {
         "name": "The New Parish",
         "city": "Oakland, CA",
-        "website": "http://www.thenewparish.com/"
+        "website": "http://www.thenewparish.com/",
+        "address": "1743 San Pablo Ave, Oakland, CA 94612, USA",
+        "latitude": 37.8076511,
+        "longitude": -122.2726029
     }
 },
 {
@@ -4972,7 +5374,10 @@
     "fields": {
         "name": "Viper Room",
         "city": "Los Angeles, CA",
-        "website": "http://www.viperroom.com/"
+        "website": "http://www.viperroom.com/",
+        "address": "8852 Sunset Blvd, West Hollywood, CA 90069, USA",
+        "latitude": 34.090438,
+        "longitude": -118.384724
     }
 },
 {
@@ -4981,7 +5386,10 @@
     "fields": {
         "name": "TRiP",
         "city": "Santa Monica, CA",
-        "website": "http://www.tripsantamonica.com/"
+        "website": "http://www.tripsantamonica.com/",
+        "address": "2101 Lincoln Blvd, Santa Monica, CA 90405, USA",
+        "latitude": 34.0109379,
+        "longitude": -118.4809564
     }
 },
 {
@@ -4990,7 +5398,10 @@
     "fields": {
         "name": "Wesleyan College",
         "city": "Middletown, CT",
-        "website": "http://www.wesleyan.edu/"
+        "website": "http://www.wesleyan.edu/",
+        "address": "45 Wyllys Ave, Middletown, CT 06459, USA",
+        "latitude": 41.5566104,
+        "longitude": -72.65690409999999
     }
 },
 {
@@ -4999,7 +5410,10 @@
     "fields": {
         "name": "Bunker Brewing Co.",
         "city": "Portland, ME",
-        "website": "http://bunkerbrewingco.com/"
+        "website": "http://bunkerbrewingco.com/",
+        "address": "122 Anderson St, Portland, ME 04101, USA",
+        "latitude": 43.6670461,
+        "longitude": -70.2561162
     }
 },
 {
@@ -5008,7 +5422,10 @@
     "fields": {
         "name": "The Press Room",
         "city": "Portsmouth, NH",
-        "website": "http://pressroomnh.com/"
+        "website": "http://pressroomnh.com/",
+        "address": "77 Daniel St, Portsmouth, NH 03801, USA",
+        "latitude": 43.077271,
+        "longitude": -70.7559943
     }
 },
 {
@@ -5017,7 +5434,10 @@
     "fields": {
         "name": "State Park",
         "city": "Cambridge, MA",
-        "website": "http://statepark.is/"
+        "website": "http://statepark.is/",
+        "address": "300, 1 Kendall Square, Cambridge, MA 02139, USA",
+        "latitude": 42.366356,
+        "longitude": -71.090875
     }
 },
 {
@@ -5026,7 +5446,10 @@
     "fields": {
         "name": "The Bowery Electric",
         "city": "New York, NY",
-        "website": "http://www.theboweryelectric.com/"
+        "website": "http://www.theboweryelectric.com/",
+        "address": "327 Bowery, New York, NY 10003, USA",
+        "latitude": 40.7257215,
+        "longitude": -73.99175
     }
 },
 {
@@ -5035,7 +5458,10 @@
     "fields": {
         "name": "Atwood's Tavern",
         "city": "Cambridge, MA",
-        "website": "http://www.atwoodstavern.com/"
+        "website": "http://www.atwoodstavern.com/",
+        "address": "877 Cambridge St, Cambridge, MA 02141, USA",
+        "latitude": 42.3726862,
+        "longitude": -71.091449
     }
 },
 {
@@ -5044,7 +5470,10 @@
     "fields": {
         "name": "Revere Hotel",
         "city": "Boston, MA",
-        "website": "http://www.reverehotel.com/#index"
+        "website": "http://www.reverehotel.com/#index",
+        "address": "3 Center Plz, Boston, MA 02108, USA",
+        "latitude": 42.3594139,
+        "longitude": -71.06016129999999
     }
 },
 {
@@ -5053,7 +5482,10 @@
     "fields": {
         "name": "The Monkey House",
         "city": "Winooski, VT",
-        "website": "http://monkeyhousevt.com/"
+        "website": "http://monkeyhousevt.com/",
+        "address": "30 Main St, Winooski, VT 05404, USA",
+        "latitude": 44.490521,
+        "longitude": -73.1867444
     }
 },
 {
@@ -5062,7 +5494,10 @@
     "fields": {
         "name": "Brighton Music Hall",
         "city": "Allston, MA",
-        "website": "http://crossroadspresents.com/brighton-music-hall/"
+        "website": "http://crossroadspresents.com/brighton-music-hall/",
+        "address": "158 Brighton Ave, Allston, MA 02134, USA",
+        "latitude": 42.3528879,
+        "longitude": -71.13261349999999
     }
 },
 {
@@ -5071,7 +5506,10 @@
     "fields": {
         "name": "Paramount Center",
         "city": "Boston, MA",
-        "website": "https://artsemerson.org/online/default.asp?doWork::WScontent::loadArticle=Load&BOparam::WScontent::loadArticle::article_id=9D8CD637-6736-48D8-A35E-FDD7CB6C737B"
+        "website": "https://artsemerson.org/",
+        "address": "559 Washington St, Boston, MA 02111, USA",
+        "latitude": 42.35374179999999,
+        "longitude": -71.0626963
     }
 },
 {
@@ -5080,16 +5518,10 @@
     "fields": {
         "name": "The Sportsmens Tavern",
         "city": "Buffalo, NY",
-        "website": "http://sportsmenstavern.net/"
-    }
-},
-{
-    "model": "shows.venue",
-    "pk": 168,
-    "fields": {
-        "name": "New System Laundry",
-        "city": "Portland, ME",
-        "website": "https://www.facebook.com/newsystemleaners"
+        "website": "http://sportsmenstavern.net/",
+        "address": "326 Amherst St, Buffalo, NY 14207, USA",
+        "latitude": 42.93781559999999,
+        "longitude": -78.89181359999999
     }
 },
 {
@@ -5098,16 +5530,10 @@
     "fields": {
         "name": "The Bell House",
         "city": "Brooklyn, NY",
-        "website": "http://thebellhouseny.com/"
-    }
-},
-{
-    "model": "shows.venue",
-    "pk": 170,
-    "fields": {
-        "name": "Mayfair 2015",
-        "city": "Cambridge, MA",
-        "website": "http://www.harvardsquare.com/32nd-annual-mayfair-talent-line-announced-sunday-may-3rd-2015"
+        "website": "http://thebellhouseny.com/",
+        "address": "149 7th St, Brooklyn, NY 11215, USA",
+        "latitude": 40.6737363,
+        "longitude": -73.991674
     }
 },
 {
@@ -5116,7 +5542,10 @@
     "fields": {
         "name": "Cuisine en Locale",
         "city": "Somerville, MA",
-        "website": "http://cuisineenlocale.com/about-us/function-hall/"
+        "website": "http://cuisineenlocale.com/about-us/function-hall/",
+        "address": "156 Highland Ave, Somerville, MA 02143, USA",
+        "latitude": 42.3882949,
+        "longitude": -71.1037726
     }
 },
 {
@@ -5125,7 +5554,10 @@
     "fields": {
         "name": "C'Mon Everybody",
         "city": "Brooklyn, NY",
-        "website": "http://www.cmoneverybody.com/"
+        "website": "http://www.cmoneverybody.com/",
+        "address": "325 Franklin Ave, Brooklyn, NY 11238, USA",
+        "latitude": 40.6883159,
+        "longitude": -73.9568761
     }
 },
 {
@@ -5134,7 +5566,10 @@
     "fields": {
         "name": "Grumpy's",
         "city": "Falmouth, MA",
-        "website": ""
+        "website": "",
+        "address": "29 Locust St, Falmouth, MA 02540, USA",
+        "latitude": 41.5545807,
+        "longitude": -70.6229719
     }
 },
 {
@@ -5143,7 +5578,10 @@
     "fields": {
         "name": "Club 603",
         "city": "Baltimore, MD",
-        "website": ""
+        "website": "",
+        "address": "Roland Park, Baltimore, MD, USA",
+        "latitude": 39.3544272,
+        "longitude": -76.63838319999999
     }
 },
 {
@@ -5152,7 +5590,10 @@
     "fields": {
         "name": "Dusk",
         "city": "Providence, RI",
-        "website": "http://duskprovidence.com/"
+        "website": "http://duskprovidence.com/",
+        "address": "301 Harris Ave, Providence, RI 02909, USA",
+        "latitude": 41.8259423,
+        "longitude": -71.4301357
     }
 },
 {
@@ -5161,7 +5602,10 @@
     "fields": {
         "name": "Black Cat",
         "city": "Washington, DC",
-        "website": ""
+        "website": "",
+        "address": "1811 14th St NW, Washington, DC 20009, USA",
+        "latitude": 38.914571,
+        "longitude": -77.031542
     }
 },
 {
@@ -5170,7 +5614,10 @@
     "fields": {
         "name": "Chesterfest",
         "city": "Stockbridge, MA",
-        "website": ""
+        "website": "",
+        "address": "4 Williamsville Rd, Stockbridge, MA 01262, USA",
+        "latitude": 42.28504,
+        "longitude": -73.351507
     }
 },
 {
@@ -5179,7 +5626,10 @@
     "fields": {
         "name": "Fuzz Hut",
         "city": "Manchester, NH",
-        "website": ""
+        "website": "",
+        "address": "Manchester, NH, USA",
+        "latitude": 42.8895861,
+        "longitude": -71.5127129
     }
 },
 {
@@ -5837,7 +6287,7 @@
         "publish": true,
         "publish_on": "2007-09-12T00:00:00Z",
         "date": "2007-10-12",
-        "venue": 46,
+        "venue": 85,
         "description": "<p>with Casper & The Cookies, The Subjects, and Kris Racer.</p>",
         "details": ""
     }
@@ -6605,7 +7055,7 @@
         "publish": true,
         "publish_on": "2009-09-20T00:00:00Z",
         "date": "2009-11-19",
-        "venue": 83,
+        "venue": 11,
         "description": "",
         "details": ""
     }
@@ -7164,18 +7614,6 @@
 },
 {
     "model": "shows.gig",
-    "pk": 174,
-    "fields": {
-        "publish": false,
-        "publish_on": null,
-        "date": "2010-10-14",
-        "venue": 80,
-        "description": "",
-        "details": ""
-    }
-},
-{
-    "model": "shows.gig",
     "pk": 175,
     "fields": {
         "publish": true,
@@ -7325,7 +7763,7 @@
         "publish": true,
         "publish_on": "2011-10-26T08:14:15Z",
         "date": "2011-11-18",
-        "venue": 127,
+        "venue": 39,
         "description": "<p>with Big Digits and Hilly Eye.</p>",
         "details": ""
     }
@@ -8165,7 +8603,7 @@
         "publish": true,
         "publish_on": "2015-04-06T20:48:20Z",
         "date": "2015-05-03",
-        "venue": 170,
+        "venue": 15,
         "description": "<p>Outdoor free festival in Harvard Square.</p>",
         "details": ""
     }
@@ -8358,7 +8796,7 @@
         "publish_on": "2016-06-27T23:26:23Z",
         "date": "2016-08-06",
         "venue": 179,
-        "description": "",
+        "description": "with Creaturos, Edgar Clinks, and Breakfast Lunch & Dinner",
         "details": "<p><a href=\"https://www.facebook.com/events/1757880544434810/\">Facebook</a></p>"
     }
 },
@@ -8366,12 +8804,12 @@
     "model": "shows.gig",
     "pk": 279,
     "fields": {
-        "publish": false,
-        "publish_on": null,
+        "publish": true,
+        "publish_on": "2016-08-03T01:18:06Z",
         "date": "2016-08-07",
         "venue": 160,
-        "description": "",
-        "details": ""
+        "description": "with ABADABAD",
+        "details": "<p>Free!\r\n<br><a href=\"https://www.facebook.com/events/109978152780090/\">Facebook</a>\r\n</p>"
     }
 },
 {

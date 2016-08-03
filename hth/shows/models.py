@@ -13,6 +13,9 @@ class Venue(models.Model):
     name = models.CharField(max_length=200)
     city = models.CharField(max_length=200)
     website = models.URLField(blank=True)
+    address = models.CharField(blank=True, max_length=200)
+    latitude = models.FloatField(blank=True, null=True)
+    longitude = models.FloatField(blank=True, null=True)
 
     class Meta:
         ordering = ['name', 'city']

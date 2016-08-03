@@ -6,8 +6,7 @@ from .models import Venue, Gig
 @admin.register(Venue)
 class VenueAdmin(admin.ModelAdmin):
     save_on_top = True
-    fields = ('name', 'city', 'website')
-
+    fields = ('name', 'city', 'website', 'address', 'latitude', 'longitude')
     search_fields = ('name', 'city')
 
 
