@@ -22,6 +22,7 @@
 
 body {
     @extend .size-medium;
+    background-color: white;
     color: $base-font-color;
     font-family: $base-font-family;
 }
