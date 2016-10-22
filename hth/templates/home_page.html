@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load cloudinary %}
 
+{% comment %}
 {% block head_css %}
 {{ block.super }}
 
@@ -11,10 +12,14 @@
     }
 </style>
 {% endblock %}
+{% endcomment %}
 
 {% block main_content %}
 <figure class="hero-img">
-    <img src="{% cloudinary_url "hth_bowery_2016.jpg" %}" alt="HTH at Bowery Electric"></a>
+    <img src="{% cloudinary_url "hth_bowery_2016.jpg" %}" alt="HTH at Bowery Electric">
+    <figcaption>
+        <div class="img-credit">Photo courtesy of Matt Condon</div>
+    </figcaption>
 </figure>
 {% comment %}
 <a href="https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out" class="hero">
