@@ -8943,5 +8943,17 @@
         "description": "<p><strong>JP Music Festival</strong></p>",
         "details": "<p>Free, all ages.\r\n<br><a href=\"https://www.facebook.com/events/188367601518773/\">Facebook</a></p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 282,
+    "fields": {
+        "publish": true,
+        "publish_on": "2016-11-05T11:06:19.816Z",
+        "date": "2016-12-16",
+        "venue": 9,
+        "description": "<p>with Beware the Dangers of a Ghost Scorpion and Crooked Coast</p>",
+        "details": "<p><a href=\"http://axs.com/events/327770/hallelujah-the-hills-tickets\">Tickets</a></p>"
+    }
 }
 ]
