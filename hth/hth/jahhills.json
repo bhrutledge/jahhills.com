@@ -3592,6 +3592,17 @@
     }
 },
 {
+    "model": "news.post",
+    "pk": 39,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-01-02T00:00:00Z",
+        "title": "From the whole band, thanks for the great year!",
+        "slug": "thanks-for-the-great-year",
+        "body": "<p>Here's two news items:</p>\r\n\r\n<ul>\r\n    <li><p><a href=\"https://hallelujahthehills.bandcamp.com/album/bootleg-live-at-the-cake-shop-july-29th-2016\">LIVE BOOTLEG - July 29th, 2016 @ The Cake Shop</a>: The Cake Shop, a favorite NYC venue of ours, has closed. In honor of the club, we&apos;ve put our entire concert from July 2016 up for free on Bandcamp.</p></li>\r\n\r\n    <li><p>Please enjoy this new hastily written &amp; recorded country song entitled <a href=\"https://soundcloud.com/hallelujahthehills/punk-rocks-gonna-be-great-now-that-trumps-in-charge\">&ldquo;Punk Rock&apos;s Gonna Be Great Now That Trump&apos;s In Charge&rdquo;</a>, which is a response to the titular sentiment which keeps popping up on social media. Assess artistic movements in hindsight, never in advance. Thanks, -The Management.</p></li>\r\n</ul>\r\n\r\n<p><img src=\"http://res.cloudinary.com/dgojqlr7m/image/upload/c_scale,q_auto:best,w_800/v1483619694/2016_press.jpg\" alt=\"2016 press\"></p>"
+    }
+},
+{
     "model": "shows.venue",
     "pk": 1,
     "fields": {
