@@ -2058,7 +2058,7 @@
         "source_url": "https://www.youtube.com/watch?v=3lkVl3hyBXE",
         "embed_code": "<iframe src=\"http://www.youtube.com/embed/3lkVl3hyBXE?wmode=opaque\" seamless allowfullscreen></iframe>",
         "preview_url": "http://img.youtube.com/vi/3lkVl3hyBXE/maxresdefault.jpg",
-        "description": "Some are calling this the best video of all time. I can't speak to that but I can say this video does contain actual footage from the recording studio where the real album title was revealed to the band. And it was...tense.",
+        "description": "<p>Some are calling this the best video of all time. I can't speak to that but I can say this video does contain actual footage from the recording studio where the real album title was revealed to the band. And it was...tense.</p>",
         "credits": "",
         "release": 12
     }
@@ -8446,7 +8446,7 @@
         "publish_on": "2014-03-24T21:05:53Z",
         "date": "2014-05-30",
         "venue": 9,
-        "description": "<p>w/ Thick Wild and Tallahassee</p>",
+        "description": "<p>with Thick Wild and Tallahassee</p>",
         "details": ""
     }
 },
@@ -8458,7 +8458,7 @@
         "publish_on": "2014-03-24T21:06:53Z",
         "date": "2014-05-19",
         "venue": 152,
-        "description": "<p>w/ Eliza Rickman + Palaye Royale</p>",
+        "description": "<p>with Eliza Rickman + Palaye Royale</p>",
         "details": ""
     }
 },
@@ -8470,7 +8470,7 @@
         "publish_on": "2014-03-24T21:07:56Z",
         "date": "2014-05-20",
         "venue": 95,
-        "description": "<p>w/ HIJK and The American Professionals</p>",
+        "description": "<p>with HIJK and The American Professionals</p>",
         "details": ""
     }
 },
@@ -8494,7 +8494,7 @@
         "publish_on": "2014-04-15T14:43:38Z",
         "date": "2014-05-21",
         "venue": 154,
-        "description": "<p>w/ Don Cat &amp; Pancho San</p>",
+        "description": "<p>with Don Cat and Pancho San</p>",
         "details": ""
     }
 },
@@ -8506,7 +8506,7 @@
         "publish_on": "2014-04-15T14:45:39Z",
         "date": "2014-05-22",
         "venue": 155,
-        "description": "<p>w/ Burning of Rome</p>",
+        "description": "<p>with Burning of Rome</p>",
         "details": ""
     }
 },
@@ -8518,7 +8518,7 @@
         "publish_on": "2014-04-15T14:48:41Z",
         "date": "2014-05-24",
         "venue": 156,
-        "description": "<p>w/ Ocean Park Sound System</p>",
+        "description": "<p>with Ocean Park Sound System</p>",
         "details": ""
     }
 },
@@ -8734,7 +8734,7 @@
         "publish_on": "2015-02-21T08:42:46Z",
         "date": "2015-03-27",
         "venue": 169,
-        "description": "with Adam Schatz (solo, of Landylady)",
+        "description": "<p>with Adam Schatz (solo, of Landylady)</p>",
         "details": ""
     }
 },
@@ -8806,7 +8806,7 @@
         "publish_on": "2016-01-05T07:13:38.450Z",
         "date": "2016-01-31",
         "venue": 9,
-        "description": "<p>w/ Magic Magic, Gold Muse, and Twin Foxes</p>",
+        "description": "<p>with Magic Magic, Gold Muse, and Twin Foxes</p>",
         "details": ""
     }
 },
@@ -8878,7 +8878,7 @@
         "publish_on": "2016-05-23T22:47:28Z",
         "date": "2016-07-28",
         "venue": 175,
-        "description": "with The Furniture",
+        "description": "<p>with The Furniture</p>",
         "details": "<p><a href=\"http://www.brownpapertickets.com/event/2564125\">Tickets</a>, <a href=\"https://www.facebook.com/events/500318656832771/\">Facebook</a><p>"
     }
 },
@@ -8890,7 +8890,7 @@
         "publish_on": "2016-05-23T22:47:33Z",
         "date": "2016-07-30",
         "venue": 176,
-        "description": "with Cannibal Ramblers, P. Everett, 10 Foot Polecat",
+        "description": "<p>with Cannibal Ramblers, P. Everett, 10 Foot Polecat</p>",
         "details": "<p><a href=\"https://www.facebook.com/events/1654587081533716/\">Facebook</a></p>"
     }
 },
@@ -8902,7 +8902,7 @@
         "publish_on": "2016-06-20T09:43:02Z",
         "date": "2016-07-27",
         "venue": 177,
-        "description": "with Hartford Pussies",
+        "description": "<p>with Hartford Pussies</p>",
         "details": "<p><a href=\"https://www.facebook.com/events/1565625993730956/\">Facebook</a></p>"
     }
 },
@@ -8914,7 +8914,7 @@
         "publish_on": "2016-06-20T09:44:54Z",
         "date": "2016-08-05",
         "venue": 178,
-        "description": "with Creaturos",
+        "description": "<p>with Creaturos</p>",
         "details": "<p><a href=\"http://chesterwood.org/chesterfest/\">Details</a></p>"
     }
 },
@@ -8926,7 +8926,7 @@
         "publish_on": "2016-06-27T23:24:41Z",
         "date": "2016-07-29",
         "venue": 11,
-        "description": "with P. Everett, Woodsy Pride, Dott",
+        "description": "<p>with P. Everett, Woodsy Pride, Dott</p>",
         "details": "<p><a href=\"http://www.ticketfly.com/event/1235765-hallelujah-hills-woodsy-new-york/\">Tickets</a>, <a href=\"https://www.facebook.com/events/1041883205866299/\">Facebook</a></p>"
     }
 },
@@ -8938,7 +8938,7 @@
         "publish_on": "2016-06-27T23:26:23Z",
         "date": "2016-08-06",
         "venue": 179,
-        "description": "with Creaturos, Edgar Clinks, and Breakfast Lunch & Dinner",
+        "description": "<p>with Creaturos, Edgar Clinks, and Breakfast Lunch & Dinner</p>",
         "details": "<p><a href=\"https://www.facebook.com/events/1757880544434810/\">Facebook</a></p>"
     }
 },
@@ -8950,7 +8950,7 @@
         "publish_on": "2016-08-03T01:18:06Z",
         "date": "2016-08-07",
         "venue": 160,
-        "description": "with ABADABAD",
+        "description": "<p>with ABADABAD</p>",
         "details": "<p>Free!\r\n<br><a href=\"https://www.facebook.com/events/109978152780090/\">Facebook</a>\r\n</p>"
     }
 },
