@@ -498,6 +498,8 @@ header.navigation {
       margin-bottom: 0;
       padding-bottom: 1.6rem; } }
 
+.gig .performer {
+  white-space: nowrap; }
 @media screen and (max-width: 599px) {
   .gig {
     margin-bottom: 1.6rem; }

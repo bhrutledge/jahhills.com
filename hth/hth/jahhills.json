@@ -5751,6 +5751,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 181,
+    "fields": {
+        "name": "Somewhere",
+        "city": "Somerville, MA",
+        "website": "https://www.facebook.com/hallelujahthehills/",
+        "address": "",
+        "latitude": null,
+        "longitude": null
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -8976,6 +8988,18 @@
         "venue": 9,
         "description": "<p>with Beware the Dangers of a Ghost Scorpion and Crooked Coast</p>",
         "details": "<p><a href=\"http://axs.com/events/327770/hallelujah-the-hills-tickets\">Tickets</a>, <a href=\"https://www.facebook.com/events/1716553681996939/\">Facebook</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 283,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-02-12T12:16:48Z",
+        "date": "2017-03-11",
+        "venue": 181,
+        "description": "<p>with <span class=\"performer\">LuxDeluxe</span>, <span class=\"performer\">The Land of Enchantment</span>, and <span class=\"performer\">Audrey Ryan</span></p>",
+        "details": "<p>7:30pm, 21+\r\n<br><a href=\"https://www.facebook.com/hallelujahthehills/\">Ask for invite</a>\r\n</p>"
     }
 }
 ]

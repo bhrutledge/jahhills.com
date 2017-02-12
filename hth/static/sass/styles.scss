@@ -88,6 +88,12 @@
 }
 
 .gig {
+
+    // TODO: Move to base styles when more schema-ish attributes are added.
+    .performer {
+        white-space: nowrap;
+    }
+
     @include media($small-screen-only) {
         @include clearfix;
         margin-bottom: $base-spacing;
