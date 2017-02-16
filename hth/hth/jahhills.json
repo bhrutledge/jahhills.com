@@ -5754,7 +5754,7 @@
     "model": "shows.venue",
     "pk": 181,
     "fields": {
-        "name": "Somewhere",
+        "name": "Secret Venue",
         "city": "Somerville, MA",
         "website": "https://www.facebook.com/hallelujahthehills/",
         "address": "",
@@ -8999,7 +8999,7 @@
         "date": "2017-03-11",
         "venue": 181,
         "description": "<p>with <span class=\"performer\">LuxDeluxe</span>, <span class=\"performer\">The Land of Enchantment</span>, and <span class=\"performer\">Audrey Ryan</span></p>",
-        "details": "<p>7:30pm, 21+\r\n<br><a href=\"https://www.facebook.com/hallelujahthehills/\">Ask for invite</a>\r\n</p>"
+        "details": "<p>7:30pm, 21+\r\n<br>$5-10 donation\r\n<br><a href=\"https://www.facebook.com/hallelujahthehills/\">Ask for invite</a>\r\n</p>"
     }
 }
 ]
