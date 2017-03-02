@@ -1,5 +1,4 @@
 -r base.in
-pip-tools
 django-debug-toolbar
 django-extensions
 factory-boy
