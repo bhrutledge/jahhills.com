@@ -3603,6 +3603,17 @@
     }
 },
 {
+    "model": "news.post",
+    "pk": 40,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-03-13T23:24:54Z",
+        "title": "The 25-minute version of \"Realistic Birthday Music\"!",
+        "slug": "25-minute-realistic-birthday-music",
+        "body": "<p>The 4-minute song that concludes our 2016 album <cite><a href=\"/music/a-band-is-something-to-figure-out/\">A Band Is Something To Figure Out</a></cite> is now a 25-minute epic including audio contributions from fans.</p>\r\n\r\n<div class=\"embed embed-responsive\">\r\n<iframe src=\"http://www.youtube.com/embed/K9PNByxsmPE?wmode=opaque\" seamless allowfullscreen></iframe>\r\n</div>"
+    }
+},
+{
     "model": "shows.venue",
     "pk": 1,
     "fields": {
