@@ -2096,6 +2096,22 @@
     }
 },
 {
+    "model": "music.video",
+    "pk": 33,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-03-10T02:26:35.046Z",
+        "title": "Realistic Birthday Music (Extended 25 Minute Version)",
+        "slug": "realistic-birthday-music-extended",
+        "source_url": "https://www.youtube.com/watch?v=K9PNByxsmPE",
+        "embed_code": "<iframe src=\"http://www.youtube.com/embed/K9PNByxsmPE?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "preview_url": "http://img.youtube.com/vi/K9PNByxsmPE/sddefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": 12
+    }
+},
+{
     "model": "music.press",
     "pk": 4,
     "fields": {
@@ -5774,6 +5790,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 182,
+    "fields": {
+        "name": "House of BLues",
+        "city": "Boston, MA",
+        "website": "",
+        "address": "15 Lansdowne St, Boston, MA 02215",
+        "latitude": 42.347354,
+        "longitude": -71.0978567
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -9011,6 +9039,18 @@
         "venue": 181,
         "description": "<p>with <span class=\"performer\">LuxDeluxe</span>, <span class=\"performer\">The Land of Enchantment</span>, and <span class=\"performer\">Audrey Ryan</span></p>",
         "details": "<p>7:30pm, 21+\r\n<br>$5-10 donation\r\n<br><a href=\"https://www.facebook.com/hallelujahthehills/\">Ask for invite</a>\r\n</p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 284,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-03-19T00:02:45Z",
+        "date": "2017-05-06",
+        "venue": 182,
+        "description": "<p>with <span class=\"performer\">Dwight Yoakam</span> and <span class=\"performer\">Elliot Root</span></p>",
+        "details": "<p><a href=\"http://www.livenation.com/events/651682-may-6-2017-dwight-yoakam\">Tickets</a></p>"
     }
 }
 ]
