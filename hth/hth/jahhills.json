@@ -5143,18 +5143,6 @@
 },
 {
     "model": "shows.venue",
-    "pk": 127,
-    "fields": {
-        "name": "The Milky Way",
-        "city": "Jamaica Plain, MA",
-        "website": "http://www.milkywayjp.com/",
-        "address": "",
-        "latitude": null,
-        "longitude": null
-    }
-},
-{
-    "model": "shows.venue",
     "pk": 128,
     "fields": {
         "name": "Union Pool",
@@ -5784,16 +5772,16 @@
         "name": "Secret Venue",
         "city": "Somerville, MA",
         "website": "https://www.facebook.com/hallelujahthehills/",
-        "address": "",
-        "latitude": null,
-        "longitude": null
+        "address": "Somerville, MA",
+        "latitude": 42.381775,
+        "longitude": -71.1035657
     }
 },
 {
     "model": "shows.venue",
     "pk": 182,
     "fields": {
-        "name": "House of BLues",
+        "name": "House of Blues",
         "city": "Boston, MA",
         "website": "",
         "address": "15 Lansdowne St, Boston, MA 02215",
