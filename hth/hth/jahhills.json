@@ -2096,22 +2096,6 @@
     }
 },
 {
-    "model": "music.video",
-    "pk": 33,
-    "fields": {
-        "publish": true,
-        "publish_on": "2017-03-10T02:26:35.046Z",
-        "title": "Realistic Birthday Music (Extended 25 Minute Version)",
-        "slug": "realistic-birthday-music-extended",
-        "source_url": "https://www.youtube.com/watch?v=K9PNByxsmPE",
-        "embed_code": "<iframe src=\"http://www.youtube.com/embed/K9PNByxsmPE?wmode=opaque\" seamless allowfullscreen></iframe>\n",
-        "preview_url": "http://img.youtube.com/vi/K9PNByxsmPE/sddefault.jpg",
-        "description": "",
-        "credits": "",
-        "release": 12
-    }
-},
-{
     "model": "music.press",
     "pk": 4,
     "fields": {
