@@ -3614,6 +3614,17 @@
     }
 },
 {
+    "model": "news.post",
+    "pk": 41,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-05-08T10:40:51Z",
+        "title": "One Night Only",
+        "slug": "one-night-only",
+        "body": "<p>LIVE inside The Charles Hayden Planetarium, with visuals created specifically for the performance.</p>\r\n\r\n<p>\r\nThursday August 17, 2017 at 7:30 PM\r\n<br>$20 advance,  $25 day-of-show\r\n<br>Only 200 seats available! This experience will NOT be repeated!\r\n<br><a href=\"https://www.mos.org/public-events/summer-thursdays/live-music\">BUY TICKETS</a>\r\n</p>\r\n\r\n<p>Join Hallelujah The Hills as they perform ten songs from their decade plus exploration of inner and outer universes underneath the stunning dome-screen at the Charles Hayden Planetarium. HTH and Museum of Science animators are working together to tailor a visual journey that will take the audience through the most unique presentation of these songs ever performed. For this show only, the band will expand to a ten piece unit including a choir and strings. Whether you've seen the band dozens of times, once, or never: THIS is the show to make sure not to miss.</p>\r\n\r\n<p><img src=\"http://res.cloudinary.com/dgojqlr7m/image/upload/c_scale,q_auto,w_800/v1494239657/planetarium_wonders.jpg\" alt=\"Planetarium wonders\"></p>\r\n\r\n<!--\r\n<p><img src=\"http://res.cloudinary.com/dgojqlr7m/image/upload/c_scale,q_auto,w_800/v1494239659/planetarium_poster.jpg\" alt=\"Planetarium show poster\"></p>\r\n-->"
+    }
+},
+{
     "model": "shows.venue",
     "pk": 1,
     "fields": {
@@ -5771,6 +5782,18 @@
         "address": "15 Lansdowne St, Boston, MA 02215",
         "latitude": 42.347354,
         "longitude": -71.0978567
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 183,
+    "fields": {
+        "name": "The Museum of Science",
+        "city": "Boston, MA",
+        "website": "",
+        "address": "",
+        "latitude": null,
+        "longitude": null
     }
 },
 {
@@ -9023,6 +9046,18 @@
         "venue": 182,
         "description": "<p>with <span class=\"performer\">Dwight Yoakam</span> and <span class=\"performer\">Elliot Root</span></p>",
         "details": "<p><a href=\"http://www.livenation.com/events/651682-may-6-2017-dwight-yoakam\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 285,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-05-08T10:27:51Z",
+        "date": "2017-08-17",
+        "venue": 183,
+        "description": "<p><strong>Live at The Charles Hayden Planetarium</strong>\r\n<br><a href=\"/news/one-night-only\">A One Night Only Audio-Visual Experience</a></p>",
+        "details": "<p>\r\n7:30 PM\r\n<br>$20/$25\r\n<br><a href=\"https://www.mos.org/public-events/summer-thursdays/live-music\">Tickets</a>\r\n</p>"
     }
 }
 ]
