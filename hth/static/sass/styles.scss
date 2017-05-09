@@ -211,6 +211,16 @@
     }
 }
 
+// TODO: More structured markup and classes
+.post-callout {
+    margin: 0 auto $base-spacing;
+
+    @include media($medium-screen) {
+        float: right;
+        margin: 0 0 $base-spacing $base-spacing;
+    }
+}
+
 #about {
     text-align: center;
 

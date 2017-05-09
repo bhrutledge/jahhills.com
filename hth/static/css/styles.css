@@ -627,6 +627,13 @@ header.navigation {
     .video-preview:nth-child(3n+1) {
       clear: left; } }
 
+.post-callout {
+  margin: 0 auto 1.6rem; }
+  @media screen and (min-width: 600px) {
+    .post-callout {
+      float: right;
+      margin: 0 0 1.6rem 1.6rem; } }
+
 #about {
   text-align: center; }
   #about .content-text {
