@@ -1,5 +1,7 @@
 from fabric.contrib.files import exists
-from fabric.api import env, run, cd, task, prefix, shell_env, warn_only, quiet
+from fabric.api import (
+    env, run, local, cd, task, prefix, shell_env, warn_only, quiet
+)
 
 env.repo_url = 'https://github.com/bhrutledge/jahhills.com.git'
 env.project_pkg = 'hth'
@@ -25,12 +27,27 @@ def prod():
     init_env()
 
 
+@task
+def dev():
+    env.hosts = ['localhost']
+    env.user = 'brian'
+    env.user_dir = '/Users/%(user)s' % env
+    env.project_dir = '%(user_dir)s/Code/jahhills.com' % env
+    env.app_port = '8000'
+    env.env_name = 'jahhills.com'
+    env.settings = '%(project_pkg)s.settings.dev' % env
+    env.requirements = 'requirements/dev.txt'
+
+    init_env()
+
+
 def init_env():
     # TODO: Merge these into one context manager
     env.django_env = dict(DJANGO_SETTINGS_MODULE=env.settings)
     env.workon = 'workon %(env_name)s' % env
 
     env.manage = 'cd %(project_pkg)s && ./manage.py' % env
+    env.data = 'hth/jahhills.json'
 
     # TODO: Use a config file for gunicorn
     env.gunicorn = 'cd %(project_pkg)s && gunicorn' % env
@@ -76,7 +93,15 @@ def migrate():
 @task
 def loaddata():
     with prefix(env.workon), shell_env(**env.django_env):
-        run('%(manage)s loaddata hth/jahhills.json' % env)
+        run('%(manage)s loaddata %(data)s' % env)
+
+
+@task
+def dumpdata():
+    # TODO: workon: command not found
+    # with prefix(env.workon), shell_env(**env.django_env):
+    # TODO: Set `run = local` for `dev` task.
+    local('%(manage)s dumpdata --indent=4 music news shows > %(data)s' % env)
 
 
 @task
