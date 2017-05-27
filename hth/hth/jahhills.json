@@ -5797,6 +5797,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 184,
+    "fields": {
+        "name": "News Cafe",
+        "city": "Pawtucket, RI",
+        "website": "http://www.newscaferi.com/",
+        "address": "",
+        "latitude": 41.879175,
+        "longitude": -71.3883817
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -9058,6 +9070,18 @@
         "venue": 183,
         "description": "<p><strong>Live at The Charles Hayden Planetarium</strong>\r\n<br><a href=\"/news/one-night-only\">A One Night Only Audio-Visual Experience</a></p>",
         "details": "<p>\r\n7:30 PM\r\n<br>$20/$25\r\n<br><a href=\"https://www.mos.org/public-events/summer-thursdays/live-music\">Tickets</a>\r\n</p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 286,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-05-27T22:29:21.102Z",
+        "date": "2017-06-22",
+        "venue": 184,
+        "description": "<p>with <span class=\"performer\">Leiko</span>, <span class=\"performer\">John Faraone</span>, and <span class=\"performer\">JLB</span></p>",
+        "details": "<a href=\"https://www.facebook.com/events/1361961397204512/\">Facebook</a>"
     }
 }
 ]
