@@ -6,6 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 
 
+@skip('Broken in latest Selenium and/or Firefox')
 class SeleniumTestCase(StaticLiveServerTestCase):
     """ Adds convenience methods for using Selenium WebDriver. """
 
@@ -37,7 +38,6 @@ class SeleniumTestCase(StaticLiveServerTestCase):
         return self.browser.find_elements_by_css_selector(css_selector)
 
 
-@skip('Broken in latest Selenium and/or Firefox')
 class AdminTestCase(SeleniumTestCase):
 
     # TODO: Create superuser programatically
