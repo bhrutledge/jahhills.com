@@ -33,7 +33,7 @@ python-dateutil==2.5.2    # via fake-factory
 pytz==2016.3
 pyyaml==3.11              # via vcrpy
 requests==2.9.1           # via django-embed-video
-selenium==2.53.1
+selenium==3.4.3
 six==1.10.0               # via django-environ, django-extensions, fake-factory, prompt-toolkit, python-dateutil, sphinx, vcrpy
 snowballstemmer==1.2.1    # via sphinx
 sphinx==1.4
