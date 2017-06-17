@@ -3626,18 +3626,6 @@
 },
 {
     "model": "shows.venue",
-    "pk": 1,
-    "fields": {
-        "name": "The Vixen",
-        "city": "Provincetown, MA",
-        "website": "http://ptownvixen.com/",
-        "address": "336 Commercial St # 7, Provincetown, MA 02657, USA",
-        "latitude": 42.05271159999999,
-        "longitude": -70.1847786
-    }
-},
-{
-    "model": "shows.venue",
     "pk": 2,
     "fields": {
         "name": "The Middle East Downstairs",
@@ -4166,18 +4154,6 @@
 },
 {
     "model": "shows.venue",
-    "pk": 46,
-    "fields": {
-        "name": "The Red & Black",
-        "city": "Washington, DC",
-        "website": "http://www.redandblackbar.com/",
-        "address": "",
-        "latitude": null,
-        "longitude": null
-    }
-},
-{
-    "model": "shows.venue",
     "pk": 47,
     "fields": {
         "name": "The Reservoir",
@@ -4610,18 +4586,6 @@
 },
 {
     "model": "shows.venue",
-    "pk": 83,
-    "fields": {
-        "name": "The Cake Shop",
-        "city": "New York, NY",
-        "website": "http://www.cake-shop.com",
-        "address": "",
-        "latitude": null,
-        "longitude": null
-    }
-},
-{
-    "model": "shows.venue",
     "pk": 84,
     "fields": {
         "name": "Ursinus College",
@@ -4994,18 +4958,6 @@
 },
 {
     "model": "shows.venue",
-    "pk": 115,
-    "fields": {
-        "name": "TBA",
-        "city": "New York, NY",
-        "website": "",
-        "address": "",
-        "latitude": null,
-        "longitude": null
-    }
-},
-{
-    "model": "shows.venue",
     "pk": 116,
     "fields": {
         "name": "Ninth Ward at Babeville",
@@ -5038,18 +4990,6 @@
         "address": "133 Grandville Ave SW, Grand Rapids, MI 49503, USA",
         "latitude": 42.9598977,
         "longitude": -85.6740044
-    }
-},
-{
-    "model": "shows.venue",
-    "pk": 119,
-    "fields": {
-        "name": "TBA",
-        "city": "Chicago, IL",
-        "website": "",
-        "address": "",
-        "latitude": null,
-        "longitude": null
     }
 },
 {
@@ -5146,18 +5086,6 @@
         "address": "484 Union Ave, Brooklyn, NY 11211, USA",
         "latitude": 40.7149639,
         "longitude": -73.9515554
-    }
-},
-{
-    "model": "shows.venue",
-    "pk": 129,
-    "fields": {
-        "name": "Musica",
-        "city": "Akron, OH",
-        "website": "http://www.akronmusica.com/",
-        "address": "51 E Market St, Akron, OH 44308, USA",
-        "latitude": 41.0855761,
-        "longitude": -81.5157229
     }
 },
 {
@@ -5618,18 +5546,6 @@
 },
 {
     "model": "shows.venue",
-    "pk": 168,
-    "fields": {
-        "name": "New System Laundry",
-        "city": "Portland, ME",
-        "website": "https://www.facebook.com/newsystemleaners",
-        "address": "",
-        "latitude": null,
-        "longitude": null
-    }
-},
-{
-    "model": "shows.venue",
     "pk": 169,
     "fields": {
         "name": "The Bell House",
@@ -5638,18 +5554,6 @@
         "address": "149 7th St, Brooklyn, NY 11215, USA",
         "latitude": 40.6737363,
         "longitude": -73.991674
-    }
-},
-{
-    "model": "shows.venue",
-    "pk": 170,
-    "fields": {
-        "name": "Mayfair 2015",
-        "city": "Cambridge, MA",
-        "website": "http://www.harvardsquare.com/32nd-annual-mayfair-talent-line-announced-sunday-may-3rd-2015",
-        "address": "",
-        "latitude": null,
-        "longitude": null
     }
 },
 {
@@ -5792,8 +5696,8 @@
         "city": "Boston, MA",
         "website": "",
         "address": "",
-        "latitude": null,
-        "longitude": null
+        "latitude": 42.3676867,
+        "longitude": -71.0709238
     }
 },
 {
