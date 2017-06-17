@@ -1,6 +1,5 @@
-from fabric.contrib.files import exists
 from fabric.api import (
-    env, run, local, cd, task, prefix, shell_env, warn_only, quiet
+    env, run, local, task, prefix, shell_env, warn_only, quiet
 )
 
 env.repo_url = 'https://github.com/bhrutledge/jahhills.com.git'
@@ -19,7 +18,7 @@ def prod():
     env.user_dir = '/home/%(user)s' % env
     env.project_dir = '%(user_dir)s/webapps/jahhills' % env
     env.app_port = '13149'
-    env.env_name = 'jahhills'
+    env.virtualenv = 'jahhills'
     env.settings = '%(project_pkg)s.settings.prod' % env
     env.requirements = 'requirements/dev.txt'
     env.workers = 4
@@ -29,14 +28,18 @@ def prod():
 
 @task
 def dev():
+    global run
+    run = local
+
     env.hosts = ['localhost']
     env.user = 'brian'
     env.user_dir = '/Users/%(user)s' % env
     env.project_dir = '%(user_dir)s/Code/jahhills.com' % env
     env.app_port = '8000'
-    env.env_name = 'jahhills.com'
+    env.virtualenv = 'jahhills.com'
     env.settings = '%(project_pkg)s.settings.dev' % env
     env.requirements = 'requirements/dev.txt'
+    env.workers = 1
 
     init_env()
 
@@ -44,7 +47,8 @@ def dev():
 def init_env():
     # TODO: Merge these into one context manager
     env.django_env = dict(DJANGO_SETTINGS_MODULE=env.settings)
-    env.workon = 'workon %(env_name)s' % env
+    env.activate = '%(user_dir)s/.virtualenvs/%(virtualenv)s/bin/activate' % env
+    env.workon = 'source %(activate)s && cd %(project_dir)s' % env
 
     env.manage = 'cd %(project_pkg)s && ./manage.py' % env
     env.data = 'hth/jahhills.json'
@@ -60,7 +64,7 @@ def init_env():
 
 @task
 def deploy():
-    # Assume project apps and virtualenv are set up
+    # Assuming WebFaction apps and virtualenv are set up, and repo is cloned
     pull()
     requirements()
     migrate()
@@ -71,11 +75,8 @@ def deploy():
 
 @task
 def pull():
-    with cd(env.project_dir):
-        if exists('.git'):
-            run('git pull')
-        else:
-            run('git clone %(repo_url)s .' % env)
+    with prefix(env.workon), shell_env(**env.django_env):
+        run('git pull')
 
 
 @task
@@ -98,10 +99,8 @@ def loaddata():
 
 @task
 def dumpdata():
-    # TODO: workon: command not found
-    # with prefix(env.workon), shell_env(**env.django_env):
-    # TODO: Set `run = local` for `dev` task.
-    local('%(manage)s dumpdata --indent=4 music news shows > %(data)s' % env)
+    with prefix(env.workon), shell_env(**env.django_env):
+        run('%(manage)s dumpdata --indent=4 music news shows > %(data)s' % env)
 
 
 @task
