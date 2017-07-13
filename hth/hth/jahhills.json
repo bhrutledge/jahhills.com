@@ -3636,6 +3636,17 @@
     }
 },
 {
+    "model": "news.post",
+    "pk": 43,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-07-13T10:03:57Z",
+        "title": "2nd Show Added for the Museum of Science Planetarium Concert!",
+        "slug": "show-added-planetarium",
+        "body": "<img class=\"post-callout\" src=\"http://res.cloudinary.com/dgojqlr7m/image/upload/c_scale,w_280/v1499940475/planetarium_gang.jpg\" alt=\"Planetarium group photo\">\r\n\r\n<p>Join Hallelujah The Hills as they perform ten songs from their decade-plus exploration of inner and outer universes underneath the stunning dome-screen at the Charles Hayden Planetarium.</p>\r\n\r\n<p>Due to high demand for the 7:30PM show, a second show has been added at 9PM; tickets on sale today.</p>\r\n\r\n<p>The five-piece band, once described by The Boston Globe as \u201cthe sound of music without limits,\u201d will expand to a full-orchestra-version for these performances only. Special guests include <strong>Josh Kantor</strong> (Red Sox organist, Jim\u2019s Big Ego), internationally lauded singer/songwriter <strong>Marissa Nadler</strong>, seven-time Boston Music Award winner <strong>Will Dailey</strong>, <strong>Dave Curry</strong> (Thalia Zedek Band, Willard Grant Conspiracy) on viola, and a choir including members of <strong>Boston Cream</strong>, <strong>Long Gone</strong>, <strong>Headband</strong>, and <strong>Land of Enchantment</strong>.</>\r\n\r\n<p>Museum of Science, Boston\r\n<br>Thursday August 17, 2017 at 7:30PM & 9PM\r\n<br>$20 advance, $25 day-of-show\r\n<br><a href=\"https://www.mos.org/public-events/summer-thursdays/live-music\">Tickets</a>\r\n</p>"
+    }
+},
+{
     "model": "shows.venue",
     "pk": 2,
     "fields": {
