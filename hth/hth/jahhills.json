@@ -3648,6 +3648,18 @@
 },
 {
     "model": "shows.venue",
+    "pk": 1,
+    "fields": {
+        "name": "The Vixen",
+        "city": "Provincetown, MA",
+        "website": "http://ptownvixen.com/",
+        "address": "336 Commercial St # 7, Provincetown, MA 02657, USA",
+        "latitude": 42.05271159999999,
+        "longitude": -70.1847786
+    }
+},
+{
+    "model": "shows.venue",
     "pk": 2,
     "fields": {
         "name": "The Middle East Downstairs",
@@ -4176,6 +4188,18 @@
 },
 {
     "model": "shows.venue",
+    "pk": 46,
+    "fields": {
+        "name": "The Red & Black",
+        "city": "Washington, DC",
+        "website": "http://www.redandblackbar.com/",
+        "address": "",
+        "latitude": null,
+        "longitude": null
+    }
+},
+{
+    "model": "shows.venue",
     "pk": 47,
     "fields": {
         "name": "The Reservoir",
@@ -4608,6 +4632,18 @@
 },
 {
     "model": "shows.venue",
+    "pk": 83,
+    "fields": {
+        "name": "The Cake Shop",
+        "city": "New York, NY",
+        "website": "http://www.cake-shop.com",
+        "address": "",
+        "latitude": null,
+        "longitude": null
+    }
+},
+{
+    "model": "shows.venue",
     "pk": 84,
     "fields": {
         "name": "Ursinus College",
@@ -4980,6 +5016,18 @@
 },
 {
     "model": "shows.venue",
+    "pk": 115,
+    "fields": {
+        "name": "TBA",
+        "city": "New York, NY",
+        "website": "",
+        "address": "",
+        "latitude": null,
+        "longitude": null
+    }
+},
+{
+    "model": "shows.venue",
     "pk": 116,
     "fields": {
         "name": "Ninth Ward at Babeville",
@@ -5012,6 +5060,18 @@
         "address": "133 Grandville Ave SW, Grand Rapids, MI 49503, USA",
         "latitude": 42.9598977,
         "longitude": -85.6740044
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 119,
+    "fields": {
+        "name": "TBA",
+        "city": "Chicago, IL",
+        "website": "",
+        "address": "",
+        "latitude": null,
+        "longitude": null
     }
 },
 {
@@ -5100,6 +5160,18 @@
 },
 {
     "model": "shows.venue",
+    "pk": 127,
+    "fields": {
+        "name": "The Milky Way",
+        "city": "Jamaica Plain, MA",
+        "website": "http://www.milkywayjp.com/",
+        "address": "",
+        "latitude": null,
+        "longitude": null
+    }
+},
+{
+    "model": "shows.venue",
     "pk": 128,
     "fields": {
         "name": "Union Pool",
@@ -5108,6 +5180,18 @@
         "address": "484 Union Ave, Brooklyn, NY 11211, USA",
         "latitude": 40.7149639,
         "longitude": -73.9515554
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 129,
+    "fields": {
+        "name": "Musica",
+        "city": "Akron, OH",
+        "website": "http://www.akronmusica.com/",
+        "address": "51 E Market St, Akron, OH 44308, USA",
+        "latitude": 41.0855761,
+        "longitude": -81.5157229
     }
 },
 {
@@ -5568,6 +5652,18 @@
 },
 {
     "model": "shows.venue",
+    "pk": 168,
+    "fields": {
+        "name": "New System Laundry",
+        "city": "Portland, ME",
+        "website": "https://www.facebook.com/newsystemleaners",
+        "address": "",
+        "latitude": null,
+        "longitude": null
+    }
+},
+{
+    "model": "shows.venue",
     "pk": 169,
     "fields": {
         "name": "The Bell House",
@@ -5576,6 +5672,18 @@
         "address": "149 7th St, Brooklyn, NY 11215, USA",
         "latitude": 40.6737363,
         "longitude": -73.991674
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 170,
+    "fields": {
+        "name": "Mayfair 2015",
+        "city": "Cambridge, MA",
+        "website": "http://www.harvardsquare.com/32nd-annual-mayfair-talent-line-announced-sunday-may-3rd-2015",
+        "address": "",
+        "latitude": null,
+        "longitude": null
     }
 },
 {
@@ -5732,6 +5840,18 @@
         "address": "",
         "latitude": 41.879175,
         "longitude": -71.3883817
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 185,
+    "fields": {
+        "name": "Rose Kennedy Greenway",
+        "city": "Boston, MA",
+        "website": "",
+        "address": "",
+        "latitude": 42.35473,
+        "longitude": -71.0525802
     }
 },
 {
@@ -9008,6 +9128,18 @@
         "venue": 184,
         "description": "<p>with <span class=\"performer\">Leiko</span>, <span class=\"performer\">John Faraone</span>, and <span class=\"performer\">JLB</span></p>",
         "details": "<a href=\"https://www.facebook.com/events/1361961397204512/\">Facebook</a>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 287,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-08-05T18:57:20Z",
+        "date": "2017-08-08",
+        "venue": 185,
+        "description": "<p><strong>Pop-Up Performance at &ldquo;The Meeting House&rdquo;</strong><br>\r\nAKA <a href=\"http://www.bostonmagazine.com/property/blog/2017/05/11/yellow-house-greenway/\">The Sinking Yellow House</a><br>\r\nHosted by the Museum of Science</p>",
+        "details": "6pm\r\n<br>Free"
     }
 }
 ]
