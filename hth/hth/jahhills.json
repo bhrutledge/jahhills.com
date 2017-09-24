@@ -3647,6 +3647,17 @@
     }
 },
 {
+    "model": "news.post",
+    "pk": 44,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-09-24T20:19:34.031Z",
+        "title": "Live at Fenway!",
+        "slug": "live-fenway",
+        "body": "<p>Fenway Park organist Josh Kantor covers our song \"To All My Scientist Colleagues I Bid You Farewell\" at a Red Sox game this summer:</p>\r\n\r\n<div class=\"embed embed-responsive\"><iframe src=\"http://www.youtube.com/embed/U9siW6ejvf8?wmode=opaque\" seamless allowfullscreen></iframe></div>"
+    }
+},
+{
     "model": "shows.venue",
     "pk": 1,
     "fields": {
@@ -9140,6 +9151,18 @@
         "venue": 185,
         "description": "<p><strong>Pop-Up Performance at &ldquo;The Meeting House&rdquo;</strong><br>\r\nAKA <a href=\"http://www.bostonmagazine.com/property/blog/2017/05/11/yellow-house-greenway/\">The Sinking Yellow House</a><br>\r\nHosted by the Museum of Science</p>",
         "details": "6pm\r\n<br>Free"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 288,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-09-24T20:13:48.974Z",
+        "date": "2017-11-30",
+        "venue": 40,
+        "description": "<p>with <span class=\"performer\">Bong Wish</span> and <span class=\"performer\">Blau Blau</span></p>",
+        "details": "<p><a href=\"http://www.ticketweb.com/t3/sale/SaleEventDetail?eventId=7717115&pl=mideastnew&dispatch=loadSelectionData\">Tickets</a>, <a href=\"https://www.facebook.com/events/304402529968139\">Facebook</a></p>"
     }
 }
 ]

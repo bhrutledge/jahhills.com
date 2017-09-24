@@ -35,6 +35,14 @@ Bootstrap and validate the environment with ``fab dev bootstrap``.
 
 Start ``runserver`` with ``fab dev serve``.
 
-Deploy with ``fab prod deploy``.
-
 Manage pacakges with ``pip-compile`` and ``pip-sync``.
+
+
+Deployment
+----------
+
+Dump local content changes with ``fab dev dumpdata``.
+
+Commit and push to GitHub.
+
+Deploy with ``fab prod deploy``.

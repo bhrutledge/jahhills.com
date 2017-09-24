@@ -2,20 +2,20 @@
 {% load cloudinary %}
 
 {% block main_content %}
+{% comment %}
 <figure class="hero-img">
     <a href="{% url 'post_detail' 'one-night-only' %}">
         <img src="{% cloudinary_url "planetarium_banner.jpg" %}"
             alt="Live at the Charles Hayden Planetarium">
     </a>
 </figure>
-{% comment %}
+{% endcomment %}
 <figure class="hero-img">
     <img src="{% cloudinary_url "hth_bowery_2016.jpg" %}" alt="HTH at Bowery Electric">
     <figcaption>
         <div class="img-credit">Photo courtesy of Matt Condon</div>
     </figcaption>
 </figure>
-{% endcomment %}
 
 <section id="shows" class="container">
     <h2><a href="{% url "gig_list" %}">Live</a></h2>
