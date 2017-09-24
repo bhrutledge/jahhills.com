@@ -7,7 +7,6 @@ env.project_pkg = 'hth'
 env.project_apps = ['music', 'news', 'shows']
 
 
-# TODO: Add dev environment
 # TODO: Add staging environment
 
 
@@ -47,8 +46,8 @@ def dev():
 def init_env():
     # TODO: Merge these into one context manager
     env.django_env = dict(DJANGO_SETTINGS_MODULE=env.settings)
-    env.activate = '%(user_dir)s/.virtualenvs/%(virtualenv)s/bin/activate' % env
-    env.workon = 'source %(activate)s && cd %(project_dir)s' % env
+    env.venv = '%(user_dir)s/.virtualenvs/%(virtualenv)s' % env
+    env.workon = 'source %(venv)s/bin/activate && cd %(project_dir)s' % env
 
     env.manage = 'cd %(project_pkg)s && ./manage.py' % env
     env.data = 'hth/jahhills.json'
@@ -64,13 +63,20 @@ def init_env():
 
 @task
 def deploy():
-    # Assuming WebFaction apps and virtualenv are set up, and repo is cloned
-    pull()
-    requirements()
-    migrate()
-    loaddata()
-    collectstatic()
+    # Assuming WebFaction apps are set up
+    bootstrap()
     restart()
+
+
+@task
+def bootstrap():
+    # Assuming virtualenv is set up, and repo is cloned
+    pull()
+    pip_install()
+    migrate()
+    collectstatic()
+    test()
+    loaddata()
 
 
 @task
@@ -80,7 +86,7 @@ def pull():
 
 
 @task
-def requirements():
+def pip_install():
     with prefix(env.workon), shell_env(**env.django_env):
         run('pip-sync %(requirements)s' % env)
 
@@ -107,6 +113,18 @@ def dumpdata():
 def collectstatic():
     with prefix(env.workon), shell_env(**env.django_env):
         run('%(manage)s collectstatic --noinput' % env)
+
+
+@task
+def test():
+    with prefix(env.workon), shell_env(**env.django_env):
+        run('%(manage)s test' % env)
+
+
+@task
+def serve():
+    with prefix(env.workon), shell_env(**env.django_env):
+        run('%(manage)s runserver_plus' % env)
 
 
 @task
