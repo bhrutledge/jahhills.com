@@ -113,6 +113,9 @@ class Video(PublishedModel, TitledModel):
             except backends.UnknownBackendException:
                 pass
             else:
+                # Force https URLS
+                backend.is_secure = True
+
                 if not self.preview_url:
                     self.preview_url = backend.get_thumbnail_url()
                 if not self.embed_code:

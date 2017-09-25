@@ -5,26 +5,26 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.9.1]
+      User-Agent: [python-requests/2.18.4]
     method: GET
-    uri: http://vimeo.com/api/v2/video/126794989.json
+    uri: https://vimeo.com/api/v2/video/126794989.json
   response:
     body:
       string: !!binary |
-        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
+        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
     headers:
       Accept-Ranges: [bytes]
       Access-Control-Allow-Origin: ['*']
@@ -33,27 +33,28 @@ interactions:
       Connection: [keep-alive]
       Content-Disposition: [attachment; filename=vimeo.json]
       Content-Encoding: [gzip]
-      Content-Length: ['786']
+      Content-Length: ['787']
+      Content-Security-Policy-Report-Only: ['default-src https: data: blob: ''unsafe-inline''
+          ''unsafe-eval''; report-uri /_csp']
       Content-Type: [application/json]
-      Date: ['Sun, 07 Feb 2016 17:14:42 GMT']
-      Etag: ['"83d43bc2e6fa00e47b962512dc217c56"']
-      Expires: ['Sun, 07 Feb 2016 16:46:24 GMT']
+      Date: ['Mon, 25 Sep 2017 01:20:31 GMT']
+      Etag: ['"7eee49cd0b19ca10a1cf1eefd2c796c7"']
+      Expires: ['Mon, 25 Sep 2017 01:21:31 GMT']
       Fastly-Debug-Digest: [75e7f94b7eb21e0cfe5e05072097fd1e39778e1fb05beea4a26669dedb18678a]
-      Last-Modified: ['Thu, 04 Feb 2016 04:10:39 GMT']
+      Last-Modified: ['Thu, 24 Aug 2017 13:04:28 GMT']
       Server: [nginx]
-      Set-Cookie: ['clip_test_v2=4; expires=Thu, 07 Apr 2016 17:14:42 GMT; path=/;']
-      Strict-Transport-Security: [max-age=15120000; includeSubDomains; preload]
+      Strict-Transport-Security: [max-age=15552000; includeSubDomains; preload]
       Vary: ['User-Agent,Accept-Encoding']
       Via: [1.1 varnish, 1.1 varnish]
-      X-Cache: ['MISS, HIT']
+      X-Cache: ['MISS, MISS']
       X-Cache-Hits: ['0, 0']
       X-Content-Type-Options: [nosniff]
       X-Frame-Options: [sameorigin]
       X-RateLimit-Limit: ['3600']
-      X-RateLimit-Remaining: ['3588']
-      X-RateLimit-Reset: ['1454865003']
-      X-Served-By: ['cache-iad2126-IAD, cache-jfk1026-JFK']
-      X-Timer: ['S1454865282.648721,VS0,VE25']
+      X-RateLimit-Remaining: ['3599']
+      X-RateLimit-Reset: ['1506306031']
+      X-Served-By: ['cache-iad2145-IAD, cache-bos8228-BOS']
+      X-Timer: ['S1506302432.895070,VS0,VE34']
       X-UA-Compatible: [IE=edge]
       X-XSS-Protection: [1; mode=block]
     status: {code: 200, message: OK}
