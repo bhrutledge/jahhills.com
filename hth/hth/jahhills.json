@@ -3456,7 +3456,7 @@
         "publish_on": "2014-01-26T21:02:51Z",
         "title": "No time for prose, let's list this shit!",
         "slug": "no-time-prose",
-        "body": "<ol>\n<li>Thank YOU for making the album we are about to make possible via your super-generosity during our Fall Kickstarter.</li>\n<li>We are about to go into the studio shortly, and you'll be hearing the finished album in May 2014. It's wholly unlike the other three but still sounds like us. Make sense? <a href=\"http://bdcwire.com/hallelujah-the-hills-returns-debuts-exclusive-demo-for-album-to-be-recorded-sleepaway-camp-style/\">Hear a demo song over at BDCwire</a>.</li>\n<li>Look for California and Northeast US tours this Spring. Contact us if you'd like to play with us or set up a show!</li>\n<li>A record for the longest song incubation period ever was recently set when the lost HtH song <a href=\"https://soundcloud.com/hallelujahthehills/highschoolvania\">Highschoolvania</a> was released. Written in 2002, recorded in 2006, released in 2014.</li>\n<li>We made some <a href=\"http://www.youtube.com/watch?v=QXgTDyatfvE\">great</a> <a href=\"http://www.youtube.com/watch?v=Y_bu8VG8R1U\">videos</a> this past summer. Also, don't miss this <a href=\"/about/\">amusing history of the band</a> that was assembled for the Kickstarter campaign.</li>\n<li>Ryan wrote a piece about <a href=\"http://bdcwire.com/danvers-dude-makes-23k-musically-spamming-on-spotify/\">The Spammer of Spotify</a> and some guesses what the next music industry clusterfuck might be&nbsp;(and check out the <a href=\"http://storify.com/JahHills/the-spammer-of-spotify\">follow-up conversation</a>). He also, like last year, compiled his <a href=\"http://ryanhamiltonwalsh.tumblr.com/post/69989041720/everything-i-made-this-year\">list of output</a> for your enjoyment.</li>\n</ol>"
+        "body": "<ol>\r\n<li>Thank YOU for making the album we are about to make possible via your super-generosity during our Fall Kickstarter.</li>\r\n<li>We are about to go into the studio shortly, and you'll be hearing the finished album in May 2014. It's wholly unlike the other three but still sounds like us. Make sense? <a href=\"http://bdcwire.com/hallelujah-the-hills-returns-debuts-exclusive-demo-for-album-to-be-recorded-sleepaway-camp-style/\">Hear a demo song over at BDCwire</a>.</li>\r\n<li>Look for California and Northeast US tours this Spring. Contact us if you'd like to play with us or set up a show!</li>\r\n<li>A record for the longest song incubation period ever was recently set when the lost HtH song <a href=\"https://soundcloud.com/hallelujahthehills/highschoolvania\">Highschoolvania</a> was released. Written in 2002, recorded in 2006, released in 2014.</li>\r\n<li>We made some <a href=\"http://www.youtube.com/watch?v=QXgTDyatfvE\">great</a>&nbsp;<a href=\"http://www.youtube.com/watch?v=Y_bu8VG8R1U\">videos</a> this past summer. Also, don't miss this <a href=\"/about/\">amusing history of the band</a> that was assembled for the Kickstarter campaign.</li>\r\n<li>Ryan wrote a piece about <a href=\"http://bdcwire.com/danvers-dude-makes-23k-musically-spamming-on-spotify/\">The Spammer of Spotify</a> and some guesses what the next music industry clusterfuck might be&nbsp;(and check out the <a href=\"http://storify.com/JahHills/the-spammer-of-spotify\">follow-up conversation</a>). He also, like last year, compiled his <a href=\"http://ryanhamiltonwalsh.tumblr.com/post/69989041720/everything-i-made-this-year\">list of output</a> for your enjoyment.</li>\r\n</ol>"
     }
 },
 {
@@ -3610,7 +3610,7 @@
         "publish_on": "2017-03-13T23:24:54Z",
         "title": "The 25-minute version of \"Realistic Birthday Music\"!",
         "slug": "25-minute-realistic-birthday-music",
-        "body": "<p>The 4-minute song that concludes our 2016 album <cite><a href=\"/music/a-band-is-something-to-figure-out/\">A Band Is Something To Figure Out</a></cite> is now a 25-minute epic including audio contributions from fans.</p>\r\n\r\n<div class=\"embed embed-responsive\">\r\n<iframe src=\"http://www.youtube.com/embed/K9PNByxsmPE?wmode=opaque\" seamless allowfullscreen></iframe>\r\n</div>"
+        "body": "<p>The 4-minute song that concludes our 2016 album <cite><a href=\"/music/a-band-is-something-to-figure-out/\">A Band Is Something To Figure Out</a></cite> is now a 25-minute epic including audio contributions from fans.</p>\r\n\r\n<div class=\"embed embed-responsive\">\r\n<iframe src=\"https://www.youtube.com/embed/K9PNByxsmPE?wmode=opaque\" seamless allowfullscreen></iframe>\r\n</div>"
     }
 },
 {
@@ -3651,10 +3651,10 @@
     "pk": 44,
     "fields": {
         "publish": true,
-        "publish_on": "2017-09-24T20:19:34.031Z",
+        "publish_on": "2017-09-24T20:19:34Z",
         "title": "Live at Fenway!",
         "slug": "live-fenway",
-        "body": "<p>Fenway Park organist Josh Kantor covers our song \"To All My Scientist Colleagues I Bid You Farewell\" at a Red Sox game this summer:</p>\r\n\r\n<div class=\"embed embed-responsive\"><iframe src=\"http://www.youtube.com/embed/U9siW6ejvf8?wmode=opaque\" seamless allowfullscreen></iframe></div>"
+        "body": "<p>Fenway Park organist Josh Kantor covers our song \"To All My Scientist Colleagues I Bid You Farewell\" at a Red Sox game this summer:</p>\r\n\r\n<div class=\"embed embed-responsive\"><iframe src=\"https://www.youtube.com/embed/U9siW6ejvf8?wmode=opaque\" seamless allowfullscreen></iframe></div>"
     }
 },
 {
