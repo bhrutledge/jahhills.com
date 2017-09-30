@@ -3658,6 +3658,17 @@
     }
 },
 {
+    "model": "news.post",
+    "pk": 45,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-09-30T00:42:30Z",
+        "title": "I wrote a book. This is the cover.",
+        "slug": "i-wrote-book-cover",
+        "body": "<p><img src=\"http://68.media.tumblr.com/2de45ed8c04e02f8f93ff3bc6c98989c/tumblr_ow63ypdOhI1rtpgemo1_1280.jpg\" alt=\"Cover for Astral Weeks: A Secret History of 1968\"></p>\r\n\r\n<p>In 2015 I wrote <a href=\"http://www.bostonmagazine.com/arts-entertainment/article/2015/03/24/van-morrison-astral-weeks/\">an article</a> for Boston Magazine about how Van Morrison lived in Cambridge, MA in the months leading up to recording his masterpiece LP, Astral Weeks. People seemed to really enjoy the piece, including a man named Ed Park at Penguin Books.</p>\r\n\r\n<p>Cut to this moment, right now: I\u2019ve written an entire book about Astral Weeksand other connected stories from Boston 1968. <a href=\"https://www.penguinrandomhouse.com/books/545122/astral-weeks-by-ryan-h-walsh/\">It\u2019s out March 6, 2018</a> via Penguin Press and you can <a href=\"https://www.amazon.com/Astral-Weeks-Secret-History-1968/dp/0735221340\">pre-order</a> it now, which I hope you do. Fandom of Van Morrison or a fondness for Boston are not required to enjoy this book\u2013 it\u2019s a strange story, almost like a dream, that is worth telling way beyond the premise of hearing the origin of a classic album. As you\u2019ll see on the cover, and read in the book description, all kinds of luminaries are involved, as well as folks I\u2019m fairly certain you\u2019ve never heard of. When we decided that the phrase \u201csecret history\u201d would be in the title early on, I set out to ensure that the book would make good on that titular promise. I think that\u2019s the case. You, the reader, will have to decide for yourself.</p>\r\n\r\n<p>It\u2019ll be available in hardcover and ebook on 3/6/18 and audiobook too at some point (630 minutes \u2013 my longest audio concoction, by a large margin). If you plan on reading it, consider pre-ordering it now. If you\u2019ve enjoyed the stories I\u2019ve sang inside Hallelujah The Hills songs, I can almost guarantee you\u2019ll feel the same way flipping the pages of this true story, told fifty years later.</p>\r\n\r\n<p>Thanks. Ryan H. Walsh<p>\r\n\r\n<p>\r\n<strong>Amazon pre-order</strong>: <a href=\"http://amzn.to/2wmEuKd\">http://amzn.to/2wmEuKd</a>\r\n</p>\r\n\r\n<p>\r\n<strong>Penguin page</strong>: <a href=\"http://bit.ly/2h0x9dk\">http://bit.ly/2h0x9dk</a>\r\n</p>"
+    }
+},
+{
     "model": "shows.venue",
     "pk": 1,
     "fields": {
@@ -9163,6 +9174,18 @@
         "venue": 40,
         "description": "<p>with <span class=\"performer\">Bong Wish</span> and <span class=\"performer\">Blau Blau</span></p>",
         "details": "<p><a href=\"http://www.ticketweb.com/t3/sale/SaleEventDetail?eventId=7717115&pl=mideastnew&dispatch=loadSelectionData\">Tickets</a>, <a href=\"https://www.facebook.com/events/304402529968139\">Facebook</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 289,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-09-29T01:10:45.756Z",
+        "date": "2017-12-02",
+        "venue": 161,
+        "description": "",
+        "details": ""
     }
 }
 ]

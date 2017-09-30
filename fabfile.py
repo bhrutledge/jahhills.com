@@ -124,7 +124,7 @@ def test():
 @task
 def serve():
     with prefix(env.workon), shell_env(**env.django_env):
-        run('%(manage)s runserver_plus' % env)
+        run('%(manage)s runserver_plus 0.0.0.0:8000' % env)
 
 
 @task
