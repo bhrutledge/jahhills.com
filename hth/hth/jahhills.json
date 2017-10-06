@@ -5877,6 +5877,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 186,
+    "fields": {
+        "name": "AS220",
+        "city": "Providence, RI",
+        "website": "",
+        "address": "",
+        "latitude": 41.82182,
+        "longitude": -71.4181387
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -9181,11 +9193,23 @@
     "pk": 289,
     "fields": {
         "publish": true,
-        "publish_on": "2017-09-29T01:10:45.756Z",
+        "publish_on": "2017-09-29T01:10:45Z",
         "date": "2017-12-02",
         "venue": 161,
-        "description": "",
-        "details": ""
+        "description": "<p>with <span class=\"performer\">Razors</span></p>",
+        "details": "<p><a href=\"http://www.theboweryelectric.com/event/1574072-razors-hallelujah-hills-new-york/\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 291,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-10-06T09:59:53Z",
+        "date": "2017-12-06",
+        "venue": 186,
+        "description": "<p><strong>Noise For Toys: A Toys For Tots Benefit</strong>\r\n<br>with Kal Marks, Twin Foxes, and Coaches</p>",
+        "details": "<p><a href=\"https://as220.org/event/noise-for-toys-pvd-hallelujah-the-hills-kal-marks-twin-foxes-and-coaches/?instance_id=76112\">Details</a></p>"
     }
 }
 ]

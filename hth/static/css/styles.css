@@ -638,6 +638,7 @@ header.navigation {
   text-align: center; }
   #about .content-text {
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    text-align: left; }
 
 /*# sourceMappingURL=styles.css.map */

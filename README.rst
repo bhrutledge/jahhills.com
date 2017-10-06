@@ -37,6 +37,8 @@ Start ``runserver`` with ``fab dev serve``.
 
 Manage pacakges with ``pip-compile`` and ``pip-sync``.
 
+Install Sass tools with ``bundle install``
+
 
 Deployment
 ----------
