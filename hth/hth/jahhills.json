@@ -5889,6 +5889,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 187,
+    "fields": {
+        "name": "Koto",
+        "city": "Salem, MA",
+        "website": "",
+        "address": "90 Washington St",
+        "latitude": 42.5220211,
+        "longitude": -70.8959266
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -9208,8 +9220,20 @@
         "publish_on": "2017-10-06T09:59:53Z",
         "date": "2017-12-06",
         "venue": 186,
-        "description": "<p><strong>Noise For Toys: A Toys For Tots Benefit</strong>\r\n<br>with Kal Marks, Twin Foxes, and Coaches</p>",
+        "description": "<p><strong>Noise For Toys: A Toys For Tots Benefit</strong>\r\n<br>with <span class=\"performer\">Kal Marks</span>, <span class=\"performer\">Twin Foxes</span>, and <span class=\"performer\">Coaches</span></p>",
         "details": "<p><a href=\"https://as220.org/event/noise-for-toys-pvd-hallelujah-the-hills-kal-marks-twin-foxes-and-coaches/?instance_id=76112\">Details</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 292,
+    "fields": {
+        "publish": true,
+        "publish_on": "2017-11-09T01:56:32.537Z",
+        "date": "2017-12-17",
+        "venue": 187,
+        "description": "<p>with <span class=\"performer\">The Dazies</span>, <span class=\"performer\">The Knock Ups</span>, and <span class=\"performer\">Courter</span></p>",
+        "details": ""
     }
 }
 ]
