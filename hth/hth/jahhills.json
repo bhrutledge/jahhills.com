@@ -9235,5 +9235,17 @@
         "description": "<p>with <span class=\"performer\">The Dazies</span>, <span class=\"performer\">The Knock Ups</span>, and <span class=\"performer\">Courter</span></p>",
         "details": ""
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 293,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-01-04T01:53:29Z",
+        "date": "2018-02-03",
+        "venue": 150,
+        "description": "<p><strong>All Improvised/Noise Set</strong>\r\n<br>with <span class=\"performer\">The Sheila Divine</span></p>",
+        "details": "<p>$12, 8pm\r\n<br><a href=\"https://www.eventbrite.com/e/the-sheila-divine-hallelujah-the-hills-100-improvisednoise-sets-tickets-41670118446\">Tickets</a>, <a href=\"https://www.facebook.com/events/1987370261586228/\">Facebook</a></p>"
+    }
 }
 ]
