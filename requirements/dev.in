@@ -1,11 +1,11 @@
 -r base.in
+pip-tools
 django-debug-toolbar
 django-extensions
 Werkzeug
 factory-boy
 flake8
-ptpython
-pygments-style-solarized
 selenium>=3
 sphinx
 vcrpy
+ipython

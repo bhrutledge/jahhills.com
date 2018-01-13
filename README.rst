@@ -2,7 +2,7 @@ jahhills.com
 ============
 
 Reboot of `hallelujahthehills.com <http://hallelujahthehills.com>`_
-using the `Django <https://www.djangoproject.com/>`_ web framework 
+using the `Django <https://www.djangoproject.com/>`_ web framework
 and the `Bourbon <http://bourbon.io/>`_ family of SASS libraries.
 
 Launched on April 12, 2016, in conjunction with the band's fifth album,
@@ -21,9 +21,6 @@ with enhancements and bugs across the stack tracked in
 Getting Started
 ---------------
 
-Install `pip-tools <https://github.com/jazzband/pip-tools>`_
-(e.g., with `pipsi <https://github.com/mitsuhiko/pipsi>`_).
-
 Clone this repo.
 
 Create and activate a Python 3.6 virtual environment.
@@ -35,7 +32,8 @@ Bootstrap and validate the environment with ``fab dev bootstrap``.
 
 Start ``runserver`` with ``fab dev serve``.
 
-Manage pacakges with ``pip-compile`` and ``pip-sync``.
+Manage packages with ``pip-compile`` and ``pip-sync`` from
+`pip-tools <https://github.com/jazzband/pip-tools>`_
 
 Install Sass tools with ``bundle install``
 

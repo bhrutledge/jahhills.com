@@ -88,7 +88,7 @@ def pull():
 @task
 def pip_install():
     with prefix(env.workon), shell_env(**env.django_env):
-        run('pip-sync %(requirements)s' % env)
+        run('pip install -r %(requirements)s' % env)
 
 
 @task
