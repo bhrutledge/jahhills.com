@@ -20,7 +20,7 @@ docopt==0.6.2             # via ptpython
 docutils==0.14            # via sphinx
 enum34==1.1.6             # via flake8
 factory-boy==2.9.2
-faker==0.8.4              # via factory-boy
+faker==0.8.10              # via factory-boy
 flake8==3.4.1
 funcsigs==1.0.2           # via mock
 gunicorn==19.7.1
