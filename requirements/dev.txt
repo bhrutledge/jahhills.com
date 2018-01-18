@@ -15,7 +15,7 @@ django-debug-toolbar==1.8
 django-embed-video==1.1.2
 django-environ==0.4.4
 django-extensions==1.9.1
-django==1.11.5            # via django-debug-toolbar, django-embed-video, django-environ
+django==2.0.1            # via django-debug-toolbar, django-embed-video, django-environ
 docopt==0.6.2             # via ptpython
 docutils==0.14            # via sphinx
 enum34==1.1.6             # via flake8
