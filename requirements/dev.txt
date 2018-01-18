@@ -47,7 +47,7 @@ requests==2.18.4          # via django-embed-video, sphinx
 selenium==3.5.0
 six==1.11.0               # via cloudinary, django-environ, django-extensions, faker, mock, prompt-toolkit, python-dateutil, sphinx, vcrpy
 snowballstemmer==1.2.1    # via sphinx
-sphinx==1.6.3
+sphinx==1.6.6
 sphinxcontrib-websupport==1.0.1  # via sphinx
 sqlparse==0.2.3           # via django-debug-toolbar
 typing==3.6.2             # via sphinx
