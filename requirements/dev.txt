@@ -49,7 +49,7 @@ six==1.11.0               # via cloudinary, django-environ, django-extensions, f
 snowballstemmer==1.2.1    # via sphinx
 sphinx==1.6.3
 sphinxcontrib-websupport==1.0.1  # via sphinx
-sqlparse==0.2.3           # via django-debug-toolbar
+sqlparse==0.2.4           # via django-debug-toolbar
 typing==3.6.2             # via sphinx
 urllib3==1.22             # via cloudinary, requests
 vcrpy==1.11.1
