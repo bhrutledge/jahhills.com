@@ -32,7 +32,7 @@ jinja2==2.9.6             # via sphinx
 markupsafe==1.0           # via jinja2
 mccabe==0.6.1             # via flake8
 mock==2.0.0               # via cloudinary, vcrpy
-parso==0.1.0              # via jedi
+parso==0.1.1              # via jedi
 pbr==3.1.1                # via mock
 prompt-toolkit==1.0.15    # via ptpython
 ptpython==0.41
