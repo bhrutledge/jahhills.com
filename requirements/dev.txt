@@ -44,7 +44,7 @@ python-dateutil==2.6.1    # via faker
 pytz==2017.2
 pyyaml==3.12              # via vcrpy
 requests==2.18.4          # via django-embed-video, sphinx
-selenium==3.5.0
+selenium==3.8.1
 six==1.11.0               # via cloudinary, django-environ, django-extensions, faker, mock, prompt-toolkit, python-dateutil, sphinx, vcrpy
 snowballstemmer==1.2.1    # via sphinx
 sphinx==1.6.3
