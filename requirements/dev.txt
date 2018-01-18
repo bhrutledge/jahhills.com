@@ -14,7 +14,7 @@ contextlib2==0.5.5        # via vcrpy
 django-debug-toolbar==1.8
 django-embed-video==1.1.2
 django-environ==0.4.4
-django-extensions==1.9.1
+django-extensions==1.9.9
 django==1.11.5            # via django-debug-toolbar, django-embed-video, django-environ
 docopt==0.6.2             # via ptpython
 docutils==0.14            # via sphinx
