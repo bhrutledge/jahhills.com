@@ -37,7 +37,7 @@ pbr==3.1.1                # via mock
 prompt-toolkit==1.0.15    # via ptpython
 ptpython==0.41
 pycodestyle==2.3.1        # via flake8
-pyflakes==1.5.0           # via flake8
+pyflakes==1.6.0           # via flake8
 pygments-style-solarized==0.1.1
 pygments==2.2.0           # via ptpython, pygments-style-solarized, sphinx
 python-dateutil==2.6.1    # via faker
