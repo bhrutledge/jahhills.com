@@ -5901,6 +5901,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 188,
+    "fields": {
+        "name": "Alchemy",
+        "city": "Providence, RI",
+        "website": "",
+        "address": "",
+        "latitude": 41.8203136,
+        "longitude": -71.4115116
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -9246,6 +9258,18 @@
         "venue": 150,
         "description": "<p><strong>All Improvised/Noise Set</strong>\r\n<br>with <span class=\"performer\">The Sheila Divine</span></p>",
         "details": "<p>$12, 8pm\r\n<br><a href=\"https://www.eventbrite.com/e/the-sheila-divine-hallelujah-the-hills-100-improvisednoise-sets-tickets-41670118446\">Tickets</a>, <a href=\"https://www.facebook.com/events/1987370261586228/\">Facebook</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 294,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-04-10T00:53:28.196Z",
+        "date": "2018-05-17",
+        "venue": 188,
+        "description": "<p>with <span class=\"performer\">Sinnet</span> and <span class=\"performer\">Elisa Smith</span></p>",
+        "details": "<p>$8, All ages\r\n<br /><a href=\"https://www.ticketfly.com/event/1680390-hallelujah-hills-providence/\">Tickets</a>\r\n</p>"
     }
 }
 ]
