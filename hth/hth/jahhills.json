@@ -9271,5 +9271,17 @@
         "description": "<p>with <span class=\"performer\">Sinnet</span> and <span class=\"performer\">Elisa Smith</span></p>",
         "details": "<p>$8, All ages\r\n<br /><a href=\"https://www.ticketfly.com/event/1680390-hallelujah-hills-providence/\">Tickets</a>\r\n</p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 295,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-04-18T00:01:23.551Z",
+        "date": "2018-07-20",
+        "venue": 72,
+        "description": "<p>with <span class=\"performer\">Adam Remnant</span> and <span class=\"performer\">Planet of Adventure</span></p>",
+        "details": "<p>$10, 21+\r\n<br /><a href=\"http://midwaycafe.com/our/details?id=103990\">Tickets</a>\r\n</p>"
+    }
 }
 ]
