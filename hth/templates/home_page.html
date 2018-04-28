@@ -1,45 +1,42 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load cloudinary %}
 
 {% block main_content %}
 {% comment %}
 <figure class="hero-img">
     <a href="{% url 'post_detail' 'one-night-only' %}">
-        <img src="{% cloudinary_url "planetarium_banner.jpg" %}"
+        <img src="{% cloudinary_url 'planetarium_banner.jpg' %}"
             alt="Live at the Charles Hayden Planetarium">
     </a>
 </figure>
 {% endcomment %}
 <figure class="hero-img">
-    <img src="{% cloudinary_url "hth_bowery_2016.jpg" %}" alt="HTH at Bowery Electric">
-    <figcaption>
-        <div class="img-credit">Photo courtesy of Matt Condon</div>
-    </figcaption>
+    <img src="{% cloudinary_url 'hth_banner_201805.jpg' %}" alt="Abstract banner image">
 </figure>
 
 <section id="shows" class="container">
-    <h2><a href="{% url "gig_list" %}">Live</a></h2>
+    <h2><a href="{% url 'gig_list' %}">Live</a></h2>
 
     <div class="gig-list">
-        {% include "shows/_gig_upcoming.html" %}
+        {% include 'shows/_gig_upcoming.html' %}
     </div>
 </section>
 
 <section id="news" class="container">
-    <h2><a href="{% url "post_list" %}">News</a></h2>
+    <h2><a href="{% url 'post_list' %}">News</a></h2>
 
-    {% include "news/_post_highlight.html" %}
+    {% include 'news/_post_highlight.html' %}
 </section>
 
 <section id="music" class="container">
-    <h2><a href="{% url "release_list" %}">Music</a></h2>
+    <h2><a href="{% url 'release_list' %}">Music</a></h2>
 
-    {% include "music/_release_highlight.html" %}
+    {% include 'music/_release_highlight.html' %}
 </section>
 
 <section id="video" class="container">
-    <h2><a href="{% url "video_list" %}">Video</a></h2>
+    <h2><a href="{% url 'video_list' %}">Video</a></h2>
 
-    {% include "music/_video_highlight.html" %}
+    {% include 'music/_video_highlight.html' %}
 </section>
 {% endblock %}
