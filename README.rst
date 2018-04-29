@@ -35,7 +35,7 @@ Start ``runserver`` with ``fab dev serve``.
 Manage packages with ``pip-compile`` and ``pip-sync`` from
 `pip-tools <https://github.com/jazzband/pip-tools>`_
 
-Install Sass tools with ``bundle install``
+Install Sass tools with ``bundle install``.
 
 
 Deployment
