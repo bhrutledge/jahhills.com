@@ -23,8 +23,7 @@ from os.path import abspath, dirname, join
 sys.path.append(abspath(join(dirname(__file__), "_ext")))
 
 BASE_DIR = dirname(dirname(__file__))
-PROJECT_DIR = join(BASE_DIR, 'hth')
-sys.path.append(PROJECT_DIR)
+sys.path.append(BASE_DIR)
 
 import django
 django.setup()
