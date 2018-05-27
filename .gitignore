@@ -61,7 +61,7 @@ docs/_build/
 .bundle
 vendor/bundle
 
-hth/staticfiles
-hth/media
+staticfiles
+media
 .env
 .gunicorn

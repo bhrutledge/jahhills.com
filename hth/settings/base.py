@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 import environ
 
 project_root = environ.Path(__file__) - 3
-site_root = project_root.path('hth')
+config_root = project_root.path('hth')
 
 env = environ.Env()
 env.read_env()
@@ -60,7 +60,7 @@ WSGI_APPLICATION = 'hth.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': site_root('jahhills.sqlite3'),
+        'NAME': config_root('jahhills.sqlite3'),
     }
 }
 
