@@ -25,24 +25,32 @@ Clone this repo.
 
 Create and activate a Python 3.6 virtual environment.
 
-Copy ``hth/hth/settings/env.example`` to ``.env`` in the same directory, then
+Copy ``hth/settings/env.example`` to ``.env`` in the same directory, then
 edit to change settings.
 
-Bootstrap and validate the environment with ``fab dev bootstrap``.
+Bootstrap and validate the environment with ``make``.
 
-Start ``runserver`` with ``fab dev serve``.
+Start ``runserver`` with ``make serve``.
 
 Manage packages with ``pip-compile`` and ``pip-sync`` from
-`pip-tools <https://github.com/jazzband/pip-tools>`_
+`pip-tools <https://github.com/jazzband/pip-tools>`_.
+
+
+Compiling CSS
+-------------
+
+Install `Bundler <https://bundler.io>`_.
 
 Install Sass tools with ``bundle install``.
+
+Recompile CSS on Sass changes with ``make css``.
 
 
 Deployment
 ----------
 
-Dump local content changes with ``fab dev dumpdata``.
+Dump local content changes with ``make dumpdata``.
 
 Commit and push to GitHub.
 
-Deploy with ``fab prod deploy``.
+**TODO**: Instructions for starting via supervisorctl.
