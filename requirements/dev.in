@@ -1,4 +1,4 @@
--r base.in
+-r prod.txt
 pip-tools
 django-debug-toolbar
 django-extensions
