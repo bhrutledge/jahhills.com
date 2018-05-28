@@ -5952,6 +5952,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 189,
+    "fields": {
+        "name": "No Alibis Bookstore",
+        "city": "Belfast, Ireland",
+        "website": "",
+        "address": "",
+        "latitude": 54.5869518,
+        "longitude": -5.9327087
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -9321,6 +9333,18 @@
         "venue": 72,
         "description": "<p>with <span class=\"performer\">Adam Remnant</span> and <span class=\"performer\">Planet of Adventure</span></p>",
         "details": "<p>$10, 21+\r\n<br /><a href=\"http://midwaycafe.com/our/details?id=103990\">Tickets</a>\r\n</p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 296,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-05-28T15:08:18.897Z",
+        "date": "2018-06-12",
+        "venue": 189,
+        "description": "Ryan Walsh solo acoustic show",
+        "details": "<p>7:30pm\r\n<br><a href=\"https://www.ticketsource.co.uk/whats-on/belfast/no-alibis-bookstore/hallelujah-the-hills-ryan-walsh-solo-show/2018-06-12/19:30\">Tickets</a></p>"
     }
 }
 ]
