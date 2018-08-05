@@ -9346,5 +9346,17 @@
         "description": "Ryan Walsh solo acoustic show",
         "details": "<p>7:30pm\r\n<br><a href=\"https://www.ticketsource.co.uk/whats-on/belfast/no-alibis-bookstore/hallelujah-the-hills-ryan-walsh-solo-show/2018-06-12/19:30\">Tickets</a></p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 297,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-08-05T13:56:23Z",
+        "date": "2018-09-08",
+        "venue": 180,
+        "description": "<p><strong><a href=\"http://jpmusicfestival.com\">JP Music Festival</a></strong></p>",
+        "details": "<p>Free, all ages.\r\n<br><a href=\"https://www.facebook.com/events/1985894818109655/\">Facebook</a></p>"
+    }
 }
 ]
