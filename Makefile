@@ -16,8 +16,8 @@ all: update test loaddata
 .PHONY: update
 update:
 	git pull
-	pip install -U setuptools pip
-	pip install -r requirements/$(ENV).txt
+	pip install -U setuptools pip pip-tools
+	pip-sync requirements/$(ENV).txt
 	$(manage) migrate --noinput
 	$(manage) collectstatic --noinput
 

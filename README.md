@@ -28,7 +28,7 @@ Install Sass tools with `bundle install`.
 
 Recompile CSS on Sass changes with `make css`.
 
-## Production infrascture
+## Production infrastructure
 
 - Hosted on [Webfaction](https://www.webfaction.com)
 - Managed by [Supervisor](http://supervisord.org/index.html)

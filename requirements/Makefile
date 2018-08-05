@@ -3,6 +3,10 @@ outputs := prod.txt dev.txt
 .PHONY: all
 all: $(outputs)
 
+.PHONY: clean
+clean:
+	rm $(outputs)
+
 ifdef upgrade
 args += --upgrade-package $(upgrade)
 # Force recompilation, even though the input file hasn't changed

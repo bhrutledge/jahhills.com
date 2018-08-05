@@ -1,5 +1,4 @@
 -r prod.txt
-pip-tools
 django-debug-toolbar
 django-extensions
 Werkzeug
