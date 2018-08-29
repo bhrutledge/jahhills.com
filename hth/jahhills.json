@@ -5964,6 +5964,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 190,
+    "fields": {
+        "name": "Sonia",
+        "city": "Cambridge, MA",
+        "website": "http://www.mideastoffers.com/sonia/",
+        "address": "",
+        "latitude": 42.3635006,
+        "longitude": -71.1016204
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -9357,6 +9369,18 @@
         "venue": 180,
         "description": "<p><strong><a href=\"http://jpmusicfestival.com\">JP Music Festival</a></strong></p>",
         "details": "<p>Free, all ages.\r\n<br><a href=\"https://www.facebook.com/events/1985894818109655/\">Facebook</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 298,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-08-29T00:50:22Z",
+        "date": "2018-10-25",
+        "venue": 190,
+        "description": "<p>\r\n<strong><a href=\"http://www.mideastoffers.com/event/8497415/never-not-funny-w-jimmy-pardo-matt-belknap/\">Never Not Funny</a></strong>\r\n<br />with Jimmy Pardo &amp; Matt Belknap\r\n</p>",
+        "details": "<p>Sold out</p>"
     }
 }
 ]
