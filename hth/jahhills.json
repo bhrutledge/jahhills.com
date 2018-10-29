@@ -9394,5 +9394,17 @@
         "description": "<p>with <span class=\"performer\">Parks</span> (record release), <span class=\"performer\">Photocomfort</span>, and <span class=\"performer\">Future Teens</span></p>",
         "details": "<p>$12-15, all ages\r\n<br /><a href=\"https://www.axs.com/events/360814/parks-record-release-tickets?skin=sinclair\">Tickets</a>, <a href=\"https://www.facebook.com/events/726569291019681/\">Facebook</a></p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 300,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-10-29T21:31:59Z",
+        "date": "2018-10-29",
+        "venue": 182,
+        "description": "with <span class=\"performer\">Boston Cream</span>",
+        "details": "<p>Free!\r\n<br /><a href=\"https://www.universe.com/events/industry-halloween-tickets-boston-4CX09B?ref=explore\">Tickets</a>, <a href=\"https://www.facebook.com/events/2202907373363579/\">Facebook</a>\r\n</p>"
+    }
 }
 ]
