@@ -144,6 +144,22 @@
     }
 },
 {
+    "model": "music.release",
+    "pk": 14,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-11-11T22:59:42Z",
+        "title": "Against Electricity",
+        "slug": "against-electricity",
+        "date": "2018-11-13",
+        "cover_url": "https://www.hallelujahthehills.com/files/artwork/against_electricity_cover.jpg",
+        "player_code": "",
+        "description": "<p>An instrumental album originally created as the soundtrack for the book <a href=\"https://www.amazon.com/Astral-Weeks-Secret-History-1968/dp/0735221340\">Astral Weeks: A Secret History of 1968</a>.</p>\r\n\r\n<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/against-electricity\">Bandcamp</a>.\r\n<br><a href=\"https://www.jealousbutcher.com/products/against-electricity\">Limited-edition vinyl</a> available from Jealous Butcher Records</a>.\r\n</p>",
+        "credits": "<p>Music by Hallelujah The Hills: Ryan Connelly, Dave Curry, Joseph Marrett, Brian Rutledge, Nicholas Ward, Ryan H. Walsh.</p>\r\n\r\n<p>With special guests: Dana Colley, Tanya Donelly, Josh Kantor, Marissa Nadler, and Evan Sicuranza.</p>\r\n\r\n<p>Engineered, mixed, and mastered by Seth Manchester at Machines with Magnets, Pawtucket RI.</p>\r\n\r\n<p>\u00a9 2018 Reverse The Tape Decks ASCAP</p>",
+        "priority": null
+    }
+},
+{
     "model": "music.song",
     "pk": 1,
     "fields": {
@@ -3705,6 +3721,17 @@
         "title": "After a brief end-of-winter nap...",
         "slug": "after-brief-end-winter-nap",
         "body": "<p>&hellip;we\u2019re back! And we\u2019re announcing two new shows! Join us 5/17 in Providence, RI and 7/20 in Jamaica Plain, Boston.</p>\r\n<p>And while we\u2019re hard at work at on writing our sixth HTH LP, here\u2019s two little tidbits to put on your next mix tape. These are original, instrumental tracks we created for the audiobook version of <a href=\"https://www.amazon.com/Astral-Weeks-Secret-History-1968/dp/0735221340\">Astral Weeks: A Secret History of 1968</a>. We had the pleasure of working with great musicians we grew up with in our headphones, like Tanya Donelly from Belly and Dana Colley from Morphine on this project. Parts of the hour-plus of music we recorded can be heard through out the audio version of the book, but here\u2019s two tracks in full for streaming or downloading. For more information on the project, <a href=\"http://www.vanyaland.com/2018/03/28/astral-weeks-audiobook-gets-a-boston-all-star-soundtrack/\">Vanyaland has the scoop</a>.</p>\r\n\r\n<p><iframe width=\"100%\" height=\"120\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/390337128&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;show_artwork=false\"></iframe></p>\r\n\r\n<p><iframe width=\"100%\" height=\"120\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/390337782&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;show_artwork=false\"></iframe></p>\r\n\r\n<p><img src=\"https://res.cloudinary.com/dgojqlr7m/image/upload/c_scale,w_480/v1524789074/craig_finn-ryan_walsh.jpg\" alt=\"Craig Finn interviewing Ryan Walsh\"></p>\r\n<p>For the Brooklyn AW68 book event, Craig Finn from The Hold Steady interviewed Ryan for a great crowd that included Rob Sheffield, who recently wrote <a href=\"https://www.rollingstone.com/music/features/rob-sheffield-astral-weeks-book-van-morrison-w517631\">a comprehensive piece about the book for Rolling Stone</a>. Besides being one of HTH\u2019s favorite songwriters, Craig\u2019s <a href=\"https://www.youtube.com/watch?v=a8GsQOK38u8\">deep familiarity with Boston</a> made him an obvious choice for the job. If you haven\u2019t heard Craig\u2019s last two solo albums, drop everything and fix that. These records are true gems of melody and storytelling, some of the most stand-out lyrics of the last few years if you ask me.</p>\r\n<p>Other things to check out:</p>\r\n<ul>\r\n<li>\r\n<p><a href=\"http://www.earwolf.com/episode/leah-krinsky/\">Ryan appearing on Never Not Funny</a>. Jimmy Pardo pronounces the band name correctly and Ryan performs \u201cThe 3 Minute Mark\u201d solo.</p>\r\n</li>\r\n<li>\r\n<p>Longtime HTH supporter <a href=\"https://aquariumdrunkard.com/2018/03/26/astral_weeks/\">Aquarium Drunkard interviews Ryan</a> about Boston and the book on their Transmissions podcast.</p>\r\n</li>\r\n<li>\r\n<p><a href=\"http://titusandronicus.net/patrick-stickles-interviewed-by-ryan-walsh/\">Ryan interviews Patrick Stickles of Titus Andronicus</a> to help unveil the band\u2019s new LP <em>A Productive Cough</em> which is a surprising Stickles-Special\u00ae about the confusing times we live in, full of lifted spirits and real talk.</p>\r\n</li>\r\n</ul>"
+    }
+},
+{
+    "model": "news.post",
+    "pk": 47,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-11-12T01:15:30Z",
+        "title": "Announcing a New Album by Releasing a New Album",
+        "slug": "announcing-new-album",
+        "body": "<p>Hello friends! We\u2019ve written a new album that we\u2019re recording this winter titled <cite> <strong>I\u2019m You</strong></cite>, and we need your help to do it! No, this is not a Kickstarter; instead, we\u2019re turning on pre-orders for the <a href=\"https://hallelujahthehills.bandcamp.com/album/im-you\">seventh HTH full-length LP</a> as well as releasing our sixth album right this very instant. That means you can start enjoying <a href=\"https://www.hallelujahthehills.com/files/images/buy_against_electricity.jpg\">our new instrumental album</a>,  <cite><strong>Against Electricity</strong></cite>, right now! All sales will go towards our recording budget for  <cite>I\u2019m You</cite>.</p>\r\n\r\n<p style=\"display: flex;justify-content: space-around;\">\r\n<a href=\"https://hallelujahthehills.bandcamp.com/album/im-you\"><img src=\"https://www.hallelujahthehills.com/files/images/pre_order_im_you.jpg\" alt=\"Pre-Order I'm You\"></a> <a href=\"https://hallelujahthehills.bandcamp.com/album/against-electricity\"><img src=\"https://www.hallelujahthehills.com/files/images/buy_against_electricity.jpg\" alt=\"Buy Against Electricity\"></a>\r\n</p>\r\n\r\n<p>From now until December 14, 2018, anyone who pre-orders  <cite>I\u2019m You</cite>  in any format will be entered into a raffle with individual prizes that have been valued up to $500. This way, we ensure that all fans of our band (not just the ones with the most disposable income) have an equal chance to get some of these premium extras we\u2019ve cooked up. We\u2019ll host a live-streamed raffle drawing in the spring where we\u2019ll draw the winners. If you win, your prize will accompany your brand new HTH album.</p>\r\n\r\n<p><strong>All pre-orders for <cite>I\u2019m You</cite> automatically get:</strong></p>\r\n<ul>\r\n    <li>Your name in the liner notes</li>\r\n    <li>Early access to the album</li>\r\n</ul>\r\n\r\n<p><strong>Raffle prizes:</strong></p>\r\n<ul>\r\n    <li>10 original collages that have appeared as part of HTH releases or show posters (10 separate winners)</li>\r\n    <li>Signed copies of the <cite>Astral Weeks</cite> book (3)</li>\r\n    <li>Handwritten lyrics to any HTH song (3)</li>\r\n    <li>Acoustic show via Skype (local winners can redeem this in person) (3)</li>\r\n    <li>One of a kind acoustic recording of any HTH song of your choice (3)</li>\r\n    <li>4 guestlist spots (use 1 ticket four times or four tickets 1 time, we don\u2019t care!) any show, any city, never expires</li>\r\n    <li>HTH Live Show Digital Pack - You\u2019ll get a download of several unreleased HTH shows that span the entire existence of the band (3)</li>\r\n</ul>"
     }
 },
 {
