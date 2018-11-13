@@ -497,6 +497,11 @@ header.navigation {
       break-inside: avoid;
       margin-bottom: 0;
       padding-bottom: 1.6rem; } }
+.content-flex {
+  display: flex;
+  justify-content: space-around; }
+  .content-flex > * {
+    margin: 1.6rem 0.8rem; }
 
 .gig .performer {
   white-space: nowrap; }
