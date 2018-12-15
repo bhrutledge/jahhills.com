@@ -3218,6 +3218,76 @@
     }
 },
 {
+    "model": "music.press",
+    "pk": 106,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-12-15T22:32:00.221Z",
+        "title": "Ryan's Smashing Life",
+        "date": "2018-12-16",
+        "source_url": "http://www.rslblog.com/2018/11/suddenly-hallelujah-hills-drop.html",
+        "body": "Mesmerizing",
+        "quote": true,
+        "release": 14
+    }
+},
+{
+    "model": "music.press",
+    "pk": 107,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-12-15T22:34:24.328Z",
+        "title": "Doom & Gloom From The Tomb",
+        "date": "2018-12-19",
+        "source_url": "https://twitter.com/tywilc/status/1064554745837187072",
+        "body": "A killer new Hallelujah the Hills instrumental album.",
+        "quote": true,
+        "release": 14
+    }
+},
+{
+    "model": "music.press",
+    "pk": 108,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-12-15T22:35:17.935Z",
+        "title": "If It's Too Loud",
+        "date": "2018-12-14",
+        "source_url": "http://www.ifitstooloud.com/2018/11/hallelujah-hills-against-electricity.html",
+        "body": "There are two things Boston's Hallelujah the Hills do incredibly well: Catchy roots based rock songs and experimental instrumental noise rock. Their sixth album, Against Electricty, was just released yesterday and it fits squarely in the latter category.",
+        "quote": true,
+        "release": 14
+    }
+},
+{
+    "model": "music.press",
+    "pk": 109,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-12-15T22:36:51.191Z",
+        "title": "Aquarium Drunkard",
+        "date": "2018-12-03",
+        "source_url": "https://aquariumdrunkard.com/2018/12/03/bandcamping-winter-2018/",
+        "body": "All kinds of interesting textures and atmospheres happening. HTH doesn\u2019t bother really going for a particular Astral Weeks-y vibe and wisely avoids late-60s psych cliches \u2013 maybe the most overt \u201creference\u201d is the (excellent) \u201cRayrunner\u201d rave-up. I\u2019ll let you guess what that one sounds like!",
+        "quote": true,
+        "release": 14
+    }
+},
+{
+    "model": "music.press",
+    "pk": 110,
+    "fields": {
+        "publish": true,
+        "publish_on": "2018-12-15T22:38:19.122Z",
+        "title": "WGBH",
+        "date": "2018-11-29",
+        "source_url": "https://www.wgbh.org/music/indie/2018/11/29/grand-ideas-rock-wizards-and-the-silent-scorn-of-van-morrison-the-inspiring-dumb-confidence-of-ryan-h-walsh?fbclid=IwAR30ZdbZc-GTWCWoiu9O0oqOfBSrq6UpCd-ivd9",
+        "body": "Hallelujah The Hills is a band that radiates the essence of Boston indie rock",
+        "quote": true,
+        "release": null
+    }
+},
+{
     "model": "news.post",
     "pk": 1,
     "fields": {
