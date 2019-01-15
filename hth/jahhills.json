@@ -9503,5 +9503,17 @@
         "description": "with <span class=\"performer\">Boston Cream</span>",
         "details": "<p>Free!\r\n<br /><a href=\"https://www.universe.com/events/industry-halloween-tickets-boston-4CX09B?ref=explore\">Tickets</a>, <a href=\"https://www.facebook.com/events/2202907373363579/\">Facebook</a>\r\n</p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 301,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-01-15T10:42:17.289Z",
+        "date": "2019-02-23",
+        "venue": 150,
+        "description": "with <span class=\"performer\">Argo Arkestra</span>",
+        "details": "<p>$10, 10pm\r\n<br><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-argo-arkestra-tickets-54836373068\">Tickets</a>, <a href=\"https://www.facebook.com/events/603802423414028/\">Facebook</a></p>"
+    }
 }
 ]

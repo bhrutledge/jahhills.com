@@ -14,18 +14,18 @@
     <img src="{% cloudinary_url 'hth_banner_201805.jpg' %}" alt="Abstract banner image">
 </figure>
 
-<section id="news" class="container">
-    <h2><a href="{% url 'post_list' %}">News</a></h2>
-
-    {% include 'news/_post_highlight.html' %}
-</section>
-
 <section id="shows" class="container">
     <h2><a href="{% url 'gig_list' %}">Live</a></h2>
 
     <div class="gig-list">
         {% include 'shows/_gig_upcoming.html' %}
     </div>
+</section>
+
+<section id="news" class="container">
+    <h2><a href="{% url 'post_list' %}">News</a></h2>
+
+    {% include 'news/_post_highlight.html' %}
 </section>
 
 <section id="music" class="container">
