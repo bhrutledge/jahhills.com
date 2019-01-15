@@ -10,14 +10,16 @@ babel==2.6.0              # via sphinx
 backcall==0.1.0           # via ipython
 certifi==2018.4.16
 chardet==3.0.4
+click==7.0                # via safety
 cloudinary==1.12.0
 decorator==4.3.0          # via ipython, traitlets
 django-debug-toolbar==1.9.1
 django-embed-video==1.1.2
 django-environ==0.4.5
 django-extensions==2.1.0
-django==1.11.15
+django==1.11.18
 docutils==0.14            # via sphinx
+dparse==0.4.1             # via safety
 factory-boy==2.11.1
 faker==0.8.17             # via factory-boy
 flake8==3.5.0
@@ -32,7 +34,7 @@ markupsafe==1.0           # via jinja2
 mccabe==0.6.1             # via flake8
 mock==2.0.0
 multidict==4.3.1          # via yarl
-packaging==17.1           # via sphinx
+packaging==17.1           # via dparse, safety, sphinx
 parso==0.3.1              # via jedi
 pbr==4.2.0
 pexpect==4.6.0            # via ipython
@@ -45,8 +47,9 @@ pygments==2.2.0           # via ipython, sphinx
 pyparsing==2.2.0          # via packaging
 python-dateutil==2.7.3    # via faker
 pytz==2018.5
-pyyaml==3.13              # via vcrpy
-requests==2.19.1
+pyyaml==3.13              # via dparse, vcrpy
+requests==2.21.0
+safety==1.8.4
 selenium==3.14.0
 simplegeneric==0.8.1      # via ipython
 six==1.11.0

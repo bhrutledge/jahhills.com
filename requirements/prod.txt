@@ -9,13 +9,13 @@ chardet==3.0.4            # via requests
 cloudinary==1.12.0
 django-embed-video==1.1.2
 django-environ==0.4.5
-django==1.11.15
+django==1.11.18
 gunicorn==19.9.0
 idna==2.7                 # via requests
 mock==2.0.0               # via cloudinary
 pbr==4.2.0                # via mock
 pytz==2018.5
-requests==2.19.1          # via django-embed-video
+requests==2.21.0          # via django-embed-video
 six==1.11.0               # via cloudinary, mock
 urllib3==1.23             # via cloudinary, requests
 whitenoise==3.3.1

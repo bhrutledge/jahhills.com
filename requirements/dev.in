@@ -4,6 +4,7 @@ django-extensions
 Werkzeug
 factory-boy
 flake8
+safety
 selenium>=3
 sphinx
 sphinx_rtd_theme

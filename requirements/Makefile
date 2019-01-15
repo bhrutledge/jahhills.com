@@ -20,6 +20,10 @@ $(outputs): %.txt: %.in
 # Assuming `-r prod.txt` in dev.in
 dev.txt: prod.txt
 
+.PHONY: safety
+safety:
+	safety check -r dev.txt
+
 .PHONY: help
 help:
 	@echo "make                   Recompile requirements after changing *.in"
