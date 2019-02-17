@@ -9515,5 +9515,17 @@
         "description": "with <span class=\"performer\">Argo Arkestra</span>",
         "details": "<p>$10, 10pm\r\n<br><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-argo-arkestra-tickets-54836373068\">Tickets</a>, <a href=\"https://www.facebook.com/events/603802423414028/\">Facebook</a></p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 302,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-02-17T22:57:25Z",
+        "date": "2019-03-15",
+        "venue": 75,
+        "description": "<p>opening for &ldquo;The Rise and Fall of Ziggy Stardust and the Spiders from Mars: A Tribute to David Bowie&rdquo;</p>.",
+        "details": "<p>$12, 9pm\r\n<br><a href=\"https://www.brownpapertickets.com/event/4069647\">Tickets</a></p>"
+    }
 }
 ]
