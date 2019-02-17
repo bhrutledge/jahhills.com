@@ -8,7 +8,11 @@ clean:
 	rm $(outputs)
 
 ifdef upgrade
+ifeq ($(upgrade), all)
+args += --upgrade
+else
 args += --upgrade-package $(upgrade)
+endif
 # Force recompilation, even though the input file hasn't changed
 .PHONY: *.in
 endif
@@ -27,4 +31,5 @@ safety:
 .PHONY: help
 help:
 	@echo "make                   Recompile requirements after changing *.in"
+	@echo "make upgrade=all       Recompile requirements to upgrade all dependencies"
 	@echo "make upgrade=Django    Recompile requirements to upgrade a single package"
