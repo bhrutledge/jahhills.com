@@ -14,7 +14,11 @@ Create and activate a Python 3.6 virtual environment.
 
 Copy `hth/settings/env.example` to `.env` in the same directory, then edit to change settings.
 
+Set `DJANGO_SETTINGS_MODULE=hth.settings.dev`, e.g. using [direnv](https://direnv.net/)
+
 Bootstrap and validate the environment with `make`.
+
+Create an admin user with `python manage.py createsuperuser`
 
 Start `runserver` with `make serve`.
 
