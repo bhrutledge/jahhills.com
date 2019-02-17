@@ -4,4 +4,4 @@ cloudinary
 django-embed-video
 django-environ
 gunicorn
-whitenoise
+whitenoise<4.0
