@@ -47,7 +47,7 @@ pygments==2.2.0           # via ipython, sphinx
 pyparsing==2.2.0          # via packaging
 python-dateutil==2.7.3    # via faker
 pytz==2018.5
-pyyaml==3.13              # via dparse, vcrpy
+pyyaml==4.2b4
 requests==2.21.0
 safety==1.8.4
 selenium==3.14.0
