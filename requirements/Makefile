@@ -7,6 +7,8 @@ all: $(outputs)
 clean:
 	rm $(outputs)
 
+# TODO: Avoid putting packages from dev.in into prod.txt on `make upgrade`
+# Maybe by grep-ing for the package in *.in, and using `touch` instead of `.PHONY`
 ifdef upgrade
 ifeq ($(upgrade), all)
 args += --upgrade
@@ -17,6 +19,7 @@ endif
 .PHONY: *.in
 endif
 
+# TODO: Use CUSTOM_COMPILE_COMMAND for consistency in .txt header
 $(outputs): %.txt: %.in
 	@# Using --rebuild to avoid cache mismatches between dev environments
 	pip-compile $(args) --rebuild --output-file $@ $< > /dev/null
