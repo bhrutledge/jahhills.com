@@ -1,15 +1,17 @@
 -r prod.txt
 django-debug-toolbar
 django-extensions
-Werkzeug
 factory-boy
 flake8
+ipython
+pytest-django
 safety
 selenium>=3
 sphinx
 sphinx_rtd_theme
 vcrpy
-ipython
+Werkzeug
+
 # Recommended by GitHub re: https://github.com/yaml/pyyaml/issues/207
 # See also https://github.com/yaml/pyyaml/issues/193
 pyyaml>=4.2b1             # via dparse, vcrpy

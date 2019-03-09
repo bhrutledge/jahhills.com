@@ -23,7 +23,7 @@ update:
 
 .PHONY: test
 test:
-	$(manage) test
+	pytest
 
 .PHONY: dumpdata
 dumpdata:
