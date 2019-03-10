@@ -1,8 +1,11 @@
-from datetime import date, timedelta
+from datetime import date
+
 from random import randrange
 
 import factory
 import factory.fuzzy
+
+from core.tests.utils import from_today
 
 
 class VenueFactory(factory.django.DjangoModelFactory):
@@ -34,8 +37,7 @@ class PublishedGigFactory(GigFactory):
 class UpcomingGigFactory(PublishedGigFactory):
 
     # Pick a random date from today through next year
-    date = factory.LazyAttribute(
-        lambda obj: date.today() + timedelta(days=randrange(365)))
+    date = factory.LazyAttribute(lambda obj: from_today(days=randrange(365)))
 
     @classmethod
     def create_batch(cls, size, **kwargs):
@@ -45,9 +47,8 @@ class UpcomingGigFactory(PublishedGigFactory):
 
 class PastGigFactory(PublishedGigFactory):
 
-    # Pick a random date from yesterday through 10 years ago
-    date = factory.LazyAttribute(
-        lambda obj: date.today() - timedelta(days=randrange(1, 3650)))
+    # Pick a random date from 10 years ago through yesterday
+    date = factory.LazyAttribute(lambda obj: from_today(randrange(-3650, 0)))
 
     @classmethod
     def create_batch(cls, size, **kwargs):

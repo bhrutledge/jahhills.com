@@ -22,18 +22,20 @@ class FieldsTestMixin():
     required_fields = None
 
     def test_errors_on_required_fields(self):
-        if self.required_fields:
-            with self.assertRaises(ValidationError) as cm:
-                self.model().full_clean()
+        if not self.required_fields:  ## pragma: no cover
+            return
 
-            blank_fields = cm.exception.message_dict.keys()
-            self.assertEquals(set(self.required_fields), set(blank_fields))
+        with self.assertRaises(ValidationError) as cm:
+            self.model().full_clean()
+
+        blank_fields = cm.exception.message_dict.keys()
+        self.assertEquals(set(self.required_fields), set(blank_fields))
 
     def test_save_with_all_fields(self):
         try:
             m = self.factory.create()
             m.full_clean()
-        except (TypeError, ValidationError):
+        except (TypeError, ValidationError):  # pragma: no cover
             raise AssertionError
 
 

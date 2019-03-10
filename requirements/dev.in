@@ -1,9 +1,11 @@
 -r prod.txt
+django_coverage_plugin
 django-debug-toolbar
 django-extensions
 factory-boy
 flake8
 ipython
+pytest-cov
 pytest-django
 safety
 selenium>=3

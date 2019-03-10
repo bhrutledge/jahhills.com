@@ -1,4 +1,4 @@
-from core.tests.utils import today_str
+from core.tests.utils import date_format, from_today
 from core.tests.selenium import AdminTestCase
 
 from ..models import Venue
@@ -47,7 +47,7 @@ class GigTestCase(AdminTestCase):
         self.find_link('Gigs').click()
         self.find_link('ADD GIG').click()
 
-        self.find_name('date').send_keys(today_str(1))
+        self.find_name('date').send_keys(date_format(from_today(1)))
         self.find_name('venue').send_keys(self.venue1.id)
         self.find_name('description').send_keys('with Tallahassee')
         self.find_name('details').send_keys('$5, 21+, Doors at 9pm')
@@ -59,7 +59,7 @@ class GigTestCase(AdminTestCase):
 
         self.find_link('ADD GIG').click()
 
-        self.find_name('date').send_keys(today_str(-30))
+        self.find_name('date').send_keys(date_format(from_today(-30)))
         self.find_name('venue').send_keys(self.venue2.id)
         self.find_name('description').send_keys('with Thick Wild')
         self.find_name('details').send_keys('$10, 18+, Doors at 8pm')
@@ -74,7 +74,7 @@ class GigTestCase(AdminTestCase):
         self.find_link('Gigs').click()
         self.find_link('ADD GIG').click()
 
-        self.find_name('date').send_keys(today_str(30))
+        self.find_name('date').send_keys(date_format(from_today(30)))
         self.find_name('venue').send_keys(self.venue3.id)
         self.find_name('_save').click()
         self.assertIn('Red Star Union', self.find_tag('body').text)

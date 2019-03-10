@@ -1,6 +1,6 @@
 import vcr
 
-from core.tests.utils import today_str
+from core.tests.utils import date_format, from_today
 from core.tests.selenium import AdminTestCase
 
 from .factories import PublishedReleaseFactory
@@ -19,7 +19,7 @@ class ReleaseTestCase(AdminTestCase):
         self.find_link('ADD RELEASE').click()
 
         self.find_name('title').send_keys('First release')
-        self.find_name('date').send_keys(today_str(1))
+        self.find_name('date').send_keys(date_format(from_today(1)))
         self.find_name('cover_url').send_keys('http://localhost/cover.jpg')
         self.find_name('player_code').send_keys('<iframe></iframe>')
         self.find_name('description').send_keys('Release description')
@@ -229,7 +229,7 @@ class PressTestCase(AdminTestCase):
         self.find_link('ADD PRESS').click()
         self.find_name('title').send_keys('First source')
         self.find_name('source_url').send_keys('http://example.com')
-        self.find_name('date').send_keys(today_str(-30))
+        self.find_name('date').send_keys(date_format(from_today(-30)))
         self.find_name('body').send_keys('First quote')
         self.find_name('publish').click()
         self.find_name('_save').click()
@@ -240,7 +240,7 @@ class PressTestCase(AdminTestCase):
         self.find_link('ADD PRESS').click()
         self.find_name('title').send_keys('Second source')
         self.find_name('source_url').send_keys('http://foo.com')
-        self.find_name('date').send_keys(today_str(-30))
+        self.find_name('date').send_keys(date_format(from_today(-30)))
         self.find_name('_save').click()
         self.assertIn('Second source', self.find_tag('body').text)
 
@@ -282,7 +282,7 @@ class PressTestCase(AdminTestCase):
         self.find_link('ADD PRESS').click()
         self.find_name('title').send_keys('Post title')
         self.find_name('body').send_keys('Post body')
-        self.find_name('date').send_keys(today_str(-30))
+        self.find_name('date').send_keys(date_format(from_today(-30)))
         self.find_name('quote').click()
         self.find_name('publish').click()
         self.find_name('_save').click()
