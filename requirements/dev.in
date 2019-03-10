@@ -1,4 +1,5 @@
 -r prod.txt
+django_coverage_plugin
 django-debug-toolbar
 django-extensions
 factory-boy

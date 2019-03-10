@@ -4,6 +4,7 @@ from .base import *  # noqa
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
 
 DEBUG = True
+TEMPLATES[0]['OPTIONS']['debug'] = DEBUG
 
 ALLOWED_HOSTS = []
 
