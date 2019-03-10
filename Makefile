@@ -23,7 +23,7 @@ update:
 
 .PHONY: test
 test:
-	pytest
+	pytest --cov
 
 .PHONY: dumpdata
 dumpdata:

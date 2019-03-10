@@ -47,7 +47,7 @@ class VenueTestCase(FieldsTestMixin, TestCase):
             v = VenueFactory.build(**kwargs)
             v.full_clean()
             v.save()
-        except (TypeError, ValidationError):
+        except (TypeError, ValidationError):  # pragma: no cover
             raise AssertionError
 
 

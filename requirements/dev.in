@@ -4,6 +4,7 @@ django-extensions
 factory-boy
 flake8
 ipython
+pytest-cov
 pytest-django
 safety
 selenium>=3

@@ -1,0 +1,22 @@
+[run]
+branch = true
+source =
+    core
+    hth
+    music
+    news
+    shows
+    templates
+
+[report]
+omit =
+    */migrations/*
+    hth/settings/prod.py
+    hth/wsgi.py
+skip_covered = true
+exclude_lines =
+    pragma: no cover
+    if settings.DEBUG
+    ; https://github.com/bhrutledge/jahhills.com/issues/67
+    AdminTestCase
+    SeleniumTestCase
