@@ -1,17 +1,12 @@
-from datetime import date, timedelta
-
 from django.core.exceptions import ValidationError
 from django.test import TestCase
 
 from core.tests.models import FieldsTestMixin, PublishTestMixin
+from core.tests.utils import from_today
 
 from ..models import Venue, Gig
 from .factories import (VenueFactory, GigFactory, PublishedGigFactory,
                         PastGigFactory, UpcomingGigFactory)
-
-
-def from_today(days=0):
-    return date.today() + timedelta(days)
 
 
 class VenueTestCase(FieldsTestMixin, TestCase):
