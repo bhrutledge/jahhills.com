@@ -6073,6 +6073,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 191,
+    "fields": {
+        "name": "Cambridge Crossing",
+        "city": "Cambridge, MA",
+        "website": "https://twitter.com/cxcambridge",
+        "address": "320 Morgan Ave, Cambridge, MA 02141",
+        "latitude": null,
+        "longitude": null
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -9521,11 +9533,11 @@
     "pk": 302,
     "fields": {
         "publish": true,
-        "publish_on": "2019-02-17T22:57:25Z",
-        "date": "2019-03-15",
-        "venue": 75,
-        "description": "<p>opening for &ldquo;The Rise and Fall of Ziggy Stardust and the Spiders from Mars: A Tribute to David Bowie&rdquo;</p>.",
-        "details": "<p>$12, 9pm\r\n<br><a href=\"https://www.brownpapertickets.com/event/4069647\">Tickets</a></p>"
+        "publish_on": "2019-06-24T00:31:59.940Z",
+        "date": "2019-07-18",
+        "venue": 191,
+        "description": "<p><strong>CX Summer Nights</strong>\r\n<br>Outdoor show, with <span class=\"performer\">Tipling Rock</span>\r\n</p>",
+        "details": "<p>Free! 5:30-8:30pm\r\n<br><a href=\"https://www.facebook.com/events/329859024603325/\">Facebook</a>\r\n</p>"
     }
 }
 ]
