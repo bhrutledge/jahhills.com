@@ -3,7 +3,7 @@ from django.db import models
 
 from embed_video import backends
 
-from core.models import PublishedModel, TitledModel
+from hth.core.models import PublishedModel, TitledModel
 
 
 class Release(PublishedModel, TitledModel):

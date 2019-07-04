@@ -1,4 +1,4 @@
-from core.tests.selenium import AdminTestCase
+from hth.core.tests.selenium import AdminTestCase
 
 
 class NewsTestCase(AdminTestCase):

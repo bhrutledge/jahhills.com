@@ -10,9 +10,9 @@ from . import views
 urlpatterns = [
     url(r'^$', views.HomePageView.as_view(), name='home_page'),
     url(r'^about/$', views.AboutPageView.as_view(), name='about_page'),
-    url(r'^news/', include('news.urls')),
-    url(r'^live/', include('shows.urls')),
-    url(r'^', include('music.urls')),
+    url(r'^news/', include('hth.news.urls')),
+    url(r'^live/', include('hth.shows.urls')),
+    url(r'^', include('hth.music.urls')),
 
     url(r'^calendar',
         RedirectView.as_view(pattern_name='gig_list', permanent=True)),

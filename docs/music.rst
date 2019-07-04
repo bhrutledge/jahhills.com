@@ -4,11 +4,11 @@ music app
 Models
 ------
 
-.. automodule:: music.models
+.. automodule:: hth.music.models
     :members:
 
 Views
 -----
 
-.. automodule:: music.views
+.. automodule:: hth.music.views
     :members:

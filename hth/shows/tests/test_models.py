@@ -1,8 +1,8 @@
 from django.core.exceptions import ValidationError
 from django.test import TestCase
 
-from core.tests.models import FieldsTestMixin, PublishTestMixin
-from core.tests.utils import from_today
+from hth.core.tests.models import FieldsTestMixin, PublishTestMixin
+from hth.core.tests.utils import from_today
 
 from ..models import Venue, Gig
 from .factories import (VenueFactory, GigFactory, PublishedGigFactory,

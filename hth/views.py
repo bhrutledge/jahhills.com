@@ -1,8 +1,8 @@
 from django.views.generic import TemplateView
 
-from news.models import Post
-from shows.models import Gig
-from music.models import Release, Video
+from hth.news.models import Post
+from hth.shows.models import Gig
+from hth.music.models import Release, Video
 
 
 class HomePageView(TemplateView):

@@ -3,12 +3,7 @@ branch = true
 plugins =
     django_coverage_plugin
 source =
-    core
     hth
-    music
-    news
-    shows
-    templates
 
 [report]
 omit =

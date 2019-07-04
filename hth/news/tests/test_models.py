@@ -3,7 +3,7 @@ from datetime import datetime
 from django.test import TestCase
 from django.utils import timezone
 
-from core.tests.models import (
+from hth.core.tests.models import (
     FieldsTestMixin, PublishTestMixin, TitleTestMixin)
 
 from ..models import Post

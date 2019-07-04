@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 import environ
 
 project_root = environ.Path(__file__) - 3
-config_root = project_root.path('hth')
+src_root = project_root.path('hth')
 
 env = environ.Env()
 env.read_env()
@@ -31,10 +31,10 @@ INSTALLED_APPS = (
     'cloudinary',
     'embed_video',
 
-    'core',
-    'news',
-    'shows',
-    'music',
+    'hth.core',
+    'hth.news',
+    'hth.shows',
+    'hth.music',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,7 +60,7 @@ WSGI_APPLICATION = 'hth.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': config_root('jahhills.sqlite3'),
+        'NAME': src_root('jahhills.sqlite3'),
     }
 }
 
@@ -88,7 +88,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = project_root('staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = [
-    project_root('static'),
+    src_root('static'),
 ]
 
 MEDIA_URL = '/media/'
@@ -98,7 +98,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            project_root('templates'),
+            src_root('templates'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

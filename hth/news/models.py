@@ -1,6 +1,6 @@
 from django.db import models
 
-from core.models import PublishedModel, TitledModel
+from hth.core.models import PublishedModel, TitledModel
 
 
 class Post(PublishedModel, TitledModel):

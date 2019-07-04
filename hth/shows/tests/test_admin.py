@@ -1,5 +1,5 @@
-from core.tests.utils import date_format, from_today
-from core.tests.selenium import AdminTestCase
+from hth.core.tests.utils import date_format, from_today
+from hth.core.tests.selenium import AdminTestCase
 
 from ..models import Venue
 

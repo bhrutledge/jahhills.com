@@ -4,11 +4,11 @@ shows app
 Models
 ------
 
-.. automodule:: shows.models
+.. automodule:: hth.shows.models
     :members:
 
 Views
 -----
 
-.. automodule:: shows.views
+.. automodule:: hth.shows.views
     :members:

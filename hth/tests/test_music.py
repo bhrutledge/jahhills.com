@@ -1,6 +1,6 @@
 from unittest import skip
-from core.tests.selenium import SeleniumTestCase
-from music.tests.factories import (
+from hth.core.tests.selenium import SeleniumTestCase
+from hth.music.tests.factories import (
     ReleaseFactory, PublishedReleaseFactory,
     SongFactory, PublishedSongFactory)
 

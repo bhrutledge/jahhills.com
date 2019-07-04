@@ -2,7 +2,7 @@ from datetime import date
 
 from django.db import models
 
-from core.models import PublishedModel, PublishedQuerySet
+from hth.core.models import PublishedModel, PublishedQuerySet
 
 
 class Venue(models.Model):

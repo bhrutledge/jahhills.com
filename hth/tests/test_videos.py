@@ -1,6 +1,6 @@
 from unittest import skip
-from core.tests.selenium import SeleniumTestCase
-from music.tests.factories import VideoFactory, PublishedVideoFactory
+from hth.core.tests.selenium import SeleniumTestCase
+from hth.music.tests.factories import VideoFactory, PublishedVideoFactory
 
 
 @skip('Out of sync with markup')

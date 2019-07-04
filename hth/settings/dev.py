@@ -11,7 +11,6 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS += (
     'debug_toolbar.apps.DebugToolbarConfig',
     'django_extensions',
-    'core.tests',
 )
 
 CACHES = {
