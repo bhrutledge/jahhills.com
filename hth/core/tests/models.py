@@ -22,7 +22,7 @@ class FieldsTestMixin():
     required_fields = None
 
     def test_errors_on_required_fields(self):
-        if not self.required_fields:  ## pragma: no cover
+        if not self.required_fields:  # pragma: no cover
             return
 
         with self.assertRaises(ValidationError) as cm:

@@ -4,11 +4,11 @@ from .base import *  # noqa
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
 
 DEBUG = True
-TEMPLATES[0]['OPTIONS']['debug'] = DEBUG
+TEMPLATES[0]['OPTIONS']['debug'] = DEBUG  # noqa: F405
 
 ALLOWED_HOSTS = []
 
-INSTALLED_APPS += (
+INSTALLED_APPS += (  # noqa: F405
     'debug_toolbar.apps.DebugToolbarConfig',
     'django_extensions',
 )

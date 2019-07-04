@@ -21,8 +21,12 @@ update:
 	$(manage) migrate --noinput
 	$(manage) collectstatic --noinput
 
+.PHONY: lint
+lint:
+	flake8 hth
+
 .PHONY: test
-test:
+test: lint
 	pytest --cov
 
 .PHONY: dumpdata

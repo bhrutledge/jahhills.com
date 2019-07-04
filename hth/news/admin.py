@@ -11,4 +11,5 @@ class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     list_display = ('title', 'publish', 'publish_on',)
 
+
 admin.site.register(Post, PostAdmin)

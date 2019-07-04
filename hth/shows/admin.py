@@ -17,6 +17,7 @@ class GigInline(admin.TabularInline):
     def has_delete_permission(self, request, obj=None):
         return False
 
+
 @admin.register(Venue)
 class VenueAdmin(admin.ModelAdmin):
     save_on_top = True
