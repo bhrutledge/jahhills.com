@@ -4,18 +4,17 @@
 #
 #    pip-compile prod.in
 #
-certifi==2018.11.29       # via cloudinary, requests
+certifi==2019.6.16        # via cloudinary, requests
 chardet==3.0.4            # via requests
-cloudinary==1.15.0
+cloudinary==1.16.0
 django-embed-video==1.2.0
 django-environ==0.4.5
-django==1.11.20
+django==1.11.22
 gunicorn==19.9.0
 idna==2.8                 # via requests
-mock==2.0.0               # via cloudinary
-pbr==5.1.2                # via mock
-pytz==2018.9
-requests==2.21.0          # via django-embed-video
+mock==3.0.5               # via cloudinary
+pytz==2019.1
+requests==2.22.0          # via django-embed-video
 six==1.12.0               # via cloudinary, mock
-urllib3==1.24.1           # via cloudinary, requests
+urllib3==1.25.3           # via cloudinary, requests
 whitenoise==3.3.1
