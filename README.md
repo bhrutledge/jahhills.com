@@ -10,11 +10,11 @@ As with the [first iteration](http://github.com/bhrutledge/hallelujahthehills.co
 
 Clone this repo.
 
-Create and activate a Python 3.6 virtual environment.
+Create and activate a Python 3.7 virtual environment.
 
-Copy `hth/settings/env.example` to `.env` in the same directory, then edit to change settings.
+Copy `hth/env.example` to `.env` in the same directory, then edit to change settings.
 
-Set `DJANGO_SETTINGS_MODULE=hth.settings.dev`, e.g. using [direnv](https://direnv.net/)
+Set `DJANGO_SETTINGS_MODULE=hth.settings DEBUG=True`, e.g. using [direnv](https://direnv.net/)
 
 Bootstrap and validate the environment with `make`.
 
@@ -49,6 +49,6 @@ SSH to server.
 
 Activate virtual environment.
 
-Update environment with `DJANGO_SETTINGS_MODULE=hth.settings.prod make`
+Update environment with `DJANGO_SETTINGS_MODULE=hth.settings make`
 
 Restart process with `supervisorctl restart jahhills`.

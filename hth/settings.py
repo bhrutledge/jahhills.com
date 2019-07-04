@@ -1,24 +1,30 @@
 """
 Django settings for hth project.
 
-For more information on this file, see
+For more information on this file, see:
 https://docs.djangoproject.com/en/dev/topics/settings/
+https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
 
-For the full list of settings and their values, see
+For the full list of settings and their values, see:
 https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
 import environ
 
-project_root = environ.Path(__file__) - 3
+project_root = environ.Path(__file__) - 2
 src_root = project_root.path('hth')
 
-env = environ.Env()
+env = environ.Env(
+    DEBUG=(bool, False)
+)
 env.read_env()
+
 
 # Application definition
 
-INSTALLED_APPS = (
+DEBUG = env('DEBUG')
+
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.auth',
@@ -35,10 +41,9 @@ INSTALLED_APPS = (
     'hth.news',
     'hth.shows',
     'hth.music',
-)
+]
 
-MIDDLEWARE_CLASSES = (
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+MIDDLEWARE_CLASSES = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -47,20 +52,37 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-)
+]
+
+if DEBUG:
+    INSTALLED_APPS += [
+        'debug_toolbar.apps.DebugToolbarConfig',
+        'django_extensions',
+    ]
+
+    MIDDLEWARE_CLASSES = [
+        'debug_toolbar.middleware.DebugToolbarMiddleware',
+     ] + MIDDLEWARE_CLASSES
 
 ROOT_URLCONF = 'hth.urls'
 
 WSGI_APPLICATION = 'hth.wsgi.application'
 
 
-# Database
+# Database & Cache
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
+# https://docs.djangoproject.com/en/dev/ref/settings/#caches
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': src_root('jahhills.sqlite3'),
+    }
+}
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
     }
 }
 
@@ -129,6 +151,20 @@ DEFAULT_FROM_EMAIL = 'band@hallelujahthehills.com'
 SERVER_EMAIL = env('SERVER_EMAIL')
 
 
-# Secrets
+# Security
 
 SECRET_KEY = env('SECRET_KEY')
+
+ALLOWED_HOSTS = [] if DEBUG else [
+    '127.0.0.1',
+    'localhost',
+    '.debugged.org',
+    '.hallelujahthehills.com',
+]
+
+
+# App settings
+
+DEBUG_TOOLBAR_CONFIG = {
+    'JQUERY_URL': '',
+}
