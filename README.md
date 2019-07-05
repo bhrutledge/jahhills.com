@@ -47,8 +47,6 @@ Commit and push to GitHub.
 
 SSH to server.
 
-Activate virtual environment.
-
-Update environment with `DJANGO_SETTINGS_MODULE=hth.settings make`
+Update environment with `git pull && make`
 
 Restart process with `supervisorctl restart jahhills`.

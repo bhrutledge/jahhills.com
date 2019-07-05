@@ -1,12 +1,10 @@
-ifndef VIRTUAL_ENV
-$(error Virtual environment not active)
-endif
-
 HOST ?= 127.0.0.1
 PORT ?= 8000
 ENV ?= dev
 
-manage := $(CURDIR)/manage.py
+bin := $(CURDIR)/venv/bin
+python := $(bin)/python
+manage := $(python) manage.py
 fixture := hth/jahhills.json
 apps := music news shows
 
@@ -15,19 +13,18 @@ all: update test loaddata
 
 .PHONY: update
 update:
-	git pull
-	pip install -U setuptools pip pip-tools
-	pip-sync requirements/$(ENV).txt
+	$(bin)/pip install -U setuptools pip pip-tools
+	$(bin)/pip-sync requirements/$(ENV).txt
 	$(manage) migrate --noinput
 	$(manage) collectstatic --noinput
 
 .PHONY: lint
 lint:
-	flake8 hth
+	$(bin)/flake8 hth
 
 .PHONY: test
 test: lint
-	pytest --cov
+	$(bin)/pytest --cov --cov-report=html
 
 .PHONY: dumpdata
 dumpdata:
