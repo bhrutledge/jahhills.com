@@ -1,6 +1,6 @@
 from unittest import skip
-from core.tests.selenium import SeleniumTestCase
-from news.tests.factories import PostFactory, PublishedPostFactory
+from hth.core.tests.selenium import SeleniumTestCase
+from hth.news.tests.factories import PostFactory, PublishedPostFactory
 
 
 @skip('Out of sync with markup')

@@ -4,7 +4,7 @@ from django.test import TestCase
 from django.utils import timezone
 import vcr
 
-from core.tests.models import (
+from hth.core.tests.models import (
     FieldsTestMixin, PublishTestMixin, TitleTestMixin)
 
 from ..models import Release, Song, Video, Press
@@ -142,7 +142,7 @@ class VideoTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
 class VideoAutofillTestCase(TestCase):
 
     # TODO: Duplicated .test_admin.VideoTestCase
-    CASSETTE = 'music/tests/fixtures/cassettes/vimeo.yaml'
+    CASSETTE = 'hth/music/tests/fixtures/cassettes/vimeo.yaml'
     SOURCE_URL = 'https://vimeo.com/126794989'
     PREVIEW_URL = 'https://i.vimeocdn.com/video/517362144_640.jpg'
     EMBED_CODE = ('<iframe src="https://player.vimeo.com/video/126794989"'

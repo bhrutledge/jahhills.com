@@ -1,10 +1,10 @@
 from django.test import TestCase
 from django.core.urlresolvers import reverse
 
-from news.tests.factories import PostFactory, PublishedPostFactory
-from shows.tests.factories import (
+from hth.news.tests.factories import PostFactory, PublishedPostFactory
+from hth.shows.tests.factories import (
     GigFactory, PastGigFactory, UpcomingGigFactory)
-from music.tests.factories import ReleaseFactory, PublishedReleaseFactory
+from hth.music.tests.factories import ReleaseFactory, PublishedReleaseFactory
 
 
 class HomeTestCase(TestCase):

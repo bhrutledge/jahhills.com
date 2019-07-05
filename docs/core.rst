@@ -4,12 +4,12 @@ core app
 Models
 ------
 
-.. automodule:: core.models
+.. automodule:: hth.core.models
     :members:
 
 
 Tests
 -----
 
-.. automodule:: core.tests.models
+.. automodule:: hth.core.tests.models
     :members:

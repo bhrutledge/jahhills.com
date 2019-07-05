@@ -4,11 +4,11 @@ news app
 Models
 ------
 
-.. automodule:: news.models
+.. automodule:: hth.news.models
     :members:
 
 Views
 -----
 
-.. automodule:: news.views
+.. automodule:: hth.news.views
     :members:

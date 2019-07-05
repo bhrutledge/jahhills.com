@@ -3,22 +3,17 @@ branch = true
 plugins =
     django_coverage_plugin
 source =
-    core
     hth
-    music
-    news
-    shows
-    templates
 
 [report]
 omit =
     */migrations/*
-    hth/settings/prod.py
     hth/wsgi.py
 skip_covered = true
 exclude_lines =
     pragma: no cover
     if settings.DEBUG
+    if DEBUG
     ; https://github.com/bhrutledge/jahhills.com/issues/67
     AdminTestCase
     SeleniumTestCase

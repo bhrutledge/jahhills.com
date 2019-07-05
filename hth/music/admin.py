@@ -10,6 +10,7 @@ class ReleaseAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     list_display = ('title', 'date', 'publish', 'publish_on', 'priority',)
 
+
 admin.site.register(Release, ReleaseAdmin)
 
 
@@ -19,6 +20,7 @@ class SongAdmin(admin.ModelAdmin):
               'description', 'credits', 'lyrics', 'publish', 'publish_on',)
     prepopulated_fields = {'slug': ('title',)}
     list_display = ('title', 'release', 'track', 'publish', 'publish_on',)
+
 
 admin.site.register(Song, SongAdmin)
 
@@ -30,6 +32,7 @@ class VideoAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     list_display = ('title', 'source_url', 'release', 'publish', 'publish_on',)
 
+
 admin.site.register(Video, VideoAdmin)
 
 
@@ -38,5 +41,6 @@ class PressAdmin(admin.ModelAdmin):
     fields = ('title', 'date', 'source_url', 'body', 'quote', 'release',
               'publish', 'publish_on',)
     list_display = ('title', 'date', 'release', 'publish', 'publish_on',)
+
 
 admin.site.register(Press, PressAdmin)

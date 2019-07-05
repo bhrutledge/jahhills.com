@@ -2,8 +2,8 @@ from unittest import skip
 
 from django.template.defaultfilters import date as datefilter
 
-from core.tests.selenium import SeleniumTestCase
-from shows.tests.factories import (
+from hth.core.tests.selenium import SeleniumTestCase
+from hth.shows.tests.factories import (
     GigFactory, PastGigFactory, UpcomingGigFactory)
 
 

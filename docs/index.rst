@@ -7,7 +7,7 @@ jahhills.com
 ============
 
 Reboot of `hallelujahthehills.com <http://hallelujahthehills.com>`_ using
-Django 1.9.
+Django 1.11.
 
 As with the `first iteration
 <http://github.com/bhrutledge/hallelujahthehills.com>`_, this is an exercise in

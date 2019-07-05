@@ -1,4 +1,4 @@
-from core.tests.selenium import SeleniumTestCase
+from hth.core.tests.selenium import SeleniumTestCase
 
 
 class SiteTestCase(SeleniumTestCase):

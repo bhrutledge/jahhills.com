@@ -1,38 +1,30 @@
-outputs := prod.txt dev.txt
+bin := $(realpath $(CURDIR)/../venv/bin)
+
+ifeq ($(DEBUG), True)
+env=dev
+else
+env=base
+endif
 
 .PHONY: all
-all: $(outputs)
+all: tools
+	$(bin)/pip-compile $(args) base.in > /dev/null
+	$(bin)/pip-compile $(args) dev.in > /dev/null
 
-.PHONY: clean
-clean:
-	rm $(outputs)
+.PHONY: install
+install: tools
+	$(bin)/pip-sync $(env).txt
 
-# TODO: Avoid putting packages from dev.in into prod.txt on `make upgrade`
-# Maybe by grep-ing for the package in *.in, and using `touch` instead of `.PHONY`
-ifdef upgrade
-ifeq ($(upgrade), all)
-args += --upgrade
-else
-args += --upgrade-package $(upgrade)
-endif
-# Force recompilation, even though the input file hasn't changed
-.PHONY: *.in
-endif
-
-# TODO: Use CUSTOM_COMPILE_COMMAND for consistency in .txt header
-$(outputs): %.txt: %.in
-	@# Using --rebuild to avoid cache mismatches between dev environments
-	pip-compile $(args) --rebuild --output-file $@ $< > /dev/null
-
-# Assuming `-r prod.txt` in dev.in
-dev.txt: prod.txt
+.PHONY: tools
+tools:
+	$(bin)/pip install -U setuptools pip pip-tools
 
 .PHONY: safety
 safety:
-	safety check -r dev.txt
+	$(bin)/safety check -r dev.txt
 
 .PHONY: help
 help:
-	@echo "make                   Recompile requirements after changing *.in"
-	@echo "make upgrade=all       Recompile requirements to upgrade all dependencies"
-	@echo "make upgrade=Django    Recompile requirements to upgrade a single package"
+	@echo "make            Recompile requirements after changing *.in"
+	@echo "make args=-U    Recompile requirements to upgrade all dependencies"
+	@echo "make safety     Check requirements for security vulnerabilities"

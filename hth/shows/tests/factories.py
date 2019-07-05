@@ -5,7 +5,7 @@ from random import randrange
 import factory
 import factory.fuzzy
 
-from core.tests.utils import from_today
+from hth.core.tests.utils import from_today
 
 
 class VenueFactory(factory.django.DjangoModelFactory):

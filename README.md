@@ -10,11 +10,11 @@ As with the [first iteration](http://github.com/bhrutledge/hallelujahthehills.co
 
 Clone this repo.
 
-Create and activate a Python 3.6 virtual environment.
+Create and activate a Python 3.7 virtual environment.
 
-Copy `hth/settings/env.example` to `.env` in the same directory, then edit to change settings.
+Copy `hth/env.example` to `.env` in the same directory, then edit to change settings.
 
-Set `DJANGO_SETTINGS_MODULE=hth.settings.dev`, e.g. using [direnv](https://direnv.net/)
+Set `DJANGO_SETTINGS_MODULE=hth.settings DEBUG=True`, e.g. using [direnv](https://direnv.net/)
 
 Bootstrap and validate the environment with `make`.
 
@@ -45,10 +45,4 @@ Dump local content changes with `make dumpdata`.
 
 Commit and push to GitHub.
 
-SSH to server.
-
-Activate virtual environment.
-
-Update environment with `DJANGO_SETTINGS_MODULE=hth.settings.prod make`
-
-Restart process with `supervisorctl restart jahhills`.
+Update environment and restart server with `make deploy webapp=jahhills`

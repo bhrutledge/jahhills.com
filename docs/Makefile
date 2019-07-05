@@ -1,9 +1,11 @@
 # Makefile for Sphinx documentation
 #
 
+bin := $(realpath $(CURDIR)/../venv/bin)
+
 # You can set these variables from the command line.
 SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
+SPHINXBUILD   = $(bin)/sphinx-build
 PAPER         =
 BUILDDIR      = _build
 
