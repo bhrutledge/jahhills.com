@@ -27,7 +27,7 @@ dumpdata:
 
 .PHONY: test
 test: lint
-	$(bin)/pytest --cov --cov-report=html
+	$(bin)/pytest --cov --cov-report=html --cov-report=term
 
 .PHONY: lint
 lint:
