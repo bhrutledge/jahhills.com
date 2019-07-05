@@ -1,6 +1,5 @@
 HOST ?= 127.0.0.1
 PORT ?= 8000
-ENV ?= dev
 
 bin := $(CURDIR)/venv/bin
 python := $(bin)/python
@@ -14,8 +13,7 @@ branch := $(shell git rev-parse --abbrev-ref HEAD)
 
 .PHONY: update
 update:
-	$(bin)/pip install -U setuptools pip pip-tools
-	$(bin)/pip-sync requirements/$(ENV).txt
+	make -C requirements install
 	$(manage) check
 	$(manage) migrate --noinput
 	$(manage) loaddata $(fixture)

@@ -1,4 +1,4 @@
--r prod.txt
+-r base.txt
 django_coverage_plugin
 django-debug-toolbar<2
 django-extensions
