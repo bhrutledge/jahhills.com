@@ -41,6 +41,10 @@ serve:
 css:
 	bundle exec sass --watch static/sass:static/css
 
+.PHONY: docs
+docs:
+	make -C docs html
+
 .PHONY: deploy
 deploy:
 	ssh webfaction 'bash -l -c "\
