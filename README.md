@@ -45,8 +45,4 @@ Dump local content changes with `make dumpdata`.
 
 Commit and push to GitHub.
 
-SSH to server.
-
-Update environment with `git pull && make`
-
-Restart process with `supervisorctl restart jahhills`.
+Update environment and restart server with `make deploy webapp=jahhills`
