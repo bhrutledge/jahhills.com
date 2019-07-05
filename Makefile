@@ -18,8 +18,6 @@ update:
 	$(manage) migrate --noinput
 	$(manage) loaddata $(fixture)
 	$(manage) collectstatic --noinput
-	supervisorctl restart $(process)
-	supervisorctl status $(process)
 
 .PHONY: dumpdata
 dumpdata:
@@ -45,10 +43,15 @@ css:
 docs:
 	make -C docs html
 
+.PHONY: restart
+restart:
+	supervisorctl restart $(process)
+	supervisorctl status $(process)
+
 .PHONY: deploy
 deploy:
 	ssh webfaction 'bash -l -c "\
 		cd $(webapp_dir) && \
 		git checkout $(branch) && \
 		git pull && \
-		make"'
+		make update restart"'

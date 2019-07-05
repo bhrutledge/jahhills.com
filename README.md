@@ -10,7 +10,7 @@ As with the [first iteration](http://github.com/bhrutledge/hallelujahthehills.co
 
 Clone this repo.
 
-Create and activate a Python 3.7 virtual environment.
+Create a Python 3.7 virtual environment in `venv`.
 
 Copy `hth/env.example` to `.env` in the same directory, then edit to change settings.
 
@@ -18,11 +18,9 @@ Set `DJANGO_SETTINGS_MODULE=hth.settings DEBUG=True`, e.g. using [direnv](https:
 
 Bootstrap and validate the environment with `make`.
 
-Create an admin user with `python manage.py createsuperuser`
+Run the test suite with `make test`
 
 Start `runserver` with `make serve`.
-
-Manage packages with `pip-compile` and `pip-sync` from [pip-tools](https://github.com/jazzband/pip-tools).
 
 ## Compiling CSS
 
@@ -41,8 +39,10 @@ Recompile CSS on Sass changes with `make css`.
 
 ## Deployment
 
+Run the test suite with `make test`
+
 Dump local content changes with `make dumpdata`.
 
 Commit and push to GitHub.
 
-Update environment and restart server with `make deploy webapp=jahhills`
+Update web host and restart server with `make deploy webapp=jahhills`
