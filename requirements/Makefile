@@ -1,4 +1,5 @@
-bin := $(realpath $(CURDIR)/../venv/bin)
+venv := $(realpath $(CURDIR)/..)/venv
+bin := $(venv)/bin
 
 ifeq ($(DEBUG), True)
 env=dev
@@ -16,8 +17,11 @@ install: tools
 	$(bin)/pip-sync $(env).txt
 
 .PHONY: tools
-tools:
-	$(bin)/pip install -U setuptools pip pip-tools
+tools: $(venv)
+	$(bin)/pip install --upgrade setuptools pip pip-tools
+
+$(venv):
+	python3 -m venv $@
 
 .PHONY: safety
 safety:

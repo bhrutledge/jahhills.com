@@ -10,13 +10,11 @@ As with the [first iteration](http://github.com/bhrutledge/hallelujahthehills.co
 
 Clone this repo.
 
-Create a Python 3.7 virtual environment in `venv`.
-
 Copy `hth/env.example` to `.env` in the same directory, then edit to change settings.
 
 Set `DJANGO_SETTINGS_MODULE=hth.settings DEBUG=True`, e.g. using [direnv](https://direnv.net/)
 
-Bootstrap and validate the environment with `make`.
+Bootstrap the environment with `make`.
 
 Run the test suite with `make test`
 
