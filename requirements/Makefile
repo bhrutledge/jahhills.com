@@ -23,12 +23,13 @@ tools: $(venv)
 $(venv):
 	python3 -m venv $@
 
-.PHONY: safety
-safety:
+.PHONY: check
+check:
+	$(bin)/pip list --outdated
 	$(bin)/safety check -r dev.txt
 
 .PHONY: help
 help:
 	@echo "make            Recompile requirements after changing *.in"
 	@echo "make args=-U    Recompile requirements to upgrade all dependencies"
-	@echo "make safety     Check requirements for security vulnerabilities"
+	@echo "make check      Show outdated or vulnerable dependencies"
