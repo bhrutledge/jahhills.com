@@ -37,7 +37,7 @@ serve:
 
 .PHONY: css
 css:
-	bundle exec sass --watch static/sass:static/css
+	bundle exec sass --watch hth/static/sass:hth/static/css
 
 .PHONY: docs
 docs:
