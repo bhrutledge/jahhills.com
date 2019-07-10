@@ -10,13 +10,13 @@ As with the [first iteration](http://github.com/bhrutledge/hallelujahthehills.co
 
 Clone this repo.
 
-Copy `hth/env.example` to `.env` in the same directory, then edit to change settings.
+Copy `hth/.env.example` to `.env` in the same directory, then edit to change settings.
 
-Set `DJANGO_SETTINGS_MODULE=hth.settings DEBUG=True`, e.g. using [direnv](https://direnv.net/)
+Set `DJANGO_SETTINGS_MODULE=hth.settings DEBUG=True`, e.g. using [direnv](https://direnv.net/).
 
 Bootstrap the environment with `make`.
 
-Run the test suite with `make test`
+Run the test suite with `make test`.
 
 Start `runserver` with `make serve`.
 
@@ -37,10 +37,10 @@ Recompile CSS on Sass changes with `make css`.
 
 ## Deployment
 
-Run the test suite with `make test`
+Run the test suite with `make test`.
 
 Dump local content changes with `make dumpdata`.
 
 Commit and push to GitHub.
 
-Update web host and restart server with `make deploy webapp=jahhills`
+Update web host and restart server with `make deploy webapp=jahhills`.
