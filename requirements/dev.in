@@ -1,7 +1,6 @@
 -r base.txt
 django_coverage_plugin
 django-debug-toolbar<2
-django-extensions
 factory-boy
 flake8
 ipython
@@ -12,7 +11,6 @@ selenium>=3
 sphinx
 sphinx_rtd_theme
 vcrpy
-Werkzeug
 
 # Recommended by GitHub re: https://github.com/yaml/pyyaml/issues/207
 # See also https://github.com/yaml/pyyaml/issues/193

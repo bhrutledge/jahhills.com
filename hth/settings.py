@@ -57,7 +57,6 @@ MIDDLEWARE_CLASSES = [
 if DEBUG:
     INSTALLED_APPS += [
         'debug_toolbar.apps.DebugToolbarConfig',
-        'django_extensions',
     ]
 
     MIDDLEWARE_CLASSES = [

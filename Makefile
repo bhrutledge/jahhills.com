@@ -35,7 +35,7 @@ lint:
 
 .PHONY: serve
 serve:
-	$(manage) runserver_plus $(HOST):$(PORT)
+	$(manage) runserver $(HOST):$(PORT)
 
 .PHONY: css
 css:
@@ -45,11 +45,6 @@ css:
 docs:
 	make -C docs html
 
-.PHONY: restart
-restart:
-	supervisorctl restart $(webapp_process)
-	supervisorctl status $(webapp_process)
-
 .PHONY: deploy
 deploy:
 	ssh webfaction 'bash -l -c "\
@@ -57,3 +52,8 @@ deploy:
 		git checkout $(webapp_branch) && \
 		git pull && \
 		make update restart"'
+
+.PHONY: restart
+restart:
+	supervisorctl restart $(webapp_process)
+	supervisorctl status $(webapp_process)

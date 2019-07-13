@@ -10,9 +10,9 @@ As with the [first iteration](http://github.com/bhrutledge/hallelujahthehills.co
 
 Clone this repo.
 
-Copy `hth/.env.example` to `.env` in the same directory, then edit to change settings.
+Copy `hth/.env.example` to `hth/.env`, then edit to set values.
 
-Set `DJANGO_SETTINGS_MODULE=hth.settings DEBUG=True`, e.g. using [direnv](https://direnv.net/).
+Set environment variable `DEBUG=True`, e.g. using [direnv](https://direnv.net/).
 
 Bootstrap the environment with `make`.
 
