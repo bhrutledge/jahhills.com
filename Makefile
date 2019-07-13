@@ -4,12 +4,14 @@ PORT ?= 8000
 bin := $(CURDIR)/venv/bin
 python := $(bin)/python
 manage := $(python) manage.py
+
+fixture_apps := music news shows
 fixture := hth/jahhills.json
-apps := music news shows
-process := $(notdir $(CURDIR))
+
 webapp := jahhills_staging
 webapp_dir := webapps/$(webapp)
-branch := $(shell git rev-parse --abbrev-ref HEAD)
+webapp_branch := $(shell git rev-parse --abbrev-ref HEAD)
+webapp_process := $(notdir $(CURDIR))
 
 .PHONY: update
 update:
@@ -21,7 +23,7 @@ update:
 
 .PHONY: dumpdata
 dumpdata:
-	$(manage) dumpdata --indent=4 $(apps) > $(fixture)
+	$(manage) dumpdata --indent=4 $(fixture_apps) > $(fixture)
 
 .PHONY: test
 test: lint
@@ -45,13 +47,13 @@ docs:
 
 .PHONY: restart
 restart:
-	supervisorctl restart $(process)
-	supervisorctl status $(process)
+	supervisorctl restart $(webapp_process)
+	supervisorctl status $(webapp_process)
 
 .PHONY: deploy
 deploy:
 	ssh webfaction 'bash -l -c "\
 		cd $(webapp_dir) && \
-		git checkout $(branch) && \
+		git checkout $(webapp_branch) && \
 		git pull && \
 		make update restart"'

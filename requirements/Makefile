@@ -8,25 +8,22 @@ env=base
 endif
 
 .PHONY: all
-all: tools
+all: $(venv)
 	$(bin)/pip-compile $(args) base.in > /dev/null
 	$(bin)/pip-compile $(args) dev.in > /dev/null
 
 .PHONY: install
-install: tools
+install: $(venv)
 	$(bin)/pip-sync $(env).txt
 
-.PHONY: tools
-tools: $(venv)
-	$(bin)/pip install --upgrade setuptools pip pip-tools
+.PHONY: check
+check: $(venv)
+	$(bin)/pip list --outdated
+	$(bin)/safety check -r dev.txt
 
 $(venv):
 	python3 -m venv $@
-
-.PHONY: check
-check:
-	$(bin)/pip list --outdated
-	$(bin)/safety check -r dev.txt
+	$(bin)/pip install --upgrade setuptools pip pip-tools
 
 .PHONY: help
 help:
