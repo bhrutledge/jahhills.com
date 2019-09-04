@@ -9539,5 +9539,17 @@
         "description": "<p><strong>CX Summer Nights</strong>\r\n<br>Outdoor show, with <span class=\"performer\">Tipling Rock</span>\r\n</p>",
         "details": "<p>Free! 5:30-8:30pm\r\n<br><a href=\"https://www.facebook.com/events/329859024603325/\">Facebook</a>\r\n</p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 303,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-09-04T18:24:16.668Z",
+        "date": "2019-09-14",
+        "venue": 142,
+        "description": "<p>with <span class=\"performer\">The Hold Steady</p>",
+        "details": "<a href=\"https://www.sinclaircambridge.com/events/detail/375368\">Sold out</a>"
+    }
 }
 ]
