@@ -124,7 +124,7 @@
         "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=2380355703/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"http://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">A Band Is Something To Figure Out by Hallelujah The Hills</a></iframe>",
         "description": "<p>Available on: <a href=\"https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">Bandcamp</a>, <a href=\"https://itunes.apple.com/us/album/band-is-something-to-figure/id1085805313\">iTunes</a>, <a href=\"https://www.amazon.com/gp/product/B01BXHIXP2\">Amazon</a>, <a href=\"https://play.spotify.com/album/6oZg2xH1Apnbm11ato8W2N \">Spotify</a>, <a href=\"https://play.google.com/store/music/album/Hallelujah_The_Hills_A_Band_Is_Something_to_Figure?id=Bfvtt4ln3a2ds5zxdweehdoowfe\">Google Play</a>\r\n<br>Released by  Discrete Pageantry Records</p>\r\n<p><a href=\"https://hallelujahthehills.bandcamp.com/album/a-band-is-something-to-figure-out\">180-gram vinyl</a> from Re-Vinyl Records available on Bandcamp.</p>",
         "credits": "<p>Recorded November 2015 at 1809 Studios, Macedon, NY<br /> <a href=\"http://1809studios.com\">1809studios.com</a></p>\r\n<p>Produced by HTH and Dave Drago<br /> Engineered and mixed by Dave Drago<br /> Studio Assistant: Jacob Walsh</p>\r\n<p>Mastered by Jake Rodenhouse<br /> <a href=\"http://www.perfectsoundstudios.com/\">perfectsoundstudios.com</a></p>\r\n<p>Ryan Connelly &ndash; Drums<br /> Joseph Marrett &ndash; Guitar<br /> Brian Rutledge &ndash; Synthesizer<br /> Ryan H. Walsh &ndash; Guitar, Vocals<br /> Nicholas Giadone Ward &ndash; Bass, Piano</p>\r\n<p>Oh, YOU KNOW everyone sang, including Dave Drago + Jacob Walsh</p>\r\n<p>&copy; 2016 Reverse The Tape Decks ASCAP</p>",
-        "priority": 10
+        "priority": null
     }
 },
 {
@@ -156,6 +156,22 @@
         "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=2224209561/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"http://hallelujahthehills.bandcamp.com/album/against-electricity-2018\">Against Electricity (2018) by Hallelujah The Hills</a></iframe>",
         "description": "<p>An instrumental album originally created as the soundtrack for the book <a href=\"https://www.amazon.com/Astral-Weeks-Secret-History-1968/dp/0735221340\">Astral Weeks: A Secret History of 1968</a>.</p>\r\n\r\n<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/against-electricity\">Bandcamp</a>.\r\n<br><a href=\"https://www.jealousbutcher.com/products/against-electricity\">Limited-edition vinyl</a> available from Jealous Butcher Records</a>.\r\n</p>",
         "credits": "<p>Music by Hallelujah The Hills: Ryan Connelly, Dave Curry, Joseph Marrett, Brian Rutledge, Nicholas Ward, Ryan H. Walsh.</p>\r\n\r\n<p>With special guests: Dana Colley, Tanya Donelly, Josh Kantor, Marissa Nadler, and Evan Sicuranza.</p>\r\n\r\n<p>Engineered, mixed, and mastered by Seth Manchester at Machines with Magnets, Pawtucket RI.</p>\r\n\r\n<p>\u00a9 2018 Reverse The Tape Decks ASCAP</p>",
+        "priority": null
+    }
+},
+{
+    "model": "music.release",
+    "pk": 15,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-03T11:37:21Z",
+        "title": "I'm You",
+        "slug": "im-you",
+        "date": "2019-11-15",
+        "cover_url": "http://hallelujahthehills.com/files/artwork/imu_cover.jpg",
+        "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=2247674964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"http://hallelujahthehills.bandcamp.com/album/im-you-out-fall-2019\">I&#39;m You by Hallelujah The Hills</a></iframe>",
+        "description": "<p>\r\nPre-order on\r\n<a href=\"https://hallelujahthehills.bandcamp.com/album/im-you-out-fall-2019\">Bandcamp</a>\r\n\r\n<br>Released by  Discrete Pageantry Records\r\n</p>",
+        "credits": "<p>\r\n    Recorded at Machines with Magnets, Pawtucket RI<br />\r\n    Produced by Seth Manchester and Hallelujah The Hills<br />\r\n    Mixed by Seth Manchester<br />\r\n    Mastered by Greg Calbi, Sterling Sound\r\n</p>\r\n<p>\r\n    The band:<br />\r\n    Brian Rutledge<br />\r\n    David Michael Curry<br />\r\n    Joseph Marrett<br />\r\n    Nicholas Ward<br />\r\n    Ryan Connelly<br />\r\n    Ryan H. Walsh\r\n</p>\r\n    \r\n<p>\r\n    Special guests:<br />\r\n    John Payne (flute and alto sax on \u201cIt Still Floors Me\u201d)<br />\r\n    Tyler Derryberry (theremin on \u201cFolk Music Is Insane\u201d and \u201cPeople Keep Dying\u201d)\r\n</p>\r\n<p>\r\n    All songs written by Ryan H. Walsh<br />\r\n    except \u201cBorn to Blow It\u201d written by Ryan H. Walsh and Marissa Nadler<br />\r\n    All songs arranged by Hallelujah The Hills\r\n</p>\r\n<p>Copyright &copy;2019 Reverse The Tape Decks ASCAP</p>",
         "priority": null
     }
 },
@@ -1611,8 +1627,152 @@
         "description": "",
         "credits": "",
         "lyrics": "<p>it started with contraband<br/>\r\nwandering<br/>\r\nthe poet blinked twice<br/>\r\nshe can see<br/>\r\nthe deepest impossible sea<br/>\r\nand we&rsquo;re walking together<br/>\r\nsinging the songs of<br/>\r\nsome SOB stuck in a dream<br/>\r\nwith a dancer<br/>\r\nand a praying monster<br/>\r\ndon&rsquo;t you know<br/>\r\nthere&rsquo;s a killer on the road?</p>\r\n\r\n<p>Slam cut to present day<br/>\r\nAmerica<br/>\r\nthere&rsquo;s weirdness in the woods<br/>\r\ni&rsquo;m alone<br/>\r\nand I can&rsquo;t stop looking at my phone<br/>\r\nnow we&rsquo;re cheering on assassins<br/>\r\nadjusting our glasses<br/>\r\npretending that a verse would set us free<br/>\r\nor a bad joke<br/>\r\nor a single helix<br/>\r\nit&rsquo;s all the same to a ghost with a guitar</p>\r\n\r\n<p>folk music is insane<br/>\r\nfolk music is insane</p>\r\n\r\n<p>we&rsquo;re back in a different time<br/>\r\nwho knows where<br/>\r\ni&rsquo;ve been here before<br/>\r\nhear those chimes<br/>\r\nof the brand names washed out with the tide<br/>\r\nand you&rsquo;re better than ever<br/>\r\nyour mood like the weather<br/>\r\nis overcast with a chance of regret<br/>\r\nprepared piano<br/>\r\nand tape loops<br/>\r\nand the rarest of b-sides have absolutely ruined my life</p>\r\n\r\n<p>folk music is insane<br/>\r\nfolk music is insane<br/>\r\nfolk music is insane<br/>\r\nfolk music is insane</p>\r\n\r\n<p>it&rsquo;s something to behold<br/>\r\nbut it&rsquo;s out of reach<br/>\r\nand you can&rsquo;t explain<br/>\r\nyou&rsquo;ll never get close<br/>\r\nfolk music is insane</p>\r\n\r\n<p>I know it&rsquo;s not nostalgia<br/>\r\nwon&rsquo;t you meet me in the parlor<br/>\r\nwe can&rsquo;t escape forever<br/>\r\nand there&rsquo;s something in the water<br/>\r\nfolk music is insane</p>",
-        "release": null,
-        "track": null
+        "release": 15,
+        "track": 2
+    }
+},
+{
+    "model": "music.song",
+    "pk": 99,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-03T11:46:14.848Z",
+        "title": "My Name Sounds Sinister",
+        "slug": "my-name-sounds-sinister",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 15,
+        "track": 1
+    }
+},
+{
+    "model": "music.song",
+    "pk": 100,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-03T11:56:18.474Z",
+        "title": "Running Hot with Fate",
+        "slug": "running-hot-with-fate",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 15,
+        "track": 3
+    }
+},
+{
+    "model": "music.song",
+    "pk": 101,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-03T11:56:27.193Z",
+        "title": "Born to Blow It",
+        "slug": "born-to-blow-it",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 15,
+        "track": 4
+    }
+},
+{
+    "model": "music.song",
+    "pk": 102,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-03T11:56:38.385Z",
+        "title": "Transparent Chart of the Heavens",
+        "slug": "transparent-chart-of-the-heavens",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 15,
+        "track": 5
+    }
+},
+{
+    "model": "music.song",
+    "pk": 103,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-03T11:56:48.674Z",
+        "title": "People Keep Dying (And No One Can Stop It)",
+        "slug": "people-keep-dying",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 15,
+        "track": 6
+    }
+},
+{
+    "model": "music.song",
+    "pk": 104,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-03T11:56:57.891Z",
+        "title": "It Still Floors Me",
+        "slug": "it-still-floors-me",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 15,
+        "track": 7
+    }
+},
+{
+    "model": "music.song",
+    "pk": 105,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-03T11:57:11.422Z",
+        "title": "I\u2019m You",
+        "slug": "im-you",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 15,
+        "track": 8
+    }
+},
+{
+    "model": "music.song",
+    "pk": 106,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-03T11:57:21.165Z",
+        "title": "I Went Through Hell",
+        "slug": "i-went-through-hell",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 15,
+        "track": 9
+    }
+},
+{
+    "model": "music.song",
+    "pk": 107,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-03T11:55:42.001Z",
+        "title": "The Memory Tree",
+        "slug": "the-memory-tree",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 15,
+        "track": 10
     }
 },
 {
