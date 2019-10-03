@@ -49,8 +49,9 @@ docs:
 deploy:
 	ssh webfaction 'bash -l -c "\
 		cd $(webapp_dir) && \
+		git fetch && \
 		git checkout $(webapp_branch) && \
-		git pull && \
+		git merge --ff-only && \
 		make update restart"'
 
 .PHONY: restart
