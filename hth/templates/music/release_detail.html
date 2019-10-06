@@ -31,16 +31,7 @@
 
         <ol class="content-text">
             {% for song in release.tracks %}
-            <li>
-                {{ song.title }}
-                {% comment %}
-                {% if song.has_details %}
-                <a href="{{ song.get_absolute_url }}">{{ song.title }}</a>
-                {% else %}
-                {{ song.title }}
-                {% endif %}
-                {% endcomment %}
-            </li>
+            <li>{{ song.title }}</li>
             {% endfor %}
         </ol>
 

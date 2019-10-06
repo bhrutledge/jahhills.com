@@ -165,10 +165,10 @@
     "fields": {
         "publish": true,
         "publish_on": "2019-10-03T11:37:21Z",
-        "title": "I'm You",
+        "title": "I\u2019m You",
         "slug": "im-you",
         "date": "2019-11-15",
-        "cover_url": "http://hallelujahthehills.com/files/artwork/imu_cover.jpg",
+        "cover_url": "http://hallelujahthehills.com/files/artwork/im_you_cover.jpg",
         "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=2247674964/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"http://hallelujahthehills.bandcamp.com/album/im-you-out-fall-2019\">I&#39;m You by Hallelujah The Hills</a></iframe>",
         "description": "<p>\r\nPre-order on\r\n<a href=\"https://hallelujahthehills.bandcamp.com/album/im-you-out-fall-2019\">Bandcamp</a>\r\n\r\n<br>Released by  Discrete Pageantry Records\r\n</p>",
         "credits": "<p>\r\n    Recorded at Machines with Magnets, Pawtucket RI<br />\r\n    Produced by Seth Manchester and Hallelujah The Hills<br />\r\n    Mixed by Seth Manchester<br />\r\n    Mastered by Greg Calbi, Sterling Sound\r\n</p>\r\n<p>\r\n    The band:<br />\r\n    Brian Rutledge<br />\r\n    David Michael Curry<br />\r\n    Joseph Marrett<br />\r\n    Nicholas Ward<br />\r\n    Ryan Connelly<br />\r\n    Ryan H. Walsh\r\n</p>\r\n    \r\n<p>\r\n    Special guests:<br />\r\n    John Payne (flute and alto sax on \u201cIt Still Floors Me\u201d)<br />\r\n    Tyler Derryberry (theremin on \u201cFolk Music Is Insane\u201d and \u201cPeople Keep Dying\u201d)\r\n</p>\r\n<p>\r\n    All songs written by Ryan H. Walsh<br />\r\n    except \u201cBorn to Blow It\u201d written by Ryan H. Walsh and Marissa Nadler<br />\r\n    All songs arranged by Hallelujah The Hills\r\n</p>\r\n<p>Copyright &copy;2019 Reverse The Tape Decks ASCAP</p>",
@@ -2285,6 +2285,22 @@
         "description": "",
         "credits": "<p>Candle Eradicators: Mark Walsh, Mona Walsh, Julia Papps, Billy Kanellopoulos, Maura Johnston, Brad Nelson, Hatcher Bentley, Jessica Grimsby, Erik Szyska, Kevin Hoskins, Boog Dumphy, Katie Connors, Danielle Blasczak, Clara & Connor, Jenna Sicuranza, Evan Sicuranza, Linda Sicuranza, Kevin Becerra, Ramona Rose, Mouhcine Karrouim, Marisa Young, Jeff Prohaska, Anthony Puopolo, Jim Kavanaugh, Francine Mroczek, Allyson Laredo, Katelyn Guerin, Michael Ruggerio, Trina Ruggerio, Matthew Scott, Ed Park, Leeore Schnairsohn, Alexandria Ellison, Jim Mahoney, Ryan Walsh, Joseph Marrett, Brian Rutledge, Ryan Connelly</p>",
         "release": 12
+    }
+},
+{
+    "model": "music.video",
+    "pk": 33,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-07T09:43:06.256Z",
+        "title": "I\u2019m You Teaser",
+        "slug": "im-you-teaser",
+        "source_url": "https://www.youtube.com/watch?v=Amz8lS4uB7I",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/Amz8lS4uB7I?wmode=opaque\" seamless allowfullscreen></iframe>",
+        "preview_url": "https://img.youtube.com/vi/Amz8lS4uB7I/maxresdefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": 15
     }
 },
 {
@@ -9737,6 +9753,18 @@
         "venue": 142,
         "description": "<p>with <span class=\"performer\">The Hold Steady</p>",
         "details": "<a href=\"https://www.sinclaircambridge.com/events/detail/375368\">Sold out</a>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 304,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-06T21:10:24Z",
+        "date": "2019-12-19",
+        "venue": 9,
+        "description": "<p><strong><a href=\"/music/im-you/\">I\u2019m You</a> Album Release</strong></p>",
+        "details": ""
     }
 }
 ]
