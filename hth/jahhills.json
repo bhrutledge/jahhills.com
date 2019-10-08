@@ -4008,6 +4008,17 @@
     }
 },
 {
+    "model": "news.post",
+    "pk": 49,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-10-08T23:10:06Z",
+        "title": "Big News Comes in Threes",
+        "slug": "big-news-comes-in-threes",
+        "body": "<p>\r\n<strong><cite>I\u2019m You</cite> release date!</strong>\r\n<br />It exists! It's real! It's ten songs! It's out 11/15/19! Don't freak out.\r\n<br /><a href=\"https://hallelujahthehills.bandcamp.com/album/im-you\">Pre-order</a>\r\n</p>\r\n\r\n<p>\r\n<strong>Album release show!</strong>\r\n<br />Just announced! 12/19/2019 at Great Scott in Allston, MA.\r\n<br /><a href=\"https://www.axs.com/events/384554/hallelujah-the-hills-tickets\">Get tickets</a>\r\n</p>\r\n\r\n<p>\r\n<strong>New single!</strong>\r\n<br />\u201cRunning Hot with Fate\u201d\r\n<br />\r\n<a href=\"https://hallelujahthehills.bandcamp.com/track/running-hot-with-fate\">Bandcamp</a>,\r\n<a href=\"https://soundcloud.com/hallelujahthehills/03-running-hot-with-fate-final\">SoundCloud</a>,\r\n<a href=\"https://open.spotify.com/album/1SNvFanGC9Ui6Ifz8b3jfp\">Spotify</a>,\r\n<a href=\"https://music.apple.com/us/album/running-hot-with-fate-single/1482385858\">Apple Music</a>,\r\n<a href=\"https://play.google.com/music/listen#/album/Bkwsi4ocqivrsbvlsmvpoxj4cwa/\">Google Play</a>\r\n</p>\r\n\r\n\r\n<p>\r\nBonus: <a href=\"https://teespring.com/stores/hallelujah-the-hills\">new t-shirts!</a> \r\nWear them around the house or when you go out.\r\n</p>"
+    }
+},
+{
     "model": "shows.venue",
     "pk": 1,
     "fields": {
@@ -9763,8 +9774,8 @@
         "publish_on": "2019-10-06T21:10:24Z",
         "date": "2019-12-19",
         "venue": 9,
-        "description": "<p><strong><a href=\"/music/im-you/\">I\u2019m You</a> Album Release</strong></p>",
-        "details": ""
+        "description": "<p><strong><cite>I\u2019m You</cite> Album Release</strong></p>",
+        "details": "<p>\r\n$15, 18+\r\n<br /><a href=\"https://www.axs.com/events/384554/hallelujah-the-hills-tickets\">Tickets</a>\r\n</p>"
     }
 }
 ]
