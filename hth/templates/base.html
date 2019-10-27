@@ -8,9 +8,9 @@
     <meta name="google-site-verification" content="v7jEa5TidUS7zm5QunHWAqMfzaYHpdGNXazqRW-0Mjc">
     <title>{% block title %}Hallelujah The Hills{% endblock %}</title>
 
-    <link rel="stylesheet" href="{% static "css/normalize.css" %}">
-    <link rel="stylesheet" href="{% static "css/styles.css" %}">
-    <link rel="stylesheet" href="{% static "css/socicon.css" %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/socicon.css' %}">
 
     {% block head_css %}{% endblock %}
 </head>
@@ -18,7 +18,7 @@
 <body id="{% block body_id %}hth{% endblock %}">
     <header class="container navigation" role="banner">
         <div class="navigation-wrapper">
-            <h1 class="logo"><a href="{% url "home_page" %}">Hallelujah The Hills</a></h1>
+            <h1 class="logo"><a href="{% url 'home_page' %}">Hallelujah The Hills</a></h1>
             <div class="tagline">
                 <span class="tagline-text"></span>
             </div>

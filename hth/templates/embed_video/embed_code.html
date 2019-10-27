@@ -1,1 +1,5 @@
-<iframe{% if width %} width="{{ width }}"{% endif %}{% if height %} height="{{ height }}"{% endif %} src="{{ backend.url }}" seamless allowfullscreen></iframe>
+<iframe
+    src="{{ backend.url }}"
+    {% if width %}width="{{ width }}"{% endif %}
+    {% if height %}height="{{ height }}"{% endif %}
+    seamless allowfullscreen></iframe>
