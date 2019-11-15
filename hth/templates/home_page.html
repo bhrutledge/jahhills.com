@@ -3,7 +3,7 @@
 
 {% block main_content %}
 <figure class="hero-img">
-    <img src="{% cloudinary_url 'hth_banner_201910.jpg' %}" alt="I’m You banner image">
+    <img src="{% cloudinary_url 'hth_iu_banner.jpg' %}" alt="I’m You banner image">
 </figure>
 
 <section id="news" class="container">
@@ -18,17 +18,17 @@
     {% include 'music/_release_highlight.html' %}
 </section>
 
+<section id="video" class="container">
+    <h2><a href="{% url 'video_list' %}">Video</a></h2>
+
+    {% include 'music/_video_highlight.html' %}
+</section>
+
 <section id="shows" class="container">
     <h2><a href="{% url 'gig_list' %}">Live</a></h2>
 
     <div class="gig-list">
         {% include 'shows/_gig_upcoming.html' %}
     </div>
-</section>
-
-<section id="video" class="container">
-    <h2><a href="{% url 'video_list' %}">Video</a></h2>
-
-    {% include 'music/_video_highlight.html' %}
 </section>
 {% endblock %}
