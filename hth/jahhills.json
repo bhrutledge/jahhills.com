@@ -3594,6 +3594,34 @@
     }
 },
 {
+    "model": "music.press",
+    "pk": 118,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-11-25T10:28:30.387Z",
+        "title": "If It's Too Loud...",
+        "date": "2019-11-19",
+        "source_url": "https://www.ifitstooloud.com/2019/11/first-listen-new-releases-for-15.html",
+        "body": "In the right circumstance, could let the rest of the world know what those of us in the area already learned.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 119,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-11-25T10:29:11.733Z",
+        "title": "The Line of Best Fit",
+        "date": "2019-11-19",
+        "source_url": "https://www.thelineofbestfit.com/reviews/albums/hallelujah-the-hills-im-you-album-review",
+        "body": "9/10. Ties up everything they've been working towards into one glorious hour-long burst.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
     "model": "news.post",
     "pk": 1,
     "fields": {
@@ -4152,6 +4180,17 @@
         "title": "Happy Birthday, I\u2019m You",
         "slug": "happy-birthday-im-you",
         "body": "<p>It\u2019s Friday, November 15, 2019 and the record is finally <a href=\"/music/im-you/\">let loose into the wild</a>.</p>\r\n\r\n<ul>\r\n<li><p>This is the part where it starts to have more to do with you than us. And that\u2019s a beautiful thing.</p></li>\r\n\r\n<li><p>There\u2019s a video for \u201cFolk Music Is Insane.\u201d <a href=\"https://youtu.be/1JOs37FojZ0\">Check it out</a>.</p></li>\r\n\r\n<li><p>All of the earlier discography\u2019s CDs and vinyl are <a href=\"https://hallelujahthehills.bandcamp.com/merch\">on sale now</a> to celebrate the release of <cite>I\u2019m You.</cite>\r\n</li>\r\n\r\n<li>Oh, and there\u2019s <a href=\"https://teespring.com/stores/hallelujah-the-hills\">t-shirts</a>.</li>\r\n</ul>\r\n\r\n<p>\r\nSee you all soon,<br>\r\nRyan                 \r\n</p>\r\n\r\n<p><img src=\"https://res.cloudinary.com/dgojqlr7m/image/upload/v1573814700/venn_diagram_im_you.jpg\" alt=\"Venn diagram of two people: I'm You\"></p>"
+    }
+},
+{
+    "model": "news.post",
+    "pk": 52,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-11-25T10:24:02Z",
+        "title": "I\u2019m You is All Yours",
+        "slug": "im-you-is-all-yours",
+        "body": "</h1>\r\n<p>Available on all digital platforms, including: \r\n<a href=\"https://open.spotify.com/album/0oZGsj8kV57dn6ELB35eDi\">Spotify</a>,\r\n<a href=\"https://music.apple.com/us/album/im-you/1483660892\">Apple</a>,\r\n<a href=\"https://play.google.com/store/music/album?id=Bbj7trumkkrog2s2eduvyqq3ene\">Google</a>,\r\n<a href=\"https://www.amazon.com/gp/product/B07Z5G42CD\">Amazon</a>. CDs available via <a href=\"https://hallelujahthehills.bandcamp.com/album/im-you\">Bandcamp</a>. No vinyl release planned yet.</p>\r\n<p>The incredible warm welcome the record has received below. THANK YOU for listening and speading the word. We have no label, no PR team. Word of mouth is how this record will find everyone it needs to find.</p>\r\n<p><strong>REVIEWS</strong></p>\r\n<ul>\r\n    <li>\u201cALBUM OF THE YEAR\u201d - Glorious Noise</li>\r\n    <li>\u201cA LYRICAL MASTERPIECE.\u201d - Metro</li>\r\n    <li>\u201cIT\u2019S BRILLIANT.\u201d - The Typescript</li>\r\n    <li>\u201c9/10. Glorious. It all boils down to human connection, a hand calmly extended through the speaker.\u201d - The Line of Best Fit</li>\r\n    <li>\u201cThe band\u2019s magnum opus\u201d - Chunky Glasses</li>\r\n    <li>\u201cA Ginsberg-esque telling of present day America backed by a band with a similar chaotic synchronicity as the band from Ziggy Stardust\u201d - WBUR</li>\r\n</ul>\r\n<p><strong>FOLKS ON SOCIAL</strong></p>\r\n<ul>\r\n    <li>\u201cINSANELY GOOD\u201d - <span class=\"citation\" data-cites=\"kr1277\">@kr1277</span></li>\r\n    <li>\u201cMy day was made much better by listening to the excellent new Halleluiah The Hills record \u2018I\u2019m You\u2019 several times. I recommend it highly. Nice work Hills and co\u2026\u201d - <span class=\"citation\" data-cites=\"steadycraig\">@steadycraig</span></li>\r\n    <li>\u201cI\u2019m You is so good I\u2019m speechless\u201d - <span class=\"citation\" data-cites=\"msakraid\">@msakraid</span></li>\r\n    <li>\u201cIt\u2019s a masterpiece and much more\u201d - <span class=\"citation\" data-cites=\"tecumsehvalley\">@tecumsehvalley</span></li>\r\n    <li>\u201cI\u2019m You IS the album of the year\u201d - <span class=\"citation\" data-cites=\"tybini\">@tybini</span></li>\r\n    <li>\u201cIt\u2019s SO good\u201d - <span class=\"citation\" data-cites=\"beaucolburn\">@beaucolburn</span></li>\r\n    <li>\u201cI\u2019ve listened to it four times front to back and I gotta say this new HTH record is moving me more than anything I\u2019ve heard in the past year. Exuberant, soulful, not afraid to get grim \u2014 I love it.\u201d - <span class=\"citation\" data-cites=\"joshshabtai\">@joshshabtai</span></li>\r\n    <li>\u201cHallelujah the Hills might be the best band of the decade yet I never even heard of them until Lydia Loveless tweeted about them. Go listen to It\u2019s You on Spotify. I have 6 albums to catch up on. I\u2019m busy.\u201c - <span class=\"citation\" data-cites=\"dirtygertty\">@dirtygertty</span></li>\r\n    <li>\u201cThis is deadass one of the best records I\u2019ve ever heard.\u201d - <span class=\"citation\" data-cites=\"mechewstaa\">@mechewstaa</span></li>\r\n    <li>\u201cI\u2019m You is sounding like their masterpiece! And it\u2019s only sounding better with every listen.\u201d - <span class=\"citation\" data-cites=\"onetenthhero\">@onetenthhero</span></li>\r\n    <li>\u201cA late contender for album of the year.\u201d - <span class=\"citation\" data-cites=\"eriktmpls\">@eriktmpls</span></li>\r\n</ul>\r\n<p>We hope to tour <cite>I\u2019m You</cite> in the coming months.</p>\r\n<p>\u2013 HTH</p>"
     }
 },
 {
