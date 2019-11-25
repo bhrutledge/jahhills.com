@@ -6474,6 +6474,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 192,
+    "fields": {
+        "name": "Sun Tiki Studios",
+        "city": "Portland, ME",
+        "website": "",
+        "address": "375 Forest Ave, Portland, ME 04101",
+        "latitude": 43.6646975,
+        "longitude": -70.2739516
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -9950,7 +9962,19 @@
         "date": "2019-12-19",
         "venue": 9,
         "description": "<p>\r\n<strong><cite>I\u2019m You</cite> Album Release</strong>\r\n<br />with Major Stars and Adam Shatz (Landlady) \r\n</p>",
-        "details": "<p>\r\n$15, 18+\r\n<br /><a href=\"https://www.axs.com/events/384554/hallelujah-the-hills-tickets\">Tickets</a>\r\n</p>"
+        "details": "<p>\r\n$13, 18+\r\n<br /><a href=\"https://www.axs.com/events/384554/hallelujah-the-hills-tickets\">Tickets</a>, <a href=\"https://www.facebook.com/events/380948056115427/\">Facebook</a>\r\n</p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 305,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-11-25T10:48:33Z",
+        "date": "2020-01-31",
+        "venue": 192,
+        "description": "<p>with <span class=\"performer\">Thalia Zedek</span></p>",
+        "details": "<p>$10<br />\r\n<a href=\"https://www.eventbrite.com/e/thalia-zedek-band-hallelujah-the-hills-tickets-82910376167?aff=efbeventtix\">Tickets</a>,\r\n<a href=\"https://www.facebook.com/events/552280461999533/\">Facebook</a>\r\n</p>"
     }
 }
 ]
