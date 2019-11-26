@@ -3622,6 +3622,62 @@
     }
 },
 {
+    "model": "music.press",
+    "pk": 120,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-11-26T10:39:59.944Z",
+        "title": "One Chord To Another",
+        "date": "2019-11-24",
+        "source_url": "https://www.onechord.net/2019/11/24/andy-shauf-gabriel-birnbaum-hallelujah-the-hills-and-little-scream/",
+        "body": "Might well be the best one as a whole...buy the whole gorgeous record.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 121,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-11-26T11:00:31.539Z",
+        "title": "Basic Folk Podcast",
+        "date": "2019-11-07",
+        "source_url": "https://cindyhowes.net/2019/11/07/basic-folk-46-ryan-walsh-of-hallelujah-the-hills/",
+        "body": "Ryan Walsh has always held an interest in history and folk music. Please enjoy this conversation with one of my favorite humans.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 122,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-11-26T11:08:54Z",
+        "title": "The Typescript",
+        "date": "2019-11-13",
+        "source_url": "http://thetypescript.com/a-conversation-with-hallelujah-the-hills/",
+        "body": "A conversation with Hallelujah the Hills at their cozy practice space.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 123,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-11-26T11:12:51Z",
+        "title": "Ryan on his bandmates",
+        "date": "2019-11-15",
+        "source_url": "https://www.facebook.com/hallelujahthehills/photos/a.80995054836/10157770503509837/",
+        "body": "A lot of the reviews, press and interviews for the band center around me, but I wanted to write a little something about how incredible my bandmates are as collaborators and friends.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
     "model": "news.post",
     "pk": 1,
     "fields": {
@@ -6483,6 +6539,18 @@
         "address": "375 Forest Ave, Portland, ME 04101",
         "latitude": 43.6646975,
         "longitude": -70.2739516
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 193,
+    "fields": {
+        "name": "ONCE Lounge",
+        "city": "Somerville, MA",
+        "website": "",
+        "address": "156 Highland Ave, Somerville, MA 02143",
+        "latitude": 42.38829,
+        "longitude": -71.10382
     }
 },
 {
@@ -9975,6 +10043,18 @@
         "venue": 192,
         "description": "<p>with <span class=\"performer\">Thalia Zedek</span></p>",
         "details": "<p>$10<br />\r\n<a href=\"https://www.eventbrite.com/e/thalia-zedek-band-hallelujah-the-hills-tickets-82910376167?aff=efbeventtix\">Tickets</a>,\r\n<a href=\"https://www.facebook.com/events/552280461999533/\">Facebook</a>\r\n</p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 306,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-11-26T10:42:41Z",
+        "date": "2020-01-21",
+        "venue": 193,
+        "description": "<p><span class=\"perform\"><strong>Ryan Walsh solo</strong>\r\n<br />w/ Ezra Furman</p>",
+        "details": "<p><a href=\"https://www.eventbrite.com/e/ezra-furman-friends-residency-support-tba-tickets-74497597319\">Tickets</a></p>"
     }
 }
 ]
