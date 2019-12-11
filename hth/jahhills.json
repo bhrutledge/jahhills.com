@@ -3678,6 +3678,62 @@
     }
 },
 {
+    "model": "music.press",
+    "pk": 124,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-11T01:36:46Z",
+        "title": "Boing Boing",
+        "date": "2019-11-27",
+        "source_url": "https://boingboing.net/2019/11/27/that-robot-dog-from-boston-dyn.html",
+        "body": "Fantastic",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 125,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-11T01:38:38.387Z",
+        "title": "The Remote Post",
+        "date": "2019-11-26",
+        "source_url": "https://theremotepost.blog/2019/11/26/the-remote-post-albums-of-november-2019/",
+        "body": "I also happened upon stunning new record from Hallelujah Hills, a band I knew little about, but already feel a deep-rooted connection, as if I\u2019ve been listening for years.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 126,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-11T01:39:17.109Z",
+        "title": "Sputnik Music",
+        "date": "2019-11-25",
+        "source_url": "https://www.sputnikmusic.com/soundoff.php?albumid=340389",
+        "body": "If you thought the best of the decade was over you might want to think twice. I'm You is a rich and stunning slice of Americana rock 'n' roll and relatable, earnest storytelling.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 127,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-11T01:40:10.773Z",
+        "title": "Aarik Danielsen",
+        "date": "2019-12-06",
+        "source_url": "https://www.facebook.com/aarikdanielsenwrites/posts/779701049121023",
+        "body": "I was absolutely astonished. This is a beautiful, visceral document made at the intersection of folk and indie-rock. Some of the most refreshing songs I've heard all year.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
     "model": "news.post",
     "pk": 1,
     "fields": {
