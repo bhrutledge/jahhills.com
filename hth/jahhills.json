@@ -2320,6 +2320,22 @@
     }
 },
 {
+    "model": "music.video",
+    "pk": 35,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-17T00:44:23Z",
+        "title": "Running Hot with Fate",
+        "slug": "hot-fate",
+        "source_url": "https://www.youtube.com/watch?v=CrT-bkNCXTI",
+        "embed_code": "<iframe\r\n    src=\"https://www.youtube.com/embed/CrT-bkNCXTI?wmode=opaque\"\r\n    \r\n    \r\n    seamless allowfullscreen></iframe>",
+        "preview_url": "https://img.youtube.com/vi/CrT-bkNCXTI/maxresdefault.jpg",
+        "description": "<p>Much like the song, the video for \u201cRunning Hot With Fate\u201d is a collection of miniature short stories about a group of people. But whereas these stories were conveyed in the recording by way of the lyrics, here in the video, volumes are telegraphed via peoples\u2019 stares, subtle expressions, and the contours of their faces. 27 Boston musicians were cast in \u2018Fate\u2019 from a pool of artists whose careers collectively cover six decades of music.</p>\r\n\r\n<p>You can read more about the video, meet the Fates, and own a piece of Fate at <a href=\"https://www.runninghotwithfate.com/\">runninghotwithfate.com</a>.</p>",
+        "credits": "<p>Directed &amp; edited by Tyler Hollis Derryberry\r\n<br />Concept/Produced by: Tyler Hollis Derryberry &amp; Ryan H. Walsh</p>",
+        "release": 15
+    }
+},
+{
     "model": "music.press",
     "pk": 4,
     "fields": {
@@ -3458,8 +3474,8 @@
     "pk": 108,
     "fields": {
         "publish": true,
-        "publish_on": "2018-12-15T22:35:17.935Z",
-        "title": "If It's Too Loud",
+        "publish_on": "2018-12-15T22:35:17Z",
+        "title": "If It's Too Loud...",
         "date": "2018-12-14",
         "source_url": "http://www.ifitstooloud.com/2018/11/hallelujah-hills-against-electricity.html",
         "body": "There are two things Boston's Hallelujah the Hills do incredibly well: Catchy roots based rock songs and experimental instrumental noise rock. Their sixth album, Against Electricty, was just released yesterday and it fits squarely in the latter category.",
@@ -3729,6 +3745,62 @@
         "date": "2019-12-06",
         "source_url": "https://www.facebook.com/aarikdanielsenwrites/posts/779701049121023",
         "body": "I was absolutely astonished. This is a beautiful, visceral document made at the intersection of folk and indie-rock. Some of the most refreshing songs I've heard all year.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 128,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-17T00:31:18Z",
+        "title": "Exile Magazine",
+        "date": "2019-12-15",
+        "source_url": "http://www.exileshmagazine.com/2019/12/hallelujah-hills-im-you-2019.html",
+        "body": "No solo es el mejor disco hasta la fecha de Hallelujah The Hills, adem\u00e1s es uno de los mejores discos de rock americano de los \u00faltimos a\u00f1os",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 129,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-17T00:31:52.550Z",
+        "title": "The Boston Globe",
+        "date": "2019-12-12",
+        "source_url": "https://www.bostonglobe.com/2019/12/13/arts/another-true-story-hallelujah-hills-frontman-ryan-walsh/",
+        "body": "The result is an album unlike anything Hallelujah the Hills has done.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 130,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-17T00:32:58.210Z",
+        "title": "The Boston Herald",
+        "date": "2019-12-13",
+        "source_url": "https://www.bostonherald.com/2019/12/13/hallelujah-the-hills-goes-long-with-new-album/",
+        "body": "They've crafted an epic",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 131,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-17T00:33:49.908Z",
+        "title": "If It's Too Loud...",
+        "date": "2019-12-10",
+        "source_url": "http://www.ifitstooloud.com/2019/12/kens-best-of-2019-6-hallelujah-hills-im.html",
+        "body": "It's somehow weirder but more accessible at the same time. You get the feeling that are just going to do whatever they want from here on out. If that's the case, count us in.",
         "quote": true,
         "release": 15
     }
