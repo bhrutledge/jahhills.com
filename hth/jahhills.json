@@ -10184,5 +10184,17 @@
         "description": "<p><span class=\"perform\"><strong>Ryan Walsh solo</strong>\r\n<br />w/ Ezra Furman</p>",
         "details": "<p><a href=\"https://www.eventbrite.com/e/ezra-furman-friends-residency-support-tba-tickets-74497597319\">Tickets</a></p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 307,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-17T11:19:34Z",
+        "date": "2020-01-04",
+        "venue": 128,
+        "description": "<p><strong>David Berman Tribute Shows</strong>\r\n<br>featuring <span class=\"performer\">Steve West (Silver Jews/Pavement)</span> and <span class=\"performer\">Matt Hunter (Silver Jews/New Radiant Storm King)</span>, and <span class=\"performer\">Special Guests</span></p>",
+        "details": "<p><a href=\"https://www.union-pool.com/e/a-david-berman-tribute-show-show-daytime--86006733455/\">2pm</a> and <a href=\"https://www.union-pool.com/e/a-david-berman-tribute-show-85142251767/\">6pm</a>\r\n<br />Sold out</p>"
+    }
 }
 ]
