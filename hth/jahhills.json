@@ -3806,6 +3806,76 @@
     }
 },
 {
+    "model": "music.press",
+    "pk": 133,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-31T22:03:40.147Z",
+        "title": "Dusted Magazine",
+        "date": "2019-12-19",
+        "source_url": "https://dustedmagazine.tumblr.com/post/189760402932/hallelujah-the-hills-im-you-discrete",
+        "body": "One of rock and roll\u2019s best kept secrets.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 134,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-31T22:06:45.700Z",
+        "title": "Allston Pudding",
+        "date": "2019-12-19",
+        "source_url": "http://allstonpudding.com/interview-preview-dont-freak-out-hallelujah-the-hills-is-you/",
+        "body": "<cite>I\u2019m You</cite> has generated a veritable buzz among both critics and longtime fans&hellip; an anthemic collection that is simultaneously outward-looking and introspective.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 135,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-31T22:10:40.001Z",
+        "title": "Ryan's Smashing Life",
+        "date": "2019-12-17",
+        "source_url": "http://www.rslblog.com/2019/12/running-hot-with-fate.html",
+        "body": "The new record is less than a month in the books and it's already one of my favorite records of 2019. I highly recommend it.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 136,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-31T22:13:14.924Z",
+        "title": "Dig Boston",
+        "date": "2019-12-19",
+        "source_url": "https://digboston.com/stick-to-the-plan-hallelujah-the-hills-went-through-hell-but-returned-for-seventh-lp/",
+        "body": "A deep and encompassing sound that pulls you in by the ears and spins you for a walk through bursts of thoughtful lyrics and enchanting harmonies, all built within the framework of firm rock beats",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 137,
+    "fields": {
+        "publish": true,
+        "publish_on": "2019-12-31T22:22:06Z",
+        "title": "2019 Bests and Favorites",
+        "date": "2019-12-31",
+        "source_url": "",
+        "body": "<p>\r\nBest of 2019: \"Folk Music Is Insane\" - <a href=\"https://www.beat-surrender.com/best-of-2019-rock-pop-indie/\">Beat Surrender</a>\r\n<br />\r\nBest of 2019 - <a href=\"https://hi54.blog/content/the-hi54-bandcamp-shuffle-20x19\">HI54</a>\r\n<br />\r\nThe Top 25 Albums of 2019 - <a href=\"https://adiversesound.wordpress.com/2019/12/18/the-top-25-albums-of-2019/\">A Diverse Sound</a>\r\n<br />  \r\n#1 Album of The Year - <a href=\"https://www.facebook.com/ClickyClickyMusicBlog/photos/a.709278452435813/2865848236778813/\">Clicky Clicky Music Blog</a>\r\n<br />  \r\nTop 10 albums of the year - <a href=\"https://www.bostonherald.com/2019/12/27/top-10-albums-of-the-year-a-fun-provocative-mix/\">The Boston Herald</a>\r\n</p>",
+        "quote": false,
+        "release": 15
+    }
+},
+{
     "model": "news.post",
     "pk": 1,
     "fields": {
