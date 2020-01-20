@@ -1795,12 +1795,12 @@
     "model": "music.video",
     "pk": 2,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2007-06-26T20:38:31Z",
         "title": "Hallelujah The Hills [Live]",
         "slug": "hallelujah-the-hills-live",
         "source_url": "http://www.youtube.com/watch?v=nOfHnxgtuB0",
-        "embed_code": "<iframe src=\"https://www.youtube.com/embed/nOfHnxgtuB0?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/nOfHnxgtuB0?wmode=opaque\" seamless allowfullscreen></iframe>",
         "preview_url": "https://img.youtube.com/vi/nOfHnxgtuB0/hqdefault.jpg",
         "description": "",
         "credits": "",
@@ -1811,12 +1811,12 @@
     "model": "music.video",
     "pk": 3,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2007-06-26T20:38:31Z",
         "title": "Slow Motion Records Broken At Break Neck Speeds [Live]",
         "slug": "slow-motion-records-live",
         "source_url": "http://www.youtube.com/watch?v=Tmh1zmIpZKI",
-        "embed_code": "<iframe src=\"https://www.youtube.com/embed/Tmh1zmIpZKI?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/Tmh1zmIpZKI?wmode=opaque\" seamless allowfullscreen></iframe>",
         "preview_url": "https://img.youtube.com/vi/Tmh1zmIpZKI/hqdefault.jpg",
         "description": "",
         "credits": "",
@@ -1827,12 +1827,12 @@
     "model": "music.video",
     "pk": 4,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2007-07-03T20:38:31Z",
         "title": "Tour Short Film",
         "slug": "tour-short-film",
         "source_url": "http://www.youtube.com/watch?v=Sl3_u51Jw8k",
-        "embed_code": "<iframe src=\"https://www.youtube.com/embed/Sl3_u51Jw8k?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/Sl3_u51Jw8k?wmode=opaque\" seamless allowfullscreen></iframe>",
         "preview_url": "https://img.youtube.com/vi/Sl3_u51Jw8k/hqdefault.jpg",
         "description": "",
         "credits": "",
@@ -1875,12 +1875,12 @@
     "model": "music.video",
     "pk": 7,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2009-10-01T17:00:39Z",
         "title": "Hallelujah The Hills [Live]",
         "slug": "hallelujah-the-hills-live-2",
         "source_url": "http://vimeo.com/6780896",
-        "embed_code": "<iframe src=\"https://player.vimeo.com/video/6780896\" seamless allowfullscreen></iframe>\n",
+        "embed_code": "<iframe src=\"https://player.vimeo.com/video/6780896\" seamless allowfullscreen></iframe>",
         "preview_url": "https://i.vimeocdn.com/video/26930319_640.jpg",
         "description": "",
         "credits": "",
@@ -2333,6 +2333,38 @@
         "description": "<p>Much like the song, the video for \u201cRunning Hot With Fate\u201d is a collection of miniature short stories about a group of people. But whereas these stories were conveyed in the recording by way of the lyrics, here in the video, volumes are telegraphed via peoples\u2019 stares, subtle expressions, and the contours of their faces. 27 Boston musicians were cast in \u2018Fate\u2019 from a pool of artists whose careers collectively cover six decades of music.</p>\r\n\r\n<p>You can read more about the video, meet the Fates, and own a piece of Fate at <a href=\"https://www.runninghotwithfate.com/\">runninghotwithfate.com</a>.</p>",
         "credits": "<p>Directed &amp; edited by Tyler Hollis Derryberry\r\n<br />Concept/Produced by: Tyler Hollis Derryberry &amp; Ryan H. Walsh</p>",
         "release": 15
+    }
+},
+{
+    "model": "music.video",
+    "pk": 36,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-01-05T14:24:25Z",
+        "title": "David Berman Tribute [Live]: Self Ignition, There Is A Place",
+        "slug": "david-berman-2",
+        "source_url": "https://www.youtube.com/watch?v=cXzCCUVUih8",
+        "embed_code": "<iframe\r\n    src=\"https://www.youtube.com/embed/cXzCCUVUih8?wmode=opaque\"\r\n    \r\n    \r\n    seamless allowfullscreen></iframe>",
+        "preview_url": "https://img.youtube.com/vi/cXzCCUVUih8/maxresdefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": null
+    }
+},
+{
+    "model": "music.video",
+    "pk": 37,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-01-05T14:23:00Z",
+        "title": "David Berman Tribute [Live]: Sometimes a Pony Gets Depressed, Long Gone",
+        "slug": "david-berman-1",
+        "source_url": "https://www.youtube.com/watch?v=qUDQwLrYuCY",
+        "embed_code": "<iframe\r\n    src=\"https://www.youtube.com/embed/qUDQwLrYuCY?wmode=opaque\"\r\n    \r\n    \r\n    seamless allowfullscreen></iframe>",
+        "preview_url": "https://img.youtube.com/vi/qUDQwLrYuCY/maxresdefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": null
     }
 },
 {
@@ -3515,7 +3547,7 @@
     "model": "music.press",
     "pk": 111,
     "fields": {
-        "publish": true,
+        "publish": false,
         "publish_on": "2019-11-15T10:26:30Z",
         "title": "Glorious Noise",
         "date": "2019-11-12",
@@ -3870,8 +3902,64 @@
         "title": "2019 Bests and Favorites",
         "date": "2019-12-31",
         "source_url": "",
-        "body": "<p>\r\nBest of 2019: \"Folk Music Is Insane\" - <a href=\"https://www.beat-surrender.com/best-of-2019-rock-pop-indie/\">Beat Surrender</a>\r\n<br />\r\nBest of 2019 - <a href=\"https://hi54.blog/content/the-hi54-bandcamp-shuffle-20x19\">HI54</a>\r\n<br />\r\nThe Top 25 Albums of 2019 - <a href=\"https://adiversesound.wordpress.com/2019/12/18/the-top-25-albums-of-2019/\">A Diverse Sound</a>\r\n<br />  \r\n#1 Album of The Year - <a href=\"https://www.facebook.com/ClickyClickyMusicBlog/photos/a.709278452435813/2865848236778813/\">Clicky Clicky Music Blog</a>\r\n<br />  \r\nTop 10 albums of the year - <a href=\"https://www.bostonherald.com/2019/12/27/top-10-albums-of-the-year-a-fun-provocative-mix/\">The Boston Herald</a>\r\n</p>",
+        "body": "<p>\r\nAlbum of the Year - <a href=\"https://gloriousnoise.com/2019/album-of-the-year-hallelujah-the-hills-im-you\">Glorious Noise</a>\r\n<br />\r\nTop Albums of 2019 - <a href=\"http://www.rslblog.com/2020/01/my-albums-of-year-2019.html\">Ryan's Smashing Life</a>\r\n<br />\r\nBest of 2019 - <a href=\"http://www.mattbesser.com/?page_id=19\">Matt Besser</a>\r\n<br />\r\nBest of 2019: \"Folk Music Is Insane\" - <a href=\"https://www.beat-surrender.com/best-of-2019-rock-\r\npop-indie/\">Beat Surrender</a>\r\n<br />\r\nBest of 2019 - <a href=\"https://hi54.blog/content/the-hi54-bandcamp-shuffle-20x19\">HI54</a>\r\n<br />\r\nThe Top 25 Albums of 2019 - <a href=\"https://adiversesound.wordpress.com/2019/12/18/the-top-25-albums-of-2019/\">A Diverse Sound</a>\r\n<br />  \r\n#1 Album of The Year - <a href=\"https://www.facebook.com/ClickyClickyMusicBlog/photos/a.709278452435813/2865848236778813/\">Clicky Clicky Music Blog</a>\r\n<br />  \r\nTop 10 albums of the year - <a href=\"https://www.bostonherald.com/2019/12/27/top-10-albums-of-the-year-a-fun-provocative-mix/\">The Boston Herald</a>\r\n</p>",
         "quote": false,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 138,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-01-20T14:06:41.010Z",
+        "title": "Americana UK",
+        "date": "2020-01-06",
+        "source_url": "https://americana-uk.com/hallelujah-the-hills-im-you-discrete-pageantry-records-2019",
+        "body": "Lyrically, the album is a rabbit hole, the words begging to be repeatedly listened to in order to savour them while the band whips up some excellent moments.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 139,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-01-20T14:12:01.195Z",
+        "title": "Rock & More by Addison de Witt",
+        "date": "2020-01-15",
+        "source_url": "https://www.rockampmorebyaddisondewitt.com/2020/01/hallelujah-hills-im-you-2019.html?spref=fb",
+        "body": "lo importante es la belleza que destilan estas canciones, gracias a su exquisita silueta mel\u00f3dica y a un sonido rico y suntuoso",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 140,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-01-20T14:18:32.126Z",
+        "title": "Kumar's Blizznog",
+        "date": "2020-01-06",
+        "source_url": "https://jzkumar.blogspot.com/2020/01/colossus-of-rhodes-my-favorite-albums.html",
+        "body": "Hallelujah the Hills are one of the great unsung bands of our time.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 141,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-01-20T14:19:24.065Z",
+        "title": "One Chord To Another",
+        "date": "2020-01-05",
+        "source_url": "https://www.onechord.net/2020/01/05/100-favourite-albums-of-the-year-2019-part-four/",
+        "body": "This rock thing ain\u2019t so bad, especially if it\u2019s done by one of the finest American rock bands. Such a great record.",
+        "quote": true,
         "release": 15
     }
 },
@@ -6491,7 +6579,7 @@
     "model": "shows.venue",
     "pk": 171,
     "fields": {
-        "name": "Cuisine en Locale",
+        "name": "ONCE",
         "city": "Somerville, MA",
         "website": "http://cuisineenlocale.com/about-us/function-hall/",
         "address": "156 Highland Ave, Somerville, MA 02143, USA",
@@ -6749,6 +6837,18 @@
         "address": "156 Highland Ave, Somerville, MA 02143",
         "latitude": 42.38829,
         "longitude": -71.10382
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 194,
+    "fields": {
+        "name": "Cafe Nine",
+        "city": "New Haven, CT",
+        "website": "",
+        "address": "",
+        "latitude": 41.3036364,
+        "longitude": -72.9259651
     }
 },
 {
@@ -10265,6 +10365,30 @@
         "venue": 128,
         "description": "<p><strong>David Berman Tribute Shows</strong>\r\n<br>featuring <span class=\"performer\">Steve West (Silver Jews/Pavement)</span> and <span class=\"performer\">Matt Hunter (Silver Jews/New Radiant Storm King)</span>, and <span class=\"performer\">Special Guests</span></p>",
         "details": "<p><a href=\"https://www.union-pool.com/e/a-david-berman-tribute-show-show-daytime--86006733455/\">2pm</a> and <a href=\"https://www.union-pool.com/e/a-david-berman-tribute-show-85142251767/\">6pm</a>\r\n<br />Sold out</p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 308,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-01-20T13:52:31Z",
+        "date": "2020-02-08",
+        "venue": 171,
+        "description": "<p><strong>The Bang Bang Bar: Twin Peaks Party</strong>\r\n<br>with <span class=\"performer\">Johnny No Graves</span> and <span class=\"performer\">Julee Cruise Director</span></p>",
+        "details": "<p>\r\n$15, all ages<br />\r\n<a href=\"https://www.eventbrite.com/e/the-bang-bang-bar-twin-peaks-party-tickets-88836310797?aff=efbeventtix\">Tickets</a>,\r\n<a href=\"https://www.facebook.com/events/582428395654025/\">Facebook</a>\r\n</p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 309,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-01-20T13:56:43.007Z",
+        "date": "2020-04-04",
+        "venue": 194,
+        "description": "<p>with <span class=\"performer\">Eyelids</span></p>",
+        "details": "<p>$10, 21+<br />\r\n<a href=\"https://www.eventbrite.com/e/eyelids-hallelujah-the-hills-tickets-89767130905\">Tickets</a>\r\n</p>"
     }
 }
 ]
