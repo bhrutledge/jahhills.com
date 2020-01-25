@@ -112,6 +112,25 @@ class VideoTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
 
         self.assertEqual(list(Video.objects.all()), [draft, new, first, old])
 
+    def test_ordered_by_priority(self):
+        third = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 8, 1, tzinfo=timezone.utc),
+            priority=1)
+
+        first = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 7, 31, tzinfo=timezone.utc),
+            priority=10)
+
+        fourth = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 7, 1, tzinfo=timezone.utc))
+
+        second = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 8, 31, tzinfo=timezone.utc),
+            priority=1)
+
+        self.assertEqual(list(Video.objects.all()),
+                         [first, second, third, fourth])
+
     def test_can_be_added_to_release(self):
         r = PublishedReleaseFactory.create()
 
@@ -137,6 +156,28 @@ class VideoTestCase(FieldsTestMixin, PublishTestMixin, TitleTestMixin,
             release=r)
 
         self.assertEqual(list(r.videos.all()), [new, first, old])
+
+    def test_release_videos_ordered_by_priority(self):
+        r = PublishedReleaseFactory.create()
+
+        third = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 8, 1, tzinfo=timezone.utc),
+            priority=1, release=r)
+
+        first = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 7, 31, tzinfo=timezone.utc),
+            priority=10, release=r)
+
+        fourth = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 7, 1, tzinfo=timezone.utc),
+            release=r)
+
+        second = PublishedVideoFactory.create(
+            publish_on=datetime(2014, 8, 31, tzinfo=timezone.utc),
+            priority=1, release=r)
+
+        self.assertEqual(list(r.videos.all()),
+                         [first, second, third, fourth])
 
 
 class VideoAutofillTestCase(TestCase):
