@@ -102,9 +102,12 @@ class Video(PublishedModel, TitledModel):
     description = models.TextField(blank=True)
     credits = models.TextField(blank=True)
     release = models.ForeignKey(Release, blank=True, null=True)
+    priority = models.PositiveIntegerField(
+        help_text='Site-wide sort order (higher numbers first)',
+        blank=True, null=True)
 
     class Meta:
-        ordering = ['publish', '-publish_on']
+        ordering = ['-priority', 'publish', '-publish_on']
 
     def save(self, *args, **kwargs):
         if self.source_url and not (self.preview_url and self.embed_code):
