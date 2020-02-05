@@ -10522,11 +10522,11 @@
     "pk": 314,
     "fields": {
         "publish": true,
-        "publish_on": "2020-02-05T23:12:58.454Z",
+        "publish_on": "2020-02-05T23:12:58Z",
         "date": "2020-04-03",
         "venue": 150,
         "description": "<p>with <span class=\"performer\">Ladygod</span> and <span class=\"performer\">Gladshot</span></p>",
-        "details": ""
+        "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-ladygod-gladshot-tickets-92996064733\">Tickets</a></p>"
     }
 }
 ]
