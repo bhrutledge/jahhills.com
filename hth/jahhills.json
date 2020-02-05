@@ -2405,6 +2405,23 @@
     }
 },
 {
+    "model": "music.video",
+    "pk": 38,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-02-05T23:16:05.586Z",
+        "title": "It Still Floors Me",
+        "slug": "it-still-floors-me",
+        "source_url": "https://www.youtube.com/watch?v=EVOTNzqwnRY",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/EVOTNzqwnRY?wmode=opaque\" seamless allowfullscreen></iframe>",
+        "preview_url": "https://img.youtube.com/vi/EVOTNzqwnRY/maxresdefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": 15,
+        "priority": 1
+    }
+},
+{
     "model": "music.press",
     "pk": 4,
     "fields": {
@@ -6889,6 +6906,30 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 195,
+    "fields": {
+        "name": "Ortlieb's",
+        "city": "Philadelphia, PA",
+        "website": "https://www.ortliebsphilly.com/",
+        "address": "847 N 3rd St, Philadelphia, PA 19123",
+        "latitude": 39.9646002,
+        "longitude": -75.142358
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 196,
+    "fields": {
+        "name": "The Pocket",
+        "city": "Washington, DC",
+        "website": "",
+        "address": "1508 North Capitol St NW, Washington, DC 20002",
+        "latitude": 38.909977,
+        "longitude": -77.009462
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -10426,6 +10467,66 @@
         "venue": 194,
         "description": "<p>with <span class=\"performer\">Eyelids</span></p>",
         "details": "<p>$10, 21+<br />\r\n<a href=\"https://www.eventbrite.com/e/eyelids-hallelujah-the-hills-tickets-89767130905\">Tickets</a>\r\n</p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 310,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-02-05T23:04:25.193Z",
+        "date": "2020-03-12",
+        "venue": 135,
+        "description": "<p>with <span class=\"performer\">Maxwell Stern & The Colliders</span> and <span class=\"performer\">Boston Cream</span></p>",
+        "details": "<p><a href=\"https://www.facebook.com/events/864604207300606/\">Facebook</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 311,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-02-05T23:07:56Z",
+        "date": "2020-03-13",
+        "venue": 196,
+        "description": "<p>with <span class=\"performer\">Boston Cream</span></p>",
+        "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-w-boston-cream-tickets-93154360199\">Tickets</a>, <a href=\"https://www.facebook.com/events/1043302249357476/\">Facebook</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 312,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-02-05T23:09:36.418Z",
+        "date": "2020-03-14",
+        "venue": 175,
+        "description": "<p>with <span class=\"performer\">Boston Cream</span>",
+        "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-with-boston-cream-full-band-show-tickets-90395925647\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 313,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-02-05T23:11:43.991Z",
+        "date": "2020-03-15",
+        "venue": 128,
+        "description": "<p>with <span class=\"performer\">Ladygod</span> and <span class=\"performer\">Gladshot</span></p>",
+        "details": "<p><a href=\"https://www.union-pool.com/e/hallelujah-the-hills-ladygod-gladshot-92080165253/\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 314,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-02-05T23:12:58.454Z",
+        "date": "2020-04-03",
+        "venue": 150,
+        "description": "<p>with <span class=\"performer\">Ladygod</span> and <span class=\"performer\">Gladshot</span></p>",
+        "details": ""
     }
 }
 ]
