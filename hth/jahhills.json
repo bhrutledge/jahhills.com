@@ -10474,11 +10474,11 @@
     "pk": 310,
     "fields": {
         "publish": true,
-        "publish_on": "2020-02-05T23:04:25.193Z",
+        "publish_on": "2020-02-05T23:04:25Z",
         "date": "2020-03-12",
         "venue": 135,
         "description": "<p>with <span class=\"performer\">Maxwell Stern & The Colliders</span> and <span class=\"performer\">Boston Cream</span></p>",
-        "details": "<p><a href=\"https://www.facebook.com/events/864604207300606/\">Facebook</a></p>"
+        "details": "<p><a href=\"https://www.facebook.com/events/268535190797547/\">Facebook</a></p>"
     }
 },
 {
@@ -10489,7 +10489,7 @@
         "publish_on": "2020-02-05T23:07:56Z",
         "date": "2020-03-13",
         "venue": 196,
-        "description": "<p>with <span class=\"performer\">Boston Cream</span></p>",
+        "description": "<p>with <span class=\"performer\">Gauche</span> and <span class=\"performer\">Boston Cream</span></p>",
         "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-w-boston-cream-tickets-93154360199\">Tickets</a>, <a href=\"https://www.facebook.com/events/1043302249357476/\">Facebook</a></p>"
     }
 },
@@ -10498,11 +10498,11 @@
     "pk": 312,
     "fields": {
         "publish": true,
-        "publish_on": "2020-02-05T23:09:36.418Z",
+        "publish_on": "2020-02-05T23:09:36Z",
         "date": "2020-03-14",
         "venue": 175,
         "description": "<p>with <span class=\"performer\">Boston Cream</span>",
-        "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-with-boston-cream-full-band-show-tickets-90395925647\">Tickets</a></p>"
+        "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-with-boston-cream-full-band-show-tickets-90395925647\">Tickets</a>, <a href=\"https://www.facebook.com/events/179238920082852/\">Facebook</a></p>"
     }
 },
 {
@@ -10510,11 +10510,11 @@
     "pk": 313,
     "fields": {
         "publish": true,
-        "publish_on": "2020-02-05T23:11:43.991Z",
+        "publish_on": "2020-02-05T23:11:43Z",
         "date": "2020-03-15",
         "venue": 128,
         "description": "<p>with <span class=\"performer\">Ladygod</span> and <span class=\"performer\">Gladshot</span></p>",
-        "details": "<p><a href=\"https://www.union-pool.com/e/hallelujah-the-hills-ladygod-gladshot-92080165253/\">Tickets</a></p>"
+        "details": "<p><a href=\"https://www.union-pool.com/e/hallelujah-the-hills-ladygod-gladshot-92080165253/\">Tickets</a>, <a href=\"https://www.facebook.com/events/2544769389104314/\">Facebook</a></p>"
     }
 },
 {
@@ -10526,7 +10526,7 @@
         "date": "2020-04-03",
         "venue": 150,
         "description": "<p>with <span class=\"performer\">Ladygod</span> and <span class=\"performer\">Gladshot</span></p>",
-        "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-ladygod-gladshot-tickets-92996064733\">Tickets</a></p>"
+        "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-ladygod-gladshot-tickets-92996064733\">Tickets</a>, <a href=\"https://www.facebook.com/events/542528149940816/\">Facebook</a></p>"
     }
 }
 ]
