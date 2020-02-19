@@ -68,6 +68,15 @@ metadata := $(data_dir)/metadata.json
 datasette: $(data_db)
 	datasette --metadata $(metadata) $<
 
+.PHONY: datasette-publish
+datasette-publish: $(data_db)
+	datasette publish heroku --name hth-datasette \
+		--metadata $(metadata) \
+		--install datasette-vega \
+		--install datasette-cluster-map \
+		--install datasette-render-html \
+		$<
+
 $(data_db): $(django_db)
 	rm -f $@
 	mkdir -p $(data_dir)
