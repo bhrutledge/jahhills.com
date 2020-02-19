@@ -1,0 +1,16 @@
+{
+  "databases": {
+    "hth": {
+      "plugins": {
+        "datasette-render-html": {
+          "columns": [
+            "body",
+            "description",
+            "credits",
+            "lyrics"
+          ]
+        }
+      }
+    }
+  }
+}

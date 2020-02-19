@@ -62,10 +62,11 @@ restart:
 django_db := hth/jahhills.sqlite3
 data_dir := data
 data_db := $(data_dir)/hth.sqlite3
+metadata := $(data_dir)/metadata.json
 
 .PHONY: datasette
 datasette: $(data_db)
-	datasette $(data_db)
+	datasette --metadata $(metadata) $<
 
 $(data_db): $(django_db)
 	rm -f $@
