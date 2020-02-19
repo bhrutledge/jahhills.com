@@ -58,3 +58,20 @@ deploy:
 restart:
 	supervisorctl restart $(webapp_process)
 	supervisorctl status $(webapp_process)
+
+django_db := hth/jahhills.sqlite3
+data_dir := data
+data_db := $(data_dir)/hth.sqlite3
+
+.PHONY: datasette
+datasette: $(data_db)
+	datasette $(data_db)
+
+$(data_db): $(django_db)
+	rm -f $@
+	mkdir -p $(data_dir)
+	@for app in $(fixture_apps); do \
+		sql=".dump $${app}_%" ; \
+		echo $$sql ; \
+		sqlite3 $< "$$sql" | sqlite3 $@ ; \
+	done
