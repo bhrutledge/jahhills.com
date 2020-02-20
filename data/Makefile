@@ -3,7 +3,7 @@ PORT ?= 8001
 
 name := hth-datasette
 django_db := $(realpath $(CURDIR)/..)/hth/jahhills.sqlite3
-django_apps := music news shows
+data_sql := dump_apps.sql
 data_db := hth.sqlite3
 metadata := metadata.json
 
@@ -20,10 +20,6 @@ publish: $(data_db)
 		--install datasette-render-html \
 		$<
 
-$(data_db): $(django_db)
+$(data_db): $(django_db) $(data_sql)
 	rm -f $@
-	@for app in $(django_apps); do \
-		sql=".dump $${app}_%" ; \
-		echo $$sql ; \
-		sqlite3 $< "$$sql" | sqlite3 $@ ; \
-	done
+	sqlite3 $(django_db) <$(data_sql) | sqlite3 $@
