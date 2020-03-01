@@ -10528,5 +10528,17 @@
         "description": "<p>with <span class=\"performer\">Ladygod</span> and <span class=\"performer\">Gladshot</span></p>",
         "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-ladygod-gladshot-tickets-92996064733\">Tickets</a>, <a href=\"https://www.facebook.com/events/542528149940816/\">Facebook</a></p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 315,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-03-01T11:47:50.669Z",
+        "date": "2020-03-24",
+        "venue": 190,
+        "description": "<p>with <span class=\"performer\">Wussy</span></p>",
+        "details": "<p>7pm, $14, all ages\r\n<br />\r\n<a href=\"https://www.ticketweb.com/event/wussy-hallelujah-the-hills-sonia-tickets/10268695?REFID=clientsitewp>Tickets</a>,\r\n<a href=\"https://www.facebook.com/events/789174661582169/\">Facebook</a>\r\n</p>"
+    }
 }
 ]
