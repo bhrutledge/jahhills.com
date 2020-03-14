@@ -1354,7 +1354,7 @@
         "player_code": "",
         "description": "",
         "credits": "",
-        "lyrics": "<p>real good<br>\r\nmajor<br>\r\nplotlines<br>\r\ncoasting<br>\r\nbuilding<br>\r\ndanger<br>\r\nrescue<br>\r\nhomelife<br>\r\nevery single thing that I could think of<br>\r\nwe have the perimeter surrounded</p>\r\n\r\n<p>woody<br>\r\nguthrie<br>\r\nonce had<br>\r\na weird dream<br>\r\nhe fronted<br>\r\na punk band<br>\r\ncalled Exed Out<br>\r\nthey were amazing<br>\r\nevery single thing that I could think of<br>\r\nwe have the perimeter surrounded</p>\r\n\r\n<p>Twister!<br>\r\nOuija!<br>\r\nFault lines<br>\r\nfreebies!<br>\r\nStag films<br>\r\nmy maps<br>\r\nbookmarks<br>\r\n&amp; adoration<br>\r\nevery single thing that I could think of<br>\r\nwe have the perimeter surrounded</p>\r\n\r\n<p>you see, we were part of the light brigade<br>\r\ndumping wattage on hate parades<br>\r\ngetting dusked in the deep<br>\r\nthe crew was me and marty and carol too<br>\r\nwe didn't do what they told us to<br>\r\nwhich was part of the deal<br>\r\nbut now, when I think back on those days<br>\r\nI can't believe we behaved that way<br>\r\nyou know we could've been killed<br>\r\nlove, l-o-v-e-y-o-u<br>\r\ncould maybe do what it used to do<br>\r\nyou wanna give it a chance?</p>\r\n\r\n<p>real good<br>\r\nmajor<br>\r\nplotlines<br>\r\ncoasting<br>\r\nbuilding<br>\r\ndanger<br>\r\nrescue<br>\r\nhomelife<br>\r\nevery single thing that I could think of<br>\r\nwe have the perimeter surrounded</p>",
+        "lyrics": "<p>real good<br>\r\nmajor<br>\r\nplotlines<br>\r\ncoasting<br>\r\nbuilding<br>\r\ndanger<br>\r\nrescue<br>\r\nhomelife<br>\r\nevery single thing that I could think of<br>\r\nwe have the perimeter surrounded</p>\r\n\r\n<p>woody<br>\r\nguthrie<br>\r\nonce had<br>\r\na weird dream<br>\r\nhe fronted<br>\r\na punk band<br>\r\ncalled Exed Out<br>\r\nthey were amazing<br>\r\nevery single thing that I could think of<br>\r\nwe have the perimeter surrounded</p>\r\n\r\n<p>Twister!<br>\r\nOuija!<br>\r\nFault lines<br>\r\nfreebies!<br>\r\nStag films<br>\r\nmy maps<br>\r\nbookmarks<br>\r\n&amp; adoration<br>\r\nevery single thing that I could think of<br>\r\nwe have the perimeter surrounded</p>\r\n\r\n<p>you see, we were part of the light brigade<br>\r\ndumping wattage on hate parades<br>\r\ngetting dusked in the deep<br>\r\nthe crew was me and marty and carol two<br>\r\nwe didn't do what they told us to<br>\r\nwhich was part of the deal<br>\r\nbut now, when I think back on those days<br>\r\nI can't believe we behaved that way<br>\r\nyou know we could've been killed<br>\r\nlove, l-o-v-e-y-o-u<br>\r\ncould maybe do what it used to do<br>\r\nyou wanna give it a chance?</p>\r\n\r\n<p>real good<br>\r\nmajor<br>\r\nplotlines<br>\r\ncoasting<br>\r\nbuilding<br>\r\ndanger<br>\r\nrescue<br>\r\nhomelife<br>\r\nevery single thing that I could think of<br>\r\nwe have the perimeter surrounded</p>",
         "release": 12,
         "track": 2
     }
@@ -10489,7 +10489,7 @@
         "publish_on": "2020-02-05T23:07:56Z",
         "date": "2020-03-13",
         "venue": 196,
-        "description": "<p>with <span class=\"performer\">Gauche</span> and <span class=\"performer\">Boston Cream</span></p>",
+        "description": "",
         "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-w-boston-cream-tickets-93154360199\">Tickets</a>, <a href=\"https://www.facebook.com/events/1043302249357476/\">Facebook</a></p>"
     }
 },
@@ -10509,7 +10509,7 @@
     "model": "shows.gig",
     "pk": 313,
     "fields": {
-        "publish": true,
+        "publish": false,
         "publish_on": "2020-02-05T23:11:43Z",
         "date": "2020-03-15",
         "venue": 128,
