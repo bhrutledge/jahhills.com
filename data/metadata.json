@@ -13,9 +13,9 @@
         }
       },
       "queries": {
-        "gigs_per_venue": "select v.name as venue, v.city, count(g.id) as gigs, min(g.date) as first_show, max(g.date) as last_show, v.latitude, v.longitude from shows_gig as g join shows_venue as v on g.venue_id = v.id where g.publish and v.longitude < -70 group by v.id order by gigs desc, last_show desc",
-        "gigs_per_year": "select strftime('%Y', date) as year, count(id) as gigs from shows_gig where publish group by year",
-        "release_aggregates": "select r.title, strftime('%Y', r.date) as year, count(distinct s.id) as tracks, count(distinct v.id) as videos, count(distinct p.id) as press from music_release as r join music_song as s on s.release_id = r.id join music_video as v on v.release_id = r.id join music_press as p on p.release_id = r.id where r.publish and s.publish and v.publish and p.publish group by r.id order by r.date desc"
+        "gigs_per_venue": "select v.name as venue, v.city, count(g.id) as gigs, min(g.date) as first_show, max(g.date) as last_show, v.latitude, v.longitude from published_gigs as g join us_venues as v on g.venue_id = v.id group by v.id order by gigs desc, last_show desc",
+        "gigs_per_year": "select strftime('%Y', date) as year, count(id) as gigs from published_gigs group by year",
+        "release_aggregates": "select r.title, strftime('%Y', r.date) as year, count(distinct s.id) as tracks, count(distinct v.id) as videos, count(distinct p.id) as press from published_releases as r join published_songs as s on s.release_id = r.id join published_videos as v on v.release_id = r.id join published_press as p on p.release_id = r.id where r.publish group by r.id order by r.date desc"
       },
       "tables": {
         "sqlite_sequence": {

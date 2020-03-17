@@ -3,13 +3,14 @@ PORT ?= 8001
 
 name := hth-datasette
 django_db := $(realpath $(CURDIR)/..)/hth/jahhills.sqlite3
-data_sql := dump_apps.sql
+dump_sql := dump_apps.sql
+view_sql := create_views.sql
 data_db := hth.sqlite3
 metadata := metadata.json
 
 .PHONY: serve
 serve: $(data_db)
-	datasette --metadata $(metadata) --host $(HOST) --port $(PORT) $<
+	datasette --metadata $(metadata) --host $(HOST) --port $(PORT) $(data_db)
 
 .PHONY: publish
 publish: $(data_db)
@@ -18,8 +19,9 @@ publish: $(data_db)
 		--install datasette-vega \
 		--install datasette-cluster-map \
 		--install datasette-render-html \
-		$<
+		$(data_db)
 
-$(data_db): $(django_db) $(data_sql)
-	rm -f $@
-	sqlite3 $(django_db) <$(data_sql) | sqlite3 $@
+$(data_db): $(django_db) $(dump_sql) $(view_sql)
+	rm -f $(data_db)
+	sqlite3 $(django_db) <$(dump_sql) | sqlite3 $(data_db)
+	sqlite3 $(data_db) <$(view_sql)
