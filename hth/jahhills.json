@@ -10461,8 +10461,8 @@
     "model": "shows.gig",
     "pk": 309,
     "fields": {
-        "publish": true,
-        "publish_on": "2020-01-20T13:56:43.007Z",
+        "publish": false,
+        "publish_on": "2020-01-20T13:56:43Z",
         "date": "2020-04-04",
         "venue": 194,
         "description": "<p>with <span class=\"performer\">Eyelids</span></p>",
@@ -10521,7 +10521,7 @@
     "model": "shows.gig",
     "pk": 314,
     "fields": {
-        "publish": true,
+        "publish": false,
         "publish_on": "2020-02-05T23:12:58Z",
         "date": "2020-04-03",
         "venue": 150,
@@ -10533,8 +10533,8 @@
     "model": "shows.gig",
     "pk": 315,
     "fields": {
-        "publish": true,
-        "publish_on": "2020-03-01T11:47:50.669Z",
+        "publish": false,
+        "publish_on": "2020-03-01T11:47:50Z",
         "date": "2020-03-24",
         "venue": 190,
         "description": "<p>with <span class=\"performer\">Wussy</span></p>",
