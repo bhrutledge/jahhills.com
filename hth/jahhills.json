@@ -2350,7 +2350,7 @@
         "description": "",
         "credits": "<p>Special thanks to Joe Yoga and Neal Block for filming.</p>",
         "release": 15,
-        "priority": 1
+        "priority": null
     }
 },
 {
@@ -2367,7 +2367,7 @@
         "description": "<p>Much like the song, the video for \u201cRunning Hot With Fate\u201d is a collection of miniature short stories about a group of people. But whereas these stories were conveyed in the recording by way of the lyrics, here in the video, volumes are telegraphed via peoples\u2019 stares, subtle expressions, and the contours of their faces. 27 Boston musicians were cast in \u2018Fate\u2019 from a pool of artists whose careers collectively cover six decades of music.</p>\r\n\r\n<p>You can read more about the video, meet the Fates, and own a piece of Fate at <a href=\"https://www.runninghotwithfate.com/\">runninghotwithfate.com</a>.</p>",
         "credits": "<p>Directed &amp; edited by Tyler Hollis Derryberry\r\n<br />Concept/Produced by: Tyler Hollis Derryberry &amp; Ryan H. Walsh</p>",
         "release": 15,
-        "priority": 1
+        "priority": null
     }
 },
 {
@@ -2409,7 +2409,7 @@
     "pk": 38,
     "fields": {
         "publish": true,
-        "publish_on": "2020-02-05T23:16:05.586Z",
+        "publish_on": "2020-02-05T23:16:05Z",
         "title": "It Still Floors Me",
         "slug": "it-still-floors-me",
         "source_url": "https://www.youtube.com/watch?v=EVOTNzqwnRY",
@@ -2418,7 +2418,24 @@
         "description": "",
         "credits": "",
         "release": 15,
-        "priority": 1
+        "priority": null
+    }
+},
+{
+    "model": "music.video",
+    "pk": 39,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-04-11T18:28:15.004Z",
+        "title": "People Keep Dying (And No One Can Stop It)",
+        "slug": "people-keep-dying-and-no-one-can-stop-it",
+        "source_url": "https://www.youtube.com/watch?v=NkCTN-fUTTg",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/NkCTN-fUTTg?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "preview_url": "https://img.youtube.com/vi/NkCTN-fUTTg/sddefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": 15,
+        "priority": null
     }
 },
 {
