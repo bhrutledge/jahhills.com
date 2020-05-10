@@ -319,7 +319,7 @@ header.navigation {
         background: transparent;
         display: inline;
         margin: 0;
-        padding-left: 1.6rem;
+        padding-left: 0.8rem;
         width: auto; } }
     header.navigation ul li.navigation-link a {
       color: black;
