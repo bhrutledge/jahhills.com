@@ -442,6 +442,9 @@ header.navigation {
     margin-bottom: 1.6rem; }
     .navigation-page .container-header {
       display: none; }
+  .container-footer {
+    margin-top: 3.2rem;
+    clear: both; }
   @media screen and (min-width: 1080px) {
     .container {
       max-width: 972px;

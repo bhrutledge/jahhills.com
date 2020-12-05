@@ -26,6 +26,11 @@
         }
     }
 
+    &-footer {
+        margin-top: $large-spacing;
+        clear: both;
+    }
+
     @include media($xlarge-screen) {
         @include outer-container($xlarge-max-width);
 
