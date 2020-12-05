@@ -8,10 +8,8 @@ manage := $(python) manage.py
 fixture_apps := music news shows
 fixture := hth/jahhills.json
 
-webapp := jahhills_staging
+webapp := jahhills_static
 webapp_dir := webapps/$(webapp)
-webapp_branch := $(shell git rev-parse --abbrev-ref HEAD)
-webapp_process := $(notdir $(CURDIR))
 
 .PHONY: update
 update:
@@ -65,14 +63,4 @@ dist:
 
 .PHONY: deploy
 deploy:
-	ssh webfaction 'bash -l -c "\
-		cd $(webapp_dir) && \
-		git fetch && \
-		git checkout $(webapp_branch) && \
-		git merge --ff-only && \
-		make update restart"'
-
-.PHONY: restart
-restart:
-	supervisorctl restart $(webapp_process)
-	supervisorctl status $(webapp_process)
+	rsync -avz dist/ webfaction:$(webapp_dir)
