@@ -13,3 +13,4 @@ media
 .env
 .gunicorn
 .envrc
+dist/
