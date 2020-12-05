@@ -12,8 +12,9 @@ project_dir=${BASH_SOURCE%/*}
 # Need `exec` for `supervisorctl stop` to work
 exec "$project_dir/venv/bin/gunicorn" \
     --pythonpath "$project_dir" \
+    --env DEBUG=False \
     --env DJANGO_SETTINGS_MODULE=hth.settings \
-    --bind 127.0.0.01:$PORT \
+    --bind 127.0.0.01:"${PORT:=8000}" \
     --workers 4 \
     --access-logfile - \
     --error-logfile - \
