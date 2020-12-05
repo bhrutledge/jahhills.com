@@ -45,6 +45,24 @@ css:
 docs:
 	make -C docs html
 
+.PHONY: start
+start:
+	./start.sh
+
+# TODO: Fix 404s in content to avoid errors in wget
+.PHONY: dist
+dist:
+	rm -rf $@
+	-wget \
+		--no-verbose \
+		--directory-prefix $@ \
+		--no-host-directories \
+		--recursive \
+		--max-redirect=0 \
+		--adjust-extension \
+		--retry-connrefused \
+		http://localhost:$(PORT)
+
 .PHONY: deploy
 deploy:
 	ssh webfaction 'bash -l -c "\
