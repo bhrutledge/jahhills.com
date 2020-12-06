@@ -47,13 +47,12 @@ docs:
 start:
 	./start.sh
 
-# TODO: Add missing trailing slashes to content that cause redirects
-# Without --max-redirect, this can yield spurious .html files
-# With --max-redirect, wget exits with an error that can be ignored
+# Using --max-redirect=0 to catch missing trailing slashes,
+# which cause redirects, which yield spurious .html files
 .PHONY: dist
 dist:
 	rm -rf $@
-	-wget \
+	wget \
 		--no-verbose \
 		--directory-prefix=$@ \
 		--no-host-directories \
