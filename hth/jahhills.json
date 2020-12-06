@@ -19,7 +19,7 @@
     "model": "music.release",
     "pk": 2,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2008-04-08T12:25:04Z",
         "title": "Prepare To Qualify EP",
         "slug": "prepare-to-qualify",
@@ -4075,7 +4075,7 @@
         "publish_on": "2008-04-08T22:48:50Z",
         "title": "Are You Preparified?",
         "slug": "are-you-preparified",
-        "body": "<p>Today we are proud to unveil the <a href=\"/discography/prepare-to-qualify\">Prepare To Qualify EP</a> for free download for all who wish to hear it.  You may have heard some of these songs before when they first trickled out online but we strongly suggest you trash those MP3's and grab this today.  Since then we've had them properly mastered by Jeff Lipton over at <a href=\"http://peerlessmastering.com/splash/\">Peerless Mastering</a>, added two never-before-heard tracks, and lovingly sequenced it into this pocket-sized challenger.  We'll also have hard copies for sale at shows.  Please enjoy it as we spend the summer playing some shows and recording album #2.</p> \n"
+        "body": "<p>Today we are proud to unveil the <a href=\"/music/prepare-to-qualify\">Prepare To Qualify EP</a> for free download for all who wish to hear it.  You may have heard some of these songs before when they first trickled out online but we strongly suggest you trash those MP3's and grab this today.  Since then we've had them properly mastered by Jeff Lipton over at <a href=\"http://peerlessmastering.com/splash/\">Peerless Mastering</a>, added two never-before-heard tracks, and lovingly sequenced it into this pocket-sized challenger.  We'll also have hard copies for sale at shows.  Please enjoy it as we spend the summer playing some shows and recording album #2.</p> \n"
     }
 },
 {
@@ -4097,7 +4097,7 @@
         "publish_on": "2008-02-18T23:07:47Z",
         "title": "I Am Writing This Under Duress, All Of My Lies Will Be Presented As Truths",
         "slug": "i-am-writing-under-duress-all-my-lies-will-be-pres",
-        "body": "<p>Dear Country, we are touring inside of you for most of March.  Please let us seamlessly graft ourselves to your innards in each city.  Thank you country.</p>\n\n<p>The <a href=\"/live/\">Unifying Monsters Tour</a> will shake your feet directly down into the silt forever and always.  We mean that in the best possible way. SXSW, Daytrotter, shows with Evangelicals, and a plethora of other highlights: Come see it!</p>\n\n<p>Thanks to everyone who watched us perform <i>Collective Psychosis Begone</i> in its entirety last month at The Middle East Upstairs.  It was one of our favorite nights of playing music (like, ever). It's been summed up quite nicely <a href=\"http://bostonmusicspotlight.com/article.php?id=733\">here</a> and <a href=\"http://www.performermag.com/nep.livereviews.0802.php\">here</a> (scroll down); for maximum effect, read those slowly or repeatedly while listening to the <a href=\"/calendar/2008-01-04\">recording of the set</a>.</p>\n"
+        "body": "<p>Dear Country, we are touring inside of you for most of March.  Please let us seamlessly graft ourselves to your innards in each city.  Thank you country.</p>\n\n<p>The <a href=\"/live/\">Unifying Monsters Tour</a> will shake your feet directly down into the silt forever and always.  We mean that in the best possible way. SXSW, Daytrotter, shows with Evangelicals, and a plethora of other highlights: Come see it!</p>\n\n<p>Thanks to everyone who watched us perform <i>Collective Psychosis Begone</i> in its entirety last month at The Middle East Upstairs.  It was one of our favorite nights of playing music (like, ever). It's been summed up quite nicely <a href=\"http://bostonmusicspotlight.com/article.php?id=733\">here</a> and <a href=\"http://www.performermag.com/nep.livereviews.0802.php\">here</a> (scroll down); for maximum effect, read those slowly or repeatedly while listening to the <a href=\"https://hallelujahthehills.bandcamp.com/album/bootleg-collective-psychosis-begone-live-1-4-2008-the-middle-east\">recording of the set</a>.</p>\n"
     }
 },
 {
@@ -4108,7 +4108,7 @@
         "publish_on": "2007-11-03T23:14:29Z",
         "title": "Do I have to come right flat out and tell you everything?",
         "slug": "do-i-have-come-right-flat-out-and-tell-you-everyth",
-        "body": "<p>We've been back from tour for two weeks, and that's how long it seems to take before we've entirely acclimated to real life.  In place of a tour summary or photo-journal, Ryan has put together an <a href=\"/calendar/down-with-intentions-to-climb#downloads\">audio collage</a> of actual sounds heard during our trek.  If you must feed your hungry eyes, you can head over to Flickr to see not <a href=\"http://www.flickr.com/photos/annierock/1776714025/in/set-72157602653403930/\">one</a>, but <a href=\"http://www.flickr.com/photos/hailmaryny/1640240297/in/set-72157602534823514/\">two</a> photo sets of our CMJ show.  Ten days is really too short a time to be traveling amongst the all fascinating cities and clubs and bands and people in this country. Discussions are already underway for a spring adventure.</p>\n"
+        "body": "<p>We've been back from tour for two weeks, and that's how long it seems to take before we've entirely acclimated to real life.  In place of a tour summary or photo-journal, Ryan has put together an <a href=\"https://hallelujahthehills.bandcamp.com/track/audio-diary-tour-collage-2007\">audio collage</a> of actual sounds heard during our trek.  If you must feed your hungry eyes, you can head over to Flickr to see not <a href=\"http://www.flickr.com/photos/annierock/1776714025/in/set-72157602653403930/\">one</a>, but <a href=\"http://www.flickr.com/photos/hailmaryny/1640240297/in/set-72157602534823514/\">two</a> photo sets of our CMJ show.  Ten days is really too short a time to be traveling amongst the all fascinating cities and clubs and bands and people in this country. Discussions are already underway for a spring adventure.</p>\n"
     }
 },
 {
