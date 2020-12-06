@@ -33,7 +33,6 @@ Recompile CSS on Sass changes with `make css`.
 ## Production infrastructure
 
 - Hosted on [Webfaction](https://www.webfaction.com)
-- Managed by [Supervisor](http://supervisord.org/index.html)
 - HTTPS via [Let's Encrypt](https://letsencrypt.org)
 - Monitoring via [UptimeRobot](https://uptimerobot.com)
 
@@ -45,6 +44,10 @@ Dump local content changes with `make dumpdata`.
 
 Commit and push to GitHub.
 
-Update web host and restart server with `make deploy webapp=jahhills`.
+Update the environment with `make update`.
+
+Build the static HTML with `make dist`
+
+Deploy the static HTML with `make deploy`
 
 Publish the data with `make -C data publish`.

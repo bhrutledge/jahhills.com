@@ -57,11 +57,11 @@ serve-wsgi:
 
 # Using --max-redirect=0 to catch missing trailing slashes,
 # which cause redirects, which yield spurious .html files
-.PHONY: dist
-dist:
-	rm -rf $@
+.PHONY: static
+html:
+	rm -rf dist
 	wget --no-verbose \
-		--directory-prefix=$@ \
+		--directory-prefix=dist \
 		--no-host-directories \
 		--recursive \
 		--level=inf \
@@ -70,6 +70,12 @@ dist:
 		--retry-connrefused \
 		--execute robots=off \
 		http://$(HOST):$(PORT)
+
+.PHONY: dist
+dist:
+	set -e ;\
+	make serve-wsgi & make html ;\
+	kill % ; wait
 
 .PHONY: serve-dist
 serve-dist:
