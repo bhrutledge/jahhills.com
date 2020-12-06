@@ -12,6 +12,10 @@ webhost := webfaction
 webapp := jahhills_static
 webapp_dir := webapps/$(webapp)
 
+keyfile := .localhost-key.pem
+certfile := .localhost.pem
+certnames := localhost $(HOST)
+
 .PHONY: update
 update:
 	make -C requirements install
@@ -45,15 +49,20 @@ docs:
 	make -C docs html
 
 .PHONY: serve-wsgi
-serve-wsgi:
+serve-wsgi: $(keyfile) $(certfile)
 	$(bin)/gunicorn \
 		--env DEBUG=False \
 		--env DJANGO_SETTINGS_MODULE=hth.settings \
 		--bind $(HOST):$(PORT) \
+		--keyfile $(keyfile) \
+		--certfile $(certfile) \
 		--workers 4 \
 		--access-logfile - \
 		--error-logfile - \
 		hth.wsgi:application
+
+$(keyfile):
+	mkcert -key-file $(keyfile) -cert-file $(certfile) $(certnames)
 
 # Using --max-redirect=0 to catch missing trailing slashes,
 # which cause redirects, which yield spurious .html files
@@ -69,7 +78,7 @@ html:
 		--max-redirect=0 \
 		--retry-connrefused \
 		--execute robots=off \
-		http://$(HOST):$(PORT)
+		https://$(HOST):$(PORT)
 
 .PHONY: dist
 dist:
