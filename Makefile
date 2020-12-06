@@ -47,18 +47,22 @@ docs:
 start:
 	./start.sh
 
-# TODO: Fix 404s in content to avoid errors in wget
+# TODO: Add missing trailing slashes to content that cause redirects
+# Without --max-redirect, this can yield spurious .html files
+# With --max-redirect, wget exits with an error that can be ignored
 .PHONY: dist
 dist:
 	rm -rf $@
 	-wget \
 		--no-verbose \
-		--directory-prefix $@ \
+		--directory-prefix=$@ \
 		--no-host-directories \
 		--recursive \
-		--max-redirect=0 \
+		--level=inf \
 		--adjust-extension \
+		--max-redirect=0 \
 		--retry-connrefused \
+		--execute robots=off \
 		http://localhost:$(PORT)
 
 .PHONY: deploy
