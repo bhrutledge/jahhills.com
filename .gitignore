@@ -15,3 +15,4 @@ media
 .envrc
 dist/
 *.pem
+.netlify
