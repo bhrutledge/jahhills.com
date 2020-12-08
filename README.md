@@ -44,8 +44,6 @@ Dump local content changes with `make dumpdata`.
 
 Commit and push to GitHub.
 
-Update the environment with `make update`.
-
 Build the static HTML with `make dist`
 
 Deploy the static HTML with `make deploy`

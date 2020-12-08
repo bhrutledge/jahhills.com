@@ -83,6 +83,7 @@ html:
 .PHONY: dist
 dist:
 	set -e ;\
+	make update ;\
 	make serve-wsgi & make html ;\
 	kill % ; wait
 
