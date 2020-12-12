@@ -8,13 +8,13 @@ manage := $(python) manage.py
 fixture_apps := music news shows
 fixture := hth/jahhills.json
 
-webhost := webfaction
-webapp := jahhills_static
-webapp_dir := webapps/$(webapp)
-
 keyfile := .localhost-key.pem
 certfile := .localhost.pem
 certnames := localhost $(HOST)
+
+# This and `make deploy` have been replaced by `netlify deploy`
+# Leaving them in as an example for rsync-based deployment
+webhost := webfaction:webapps/jahhills_static
 
 .PHONY: update
 update:
@@ -48,6 +48,7 @@ css:
 docs:
 	make -C docs html
 
+# Serving via https:// to ensure that Cloudinary URLS are https://
 .PHONY: serve-wsgi
 serve-wsgi: $(keyfile) $(certfile)
 	$(bin)/gunicorn \
@@ -61,9 +62,11 @@ serve-wsgi: $(keyfile) $(certfile)
 		--error-logfile - \
 		hth.wsgi:application
 
+# See macOS gotcha: https://github.com/FiloSottile/mkcert/issues/199
 $(keyfile):
 	mkcert -key-file $(keyfile) -cert-file $(certfile) $(certnames)
 
+# Inspired by https://apex.sh/blog/post/pre-render-wget/
 # Using --max-redirect=0 to catch missing trailing slashes,
 # which cause redirects, which yield spurious .html files
 .PHONY: static
@@ -96,4 +99,4 @@ serve-dist:
 .PHONY: deploy
 deploy:
 	rsync --archive --compress --verbose \
-		dist/ $(webhost):$(webapp_dir)
+		dist/ $(webhost)
