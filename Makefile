@@ -69,23 +69,30 @@ $(keyfile):
 # Inspired by https://apex.sh/blog/post/pre-render-wget/
 # Using --max-redirect=0 to catch missing trailing slashes,
 # which cause redirects, which yield spurious .html files
-.PHONY: static
-html:
-	rm -rf dist
-	wget --no-verbose \
+wget := wget --no-verbose \
 		--directory-prefix=dist \
 		--no-host-directories \
-		--recursive \
-		--level=inf \
 		--adjust-extension \
-		--max-redirect=0 \
 		--retry-connrefused \
-		--execute robots=off \
-		https://$(HOST):$(PORT)
+		--max-redirect=0
+
+server := https://$(HOST):$(PORT)
+
+.PHONY: html
+html: 404
+	$(wget) --recursive --level=inf --execute robots=off $(server)
+
+# Ignoring expected 404 error from wget, but letting others through
+.PHONY: 404
+404:
+	error=`$(wget) --content-on-error $(server)/404 2>&1` ;\
+	code=$$? ;\
+	[[ $$error =~ "ERROR 404" ]] || ( echo $$error; exit $$code )
 
 .PHONY: dist
 dist:
 	set -e ;\
+	rm -rf dist ;\
 	make update ;\
 	make serve-wsgi & make html ;\
 	kill % ; wait
