@@ -1,0 +1,37 @@
+[build]
+  publish = "dist/"
+
+[dev]
+  port = 8000
+
+[[redirects]]
+  from = "/calendar/*"
+  to = "/live/"
+
+[[redirects]]
+  from = "/music/releases/*"
+  to = "/music/:splat"
+
+[[redirects]]
+  from = "/music/songs/*"
+  to = "/songs/:splat"
+
+[[redirects]]
+  from = "/iu-advance"
+  to = "/music/im-you/"
+
+[[redirects]]
+  from = "/abistfo"
+  to = "/music/a-band-is-something-to-figure-out/"
+
+[[redirects]]
+  from = "/hyedse"
+  to = "/music/have-you-ever-done-something-evil/"
+
+[[redirects]]
+  from = "/nokwhn"
+  to = "/music/no-one-knows-what-happens-next/"
+
+[[redirects]]
+  from = "/portrait"
+  to = "/music/portrait/"

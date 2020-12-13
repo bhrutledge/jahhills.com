@@ -13,3 +13,6 @@ media
 .env
 .gunicorn
 .envrc
+dist/
+*.pem
+.netlify
