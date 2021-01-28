@@ -107,3 +107,7 @@ serve-dist:
 deploy:
 	rsync --archive --compress --verbose \
 		dist/ $(webhost)
+
+.PHONY: clean
+clean:
+	rm -rf dist staticfiles $(keyfile) $(certfile)

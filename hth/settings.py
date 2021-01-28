@@ -16,15 +16,15 @@ project_root = environ.Path(__file__) - 2
 src_root = project_root.path('hth')
 
 env = environ.Env(
-    DEBUG=(bool, False)
+    DEBUG=(bool, False),
+    TESTING=(bool, 'pytest' in sys.argv[0]),
 )
 env.read_env()
 
+DEBUG = env('DEBUG')
+TESTING = env('TESTING')
 
 # Application definition
-
-DEBUG = env('DEBUG')
-TESTING = 'pytest' in sys.argv[0]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
