@@ -14,9 +14,9 @@ Anyone is welcome to [explore the data](./data/README.md).
 
 Clone this repo.
 
-Copy `hth/.env.example` to `hth/.env`, then edit to set values.
+Copy `hth/.env.example` to `hth/.env`, then edit to set the values.
 
-Set environment variable `DEBUG=True`, e.g. using [direnv](https://direnv.net/).
+Enable development mode with `export DEBUG=True` (use [direnv](https://direnv.net/) for persistence).
 
 Bootstrap the environment with `make`.
 

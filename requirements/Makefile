@@ -23,7 +23,7 @@ check: $(venv)
 
 $(venv):
 	python3 -m venv $@
-	$(bin)/pip install --upgrade setuptools pip pip-tools
+	$(bin)/pip install --upgrade setuptools pip wheel pip-tools
 
 .PHONY: help
 help:
