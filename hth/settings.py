@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 
 import environ
+import sys
 
 project_root = environ.Path(__file__) - 2
 src_root = project_root.path('hth')
@@ -23,6 +24,7 @@ env.read_env()
 # Application definition
 
 DEBUG = env('DEBUG')
+TESTING = 'pytest' in sys.argv[0]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -107,7 +109,13 @@ DATE_FORMAT = 'M j, Y'
 
 STATIC_URL = '/static/'
 STATIC_ROOT = project_root('staticfiles')
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = (
+    'whitenoise.storage.CompressedManifestStaticFilesStorage'
+    # https://docs.djangoproject.com/en/1.11/ref/contrib/staticfiles/#django.contrib.staticfiles.storage.ManifestStaticFilesStorage.manifest_strict
+    # https://stackoverflow.com/a/58299776/3188289
+    if not TESTING else
+    'django.contrib.staticfiles.storage.StaticFilesStorage'
+)
 STATICFILES_DIRS = [
     src_root('static'),
 ]
