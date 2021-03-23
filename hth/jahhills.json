@@ -2439,6 +2439,57 @@
     }
 },
 {
+    "model": "music.video",
+    "pk": 40,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-10-20T12:45:50Z",
+        "title": "The Memory Tree",
+        "slug": "memory-tree",
+        "source_url": "https://www.youtube.com/watch?v=3TocIodnAZw",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/3TocIodnAZw?wmode=opaque\" seamless allowfullscreen></iframe>",
+        "preview_url": "https://img.youtube.com/vi/3TocIodnAZw/sddefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": 15,
+        "priority": null
+    }
+},
+{
+    "model": "music.video",
+    "pk": 41,
+    "fields": {
+        "publish": true,
+        "publish_on": "2021-03-05T12:48:00Z",
+        "title": "This is More of a Comet Than a Quasar",
+        "slug": "this-is-more-of-a-comet-than-a-quasar",
+        "source_url": "https://www.youtube.com/watch?v=e5yHERMtSIQ",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/e5yHERMtSIQ?wmode=opaque\" seamless allowfullscreen></iframe>",
+        "preview_url": "https://img.youtube.com/vi/e5yHERMtSIQ/sddefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": null,
+        "priority": null
+    }
+},
+{
+    "model": "music.video",
+    "pk": 42,
+    "fields": {
+        "publish": true,
+        "publish_on": "2020-07-13T12:49:51Z",
+        "title": "WERS [Live]",
+        "slug": "wers-live",
+        "source_url": "https://www.youtube.com/watch?v=ZKmLLi3sufU",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/ZKmLLi3sufU?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "preview_url": "https://img.youtube.com/vi/ZKmLLi3sufU/maxresdefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": null,
+        "priority": null
+    }
+},
+{
     "model": "music.press",
     "pk": 4,
     "fields": {
@@ -4032,6 +4083,62 @@
         "body": "This rock thing ain\u2019t so bad, especially if it\u2019s done by one of the finest American rock bands. Such a great record.",
         "quote": true,
         "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 142,
+    "fields": {
+        "publish": true,
+        "publish_on": "2021-03-23T12:53:52.535Z",
+        "title": "Vanyaland",
+        "date": "2020-09-04",
+        "source_url": "https://vanyaland.com/2020/09/04/hallelujah-the-hills-prescribe-a-spontaneous-single-to-help-save-great-scott/",
+        "body": "Despite being completed during such a short spell, \u201cPopular Anti\u200b-\u200bDepressants of the 21st Century\u201d still authentically bears the burden of 2020\u2019s constant mourning.",
+        "quote": true,
+        "release": null
+    }
+},
+{
+    "model": "music.press",
+    "pk": 143,
+    "fields": {
+        "publish": true,
+        "publish_on": "2021-03-23T12:57:55Z",
+        "title": "Boing Boing",
+        "date": "2020-10-30",
+        "source_url": "https://boingboing.net/2020/10/30/a-wonderfully-eerie-stop-motion-silent-film-about-a-ghost-falling-through-the-multiverse.html",
+        "body": "The stop-motion music video for their song \"The Memory Tree\"&hellip;is a genuine joy, with the song acting as a perfect as a swelling score.",
+        "quote": true,
+        "release": 15
+    }
+},
+{
+    "model": "music.press",
+    "pk": 144,
+    "fields": {
+        "publish": true,
+        "publish_on": "2021-03-23T13:02:18Z",
+        "title": "Vanyaland",
+        "date": "2021-03-12",
+        "source_url": "https://vanyaland.com/2021/03/12/the-last-show-hallelujah-the-hills-at-club-603-in-baltimore/",
+        "body": "We talk to [Hallelujah The Hills] about their last traditional live appearance before the pandemic hit.",
+        "quote": true,
+        "release": null
+    }
+},
+{
+    "model": "music.press",
+    "pk": 145,
+    "fields": {
+        "publish": true,
+        "publish_on": "2021-03-23T13:07:05.083Z",
+        "title": "These Subtle Sounds",
+        "date": "2021-03-14",
+        "source_url": "https://thesesubtlesounds.com/fine-but-not-okay-with-hallelujah-the-hills/",
+        "body": "Hallelujah the Hills brings a constant raucousness to their shows, a nonstop thread of energy and exultation that cannot help but filter through all the noise, to break right into the moment and carry an entire audience on their sonic shoulders.",
+        "quote": true,
+        "release": null
     }
 },
 {
