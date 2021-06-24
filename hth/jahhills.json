@@ -4714,6 +4714,17 @@
     }
 },
 {
+    "model": "news.post",
+    "pk": 53,
+    "fields": {
+        "publish": true,
+        "publish_on": "2021-06-24T06:00:00Z",
+        "title": "Return and Recap",
+        "slug": "return-and-recap",
+        "body": "<p>Hi, sorry for the 18 month gap between news posts, but a global pandemic really disrupted life as we know it in ways we don't even understand yet, and probably won't for awhile! We hope you've been safe and healthy and if you lost someone, like so many did, we'd like to offer our sincerest condolences.</p>\r\n\r\n<p>We'll recap what we did during the down time, but first, here's the new news:</p>\r\n\r\n<ul>\r\n    <li><p>Kill Rock Stars asked us to cover any song from their catalog to celebrate their 30th Anniversary as a label. We chose Marnie Stern's \"Year of the Glad.\" <a href=\"https://ffm.to/yearoftheglad\">Take a listen</a>.</p></li>\r\n\r\n    <li>\r\n        <p>After our longest break from performing ever, we wanted to return to live shows in the most interesting way possible. We settled on this:</p>\r\n\r\n        <p>\r\n            Saturday, July 17, 2021 @ 6PM<br>\r\n            HTH Live in front of the USS Constitution<br>\r\n            Charlestown, MA<br>\r\n            Free! <a href=\"\">RSVP for reminders</a>.\r\n        </p>\r\n    </li>\r\n</ul>\r\n\r\n<p>And here's that promised re-cap of what happened in between:</p>\r\n\r\n<p>\r\n    We were right in the middle of getting going touring the <a href=\"https://www.hallelujahthehills.com/news/im-you-is-all-yours/\"><cite>I'm You</cite> record</a> when COVID sent us all back home. Before the pandemic, we had never gone more than 3 or 4 weeks without a practice since late 2005, so we had to find new inventive ways to keep connected, working, and busy, like:\r\n\r\n    a <a href=\"https://www.hallelujahthehills.com/video/people-keep-dying-and-no-one-can-stop-it/\">quarantine-tinged video</a> for \"People Keep Dying\",\r\n    a <a href=\"https://hallelujahthehills.bandcamp.com/album/bootleg-rock-n-roll-improved-my-chemistry-live-3-13-20\">live album</a> from the brief <cite>I'm You</cite> tour,\r\n    a <a href=\"https://hallelujahthehills.bandcamp.com/album/folk-music-is-insane-the-im-you-demos-2020\">deconstruction of <cite>I'm You</cite></a> showing how demos become the finished record via an extended audio collage,\r\n    a <a href=\"https://hallelujahthehills.bandcamp.com/track/popular-anti-depressants-of-the-21st-century-2020-single\">new song</a> recorded remotely to raise money for the staff of Great Scott,\r\n    an elaborate <a href=\"https://www.hallelujahthehills.com/video/memory-tree/\">stop-motion animation video</a> for \"The Memory Tree,\"\r\n    <a href=\"https://open.spotify.com/playlist/7jBQIPecsUTQZUMEVyljMj\">Ryan solo songs</a>,\r\n    a <a href=\"https://hallelujahthehills.bandcamp.com/album/bootleg-the-oldest-recorded-song-in-music-history-live-1-21-20\">duo live show recording</a>,\r\n    a <a href=\"https://hallelujahthehills.bandcamp.com/album/the-world-is-most-certainly-haunted-and-i-am-one-of-its-best-ghosts-halloween-2020-mix-tape\">Halloween mix-tape</a>, \r\n    and finally, an <a href=\"https://hallelujahthehills.bandcamp.com/album/songs-for-npr-segues-2021-ep\">experimental EP</a> we recorded remotely and ironically titled <cite>Songs for NPR Segues</cite> (because they were too noisy and weird for NPR to use, get it?!).\r\n</p>\r\n\r\n<p>And what about what's next? Stay tuned.</p>"
+    }
+},
+{
     "model": "shows.venue",
     "pk": 1,
     "fields": {
@@ -7051,6 +7062,18 @@
         "address": "1508 North Capitol St NW, Washington, DC 20002",
         "latitude": 38.909977,
         "longitude": -77.009462
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 197,
+    "fields": {
+        "name": "USS Constitution",
+        "city": "Charlestown, MA",
+        "website": "https://www.navy.mil/USS-CONSTITUTION/",
+        "address": "",
+        "latitude": 42.3739835,
+        "longitude": -71.0576126
     }
 },
 {
@@ -10663,6 +10686,18 @@
         "venue": 190,
         "description": "<p>with <span class=\"performer\">Wussy</span></p>",
         "details": "<p>7pm, $14, all ages\r\n<br />\r\n<a href=\"https://www.ticketweb.com/event/wussy-hallelujah-the-hills-sonia-tickets/10268695?REFID=clientsitewp>Tickets</a>,\r\n<a href=\"https://www.facebook.com/events/789174661582169/\">Facebook</a>\r\n</p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 316,
+    "fields": {
+        "publish": true,
+        "publish_on": "2021-06-24T00:54:10Z",
+        "date": "2021-07-17",
+        "venue": 197,
+        "description": "<p><strong>The live return of Hallelujah the Hills</strong>\r\n<br>with <span class=\"performer\">Kenny Benda</span></p>",
+        "details": "<p>Free, all ages, 6pm\r\n<br><a href=\"https://www.navy.mil/USS-CONSTITUTION/Hours-Visitor-Info/\">Visitor info</a>\r\n</p>"
     }
 }
 ]
