@@ -2,12 +2,30 @@
 {% load cloudinary %}
 
 {% block main_content %}
+<section style="max-width: 800px; margin: auto">
+    <div class="embed embed-responsive large-spacing">
+        <iframe
+            src="https://www.youtube.com/embed/bnDDqI2j1Ok"
+            title="I'm You vinyl campaign trailer"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</section>
+<!--
 <figure class="hero-img large-spacing">
     <img src="{% cloudinary_url 'hth_20210613.jpg' width=972 %}" alt="Photo of HTH smiling after indoor rehearsal">
     <figcaption>
         <small>June 13th, 2021: First indoor rehearsal since March 2020.</small>
     </figcaption>
 </figure>
+-->
+
+<section id="news" class="container">
+    <h2><a href="{% url 'post_list' %}">News</a></h2>
+
+    {% include 'news/_post_highlight.html' %}
+</section>
 
 <section id="shows" class="container">
     <h2><a href="{% url 'gig_list' %}">Live</a></h2>
@@ -15,12 +33,6 @@
     <div class="gig-list">
         {% include 'shows/_gig_upcoming.html' %}
     </div>
-</section>
-
-<section id="news" class="container">
-    <h2><a href="{% url 'post_list' %}">News</a></h2>
-
-    {% include 'news/_post_highlight.html' %}
 </section>
 
 <section id="music" class="container">
