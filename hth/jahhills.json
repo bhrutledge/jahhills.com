@@ -7088,6 +7088,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 198,
+    "fields": {
+        "name": "The Center for the Arts at the Armory",
+        "city": "Somerville, MA",
+        "website": "",
+        "address": "",
+        "latitude": 42.389793208635716,
+        "longitude": -71.10611431762732
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -10733,6 +10745,18 @@
         "venue": 128,
         "description": "<p>with <span class=\"performer\">Ladygod</span> and <span class=\"performer\">Gladshot</span></p>",
         "details": "<p>\r\n<a href=\"https://dice.fm/partner/loop-de-lou-production-corp-dba-union-pool/event/9y9r7-hallelujah-the-hills-ladygod-gladshot-22nd-oct-union-pool-new-york-tickets\">Tickets</a>\r\n</p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 319,
+    "fields": {
+        "publish": true,
+        "publish_on": "2021-11-06T22:31:27.004Z",
+        "date": "2021-11-14",
+        "venue": 198,
+        "description": "<p>HTH Duo with <span class=\"performer\">Tobin Sprout</span></p>",
+        "details": "<p><a href=\"https://www.eventbrite.com/e/tobin-sprout-whallelujah-the-hills-tickets-188730898197?aff=aff0songkick&uid=&sk_eid=39959989\">Tickets</a></p>"
     }
 }
 ]
