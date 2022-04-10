@@ -7100,6 +7100,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 199,
+    "fields": {
+        "name": "Crystal Ballroom",
+        "city": "Somerville, MA",
+        "website": "https://www.crystalballroomboston.com/",
+        "address": "",
+        "latitude": 42.3967479,
+        "longitude": -71.1251162
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -10757,6 +10769,30 @@
         "venue": 198,
         "description": "<p>HTH Duo with <span class=\"performer\">Tobin Sprout</span></p>",
         "details": "<p><a href=\"https://www.eventbrite.com/e/tobin-sprout-whallelujah-the-hills-tickets-188730898197?aff=aff0songkick&uid=&sk_eid=39959989\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 320,
+    "fields": {
+        "publish": true,
+        "publish_on": "2022-04-10T14:14:22.356Z",
+        "date": "2022-06-02",
+        "venue": 150,
+        "description": "<p>with <span class=\"performer\">Adam Schatz (Landlady)</span></p>",
+        "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-landlady-solo-tickets-311587375227\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 321,
+    "fields": {
+        "publish": true,
+        "publish_on": "2022-04-10T14:23:26.399Z",
+        "date": "2022-07-30",
+        "venue": 199,
+        "description": "<p><strong><a href=\"https://www.niceafest.com/\">NICE, a fest</a></strong>\r\n<br>with many amazing local bands and musicians!</p>",
+        "details": "<p><a href=\"https://musicspace.xyz/nice/\">Tickets</a></p>"
     }
 }
 ]
