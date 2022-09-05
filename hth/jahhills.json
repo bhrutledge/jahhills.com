@@ -2493,8 +2493,8 @@
     "model": "music.video",
     "pk": 43,
     "fields": {
-        "publish": false,
-        "publish_on": "2022-09-05T09:26:17Z",
+        "publish": true,
+        "publish_on": "2022-09-05T00:00:00Z",
         "title": "Superglued to You",
         "slug": "superglued-to-you",
         "source_url": "https://youtu.be/UHsepV9olDk",
@@ -2510,7 +2510,7 @@
     "model": "music.video",
     "pk": 44,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2022-09-09T00:00:00Z",
         "title": "God is So Lonely Tonight",
         "slug": "god-is-so-lonely-tonight",
@@ -4179,7 +4179,7 @@
     "model": "music.press",
     "pk": 146,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2022-09-09T00:00:00Z",
         "title": "If It's Too Loud",
         "date": "2022-07-14",
@@ -4193,7 +4193,7 @@
     "model": "music.press",
     "pk": 147,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2022-09-09T00:00:00Z",
         "title": "Rosy Overdrive",
         "date": "2022-08-08",
@@ -4207,7 +4207,7 @@
     "model": "music.press",
     "pk": 148,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2022-09-09T00:00:00Z",
         "title": "Glorious Noise",
         "date": "2022-09-13",
@@ -4843,7 +4843,7 @@
     "model": "news.post",
     "pk": 55,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2022-09-09T00:00:00Z",
         "title": "Put on some coffee. Break time is over.",
         "slug": "put-on-some-coffee",
