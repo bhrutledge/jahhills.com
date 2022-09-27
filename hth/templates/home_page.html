@@ -2,7 +2,7 @@
 {% load cloudinary %}
 
 {% block main_content %}
-<!--
+{% comment %}
 <section style="max-width: 800px; margin: auto">
     <div class="embed embed-responsive large-spacing">
         <iframe
@@ -13,19 +13,19 @@
             allowfullscreen></iframe>
     </div>
 </section>
--->
+{% endcomment %}
 <figure class="hero-img large-spacing">
-    <a href="https://hallelujahthehills.bandcamp.com">
+    <a href="http://HillsDeck.com">
     <img
-        src="{% cloudinary_url '202209_singles_banner.jpg' width=1280 %}"
-        alt="September 2022 singles banner"
+        src="{% cloudinary_url '202209_deck_banner.jpg' width=1280 %}"
+        alt="DECK Patreon banner"
     />
     </a>
-    <!--
+    {% comment %}
     <figcaption>
         <small>June 13th, 2021: First indoor rehearsal since March 2020.</small>
     </figcaption>
-    -->
+    {% endcomment %}
 </figure>
 
 <section id="shows" class="container">
@@ -36,16 +36,16 @@
     </div>
 </section>
 
-<section id="video" class="container">
-    <h2><a href="{% url 'video_list' %}">Video</a></h2>
-
-    {% include 'music/_video_highlight.html' %}
-</section>
-
 <section id="news" class="container">
     <h2><a href="{% url 'post_list' %}">News</a></h2>
 
     {% include 'news/_post_highlight.html' %}
+</section>
+
+<section id="video" class="container">
+    <h2><a href="{% url 'video_list' %}">Video</a></h2>
+
+    {% include 'music/_video_highlight.html' %}
 </section>
 
 <section id="music" class="container">

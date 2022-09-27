@@ -4851,6 +4851,17 @@
     }
 },
 {
+    "model": "news.post",
+    "pk": 56,
+    "fields": {
+        "publish": true,
+        "publish_on": "2022-09-27T10:17:34Z",
+        "title": "Introducing DECK, a 52 song album!",
+        "slug": "introducing-deck",
+        "body": "<div class=\"embed embed-responsive\">\r\n<iframe src=\"https://www.youtube.com/embed/h1aUd0mActY?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\r\n</div>\r\n\r\n<p>Greetings! We are setting out to create a 52 song album entitled <cite>DECK</cite> with one song for every card in a deck of playing cards. The <a href=\"https://www.patreon.com/hillsdeck\">DECK Patreon</a>, launched today, is how we're going to fund this huge project; the better it does, the more funds we have to make <cite>DECK</cite> over the next year and a half. It's going to be lots of fun; in fact it already is. Check out the debut episode of the Camper Can Calethoven podcast and the first Hills Cover Song Session available immediately to all subscribers!</p>\r\n\r\n<p>Here's how <cite>DECK</cite> is going to work: 52 songs, one for each card. 4 thirteen song albums, one for each suit. <strong>Diamonds</strong>: a proper studio follow up to <cite>I\u2019m You</cite>. <strong>Clubs</strong>: lo-fi faster, punkier, dirtier songs. <strong>Hearts</strong>: a sparser, mostly acoustic, yet carefully orchestrated, album full of weepers. <strong>Spades</strong>: a free-form, experimental record.</p>\r\n\r\n<p>The final product will come with an original deck of card with artwork for each song. You\u2019ll be able to pull 13 random cards, put their corresponding songs in the order you pulled the cards, and voila, you have your own unique version of the record that might function like an audio-tarot-card-reading, if you\u2019re into that. (Did you know there are more different combinations of an ordered deck than there are atoms on Earth? Wow!)</p>\r\n\r\n<p>The truth is: I\u2019ve had this idea for about twenty years now. But I never had the guts to try and actually try to make it until now. Maybe I didn\u2019t have the life experience to be able to effectively create something like DECK twenty years ago. That\u2019s almost certainly true. During each ensuing year, I\u2019ve nervously watched music news headlines to see if someone else would stumble upon the idea and get there first. No one ever did.</p>\r\n\r\n<p>So sidle up to the table and get dealt in, it's time to make rock records unreasonably ambitious again. Ready?</p>"
+    }
+},
+{
     "model": "shows.venue",
     "pk": 2,
     "fields": {
