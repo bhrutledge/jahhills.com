@@ -7130,6 +7130,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 200,
+    "fields": {
+        "name": "Faces Brewing Co.",
+        "city": "Malden, MA",
+        "website": "https://www.facesbrewing.com/",
+        "address": "",
+        "latitude": 42.4266288,
+        "longitude": -71.0707549
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -10823,6 +10835,30 @@
         "venue": 150,
         "description": "<p>with <span class>Cassie Berman</span></p>",
         "details": "<p><a href=\"http://www.eventbrite.com/e/cassie-berman-hallelujah-the-hills-tickets-405548184537\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 324,
+    "fields": {
+        "publish": true,
+        "publish_on": "2022-11-28T01:30:35.314Z",
+        "date": "2022-12-31",
+        "venue": 200,
+        "description": "<p>with <span class>Rebuilder</span></p>",
+        "details": "<p><a href=\"https://www.facesbrewing.com/store/event/rtt-sum-studios-present-rebuilder-hallelujah-the-hills-nye-celebration/\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 325,
+    "fields": {
+        "publish": true,
+        "publish_on": "2022-11-28T01:31:18.778Z",
+        "date": "2023-03-18",
+        "venue": 162,
+        "description": "<p>with <span class>Eyelids</span></p>",
+        "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-with-eyelids-tickets-459097331477\">Tickets</a></p>"
     }
 }
 ]
