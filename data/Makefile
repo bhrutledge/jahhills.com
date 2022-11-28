@@ -14,7 +14,7 @@ serve: $(data_db)
 
 .PHONY: publish
 publish: $(data_db)
-	datasette publish heroku --name $(name) \
+	datasette publish fly --app $(name) \
 		--metadata $(metadata) \
 		--install datasette-vega \
 		--install datasette-cluster-map \
