@@ -42,7 +42,7 @@ django==1.11.29
     #   django-embed-video
 django-coverage-plugin==1.6.0
     # via -r dev.in
-django-debug-toolbar==1.11
+django-debug-toolbar==1.11.1
     # via -r dev.in
 django-embed-video==1.2.0
     # via -r base.txt
