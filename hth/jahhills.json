@@ -7059,18 +7059,6 @@
 },
 {
     "model": "shows.venue",
-    "pk": 194,
-    "fields": {
-        "name": "Cafe Nine",
-        "city": "New Haven, CT",
-        "website": "",
-        "address": "",
-        "latitude": 41.3036364,
-        "longitude": -72.9259651
-    }
-},
-{
-    "model": "shows.venue",
     "pk": 195,
     "fields": {
         "name": "Ortlieb's",
@@ -10676,7 +10664,7 @@
         "publish": false,
         "publish_on": "2020-01-20T13:56:43Z",
         "date": "2020-04-04",
-        "venue": 194,
+        "venue": 43,
         "description": "<p>with <span class=\"performer\">Eyelids</span></p>",
         "details": "<p>$10, 21+<br />\r\n<a href=\"https://www.eventbrite.com/e/eyelids-hallelujah-the-hills-tickets-89767130905\">Tickets</a>\r\n</p>"
     }
@@ -10842,11 +10830,47 @@
     "pk": 325,
     "fields": {
         "publish": true,
-        "publish_on": "2022-11-28T01:31:18.778Z",
+        "publish_on": "2022-11-28T01:31:18Z",
         "date": "2023-03-18",
         "venue": 162,
-        "description": "<p>with <span class>Eyelids</span></p>",
+        "description": "<p>with <span  class=\"performer\">Eyelids</span></p>",
         "details": "<p><a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-with-eyelids-tickets-459097331477\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 326,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-01-31T00:49:35.694Z",
+        "date": "2023-03-17",
+        "venue": 128,
+        "description": "<p>with <span  class=\"performer\">Eyelids</span> and <span class=\"performer\">Honey Radar</span></p>",
+        "details": "<p><a href=\"https://dice.fm/partner/loop-de-lou-production-corp-dba-union-pool/event/n7pm3-eyelids-hallelujah-the-hills-honey-radar-17th-mar-union-pool-new-york-tickets\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 327,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-01-31T00:51:55.804Z",
+        "date": "2023-03-19",
+        "venue": 43,
+        "description": "<p>with <span  class=\"performer\">Eyelids</span></p>",
+        "details": "<p><a href=\"https://www.tixr.com/groups/cafenine/events/eyelids-hallelujah-the-hills-58853\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 328,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-01-31T00:55:04.071Z",
+        "date": "2023-04-06",
+        "venue": 165,
+        "description": "<p>with <span  class=\"performer\">Rick Berlin</span>, <span class=\"performer\">The Nickel &amp; Dime Band</span>, and <span class=\"performer\">Nervous Eaters</span></p>",
+        "details": "<p><a href=\"https://www.livenation.com/event/vvG17Z99QwRwJG/rick-berlin-with-orchestra-luna-and-berlin-airlift-18\">Tickets</a></p>"
     }
 }
 ]
