@@ -10872,5 +10872,17 @@
         "description": "<p>with <span  class=\"performer\">Rick Berlin</span>, <span class=\"performer\">The Nickel &amp; Dime Band</span>, and <span class=\"performer\">Nervous Eaters</span></p>",
         "details": "<p><a href=\"https://www.livenation.com/event/vvG17Z99QwRwJG/rick-berlin-with-orchestra-luna-and-berlin-airlift-18\">Tickets</a></p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 329,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-09-04T20:59:31.821Z",
+        "date": "2023-10-08",
+        "venue": 43,
+        "description": "<p>with <span  class=\"performer\">The Sheila Divne</span></p>",
+        "details": "<p><a href=\"https://www.tixr.com/groups/cafenine/events/hallelujah-the-hills-the-sheila-divine-78829\">Tickets</a></p>"
+    }
 }
 ]
