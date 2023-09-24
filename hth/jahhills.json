@@ -7130,6 +7130,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 201,
+    "fields": {
+        "name": "Gateway City Arts",
+        "city": "Holyoke, MA",
+        "website": "https://www.gatewaycityarts.com/",
+        "address": "92 Race St, Holyoke, MA 01040",
+        "latitude": 42.20435937241991,
+        "longitude": -72.6031408989357
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -10878,11 +10890,35 @@
     "pk": 329,
     "fields": {
         "publish": true,
-        "publish_on": "2023-09-04T20:59:31.821Z",
+        "publish_on": "2023-09-04T20:59:31Z",
         "date": "2023-10-08",
         "venue": 43,
-        "description": "<p>with <span  class=\"performer\">The Sheila Divne</span></p>",
+        "description": "<p>with <span  class=\"performer\">The Sheila Divine</span></p>",
         "details": "<p><a href=\"https://www.tixr.com/groups/cafenine/events/hallelujah-the-hills-the-sheila-divine-78829\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 330,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-09-24T00:44:21.768Z",
+        "date": "2023-12-15",
+        "venue": 142,
+        "description": "<p>with <span  class=\"performer\">Eldridge Rodriguez</span> and <span class=\"performer\">Aaron & the Lord</span></p>",
+        "details": "<p><a href=https://www.axs.com/events/502696/hallelujah-the-hills-tickets?cid=afffboea&fbclid=IwAR3y92EwHqj5RdLsD1BvnkNNomM5uVie4MQke4JQ6OC462XoG7SbSsyguQE\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 331,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-09-24T00:47:07Z",
+        "date": "2023-11-10",
+        "venue": 201,
+        "description": "<p>with <span  class=\"performer\">New Radiant Storm King</span></p>",
+        "details": "<p><a href=\"https://www.eventbrite.com/e/new-radiant-storm-king-plus-hallelujah-the-hills-tickets-717896757527\">Tickets</a></p>"
     }
 }
 ]
