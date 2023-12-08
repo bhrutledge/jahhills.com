@@ -4246,6 +4246,62 @@
     }
 },
 {
+    "model": "music.press",
+    "pk": 151,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-12-08T00:34:30.544Z",
+        "title": "Boston.com",
+        "date": "2023-12-01",
+        "source_url": "https://www.boston.com/culture/events/2023/12/01/15-must-see-concerts-at-bostons-smaller-music-venues-during-winter-2023-24/",
+        "body": "Hallelujah the Hills has established itself as one of the most admired Boston-based rock bands\r\nof the 2000s. Fronted by singer, songwriter, guitarist, journalist and author Ryan H. Walsh, the\r\nsextet won more or less universal \u2014 and international \u2014 acclaim for its ambitious 2019 epic,\r\n&ldquo;I\u2019m You&rdquo;. Last September, Walsh announced that the band would begin work on DECK, which would comprise &ldquo;52 songs, one for each card. 4 thirteen-song albums, one for each suit.&rdquo;",
+        "quote": true,
+        "release": null
+    }
+},
+{
+    "model": "music.press",
+    "pk": 152,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-12-08T00:35:45.073Z",
+        "title": "The Boston Herald",
+        "date": "2023-11-24",
+        "source_url": "https://www.bostonherald.com/2023/11/24/holiday-concerts-offer-soundtrack-to-the-season/",
+        "body": "The band is the best indie rock act our fair city has produced in 20 years.",
+        "quote": true,
+        "release": null
+    }
+},
+{
+    "model": "music.press",
+    "pk": 153,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-12-08T00:36:36.146Z",
+        "title": "Dusted",
+        "date": "2023-11-01",
+        "source_url": "https://addtowantlist.com/index.php/2023/11/01/dusted-the-10-best-cover-songs-of-october-2023/",
+        "body": "A present-day and important subject, proceeds that will be donated to Doctors without\r\nBorders, cover art by Robert Coburn from a poster contest run by Avant Garde magazine in\r\n1967, but above all a beautiful, subdued version by Boston\u2019s indie rock band Hallelujah The\r\nHills. Respect.",
+        "quote": true,
+        "release": null
+    }
+},
+{
+    "model": "music.press",
+    "pk": 154,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-12-08T00:37:35.800Z",
+        "title": "Connecticut Examiner",
+        "date": "2023-10-01",
+        "source_url": "https://ctexaminer.com/2023/10/01/the-rundown-live-music-in-october-2/",
+        "body": "A staple of the Boston music scene, Hallelujah The Hills have been waving the indie rock\r\nflag out of that city for nearly 20 years. With Ryan H. Walsh as the creative nucleus, the\r\nband has been heralded for their approach to songwriting and their ability to make the\r\nreader feel something.",
+        "quote": true,
+        "release": null
+    }
+},
+{
     "model": "news.post",
     "pk": 1,
     "fields": {
@@ -4859,6 +4915,17 @@
         "title": "Introducing DECK, a 52 song album!",
         "slug": "introducing-deck",
         "body": "<div class=\"embed embed-responsive\">\r\n<iframe src=\"https://www.youtube.com/embed/h1aUd0mActY?controls=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\r\n</div>\r\n\r\n<p>Greetings! We are setting out to create a 52 song album entitled <cite>DECK</cite> with one song for every card in a deck of playing cards. The <a href=\"https://www.patreon.com/hillsdeck\">DECK Patreon</a>, launched today, is how we're going to fund this huge project; the better it does, the more funds we have to make <cite>DECK</cite> over the next year and a half. It's going to be lots of fun; in fact it already is. Check out the debut episode of the Camper Can Calethoven podcast and the first Hills Cover Song Session available immediately to all subscribers!</p>\r\n\r\n<p>Here's how <cite>DECK</cite> is going to work: 52 songs, one for each card. 4 thirteen song albums, one for each suit. <strong>Diamonds</strong>: a proper studio follow up to <cite>I\u2019m You</cite>. <strong>Clubs</strong>: lo-fi faster, punkier, dirtier songs. <strong>Hearts</strong>: a sparser, mostly acoustic, yet carefully orchestrated, album full of weepers. <strong>Spades</strong>: a free-form, experimental record.</p>\r\n\r\n<p>The final product will come with an original deck of card with artwork for each song. You\u2019ll be able to pull 13 random cards, put their corresponding songs in the order you pulled the cards, and voila, you have your own unique version of the record that might function like an audio-tarot-card-reading, if you\u2019re into that. (Did you know there are more different combinations of an ordered deck than there are atoms on Earth? Wow!)</p>\r\n\r\n<p>The truth is: I\u2019ve had this idea for about twenty years now. But I never had the guts to try and actually try to make it until now. Maybe I didn\u2019t have the life experience to be able to effectively create something like DECK twenty years ago. That\u2019s almost certainly true. During each ensuing year, I\u2019ve nervously watched music news headlines to see if someone else would stumble upon the idea and get there first. No one ever did.</p>\r\n\r\n<p>So sidle up to the table and get dealt in, it's time to make rock records unreasonably ambitious again. Ready?</p>"
+    }
+},
+{
+    "model": "news.post",
+    "pk": 57,
+    "fields": {
+        "publish": true,
+        "publish_on": "2023-12-08T00:43:11Z",
+        "title": "Playing with Half a DECK",
+        "slug": "half-a-deck",
+        "body": "<p>Greetings, Hills website visitor!</p>\r\n\r\n<p>They said it couldn't be done. They said we'd certainly fail. They said we weren't up to the task. And guess what? They may be right! No one knows what happens next, we already know that, but we ARE at the halfway point of creating <a href=\"https://www.patreon.com/hillsdeck\">DECK</a>\u2014a 52 song, 4 album project with a track for every card in <a href=\"https://en.wikipedia.org/wiki/Standard_52-card_deck#Composition\">a standard deck of cards</a>. There will be no compulsory champagne popped until all 52 are securely tucked into the pack, and so for now, we toil onward.</p>\r\n\r\n<p>Today, though, we are sharing a little sign of life from behind the walls of Hillz secrecy. Please meet <a href=\"https://hallelujahthehills.bandcamp.com/track/alone-in-love-2\">&ldquo;Alone, In Love&rdquo;</a>: our electric new 7-minute signal, AKA the 5 of Diamonds, <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/alone-in-love\">available everywhere</a> you get your music right now. It was recorded, mixed, and mastered at Machines with Magnets by Seth Manchester during the DIAMONDS sessions. We hope you like it!</p>\r\n\r\n<p>It seems extremely reasonable, as of right now, to assure you that DECK will be out in late 2024. How are we supporting this gigantic project without playing an enormous pile of live shows? With the DECK Patreon, of course. We do a flat fee, one tier, and we overdo it every month over there with music, podcasts, and videos. It's amazing what we've been able to achieve with the support of our ride or dies. <a href=\"https://www.patreon.com/hillsdeck\">Join us there if you wanna</a>!</p>"
     }
 },
 {
