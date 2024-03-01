@@ -16,7 +16,7 @@ Install Datasette on your system, e.g. using [pipx](https://pipxproject.github.i
 
 ```
 $ pipx install datasette
-$ pipx inject datasette datasette-cluster-map datasette-vega datasette-render-html
+$ pipx inject datasette datasette-cluster-map datasette-vega datasette-render-html datasette-publish-fly
 ```
 
 In the root directory of this project, update the database:
