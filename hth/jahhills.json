@@ -7209,6 +7209,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 202,
+    "fields": {
+        "name": "Deep Cuts",
+        "city": "Medford, MA",
+        "website": "https://www.deepcuts.rocks/",
+        "address": "",
+        "latitude": 42.4179553,
+        "longitude": -71.1112112
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -10969,11 +10981,11 @@
     "pk": 330,
     "fields": {
         "publish": true,
-        "publish_on": "2023-09-24T00:44:21.768Z",
+        "publish_on": "2023-09-24T00:44:21Z",
         "date": "2023-12-15",
         "venue": 142,
         "description": "<p>with <span  class=\"performer\">Eldridge Rodriguez</span> and <span class=\"performer\">Aaron & the Lord</span></p>",
-        "details": "<p><a href=https://www.axs.com/events/502696/hallelujah-the-hills-tickets?cid=afffboea&fbclid=IwAR3y92EwHqj5RdLsD1BvnkNNomM5uVie4MQke4JQ6OC462XoG7SbSsyguQE\">Tickets</a></p>"
+        "details": "<p><a href=\"https://www.axs.com/events/502696/hallelujah-the-hills-tickets?cid=afffboea&fbclid=IwAR3y92EwHqj5RdLsD1BvnkNNomM5uVie4MQke4JQ6OC462XoG7SbSsyguQE\">Tickets</a></p>"
     }
 },
 {
@@ -10986,6 +10998,18 @@
         "venue": 201,
         "description": "<p>with <span  class=\"performer\">New Radiant Storm King</span></p>",
         "details": "<p><a href=\"https://www.eventbrite.com/e/new-radiant-storm-king-plus-hallelujah-the-hills-tickets-717896757527\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 332,
+    "fields": {
+        "publish": true,
+        "publish_on": "2024-03-01T01:05:27.422Z",
+        "date": "2024-05-11",
+        "venue": 202,
+        "description": "<p>with <span  class=\"performer\">Colleen Green</span> and <span class=\"performer\">Mallcops</span></p>",
+        "details": "<p><a href=\"https://dice.fm/partner/dice/event/g8wd6-hallelujah-the-hills-colleen-green-mallcops-11th-may-deep-cuts-medford-tickets\">Tickets</a></p>"
     }
 }
 ]
