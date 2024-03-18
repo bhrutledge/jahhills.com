@@ -7221,6 +7221,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 203,
+    "fields": {
+        "name": "Gold Sounds",
+        "city": "Brooklyn, NY",
+        "website": "https://www.goldsounds.bar/",
+        "address": "",
+        "latitude": 40.70277617454678,
+        "longitude": -73.92948012912004
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -11005,10 +11017,22 @@
     "pk": 332,
     "fields": {
         "publish": true,
-        "publish_on": "2024-03-01T01:05:27.422Z",
+        "publish_on": "2024-03-01T01:05:27Z",
         "date": "2024-05-11",
         "venue": 202,
         "description": "<p>with <span  class=\"performer\">Colleen Green</span> and <span class=\"performer\">Mallcops</span></p>",
+        "details": ""
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 333,
+    "fields": {
+        "publish": true,
+        "publish_on": "2024-03-18T14:45:06Z",
+        "date": "2024-05-10",
+        "venue": 203,
+        "description": "<p>with <span  class=\"performer\">Upper Wilds</span> and <span class=\"performer\">Katiee</span></p>",
         "details": "<p><a href=\"https://dice.fm/partner/dice/event/g8wd6-hallelujah-the-hills-colleen-green-mallcops-11th-may-deep-cuts-medford-tickets\">Tickets</a></p>"
     }
 }
