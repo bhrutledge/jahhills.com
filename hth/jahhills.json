@@ -11035,5 +11035,17 @@
         "description": "<p>with <span  class=\"performer\">Upper Wilds</span> and <span class=\"performer\">Katiee</span></p>",
         "details": "<p><a href=\"https://dice.fm/partner/dice/event/bg62m-upper-wilds-hallelujah-the-hills-katiee-10th-may-gold-sounds-new-york-tickets\">Tickets</a></p>"
     }
+},
+{
+    "model": "shows.gig",
+    "pk": 334,
+    "fields": {
+        "publish": true,
+        "publish_on": "2024-06-02T12:49:52.573Z",
+        "date": "2024-06-29",
+        "venue": 199,
+        "description": "<p><strong>Breakfast of Grampions, a benefit for WMBR</strong>\r\n<br>with <span class=\"performer\">Versus</span>, <span class=\"performer\">Mick Trouble</span>, <span class=\"performer\">Mark Robinson</span> and <span class=\"performer\">FLOF</span></p>",
+        "details": "<p>\r\n$25<br />\r\n<a href=\"https://www.ticketmaster.com/event/0100608B132CA2AA\">Tickets</a>\r\n</p>"
+    }
 }
 ]
