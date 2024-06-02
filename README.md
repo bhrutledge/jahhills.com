@@ -49,6 +49,7 @@ Commit and push to GitHub.
 
 Build the static site with `make dist`.
 
+<!-- TODO: `brew install netlify-cli` and config -->
 View the static site with `netlify dev`.
 
 Deploy and publish the static site with `netlify deploy`.

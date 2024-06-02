@@ -16,9 +16,9 @@ certnames := localhost $(HOST)
 # Leaving them in as an example for rsync-based deployment
 webhost := webfaction:webapps/jahhills_static
 
+# TODO: Fix Click conflict and restore requirements install
 .PHONY: update
 update:
-	make -C requirements install
 	$(manage) check
 	$(manage) migrate --noinput
 	$(manage) loaddata $(fixture)
@@ -62,14 +62,17 @@ serve-wsgi: $(keyfile) $(certfile)
 		--error-logfile - \
 		hth.wsgi:application
 
-# See macOS gotcha: https://github.com/FiloSottile/mkcert/issues/199
+# TODO: Document mkcert requirement
 $(keyfile):
 	mkcert -key-file $(keyfile) -cert-file $(certfile) $(certnames)
 
 # Inspired by https://apex.sh/blog/post/pre-render-wget/
 # Using --max-redirect=0 to catch missing trailing slashes,
 # which cause redirects, which yield spurious .html files
+# TODO: Figure out cleaner solution for ca-certificate
+# https://github.com/FiloSottile/mkcert/issues/199
 wget := wget --no-verbose \
+		--ca-certificate="$(HOME)/Library/Application Support/mkcert/rootCA.pem" \
 		--directory-prefix=dist \
 		--no-host-directories \
 		--adjust-extension \
