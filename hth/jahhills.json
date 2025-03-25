@@ -7233,6 +7233,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 204,
+    "fields": {
+        "name": "Myrtle",
+        "city": "East Providence, RI",
+        "website": "https://www.givemyrtle.com/",
+        "address": "",
+        "latitude": 40.8238411029322,
+        "longitude": -71.37404265973412
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -11053,11 +11065,35 @@
     "pk": 335,
     "fields": {
         "publish": true,
-        "publish_on": "2024-11-01T18:04:29.158Z",
+        "publish_on": "2024-11-01T18:04:29Z",
         "date": "2024-11-15",
         "venue": 202,
         "description": "<p><strong>Performing <cite>I'm You</cite> in its entirety</strong><br>\r\nwith <span  class=\"performer\">Upper Wilds</span> and <span class=\"performer\">Sidebody</span></p>",
-        "details": "<p><a href=\"https://dice.fm/partner/dice/event/6ddbv2-hallelujah-the-hills-upper-wilds-sidebody-15th-nov-deep-cuts-medford-tickets\">Tickets</a></p>"
+        "details": ""
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 336,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-03-25T00:35:10.474Z",
+        "date": "2025-06-20",
+        "venue": 204,
+        "description": "<p>with <span  class=\"performer\">Ugly Moon</span> and <span class=\"performer\">Choo Choo La Rouge</span></p>",
+        "details": "<p><a href=\"https://www.givemyrtle.com/upcoming-events/ugly-moon-hallelujah-the-hills-choo-choo-la-rouge\">Details</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 337,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-03-25T00:37:49.010Z",
+        "date": "2025-06-21",
+        "venue": 202,
+        "description": "<p><strong><cite>DECK</cite> release show</strong><br>\r\nwith <span  class=\"performer\">Bongwish</span> and <span class=\"performer\">Choo Choo La Rouge</span></p>",
+        "details": ""
     }
 }
 ]
