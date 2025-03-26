@@ -2524,6 +2524,57 @@
     }
 },
 {
+    "model": "music.video",
+    "pk": 45,
+    "fields": {
+        "publish": true,
+        "publish_on": "2024-04-23T00:35:07Z",
+        "title": "Here Goes Nothing",
+        "slug": "here-goes-nothing",
+        "source_url": "https://youtu.be/AEhcBjg4hN8",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/AEhcBjg4hN8?wmode=opaque\" seamless allowfullscreen></iframe>",
+        "preview_url": "https://img.youtube.com/vi/AEhcBjg4hN8/maxresdefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": null,
+        "priority": null
+    }
+},
+{
+    "model": "music.video",
+    "pk": 46,
+    "fields": {
+        "publish": true,
+        "publish_on": "2024-09-06T00:36:15Z",
+        "title": "My Name Sounds Sinsister",
+        "slug": "my-name-sounds-sinsister",
+        "source_url": "https://www.youtube.com/watch?v=Y-J0Tsc9FJ0",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/Y-J0Tsc9FJ0?wmode=opaque\" seamless allowfullscreen></iframe>",
+        "preview_url": "https://img.youtube.com/vi/Y-J0Tsc9FJ0/maxresdefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": 15,
+        "priority": null
+    }
+},
+{
+    "model": "music.video",
+    "pk": 47,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-03-28T00:00:00Z",
+        "title": "Is it in the cards?",
+        "slug": "is-it-in-the-cards",
+        "source_url": "https://www.youtube.com/watch?v=mAKOy1hAdfs",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/mAKOy1hAdfs?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "preview_url": "https://img.youtube.com/vi/mAKOy1hAdfs/maxresdefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": null,
+        "priority": null
+    }
+},
+{
     "model": "music.press",
     "pk": 4,
     "fields": {
