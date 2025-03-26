@@ -176,6 +176,22 @@
     }
 },
 {
+    "model": "music.release",
+    "pk": 16,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-03-28T00:00:00Z",
+        "title": "DECK",
+        "slug": "deck",
+        "date": "2025-06-13",
+        "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/DECK_4_panel.jpg",
+        "player_code": "",
+        "description": "<p>\r\n52 songs, 4 albums:\r\n<ul>\r\n<li>DIAMONDS</li>\r\n<li>CLUBS</li>\r\n<li>HEARTS</li>\r\n<li>SPADES</li>\r\n</ul>\r\n</p>",
+        "credits": "",
+        "priority": null
+    }
+},
+{
     "model": "music.song",
     "pk": 1,
     "fields": {
