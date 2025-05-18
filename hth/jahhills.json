@@ -7337,6 +7337,30 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 205,
+    "fields": {
+        "name": "Kung Fu Necktie",
+        "city": "Baltimore, MD",
+        "website": "https://kungfunecktie.com/",
+        "address": "",
+        "latitude": 39.97057906451537,
+        "longitude": -75.13597231745737
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 206,
+    "fields": {
+        "name": "Friends & Lovers",
+        "city": "Brooklyn, NY",
+        "website": "https://www.fnlbk.com/",
+        "address": "",
+        "latitude": 40.67885943138182,
+        "longitude": -73.95837062908537
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -11186,6 +11210,42 @@
         "venue": 202,
         "description": "<p><strong><cite>DECK</cite> release show</strong><br>\r\nwith <span  class=\"performer\">Bongwish</span> and <span class=\"performer\">Choo Choo La Rouge</span></p>",
         "details": "<p><a href=\"https://link.dice.fm/d5f12312816f\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 338,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-05-18T21:05:07.607Z",
+        "date": "2025-07-18",
+        "venue": 205,
+        "description": "<p>with <span  class=\"performer\">The Tisburys</span> and <span class=\"performer\">Dan Spenser</span></p>",
+        "details": "<p><a href=\"https://www.etix.com/ticket/p/54058473/hallelujah-the-hills-the-tisburys-dan-spenser-philadelphia-kung-fu-necktie\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 339,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-05-18T21:07:18.518Z",
+        "date": "2025-07-19",
+        "venue": 175,
+        "description": "",
+        "details": "<a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-full-band-show-baltimore-md-tickets-1334080924959?aff=oddtdtcreator\">Waitlist</a>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 340,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-05-18T21:10:03.628Z",
+        "date": "2025-07-17",
+        "venue": 206,
+        "description": "<p>with <span class=\"performer\">Perennial</a></p>",
+        "details": "<a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-perennial-live-tickets-1361059578839\">Tickets</a>"
     }
 }
 ]
