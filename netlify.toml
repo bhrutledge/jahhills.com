@@ -1,9 +1,6 @@
 [build]
   publish = "dist/"
 
-[dev]
-  port = 8000
-
 [[redirects]]
   from = "/calendar/*"
   to = "/live/"

@@ -11,9 +11,10 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 
 import environ
 import sys
+from pathlib import Path
 
-project_root = environ.Path(__file__) - 2
-src_root = project_root.path('hth')
+BASE_DIR = Path(__file__).resolve().parent.parent
+SRC_DIR = BASE_DIR / 'hth'
 
 env = environ.Env(
     DEBUG=(bool, False),
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'hth.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': src_root('jahhills.sqlite3'),
+        'NAME': SRC_DIR / 'jahhills.sqlite3',
     }
 }
 
@@ -108,7 +109,7 @@ DATE_FORMAT = 'M j, Y'
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = project_root('staticfiles')
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = (
     'whitenoise.storage.CompressedManifestStaticFilesStorage'
     # https://docs.djangoproject.com/en/1.11/ref/contrib/staticfiles/#django.contrib.staticfiles.storage.ManifestStaticFilesStorage.manifest_strict
@@ -117,17 +118,18 @@ STATICFILES_STORAGE = (
     'django.contrib.staticfiles.storage.StaticFilesStorage'
 )
 STATICFILES_DIRS = [
-    src_root('static'),
+    SRC_DIR / 'static',
 ]
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = project_root('media')
+MEDIA_ROOT = BASE_DIR / 'media'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            src_root('templates'),
+            SRC_DIR / 'templates',
+            BASE_DIR / 'netlify' / 'templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {

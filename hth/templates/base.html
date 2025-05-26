@@ -16,6 +16,7 @@
 </head>
 
 <body id="{% block body_id %}hth{% endblock %}">
+    {% block navigation %}
     <header class="container navigation" role="banner">
         <div class="navigation-wrapper">
             <h1 class="logo"><a href="{% url 'home_page' %}">Hallelujah The Hills</a></h1>
@@ -38,11 +39,13 @@
             </nav>
         </div>
     </header>
+    {% endblock %}
 
     <main class="{% block main_class %}{% endblock %}">
     {% block main_content %}{% endblock %}
     </main>
 
+    {% block footer %}
     <footer class="container footer" role="contentinfo">
         <section>
             <div class="footer-links">
@@ -83,47 +86,23 @@
 
             <p class="copyright">&copy; 2007&ndash;{% now "Y" %} Reverse The Tape Decks ASCAP</p>
         </section>
-    </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var $menuToggle = $('#js-mobile-menu').unbind();
+                var $menu = $('#js-navigation-menu');
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var $menuToggle = $('#js-mobile-menu').unbind();
-            var $menu = $('#js-navigation-menu');
-
-            $menuToggle.on('click', function(e) {
-                e.preventDefault();
-                $menu.slideToggle(function() {
-                    if ($menu.is(':hidden')) {
-                        $menu.removeAttr('style');
-                    }
+                $menuToggle.on('click', function(e) {
+                    e.preventDefault();
+                    $menu.slideToggle(function() {
+                        if ($menu.is(':hidden')) {
+                            $menu.removeAttr('style');
+                        }
+                    });
                 });
             });
-
-            /*
-            var taglines = [
-                "We have the perimeter surrounded.",
-                "Are we failing?",
-                "Coming at you with realistic birthday music.",
-                "You've heard this song before.",
-                "Some post-punk instincts but they weren't specific.",
-                "Some prog rock lyrics that looked like hieroglyphics.",
-                "No more desperate grasping for feelings difficult to put into words.",
-                "There's angels in the source code if you know where to look for them.",
-                "Three minute songs at reasonable rates.",
-                "Blowing up ideas with magic markers and drum hits.",
-                "Milking sounds out of our instruments since late 2005.",
-                "As seen On TV's 'America is Hallucinating'.",
-                "Super-charged American favorites since 2005.",
-                "We're just like you.",
-                "I know it's not nostalgia.",
-            ];
-
-            $('.tagline-text').text(
-                taglines[Math.floor(Math.random() * taglines.length)]
-            );
-            */
-        });
-    </script>
+        </script>
+    </footer>
+    {% endblock %}
 </body>
 </html>

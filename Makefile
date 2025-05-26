@@ -1,5 +1,6 @@
 HOST ?= 127.0.0.1
 PORT ?= 8000
+DJANGO_PORT ?= 8001
 
 bin := $(CURDIR)/venv/bin
 python := $(bin)/python
@@ -11,10 +12,6 @@ fixture := hth/jahhills.json
 keyfile := .localhost-key.pem
 certfile := .localhost.pem
 certnames := localhost $(HOST)
-
-# This and `make deploy` have been replaced by `netlify deploy`
-# Leaving them in as an example for rsync-based deployment
-webhost := webfaction:webapps/jahhills_static
 
 # TODO: Fix Click conflict and restore requirements install
 .PHONY: update
@@ -38,7 +35,10 @@ lint:
 
 .PHONY: serve
 serve:
-	$(manage) runserver $(HOST):$(PORT)
+	netlify dev \
+		--command "$(manage) runserver $(HOST):$(DJANGO_PORT)" \
+		--targetPort $(DJANGO_PORT) \
+		--port $(PORT)
 
 .PHONY: css
 css:
@@ -77,18 +77,29 @@ wget := wget --no-verbose \
 		--no-host-directories \
 		--adjust-extension \
 		--retry-connrefused \
-		--max-redirect=0
+		--max-redirect=0 \
+		--recursive \
+		--level=inf \
+		--execute robots=off
 
 server := https://$(HOST):$(PORT)
 
 .PHONY: html
-html: 404
-	$(wget) --recursive --level=inf --execute robots=off $(server)
+html: netlify-html 404-html
+	@$(wget) $(server)
+	tree -L1 dist
+
+.PHONY: netlify-html
+netlify-html:
+	@for template in ./netlify/templates/*.html; do \
+		path=$$(basename $$template .html); \
+		$(wget) --no-parent $(server)/$$path/; \
+	done
 
 # Ignoring expected 404 error from wget, but letting others through
-.PHONY: 404
-404:
-	error=`$(wget) --content-on-error $(server)/404 2>&1` ;\
+.PHONY: 404-html
+404-html:
+	error=`$(wget) --content-on-error $(server)/404/ 2>&1` ;\
 	code=$$? ;\
 	[[ $$error =~ "ERROR 404" ]] || ( echo $$error; exit $$code )
 
@@ -99,17 +110,6 @@ dist:
 	make update ;\
 	make serve-wsgi & make html ;\
 	kill % ; wait
-
-.PHONY: serve-dist
-serve-dist:
-	$(python) -m http.server \
-		--directory dist \
-		--bind $(HOST) $(PORT)
-
-.PHONY: deploy
-deploy:
-	rsync --archive --compress --verbose \
-		dist/ $(webhost)
 
 .PHONY: clean
 clean:
