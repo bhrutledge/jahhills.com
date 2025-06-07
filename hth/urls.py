@@ -12,7 +12,6 @@ urlpatterns = [
     url(r'^news/', include('hth.news.urls')),
     url(r'^live/', include('hth.shows.urls')),
     url(r'^', include('hth.music.urls')),
-    url(r'^(?P<template_name>[a-zA-Z0-9-_]+)/$', views.NetlifyTemplateView.as_view()),
 ]
 
 if settings.MEDIA_URL and settings.MEDIA_ROOT:
@@ -25,3 +24,7 @@ if settings.DEBUG:
         url(r'^admindocs/', include('django.contrib.admindocs.urls')),
         url(r'^admin/', include(admin.site.urls)),
     ]
+
+urlpatterns += [
+    url(r'^(?P<template_name>[a-zA-Z0-9-_]+)/$', views.NetlifyTemplateView.as_view()),
+]

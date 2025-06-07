@@ -37,7 +37,7 @@ lint:
 serve:
 	netlify dev \
 		--command "$(manage) runserver $(HOST):$(DJANGO_PORT)" \
-		--targetPort $(DJANGO_PORT) \
+		--target-port $(DJANGO_PORT) \
 		--port $(PORT)
 
 .PHONY: css
