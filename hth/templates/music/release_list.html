@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load cloudinary %}
 
 {% block title %}Music | {{ block.super }}{% endblock %}
 {% block main_class %}navigation-page{% endblock %}
@@ -7,12 +8,12 @@
 <article class="container">
     <h1 class="container-header">Music</h1>
 
-    {% for release in release_list|slice:":1" %}
+    {% for release in release_list|slice:":5" %}
         {% include "music/_release_highlight.html" %}
     {% endfor %}
 
     <div class="content-gallery">
-        {% for release in release_list|slice:"1:" %}
+        {% for release in release_list|slice:"5:" %}
         <article class="content release release-preview">
             {% include "music/_release_cover.html" %}
 

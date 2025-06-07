@@ -179,7 +179,7 @@
     "model": "music.release",
     "pk": 16,
     "fields": {
-        "publish": true,
+        "publish": false,
         "publish_on": "2025-03-28T00:00:00Z",
         "title": "DECK",
         "slug": "deck",
@@ -187,6 +187,86 @@
         "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/DECK_4_panel.jpg",
         "player_code": "",
         "description": "<p>\r\n52 songs, 4 albums, 2 jokers, 1 deck.\r\n</p>\r\n\r\n<p><a href=\"/news/deck-will-be-released/\">Read all about it</a>.",
+        "credits": "",
+        "priority": null
+    }
+},
+{
+    "model": "music.release",
+    "pk": 17,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55Z",
+        "title": "DECK: DIAMONDS",
+        "slug": "deck-diamonds",
+        "date": "2025-06-13",
+        "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/DIAMONDS.jpg",
+        "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=3563900680/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"https://hallelujahthehills.bandcamp.com/album/deck-diamonds\">DECK: DIAMONDS by Hallelujah The Hills</a></iframe>",
+        "description": "<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/deck-diamonds\">Bandcamp</a> (including a limited edition double-LP pressing) and <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-diamonds\">streaming services</a></p>",
+        "credits": "",
+        "priority": null
+    }
+},
+{
+    "model": "music.release",
+    "pk": 18,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55Z",
+        "title": "DECK: CLUBS",
+        "slug": "deck-clubs",
+        "date": "2025-06-13",
+        "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949998/CLUBS.jpg",
+        "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=1489714066/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"https://hallelujahthehills.bandcamp.com/album/deck-clubs\">DECK: CLUBS by Hallelujah The Hills</a></iframe>",
+        "description": "<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/deck-clubs\">Bandcamp</a> and <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-clubs\">streaming services</a></p>",
+        "credits": "",
+        "priority": null
+    }
+},
+{
+    "model": "music.release",
+    "pk": 19,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55Z",
+        "title": "DECK: HEARTS",
+        "slug": "deck-hearts",
+        "date": "2025-06-13",
+        "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/HEARTS.jpg",
+        "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=1594540600/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"https://hallelujahthehills.bandcamp.com/album/deck-hearts-2\">DECK: HEARTS by Hallelujah The Hills</a></iframe>",
+        "description": "<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/deck-hearts-2\">Bandcamp</a> and <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-hearts\">streaming services</a></p>",
+        "credits": "",
+        "priority": null
+    }
+},
+{
+    "model": "music.release",
+    "pk": 20,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55Z",
+        "title": "DECK: SPADES",
+        "slug": "deck-spades",
+        "date": "2025-06-13",
+        "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/SPADES.jpg",
+        "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=1295836495/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"https://hallelujahthehills.bandcamp.com/album/deck-spades\">DECK: SPADES by Hallelujah The Hills</a></iframe>",
+        "description": "<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/deck-spades\">Bandcamp</a> and <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-spades\">streaming services</a></p>",
+        "credits": "",
+        "priority": null
+    }
+},
+{
+    "model": "music.release",
+    "pk": 21,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55Z",
+        "title": "DECK: JOKERS",
+        "slug": "deck-jokers",
+        "date": "2025-06-13",
+        "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/JOKERS.jpg",
+        "player_code": "",
+        "description": "<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/deck-jokers\">Bandcamp</a> and <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-jokers\">streaming services</a></p>",
         "credits": "",
         "priority": null
     }
@@ -1789,6 +1869,870 @@
         "lyrics": "<p>\r\n  This all happens outside the space continuum<br />\r\n  You\u2019re alive in Phoenix wondering what we did to \u2018em<br />\r\n  You hear what happened to me?<br />\r\n  I was pronounced lost at sea<br />\r\n  But in truth I\u2019m just hiding out won\u2019t u come look for me?\r\n</p>\r\n<p>\r\n  I was a sleeper agent before you woke me up<br />\r\n  Playing classic tapes for some gurus we rounded up<br />\r\n  But when I got in the room<br />\r\n  I wasn\u2019t sure what to do<br />\r\n  The domestic zones I was used to<br />\r\n  Didn\u2019t prep me for you\r\n</p>\r\n<p>\r\n  Can you make a memory?<br />\r\n  Without choppin\u2019 down the memory tree?\r\n</p>\r\n<p>\r\n  And it\u2019s a transaction, sure<br />\r\n  But don\u2019t it sometimes feel like it\u2019s something more?\r\n</p>\r\n<p>\r\n  I found a timeshare in the unified field<br />\r\n  I lived there with you until forever got peeled<br />\r\n  The neighborhood filled with ghosts<br />\r\n  Was more spooky than most<br />\r\n  With The undead department of dreams and our immaculate hosts\r\n</p>\r\n<p>\r\n  I\u2019m finally a poet but you know that don\u2019t matter now<br />\r\n  Here comes a siren to review them wedding vows<br />\r\n  I may appear rapt with fear<br />\r\n  But Don\u2019t you dare disappear<br />\r\n  When the going gets tougher than nails you know I\u2019ll always be there\r\n</p>",
         "release": 15,
         "track": 10
+    }
+},
+{
+    "model": "music.song",
+    "pk": 108,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.724Z",
+        "title": "Gimme Midnight (Ace of Diamonds)",
+        "slug": "gimme-midnight-ace-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 1
+    }
+},
+{
+    "model": "music.song",
+    "pk": 109,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.725Z",
+        "title": "Joke's on You (2 of Diamonds)",
+        "slug": "jokes-on-you-2-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 2
+    }
+},
+{
+    "model": "music.song",
+    "pk": 110,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.725Z",
+        "title": "Fake Flowers at Sunset (3 of Diamonds)",
+        "slug": "fake-flowers-at-sunset-3-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 3
+    }
+},
+{
+    "model": "music.song",
+    "pk": 111,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.726Z",
+        "title": "Rebuilding Year (4 of Diamonds)",
+        "slug": "rebuilding-year-4-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 4
+    }
+},
+{
+    "model": "music.song",
+    "pk": 112,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.726Z",
+        "title": "Alone, in Love (5 of Diamonds)",
+        "slug": "alone-in-love-5-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 5
+    }
+},
+{
+    "model": "music.song",
+    "pk": 113,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.727Z",
+        "title": "Grateful Dead Sweater (6 of Diamonds)",
+        "slug": "grateful-dead-sweater-6-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 6
+    }
+},
+{
+    "model": "music.song",
+    "pk": 114,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.727Z",
+        "title": "Too High to Say Hello (7 of Diamonds)",
+        "slug": "too-high-to-say-hello-7-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 7
+    }
+},
+{
+    "model": "music.song",
+    "pk": 115,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.727Z",
+        "title": "Superglued to You (8 of Diamonds)",
+        "slug": "superglued-to-you-8-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 8
+    }
+},
+{
+    "model": "music.song",
+    "pk": 116,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.728Z",
+        "title": "Old Feelings, New England (9 of Diamonds)",
+        "slug": "old-feelings-new-england-9-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 9
+    }
+},
+{
+    "model": "music.song",
+    "pk": 117,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.728Z",
+        "title": "Samantha, You're the Only Mistake I Know How to Make (10 of Diamonds)",
+        "slug": "samantha-youre-the-only-mistake-i-know-how-to-make-10-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 10
+    }
+},
+{
+    "model": "music.song",
+    "pk": 118,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.728Z",
+        "title": "This is a Song (Jack of Diamonds)",
+        "slug": "this-is-a-song-jack-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 11
+    }
+},
+{
+    "model": "music.song",
+    "pk": 119,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.729Z",
+        "title": "Here Goes Nothing (Queen of Diamonds)",
+        "slug": "here-goes-nothing-queen-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 12
+    }
+},
+{
+    "model": "music.song",
+    "pk": 120,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.729Z",
+        "title": "Follow the Foreshadowing (King of Diamonds)",
+        "slug": "follow-the-foreshadowing-king-of-diamonds",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 17,
+        "track": 13
+    }
+},
+{
+    "model": "music.song",
+    "pk": 121,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.730Z",
+        "title": "Uncanny Valley (Ace of Clubs)",
+        "slug": "uncanny-valley-ace-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 1
+    }
+},
+{
+    "model": "music.song",
+    "pk": 122,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.731Z",
+        "title": "Burn this Atlas Down (2 of Clubs)",
+        "slug": "burn-this-atlas-down-2-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 2
+    }
+},
+{
+    "model": "music.song",
+    "pk": 123,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.731Z",
+        "title": "Camouflage Band-Aid (3 of Clubs)",
+        "slug": "camouflage-band-aid-3-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 3
+    }
+},
+{
+    "model": "music.song",
+    "pk": 124,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.732Z",
+        "title": "I'm Your Meteorite (4 of Clubs)",
+        "slug": "im-your-meteorite-4-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 4
+    }
+},
+{
+    "model": "music.song",
+    "pk": 125,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.732Z",
+        "title": "Crush All Night (5 of Clubs)",
+        "slug": "crush-all-night-5-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 5
+    }
+},
+{
+    "model": "music.song",
+    "pk": 126,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.732Z",
+        "title": "Camera Click (6 of Clubs)",
+        "slug": "camera-click-6-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 6
+    }
+},
+{
+    "model": "music.song",
+    "pk": 127,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.733Z",
+        "title": "FugaziBlackHoleMirage (7 of Clubs)",
+        "slug": "fugaziblackholemirage-7-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 7
+    }
+},
+{
+    "model": "music.song",
+    "pk": 128,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.733Z",
+        "title": "My Past Is Your Futurism (8 of Clubs)",
+        "slug": "my-past-is-your-futurism-8-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 8
+    }
+},
+{
+    "model": "music.song",
+    "pk": 129,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.734Z",
+        "title": "Failure's my Fuel (9 of Clubs)",
+        "slug": "failures-my-fuel-9-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 9
+    }
+},
+{
+    "model": "music.song",
+    "pk": 130,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.734Z",
+        "title": "I'm your Palindrome (10 of Clubs)",
+        "slug": "im-your-palindrome-10-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 10
+    }
+},
+{
+    "model": "music.song",
+    "pk": 131,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.735Z",
+        "title": "Modern Loss (Jack of Clubs)",
+        "slug": "modern-loss-jack-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 11
+    }
+},
+{
+    "model": "music.song",
+    "pk": 132,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.735Z",
+        "title": "Fade to White (Queen of Clubs)",
+        "slug": "fade-to-white-queen-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 12
+    }
+},
+{
+    "model": "music.song",
+    "pk": 133,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.735Z",
+        "title": "I Remember This (King of Clubs)",
+        "slug": "i-remember-this-king-of-clubs",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 18,
+        "track": 13
+    }
+},
+{
+    "model": "music.song",
+    "pk": 134,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.736Z",
+        "title": "Just Another Night on Planet Earth (Ace of Hearts)",
+        "slug": "just-another-night-on-planet-earth-ace-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 1
+    }
+},
+{
+    "model": "music.song",
+    "pk": 135,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.737Z",
+        "title": "Scream Into the Void (2 of Hearts)",
+        "slug": "scream-into-the-void-2-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 2
+    }
+},
+{
+    "model": "music.song",
+    "pk": 136,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.737Z",
+        "title": "I'll Get Over It (3 of Hearts)",
+        "slug": "ill-get-over-it-3-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 3
+    }
+},
+{
+    "model": "music.song",
+    "pk": 137,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.737Z",
+        "title": "Animals in Love (4 of Hearts)",
+        "slug": "animals-in-love-4-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 4
+    }
+},
+{
+    "model": "music.song",
+    "pk": 138,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.738Z",
+        "title": "Phantom Ring (5 of Hearts)",
+        "slug": "phantom-ring-5-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 5
+    }
+},
+{
+    "model": "music.song",
+    "pk": 139,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.738Z",
+        "title": "Everest (6 of Hearts)",
+        "slug": "everest-6-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 6
+    }
+},
+{
+    "model": "music.song",
+    "pk": 140,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.739Z",
+        "title": "The Loudest Sound (7 of Hearts)",
+        "slug": "the-loudest-sound-7-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 7
+    }
+},
+{
+    "model": "music.song",
+    "pk": 141,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.739Z",
+        "title": "Some Rest for the Wicked (8 of Hearts)",
+        "slug": "some-rest-for-the-wicked-8-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 8
+    }
+},
+{
+    "model": "music.song",
+    "pk": 142,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.740Z",
+        "title": "You Can Never Go Home (9 of Hearts)",
+        "slug": "you-can-never-go-home-9-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 9
+    }
+},
+{
+    "model": "music.song",
+    "pk": 143,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.740Z",
+        "title": "The Night Machine (10 of Hearts)",
+        "slug": "the-night-machine-10-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 10
+    }
+},
+{
+    "model": "music.song",
+    "pk": 144,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.741Z",
+        "title": "Something Great (Jack of Hearts)",
+        "slug": "something-great-jack-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 11
+    }
+},
+{
+    "model": "music.song",
+    "pk": 145,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.741Z",
+        "title": "Classic of the Genre (Queen of Hearts)",
+        "slug": "classic-of-the-genre-queen-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 12
+    }
+},
+{
+    "model": "music.song",
+    "pk": 146,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.742Z",
+        "title": "Feels Like Forever (King of Hearts)",
+        "slug": "feels-like-forever-king-of-hearts",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 19,
+        "track": 13
+    }
+},
+{
+    "model": "music.song",
+    "pk": 147,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.742Z",
+        "title": "This is Not a Dream (Ace of Spades)",
+        "slug": "this-is-not-a-dream-ace-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 1
+    }
+},
+{
+    "model": "music.song",
+    "pk": 148,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.743Z",
+        "title": "It's Undeniable (2 of Spades)",
+        "slug": "its-undeniable-2-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 2
+    }
+},
+{
+    "model": "music.song",
+    "pk": 149,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.743Z",
+        "title": "Divine Interventions (3 of Spades)",
+        "slug": "divine-interventions-3-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 3
+    }
+},
+{
+    "model": "music.song",
+    "pk": 150,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.744Z",
+        "title": "I Did My Own Stunts (4 of Spades)",
+        "slug": "i-did-my-own-stunts-4-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 4
+    }
+},
+{
+    "model": "music.song",
+    "pk": 151,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.744Z",
+        "title": "The World is Not What You Think It Is (5 of Spades)",
+        "slug": "the-world-is-not-what-you-think-it-is-5-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 5
+    }
+},
+{
+    "model": "music.song",
+    "pk": 152,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.744Z",
+        "title": "The Feeling is Mine (6 of Spades)",
+        "slug": "the-feeling-is-mine-6-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 6
+    }
+},
+{
+    "model": "music.song",
+    "pk": 153,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.745Z",
+        "title": "I Got Out of This World Alive (7 of Spades)",
+        "slug": "i-got-out-of-this-world-alive-7-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 7
+    }
+},
+{
+    "model": "music.song",
+    "pk": 154,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.745Z",
+        "title": "I'm Your Tambourine (8 of Spades)",
+        "slug": "im-your-tambourine-8-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 8
+    }
+},
+{
+    "model": "music.song",
+    "pk": 155,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.746Z",
+        "title": "Hits Get Hard (9 of Spades)",
+        "slug": "hits-get-hard-9-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 9
+    }
+},
+{
+    "model": "music.song",
+    "pk": 156,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.746Z",
+        "title": "No One Remembers Their Names (10 of Spades)",
+        "slug": "no-one-remembers-their-names-10-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 10
+    }
+},
+{
+    "model": "music.song",
+    "pk": 157,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.746Z",
+        "title": "A Lot of Super Weird Stuff Went Down Right Before I Met You (Jack of Spades)",
+        "slug": "a-lot-of-super-weird-stuff-went-down-right-before-i-met-you-jack-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 11
+    }
+},
+{
+    "model": "music.song",
+    "pk": 158,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.747Z",
+        "title": "The End is Just Beginning (Queen of Spades)",
+        "slug": "the-end-is-just-beginning-queen-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 12
+    }
+},
+{
+    "model": "music.song",
+    "pk": 159,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.747Z",
+        "title": "Places, Everybody (King of Spades)",
+        "slug": "places-everybody-king-of-spades",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 20,
+        "track": 13
+    }
+},
+{
+    "model": "music.song",
+    "pk": 160,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.748Z",
+        "title": "Untitled, Actual Title (Joker One)",
+        "slug": "untitled-actual-title-joker-one",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 21,
+        "track": 1
+    }
+},
+{
+    "model": "music.song",
+    "pk": 161,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-07T19:48:55.748Z",
+        "title": "Actual Title, Untitled (Joker Two)",
+        "slug": "actual-title-untitled-joker-two",
+        "player_code": "",
+        "description": "",
+        "credits": "",
+        "lyrics": "",
+        "release": 21,
+        "track": 2
     }
 },
 {
