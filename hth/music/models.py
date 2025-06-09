@@ -41,6 +41,13 @@ class Release(PublishedModel, TitledModel):
         return any(t.lyrics for t in self.tracks)
 
     @property
+    def has_credits(self):
+        """
+        True iff any of the tracks have credits, or the release has credits.
+        """
+        return self.credits or any(t.credits for t in self.tracks)
+
+    @property
     def videos(self):
         """
         A ``QuerySet`` of published videos, ordered by publish time.

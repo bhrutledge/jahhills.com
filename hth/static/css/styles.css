@@ -621,6 +621,10 @@ header.navigation {
   .release-detail .release-videos, .release-detail .release-press {
     clear: both; } }
 
+.release .lyrics .content-text + .content-text {
+  border-top: 1px solid #ddd;
+  padding-top: 1.6rem; }
+
 @media screen and (min-width: 600px) {
   .video-preview {
     float: left;

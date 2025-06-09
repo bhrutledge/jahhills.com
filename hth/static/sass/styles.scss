@@ -90,7 +90,7 @@
             }
         }
     }
-    
+
     &-flex {
         display: flex;
         justify-content: space-around;
@@ -215,6 +215,11 @@
             clear: both;
         }
     }
+}
+
+.release .lyrics .content-text+.content-text {
+    border-top: $base-border;
+    padding-top: $base-spacing;
 }
 
 .video-preview {

@@ -35,8 +35,8 @@
             {% endfor %}
         </ol>
 
-        {% if release.has_lyrics %}
-        <p><a href="{{ release.get_lyrics_url }}">Lyrics</a></p>
+        {% if release.has_lyrics or release.has_credits %}
+        <p><a href="{{ release.get_lyrics_url }}">Credits &amp; lyrics</a></p>
         {% endif %}
     </section>
     {% endif %}
@@ -55,16 +55,6 @@
                 </p>
             </article>
             {% endfor %}
-        </div>
-    </section>
-    {% endif %}
-
-    {% if release.credits %}
-    <section class="content-section release-credits">
-        <h2>Credits</h2>
-
-        <div class="content-text">
-            {{ release.credits|safe }}
         </div>
     </section>
     {% endif %}

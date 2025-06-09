@@ -8,15 +8,31 @@
         {{ release.title }}
     </h1>
 
+    {% if release.credits %}
+    <section class="content-section release-credits">
+        <div class="content-text">
+            {{ release.credits|safe }}
+        </div>
+    </section>
+    {% endif %}
+
     <div class="content-columns">
         {% for song in release.tracks %}
-        {% if song.lyrics %}
+        {% if song.lyrics or song.credits %}
         <article class="content lyrics">
             <h3 class="content-header content-title">{{ song.title }}</h3>
 
+            {% if song.credits %}
+            <div class="content-text">
+                {{ song.credits|safe }}
+            </div>
+            {% endif %}
+
+            {% if song.lyrics %}
             <div class="content-text">
                 {{ song.lyrics|safe }}
             </div>
+            {% endif %}
         </article>
         {% endif %}
         {% endfor %}
