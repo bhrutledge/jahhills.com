@@ -1,0 +1,19 @@
+{% load cloudinary %}
+
+<header class="container-header content-header">
+    <h1 class="content-title">{{ release.title }}</h1>
+    <p class="content-subtitle">{{ release.date|date }}</p>
+</header>
+
+{% if release.cover_url %}
+<div class="release-cover">
+    <img src="{% cloudinary_url release.cover_url width='480' crop='fill' type='fetch' %}" alt="Cover art">
+    <div class="embed">
+        {{ release.player_code|safe }}
+    </div>
+</div>
+{% endif %}
+
+<div class="content-text">
+    {{ release.description|safe }}
+</div>
