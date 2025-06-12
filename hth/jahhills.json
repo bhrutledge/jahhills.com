@@ -179,16 +179,16 @@
     "model": "music.release",
     "pk": 16,
     "fields": {
-        "publish": false,
+        "publish": true,
         "publish_on": "2025-03-28T00:00:00Z",
         "title": "DECK",
         "slug": "deck",
         "date": "2025-06-13",
         "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/DECK_4_panel.jpg",
         "player_code": "",
-        "description": "<p>\r\n52 songs, 4 albums, 2 jokers, 1 deck.\r\n</p>\r\n\r\n<p><a href=\"/news/deck-will-be-released/\">Read all about it</a>.",
+        "description": "<p>\r\n52 songs, 4 albums, 2 jokers, 1 deck.\r\n<br><a href=\"/news/deck-will-be-released/\">Learn all about it</a>.\r\n</p>\r\n\r\n<p>\r\nBuy digital on Bandcamp:\r\n<br>\r\n<a href=\"https://hallelujahthehills.bandcamp.com/album/deck-diamonds\">DIAMONDS</a>,\r\n<a href=\"https://hallelujahthehills.bandcamp.com/album/deck-clubs\">CLUBS</a>,\r\n<a href=\"https://hallelujahthehills.bandcamp.com/album/deck-hearts-2\">HEARTS</a>,\r\n<a href=\"https://hallelujahthehills.bandcamp.com/album/deck-spades\">SPADES</a>,\r\n<a href=\"https://hallelujahthehills.bandcamp.com/album/deck-jokers\">JOKERS</a>\r\n</p>\r\n\r\n<p>\r\nBuy physical on Bandcamp:\r\n<br><a href=\"https://hallelujahthehills.bandcamp.com/album/deck-diamonds#package-title-1465547712\">DIAMONDS double vinyl w/ full DECK download</a>\r\n<br><a href=\"https://hallelujahthehills.bandcamp.com/merch/the-deck-deck-of-playing-cards-2\">The DECK deck of playing cards</a>\r\n</p>\r\n\r\n<p>\r\nStream on Spotify, Apple Music, etc.:<br>\r\n<a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-diamonds\">DIAMONDS</a>,\r\n<a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-clubs\">CLUBS</a>,\r\n<a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-hearts\">HEARTS</a>,\r\n<a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-spades\">SPADES</a>,\r\n<a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-jokers\">JOKERS</a>\r\n</p>\r\n\r\n<p>\r\nRead the credits &amp; lyrics:<br>\r\n<a href=\"/music/deck-diamonds/lyrics/\">DIAMONDS</a>,\r\n<a href=\"/music/deck-clubs/lyrics/\">CLUBS</a>,\r\n<a href=\"/music/deck-hearts/lyrics/\">HEARTS</a>,\r\n<a href=\"/music/deck-spades/lyrics/\">SPADES</a>,\r\n<a href=\"/music/deck-jokers/lyrics/\">JOKERS</a>\r\n</p>",
         "credits": "",
-        "priority": null
+        "priority": 1
     }
 },
 {
@@ -203,7 +203,7 @@
         "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/DIAMONDS.jpg",
         "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=3563900680/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"https://hallelujahthehills.bandcamp.com/album/deck-diamonds\">DECK: DIAMONDS by Hallelujah The Hills</a></iframe>",
         "description": "<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/deck-diamonds\">Bandcamp</a> (including a limited edition double-LP pressing) and <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-diamonds\">streaming services</a></p>",
-        "credits": "",
+        "credits": "<p>\n            Recorded at Machines with Magnets, Pawtucket, RI<br/>\n            August 3\u201410, 2023<br/>\n            Engineered/produced by Seth Manchester<br/>\n            Overdubs done at Puritan Garage, Charlestown, MA and various locations Summer/Fall 2023<br/>\n            Mixed by Seth Manchester<br/>\n            Mastered by Amar Lal, Macro Sound, Oakland, CA\n        </p><p>\n            The band:<br/>\n            Ryan Connelly - Drums, Percussion, Vocals<br/>\n            David Michael Curry - Viola, Harmonica, Singing Saw, Vocals<br/>\n            Joseph Marrett - Bass, Vocals<br/>\n            Brian Rutledge - Trumpet, Synthesizer, Vocals<br/>\n            Ryan H. Walsh - Electric/Acoustic Guitar, Lead Vocals, Samples / Electronics<br/>\n            Nicholas Giadone Ward - Piano, Electric Guitar, Electric Piano, Organ, Vocals\n        </p><p>\n            Backing/Gang vox, unless noted otherwise, is: Ryan Connelly, Joseph Marrett, Brian Rutledge, Ryan H. Walsh, &amp; Nicholas Ward.\n        </p><p>\n            All songs written by Ryan H. Walsh<br/>\n            All songs arranged by Hallelujah The Hills\n        </p><p>Copyright \u00a92025 Reverse The Tape Decks ASCAP</p>",
         "priority": null
     }
 },
@@ -219,7 +219,7 @@
         "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949998/CLUBS.jpg",
         "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=1489714066/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"https://hallelujahthehills.bandcamp.com/album/deck-clubs\">DECK: CLUBS by Hallelujah The Hills</a></iframe>",
         "description": "<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/deck-clubs\">Bandcamp</a> and <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-clubs\">streaming services</a></p>",
-        "credits": "",
+        "credits": "<p>\n            Basic tracks recorded at Sun Tiki Studios, Portland, ME<br/>\n            June 3rd, 2023<br/>\n            Engineered by Keith Mann\n        </p><p>\n            Vocals recorded at Crooked Horse Studio, Providence, RI<br/>\n            Winter-Fall 2024<br/>\n            Engineered by Evan Sicuranza\n        </p><p>\n            Overdubs done at Puritan Garage, Charlestown, MA and various locations Fall 2023 - Winter 2024<br/>\n            Mixed by Seth Manchester, Machines with Magnets, Pawtucket RI<br/>\n            Mastered by Amar Lal, Macro Sound, Oakland, CA\n        </p><p>\n            The band:<br/>\n            Ryan Connelly - Drums, Percussion, Vocals<br/>\n            David Michael Curry - Viola, Harmonica, Singing Saw, Vocals<br/>\n            Joseph Marrett - Bass, Vocals<br/>\n            Brian Rutledge - Trumpet, Synthesizer, Vocals<br/>\n            Ryan H. Walsh - Electric/Acoustic Guitar, Lead Vocals, Samples / Electronics<br/>\n            Nicholas Giadone Ward - Piano, Electric Guitar, Electric Piano, Organ, Vocals\n        </p><p>\n            Backing/Gang vox, unless noted otherwise, is: Ryan Connelly, Joseph Marrett, Brian Rutledge, Ryan H. Walsh, &amp; Nicholas Ward.\n        </p><p>\n            All songs written by Ryan H. Walsh<br/>\n            All songs arranged by Hallelujah The Hills\n        </p><p>Copyright \u00a92025 Reverse The Tape Decks ASCAP</p>",
         "priority": null
     }
 },
@@ -235,7 +235,7 @@
         "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/HEARTS.jpg",
         "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=1594540600/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"https://hallelujahthehills.bandcamp.com/album/deck-hearts-2\">DECK: HEARTS by Hallelujah The Hills</a></iframe>",
         "description": "<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/deck-hearts-2\">Bandcamp</a> and <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-hearts\">streaming services</a></p>",
-        "credits": "",
+        "credits": "<p>\n            Recorded at Sun Tiki Studios, Portland, ME<br/>\n            June 3rd, 2023<br/>\n            Engineered by Keith Mann\n        </p><p>\n            Recorded at Crooked Horse Studio, Providence, RI<br/>\n            Winter-Fall 2024<br/>\n            Engineered by Evan Sicuranza\n        </p><p>\n            \"Just Another Night on Planet Earth\" and \"I'll Get Over It (If I Can Get Out from Under It)\"<br/>\n            Recorded at Rare Signals, Cambridge MA<br/>\n            August 11, 2024<br/>\n            Engineered by Brian Charles\n        </p><p>\n            Overdubs done at Puritan Garage, Charlestown, MA and various locations Summer 2024 - Fall 2024<br/>\n            Mixed by Evan Sicuranza, Crooked Horse Studio, Providence, RI<br/>\n            Mastered by Amar Lal, Macro Sound, Oakland, CA\n        </p><p>\n            The band:<br/>\n            Ryan Connelly - Drums, Percussion, Vocals<br/>\n            David Michael Curry - Viola, Harmonica, Singing Saw, Vocals<br/>\n            Joseph Marrett - Bass, Vocals<br/>\n            Brian Rutledge - Trumpet, Synthesizer, Vocals<br/>\n            Ryan H. Walsh - Electric/Acoustic Guitar, Lead Vocals, Samples / Electronics<br/>\n            Nicholas Giadone Ward - Piano, Electric Guitar, Electric Piano, Organ, Vocals\n        </p><p>\n            Backing/Gang vox, unless noted otherwise, is: Ryan Connelly, Joseph Marrett, Brian Rutledge, Ryan H. Walsh, &amp; Nicholas Ward.\n        </p><p>\n            All songs written by Ryan H. Walsh except \"Everest\" written by Nicholas Ward and Ryan H. Walsh<br/>\n            All songs arranged by Hallelujah The Hills\n        </p><p>Copyright \u00a92025 Reverse The Tape Decks ASCAP</p>",
         "priority": null
     }
 },
@@ -251,7 +251,7 @@
         "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/SPADES.jpg",
         "player_code": "<iframe style=\"border: 0; width: 100%; height: 120px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=1295836495/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/\" seamless><a href=\"https://hallelujahthehills.bandcamp.com/album/deck-spades\">DECK: SPADES by Hallelujah The Hills</a></iframe>",
         "description": "<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/deck-spades\">Bandcamp</a> and <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-spades\">streaming services</a></p>",
-        "credits": "",
+        "credits": "<p>\n            Recorded at Rare Signals, Cambridge MA<br/>\n            August 11, 2024<br/>\n            Engineered by Brian Charles\n        </p><p>\n            \"I Got Out of this World Alive,\" \"I Did My Own Stunts,\" and \"The End is Just Beginning\" Recorded at Sun Tiki Studios, Portland, ME<br/>\n            June 3rd, 2023<br/>\n            Engineered by Keith Mann\n        </p><p>\n            \"No One Remembers Their Names\" and \"The World is Not What You Think It Is\" cannot be tied to one single location for recording, not even basic tracks recording, and isn't that interesting?\n        </p><p>\n            Overdubs done in various locations Summer 2024 - Fall 2024<br/>\n            Mixed by Evan Sicuranza, Crooked Horse Studio, Providence, RI Nov-Dec 2024<br/>\n            Mastered by Amar Lal, Macro Sound, Oakland, CA\n        </p><p>\n            The band:<br/>\n            Ryan Connelly - Drums, Percussion, Vocals<br/>\n            David Michael Curry - Viola, Harmonica, Singing Saw, Vocals<br/>\n            Joseph Marrett - Bass, Vocals<br/>\n            Brian Rutledge - Trumpet, Synthesizer, Vocals<br/>\n            Ryan H. Walsh - Electric/Acoustic Guitar, Lead Vocals, Samples / Electronics<br/>\n            Nicholas Giadone Ward - Piano, Electric Guitar, Electric Piano, Organ, Vocals\n        </p><p>\n            Backing/Gang vox, unless noted otherwise, is: Ryan Connelly, Joseph Marrett, Brian Rutledge, Ryan H. Walsh, &amp; Nicholas Ward.\n        </p><p>\n            All songs written by Ryan H. Walsh<br/>\n            All songs arranged by Hallelujah The Hills\n        </p><p>Copyright \u00a92025 Reverse The Tape Decks ASCAP</p>",
         "priority": null
     }
 },
@@ -267,7 +267,7 @@
         "cover_url": "https://res.cloudinary.com/dgojqlr7m/image/upload/v1742949999/JOKERS.jpg",
         "player_code": "",
         "description": "<p>Available on <a href=\"https://hallelujahthehills.bandcamp.com/album/deck-jokers\">Bandcamp</a> and <a href=\"https://distrokid.com/hyperfollow/hallelujahthehills/deck-jokers\">streaming services</a></p>",
-        "credits": "",
+        "credits": "<p>\n            Recorded at Rare Signals, Cambridge MA<br/>\n            August 11, 2024<br/>\n            Engineered by Brian Charles\n        </p><p>\n            Mixed by Ryan H. Walsh<br/>\n            Mastered by Amar Lal, Macro Sound, Oakland, CA\n        </p><p>\n            The band:<br/>\n            Ryan Connelly - Drums, Percussion, Vocals<br/>\n            David Michael Curry - Viola, Harmonica, Singing Saw, Vocals<br/>\n            Joseph Marrett - Bass, Vocals<br/>\n            Brian Rutledge - Trumpet, Synthesizer, Vocals<br/>\n            Ryan H. Walsh - Electric/Acoustic Guitar, Lead Vocals, Samples / Electronics<br/>\n            Nicholas Giadone Ward - Piano, Electric Guitar, Electric Piano, Organ, Vocals\n        </p><p>\n            All songs written by Ryan H. Walsh<br/>\n            All songs arranged by Hallelujah The Hills\n        </p><p>Copyright \u00a92025 Reverse The Tape Decks ASCAP</p>",
         "priority": null
     }
 },
@@ -1881,8 +1881,8 @@
         "slug": "gimme-midnight-ace-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Electric Guitars, Samples<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            David Michael Curry - Viola<br/>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Synthesizer<br/>\n            Nicholas Ward - Piano, Electric Guitar\n        </p><p>\n            With:<br/>\n            Dana Colley - Baritone Sax<br/>\n            Peyton Pinkerton - Slide Guitar\n        </p>",
+        "lyrics": "<p>\n            Beaten by the day<br/>\n            Within inch of my life<br/>\n            Choose a way out and then<br/>\n            Don't think twice\n        </p>\n<p>\n            The only thing that helps<br/>\n            Is 'pretend it's a dream'<br/>\n            When the sun starts settin' won't you play my theme?\n        </p>\n<p>\n            Oh! Gimme midnight<br/>\n            Sick of the light<br/>\n            Gimme midnight\n        </p>\n<p>\n            Dwellin' in dusk<br/>\n            Cigarette lit<br/>\n            Wanna be there when the day gets hit\n        </p>\n<p>\n            There'll never be another one precisely like this<br/>\n            Adieu, farewell, let the darkness speak\n        </p>\n<p>\n            Oh! Gimme midnight<br/>\n            Sick of the light<br/>\n            Gimme midnight\n        </p>",
         "release": 17,
         "track": 1
     }
@@ -1897,8 +1897,8 @@
         "slug": "jokes-on-you-2-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Electric Guitar, Samples<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Joseph Marrett - Bass<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            Brian Rutledge - Trumpet<br/>\n            David Michael Curry - Viola\n        </p><p>\n            With:<br/>\n            Ed Morneau - Guitar<br/>\n            Emma Westling - Vocals\n        </p>",
+        "lyrics": "<p>\n            I hate you<br/>\n            You're a coward's coward<br/>\n            And when I was down<br/>\n            You just overpowered\n        </p>\n<p>\n            But Time will tell<br/>\n            The truth just rings a bell<br/>\n            And everything I promised<br/>\n            Will come true\n        </p>\n<p>\n            Joke's on you<br/>\n            I thought you knew<br/>\n            When everybody's laughing<br/>\n            They're laughin' at you\n        </p>\n<p>\n            This wheel's on fire<br/>\n            Now you're sayin' that you're tired<br/>\n            When everybody taps out<br/>\n            I'm just coming alive\n        </p>\n<p>\n            Time's running out<br/>\n            You keep moving your mouth<br/>\n            And the bullshit that comes out<br/>\n            Removes all remaining doubt\n        </p>\n<p>\n            Now that time has passed<br/>\n            All the people you harassed<br/>\n            Are now way stronger than you\n        </p>\n<p>\n            This wheel's on fire<br/>\n            Now you're sayin' that you're tired<br/>\n            When everybody taps out<br/>\n            I'm just coming alive\n        </p>",
         "release": 17,
         "track": 2
     }
@@ -1913,8 +1913,8 @@
         "slug": "fake-flowers-at-sunset-3-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Electric Guitar, Samples, Synths<br/>\n            Nicholas Ward - Electric Guitar, Piano<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Joseph Marrett - Bass<br/>\n            David Michael Curry - Viola<br/>\n            Brian Rutledge - Trumpet\n        </p><p>\n            With:<br/>\n            Cassie Berman - Vocals<br/>\n            Jonah Sacks - Cello\n        </p>",
+        "lyrics": "<p>\n            I love you like a human being does<br/>\n            I love you like beyond repair<br/>\n            I love you inside out and falling<br/>\n            So, doubters, please beware\n        </p>\n<p>\n            We wonder where all of the time goes<br/>\n            We look and it's not there<br/>\n            We waste our time keeping track of time<br/>\n            We know that time don't care\n        </p>\n<p>\n            We know that time don't care\n        </p>\n<p>\n            Fake flowers at sunset<br/>\n            Cuz earthquakes don't apologize<br/>\n            And rivers never tell no lies<br/>\n            The wind it never stops and cries<br/>\n            But I do\n        </p>\n<p>\n            So, I love you like a human being does<br/>\n            I love you like beyond repair<br/>\n            I love you inside out and falling<br/>\n            So, doubters, please beware\n        </p>\n<p>\n            Doubters, please beware<br/>\n            Doubters, please beware<br/>\n            Doubters, please beware<br/>\n            Doubters, please beware\n        </p>",
         "release": 17,
         "track": 3
     }
@@ -1929,8 +1929,8 @@
         "slug": "rebuilding-year-4-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Synths, Samples<br/>\n            Joseph Marrett - Bass<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            David Michael Curry - Viola\n        </p><p>\n            With:<br/>\n            Ezra Furman - Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            Sometimes I stay up all night<br/>\n            Sometimes I'm in bed before ten<br/>\n            Sometimes I'm not really sure<br/>\n            If it's ever gonna end\n        </p>\n<p>\n            Caught you at the carnival<br/>\n            Cotton candy in your hand<br/>\n            Swore we'd never speak again<br/>\n            So like where does that stand?\n        </p>\n<p>\n            What are you doing here?<br/>\n            Watch my cool just disappear<br/>\n            You'll have to pardon my appearance<br/>\n            Cuz it's a re-building year\n        </p>\n<p>\n            Well Ravi moved to Iowa<br/>\n            I lived with Gary till he married Nance<br/>\n            What's it even matter though?<br/>\n            I see no ring on your hand\n        </p>\n<p>\n            I put mine in a deposit box<br/>\n            Tried to forget that I was happy once<br/>\n            Then I stopped getting haircuts<br/>\n            Then I stopped giving any fucks\n        </p>\n<p>\n            What are you doing here?<br/>\n            Watch my cool just disappear<br/>\n            You'll have to pardon my appearance<br/>\n            Cuz it's a re-building year\n        </p>\n<p>\n            And what's his name can go fuck himself<br/>\n            I froze his name in a wishing well<br/>\n            Trying to get better, dear<br/>\n            Trying not to disappear\n        </p>\n<p>\n            Don't wanna live in a nightmare<br/>\n            I'm just trying to get out of here,<br/>\n            I'm just trying to make it through the year\n        </p>\n<p>\n            Well it's a rebuilding year<br/>\n            And it's neither here nor there<br/>\n            Trying to climb back to zero<br/>\n            Cuz it's a rebuilding year\n        </p>",
         "release": 17,
         "track": 4
     }
@@ -1945,8 +1945,8 @@
         "slug": "alone-in-love-5-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Electric Guitar, Samples<br/>\n            Joseph Marrett - Bass<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            David Michael Curry - Viola\n        </p><p>\n            With:<br/>\n            Tyler Derryberry - Synthesizer\n        </p>",
+        "lyrics": "<p>\n            Oh hi there, hello, I didn't really hear you come in<br/>\n            If you stay real quiet, I'll tell you about the fever within\n        </p>\n<p>\n            Try as you may, it's a bust<br/>\n            But surprise, turns out, I'll never give up\n        </p>\n<p>\n            I'm alone<br/>\n            I'm in love<br/>\n            I can barely keep up<br/>\n            I thought I overdid it but I guess I didn't do it enough\n        </p>\n<p>\n            Now that you made it this far, you wanna show us how it went down<br/>\n            But no one likes a chatty magician in this part of town\n        </p>\n<p>\n            So keep it with yours, it's a win<br/>\n            But the next day you'll need to start all over again\n        </p>\n<p>\n            I'm alone<br/>\n            I'm in love<br/>\n            I can barely keep up<br/>\n            I thought I overdid it but I guess I didn't do it enough\n        </p>\n<p>\n            I thought I overdid it but it turns out it wasn't enough<br/>\n            I thought I overdid it but it turns out it wasn't enough<br/>\n            I thought I overdid it but it turns out it wasn't enough<br/>\n            I thought I overdid it but it turns out it wasn't enough<br/>\n            I thought I overdid it but it turns out it wasn't enough<br/>\n            I thought I overdid it but it turns out it wasn't enough<br/>\n            I thought I overdid it but it turns out it wasn't enough<br/>\n            I thought I overdid it but it turns out it wasn't enough<br/>\n            I thought I overdid it but it turns out it wasn't enough<br/>\n            I thought I overdid it but it turns out it wasn't enough\n        </p>",
         "release": 17,
         "track": 5
     }
@@ -1961,8 +1961,8 @@
         "slug": "grateful-dead-sweater-6-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Guitars, Chimes, Samples, Piano<br/>\n            Joseph Marrett - Bass<br/>\n            Nicholas Ward - Electric Piano, Piano<br/>\n            Ryan Connelly - Drums, Percussion, Vocals<br/>\n            David Michael Curry - Viola<br/>\n            Brian Rutledge - Trumpet\n        </p><p>\n            With:<br/>\n            Josh Kantor - Organ<br/>\n            Ed Morneau - Guitar<br/>\n            The Epoch House - Choir Vocals\n        </p>",
+        "lyrics": "<p>\n            I know we only just met<br/>\n            But I like your smile<br/>\n            I been lonely for awhile<br/>\n            And that's a fact\n        </p>\n<p>\n            You think I'm stuck in the past<br/>\n            That I'm still tied to the mast<br/>\n            But I been movin' on<br/>\n            And that's a fact\n        </p>\n<p>\n            Nothing still makes me dream of Heather<br/>\n            No sunny skies or even stormy weather<br/>\n            Now there's only one feather<br/>\n            In my hat during these days so better<br/>\n            'Cept when you're wearing her Grateful Dead sweater\n        </p>\n<p>\n            Don't know why she left it behind<br/>\n            She's still seeing the shows<br/>\n            Still trading the boots<br/>\n            And that's a fact\n        </p>\n<p>\n            I couldn't bare to give it away<br/>\n            Hand-crafted macrame<br/>\n            That her grandma worked on for a year\n        </p>\n<p>\n            Nothing still makes me dream of Heather<br/>\n            No sunny skies or even stormy weather<br/>\n            Now there's only one feather<br/>\n            In my hat during these days so better<br/>\n            'Cept when you're wearing her Grateful Dead sweater\n        </p>\n<p>\n            No 'Box of Rain' or that one about a train<br/>\n            Besides \"Ripple,\" they never really grabbed me<br/>\n            But there's something about<br/>\n            That one item, gives me doubt\n        </p>\n<p>\n            Your know, it's Janie wearing heather's Grateful Dead sweater<br/>\n            It's Janie wearing your Grateful Dead sweater\n        </p>",
         "release": 17,
         "track": 6
     }
@@ -1977,8 +1977,8 @@
         "slug": "too-high-to-say-hello-7-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Guitar, Samples<br/>\n            Joseph Marrett - Bass, Vocals<br/>\n            Nicholas Ward - Electric Piano<br/>\n            Ryan Connelly - Drums, Percussion, Vocals<br/>\n            David Michael Curry - Viola<br/>\n            Brian Rutledge - Synthesizer\n        </p>",
+        "lyrics": "<p>\n            Time moves fast<br/>\n            These hours always right up on my ass<br/>\n            But it seemed like no time at all<br/>\n            When I spotted you at the Beacon County Mall\n        </p>\n<p>\n            Our farewell, left me unwell<br/>\n            Spent too many nights at my favorite bar in hell<br/>\n            Couldn't rally, couldn't start again<br/>\n            I spent most of my time in ways I can't defend\n        </p>\n<p>\n            I was too high to say hello<br/>\n            I was too high to say hello<br/>\n            And I thought you'd just like to know<br/>\n            I was too high to say hello\n        </p>\n<p>\n            It's easier to write<br/>\n            I can work on a single phrase the entire night<br/>\n            And I realize<br/>\n            That's not your style<br/>\n            Cuz you always went non-verbal after awhile\n        </p>\n<p>\n            You were too high to say hello<br/>\n            You were too high to say hello<br/>\n            And I thought you'd just like to know<br/>\n            I was too high to say hello\n        </p>",
         "release": 17,
         "track": 7
     }
@@ -1993,8 +1993,8 @@
         "slug": "superglued-to-you-8-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Nicholas Ward - Piano, Organ<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Joseph Marrett - Bass<br/>\n            Ryan H. Walsh - Lead Vocals, Samples, Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Brian Rutledge - Trumpet\n        </p><p>\n            With:<br/>\n            Lydia Loveless - Lead Vocals<br/>\n            Ed Morneau - Synth Guitar<br/>\n            Jonah Sacks - Cello\n        </p>",
+        "lyrics": "<p>\n            How long has it been now?<br/>\n            It feels like maybe two years?<br/>\n            You could tell me ten, I wouldn't blink an eye\n        </p>\n<p>\n            Well, ain't you a million dollars<br/>\n            Do you still call 'em gentlemen callers?<br/>\n            Has your drama cup been filled up to the brim?\n        </p>\n<p>\n            I knew this story about two people<br/>\n            And their love was overwhelming<br/>\n            It's was a 'will they won't they...destroy each other?'---kind of deal\n        </p>\n<p>\n            Horoscopes told 'em to get out<br/>\n            With fortune tellers spitting their tea out<br/>\n            Both contrarians, they didn't paid it any heed\n        </p>\n<p>\n            So what are we gonna do?<br/>\n            Turns out I'm superglued to you\n        </p>\n<p>\n            She said \"Spoiler alert: I'm a river<br/>\n            And you can never step in me<br/>\n            And expect to find the same things you found before.\"\n        </p>\n<p>\n            He said, \"How am I supposed to get any footing?<br/>\n            If the ground beneath me keeps shifting?\"<br/>\n            And what happened next was a very special episode\n        </p>\n<p>\n            So what are we gonna do?<br/>\n            Turns out I'm superglued to you\n        </p>\n<p>\n            No use in saving face<br/>\n            There's no rapture to replace\n        </p>\n<p>\n            So what are we gonna do?<br/>\n            So what are we gonna do?<br/>\n            Turns out I'm superglued to you\n        </p>\n<p>\n            What are we gonna do?<br/>\n            Turns out I'm superglued to you\n        </p>\n<p>\n            No use in saving face<br/>\n            There's no rapture to replace<br/>\n            The way I feel about you\n        </p>\n<p>\n            So what are we gonna do?<br/>\n            Turns out I'm superglued to you<br/>\n            Turns out I'm superglued to you\n        </p>",
         "release": 17,
         "track": 8
     }
@@ -2009,8 +2009,8 @@
         "slug": "old-feelings-new-england-9-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Electric Guitar, Acoustic Guitar<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Joseph Marrett - Bass<br/>\n            Nicholas Ward - Electric Guitar, Organ<br/>\n            David Michael Curry - Viola\n        </p><p>\n            With:<br/>\n            Tanya Donnelly - Vocals\n        </p>",
+        "lyrics": "<p>\n            I shout / off stage<br/>\n            \"Can someone please tell me my line?\"<br/>\n            I look around to find there's nobody else here<br/>\n            Just me and some history\n        </p>\n<p>\n            Oh Winona! Oh Rita!<br/>\n            Shall we reenact our old routine?<br/>\n            You could enter stage right turn on the kitchen light<br/>\n            Announce we're all just trapped in the dream\n        </p>\n<p>\n            Take bows, curtain call<br/>\n            I spent a decade in a liminal zone<br/>\n            It's while I'm drifting down some lost highway<br/>\n            That I try to remember your name\n        </p>\n<p>\n            Is it Lazarus?<br/>\n            Is it Betsy?<br/>\n            Could I come in person, ask you tonight?<br/>\n            I remember the street, I remember the door<br/>\n            I could be there just before the daylight\n        </p>\n<p>\n            So can you hear me calling, Kansas?<br/>\n            Indiana, I've got plans tonight<br/>\n            There's a hole in my heart, Ohio<br/>\n            Allentown, PA well there's nothing more to say\n        </p>\n<p>\n            Old Feelings, New England<br/>\n            It's where I'll end up, if I'm in good with The Fates<br/>\n            Cuz I'm the man with the Massachusetts plates\n        </p>\n<p>\n            I'm coming home,<br/>\n            Radio on.\n        </p>",
         "release": 17,
         "track": 9
     }
@@ -2025,8 +2025,8 @@
         "slug": "samantha-youre-the-only-mistake-i-know-how-to-make-10-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Electric Guitar, Acoustic Guitar<br/>\n            Joseph Marrett - Bass<br/>\n            Nicholas Ward - Electric Guitar, Organ<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Brian Rutledge - Trumpet<br/>\n            David Michael Curry - Viola\n        </p><p>\n            With:<br/>\n            Strings by Doublesharp Productions<br/>\n            Violin by Giorgio Abbadessa<br/>\n            Strings recorded by Federico Tiero<br/>\n            Arrangement by Nicholas Giadone Ward &amp; Stefano Tiero\n        </p>",
+        "lyrics": "<p>\n            It's over, guess 3rd time's the charm<br/>\n            And though it caused so much harm<br/>\n            Feels like I lost my right arm<br/>\n            But Sammy, I think I figured you out\n        </p>\n<p>\n            So if you're ever in doubt<br/>\n            What was this all about<br/>\n            Know that I don't wanna give up<br/>\n            And even though we know what awaits<br/>\n            Samantha, you're the only mistake I know how to make\n        </p>\n<p>\n            You're an unforced error / A tiny terror / A wallflower set to attack<br/>\n            I'm the unmade bed / A luxurious dread / And you know we have to go back\n        </p>\n<p>\n            You know that I just don't seem to know when to quit<br/>\n            And even though we know what awaits<br/>\n            Samantha, you're the only mistake I know how to make\n        </p>\n<p>\n            Every autumn<br/>\n            You know that nature does cry<br/>\n            Look at how beautifully I<br/>\n            Temporarily die\n        </p>\n<p>\n            And I'm just like those leaves<br/>\n            And though I fall from the tree<br/>\n            Samantha, it's the only place I wanna be<br/>\n            Samantha, it's the only place I wanna be\n        </p>",
         "release": 17,
         "track": 10
     }
@@ -2041,8 +2041,8 @@
         "slug": "this-is-a-song-jack-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Electric Guitar<br/>\n            Joseph Marrett - Bass<br/>\n            Nicholas Ward - Electric Piano<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Brian Rutledge - Trumpet<br/>\n            David Michael Curry - Viola\n        </p><p>\n            With:<br/>\n            Ezra Furman - Vocals<br/>\n            Seth Manchester - Vocals\n        </p>",
+        "lyrics": "<p>\n            You think you member each song that you love<br/>\n            But you begin forgetting and then forget forgetting<br/>\n            You could summon the old ways<br/>\n            For a new composition<br/>\n            Intro, a verse, then the chorus, now listen:\n        </p>\n<p>\n            Dirt to dust / hammers and hatchets<br/>\n            And this is a song<br/>\n            Country codes and flower based tombstones<br/>\n            And this is a song<br/>\n            What you gonna tell em back home?\n        </p>\n<p>\n            That you loved to surf? That you were left for dead?<br/>\n            I was running on empty<br/>\n            I was dumb as a moon rock<br/>\n            I was always in motion<br/>\n            I was never pretending\n        </p>\n<p>\n            Dirt to dust / hammers and hatchets<br/>\n            And this is a song<br/>\n            I'm alone in America<br/>\n            I'm alone in the song<br/>\n            I'm out here clicking heels chanting \"Darling, there's no place like home\"\n        </p>\n<p>\n            You're alone in a crowded room<br/>\n            You're alone in the song<br/>\n            You're hoping somehow you could make some rights outta all of these wrongs\n        </p>\n<p>\n            We're alone in America<br/>\n            We're alone in the song<br/>\n            We're all stuck inside just waiting for the world to turn back on\n        </p>\n<p>\n            We're all stuck inside just waiting for the world to turn back on\n        </p>",
         "release": 17,
         "track": 11
     }
@@ -2057,8 +2057,8 @@
         "slug": "here-goes-nothing-queen-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Electric Guitar<br/>\n            Joseph Marrett - Bass<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            David Michael Curry - Viola<br/>\n            Brian Rutledge - Synthesizer\n        </p><p>\n            With:<br/>\n            Patrick Stickles - Vocals, Guitar<br/>\n            Noell Dorsey - Opera Vocals<br/>\n            Jonathan M. Matthews - Opera Vocals\n        </p>",
+        "lyrics": "<p>\n            I remember being downgraded to a tropical storm<br/>\n            Or passing out in the exact spot I was born<br/>\n            There's a penalty for perjury so you know this is fact<br/>\n            Since I'm sticking around, guess I'll clean up my act\n        </p>\n<p>\n            Here goes nothing<br/>\n            I'm gonna witness all the weirdness and wild<br/>\n            No one can turn me around<br/>\n            Here goes nothing<br/>\n            I'll make every single weakness a win<br/>\n            Stand there and watch me begin<br/>\n            Fuck, I'm starting over again\n        </p>\n<p>\n            I remember almost dying in expensive hotels<br/>\n            pathetic whimpers followed all my rebel yells<br/>\n            I could check out if I wanted, guess I finally did<br/>\n            Now I'm back to make my rivals all hate me again\n        </p>\n<p>\n            Here goes nothing<br/>\n            I'm gonna witness all the weirdness and wild<br/>\n            No one can turn me around<br/>\n            Here goes nothing<br/>\n            I'll make every single weakness a win<br/>\n            Stand there and watch me begin<br/>\n            Fuck, I'm starting over again\n        </p>\n<p>\n            Fuck, I'm starting over again<br/>\n            Fuck, I'm starting over again<br/>\n            Fuck, I'm starting over again\n        </p>",
         "release": 17,
         "track": 12
     }
@@ -2073,8 +2073,8 @@
         "slug": "follow-the-foreshadowing-king-of-diamonds",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Ryan H. Walsh - Lead Vocals, Electric Guitar<br/>\n            Nicholas Ward - Electric Piano, Piano<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Trumpet<br/>\n            David Michael Curry - Viola\n        </p><p>\n            With:<br/>\n            Peyton Pinkerton - Guitar<br/>\n            Noell Dorsey - Vocals<br/>\n            Cassie Berman - Vocals<br/>\n            Josh Kantor - Organ<br/>\n            The Brendan Behan Pub Singers: Ryan Connelly, David Michael Curry, Chris Devers, Aiden Gerstmyer, John Halloran, Anne Jarek, Luke Landherr, Erick Liddell, Lisa Rodrigues, Mike Sakraida, Brad Searles, Christopher Taylor, Dan Tebo\n        </p>",
+        "lyrics": "<p>\n            \"Who are you?\"<br/>\n            Just a narrator in search of a song<br/>\n            \"Who are we?\"<br/>\n            The same old Greek chorus we've known all along<br/>\n            \"No escape\"<br/>\n            There's no escaping so you've got to be brave<br/>\n            \"And this is why\"<br/>\n            I left you out in the wind and the rain\n        </p>\n<p>\n            But I don't wanna be lost and found and returned to go<br/>\n            \"What I want?\"<br/>\n            All I'm asking for is ultimate revenge<br/>\n            \"To what end?\"<br/>\n            Well, it's better than never having loved at all<br/>\n            \"When was that?\"<br/>\n            I can't remember, it was some time in the past<br/>\n            \"Can you start again?\"<br/>\n            Well buddy, what do you think this even is?\n        </p>\n<p>\n            I'm inviting you into a story that I been telling myself<br/>\n            Destruction and the dynamite<br/>\n            Is one way to make it through the night<br/>\n            In hindsight<br/>\n            I knew it'd be alright<br/>\n            Just follow the foreshadowing\n        </p>",
         "release": 17,
         "track": 13
     }
@@ -2089,8 +2089,8 @@
         "slug": "uncanny-valley-ace-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Trumpet<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Piano, Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals\n        </p><p>\n            With:<br/>\n            Sadie Dupuis - Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            I been riding a digital horse through an uncanny valley<br/>\n            I been cryin' under fluorescent lights just hoping maybe I could rally\n        </p>\n<p>\n            New age technicolor, peak experience<br/>\n            Take a gander at the score, that's all there really is\n        </p>\n<p>\n            I been riding a digital horse through an uncanny valley\n        </p>\n<p>\n            They always numb out when I shake hands say nice to meet ya<br/>\n            Around these parts that's why they call me Local Anesthesia\n        </p>\n<p>\n            Dissonance in the data, a sad state of affairs<br/>\n            Try to go at it alone, but everything comes in pairs\n        </p>\n<p>\n            They always numb out when I shake hands say nice to meet ya\n        </p>\n<p>\n            Robbed of our inheritance, fucked over round the bend<br/>\n            An eerie feeling in my gut, it's happening again<br/>\n            We're gonna need the best of us, we're gonna need our friends<br/>\n            Time will tell us<br/>\n            Rip right through us<br/>\n            Come out of us<br/>\n            So slam cut to this\n        </p>\n<p>\n            I been riding a digital horse through an uncanny valley<br/>\n            I been riding a digital horse through an uncanny valley<br/>\n            I been riding a digital horse through an uncanny valley<br/>\n            And I don't wanna go through it<br/>\n            And I don't wanna go through it<br/>\n            Just trying to get back home<br/>\n            Eye the horizon on the road<br/>\n            But I don't wanna go through it<br/>\n            I guess I gotta go through it<br/>\n            I guess I gotta go\n        </p>",
         "release": 18,
         "track": 1
     }
@@ -2105,8 +2105,8 @@
         "slug": "burn-this-atlas-down-2-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Trumpet<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Piano<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals, Samples\n        </p><p>\n            With:<br/>\n            Craig Finn - Vocals<br/>\n            Aaron Perrino - Vocals\n        </p>",
+        "lyrics": "<p>\n            I never been to Stockholm but I've enjoyed its syndrome<br/>\n            Never messed with Texas but I fucked \"the state\"<br/>\n            Resist as you might, this is the time of your life<br/>\n            A New York minute could last for an eternity\n        </p>\n<p>\n            So, if this must be the place let the maps all get erased<br/>\n            And if we're dying on the vine get my lawyer on the line\n        </p>\n<p>\n            We'll burn this atlas down<br/>\n            To the ground and then build it back up just to burn it down to the ground<br/>\n            And then build it back up just to burn it down<br/>\n            Let's burn this atlas down\n        </p>\n<p>\n            They say when in Rome, I guess I'm always there, in a way<br/>\n            We may not be in Kansas but it still feels like home<br/>\n            A compass in hand in a non-magnetic land<br/>\n            California dreamin became my one true nightmare\n        </p>\n<p>\n            So if we're starting a map from scratch let us batten down the hatch<br/>\n            Calling all cartographers: we're taking back what's yours.\n        </p>\n<p>\n            We'll burn this atlas down<br/>\n            To the ground and then build it back up just to burn it down to the ground<br/>\n            And then build it back up just to burn it down<br/>\n            Let's burn this atlas down\n        </p>\n<p>\n            Now, a map is not the place<br/>\n            Like the sketch is not the face<br/>\n            So let us represent terrain<br/>\n            Not how it has been, but how it unfolds in dreams\n        </p>\n<p>\n            So, let's burn this atlas down<br/>\n            To the ground and then build it back up just to burn it down to the ground<br/>\n            And then build it back up just to burn it down to the ground<br/>\n            And then build it back up just to burn it down to the ground<br/>\n            And then build it back up just to burn it down to the ground<br/>\n            Let's burn this atlas down\n        </p>",
         "release": 18,
         "track": 2
     }
@@ -2121,8 +2121,8 @@
         "slug": "camouflage-band-aid-3-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass, banjo, backing vocals<br/>\n            Brian Rutledge - Synthesizer<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Organ<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            You jigsaw me<br/>\n            Like 1 2 3<br/>\n            I bleed and jive<br/>\n            Stealin' honey from the hive\n        </p>\n<p>\n            I fuck pray love<br/>\n            I push and shove<br/>\n            Then my fortune reads:<br/>\n            \"You know I undermine my purpose<br/>\n            Like a camouflage band-aid\"\n        </p>\n<p>\n            Like a camouflage band-aid<br/>\n            Like a camouflage band-aid<br/>\n            Like a camouflage band-aid\n        </p>\n<p>\n            It all for free<br/>\n            It's A B C<br/>\n            It's do or die<br/>\n            It's you or I\n        </p>\n<p>\n            That's how it goes<br/>\n            Just ask your fingers and your toes<br/>\n            And when we get to the floor, you'll be useless in a new way\n        </p>\n<p>\n            Like a camouflage band-aid<br/>\n            Like a camouflage band-aid<br/>\n            Like a camouflage band-aid<br/>\n            Like a camouflage band-aid\n        </p>",
         "release": 18,
         "track": 3
     }
@@ -2137,8 +2137,8 @@
         "slug": "im-your-meteorite-4-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass, banjo<br/>\n            Brian Rutledge - Trumpet<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Organ<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Piano, Lead Vocals\n        </p><p>\n            With:<br/>\n            Matt Parish - Guitar\n        </p>",
+        "lyrics": "<p>\n            Dream with me<br/>\n            In the craters of the plains<br/>\n            Let me cool off in the moonlight<br/>\n            Let me hold you in my arms\n        </p>\n<p>\n            Is it true?<br/>\n            You love the way I'm down to earth<br/>\n            I could come through the clouds<br/>\n            Let the lightning bring me down\n        </p>\n<p>\n            \"Hello, Night\"<br/>\n            In the thunder and rain<br/>\n            This is who I became<br/>\n            It's alright<br/>\n            I'm your meteorite\n        </p>\n<p>\n            Don't hesitate to run some science on my ways<br/>\n            Maybe we'd both learn something helpful<br/>\n            And you'd forget your asteroid\n        </p>\n<p>\n            He's up there<br/>\n            And I've landed here in front of you<br/>\n            I could come through the clouds<br/>\n            Let the lightning bring me down\n        </p>\n<p>\n            \"Hello, Night\"<br/>\n            In the thunder and rain<br/>\n            This is who I became<br/>\n            It's alright<br/>\n            It's no secret the way<br/>\n            That I burst into flames as I arrive<br/>\n            And the telescope in hand brings you closer to the land we'll unite<br/>\n            I'm your meteorite\n        </p>\n<p>\n            And sometimes<br/>\n            All that we know ain't worth a dime<br/>\n            It's a total wash, it's a clean sweep<br/>\n            And sometimes all that we hold<br/>\n            Is worth more than gold<br/>\n            It's an empire in motion\n        </p>\n<p>\n            And this time it won't break bad<br/>\n            When we come back<br/>\n            It won't fall apart\n        </p>\n<p>\n            I could come through the clouds<br/>\n            Let the lightning bring me down<br/>\n            \"Hello, Night\"<br/>\n            In the thunder and rain<br/>\n            This is who I became<br/>\n            It's alright<br/>\n            It's no secret the way<br/>\n            That I burst into flames as I arrive<br/>\n            But I survive the heat<br/>\n            And you run straight to me: \"Got a light?\"<br/>\n            I'm your meteorite<br/>\n            I'm your meteorite<br/>\n            I'm your meteorite<br/>\n            I'm your meteorite\n        </p>",
         "release": 18,
         "track": 4
     }
@@ -2153,8 +2153,8 @@
         "slug": "crush-all-night-5-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass, Synthesizer<br/>\n            Brian Rutledge - Synthesizer<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Piano, Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals\n        </p><p>\n            With:<br/>\n            Sadie Dupuis - Lead Vocals<br/>\n            Melanie Bernier - Whisper Vocals\n        </p>",
+        "lyrics": "<p>\n            Prime time for the desires<br/>\n            The diamonds, the gold<br/>\n            Count out the number of fires<br/>\n            That mark the paths of victory roads\n        </p>\n<p>\n            Cuz coddling will do you no good<br/>\n            You gotta face the facts like they said you should<br/>\n            If it all comes down to the wire<br/>\n            Let my veins be wires and crush all night\n        </p>\n<p>\n            Bang on brightly, the true flag<br/>\n            Our motto \"Go Bold\"<br/>\n            Elevate me up to an angel<br/>\n            The dangers well known\n        </p>\n<p>\n            Bless every single winged-mountain-guide<br/>\n            The lucky end up on the other side<br/>\n            If it all comes down to the wire<br/>\n            Let my veins be wires and crush all night\n        </p>\n<p>\n            If it all comes down to the wire<br/>\n            Let my veins be wires and crush all night<br/>\n            If it all comes down to the wire<br/>\n            Let my veins be wires and crush all night<br/>\n            If it all comes down to the wire<br/>\n            Let my veins be wires and crush all night<br/>\n            If it all comes down to the wire<br/>\n            Let my veins be wires and crush all night<br/>\n            Crush. All. Night.\n        </p>",
         "release": 18,
         "track": 5
     }
@@ -2169,8 +2169,8 @@
         "slug": "camera-click-6-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass, Synthesizer<br/>\n            Brian Rutledge - Synthesizer<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Piano, Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals, Samples\n        </p><p>\n            With:<br/>\n            Vincent Xtiano - Lead Guitar\n        </p>",
+        "lyrics": "<p>\n            I'm a servant<br/>\n            Inside of a mountain<br/>\n            Lookin' thru a mirror<br/>\n            At all the atrocities\n        </p>\n<p>\n            Tracking my desires<br/>\n            Turning on a dime<br/>\n            Alchemy's unruly<br/>\n            But it's something I tried\n        </p>\n<p>\n            When the devil you know<br/>\n            Starts to move way too slow<br/>\n            There's always a new one to incorporate<br/>\n            If you think no one knows<br/>\n            About the places you go<br/>\n            Crack open your skull time to investigate\n        </p>\n<p>\n            Just listen for the camera click\n        </p>\n<p>\n            Bring them upstairs now<br/>\n            They're all dressed in black<br/>\n            Some of them are symbiotic<br/>\n            Charged up, back to back\n        </p>\n<p>\n            You know I'm goin' electric<br/>\n            You know I'm made of metaphor<br/>\n            I'll never sunset the archetypes<br/>\n            But I told you that before\n        </p>\n<p>\n            When the devil you know<br/>\n            Starts to move way too slow<br/>\n            There's always a new one to incorporate<br/>\n            If you think no one knows<br/>\n            About the places you go<br/>\n            Crack open your skull time to investigate\n        </p>\n<p>\n            Just listen for the camera click\n        </p>",
         "release": 18,
         "track": 6
     }
@@ -2185,8 +2185,8 @@
         "slug": "fugaziblackholemirage-7-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Trumpet<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Organ<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            A moon walks into a star and says,<br/>\n            \"Gimme a Black Hole on the asteroids\"<br/>\n            My horse is drunk, my world is fucked<br/>\n            You'd think at this point I might be worried\n        </p>\n<p>\n            But then I pierced through the veil<br/>\n            Oh it's a fugazi, it's black hole, it's a mirage<br/>\n            I knew that you knew but I wanted to know if I took it too far\n        </p>\n<p>\n            I been making my coffee strong<br/>\n            I guess it's gotta be 6AM somewhere<br/>\n            They call me Kid Ballad, I'm in the public domain<br/>\n            But the milky way is full of the mediocre\n        </p>\n<p>\n            You feeling nervous, or what?<br/>\n            Oh it's a fugazi, it's black hole, it's a mirage<br/>\n            I knew that you knew but I wanted to know if I took it too far\n        </p>",
         "release": 18,
         "track": 7
     }
@@ -2201,8 +2201,8 @@
         "slug": "my-past-is-your-futurism-8-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Synthesizer<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Piano\n        </p><p>\n            With:<br/>\n            Devin Davis - Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            On the road,<br/>\n            Making my way through the dates of a forgotten year<br/>\n            Turnin' stones<br/>\n            Checking everywhere I can for the days long gone\n        </p>\n<p>\n            But my past is your futurism<br/>\n            My past is your futurism<br/>\n            My past just goes on and on and on\n        </p>\n<p>\n            I'm alone<br/>\n            Even in the crowded rooms of the time travel scene<br/>\n            \"Where is home?\"<br/>\n            You ask me like I'd even know, it's been far too long\n        </p>\n<p>\n            My past is your futurism<br/>\n            My past is your futurism<br/>\n            My past just goes on and on and on\n        </p>",
         "release": 18,
         "track": 8
     }
@@ -2217,8 +2217,8 @@
         "slug": "failures-my-fuel-9-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Synthesizer<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            Now that you've settled for everything you never wanted<br/>\n            You stay indoors all year in a prison you concocted<br/>\n            I'm on the pavement getting my clock cleaned every single night<br/>\n            Cuz time is tight\n        </p>\n<p>\n            I'm coming over<br/>\n            To meet my maker<br/>\n            He's actually a nice guy<br/>\n            Once you let him relax<br/>\n            You'll receive no notice<br/>\n            That I'm coming up roses<br/>\n            It's actually best if you assume<br/>\n            That I'm the fool<br/>\n            Cuz Failure's my fuel\n        </p>\n<p>\n            You get in your own way like a shadow boxing champion<br/>\n            You stay in touch with some but you have no idea what's happening<br/>\n            If you never risk the fall, you'll never take the leap<br/>\n            And though that's clich\u00e9, I say it anyway\n        </p>\n<p>\n            So let's go get humbled<br/>\n            Where the dangers are doubled<br/>\n            The rewards barely<br/>\n            Matching one tenth of what we had to put in<br/>\n            Can't rest on my laurels<br/>\n            Ain't nobody immortal<br/>\n            And you know I'm not motivated by fame, fortune, power, or jewels<br/>\n            No, failure's my fuel\n        </p>",
         "release": 18,
         "track": 9
     }
@@ -2233,8 +2233,8 @@
         "slug": "im-your-palindrome-10-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Trumpet<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitar, Samples\n        </p><p>\n            With:<br/>\n            Jeremy Gaudet - Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            We'll begin where it stops<br/>\n            Take it back to the top<br/>\n            It won't ever change how it goes<br/>\n            A narrative twist has no claim over this<br/>\n            Cuz I'm your palindrome\n        </p>\n<p>\n            We travel through time<br/>\n            Along the same exact line<br/>\n            We fall in love every morn<br/>\n            In the evening, a storm<br/>\n            Through a conflict well-worn<br/>\n            Cuz you're my palindrome\n        </p>\n<p>\n            We were talking about starting this thing at the end<br/>\n            I retraced my steps and now I'm back here again<br/>\n            Play it backwards, I don't care<br/>\n            Fast forward through the tears<br/>\n            It's a linear life<br/>\n            If the sequence is right\n        </p>\n<p>\n            We'll begin where it stops<br/>\n            And take it back to the top<br/>\n            It won't ever change how it goes<br/>\n            A narrative twist has no claim over this<br/>\n            Cuz I'm your palindrome<br/>\n            Cuz I'm your palindrome<br/>\n            Cuz I'm your palindrome\n        </p>",
         "release": 18,
         "track": 10
     }
@@ -2249,8 +2249,8 @@
         "slug": "modern-loss-jack-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Piano<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals, Samples\n        </p>",
+        "lyrics": "<p>\n            No one gets plastic surgery in a folk song<br/>\n            But the night is still young<br/>\n            Operators are standing by<br/>\n            Ready to shake and assist you\n        </p>\n<p>\n            So, glue your wings back on, my dear<br/>\n            There's a 404 error where the moon used to be, oh!<br/>\n            I've done the back-of-the-napkin math.<br/>\n            Don't laugh, plan is so crazy that it just might work out:\n        </p>\n<p>\n            Breaking into heaven while everyone is asleep<br/>\n            With a loose plan to steal eternity<br/>\n            But you know I'm gonna need my team<br/>\n            So let's round up the team\n        </p>\n<p>\n            There must be a word for the absence we can all sense:<br/>\n            That final feeling of *maybe it could all work out*<br/>\n            But now there's dissonance in the data<br/>\n            With angels renting out their halos\n        </p>\n<p>\n            So accustomed to mainlining chaos<br/>\n            We better get our asses to this s\u00e9ance<br/>\n            The spirit board spellin' out \"hey, hun\"<br/>\n            Well, we were wired for power but not on the grid<br/>\n            And that's how it began, this is how it begins\n        </p>\n<p>\n            Can you feel the modern loss?<br/>\n            Feel the modern loss?<br/>\n            Feel the modern loss?<br/>\n            We were wired for power but not on the grid<br/>\n            You have no idea the shit you're in<br/>\n            Can you feel the modern loss?<br/>\n            Feel the modern loss?<br/>\n            Feel the modern loss?\n        </p>",
         "release": 18,
         "track": 11
     }
@@ -2265,8 +2265,8 @@
         "slug": "fade-to-white-queen-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Synthesizer<br/>\n            Seth Manchester - Synthesizer<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            Chicory, moss pink tangled with your baby blue eyes<br/>\n            Collecting the flowers blooming out of salty goodbyes<br/>\n            Never not making a mess<br/>\n            We'll just have to adapt to this new world, I guess\n        </p>\n<p>\n            So take me down<br/>\n            Because I said so<br/>\n            Where you and I<br/>\n            Fade to white\n        </p>\n<p>\n            Queen Anne's lace and bloodroot cover our unified fields<br/>\n            Pushing &amp; pulling the landscape, always refusing to yield<br/>\n            With series finale vibes in the air<br/>\n            I could find some comforts inside the nest of your hair\n        </p>",
         "release": 18,
         "track": 12
     }
@@ -2281,8 +2281,8 @@
         "slug": "i-remember-this-king-of-clubs",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Trumpet<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Piano, Organ<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            I remember this<br/>\n            You'd stand there, just like so<br/>\n            There'd be some people in the back<br/>\n            At least that It's how it used to go\n        </p>\n<p>\n            But now we're old and strange<br/>\n            Hope I remember all the names<br/>\n            But I remember this\n        </p>\n<p>\n            If I recall it's not polite<br/>\n            To keep them waiting half the night<br/>\n            You've either got it or you don't<br/>\n            And if you don't well just go home\n        </p>\n<p>\n            But we all been there for awhile<br/>\n            Try not to put this night on trial<br/>\n            And just remember this\n        </p>\n<p>\n            It hits different in the dark<br/>\n            When they potion quotient's met<br/>\n            And if I had to take a bet<br/>\n            I'd bet there's gonna be some waves\n        </p>\n<p>\n            C'mon kids, it's alright<br/>\n            Don't wanna get in any fights<br/>\n            Let's remember that\n        </p>\n<p>\n            It would be cheap to explain it away<br/>\n            By saying it was all a dream<br/>\n            It strips the truth of its edge<br/>\n            And makes this easy to believe\n        </p>\n<p>\n            But this was hard to believe<br/>\n            which leads into our reprise<br/>\n            Of I remember this\n        </p>\n<p>\n            Now some of them we lost<br/>\n            We couldn't mourn them like we should<br/>\n            While some others lost their minds<br/>\n            And still it's barely understood\n        </p>\n<p>\n            What happened to our hearts<br/>\n            When the center fell apart<br/>\n            But I remember this\n        </p>\n<p>\n            Welcome to the show<br/>\n            We're so happy that you're here<br/>\n            And for those of us who aren't<br/>\n            We know we'll always keep you dear\n        </p>\n<p>\n            A memory is not a dream<br/>\n            We hope you get just what we mean<br/>\n            Now let's remember this\n        </p>",
         "release": 18,
         "track": 13
     }
@@ -2297,8 +2297,8 @@
         "slug": "just-another-night-on-planet-earth-ace-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar, Electric Piano, Piano<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals, Samples\n        </p>",
+        "lyrics": "<p>\n            Well, it's just another night on planet earth<br/>\n            Somebody's dyin', somebody's giving birth<br/>\n            It's an unfair world and you're trapped within<br/>\n            You gotta make your own meaning again and again\n        </p>\n<p>\n            And I want you\n        </p>\n<p>\n            Well, it's just another night on planet earth<br/>\n            People screw each over, doing their worst<br/>\n            Backstabbers, false hearts, propagandists<br/>\n            Try not to participate, you're still a part of it\n        </p>\n<p>\n            And I want you\n        </p>\n<p>\n            Well, it's just another night on planet earth<br/>\n            We take the trauma and carry it forth<br/>\n            Kill in the name of God, war in the name of peace<br/>\n            *\"Throw yourself upon the gears\"* but it'll never cease\n        </p>\n<p>\n            And I want you\n        </p>\n<p>\n            Well, it's just another night on planet earth<br/>\n            Hope everyone gets their money's worth<br/>\n            *\"In an unfinished world there's no dignity\"*<br/>\n            So I'm trying to convey what you mean to me\n        </p>\n<p>\n            And I want you<br/>\n            And I want you<br/>\n            And I want you<br/>\n            And I want you<br/>\n            And I want you<br/>\n            And I want you\n        </p>",
         "release": 19,
         "track": 1
     }
@@ -2313,8 +2313,8 @@
         "slug": "scream-into-the-void-2-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Nicholas Ward - Piano<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Classical Guitar, Lead Vocals\n        </p><p>\n            With:<br/>\n            Jonah Sacks - Cello<br/>\n            Mariam Saleh - Vocals\n        </p>",
+        "lyrics": "<p>\n            And when you scream into the void<br/>\n            The void will harmonize with you<br/>\n            It's not a pleasant thing, it's true<br/>\n            But sometimes it'll have to do\n        </p>\n<p>\n            And though abysses never miss you<br/>\n            And black holes never kiss you<br/>\n            When you scream into the void<br/>\n            The void will harmonize with you\n        </p>\n<p>\n            When you jump into the fire<br/>\n            The flames will love you as you are<br/>\n            Make no excuses for its heat<br/>\n            It has no wish to be discrete.\n        </p>\n<p>\n            Though smokey trails can never hold you<br/>\n            And hot coals can never break through<br/>\n            But when you jump into the fire<br/>\n            The flames will love you as you are\n        </p>\n<p>\n            It's a beautiful world and it will try to kill you when you're not looking<br/>\n            It's a beautiful world but it won't be satisfied until you're dead<br/>\n            It's a beautiful world and though there aint' no place like home<br/>\n            The land it sits on is loaned and there's people there that won't ever leave you alone\n        </p>\n<p>\n            When the aces up your sleeve<br/>\n            Turn to diamonds in the rough<br/>\n            You know it'll never be enough, to be just one cut above<br/>\n            So look the dealer in the eye<br/>\n            Pleading hit me 'til I die<br/>\n            And let the cards fall where they may<br/>\n            Sorry I'm late, I'm on my way\n        </p>",
         "release": 19,
         "track": 2
     }
@@ -2329,8 +2329,8 @@
         "slug": "ill-get-over-it-3-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar, Organ<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitar, Lead Vocals<br/>\n            All - Hand Claps\n        </p>",
+        "lyrics": "<p>\n            Something's in the breeze here<br/>\n            Got me on knees here<br/>\n            Desperate on a Saturday night<br/>\n            All the ghosts of my past<br/>\n            Pourin' drinks til they're trashed<br/>\n            To refrain wouldn't be polite\n        </p>\n<p>\n            I'll get over it, if I can get out from under it\n        </p>\n<p>\n            Phantom #1 says to Phantom #3<br/>\n            Hey friend, how did you get here?<br/>\n            Well we used to be lovers, she gestures to me<br/>\n            As #5 whispers in my ear:\n        </p>\n<p>\n            You'll get over it, if you can get out from under it\n        </p>\n<p>\n            Something's in the breeze here<br/>\n            Got me on knees here<br/>\n            Desperate on a Sunday night<br/>\n            All the ghosts of my past<br/>\n            Pourin' drinks til they're trashed<br/>\n            To refrain wouldn't be polite<br/>\n            I'll get over it, if I can get out from under it\n        </p>",
         "release": 19,
         "track": 3
     }
@@ -2345,8 +2345,8 @@
         "slug": "animals-in-love-4-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass, Bass Synth<br/>\n            Ryan Connelly - Percussion<br/>\n            Nicholas Ward - Piano<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Lead Vocals, Samples\n        </p><p>\n            With:<br/>\n            Jonah Sacks - Cello<br/>\n            John Vanderslice - Vocals<br/>\n            Ted Billings - Backing Vocals<br/>\n            Evan Sicuranza - Synths, Mellotron\n        </p>",
+        "lyrics": "<p>\n            Sentimental<br/>\n            Prone to feel<br/>\n            Sparks and kisses<br/>\n            Toe to heel\n        </p>\n<p>\n            Crushing emotion<br/>\n            Big heartbreak<br/>\n            You're about to find out<br/>\n            Just how much you can take\n        </p>\n<p>\n            When you're an animal in love<br/>\n            An animal in love<br/>\n            An animal in love<br/>\n            With another animal\n        </p>\n<p>\n            Tunnel vision, sacrifice<br/>\n            Origin stories and endless nights<br/>\n            Is it bliss or toxic? Cool or hot?<br/>\n            When the wheel stops spinning<br/>\n            You better hope you're not\n        </p>\n<p>\n            An animal in love<br/>\n            An animal in love<br/>\n            An animal in love<br/>\n            With another animal\n        </p>\n<p>\n            So what can you do<br/>\n            When the animal is you?<br/>\n            You better hold on to your heart<br/>\n            Cuz it's about to get completely ripped apart\n        </p>\n<p>\n            When you're an animal in love<br/>\n            An animal in love<br/>\n            An animal in love<br/>\n            With another animal<br/>\n            With another animal<br/>\n            With another animal<br/>\n            With another animal\n        </p>",
         "release": 19,
         "track": 4
     }
@@ -2361,8 +2361,8 @@
         "slug": "phantom-ring-5-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Piano, Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals\n        </p><p>\n            With:<br/>\n            Alexey Zavgorodniy - Violins\n        </p>",
+        "lyrics": "<p>\n            Oh, phantom ring, I feel your touch<br/>\n            Though your symbolism is a little much<br/>\n            Now the devil may care but I loved her the most<br/>\n            This metal ghost, beyond reproach\n        </p>\n<p>\n            Oh, phantom ring, s'il vous plait<br/>\n            But I'd like to stop thinking I still feel you, someday<br/>\n            It's not the spectre of the band that haunts my idle thoughts<br/>\n            It's what is not that's become my lot\n        </p>\n<p>\n            Oh, useless key, you once gave me<br/>\n            Entry to the house where we lived in harmony<br/>\n            Now the locks have all been changed and new dreams grow inside<br/>\n            If our love survived it's hair nor hide\n        </p>\n<p>\n            Oh, photograph of the night we met<br/>\n            Surrounded by those sailors singing on the deck<br/>\n            Well, the story's absurd but I loved to tell it so<br/>\n            How could I know which way we'd go\n        </p>\n<p>\n            No jeweler forged it, it doesn't exist<br/>\n            But the sorrow it stirs puts my broken heart at risk<br/>\n            I know my mind is strong, I know this must all be inside my head<br/>\n            So if anyone can hear this, won't you please let me try to turn this gold back into lead?\n        </p>\n<p>\n            Oh, phantom ring I remove thee<br/>\n            And toss you off a bridge into the deep, dark sea<br/>\n            Though the ripples you cause are only in my mind<br/>\n            They spread so wide<br/>\n            and the vision's mine\n        </p>\n<p>\n            Oh, future days lay out ahead<br/>\n            Who knows? Maybe I'll find love again<br/>\n            See my hands no longer haunted, my arms they're spread like wings<br/>\n            You'll never hear me sing this little hymn<br/>\n            Oh, phantom ring\n        </p>",
         "release": 19,
         "track": 5
     }
@@ -2377,8 +2377,8 @@
         "slug": "everest-6-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Fuzz Bass, Synth Bass, Banjo, Organ<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Ryan H. Walsh - Samples, Vibraslap, Chimes, Faux Timpani<br/>\n            Nicholas Ward - Piano<br/>\n            David Michael Curry - Viola, Chimes, Foley work\n        </p><p>\n            With:<br/>\n            Leeore Schnairsohn - Lead Vocals<br/>\n            Evan Sicuranza - Electric Bass, Backing Vocals\n        </p>",
+        "lyrics": "<p>\n            Where are you going to?<br/>\n            Our potential is thicker than blood (and I'm)<br/>\n            The dumbest of angels that's ever been assigned to you (so if)<br/>\n            You ever get lonely, dear, I will preserve your dreams<br/>\n            Like an animal or a rusty sunset.<br/>\n            We thrive in comedies\n        </p>\n<p>\n            As the love letters fall down with the<br/>\n            Sinker debris. Now we all must remember this:\n        </p>\n<p>\n            Time<br/>\n            Flows<br/>\n            And I<br/>\n            Should know<br/>\n            I'm the one who crushed every clock and to my chagrin watched as seconds marched on<br/>\n            It's true? Says who? We're all just passing through.\n        </p>\n<p>\n            Been there; done that<br/>\n            It's the oldest hat<br/>\n            I'm off the map<br/>\n            Headed inside<br/>\n            To see what I can see<br/>\n            When I emerge, you'll all agree:\n        </p>\n<p>\n            Become your own Everest<br/>\n            Then bring your mountain down to me\n        </p>\n<p>\n            (I'm potentialing<br/>\n            No more wandering)<br/>\n            Become your own Everest<br/>\n            Then bring your mountain down<br/>\n            Restore this crown\n        </p>\n<p>\n            Become your own Everest<br/>\n            Then bring your mountain down<br/>\n            We can leave this town<br/>\n            It'd be the loudest sound<br/>\n            If there comes a day I don't feel this way<br/>\n            I'll just fade away (repeat and echo)\n        </p>\n<p>\n            Bring your mountain down to me (There's nothing stopping you now)\n        </p>",
         "release": 19,
         "track": 6
     }
@@ -2393,8 +2393,8 @@
         "slug": "the-loudest-sound-7-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar, Electric Piano<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitar, Lead Vocals, Synths\n        </p><p>\n            With:<br/>\n            Noell Dorsey - Vocals\n        </p>",
+        "lyrics": "<p>\n            Highlife<br/>\n            Low sun<br/>\n            Connections<br/>\n            Come undone\n        </p>\n<p>\n            Hard year<br/>\n            Weird days<br/>\n            Sing it in key, the song remains the same:\n        </p>\n<p>\n            Deep in your memory, that's where you'll find me<br/>\n            Every noise I make's the loudest sound<br/>\n            Unending dreamscape shattered by soundquakes<br/>\n            Every noise I make's the loudest sound\n        </p>\n<p>\n            Triumph<br/>\n            Full moon<br/>\n            A loving embrace<br/>\n            Released too soon\n        </p>\n<p>\n            It's not a home<br/>\n            Without you here<br/>\n            So sing it with me, if this hits your ear:\n        </p>\n<p>\n            Deep in your memory, that's where you'll find me<br/>\n            Every noise I make's the loudest sound<br/>\n            Unending dreamscape shattered by soundquakes<br/>\n            Every noise I make's the loudest sound\n        </p>\n<p>\n            Every noise I make's the loudest sound\n        </p>",
         "release": 19,
         "track": 7
     }
@@ -2409,8 +2409,8 @@
         "slug": "some-rest-for-the-wicked-8-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass, Synth Bass<br/>\n            Ryan Connelly - Drums<br/>\n            Nicholas Ward - Organ, Piano<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitar, Feedback, Lead Vocals, Synths\n        </p><p>\n            With:<br/>\n            Oluwatosin F Choir - Vocals\n        </p>",
+        "lyrics": "<p>\n            Hi, it's been such a long, long time<br/>\n            Is there something that you left behind?<br/>\n            It might be in storage\n        </p>\n<p>\n            You say, \"We can't get back the days<br/>\n            And there is no one to blame.\"<br/>\n            But I took that as a challenge\n        </p>\n<p>\n            Cause you know, wouldn't it be fitting<br/>\n            If the guilty came admitting<br/>\n            All they had done?<br/>\n            And hun, I know that you were kidding<br/>\n            Yet there is some rest for the wicked<br/>\n            Somewhere out there.\n        </p>\n<p>\n            Let's not, but say we did, for old times<br/>\n            The poems that roll into peace signs<br/>\n            Think I'm gonna be sick\n        </p>\n<p>\n            Oh right, here comes that old dynamic<br/>\n            The white wine, the car ride, the Xanax<br/>\n            And the half-remembered nights<br/>\n            Cause you know, wouldn't it be fitting<br/>\n            If the guilty came admitting<br/>\n            All they had done?<br/>\n            And hun, I know that you were kidding<br/>\n            Yet there is some rest for the wicked<br/>\n            Somewhere out there.\n        </p>\n<p>\n            Well, this has certainly been unexpected<br/>\n            A surprise, I wish that you had texted<br/>\n            But I'm not wasting a wish<br/>\n            Cause you know, wouldn't it be fitting<br/>\n            If the guilty came admitting<br/>\n            All they had done?<br/>\n            And hun, I know that you were kidding<br/>\n            But there is some rest for the wicked<br/>\n            Somewhere out there\n        </p>",
         "release": 19,
         "track": 8
     }
@@ -2425,8 +2425,8 @@
         "slug": "you-can-never-go-home-9-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass, Backing Vocals<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola, Harmonica, Backing Vocals<br/>\n            Ryan H. Walsh - Guitar, Lead Vocals<br/>\n            Ryan Connelly - Backing Vocals\n        </p><p>\n            With:<br/>\n            Jonah Sacks - Cello<br/>\n            Adam Schatz - Clarinet\n        </p>",
+        "lyrics": "<p>\n            All you wanna do is go home<br/>\n            But you can never go home<br/>\n            All the front doors that you pass by open up as you approach them<br/>\n            But you can never go home\n        </p>\n<p>\n            All the road maps with their details exact<br/>\n            Can't paint a highway that could bring you back<br/>\n            Oh, you can never go<br/>\n            Oh, you can never go<br/>\n            You can never go<br/>\n            You can never go home\n        </p>\n<p>\n            All you wanna do is love<br/>\n            But you're always messing up love<br/>\n            The rush comes on so sweet then hits you with a tidal wave of feeling<br/>\n            Leaves you gasping on the shore<br/>\n            All the love songs that you play 'til dawn<br/>\n            Aren't of any comfort without the stereo on<br/>\n            You keep messing up<br/>\n            You keep messing up<br/>\n            You keep messing up<br/>\n            You keep messing up love\n        </p>\n<p>\n            All you wanna do is start again<br/>\n            But can you really start again?<br/>\n            Race around the whole world searching for a new kind of existence<br/>\n            But you're still \"you\" in the end\n        </p>\n<p>\n            Each new chapter begins with a \"previously on\"<br/>\n            If you try to hide it, it'll come out before too long<br/>\n            So you can never start<br/>\n            You can never start<br/>\n            You can never start<br/>\n            You can never start again\n        </p>",
         "release": 19,
         "track": 9
     }
@@ -2441,8 +2441,8 @@
         "slug": "the-night-machine-10-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar, Electric Piano, Piano<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitar, Lead Vocals\n        </p><p>\n            With:<br/>\n            Noell Dorsey - Vocals\n        </p>",
+        "lyrics": "<p>\n            I've always heard that you're everyone in your dream<br/>\n            But I'm never sure if I really know what that means<br/>\n            So I made a plan to see if it's really true<br/>\n            Lay next to me and we'll try to see this vision through\n        </p>\n<p>\n            Turn on the night machine<br/>\n            Meet me inside the dream<br/>\n            Two souls cross the split screen<br/>\n            If you wake up before me<br/>\n            I'll be here all alone<br/>\n            But I'll just meet you at home\n        </p>\n<p>\n            And soon there I was in a plane above the United States<br/>\n            The seat next to mine filled by someone with a familiar face<br/>\n            I said, \"Hey, it's me, is it you that I'm looking for?\"<br/>\n            You took my hand and we weren't on the plane anymore<br/>\n            Next thing I knew we were back in your childhood home<br/>\n            I had never been there so I had to take your word alone<br/>\n            You showed me the way that the pines cast shadows on the walls<br/>\n            And we agreed upon a phrase that we'd say to prove we shared these halls\n        </p>\n<p>\n            When I came to you were wide-eyed layin' next to me<br/>\n            We said we'd say the secret phrase upon the count of three<br/>\n            My heart skipped a beat as we raced toward the moment of truth<br/>\n            Then in unison we uttered, \"May you always drink from fountains of youth.\"\n        </p>\n<p>\n            Turn on the night machine<br/>\n            Meet me inside the dream<br/>\n            Two souls cross the split screen<br/>\n            If you wake up before me<br/>\n            I'll be here all alone<br/>\n            But I'll just meet you at home\n        </p>",
         "release": 19,
         "track": 10
     }
@@ -2457,8 +2457,8 @@
         "slug": "something-great-jack-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass, Bass Synth<br/>\n            Nicholas Ward - Piano<br/>\n            Ryan H. Walsh - Lead Vocals, Mellotron Synth, Samples, Classical Guitar<br/>\n            David Michael Curry - Viola\n        </p><p>\n            With:<br/>\n            Mike Fiore - Backing vocals\n        </p>",
+        "lyrics": "<p>\n            I am trying to do something great<br/>\n            And you may never forgive me<br/>\n            I was trying to leave you a myth<br/>\n            But now I'm taking it with me<br/>\n            Once wrote a poem about you and me<br/>\n            Called \"The Longest Night in History\"<br/>\n            I we trying to do something great\n        </p>\n<p>\n            You can certainly learn a lot<br/>\n            By watching someone lose something<br/>\n            I've been doing my share on both ends<br/>\n            So can I somehow be helpful?<br/>\n            Dress me up in a pageant sash<br/>\n            Reads \"Cautionary Tale\", I'll read to the class<br/>\n            You can certainly learn a lot<br/>\n            By watching someone lose something\n        </p>\n<p>\n            So just hold on<br/>\n            Don't freak out<br/>\n            Easier said than done<br/>\n            Without a doubt<br/>\n            Just hold on<br/>\n            Don't self-destruct<br/>\n            If you think this is gonna be easy<br/>\n            Well, you're shit out of luck\n        </p>\n<p>\n            You know that I love you<br/>\n            You left to see if the darkness above<br/>\n            Was tied to the two of us together<br/>\n            Would we both find sunnier skies<br/>\n            If we said goodbye forever?<br/>\n            Couldn't believe how bad it hurt<br/>\n            Screamin' at the devil, \"Hey, come do your worst!\"<br/>\n            And it took so long to realize<br/>\n            It could be a permanent sever\n        </p>\n<p>\n            But I held on<br/>\n            Stared down the night<br/>\n            When I couldn't bare another second along came a light<br/>\n            I followed it to<br/>\n            A place where I could start again<br/>\n            Though, everyone here seems to know my smile's pretend<br/>\n            I remember you loved me\n        </p>\n<p>\n            Now I know you've had your own travails<br/>\n            And this is just one half of the tale<br/>\n            So if you sing it<br/>\n            I will listen<br/>\n            But you gotta keep your end of the deal:<br/>\n            *Tell the truth even when it lacks appeal.*\n        </p>\n<p>\n            You were trying to do something great<br/>\n            And I may never forgive you<br/>\n            Two new neighborhoods side by side<br/>\n            In the Broken-Heart district<br/>\n            I see you walkin' late at night<br/>\n            Weepin willows, old starlight<br/>\n            We keep trying to do something great\n        </p>\n<p>\n            Well, hello old love<br/>\n            I've seen you around<br/>\n            Everybody starts out as a stranger in this town<br/>\n            Would you stop by for tea?<br/>\n            See what I done with the place?<br/>\n            It's just nice to be around your familiar face\n        </p>\n<p>\n            You know that I love you<br/>\n            I know that you love me<br/>\n            It's so nice to meet you<br/>\n            So nice to meet you\n        </p>",
         "release": 19,
         "track": 11
     }
@@ -2473,8 +2473,8 @@
         "slug": "classic-of-the-genre-queen-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Ryan H. Walsh - Classical Guitar, Lead Vocals<br/>\n            Nicholas Ward - Piano<br/>\n            David Michael Curry - Singing Saw\n        </p><p>\n            With:<br/>\n            Sabine Hrechdakian - Voicemail\n        </p>",
+        "lyrics": "<p>\n            I'm an engineer's dream<br/>\n            Sleepin' on a clean sheet<br/>\n            Taxi to the country<br/>\n            Only sky above me<br/>\n            Everything becomes possible<br/>\n            When I get next to you\n        </p>\n<p>\n            You're a surrealist's best friend<br/>\n            We're kissing in the deep end<br/>\n            Whisper into my mouth<br/>\n            Everything you're on about<br/>\n            Look at me directly and<br/>\n            I'm reduced to something lighter than air\n        </p>\n<p>\n            You're a classic of the genre,<br/>\n            But we both know the world's not fair\n        </p>\n<p>\n            So crack me like a glow stick<br/>\n            C'mer, hear my heart tick<br/>\n            Tell me 'bout your worst night<br/>\n            Disaster under moonlight<br/>\n            Every time you tell me the same joke<br/>\n            You know I'm amazed\n        </p>\n<p>\n            You're a classic of the genre<br/>\n            So I'm sure you're quite used to the praise\n        </p>\n<p>\n            So fly me to the moon<br/>\n            We can't be leaving too soon<br/>\n            And then you turn to me<br/>\n            And you shrug and say,<br/>\n            \"Well, honey, who says we haven't already arrived?\"\n        </p>\n<p>\n            You're a classic of the genre<br/>\n            But that doesn't mean we shouldn't try<br/>\n            You're a classic of the genre,<br/>\n            So just let me live in front of your eyes\n        </p>",
         "release": 19,
         "track": 12
     }
@@ -2489,8 +2489,8 @@
         "slug": "feels-like-forever-king-of-hearts",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Piano<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitar, Samples\n        </p><p>\n            With:<br/>\n            Julia Papps - Lead Vocals<br/>\n            Rick Berlin - Vocals, Ad-Libs\n        </p>",
+        "lyrics": "<p>\n            Pulled out an old photo of you and me<br/>\n            Stared into past biography<br/>\n            The whole thing lasts<br/>\n            No more than five or six seconds\n        </p>\n<p>\n            But it feels like forever\n        </p>\n<p>\n            I ran into a stranger on a train<br/>\n            We locked eyes briefly, what could have been<br/>\n            I'd be surprised if he even remembered it just a few minutes later\n        </p>\n<p>\n            But it feels like forever\n        </p>\n<p>\n            Last night I had the strangest dream<br/>\n            I lived as another woman in another's dream<br/>\n            The experience lasted for years<br/>\n            woke up just a few hours later\n        </p>\n<p>\n            But it feels like forever\n        </p>\n<p>\n            And it feels<br/>\n            And it feels<br/>\n            Like forever\n        </p>\n<p>\n            And it feels<br/>\n            And it feels<br/>\n            Like forever\n        </p>",
         "release": 19,
         "track": 13
     }
@@ -2505,8 +2505,8 @@
         "slug": "this-is-not-a-dream-ace-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Organ, Piano, Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals\n        </p><p>\n            With:<br/>\n            Julia Papps - Righteous Screaming<br/>\n            Evan Sicuranza - Octave piano\n        </p>",
+        "lyrics": "<p>\n            Now we come to the present moment or so they'd have us think<br/>\n            If you don't know about time manipulation, buddy, it'll bring you to the brink<br/>\n            The future's already happened and the past is yet to come<br/>\n            And what we're in presently is a simulation that's only just begun\n        </p>\n<p>\n            Do you feel it? Does your clock tick? Can you go back to the way you were?<br/>\n            If you can, then no one will remember your name\n        </p>\n<p>\n            Who am I though? Why do I know? We don't have time for that<br/>\n            Relax, no one ever remembers my name<br/>\n            Relax, no one ever remembers my name\n        </p>",
         "release": 20,
         "track": 1
     }
@@ -2521,8 +2521,8 @@
         "slug": "its-undeniable-2-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Synthesizer<br/>\n            Joseph Marrett - Bass, Organ<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Samples, Lead Vocals\n        </p><p>\n            With:<br/>\n            Niani Campbell - Vocals<br/>\n            Howard Kremer - Live Podcast Overdub<br/>\n            Brett Morris - Live Podcast Overdub\n        </p>",
+        "lyrics": "<p>\n            Great plains!<br/>\n            Branded son!<br/>\n            Sage bush! Lightning seed!<br/>\n            Commemorative barnyard<br/>\n            Speak 'n spiel<br/>\n            I picture places burnt into wood<br/>\n            Aren't you glad to see me in this golden hour?<br/>\n            Soundtracks built in my bones<br/>\n            I know you're not my stepping stone<br/>\n            Smoke 'n ash sent me home\n        </p>\n<p>\n            Tornados, quicksand, a man with a plan<br/>\n            It's undeniable\n        </p>\n<p>\n            Showtime! Say pretty please<br/>\n            Clutching fate from the grip of them teeth<br/>\n            I've got a zest for life, I'm in a violent choir<br/>\n            I've got a tape deck dream, I built a birthing pyre<br/>\n            Tell me what you think of these<br/>\n            Ooh!\n        </p>\n<p>\n            Tornados, quicksand, a man with a plan<br/>\n            It's undeniable<br/>\n            It's undeniable<br/>\n            It's undeniable<br/>\n            It's undeniable<br/>\n            It's un-de-nigh-able\n        </p>",
         "release": 20,
         "track": 2
     }
@@ -2537,8 +2537,8 @@
         "slug": "divine-interventions-3-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Synthesizer<br/>\n            Joseph Marrett - Bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola, Harmonica<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals, Samples\n        </p>",
+        "lyrics": "<p>\n            Sad-eyed lady of nobody's fool<br/>\n            I been dreaming about you<br/>\n            Wild mushroom moon walk blues<br/>\n            The glossolalia of a goddess<br/>\n            Just turn me on\n        </p>\n<p>\n            Diaphanous tongue-tied ruby jewels<br/>\n            Drip from the end of your sentences<br/>\n            Divine interventions, please roll through<br/>\n            Let love potions spring forth like geysers\n        </p>\n<p>\n            Just turn me on and on and on and on<br/>\n            Just turn me on and on and on and on<br/>\n            I thought I missed your exodus but now I know your name<br/>\n            Shadows on the razor's edge, blizzards on the brain<br/>\n            \"Fragments of a Rainy Season,\" please don't act so tame<br/>\n            Drag me through your waking dreams, lit by open flames<br/>\n            Defending my thesis to your bundle of bees<br/>\n            I bet that some of these other losers never had nights like these\n        </p>\n<p>\n            Just turn me on and on and on and on<br/>\n            Just turn me on and on and on and on<br/>\n            Just turn me on and on and on and on<br/>\n            Just turn me on and on and on and on\n        </p>",
         "release": 20,
         "track": 3
     }
@@ -2553,8 +2553,8 @@
         "slug": "i-did-my-own-stunts-4-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Synthesizer<br/>\n            Joseph Marrett - Bass, Organ, Synth Orchestra<br/>\n            Ryan Connelly - Drums<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitar, Samples, Synths\n        </p><p>\n            With:<br/>\n            Clint Conley - Lead Vocals<br/>\n            Neal Block, Jay Schneider - Additional Backing Vocals\n        </p>",
+        "lyrics": "<p>\n            Major arcana,<br/>\n            Minor injuries<br/>\n            My most dangerous days laid out for all to see<br/>\n            Now I know you're wonderin'<br/>\n            \"Sir?\n        </p>\n<p>\n            Did you do your own stunts?<br/>\n            Did you jump the ravine?<br/>\n            Did you travel by hurricane? Get mangled by the machine?\"<br/>\n            Yeah, I did my own stunts\n        </p>\n<p>\n            Days in the canyon<br/>\n            Evenings on the peaks<br/>\n            I don't need any Everests when I'm running out with the freaks<br/>\n            I know that someday they'll ask me,<br/>\n            \"Excuse me, sir?<br/>\n            Did you do your own stunts?<br/>\n            Did you jump the ravine?<br/>\n            Did you travel by hurricane? Get mangled by the machine?\"<br/>\n            Yeah, I did my own stunts<br/>\n            Yeah, I did my own stunts<br/>\n            Yeah, I did my own stunts<br/>\n            Yeah, I did my own stunts\n        </p>",
         "release": 20,
         "track": 4
     }
@@ -2569,8 +2569,8 @@
         "slug": "the-world-is-not-what-you-think-it-is-5-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Joseph Marrett - Keyborgs<br/>\n            David Michael Curry - Conch Shell<br/>\n            Ryan H. Walsh - Sequencer, Piano, Samples\n        </p><p>\n            With:<br/>\n            David Silver - Monologue<br/>\n            Maya Litani - Backing Monologue<br/>\n            Rob Johanson - Clap Loop\n        </p>",
+        "lyrics": "<p>\n            The world is not what you think it is<br/>\n            But this is not your fault, don't be too hard on yourself.<br/>\n            In this seminar, we will equip you with the necessary tools<br/>\n            To pierce veils, rip fabric, and step into the structure behind the painting.<br/>\n            Empires, ideas, institutions---everything falls eventually,<br/>\n            You could spend a lifetime in Toledo thinking everything was face value.<br/>\n            How many days can you get through waking up wishing things were different?<br/>\n            Parties roll on into the night like<br/>\n            They could erase a war.<br/>\n            Liberator, liberator<br/>\n            Let me know when you have a Thursday night off work.<br/>\n            Calling all cartographers! We're taking back what's yours<br/>\n            The surf is now up<br/>\n            Paint over the murals, burn down your atlas.<br/>\n            We want you. I want you.<br/>\n            If you keep thinking about your own funeral<br/>\n            Or sobbing outside the sunset factory,<br/>\n            If you stand frozen in the grocery aisle disassociating into the ether,<br/>\n            If you believe that songs are advertisements for feelings,<br/>\n            If your pockets are filled with ceremonial grade sage,<br/>\n            Or that everyone used to play a game called<br/>\n            My Greek Chorus when you were a kid<br/>\n            But everyone you ask has no idea what that is<br/>\n            Well, buddy, we've got good news<br/>\n            This is the kind of lesson you only learn once. I love you. Good luck.<br/>\n            This is the kind of lesson you only learn once. I love you. Good luck.<br/>\n            This is the kind of lesson you only learn once. I love you. Good luck.<br/>\n            This is the kind of lesson you only learn once. I love you. Good luck.<br/>\n            I love you. Good luck.<br/>\n            I love you. Good luck.<br/>\n            I love you. Good luck.\n        </p>",
         "release": 20,
         "track": 5
     }
@@ -2585,8 +2585,8 @@
         "slug": "the-feeling-is-mine-6-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Synthesizer<br/>\n            Joseph Marrett - Bass, Organ<br/>\n            Ryan Connelly - Drums, Bottles<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Samples\n        </p><p>\n            With:<br/>\n            Mariam Saleh - Lead Vocals<br/>\n            Audra Sears - Vocals<br/>\n            Cali Serino - Vocals<br/>\n            Niani Campbell - Vocals<br/>\n            Evan Sicuranza - Piano\n        </p>",
+        "lyrics": "<p>\n            The feeling is mine<br/>\n            Won't leave it behind<br/>\n            Watching it grow<br/>\n            And letting it know<br/>\n            It can't be confined<br/>\n            The feeling is mine<br/>\n            I got a feeling<br/>\n            I got a feeling<br/>\n            I got a feeling<br/>\n            And the feeling is mine\n        </p>",
         "release": 20,
         "track": 6
     }
@@ -2601,8 +2601,8 @@
         "slug": "i-got-out-of-this-world-alive-7-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass, Banjo, Percussion Loop<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Organ, Piano, Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Synths, Samples, Percussion Loop\n        </p><p>\n            With:<br/>\n            Rob Johanson - Lead Vocals<br/>\n            Oluwatosin F - Choir\n        </p>",
+        "lyrics": "<p>\n            Well, on top of Old Smokey<br/>\n            Draggin' a demagogue's head<br/>\n            Breathin' deeply the diamond war<br/>\n            Smashing skulls on the hard wood floor<br/>\n            Expecting bones to be dynamite<br/>\n            Watch me inhale the night tonight\n        </p>\n<p>\n            Well, surprise, surprise<br/>\n            You won't believe your eyes<br/>\n            I made it out of this world alive<br/>\n            They said I couldn't so I had to try<br/>\n            They said the only way out's to die<br/>\n            But I got out of this world alive\n        </p>\n<p>\n            Instead of skin there's geometry<br/>\n            Don't let the world get in front of me<br/>\n            Kicking hours into twilight rooms<br/>\n            Consuming nothin' but sonic booms.<br/>\n            There's a monster in my movie<br/>\n            The kind of creature you aint ever seen<br/>\n            No! No! No! No!<br/>\n            Well, surprise, surprise<br/>\n            You won't believe your eyes<br/>\n            I made it out of this world alive<br/>\n            They said I couldn't so I had to try<br/>\n            They said the only way out's to die<br/>\n            But I got out of this world alive\n        </p>\n<p>\n            Speaking of a double dare, Rasputin, hold my beer<br/>\n            Speaking of a double dare, I'm an animal\n        </p>\n<p>\n            Well, surprise, surprise<br/>\n            You won't believe your eyes<br/>\n            I made it out of this world alive<br/>\n            They said I couldn't so I had to try<br/>\n            They said the only way out's to die<br/>\n            But I got out of this world alive\n        </p>",
         "release": 20,
         "track": 7
     }
@@ -2617,8 +2617,8 @@
         "slug": "im-your-tambourine-8-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass, Banjo, Tambourine<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Lead Vocals\n        </p><p>\n            With:<br/>\n            Will Dailey - Backing Vocals<br/>\n            Antonio Bustabad - Bagpipes\n        </p>",
+        "lyrics": "<p>\n            \"What about this? What about that?\"<br/>\n            All their questions were endless and my replies were attacks<br/>\n            Now in regards to my absence, I sincerely apologize<br/>\n            Now there's only one way that you'll see through my eyes\n        </p>\n<p>\n            Shake me into existence, I'm your tambourine<br/>\n            Shake me into existence, I'm your tambourine\n        </p>\n<p>\n            Try this on for size, try out a diet of crow<br/>\n            We've been humbled to the max, ready to reap what we've sowed<br/>\n            And they can't kill you until they kill me<br/>\n            So I'll stay alive but only you can set me free\n        </p>\n<p>\n            Shake me into existence, I'm your tambourine<br/>\n            Shake me into existence, I'm your tambourine<br/>\n            They can't talk me out of resistance<br/>\n            They can't mock me away from persistence<br/>\n            They can't force me into enemy assistance<br/>\n            They can't keep me from running the distance<br/>\n            Shake me into existence, I'm your tambourine<br/>\n            Shake me into existence, I'm your tambourine<br/>\n            Shake me into existence, I'm your tambourine<br/>\n            Shake me into existence, I'm your tambourine\n        </p>",
         "release": 20,
         "track": 8
     }
@@ -2633,8 +2633,8 @@
         "slug": "hits-get-hard-9-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Synth<br/>\n            Joseph Marrett - Bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Electric Guitar, Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            *Any / similarity / to persons living or dead / is purely coincidental*<br/>\n            Unexpectedly alone during my hardest days<br/>\n            Keeping promises seemed to be just a phase<br/>\n            Now everyone knows that your new zip code tells the tale<br/>\n            I read all of the classics, I got the gist<br/>\n            Reluctantly my own protagonist<br/>\n            But sometimes late at night old visions come to my door\n        </p>\n<p>\n            But this time I'll break every rule<br/>\n            And whether I win or lose<br/>\n            I'll never quit when the hits get hard<br/>\n            Oh! My! Soul! Oh!\n        </p>\n<p>\n            I recall you were good in emergency<br/>\n            Cauterizing wounds with lit cigarette<br/>\n            But there's no one 'round these parts like that no more\n        </p>\n<p>\n            While I tally all the damage incurred<br/>\n            No, you haven't misheard<br/>\n            I'll never quit when the hits get hard<br/>\n            Oh! My! Soul! Oh!<br/>\n            This time I'll break every rule<br/>\n            And whether I win or lose<br/>\n            I'll never quit when the hits get hard<br/>\n            Oh! My! Soul! Oh!<br/>\n            For once, I won't do my worst<br/>\n            And though it might seem perverse<br/>\n            Watch me go all in on the world<br/>\n            Yeah, yeah, yeah, yeah<br/>\n            And this time I'll break every rule<br/>\n            The hero was once the fool<br/>\n            And I'll never quit when the hits get hard<br/>\n            Oh! My! Soul! Oh!\n        </p>",
         "release": 20,
         "track": 9
     }
@@ -2649,8 +2649,8 @@
         "slug": "no-one-remembers-their-names-10-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass, Bass Synth<br/>\n            Ryan Connelly - Drums<br/>\n            Nicholas Ward - Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Piano, Guitars, Samples, Electronic Drums\n        </p><p>\n            With:<br/>\n            Evan Sicuranza - Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            There's a page ripped from the history books, someone didn't want it known<br/>\n            About some late 1800's surrealists who lived inside the Capitol dome<br/>\n            They sent cut-ups down to congress, who interpreted it into law<br/>\n            They staged performance art for presidents who couldn't believe what they saw\n        </p>\n<p>\n            They were wild, they were unhinged, they were fevered and free<br/>\n            But alas, no one remembers their names\n        </p>\n<p>\n            In regards to the Grand Canyon, it isn't what you think<br/>\n            10,000 men trapped in a fugue state, dug it down with silver picks<br/>\n            If you asked them what they were doing, or why they'd die for such a thing<br/>\n            They'd rip all of your bones out and use 'em all some more to dig\n        </p>\n<p>\n            They were feral, they were unhinged, they were focused on their task<br/>\n            But alas, no one remembers their names\n        </p>\n<p>\n            While these idiots sit and argue whether we've been to the moon<br/>\n            I can tell you we first got there back in 1902<br/>\n            Roosevelt hired a Frenchman to shoot it all on film<br/>\n            Academics praise its genius while Selenites live among us still\n        </p>\n<p>\n            They're your neighbors, they're your leaders, aliens in disguise<br/>\n            No surprise that no one will tell you their names\n        </p>\n<p>\n            Now the thing about Mt. Rushmore, before Borglum had his way<br/>\n            There were other faces in that rock, where they came from no one can say<br/>\n            And these granite, grotesque portraits haunted every passerby<br/>\n            To the point their lives were ruined by the visage in their eye\n        </p>\n<p>\n            They were fucked up, such a horror, these cursed four facades<br/>\n            But alas, no one remembers their names\n        </p>\n<p>\n            Now the thing about Elvis Presley, is that there were more than one of him<br/>\n            Army scientists cloned him out so more people could see him sing<br/>\n            But one of 'em he went crazy and killed several heads of state<br/>\n            Now, \"Jailhouse Rock\" is just a cover to obfuscate his awful fate\n        </p>\n<p>\n            He was gorgeous, he could shake it, he could murder with his bare hands<br/>\n            But now, no one remembers his name\n        </p>",
         "release": 20,
         "track": 10
     }
@@ -2665,8 +2665,8 @@
         "slug": "a-lot-of-super-weird-stuff-went-down-right-before-i-met-you-jack-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Synth Bass, Banjo<br/>\n            David Michael Curry - Viola, Toy Piano<br/>\n            Ryan H. Walsh - Guitar, Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            It's a feeling I get when it rains<br/>\n            And I feel it coming on again<br/>\n            When the sky opens up without warning I prep my told you so's<br/>\n            I've got stories on stories for days about the crazies who went through a phase<br/>\n            Followin' me around the city actin' like I was king\n        </p>\n<p>\n            I been honest with you<br/>\n            And you've told the truth, too<br/>\n            But is it enough to cut through the noise and really make love come true?<br/>\n            Cuz a lot of super weird stuff went down right before I met you\n        </p>\n<p>\n            I should have never been hypnotized; \"track this pendulum with your eyes\"<br/>\n            Next night I walked into my local, I was speakin' in tongues<br/>\n            And by the time I was kidnapped at home I had been working on some fucked holy tome<br/>\n            Much to my surprise these freaks they tried to ransom it off\n        </p>\n<p>\n            We sit in photo booths. In love, we're both overdue<br/>\n            But are you still gonna think of me the same once you've heard the whole truth?<br/>\n            Cuz a lot of super weird stuff went down right before I met you\n        </p>\n<p>\n            It's a feeling I get when your near like an explorer near a wild frontier<br/>\n            Throw away my atlas, head north till I discover your key<br/>\n            And while the jury deliberates we joke about if this should count as a date<br/>\n            The defendant without defenses, truly open for the first time\n        </p>\n<p>\n            Well, I've got a big heart and while that's a good start<br/>\n            Is it enough to eclipse all the headlines and not tear us apart?<br/>\n            Cuz some other people figured I was crazy right from the start\n        </p>\n<p>\n            I stand in front of you, askin' what should we do?<br/>\n            You know, I wish some of these voices maybe give me a clue<br/>\n            You know, a lot of super weird stuff went down right before I met you<br/>\n            A lot of super weird stuff went down right before I met you<br/>\n            A lot of super weird stuff went down right before I met you\n        </p>",
         "release": 20,
         "track": 11
     }
@@ -2681,8 +2681,8 @@
         "slug": "the-end-is-just-beginning-queen-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - Bass, Banjo<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Classical Guitar, Acoustic Guitar, Lead Vocals\n        </p><p>\n            With:<br/>\n            Oluwatosin F - Choir<br/>\n            Paul Hansen - Backing vocals\n        </p>",
+        "lyrics": "<p>\n            The end is just beginning, we'll start here, my friends<br/>\n            The signs have withered up and died<br/>\n            So I don't know where-to next<br/>\n            Is the best behind me?<br/>\n            Weren't you my compass?\n        </p>\n<p>\n            The end is just beginning, we'll start here, my friends\n        </p>\n<p>\n            I walked off the edges of the map<br/>\n            Cartography's great void<br/>\n            There's a new world up ahead<br/>\n            But it won't be easy\n        </p>\n<p>\n            The end is just beginning, we'll start here, my friends<br/>\n            So please, won't you take this information<br/>\n            When you're makin' your decision<br/>\n            If you wanna follow me<br/>\n            The end is just beginning, we'll start here, my friends<br/>\n            The end is just beginning, we'll start here, my friends<br/>\n            The end is just beginning, we'll start here, my friends\n        </p>",
         "release": 20,
         "track": 12
     }
@@ -2697,8 +2697,8 @@
         "slug": "places-everybody-king-of-spades",
         "player_code": "",
         "description": "",
-        "credits": "",
-        "lyrics": "",
+        "credits": "<p>\n            Brian Rutledge - Trumpet<br/>\n            Joseph Marrett - bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitars, Piano, Lead Vocals\n        </p>",
+        "lyrics": "<p>\n            Come now, we're all backstage<br/>\n            Pacing slowly<br/>\n            Waitin' for showtime<br/>\n            Admission: one dollar<br/>\n            It's a value<br/>\n            That's become my life<br/>\n            Places, Everybody<br/>\n            Let's do this one more time<br/>\n            Our magician readies rabbit<br/>\n            And the poet runs her lines<br/>\n            Places, everybody<br/>\n            Showtime\n        </p>\n<p>\n            Curtains rise up<br/>\n            Spotlight finds me<br/>\n            It's a real good crowd<br/>\n            With a gesture, I invite them<br/>\n            Into our world<br/>\n            Where their troubles fly by<br/>\n            Places, Everybody<br/>\n            Let's do this one more time<br/>\n            The freak act approaches stage left<br/>\n            And the satirist ain't far behind<br/>\n            Places, everybody\n        </p>\n<p>\n            Don't stop: Cue the jugglers<br/>\n            Give 'em burlesque<br/>\n            Make 'em laugh, make 'em cry<br/>\n            The escape act gets chained up<br/>\n            Dropped in water<br/>\n            and then time stands still<br/>\n            Places, everybody<br/>\n            Let's do this one more time<br/>\n            The crowds don't come like they used to<br/>\n            And then the talkies took our lines<br/>\n            So, places, everybody\n        </p>\n<p>\n            There's a ghost light<br/>\n            Deep in my mind<br/>\n            A hopeful beacon<br/>\n            That I can never turn off<br/>\n            And if you stare into my eyes<br/>\n            You might see it<br/>\n            And you might feel hopeful too<br/>\n            Places, everybody<br/>\n            The curtain's coming down<br/>\n            Tomorrow's they'll start to bulldoze<br/>\n            The last great show in town<br/>\n            Places, everybody\n        </p>\n<p>\n            We'll all land on our feet<br/>\n            It's a big world full of love and hate<br/>\n            and you can never admit defeat<br/>\n            So, places, everybody<br/>\n            Encore, they cry encore<br/>\n            But it's the curtain call<br/>\n            Where we all take a bow<br/>\n            Hand in hand, we're a family<br/>\n            On the cusp of<br/>\n            The great unknown\n        </p>",
         "release": 20,
         "track": 13
     }
@@ -2713,7 +2713,7 @@
         "slug": "untitled-actual-title-joker-one",
         "player_code": "",
         "description": "",
-        "credits": "",
+        "credits": "<p>\n            Joseph Marrett - Bass<br/>\n            Brian Rutledge - Synth<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitar\n        </p>",
         "lyrics": "",
         "release": 21,
         "track": 1
@@ -2729,7 +2729,7 @@
         "slug": "actual-title-untitled-joker-two",
         "player_code": "",
         "description": "",
-        "credits": "",
+        "credits": "<p>\n            Joseph Marrett - bass<br/>\n            Ryan Connelly - Drums, Percussion<br/>\n            Brian Rutledge - Prepared Trumpet<br/>\n            Nicholas Ward - Electric Guitar<br/>\n            David Michael Curry - Viola<br/>\n            Ryan H. Walsh - Guitar, Samples\n        </p>",
         "lyrics": "",
         "release": 21,
         "track": 2
