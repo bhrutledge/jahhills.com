@@ -3496,7 +3496,7 @@
         "preview_url": "https://img.youtube.com/vi/AEhcBjg4hN8/maxresdefault.jpg",
         "description": "",
         "credits": "",
-        "release": null,
+        "release": 17,
         "priority": null
     }
 },
@@ -3526,11 +3526,62 @@
         "title": "Is it in the cards?",
         "slug": "is-it-in-the-cards",
         "source_url": "https://www.youtube.com/watch?v=mAKOy1hAdfs",
-        "embed_code": "<iframe src=\"https://www.youtube.com/embed/mAKOy1hAdfs?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/mAKOy1hAdfs?wmode=opaque\" seamless allowfullscreen></iframe>",
         "preview_url": "https://img.youtube.com/vi/mAKOy1hAdfs/maxresdefault.jpg",
         "description": "",
         "credits": "",
-        "release": null,
+        "release": 16,
+        "priority": null
+    }
+},
+{
+    "model": "music.video",
+    "pk": 48,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-05-02T00:14:40Z",
+        "title": "The DECK Explainer",
+        "slug": "deck-explainer",
+        "source_url": "https://www.youtube.com/watch?v=_o0-zDmfp9Q",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/_o0-zDmfp9Q?wmode=opaque\" seamless allowfullscreen></iframe>",
+        "preview_url": "https://img.youtube.com/vi/_o0-zDmfp9Q/sddefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": 16,
+        "priority": 1
+    }
+},
+{
+    "model": "music.video",
+    "pk": 49,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-05-22T00:00:00Z",
+        "title": "It's Undeniable",
+        "slug": "its-undeniable",
+        "source_url": "https://www.youtube.com/watch?v=X_Vf1KaFJZI",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/X_Vf1KaFJZI?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "preview_url": "https://img.youtube.com/vi/X_Vf1KaFJZI/sddefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": 20,
+        "priority": null
+    }
+},
+{
+    "model": "music.video",
+    "pk": 50,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-04-24T00:00:00Z",
+        "title": "Crush All Night",
+        "slug": "crush-all-night",
+        "source_url": "https://www.youtube.com/watch?v=TpRz8v_K3sw",
+        "embed_code": "<iframe src=\"https://www.youtube.com/embed/TpRz8v_K3sw?wmode=opaque\" seamless allowfullscreen></iframe>\n",
+        "preview_url": "https://img.youtube.com/vi/TpRz8v_K3sw/hqdefault.jpg",
+        "description": "",
+        "credits": "",
+        "release": 18,
         "priority": null
     }
 },
@@ -5322,6 +5373,76 @@
         "date": "2025-03-11",
         "source_url": "https://www.wbur.org/news/2025/03/11/2025-spring-new-albums-music-boston-massachusetts",
         "body": "For 20 years, Boston\u2019s Hallelujah The Hills have made full-blast rock \u2018n\u2019 roll that manages to be literate without ever losing its sense of humor. So it\u2019s appropriate that the band is celebrating with its biggest and most eye-popping concept record to date: a four-LP set of 52 songs called \u201cDECK\".",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 156,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-12T00:20:08.422Z",
+        "title": "The Boston Globe",
+        "date": "2025-06-06",
+        "source_url": "https://www.bostonglobe.com/2025/06/06/arts/hallelujah-the-hills-ryan-walsh-deck/",
+        "body": "The Boston band\u2019s most daring and imaginative undertaking yet",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 157,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-12T00:22:23.463Z",
+        "title": "Stereogum",
+        "date": "2025-03-28",
+        "source_url": "https://www.stereogum.com/2302162/hallelujah-the-hills-announce-four-album-project-deck-feat-craig-finn-patrick-stickles-cassie-berman-more/music/",
+        "body": "Hallelujah The Hills Announce Four-Album Project DECK Feat. Craig Finn, Patrick Stickles, Cassie Berman, & More",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 158,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-12T00:23:05.667Z",
+        "title": "if it be your will",
+        "date": "2025-06-10",
+        "source_url": "https://www.ifitbeyourwill.ca/2025/06/ifitbeyourwill-s05e21-hallelujah-hills.html",
+        "body": "The concept is brilliantly executed \u2013 Diamonds features polished, radio-friendly tracks; Clubs delivers faster, punkier \"bangers\"; Hearts showcases emotionally vulnerable material; while Spades explores experimental territory...[It's an] extraordinary musical achievement.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 159,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-12T00:23:48.267Z",
+        "title": "Dusted",
+        "date": "2025-06-10",
+        "source_url": "https://dustedmagazine.tumblr.com/post/785978729297068032/hallelujah-the-hills-deck-best-brothers",
+        "body": "Deck is just too big and various to cover in a normal sized review, but it\u2019s very much worth tackling in bits. If you\u2019ve ever enjoyed Walsh\u2019s clever, hyper-verbal mayhem, you\u2019ll enjoy this. Just make sure you have snacks handy and are wearing comfortable clothes. You\u2019re going to be here for a while.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 160,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-06-12T00:25:10.039Z",
+        "title": "imperfect fifth",
+        "date": "2025-05-23",
+        "source_url": "http://imperfectfifth.com/its-undeniable-that-hallelujah-the-hills-just-dropped-another-banger/",
+        "body": "There\u2019s something deeply cathartic about shouting into the void with a guitar, and Boston\u2019s indie rock band Hallelujah The Hills knows exactly how to do it.",
         "quote": true,
         "release": 16
     }
