@@ -222,6 +222,10 @@
     padding-top: $base-spacing;
 }
 
+.release-lyrics .content-columns {
+    clear: both;
+}
+
 .video-preview {
     @include media($medium-screen) {
         @include span-columns(2);
