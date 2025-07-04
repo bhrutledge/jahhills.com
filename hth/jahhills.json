@@ -5462,6 +5462,132 @@
     }
 },
 {
+    "model": "music.press",
+    "pk": 162,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-07-04T14:39:00.812Z",
+        "title": "Boston Magazine",
+        "date": "2025-06-24",
+        "source_url": "https://www.bostonmagazine.com/best-of-boston-archive/2025/deck-by-hallelujah-the-hills",
+        "body": "2025 BEST ALBUM, BEST OF BOSTON. A royal flush of stellar songwriting, with local alt-rock icons and vibrant performances ranging from laidback indie rock to speedball post-punk to acoustic ballads.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 163,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-07-04T14:39:00.813Z",
+        "title": "WBUR",
+        "date": "2025-06-30",
+        "source_url": "https://www.wbur.org/news/2025/06/30/our-favorite-local-music-from-june",
+        "body": "Be prepared for them to see your bet and raise you four concept albums...\"DECK\" can sometimes sound as if you're listening to a party of performers where Hallelujah is the house band and guest stars take turns bringing their tender, raucous acts to the stage.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 164,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-07-04T14:39:00.813Z",
+        "title": "Discologist",
+        "date": "2025-06-25",
+        "source_url": "https://www.discologist.com/episodes/582-ryanwalsh-hallelujahthehills-deck",
+        "body": "A monument to the power of creativity and an essential history of the music that influenced Ryan, and us all, over the past few decades. It's also one of the best albums of the year.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 165,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-07-04T14:39:00.813Z",
+        "title": "Tot De Pop",
+        "date": "2025-06-18",
+        "source_url": "https://totdepop.blogspot.com/2025/06/fora-del-corrent.html",
+        "body": "Spectacular no matter how you listen to it.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 166,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-07-04T14:39:00.814Z",
+        "title": "The Boston Herald",
+        "date": "2025-06-19",
+        "source_url": "https://www.bostonherald.com/2025/06/19/hallelujah-the-hills-deals-song-loaded-4-album-deck",
+        "body": "The whole thing is sprawling, wild, fun, overwhelming, and awesome.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 167,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-07-04T14:39:00.814Z",
+        "title": "If It's Too Loud",
+        "date": "2025-06-18",
+        "source_url": "https://www.ifitstooloud.com/2025/06/first-listen-highlights-of-last-few.html",
+        "body": "A magnum opus in the making\u2026Each song feels contextually essential\u2026It's just a great achievement.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 168,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-07-04T14:39:00.814Z",
+        "title": "Glide Magazine",
+        "date": "2025-06-26",
+        "source_url": "https://glidemagazine.com/314675/listen-hallelujah-the-hills-craft-infectious-punk-tinted-rock-with-hectic-its-undeniable/#google_vignette",
+        "body": "[A] cacophony of scorching guitars and heart-pounding drums. DECK is as ambitious as they come.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 169,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-07-04T14:39:00Z",
+        "title": "Thrillist",
+        "date": "2025-05-15",
+        "source_url": "https://www.thrillist.com/travel/nation/rock-and-roll-guide-boston",
+        "body": "EXPERT PICKS: In June, Boston indie rock legends Hallelujah the Hills will release their latest double-LP, <cite>DECK: Diamonds</cite>.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 170,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-07-04T14:39:00.815Z",
+        "title": "Rosy Overdrive",
+        "date": "2025-07-01",
+        "source_url": "https://rosyoverdrive.com/2025/07/01/new-playlist-june-2025/",
+        "body": "Every album of the DECK has a handful of songs that are among the Hills' best. Clubs, for instance, has 'Burn This Atlas Down', a surging melancholic-rocker that does its best to live up to the 'featuring Craig Finn\" tag (it does).",
+        "quote": true,
+        "release": 16
+    }
+},
+{
     "model": "news.post",
     "pk": 1,
     "fields": {
