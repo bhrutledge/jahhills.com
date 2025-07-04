@@ -1,0 +1,71 @@
+title: Hallelujah The Hills database
+source_url: https://www.hallelujahthehills.com
+databases:
+  hth:
+    plugins:
+      datasette-render-html:
+        columns:
+          - body
+          - credits
+          - description
+          - details
+          - lyrics
+    queries:
+      gigs_per_year:
+        sql: |-
+          select
+            strftime('%Y', date) as year,
+            count(id) as gigs
+          from shows_gig
+          group by year
+        fragment: g.mark=bar&g.x_column=year&g.x_type=temporal&g.y_column=gigs&g.y_type=quantitative
+      gig_locations:
+        sql: |-
+          select
+              g.date,
+              v.name as venue,
+              v.city,
+              v.latitude,
+              v.longitude
+          from shows_gig as g
+            join shows_venue as v on g.venue_id = v.id
+          where
+              longitude between -124.7844079 and -66.9513812
+              and latitude between 24.7433195 and 49.3457868
+          order by g.date desc
+      venue_stats:
+        sql: |-
+          select
+              v.name,
+              v.city,
+              count(g.id) as gigs,
+              min(g.date) as first_gig,
+              max(g.date) as last_gig,
+              v.website,
+              v.latitude,
+              v.longitude
+          from shows_venue as v
+              join shows_gig as g on g.venue_id = v.id
+          where
+              longitude between -124.7844079 and -66.9513812
+              and latitude between 24.7433195 and 49.3457868
+          group by v.id
+          order by gigs desc, last_gig desc
+      release_stats:
+        sql: |-
+          select
+            r.title,
+            strftime('%Y', r.date) as year,
+            count(distinct s.id) as tracks,
+            count(distinct v.id) as videos,
+            count(distinct p.id) as press
+          from music_release as r
+            left join music_song as s on s.release_id = r.id
+            left join music_video as v on v.release_id = r.id
+            left join music_press as p on p.release_id = r.id
+          group by r.id
+          order by r.date desc
+        fragment: g.mark=bar&g.x_column=year&g.x_type=temporal&g.y_column=tracks&g.y_type=quantitative
+    tables:
+      sqlite_sequence:
+        hidden: true
