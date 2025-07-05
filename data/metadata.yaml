@@ -24,7 +24,8 @@ databases:
           select
               g.date,
               v.name as venue,
-              v.city,
+              SUBSTR(v.city, 0, INSTR(v.city, ',')) as city,
+              SUBSTR(v.city, INSTR(v.city, ',') + 2, 2) as state,
               v.latitude,
               v.longitude
           from shows_gig as g
@@ -33,6 +34,7 @@ databases:
               longitude between -124.7844079 and -66.9513812
               and latitude between 24.7433195 and 49.3457868
           order by g.date desc
+        fragment: g.mark=circle&g.x_column=state&g.x_type=nominal&g.y_column=date&g.y_type=temporal
       venue_stats:
         sql: |-
           select

@@ -9,7 +9,7 @@ metadata := metadata.yaml
 
 .PHONY: serve
 serve: $(data_db)
-	datasette --metadata $(metadata) --host $(HOST) --port $(DATA_PORT) $(data_db)
+	datasette --cors --metadata $(metadata) --host $(HOST) --port $(DATA_PORT) $(data_db)
 
 .PHONY: publish
 publish: $(data_db)
