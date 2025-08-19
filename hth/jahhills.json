@@ -5588,6 +5588,48 @@
     }
 },
 {
+    "model": "music.press",
+    "pk": 171,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-08-19T23:50:08.840Z",
+        "title": "Freak Scene",
+        "date": "2025-07-18",
+        "source_url": "https://buttondown.com/freakscene/archive/freak-scene-75-best-music-2025-so-far/",
+        "body": "The group\u2019s new project, DECK, is a 54-song quadruple-album masterwork based on a deck of cards (each album represents a suit, with 13 songs each that correspond to numbers and face cards, plus two instrumental tracks as \u201cjokers\u201d). It\u2019s wildly creative, weird in the best way and a little messy.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 172,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-08-19T23:53:47.961Z",
+        "title": "Since I Left You",
+        "date": "2025-07-03",
+        "source_url": "https://sinceileftyoublog.tumblr.com/post/788049788339912704/hallelujah-the-hills-album-review-deck",
+        "body": "It\u2019s limitless, everything independent music can sound like...DECK isn\u2019t just a collection of albums. It\u2019s an experiment in how we engage with music.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 174,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-08-19T23:53:41Z",
+        "title": "The Boston Globe",
+        "date": "2025-07-25",
+        "source_url": "https://www.bostonglobe.com/2025/07/25/arts/best-albums-2025-so-far/",
+        "body": "THE 20 BEST ALBUMS OF 2025 (SO FAR): the biggest swing yet from long-running Boston outfit Hallelujah the Hills. The high-concept conceit may be the hook, but bandleader Ryan Walsh\u2019s thoughtful lyrics and the sextet\u2019s expansive indie-folk-rock make the whole thing sing.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
     "model": "news.post",
     "pk": 1,
     "fields": {
@@ -8574,6 +8616,18 @@
         "address": "",
         "latitude": 40.67885943138182,
         "longitude": -73.95837062908537
+    }
+},
+{
+    "model": "shows.venue",
+    "pk": 207,
+    "fields": {
+        "name": "The Stone Church Music Club",
+        "city": "Newmarket, NH",
+        "website": "https://stonechurchrocks.com/",
+        "address": ",",
+        "latitude": 43.07894207240974,
+        "longitude": -70.93792265423883
     }
 },
 {
@@ -12462,6 +12516,30 @@
         "venue": 206,
         "description": "<p>with <span class=\"performer\">Perennial</a></p>",
         "details": "<a href=\"https://www.eventbrite.com/e/hallelujah-the-hills-perennial-live-tickets-1361059578839\">Tickets</a>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 341,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-08-19T23:43:54.609Z",
+        "date": "2025-09-06",
+        "venue": 180,
+        "description": "<p><strong><a href=\"http://jpmusicfestival.com\">JP Music Festival</a></strong></p>",
+        "details": ""
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 342,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-08-19T23:47:17.147Z",
+        "date": "2025-09-12",
+        "venue": 207,
+        "description": "<p>with <span  class=\"performer\">The Sheila Divine</span> and <span class=\"performer\">The Rupert Selection</span></p>",
+        "details": "<p><a href=\"https://portsmouthnhtickets.com/e/the-sheila-divine-hallelujah-the-hills-the-rupert\">Tickets</a></p>"
     }
 }
 ]
