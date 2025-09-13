@@ -12479,7 +12479,7 @@
         "date": "2025-06-21",
         "venue": 202,
         "description": "<p><strong><cite>DECK</cite> release show</strong><br>\r\nwith <span  class=\"performer\">Bongwish</span> and <span class=\"performer\">Choo Choo La Rouge</span></p>",
-        "details": "<p><a href=\"https://link.dice.fm/d5f12312816f\">Tickets</a></p>"
+        "details": "<p><a href=\"https://dice.fm/partner/deep-cuts-llc/event/7d7wn6-hallelujah-the-hills-ho-ag-15th-nov-deep-cuts-medford-tickets\">Tickets</a></p>"
     }
 },
 {
@@ -12540,6 +12540,18 @@
         "venue": 207,
         "description": "<p>with <span  class=\"performer\">The Sheila Divine</span> and <span class=\"performer\">The Rupert Selection</span></p>",
         "details": "<p><a href=\"https://portsmouthnhtickets.com/e/the-sheila-divine-hallelujah-the-hills-the-rupert\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 343,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-09-13T21:01:35Z",
+        "date": "2025-11-15",
+        "venue": 202,
+        "description": "<p><strong>20th anniversary show</strong><br>\r\nwith <span  class=\"performer\">Ho-Ag</span> (reunion show)</p>",
+        "details": ""
     }
 }
 ]
