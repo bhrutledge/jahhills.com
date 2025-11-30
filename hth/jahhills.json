@@ -8631,6 +8631,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 208,
+    "fields": {
+        "name": "Bowery Ballroom",
+        "city": "New York, NY",
+        "website": "https://mercuryeastpresents.com/boweryballroom/",
+        "address": "",
+        "latitude": 40.72053657377,
+        "longitude": -73.99333684442497
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -12552,6 +12564,18 @@
         "venue": 202,
         "description": "<p><strong>20th anniversary show</strong><br>\r\nwith <span  class=\"performer\">Ho-Ag</span> (reunion show)</p>",
         "details": "<p><a href=\"https://dice.fm/event/7d7wn6-hallelujah-the-hills-ho-ag-15th-nov-deep-cuts-medford-tickets\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 344,
+    "fields": {
+        "publish": true,
+        "publish_on": "2025-11-30T20:49:02.213Z",
+        "date": "2026-01-04",
+        "venue": 208,
+        "description": "<p><strong>DCBday - Celebrating the Music of David Berman</strong><br>\r\nFeaturing Ezra Furman</p>",
+        "details": "<p><a href=\"https://www.ticketmaster.com/dcbday-celebrating-the-music-of-david-new-york-new-york-01-04-2026/event/0000636CEB552960\">Tickets</a></p>"
     }
 }
 ]
