@@ -5630,6 +5630,174 @@
     }
 },
 {
+    "model": "music.press",
+    "pk": 175,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52Z",
+        "title": "BrooklynVegan",
+        "date": "2025-12-24",
+        "source_url": "https://www.brooklynvegan.com/wilcos-favorite-albums-of-2025/",
+        "body": "<p>Wilco's Favorite albums of 2025</p>",
+        "quote": false,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 176,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52Z",
+        "title": "Boston Music Awards 2025",
+        "date": "2025-12-18",
+        "source_url": "https://www.bostonglobe.com/2025/12/18/arts/boston-music-awards-2025-winners/",
+        "body": "<p>Alt/Indie Artist of the Year</p>",
+        "quote": false,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 177,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52Z",
+        "title": "If It's Too Loud, #1 Album of 2025",
+        "date": "2025-12-23",
+        "source_url": "https://www.ifitstooloud.com/2025/12/kens-best-of-2025-1-hallelujah-hills.html",
+        "body": "<p>Hallelujah the Hills ended up nailing it. Fifty-two songs without a single filler song.</p>",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 178,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52Z",
+        "title": "Matt Besser, Improv4Humans",
+        "date": "2025-12-31",
+        "source_url": "https://www.facebook.com/reel/1118273083588970",
+        "body": "<p>Album of the Year</p>",
+        "quote": false,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 179,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52.086Z",
+        "title": "WTJU Best of 2025",
+        "date": "2025-12-18",
+        "source_url": "https://www.wtju.net/rick-2025-in-review/",
+        "body": "Leave it to the best DIY band in Boston to crowdsource their biggest, most ambitious album yet.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 180,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52.086Z",
+        "title": "Discologist, Best of 2025",
+        "date": "2025-12-09",
+        "source_url": "https://www.discologist.com/episodes/595-best-of-2025",
+        "body": "The 54 songs spread across four albums and an EP work like little vignettes and character sketches, equal parts scruffy, shouty, sweet, and sad. DECK is a sprawling and ambitious work, stacked with a roster of A-list guests, that asks the listener to rethink what an album is. Conceptual hullabaloo aside, the songs on DECK continually astound.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 181,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52.087Z",
+        "title": "Necessary Evil Blog",
+        "date": "2025-12-13",
+        "source_url": "https://necessaryevil.blog/2025/12/13/8-hallelujah-the-hills-deck/",
+        "body": "Fucking hell, they actually did it...How did a project this ambitious not take the the rest of the bandmembers\u2019 fucking lives?? Why didn\u2019t \u2018DECK\u2019 find Ryan H. Walsh as a 70 year old man in the year 2050 picking half eaten gherkins out of his beard and wearing tissue boxes for shoes as he still furiously tries to work out the synth part of Some Rest for the Wicked at 3am in the morning?? Yet here it is less than three years after being announced?? Yet here it is: 54 songs, three hours and 35 minutes, four suits and two jokers.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 182,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52.087Z",
+        "title": "Rosy Overdrive, Top 100 Albums of 2025",
+        "date": "2025-12-09",
+        "source_url": "https://rosyoverdrive.com/2025/12/09/rosy-overdrives-top-100-albums-of-2025-50-26/",
+        "body": "[The] band has spent the 2020s working on a project called DECK: four albums, fifty-two songs, with every track corresponding to a card in a traditional deck of playing cards. DECK is a pure reflection of what I interpret as the Hallelujah the Hills ethos\u2013it\u2019s highly collaborative, it\u2019s incredibly earnest and adventurous in both its writing and arrangement, and it\u2019s dream-like despite a very grounded execution from the players.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 183,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52Z",
+        "title": "Allston Pudding",
+        "date": "2025-11-13",
+        "source_url": "https://allstonpudding.com/people-think-were-a-christian-band-hallelujah-the-hills-20-years-later/",
+        "body": "<p>Hallelujah the Hills, 20 Years Later</p>",
+        "quote": false,
+        "release": null
+    }
+},
+{
+    "model": "music.press",
+    "pk": 184,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52.087Z",
+        "title": "AltCountry.nl",
+        "date": "2025-10-02",
+        "source_url": "https://www-altcountry-nl.translate.goog/blog/2025/10/hallelujah-the-hills-sluit-met-deck-aan-bij-trend-van-alsmaar-meer/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp",
+        "body": "Deck from Hallelujah The Hills is a successful tour de force.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 185,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52.088Z",
+        "title": "Twangville",
+        "date": "2025-10-02",
+        "source_url": "https://twangville.com/2025/10/02/chestnut-vibes-on-a-saturday-night-a-boston-playlist/",
+        "body": "Four albums at once could have collapsed under their own scope. Instead, Hallelujah the Hills turn scale into structure. In sequence, you hear a progression from burn to breadth to hush to blend; on shuffle, the connections still hum. However you drop the needle, the payoff is clear: a band that bets the whole deck\u2014and wins.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
+    "model": "music.press",
+    "pk": 186,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-02-08T18:20:52.088Z",
+        "title": "Stereo Embers",
+        "date": "2025-08-06",
+        "source_url": "https://soundcloud.com/alexgreenonline/stereo-embers-the-podcast-ryan-walsh-hallelujah-the-hills",
+        "body": "Hallelujah the Hills have established themselves as one of the most unpredictable, inventive, and most fascinating bands on the planet.[DECK is] hard to explain but it's easy to experience...Toss it into the air and follow it wherever it goes.",
+        "quote": true,
+        "release": 16
+    }
+},
+{
     "model": "news.post",
     "pk": 1,
     "fields": {
