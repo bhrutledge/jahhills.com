@@ -8811,6 +8811,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 209,
+    "fields": {
+        "name": "The Haven",
+        "city": "Jamaica Plain, MA",
+        "website": "https://thehavenjp.com/",
+        "address": "",
+        "latitude": 42.31454,
+        "longitude": -71.10408
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -12744,6 +12756,30 @@
         "venue": 208,
         "description": "<p><strong>DCBday - Celebrating the Music of David Berman</strong><br>\r\nFeaturing Ezra Furman</p>",
         "details": "<p><a href=\"https://www.ticketmaster.com/dcbday-celebrating-the-music-of-david-new-york-new-york-01-04-2026/event/0000636CEB552960\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 345,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-06-01T23:26:04Z",
+        "date": "2026-10-17",
+        "venue": 202,
+        "description": "<p>with <span  class=\"performer\">Hilken and Melissa Band</span></p>",
+        "details": "<p><a href=\"https://dice.fm/event/8elka5-hallelujah-the-hills-hilken-and-melissa-band-17th-oct-deep-cuts-medford-tickets\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 346,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-06-01T23:31:26Z",
+        "date": "2026-06-12",
+        "venue": 209,
+        "description": "<p><strong>Home Ground @ The Haven</strong><br>\r\nWorld Cup party for USA v Paraguay</p>",
+        "details": "<p><a href=\"https://www.eventbrite.com/e/home-ground-the-haven-friday-eve-session-usa-v-paraguay-tickets-1989190788195w\">Tickets</a></p>"
     }
 }
 ]
