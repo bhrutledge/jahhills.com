@@ -8823,6 +8823,18 @@
     }
 },
 {
+    "model": "shows.venue",
+    "pk": 210,
+    "fields": {
+        "name": "Ames Chapel",
+        "city": "Hingham, MA",
+        "website": "",
+        "address": "",
+        "latitude": 42.24255785373299,
+        "longitude": -70.88717466156835
+    }
+},
+{
     "model": "shows.gig",
     "pk": 2,
     "fields": {
@@ -12780,6 +12792,18 @@
         "venue": 209,
         "description": "<p><strong>Home Ground @ The Haven</strong><br>\r\nWorld Cup party for USA v Paraguay</p>",
         "details": "<p><a href=\"https://www.eventbrite.com/e/home-ground-the-haven-friday-eve-session-usa-v-paraguay-tickets-1989190788195w\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 347,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-07-17T00:27:52.740Z",
+        "date": "2026-08-07",
+        "venue": 210,
+        "description": "<p>with <span class=\"performer\">Rick Maguire of Pile</span></p>",
+        "details": "<p><a href=\"https://www.eventbrite.com/e/rick-maguire-of-pile-hallelujah-the-hills-ames-chapel-tickets-1991206881384\">Tickets</a></p>"
     }
 }
 ]
