@@ -12727,7 +12727,7 @@
     "pk": 341,
     "fields": {
         "publish": true,
-        "publish_on": "2025-08-19T23:43:54.609Z",
+        "publish_on": "2025-08-19T23:43:54Z",
         "date": "2025-09-06",
         "venue": 180,
         "description": "<p><strong><a href=\"http://jpmusicfestival.com\">JP Music Festival</a></strong></p>",
@@ -12778,7 +12778,7 @@
         "publish_on": "2026-06-01T23:26:04Z",
         "date": "2026-10-17",
         "venue": 202,
-        "description": "<p>with <span  class=\"performer\">Hilken and Melissa Band</span></p>",
+        "description": "",
         "details": "<p><a href=\"https://dice.fm/event/8elka5-hallelujah-the-hills-hilken-and-melissa-band-17th-oct-deep-cuts-medford-tickets\">Tickets</a></p>"
     }
 },
@@ -12804,6 +12804,18 @@
         "venue": 210,
         "description": "<p>with <span class=\"performer\">Rick Maguire of Pile</span></p>",
         "details": "<p><a href=\"https://www.eventbrite.com/e/rick-maguire-of-pile-hallelujah-the-hills-ames-chapel-tickets-1991206881384\">Tickets</a></p>"
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 348,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-09-04T20:45:28.972Z",
+        "date": "2026-09-12",
+        "venue": 180,
+        "description": "<p><strong><a href=\"http://jpmusicfestival.com\">JP Music Festival</a></strong></p>",
+        "details": ""
     }
 }
 ]
