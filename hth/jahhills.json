@@ -12778,7 +12778,7 @@
         "publish_on": "2026-06-01T23:26:04Z",
         "date": "2026-10-17",
         "venue": 202,
-        "description": "",
+        "description": "<p>with <span class=\"performer\">Patrick Stickles of Titus Andronicus</span></p>",
         "details": "<p><a href=\"https://dice.fm/event/8elka5-hallelujah-the-hills-hilken-and-melissa-band-17th-oct-deep-cuts-medford-tickets\">Tickets</a></p>"
     }
 },
@@ -12816,6 +12816,18 @@
         "venue": 180,
         "description": "<p><strong><a href=\"http://jpmusicfestival.com\">JP Music Festival</a></strong></p>",
         "details": ""
+    }
+},
+{
+    "model": "shows.gig",
+    "pk": 349,
+    "fields": {
+        "publish": true,
+        "publish_on": "2026-11-06T18:25:16.155Z",
+        "date": "2027-01-07",
+        "venue": 202,
+        "description": "<p>with <span class=\"performer\">Kiwi Jr.</span></p>",
+        "details": "<p><a href=\"https://dice.fm/event/eo6w7d-kiwi-jr-hallelujah-the-hills-7th-jan-deep-cuts-medford-tickets\">Tickets</a></p>"
     }
 }
 ]
